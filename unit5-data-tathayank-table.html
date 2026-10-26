@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५ – नेपालका प्रदेशगत तथ्याङ्क विवरण (कक्षा १२)</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #f8edf2;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fefcfd;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #d6c3cc;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #880E4F;
+            line-height: 1.2;
+        }
+
+        .main-header h1 i { color: #AD1457; margin-right: 10px; }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #AD1457;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .credit-bar {
+            background: #f0e1e8;
+            border-radius: 60px;
+            padding: 14px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #d6c3cc;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .credit-bar .name { color: #0b2b4a; font-weight: 800; font-size: 1.15rem; }
+        .credit-bar .email { color: #880E4F; font-weight: 700; }
+        .credit-bar i { color: #880E4F; margin-right: 6px; }
+
+        /* ----- TABLE OF CONTENTS ----- */
+        .toc-section {
+            background: #880E4F;
+            border-radius: 20px;
+            padding: 18px 24px;
+            margin: 6px 0 28px;
+            border: 2px solid #b3467a;
+        }
+
+        .toc-section h3 {
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.36rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toc-section h3 i { color: #f5d742; font-size: 1.3rem; }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4px 16px;
+        }
+
+        .toc-grid a {
+            color: #f5e8ec;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16.5px;
+            padding: 4px 0 4px 6px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toc-grid a:hover {
+            color: #f5d742;
+            border-bottom-color: #f5d742;
+            transform: translateX(4px);
+        }
+
+        .toc-grid a i { color: #f5d742; font-size: 0.6rem; min-width: 14px; }
+
+        @media (max-width: 700px) { .toc-grid { grid-template-columns: 1fr 1fr; } .toc-grid a { font-size: 15px; } }
+        @media (max-width: 480px) { .toc-grid { grid-template-columns: 1fr; } .toc-grid a { font-size: 14px; } }
+
+        /* ----- QUICK STATS CARDS ----- */
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 14px;
+            margin: 20px 0 24px;
+        }
+
+        .stat-card {
+            background: #fefcfd;
+            border-radius: 14px;
+            padding: 14px 18px;
+            border-left: 5px solid #880E4F;
+            border-top: 2px solid #f0e1e8;
+            border-right: 2px solid #f0e1e8;
+            border-bottom: 2px solid #f0e1e8;
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(136, 14, 79, 0.15);
+        }
+
+        .stat-card .stat-label {
+            font-size: 0.85rem;
+            color: #880E4F;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-card .stat-value {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #0b2b4a;
+            line-height: 1.3;
+        }
+
+        .stat-card .stat-detail {
+            font-size: 0.95rem;
+            color: #4d5f72;
+            font-weight: 500;
+        }
+
+        /* ----- SECTION HEADERS ----- */
+        .section-head {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #880E4F;
+            margin: 42px 0 16px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            scroll-margin-top: 80px;
+            box-shadow: 0 3px 12px rgba(136, 14, 79, 0.35);
+        }
+
+        .section-head i { font-size: 1.5rem; color: #f5d742; }
+
+        .section-head .mark-badge {
+            color: #880E4F;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: 4px;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #f5d742; color: #0b2b4a; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.pink { background: #f48fb1; color: #0b2b4a; }
+
+        /* ----- CONTENT BOXES ----- */
+        .content-box {
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #880E4F;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .content-box p, .content-box ul, .content-box ol, .content-box li {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .content-box ul, .content-box ol { padding-left: 28px; margin: 8px 0 8px; }
+        .content-box li { margin-bottom: 6px; }
+        .content-box strong { color: #0b2b4a; font-weight: 900; }
+
+        .content-box.burgundy-light { border-left-color: #880E4F; background: #f8edf2; }
+        .content-box.blue-light { border-left-color: #1a3a5c; background: #e8f0f8; }
+        .content-box.gold-light { border-left-color: #b45309; background: #fef8ee; }
+        .content-box.green-light { border-left-color: #1f7a4a; background: #eef8f2; }
+        .content-box.purple-light { border-left-color: #6A1B9A; background: #f4eef8; }
+        .content-box.teal-light { border-left-color: #0f7a7a; background: #eef8f8; }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0 14px;
+            border-radius: 14px;
+            border: 2px solid #d6c3cc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.02rem;
+            min-width: 500px;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            border: 1px solid #d6c3cc;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #880E4F;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.02rem;
+            text-align: center;
+        }
+
+        td { font-weight: 500; font-size: 1rem; }
+        td.num { text-align: right; font-variant-numeric: tabular-nums; }
+        td.ctr { text-align: center; }
+
+        tr:nth-child(even) td { background: #fdf7fa; }
+        tr:hover td { background: #f8edf2; }
+
+        tr.total-row td {
+            background: #f0e1e8 !important;
+            font-weight: 900;
+            color: #880E4F;
+        }
+
+        .table-caption {
+            background: #f0e1e8;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #d6c3cc;
+        }
+
+        /* ----- INSIGHT BOX ----- */
+        .insight-box {
+            background: #fff8e1;
+            border-radius: 12px;
+            padding: 14px 20px;
+            margin: 12px 0 18px;
+            border-left: 5px solid #f5d742;
+            border-top: 1px solid #ffe082;
+            border-right: 1px solid #ffe082;
+            border-bottom: 1px solid #ffe082;
+        }
+
+        .insight-box .insight-title {
+            font-weight: 900;
+            color: #B45309;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .insight-box .insight-title i { color: #f5b800; }
+
+        .insight-box p, .insight-box li {
+            font-size: 1.05rem;
+            color: #4a3500;
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+
+        .insight-box ul { padding-left: 22px; margin: 4px 0; }
+
+        /* ----- ANALYSIS BOX (NEW for HDI) ----- */
+        .analysis-box {
+            background: #f4eef8;
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 18px 0;
+            border-left: 6px solid #6A1B9A;
+            border-top: 2px solid #e0d0eb;
+            border-right: 2px solid #e0d0eb;
+            border-bottom: 2px solid #e0d0eb;
+        }
+
+        .analysis-box .analysis-title {
+            font-weight: 900;
+            color: #4A148C;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-bottom: 8px;
+            border-bottom: 2px dashed #d1c4e9;
+        }
+
+        .analysis-box p, .analysis-box li {
+            font-size: 1.12rem;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: #2d3a4a;
+        }
+
+        .analysis-box ul, .analysis-box ol { padding-left: 26px; margin: 6px 0; }
+
+        .analysis-box h4 {
+            font-weight: 800;
+            color: #4A148C;
+            font-size: 1.08rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #880E4F;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(136, 14, 79, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+        #scrollUpBtn:hover { background: #560A33; transform: scale(1.08); box-shadow: 0 6px 28px rgba(136, 14, 79, 0.5); }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 3px solid #d6c3cc;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 28px;
+            font-weight: 600;
+        }
+
+        .footer-copy i { color: #880E4F; margin-right: 6px; }
+        .footer-copy .highlight { font-weight: 800; color: #0b2b4a; }
+
+        hr { border: none; border-top: 3px dotted #d6c3cc; margin: 28px 0 10px; }
+
+        .tip-box {
+            background: #880E4F;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.08rem;
+        }
+
+        .tip-box i { margin-right: 8px; }
+        .tip-box strong { color: #f5d742; }
+
+        /* ----- BACK-TO-TOC BUTTON (per section) ----- */
+        .back-toc {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 8px;
+            padding: 6px 16px;
+            background: #f0e1e8;
+            color: #880E4F;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            border: 1.5px solid #d6c3cc;
+            transition: all 0.2s;
+        }
+
+        .back-toc:hover {
+            background: #880E4F;
+            color: #fff;
+            border-color: #880E4F;
+        }
+
+        /* ----- HDI RANK BADGES ----- */
+        .rank-badge {
+            display: inline-block;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-weight: 900;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+
+        .rank-1 { background: #1B5E20; }
+        .rank-2 { background: #2E7D32; }
+        .rank-3 { background: #388E3C; }
+        .rank-4 { background: #F57C00; }
+        .rank-5 { background: #E65100; }
+        .rank-6 { background: #C62828; }
+        .rank-7 { background: #B71C1C; }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container { padding: 16px 12px 24px; border-radius: 20px; }
+            .main-header h1 { font-size: 1.4rem; }
+            .section-head { font-size: 1.25rem; padding: 10px 16px; }
+            .credit-bar { flex-direction: column; align-items: flex-start; gap: 4px; font-size: 0.9rem; padding: 10px 16px; }
+            #scrollUpBtn { width: 50px; height: 50px; font-size: 1.3rem; bottom: 18px; right: 18px; }
+            .toc-section { padding: 14px 16px; }
+            .content-box { padding: 14px 16px; }
+            .content-box p, .content-box ul, .content-box ol, .content-box li { font-size: 1rem; }
+            table { font-size: 0.82rem; min-width: 480px; }
+            th, td { font-size: 0.82rem; padding: 6px 6px; }
+            .insight-box p, .insight-box li { font-size: 0.98rem; }
+            .analysis-box p, .analysis-box li { font-size: 1rem; }
+            .stat-card .stat-value { font-size: 1.2rem; }
+            .toc-grid a { font-size: 15px; }
+        }
+
+        @media (min-width: 768px) { .container { padding: 36px 46px 50px; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <div>
+                <h1>
+                    <i class="fas fa-chart-bar"></i>
+                    एकाइ ५: नेपालका प्रदेशगत तथ्याङ्क विवरण
+                </h1>
+                <div class="subtitle">
+                    कक्षा १२ · सामाजिक अध्ययन तथा जीवनोपयोगी शिक्षा
+                    <span class="badge-class"><i class="fas fa-check-circle"></i> जनगणना २०२१ आधारित</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CREDIT BAR ===== -->
+        <div class="credit-bar">
+            <span><i class="fas fa-user-edit"></i> <span class="name">Prepared by: Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> <span class="email">nregmi511@gmail.com</span></span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५ तथ्याङ्क</span>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <!-- ========================================================== -->
+
+        <div class="toc-section" id="toc">
+            <h3><i class="fas fa-list-ul"></i> विषयसूची (जल्दी नेभिगेसन)</h3>
+            <div class="toc-grid">
+                <a href="#section1"><i class="fas fa-chevron-right"></i> प्रदेशगत जनसंख्या विवरण</a>
+                <a href="#section2"><i class="fas fa-chevron-right"></i> घरपरिवार र शहरी जनसंख्या</a>
+                <a href="#section3"><i class="fas fa-chevron-right"></i> प्रशासनिक तथा स्थानीय तह</a>
+                <a href="#section4"><i class="fas fa-chevron-right"></i> अक्षांश र देशान्तर विवरण</a>
+                <a href="#section5"><i class="fas fa-chevron-right"></i> प्रमुख १० जातजाति</a>
+                <a href="#section6"><i class="fas fa-chevron-right"></i> उमेर समूह अनुसार जनसंख्या</a>
+                <a href="#section7"><i class="fas fa-chevron-right"></i> मानव विकास सूचकाङ्क (HDI)</a>
+            </div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== QUICK STATS OVERVIEW ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="quick-stats">
+            <i class="fas fa-bolt"></i>
+            तथ्याङ्क झलक (Quick Stats)
+            <span class="mark-badge gold">Overview</span>
+        </div>
+
+        <div class="quick-stats">
+            <div class="stat-card">
+                <div class="stat-label">कुल जनसंख्या</div>
+                <div class="stat-value">२,९१,६४,५७८</div>
+                <div class="stat-detail">२.९१ करोड+</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">सबैभन्दा बढी जनसंख्या</div>
+                <div class="stat-value">बागमती</div>
+                <div class="stat-detail">६१,१६,८६६ (२०.९७%)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">सबैभन्दा कम जनसंख्या</div>
+                <div class="stat-value">कर्णाली</div>
+                <div class="stat-detail">१६,८८,४१२ (५.७९%)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">उच्चतम घनत्व</div>
+                <div class="stat-value">मधेश</div>
+                <div class="stat-detail">६३३ / वर्ग कि.मि.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">न्यूनतम घनत्व</div>
+                <div class="stat-value">कर्णाली</div>
+                <div class="stat-detail">६० / वर्ग कि.मि.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">सबैभन्दा शहरीकृत</div>
+                <div class="stat-value">बागमती</div>
+                <div class="stat-detail">७९.६%</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">सबैभन्दा कम शहरीकृत</div>
+                <div class="stat-value">सुदूरपश्चिम</div>
+                <div class="stat-detail">३४.६%</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">ऋणात्मक वृद्धि जिल्ला</div>
+                <div class="stat-value">३२ जिल्ला</div>
+                <div class="stat-detail">देशभरका ७७ मध्ये</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">राष्ट्रिय HDI (२०२५)</div>
+                <div class="stat-value">०.६२२</div>
+                <div class="stat-detail">विश्वमा १४५औँ स्थान</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">उच्चतम प्रादेशिक HDI</div>
+                <div class="stat-value">बागमती</div>
+                <div class="stat-detail">०.६५२ (क्रम १)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">न्यूनतम प्रादेशिक HDI</div>
+                <div class="stat-value">मधेस</div>
+                <div class="stat-detail">०.५६१ (क्रम ७)</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== १. प्रदेशगत जनसंख्या विवरण ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section1">
+            <i class="fas fa-users"></i>
+            १. प्रदेशगत जनसंख्या विवरण र ऋणात्मक वृद्धि
+            <span class="mark-badge blue">Population</span>
+        </div>
+
+        <div class="content-box burgundy-light">
+            <p>राष्ट्रिय तथ्याङ्क कार्यालय (NSO) को <strong>राष्ट्रिय जनगणना २०२१</strong> को तथ्याङ्क अनुसार नेपालको प्रदेशगत जनसंख्या, जनसंख्या घनत्व र ऋणात्मक जनसंख्या वृद्धिदर भएका जिल्लाहरूको संख्या निम्न अनुसार छ <span class="ref">[५]</span>:</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#880E4F;"></i> तालिका १: प्रदेशगत जनसंख्या, घनत्व र ऋणात्मक वृद्धि <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेश</th>
+                        <th>पुरुष जनसंख्या</th>
+                        <th>महिला जनसंख्या</th>
+                        <th>कुल जनसंख्या</th>
+                        <th>जनसंख्या हिस्सा (%)</th>
+                        <th>घनत्व (प्रति वर्ग कि.मि.)</th>
+                        <th>ऋणात्मक वृद्धि जिल्ला संख्या</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ctr">१</td><td><strong>कोशी प्रदेश</strong></td><td class="num">२४,१७,३२८</td><td class="num">२५,४४,०८४</td><td class="num"><strong>४९,६१,४१२</strong></td><td class="ctr">१७.०१%</td><td class="ctr">१९२</td><td class="ctr">५</td></tr>
+                    <tr><td class="ctr">२</td><td><strong>मधेस प्रदेश</strong></td><td class="num">३०,६५,७५१</td><td class="num">३०,४८,८४९</td><td class="num"><strong>६१,१४,६००</strong></td><td class="ctr">२०.९७%</td><td class="ctr">६३३</td><td class="ctr">०</td></tr>
+                    <tr><td class="ctr">३</td><td><strong>बागमती प्रदेश</strong></td><td class="num">३०,४८,६८४</td><td class="num">३०,६८,१८२</td><td class="num"><strong>६१,१६,८६६</strong></td><td class="ctr">२०.९७%</td><td class="ctr">३०१</td><td class="ctr">६</td></tr>
+                    <tr><td class="ctr">४</td><td><strong>गण्डकी प्रदेश</strong></td><td class="num">११,७०,८३३</td><td class="num">१२,९५,५९४</td><td class="num"><strong>२४,६६,४२७</strong></td><td class="ctr">८.४६%</td><td class="ctr">११५</td><td class="ctr">७</td></tr>
+                    <tr><td class="ctr">५</td><td><strong>लुम्बिनी प्रदेश</strong></td><td class="num">२४,५७,४०७</td><td class="num">२६,६४,६७१</td><td class="num"><strong>५१,२२,०७८</strong></td><td class="ctr">१७.५६%</td><td class="ctr">२३०</td><td class="ctr">५</td></tr>
+                    <tr><td class="ctr">६</td><td><strong>कर्णाली प्रदेश</strong></td><td class="num">८,२३,७६१</td><td class="num">८,६४,६५१</td><td class="num"><strong>१६,८८,४१२</strong></td><td class="ctr">५.७९%</td><td class="ctr">६०</td><td class="ctr">२</td></tr>
+                    <tr><td class="ctr">७</td><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td class="num">१२,७०,३७२</td><td class="num">१४,२४,४११</td><td class="num"><strong>२६,९४,७८३</strong></td><td class="ctr">९.२४%</td><td class="ctr">१३८</td><td class="ctr">७</td></tr>
+                    <tr class="total-row"><td class="ctr">—</td><td><strong>जम्मा / राष्ट्रिय</strong></td><td class="num"><strong>१,४२,५३,५५१</strong></td><td class="num"><strong>१,४९,११,०२७</strong></td><td class="num"><strong>२,९१,६४,५७८</strong></td><td class="ctr"><strong>१००%</strong></td><td class="ctr"><strong>१९८</strong></td><td class="ctr"><strong>३२</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight-box">
+            <div class="insight-title"><i class="fas fa-lightbulb"></i> मुख्य अवलोकन</div>
+            <ul>
+                <li><strong>सबैभन्दा बढी जनसंख्या:</strong> बागमती (६१,१६,८६६) — मधेसभन्दा मात्र २,२६६ ले बढी <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा कम जनसंख्या:</strong> कर्णाली (१६,८८,४१२) <span class="ref">[५]</span>।</li>
+                <li><strong>उच्चतम घनत्व:</strong> मधेश (६३३/वर्ग कि.मि.); <strong>न्यूनतम घनत्व:</strong> कर्णाली (६०/वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>ऋणात्मक वृद्धि:</strong> देशभर ३२ जिल्लामा; सबैभन्दा बढी गण्डकी र सुदूरपश्चिममा (७/७), मधेसमा शून्य <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== २. घरपरिवार र शहरी जनसंख्या ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section2">
+            <i class="fas fa-home"></i>
+            २. घरपरिवार संख्या, औसत परिवार आकार र शहरी जनसंख्या
+            <span class="mark-badge green">Households</span>
+        </div>
+
+        <div class="content-box green-light">
+            <p>प्रदेशअनुसार घरपरिवार संख्या, औसत परिवार आकार, लैंगिक अनुपात (पुरुष प्रति १०० महिला) र शहरी जनसंख्याको विवरण निम्न अनुसार छ <span class="ref">[५]</span>:</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#880E4F;"></i> तालिका २: घरपरिवार, औसत आकार, लैंगिक अनुपात र शहरीकरण <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेश</th>
+                        <th>घरपरिवार संख्या</th>
+                        <th>औसत परिवार आकार</th>
+                        <th>लैंगिक अनुपात (पुरुष/१०० महिला)</th>
+                        <th>शहरी जनसंख्या (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ctr">१</td><td><strong>कोशी प्रदेश</strong></td><td class="num">११,६२,७७५</td><td class="ctr">४.२३</td><td class="ctr">९५.०२</td><td class="ctr">६१.४%</td></tr>
+                    <tr><td class="ctr">२</td><td><strong>मधेस प्रदेश</strong></td><td class="num">११,५१,५६८</td><td class="ctr">५.३१</td><td class="ctr">१०१.०</td><td class="ctr">६३.४%</td></tr>
+                    <tr><td class="ctr">३</td><td><strong>बागमती प्रदेश</strong></td><td class="num">१५,८५,३२४</td><td class="ctr">३.८२</td><td class="ctr">९९.३६</td><td class="ctr">७९.६%</td></tr>
+                    <tr><td class="ctr">४</td><td><strong>गण्डकी प्रदेश</strong></td><td class="num">६,५२,६५६</td><td class="ctr">३.७५</td><td class="ctr">९०.३८</td><td class="ctr">५७.८%</td></tr>
+                    <tr><td class="ctr">५</td><td><strong>लुम्बिनी प्रदेश</strong></td><td class="num">१०,६८,६६२</td><td class="ctr">४.७६</td><td class="ctr">९२.२२</td><td class="ctr">६३.२%</td></tr>
+                    <tr><td class="ctr">६</td><td><strong>कर्णाली प्रदेश</strong></td><td class="num">३,५४,३५५</td><td class="ctr">४.७४</td><td class="ctr">९५.२७</td><td class="ctr">३५.५%</td></tr>
+                    <tr><td class="ctr">७</td><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td class="num">५,८६,३०१</td><td class="ctr">४.५८</td><td class="ctr">८९.१८</td><td class="ctr">३४.६%</td></tr>
+                    <tr class="total-row"><td class="ctr">—</td><td><strong>नेपाल (राष्ट्रव्यापी)</strong></td><td class="num"><strong>६६,६६,९३७</strong></td><td class="ctr"><strong>४.३७</strong></td><td class="ctr"><strong>९५.५९</strong></td><td class="ctr"><strong>६६.१७%</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight-box">
+            <div class="insight-title"><i class="fas fa-lightbulb"></i> मुख्य अवलोकन</div>
+            <ul>
+                <li><strong>सबैभन्दा ठुलो औसत परिवार:</strong> मधेस (५.३१); <strong>सबैभन्दा सानो:</strong> गण्डकी (३.७५) <span class="ref">[५]</span>।</li>
+                <li><strong>लैंगिक अनुपात:</strong> मधेसमा मात्र पुरुष बढी (१०१.०); अन्य सबै प्रदेशमा महिला बढी। राष्ट्रिय औसत ९५.५९ <span class="ref">[५]</span>।</li>
+                <li><strong>शहरीकरण:</strong> सबैभन्दा बढी बागमती (७९.६%); सबैभन्दा कम सुदूरपश्चिम (३४.६%); राष्ट्रिय औसत ६६.१७% <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा धेरै घरपरिवार:</strong> बागमती (१५,८५,३२४); <strong>सबैभन्दा कम:</strong> कर्णाली (३,५४,३५५) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ३. प्रशासनिक तथा स्थानीय तह ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section3">
+            <i class="fas fa-sitemap"></i>
+            ३. प्रदेशगत प्रशासनिक तथा स्थानीय तह विवरण
+            <span class="mark-badge purple">Admin Units</span>
+        </div>
+
+        <div class="content-box purple-light">
+            <p>प्रदेशअनुसार जिल्ला, महानगर, उपमहानगर, नगरपालिका, गाउँपालिका तथा कुल स्थानीय तहको संख्या निम्न अनुसार छ <span class="ref">[५]</span>:</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#880E4F;"></i> तालिका ३: प्रदेशगत प्रशासनिक संरचना <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेश</th>
+                        <th>जिल्ला</th>
+                        <th>महानगर</th>
+                        <th>उपमहानगर</th>
+                        <th>नगरपालिका</th>
+                        <th>गाउँपालिका</th>
+                        <th>कुल स्थानीय तह</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ctr">१</td><td><strong>कोशी प्रदेश</strong></td><td class="ctr">१४</td><td class="ctr">१</td><td class="ctr">२</td><td class="ctr">४६</td><td class="ctr">८८</td><td class="ctr"><strong>१३७</strong></td></tr>
+                    <tr><td class="ctr">२</td><td><strong>मधेस प्रदेश</strong></td><td class="ctr">८</td><td class="ctr">१</td><td class="ctr">३</td><td class="ctr">७३</td><td class="ctr">५९</td><td class="ctr"><strong>१३६</strong></td></tr>
+                    <tr><td class="ctr">३</td><td><strong>बागमती प्रदेश</strong></td><td class="ctr">१३</td><td class="ctr">३</td><td class="ctr">१</td><td class="ctr">४१</td><td class="ctr">७४</td><td class="ctr"><strong>११९</strong></td></tr>
+                    <tr><td class="ctr">४</td><td><strong>गण्डकी प्रदेश</strong></td><td class="ctr">११</td><td class="ctr">१</td><td class="ctr">०</td><td class="ctr">२६</td><td class="ctr">५८</td><td class="ctr"><strong>८५</strong></td></tr>
+                    <tr><td class="ctr">५</td><td><strong>लुम्बिनी प्रदेश</strong></td><td class="ctr">१२</td><td class="ctr">०</td><td class="ctr">४</td><td class="ctr">३२</td><td class="ctr">७३</td><td class="ctr"><strong>१०९</strong></td></tr>
+                    <tr><td class="ctr">६</td><td><strong>कर्णाली प्रदेश</strong></td><td class="ctr">१०</td><td class="ctr">०</td><td class="ctr">०</td><td class="ctr">२५</td><td class="ctr">५४</td><td class="ctr"><strong>७९</strong></td></tr>
+                    <tr><td class="ctr">७</td><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td class="ctr">९</td><td class="ctr">०</td><td class="ctr">१</td><td class="ctr">३३</td><td class="ctr">५४</td><td class="ctr"><strong>८८</strong></td></tr>
+                    <tr class="total-row"><td class="ctr">—</td><td><strong>जम्मा (नेपाल)</strong></td><td class="ctr"><strong>७७</strong></td><td class="ctr"><strong>६</strong></td><td class="ctr"><strong>११</strong></td><td class="ctr"><strong>२७६</strong></td><td class="ctr"><strong>४६०</strong></td><td class="ctr"><strong>७५३</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight-box">
+            <div class="insight-title"><i class="fas fa-lightbulb"></i> मुख्य अवलोकन</div>
+            <ul>
+                <li><strong>सबैभन्दा धेरै जिल्ला:</strong> कोशी (१४) र सबैभन्दा कम मधेस (८) <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा धेरै महानगर:</strong> बागमती (३ — काठमाडौँ, ललितपुर, भरतपुर); बाँकीमा ०/१ <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा धेरै स्थानीय तह:</strong> कोशी (१३७); सबैभन्दा कम कर्णाली (७९) <span class="ref">[५]</span>।</li>
+                <li><strong>कुल राष्ट्रिय:</strong> ७७ जिल्ला, ६ महानगर, ११ उपमहानगर, २७६ नगरपालिका, ४६० गाउँपालिका र ७५३ स्थानीय तह <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ४. अक्षांश र देशान्तर ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section4">
+            <i class="fas fa-globe"></i>
+            ४. प्रदेशगत अक्षांश र देशान्तर विवरण
+            <span class="mark-badge blue">Geo-Coordinates</span>
+        </div>
+
+        <div class="content-box teal-light">
+            <p>प्रदेशहरूको भौगोलिक स्थिति (अक्षांश र देशान्तर सीमा) र राजधानी निम्न अनुसार छ <span class="ref">[५]</span>:</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#880E4F;"></i> तालिका ४: प्रदेशगत भौगोलिक स्थिति <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेशको नाम</th>
+                        <th>मुकाम / राजधानी</th>
+                        <th>अक्षांश (Latitude)</th>
+                        <th>देशान्तर (Longitude)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ctr">१</td><td><strong>कोशी प्रदेश</strong></td><td>विराटनगर</td><td class="ctr">२६° २२' देखि २७° ५३' उत्तर</td><td class="ctr">८६° ५१' देखि ८८° १२' पूर्व</td></tr>
+                    <tr><td class="ctr">२</td><td><strong>मधेस प्रदेश</strong></td><td>जनकपुरधाम</td><td class="ctr">२६° २६' देखि २७° २२' उत्तर</td><td class="ctr">८४° ५३' देखि ८६° ४६' पूर्व</td></tr>
+                    <tr><td class="ctr">३</td><td><strong>बागमती प्रदेश</strong></td><td>हेटौँडा</td><td class="ctr">२७° १२' देखि २८° २३' उत्तर</td><td class="ctr">८४° ११' देखि ८६° ३५' पूर्व</td></tr>
+                    <tr><td class="ctr">४</td><td><strong>गण्डकी प्रदेश</strong></td><td>पोखरा</td><td class="ctr">२७° ३३' देखि २९° १९' उत्तर</td><td class="ctr">८२° ५२' देखि ८४° २७' पूर्व</td></tr>
+                    <tr><td class="ctr">५</td><td><strong>लुम्बिनी प्रदेश</strong></td><td>राप्ती उपत्यका (देउखुरी)</td><td class="ctr">२७° २१' देखि २८° ४५' उत्तर</td><td class="ctr">८२° ०४' देखि ८४° १०' पूर्व</td></tr>
+                    <tr><td class="ctr">६</td><td><strong>कर्णाली प्रदेश</strong></td><td>वीरेन्द्रनगर</td><td class="ctr">२८° २१' देखि ३०° २७' उत्तर</td><td class="ctr">८१° १८' देखि ८३° ३३' पूर्व</td></tr>
+                    <tr><td class="ctr">७</td><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td>धनगढी</td><td class="ctr">२८° २२' देखि ३०° १४' उत्तर</td><td class="ctr">८०° ०४' देखि ८१° ३५' पूर्व</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight-box">
+            <div class="insight-title"><i class="fas fa-lightbulb"></i> मुख्य अवलोकन</div>
+            <ul>
+                <li><strong>सबैभन्दा पूर्वी प्रदेश:</strong> कोशी (देशान्तर ८८° १२' पूर्वसम्म) <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा पश्चिमी प्रदेश:</strong> सुदूरपश्चिम (देशान्तर ८०° ०४' पूर्वदेखि) <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा उत्तरी प्रदेश:</strong> कर्णाली (अक्षांश ३०° २७' उत्तरसम्म) <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा दक्षिणी प्रदेश:</strong> कोशी र मधेस (२६° २२'/२६° २६' उत्तरदेखि) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ५. प्रमुख १० जातजाति ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section5">
+            <i class="fas fa-users-rectangle"></i>
+            ५. बढी जनसंख्या भएका प्रमुख १० जातजाति
+            <span class="mark-badge pink">Ethnicity</span>
+        </div>
+
+        <div class="content-box gold-light">
+            <p>राष्ट्रिय जनगणना २०२१ अनुसार नेपालमा बढी जनसंख्या भएका शीर्ष <strong>१० जातजाति</strong>हरूको विवरण निम्न अनुसार छ <span class="ref">[५]</span>:</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#880E4F;"></i> तालिका ५: शीर्ष १० जातजाति (जनसंख्या र प्रतिशत) <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>जातजाति</th>
+                        <th>जनसंख्या</th>
+                        <th>प्रतिशत (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ctr">१</td><td><strong>क्षेत्री</strong></td><td class="num">४७,९६,९९५</td><td class="ctr">१६.४५%</td></tr>
+                    <tr><td class="ctr">२</td><td><strong>ब्राह्मण (पहाडी)</strong></td><td class="num">३२,९२,३७३</td><td class="ctr">११.२९%</td></tr>
+                    <tr><td class="ctr">३</td><td><strong>मगर</strong></td><td class="num">२०,१३,४९८</td><td class="ctr">६.९०%</td></tr>
+                    <tr><td class="ctr">४</td><td><strong>थारू</strong></td><td class="num">१८,०७,१२४</td><td class="ctr">६.२०%</td></tr>
+                    <tr><td class="ctr">५</td><td><strong>तामाङ</strong></td><td class="num">१६,३९,८६६</td><td class="ctr">५.६२%</td></tr>
+                    <tr><td class="ctr">६</td><td><strong>विश्वकर्मा</strong></td><td class="num">१४,७०,०१०</td><td class="ctr">५.०४%</td></tr>
+                    <tr><td class="ctr">७</td><td><strong>मुसलमान</strong></td><td class="num">१४,१८,६७७</td><td class="ctr">४.८६%</td></tr>
+                    <tr><td class="ctr">८</td><td><strong>नेवार</strong></td><td class="num">१३,४१,३६३</td><td class="ctr">४.६०%</td></tr>
+                    <tr><td class="ctr">९</td><td><strong>यादव</strong></td><td class="num">१२,२८,५८१</td><td class="ctr">४.२१%</td></tr>
+                    <tr><td class="ctr">१०</td><td><strong>राई</strong></td><td class="num">६,४०,६७४</td><td class="ctr">२.२०%</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight-box">
+            <div class="insight-title"><i class="fas fa-lightbulb"></i> मुख्य अवलोकन</div>
+            <ul>
+                <li><strong>सबैभन्दा ठुलो जातजाति:</strong> क्षेत्री (१६.४५%) — करिब ४८ लाख <span class="ref">[५]</span>।</li>
+                <li><strong>दोस्रो:</strong> पहाडी ब्राह्मण (११.२९%) — करिब ३३ लाख <span class="ref">[५]</span>।</li>
+                <li><strong>मधेसी मूलका:</strong> थारू (६.२०%), यादव (४.२१%) र मुसलमान (४.८६%) शीर्ष १० मा <span class="ref">[५]</span>।</li>
+                <li><strong>पहाडी जनजाति:</strong> मगर (६.९०%), तामाङ (५.६२%), नेवार (४.६०%) र राई (२.२०%) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ६. उमेर समूह अनुसार जनसंख्या ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section6">
+            <i class="fas fa-chart-pie"></i>
+            ६. उमेर समूह अनुसारको प्रदेशगत जनसंख्या वितरण
+            <span class="mark-badge gold">Age Structure</span>
+        </div>
+
+        <div class="content-box blue-light">
+            <p>प्रदेशअनुसार <strong>१४ वर्ष मुनिको</strong>, <strong>१५ देखि ५९ वर्षको</strong> र <strong>६० वर्ष माथिको</strong> जनसंख्याको प्रतिशत निम्न अनुसार छ <span class="ref">[५]</span>:</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#880E4F;"></i> तालिका ६: उमेर समूह अनुसार प्रदेशगत जनसंख्या प्रतिशत <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेश</th>
+                        <th>१४ वर्ष मुनिको (%)</th>
+                        <th>१५–५९ वर्षको (%)</th>
+                        <th>६० वर्ष माथिको (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ctr">१</td><td><strong>कोशी प्रदेश</strong></td><td class="ctr">२७.४%</td><td class="ctr">६१.५%</td><td class="ctr">११.१%</td></tr>
+                    <tr><td class="ctr">२</td><td><strong>मधेस प्रदेश</strong></td><td class="ctr">३४.६%</td><td class="ctr">५७.८%</td><td class="ctr">७.६%</td></tr>
+                    <tr><td class="ctr">३</td><td><strong>बागमती प्रदेश</strong></td><td class="ctr">२५.२%</td><td class="ctr">६४.१%</td><td class="ctr">१०.७%</td></tr>
+                    <tr><td class="ctr">४</td><td><strong>गण्डकी प्रदेश</strong></td><td class="ctr">२३.९%</td><td class="ctr">६२.८%</td><td class="ctr">१३.३%</td></tr>
+                    <tr><td class="ctr">५</td><td><strong>लुम्बिनी प्रदेश</strong></td><td class="ctr">३०.५%</td><td class="ctr">५९.१%</td><td class="ctr">१०.४%</td></tr>
+                    <tr><td class="ctr">६</td><td><strong>कर्णाली प्रदेश</strong></td><td class="ctr">३४.१%</td><td class="ctr">५७.०%</td><td class="ctr">८.९%</td></tr>
+                    <tr><td class="ctr">७</td><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td class="ctr">३२.०%</td><td class="ctr">५६.९%</td><td class="ctr">११.१%</td></tr>
+                    <tr class="total-row"><td class="ctr">—</td><td><strong>नेपाल (राष्ट्रव्यापी औसत)</strong></td><td class="ctr"><strong>२७.८३%</strong></td><td class="ctr"><strong>६१.९६%</strong></td><td class="ctr"><strong>१०.२१%</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight-box">
+            <div class="insight-title"><i class="fas fa-lightbulb"></i> मुख्य अवलोकन</div>
+            <ul>
+                <li><strong>बाल जनसंख्या (०–१४) सबैभन्दा बढी:</strong> मधेस (३४.६%) र कर्णाली (३४.१%); सबैभन्दा कम गण्डकी (२३.९%) <span class="ref">[५]</span>।</li>
+                <li><strong>कार्यशील उमेर (१५–५९) सबैभन्दा बढी:</strong> बागमती (६४.१%); सबैभन्दा कम सुदूरपश्चिम (५६.९%) <span class="ref">[५]</span>।</li>
+                <li><strong>ज्येष्ठ नागरिक (६०+) सबैभन्दा बढी:</strong> गण्डकी (१३.३%); सबैभन्दा कम मधेस (७.६%) <span class="ref">[५]</span>।</li>
+                <li><strong>निष्कर्ष:</strong> गण्डकी प्रदेशमा वृद्ध जनसंख्या बढी (aging population) र मधेस/कर्णालीमा युवा जनसंख्या बढी (young population) देखिन्छ <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ७. मानव विकास सूचकाङ्क (HDI) — NEW ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section7">
+            <i class="fas fa-award"></i>
+            ७. प्रादेशिक मानव विकास सूचकाङ्क (HDI)
+            <span class="mark-badge gold">HDI 2025</span>
+        </div>
+
+        <div class="content-box burgundy-light">
+            <p>UNDP को संयुक्त प्रयासमा यसअघि निकालिएको <strong>प्रादेशिक मानव विकास सूचकाङ्क (HDI)</strong> को तथ्याङ्क हो। सन् २०२५ मे/जुनमा जारी भएको UNDP को नयाँ विश्वव्यापी <strong>मानव विकास प्रतिवेदन (Human Development Report 2025)</strong> का आधारमा परिमार्जित गरिएको प्रादेशिक विवरण यस प्रकार छ <span class="ref">[५]</span>:</p>
+        </div>
+
+        <div class="content-box green-light">
+            <p><i class="fas fa-flag" style="color:#1f7a4a; margin-right:8px;"></i><strong>राष्ट्रिय स्थिति:</strong> यस प्रतिवेदनमा नेपालको समग्र राष्ट्रिय HDI मूल्य <strong>०.६२२</strong> (मध्यम मानव विकास श्रेणी) पुगेको छ र नेपाल विश्वमा <strong>१४५औँ स्थान</strong>मा छ <span class="ref">[५]</span>।</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#880E4F;"></i> तालिका ७: प्रादेशिक मानव विकास सूचकाङ्क (HDI) — UNDP २०२५ <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेश</th>
+                        <th>विशेष जाति</th>
+                        <th>साक्षरता % (जनगणना २०२१)</th>
+                        <th>HDI सूचकाङ्क</th>
+                        <th>नयाँ क्रम (उच्चबाट कम)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ctr">१</td>
+                        <td><strong>बागमती प्रदेश</strong></td>
+                        <td>तामाङ, नेवार, चेपाङ, थामी, ह्योल्मो</td>
+                        <td class="ctr">८२.१%</td>
+                        <td class="ctr"><strong>०.६५२</strong></td>
+                        <td class="ctr"><span class="rank-badge rank-1">१ (सबैभन्दा उच्च)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="ctr">२</td>
+                        <td><strong>गण्डकी प्रदेश</strong></td>
+                        <td>गुरुङ, थकाली, दुरा, छन्त्याल, बाह्रगाउँले</td>
+                        <td class="ctr">८१.७%</td>
+                        <td class="ctr"><strong>०.६४१</strong></td>
+                        <td class="ctr"><span class="rank-badge rank-2">२ (दोस्रो उच्च)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="ctr">३</td>
+                        <td><strong>कोशी प्रदेश (प्रदेश १)</strong></td>
+                        <td>राई, लिम्बु, शेर्पा, लेप्चा, राजवंशी, सतार</td>
+                        <td class="ctr">७७.९%</td>
+                        <td class="ctr"><strong>०.६१७</strong></td>
+                        <td class="ctr"><span class="rank-badge rank-3">३ (तेस्रो उच्च)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="ctr">४</td>
+                        <td><strong>लुम्बिनी प्रदेश</strong></td>
+                        <td>मुसलमान, मगर, थारु</td>
+                        <td class="ctr">७१.६%</td>
+                        <td class="ctr"><strong>०.६०८</strong></td>
+                        <td class="ctr"><span class="rank-badge rank-4">४ (चौथो)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="ctr">५</td>
+                        <td><strong>सुदूरपश्चिम प्रदेश</strong></td>
+                        <td>राना थारु, व्याँसी, ठकुरी</td>
+                        <td class="ctr">७०.३%</td>
+                        <td class="ctr"><strong>०.६०१</strong></td>
+                        <td class="ctr"><span class="rank-badge rank-5">५ (पाँचौँ)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="ctr">६</td>
+                        <td><strong>कर्णाली प्रदेश</strong></td>
+                        <td>ठकुरी, मुगाली, डोल्पो</td>
+                        <td class="ctr">६६.१%</td>
+                        <td class="ctr"><strong>०.५९०</strong></td>
+                        <td class="ctr"><span class="rank-badge rank-6">६ (छैठौँ)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="ctr">७</td>
+                        <td><strong>मधेस प्रदेश (प्रदेश २)</strong></td>
+                        <td>यादव, मुसलमान, थारु, मुसहर</td>
+                        <td class="ctr">५७.७%</td>
+                        <td class="ctr"><strong>०.५६१</strong></td>
+                        <td class="ctr"><span class="rank-badge rank-7">७ (सबैभन्दा कम)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== HDI ANALYSIS / विस्तृत विश्लेषण ===== -->
+        <div class="analysis-box">
+            <div class="analysis-title">
+                <i class="fas fa-chart-line"></i>
+                प्रादेशिक मानव विकास सूचकाङ्क (HDI) को विस्तृत विश्लेषण
+            </div>
+
+            <h4>१. राष्ट्रिय तथा प्रादेशिक असमानता</h4>
+            <p>नेपालको राष्ट्रिय HDI मूल्य <strong>०.६२२</strong> रहेको छ, जुन "मध्यम मानव विकास" श्रेणीमा पर्दछ। तर प्रादेशिक तहमा हेर्दा <strong>उच्चतम (बागमती — ०.६५२) र न्यूनतम (मधेस — ०.५६१) बिच ०.०९१ को अन्तर</strong> देखिन्छ। यसले प्रदेशहरूबिच मानव विकासमा उल्लेखनीय असन्तुलन रहेको प्रस्ट पार्छ <span class="ref">[५]</span>।</p>
+
+            <h4>२. राष्ट्रिय औसतभन्दा माथि र तलका प्रदेश</h4>
+            <ul>
+                <li><strong>औसतभन्दा माथि (२ प्रदेश):</strong> बागमती (०.६५२) र गण्डकी (०.६४१) — दुवै राष्ट्रिय औसत ०.६२२ भन्दा माथि <span class="ref">[५]</span>।</li>
+                <li><strong>औसतभन्दा तल (५ प्रदेश):</strong> कोशी (०.६१७), लुम्बिनी (०.६०८), सुदूरपश्चिम (०.६०१), कर्णाली (०.५९०) र मधेस (०.५६१) <span class="ref">[५]</span>।</li>
+            </ul>
+            <p>यसबाट के स्पष्ट हुन्छ भने देशको <strong>कुल ७ मध्ये ५ प्रदेश राष्ट्रिय औसतभन्दा तल</strong> छन् — अर्थात् विकासको लाभ केही केन्द्रीय प्रदेशमा मात्र केन्द्रित भएको देखिन्छ।</p>
+
+            <h4>३. साक्षरता र HDI बिचको सहसम्बन्ध</h4>
+            <p>तालिकाबाट स्पष्ट देखिन्छ — <strong>साक्षरता दर र HDI मूल्यबिच सकारात्मक सहसम्बन्ध</strong> रहेको छ।</p>
+            <ul>
+                <li>सबैभन्दा उच्च साक्षरता भएको बागमती (८२.१%) को HDI पनि सबैभन्दा उच्च (०.६५२) छ <span class="ref">[५]</span>।</li>
+                <li>सबैभन्दा कम साक्षरता भएको मधेस (५७.७%) को HDI पनि सबैभन्दा कम (०.५६१) छ <span class="ref">[५]</span>।</li>
+                <li>यसले <strong>शिक्षा नै मानव विकासको मुख्य आधारस्तम्भ</strong> हो भन्ने कुरालाई पुष्टि गर्दछ।</li>
+            </ul>
+
+            <h4>४. उच्च HDI का कारणहरू</h4>
+            <ul>
+                <li><strong>बागमती प्रदेश (क्रम १):</strong> राष्ट्रिय राजधानी काठमाडौँको उपस्थिति, उच्च शिक्षा, स्वास्थ्य सेवा, रोजगारी, यातायात र सञ्चारको राम्रो पहुँच, तथा सबैभन्दा बढी शहरीकरण (७९.६%) का कारण सबैभन्दा उच्च HDI प्राप्त भएको हो <span class="ref">[५]</span>।</li>
+                <li><strong>गण्डकी प्रदेश (क्रम २):</strong> पर्यटन, जलविद्युत्, उच्च साक्षरता (८१.७%), तुलनात्मक रूपमा राम्रो स्वास्थ्य सेवा र पूर्वाधार विकासका कारण दोस्रो स्थानमा छ <span class="ref">[५]</span>।</li>
+                <li><strong>कोशी प्रदेश (क्रम ३):</strong> पूर्वी नेपालको प्रमुख आर्थिक केन्द्र विराटनगर, शिक्षा र स्वास्थ्यमा राम्रो पहुँच, तथा सडक सञ्जालको विकासका कारण तेस्रो स्थानमा छ <span class="ref">[५]</span>।</li>
+            </ul>
+
+            <h4>५. न्यून HDI का कारणहरू</h4>
+            <ul>
+                <li><strong>मधेस प्रदेश (क्रम ७ — सबैभन्दा कम):</strong> सबैभन्दा कम साक्षरता (५७.७%), गरिबी, सामाजिक विभेद (जातीय तथा लैंगिक), शिक्षा र स्वास्थ्य सेवामा कमजोर पहुँच, तथा औद्योगिक विकासको अभाव मुख्य कारण हुन् <span class="ref">[५]</span>।</li>
+                <li><strong>कर्णाली प्रदेश (क्रम ६):</strong> भौगोलिक विकटता, दुर्गम बस्ती, यातायात र सञ्चारको कमी, सीमित रोजगारीका अवसर तथा शैक्षिक तथा स्वास्थ्य संस्थाको न्यून पहुँचले HDI कम भएको हो <span class="ref">[५]</span>।</li>
+                <li><strong>सुदूरपश्चिम प्रदेश (क्रम ५):</strong> साक्षरता ७०.३% रहे पनि भौगोलिक कठिनाइ, सीमान्तीकरण र कमजोर पूर्वाधारका कारण HDI राष्ट्रिय औसतभन्दा तल छ <span class="ref">[५]</span>।</li>
+            </ul>
+
+            <h4>६. नीतिगत सुझावहरू</h4>
+            <ol>
+                <li><strong>शिक्षामा लगानी वृद्धि:</strong> विशेषगरी मधेस, कर्णाली र सुदूरपश्चिममा विद्यालय शिक्षाको गुणस्तर सुधार गर्नुपर्छ <span class="ref">[५]</span>।</li>
+                <li><strong>स्वास्थ्य सेवाको पहुँच:</strong> दुर्गम प्रदेशहरूमा स्वास्थ्य संस्था, स्वास्थ्यकर्मी र औषधिको सहज पहुँच सुनिश्चित गर्नुपर्छ <span class="ref">[५]</span>।</li>
+                <li><strong>रोजगारी सिर्जना:</strong> स्थानीय स्रोतमा आधारित उद्योग, कृषि आधुनिकीकरण र पर्यटन विकासमार्फत रोजगारी सिर्जना गर्नुपर्छ <span class="ref">[५]</span>।</li>
+                <li><strong>पूर्वाधार विकास:</strong> सडक, सञ्चार, विद्युत् र खानेपानी जस्ता आधारभूत पूर्वाधारमा समान लगानी आवश्यक छ <span class="ref">[५]</span>।</li>
+                <li><strong>समावेशी विकास:</strong> दलित, मुस्लिम, मधेसी, अपाङ्गता भएका र सीमान्तकृत समुदायलाई लक्षित कार्यक्रम लागू गर्नुपर्छ <span class="ref">[५]</span>।</li>
+            </ol>
+
+            <h4>७. निष्कर्ष</h4>
+            <p>समग्रमा, नेपालको HDI मूल्य निरन्तर सुधारोन्मुख छ — तर <strong>प्रादेशिक असन्तुलन</strong> अझै ठुलो चुनौतीका रूपमा रहेको छ। बागमती र गण्डकीको उच्च HDI र मधेस तथा कर्णालीको न्यून HDI बिचको खाडल कम गर्न <strong>समतामूलक (Equity-based) विकास रणनीति</strong> आवश्यक छ। सबै प्रदेशको मानव विकास दर समान रूपले बढाउन सके मात्र सङ्घीयताको वास्तविक उद्देश्य — "समृद्ध नेपाल, सुखी नेपाली" — साकार हुन सक्छ <span class="ref">[५]</span>।</p>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ===== FINAL TIP ===== -->
+        <div class="tip-box" style="background:#880E4F; margin-top:20px;">
+            <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+            <strong>अन्तिम सल्लाह:</strong> परीक्षामा तथ्याङ्कसँग सम्बन्धित प्रश्नहरू प्रायः तुलनात्मक (सबैभन्दा बढी/कम) र व्याख्यात्मक (कारण/विश्लेषण) रूपमा आउँछन्। यस क्याप्सुलका ७ वटै तालिकालाई राम्ररी अभ्यास गर्नुहोस् र "मुख्य अवलोकन" तथा "विस्तृत विश्लेषण" बक्सहरूमा दिइएका मुख्य बुँदाहरू कण्ठ गर्नुहोस् — यसले उच्च अङ्क प्राप्त गर्न सघाउनेछ। विशेषगरी <strong>HDI को क्रम र साक्षरता दर</strong> परीक्षामा बारम्बार सोधिने विषय हुन्।
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५ तथ्याङ्क</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('scrollUpBtn');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) { btn.classList.add('visible'); }
+                else { btn.classList.remove('visible'); }
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+
+</body>
+</html>
