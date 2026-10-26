@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ १ – नेपालका प्रशासनिक प्रदेश (कक्षा १२)</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #eef2fa;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fcfdfe;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #d0d4dc;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #0D47A1;
+            line-height: 1.2;
+        }
+
+        .main-header h1 i { color: #1565C0; margin-right: 10px; }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #1565C0;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .credit-bar {
+            background: #e3e9f5;
+            border-radius: 60px;
+            padding: 14px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #b8c4dc;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .credit-bar .name { color: #0b2b4a; font-weight: 800; font-size: 1.15rem; }
+        .credit-bar .email { color: #0D47A1; font-weight: 700; }
+        .credit-bar i { color: #0D47A1; margin-right: 6px; }
+
+        /* ----- TABLE OF CONTENTS ----- */
+        .toc-section {
+            background: #0D47A1;
+            border-radius: 20px;
+            padding: 18px 24px;
+            margin: 6px 0 28px;
+            border: 2px solid #3b6fc4;
+        }
+
+        .toc-section h3 {
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.36rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toc-section h3 i { color: #f5d742; font-size: 1.3rem; }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4px 16px;
+        }
+
+        .toc-grid a {
+            color: #e0e8f0;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16.5px;
+            padding: 4px 0 4px 6px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toc-grid a:hover {
+            color: #f5d742;
+            border-bottom-color: #f5d742;
+            transform: translateX(4px);
+        }
+
+        .toc-grid a i { color: #f5d742; font-size: 0.6rem; min-width: 14px; }
+
+        @media (max-width: 700px) { .toc-grid { grid-template-columns: 1fr 1fr; } .toc-grid a { font-size: 15px; } }
+        @media (max-width: 480px) { .toc-grid { grid-template-columns: 1fr; } .toc-grid a { font-size: 14px; } }
+
+        /* ----- SECTION HEADERS ----- */
+        .section-head {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #0D47A1;
+            margin: 42px 0 16px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            scroll-margin-top: 80px;
+            box-shadow: 0 3px 12px rgba(13, 71, 161, 0.35);
+        }
+
+        .section-head i { font-size: 1.5rem; color: #f5d742; }
+
+        .section-head .mark-badge {
+            color: #0D47A1;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: 4px;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #f5d742; color: #0b2b4a; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.pink { background: #f48fb1; color: #0b2b4a; }
+
+        .sub-head {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #0A2E6E;
+            margin: 28px 0 12px;
+            padding-left: 14px;
+            border-left: 6px solid #0D47A1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            scroll-margin-top: 80px;
+        }
+
+        .sub-head i { color: #0D47A1; font-size: 1.1rem; }
+
+        .sub-head-sm {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0A2E6E;
+            margin: 18px 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sub-head-sm i { color: #0D47A1; }
+
+        /* ----- CONTENT BOXES ----- */
+        .content-box {
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #0D47A1;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .content-box p, .content-box ul, .content-box ol, .content-box li {
+            font-size: 1.19rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .content-box ul, .content-box ol { padding-left: 28px; margin: 8px 0 8px; }
+        .content-box li { margin-bottom: 6px; }
+        .content-box strong { color: #0b2b4a; font-weight: 900; }
+
+        .content-box.blue-light { border-left-color: #0D47A1; background: #e8f0fa; }
+        .content-box.indigo-light { border-left-color: #3949AB; background: #eceefa; }
+        .content-box.sky-light { border-left-color: #0277BD; background: #e6f4fb; }
+        .content-box.green-light { border-left-color: #1f7a4a; background: #eef8f2; }
+        .content-box.gold-light { border-left-color: #b45309; background: #fef8ee; }
+        .content-box.purple-light { border-left-color: #6A1B9A; background: #f4eef8; }
+        .content-box.orange-light { border-left-color: #d97706; background: #fef6ed; }
+        .content-box.pink-light { border-left-color: #a03a5a; background: #f8eef2; }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0 14px;
+            border-radius: 14px;
+            border: 2px solid #b8c4dc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.05rem;
+            min-width: 280px;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border: 1px solid #b8c4dc;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #0D47A1;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.08rem;
+        }
+
+        td { font-weight: 500; font-size: 1.05rem; }
+
+        .table-caption {
+            background: #e3e9f5;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.08rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #b8c4dc;
+        }
+
+        /* ----- Q&A BLOCKS ----- */
+        .qa-block {
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #0D47A1;
+        }
+
+        .qa-block.color1 { border-left-color: #0D47A1; background: #e8f0fa; }
+        .qa-block.color2 { border-left-color: #1a3a5c; background: #f0f5fa; }
+        .qa-block.color3 { border-left-color: #1f7a4a; background: #f2f8f5; }
+        .qa-block.color4 { border-left-color: #6b3fa0; background: #f6f2f8; }
+        .qa-block.color5 { border-left-color: #b45309; background: #fcf9f4; }
+        .qa-block.color6 { border-left-color: #0f7a7a; background: #eef8f8; }
+        .qa-block.color7 { border-left-color: #a03a5a; background: #fcf5f8; }
+        .qa-block.color8 { border-left-color: #d97706; background: #fef8ef; }
+
+        .qa-block .q {
+            font-weight: 900;
+            color: #0A2E6E;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 1.22rem;
+        }
+
+        .qa-block .q .qnum { color: #0D47A1; font-weight: 900; min-width: 30px; }
+
+        .qa-block .a {
+            margin-top: 6px;
+            padding-left: 46px;
+            color: #1e2a3a;
+            font-weight: 500;
+            font-size: 1.19rem;
+        }
+
+        .qa-block .a ul, .qa-block .a ol { padding-left: 24px; margin: 6px 0 6px; }
+        .qa-block .a li { margin-bottom: 5px; font-weight: 500; }
+        .qa-block .a strong { color: #0b2b4a; font-weight: 900; }
+        .qa-block .a .step-icon { display: inline-block; margin-right: 6px; font-weight: 900; }
+        .qa-block .a .step-title { font-weight: 700; color: #0A2E6E; font-size: 1.1rem; }
+
+        /* ----- GLOSSARY GRID ----- */
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 16px 0 8px;
+        }
+
+        .glossary-item {
+            background: #faf8f5;
+            border-radius: 12px;
+            padding: 14px 18px;
+            border-left: 5px solid #0D47A1;
+        }
+
+        .glossary-item strong { color: #0A2E6E; font-size: 1.15rem; font-weight: 900; }
+        .glossary-item p { margin-top: 3px; font-size: 1.125rem; color: #2d3a4a; font-weight: 500; }
+
+        /* ----- FLOW CHART ----- */
+        .mermaid-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin: 16px 0;
+            padding: 14px 10px;
+            background: #e8f0fa;
+            border-radius: 20px;
+            border: 2px dashed #3b6fc4;
+        }
+
+        .mermaid-step {
+            background: #ffffff;
+            padding: 8px 22px;
+            border-radius: 40px;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #0b2b4a;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            border: 2px solid #0D47A1;
+            text-align: center;
+            min-width: 160px;
+        }
+
+        .mermaid-arrow { font-size: 1.6rem; color: #7f8fa6; line-height: 1; }
+
+        @media (max-width: 600px) {
+            .mermaid-step { font-size: 0.85rem; padding: 6px 14px; min-width: 120px; }
+        }
+
+        @media (min-width: 768px) {
+            .mermaid-flow { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 4px 14px; }
+        }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #0D47A1;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(13, 71, 161, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+        #scrollUpBtn:hover { background: #0A2E6E; transform: scale(1.08); box-shadow: 0 6px 28px rgba(13, 71, 161, 0.5); }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 3px solid #d0d4dc;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 28px;
+            font-weight: 600;
+        }
+
+        .footer-copy i { color: #0D47A1; margin-right: 6px; }
+        .footer-copy .highlight { font-weight: 800; color: #0b2b4a; }
+
+        hr { border: none; border-top: 3px dotted #b8c4dc; margin: 28px 0 10px; }
+
+        .tip-box {
+            background: #0D47A1;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .tip-box i { margin-right: 8px; }
+        .tip-box strong { color: #f5d742; }
+
+        /* ----- MNEMONIC BOX ----- */
+        .mnemonic-box {
+            background: #eef2fa;
+            border-radius: 16px;
+            padding: 18px 24px;
+            border: 2px solid #b8c4dc;
+            margin: 12px 0;
+            border-left: 6px solid #0D47A1;
+        }
+
+        .mnemonic-box .mn-title {
+            font-weight: 900;
+            color: #0A2E6E;
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+        }
+
+        .mnemonic-box .mn-formula {
+            background: #ffffff;
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 30px;
+            border: 2px solid #0D47A1;
+            font-weight: 900;
+            color: #0D47A1;
+            font-size: 1.05rem;
+            margin: 4px 0;
+        }
+
+        .mnemonic-box p, .mnemonic-box li {
+            font-weight: 500;
+            font-size: 1.12rem;
+            margin-bottom: 4px;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container { padding: 16px 12px 24px; border-radius: 20px; }
+            .main-header h1 { font-size: 1.5rem; }
+            .section-head { font-size: 1.35rem; padding: 10px 16px; }
+            .sub-head { font-size: 1.15rem; }
+            .qa-block .a { padding-left: 12px; }
+            .qa-block .q { font-size: 1.05rem; flex-wrap: wrap; }
+            .credit-bar { flex-direction: column; align-items: flex-start; gap: 4px; font-size: 0.9rem; padding: 10px 16px; }
+            .glossary-grid { grid-template-columns: 1fr; }
+            #scrollUpBtn { width: 50px; height: 50px; font-size: 1.3rem; bottom: 18px; right: 18px; }
+            .toc-section { padding: 14px 16px; }
+            .content-box { padding: 14px 16px; }
+            .content-box p, .content-box ul, .content-box ol, .content-box li { font-size: 1.02rem; }
+            .qa-block .a { font-size: 1.02rem; }
+            table { font-size: 0.9rem; }
+            th, td { font-size: 0.9rem; padding: 6px 8px; }
+            .glossary-item strong { font-size: 1.05rem; }
+            .glossary-item p { font-size: 0.98rem; }
+            .mnemonic-box p, .mnemonic-box li { font-size: 1.02rem; }
+            .mermaid-step { font-size: 0.8rem; padding: 4px 12px; min-width: 100px; }
+            .toc-grid a { font-size: 15px; }
+        }
+
+        @media (min-width: 768px) { .container { padding: 36px 46px 50px; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <div>
+                <h1>
+                    <i class="fas fa-map-marked-alt"></i>
+                    एकाइ ५, पाठ १: नेपालका प्रशासनिक प्रदेश
+                </h1>
+                <div class="subtitle">
+                    कक्षा १२ · सामाजिक अध्ययन तथा जीवनोपयोगी शिक्षा
+                    <span class="badge-class"><i class="fas fa-check-circle"></i> परीक्षा विशेष क्याप्सुल</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CREDIT BAR ===== -->
+        <div class="credit-bar">
+            <span><i class="fas fa-user-edit"></i> <span class="name">Prepared by: Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> <span class="email">nregmi511@gmail.com</span></span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ १</span>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <!-- ========================================================== -->
+
+        <div class="toc-section" id="toc">
+            <h3><i class="fas fa-list-ul"></i> विषयसूची</h3>
+            <div class="toc-grid">
+                <a href="#section1"><i class="fas fa-chevron-right"></i> पारिभाषिक शब्दावली</a>
+                <a href="#section2"><i class="fas fa-chevron-right"></i> सङ्घीय संरचना र प्रदेश विवरण</a>
+                <a href="#section3"><i class="fas fa-chevron-right"></i> सुत्रत्मक घोक्ने बुँदाहरू</a>
+                <a href="#section4"><i class="fas fa-chevron-right"></i> अभ्यास समाधान</a>
+                <a href="#section5"><i class="fas fa-chevron-right"></i> परीक्षा उपयोगी Q&A</a>
+            </div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== १. पारिभाषिक शब्दावली ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section1">
+            <i class="fas fa-book-open"></i>
+            १. विषयगत पारिभाषिक शब्दावली
+            <span class="mark-badge blue">Glossary</span>
+        </div>
+
+        <div class="glossary-grid">
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#0D47A1; margin-right:4px;"></i> सङ्घीयता (Federalism)</strong>
+                <p>राज्यको सार्वभौमसत्ता र राजकीय सत्तालाई केन्द्र (सङ्घ), प्रदेश र स्थानीय तह गरी तीन तहमा विभाजन गरी शासन सञ्चालन गर्ने राज्य व्यवस्था <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#0D47A1; margin-right:4px;"></i> प्रशासनिक विभाजन (Administrative Division)</strong>
+                <p>सेवा प्रवाह, विकास निर्माण र शासन व्यवस्थालाई सहज बनाउन देशलाई विभिन्न भूगोल, प्रदेश, जिल्ला र स्थानीय तहमा विभाजन गर्ने प्रक्रिया <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#0D47A1; margin-right:4px;"></i> स्थानीय तह (Local Level)</strong>
+                <p>सङ्घीय व्यवस्थामा गाउँपालिका, नगरपालिका, उपमहानगरपालिका र महानगरपालिकाका रूपमा नागरिकको घरदैलोमा स्थापित अधिकारसम्पन्न स्थानीय सरकार <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#0D47A1; margin-right:4px;"></i> भित्री मधेस (Inner Terai)</strong>
+                <p>महाभारत पर्वतमाला र चुरे पर्वतमालाको बिचमा रहेका उपत्यका क्षेत्रहरू (जस्तै: दाङ, चितवन, मकवानपुर, उदयपुर, सिन्धुली, नवलपुर, सुर्खेत) <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#0D47A1; margin-right:4px;"></i> चुरे / सिवालिक क्षेत्र (Chure/Siwalik Range)</strong>
+                <p>तराईको उत्तरी भाग र महाभारत पर्वतको दक्षिणी भागमा अवस्थित कमजोर र कम उचाइको कान्छो पर्वत शृङ्खला <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#0D47A1; margin-right:4px;"></i> रामसार सूची (Ramsar Site)</strong>
+                <p>अन्तर्राष्ट्रिय महत्त्व बोकेका र जैविक विविधताले धनी सीमसम् (Wetlands) हरूको सूची (जस्तै: घोडाघोडी ताल, बिसहजारी ताल) <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== २. सङ्घीय संरचना र प्रदेश विवरण ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section2">
+            <i class="fas fa-lightbulb"></i>
+            २. नेपालको सङ्घीय संरचना र प्रशासनिक स्थिति
+            <span class="mark-badge gold">Core Notes</span>
+        </div>
+
+        <!-- १. संरचना तालिका -->
+        <div class="sub-head"><i class="fas fa-table"></i> १. नेपालको प्रशासनिक संरचना (NEB Grid)</div>
+
+        <div class="content-box blue-light">
+            <p>नेपाल सङ्घीय लोकतान्त्रिक गणतन्त्रात्मक राज्य हो। राज्य पुनर्संरचनापछि नेपालमा <strong>७ वटा प्रदेश</strong>, <strong>७७ वटा जिल्ला</strong>, <strong>७५३ वटा स्थानीय तह</strong> र <strong>६,७४३ वटा वडा</strong> रहेका छन् <span class="ref">[५]</span>।</p>
+
+            <div class="table-wrap">
+                <div class="table-caption">नेपालका ७ प्रदेशको प्रशासनिक स्थिति <span class="ref">[५]</span></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>प्रदेशको नाम</th>
+                            <th>जिल्ला</th>
+                            <th>महानगर</th>
+                            <th>उपमहानगर</th>
+                            <th>नगरपालिका</th>
+                            <th>गाउँपालिका</th>
+                            <th>कुल स्थानीय तह</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>प्रदेश नं. १ (कोशी)</strong></td><td>१४</td><td>१</td><td>२</td><td>४६</td><td>८८</td><td><strong>१३७</strong></td></tr>
+                        <tr><td><strong>प्रदेश नं. २ (मधेश)</strong></td><td>८</td><td>१</td><td>३</td><td>७३</td><td>५९</td><td><strong>१३६</strong></td></tr>
+                        <tr><td><strong>बागमती प्रदेश</strong></td><td>१३</td><td>३</td><td>१</td><td>४१</td><td>७४</td><td><strong>११९</strong></td></tr>
+                        <tr><td><strong>गण्डकी प्रदेश</strong></td><td>११</td><td>१</td><td>०</td><td>२६</td><td>५८</td><td><strong>८५</strong></td></tr>
+                        <tr><td><strong>लुम्बिनी प्रदेश</strong></td><td>१२</td><td>०</td><td>४</td><td>३२</td><td>७३</td><td><strong>१०९</strong></td></tr>
+                        <tr><td><strong>कर्णाली प्रदेश</strong></td><td>१०</td><td>०</td><td>०</td><td>२५</td><td>५४</td><td><strong>७९</strong></td></tr>
+                        <tr><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td>९</td><td>०</td><td>१</td><td>२३</td><td>५४</td><td><strong>८८</strong></td></tr>
+                        <tr style="background:#e3e9f5;"><td><strong>कुल जम्मा</strong></td><td><strong>७७</strong></td><td><strong>६</strong></td><td><strong>११</strong></td><td><strong>२७६</strong></td><td><strong>४६०</strong></td><td><strong>७५३</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <ul>
+                <li><strong>सबैभन्दा धेरै जिल्ला र स्थानीय तह भएको प्रदेश:</strong> प्रदेश नं. १ (कोशी) — १४ जिल्ला, १३७ स्थानीय तह <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा थोरै जिल्ला भएको प्रदेश:</strong> मधेश प्रदेश (८ जिल्ला) <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा थोरै स्थानीय तह भएको प्रदेश:</strong> कर्णाली प्रदेश (७९ स्थानीय तह) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <!-- २. प्रदेश विवरण -->
+        <div class="sub-head"><i class="fas fa-map"></i> २. सातवटै प्रदेशहरूको भौगोलिक विवरण</div>
+
+        <!-- (क) कोशी -->
+        <div class="sub-head-sm"><i class="fas fa-mountain"></i> (क) प्रदेश नं. १ (कोशी प्रदेश)</div>
+        <div class="content-box blue-light">
+            <ul>
+                <li><strong>अवस्थिति:</strong> २६°३' देखि २८°२' उत्तरी अक्षांश र ८६°१' देखि ८८°१२' पूर्वी देशान्तर <span class="ref">[५]</span>।</li>
+                <li><strong>सिमाना:</strong> पूर्व–पश्चिम बङ्गाल र सिक्किम (भारत), पश्चिम–बागमती र मधेश प्रदेश, उत्तर–तिब्बत (चीन), दक्षिण–बिहार (भारत) <span class="ref">[५]</span>।</li>
+                <li><strong>क्षेत्रफल:</strong> नेपालको कुल क्षेत्रफलको <strong>१५.६%</strong> <span class="ref">[५]</span>।</li>
+                <li><strong>जिल्लाहरू:</strong> १४ वटा (ठुलो: ताप्लेजुङ — ३,६४६ वर्ग कि.मि., सानो: तेह्रथुम — ६७९ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>राजधानी:</strong> विराटनगर <span class="ref">[५]</span>।</li>
+                <li><strong>धरातलीय स्वरूप:</strong> हिमाली (ताप्लेजुङ, सङ्खुवासभा, सोलुखुम्बु), पहाडी (पाँचथर, इलाम, तेह्रथुम, धनकुटा, भोजपुर, ओखलढुङ्गा, खोटाङ), भित्री मधेस (उदयपुर), तराई (झापा, मोरङ, सुनसरी) <span class="ref">[५]</span>।</li>
+                <li><strong>उचाइ सीमा:</strong> सर्वोच्च शिखर सगरमाथा (८,८४८.८६ मि.) देखि होचो भाग केचनाकल (६० मि., झापा) <span class="ref">[५]</span>।</li>
+                <li><strong>नदी तथा ताल:</strong> मेची, कन्काई, कावेली, तमोर, अरुण, दूधकोसी, सुनकोसी। माईपोखरी (इलाम), सालपा पोखरी, वराह पोखरी, इम्जा ताल <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <!-- (ख) मधेश -->
+        <div class="sub-head-sm"><i class="fas fa-tree"></i> (ख) प्रदेश नं. २ (मधेश प्रदेश)</div>
+        <div class="content-box green-light">
+            <ul>
+                <li><strong>अवस्थिति:</strong> २६°३' देखि २७°७' उत्तरी अक्षांश र ८४°९' देखि ८६°९' पूर्वी देशान्तर <span class="ref">[५]</span>।</li>
+                <li><strong>सिमाना:</strong> पूर्व–प्रदेश नं. १, दक्षिण–बिहार (भारत), उत्तर र पश्चिम–बागमती प्रदेश <span class="ref">[५]</span>।</li>
+                <li><strong>क्षेत्रफल:</strong> नेपालको कुल क्षेत्रफलको <strong>६.५%</strong> (सबैभन्दा सानो प्रदेश) <span class="ref">[५]</span>।</li>
+                <li><strong>जिल्लाहरू:</strong> ८ वटा (पर्सा, बारा, रौतहट, सर्लाही, महोत्तरी, धनुषा, सिराहा, सप्तरी)। ठुलो: सप्तरी (१,३६३ वर्ग कि.मि.), सानो: महोत्तरी (१,००२ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>राजधानी:</strong> जनकपुर <span class="ref">[५]</span>।</li>
+                <li><strong>धरातलीय स्वरूप:</strong> पूर्णतया तराई, भावर र चुरे/सिवालिक श्रेणी। समथर र उब्जाउशील माटो <span class="ref">[५]</span>।</li>
+                <li><strong>जलवायु र नदीहरू:</strong> उपोष्ण जलवायु, औसत वर्षा ११००–२१०० मि.मि.। प्रमुख नदी: कोसी (पूर्वी सिमाना), बागमती, कमला, रातु। ताल: गङ्गा सागर, धनुष सागर <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <!-- (ग) बागमती -->
+        <div class="sub-head-sm"><i class="fas fa-city"></i> (ग) बागमती प्रदेश</div>
+        <div class="content-box purple-light">
+            <ul>
+                <li><strong>अवस्थिति:</strong> २६°५५' देखि २८°२३' उत्तरी अक्षांश र ८३°५५' देखि ८६°३४' पूर्वी देशान्तर <span class="ref">[५]</span>।</li>
+                <li><strong>सिमाना:</strong> पूर्व–प्रदेश नं. १, पश्चिम–गण्डकी, उत्तर–तिब्बत (चीन), दक्षिण–मधेश प्रदेश र भारत <span class="ref">[५]</span>।</li>
+                <li><strong>क्षेत्रफल:</strong> नेपालको कुल क्षेत्रफलको <strong>१३.८%</strong> <span class="ref">[५]</span>।</li>
+                <li><strong>जिल्लाहरू:</strong> १३ वटा (ठुलो: सिन्धुपाल्चोक — २,५४२ वर्ग कि.मि., सानो: भक्तपुर — ११९ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>राजधानी:</strong> हेटौँडा <span class="ref">[५]</span>।</li>
+                <li><strong>धरातलीय स्वरूप:</strong> होचो भाग चितवनको गोलाघाट (१४१ मि.) देखि अग्लो भाग लाङटाङ लिरुङ (७,२२९ मि.)। हिमाल, पहाड, काठमाडौँ उपत्यका र भित्री मधेस (चितवन, मकवानपुर, सिन्धुली) <span class="ref">[५]</span>।</li>
+                <li><strong>नदी तथा ताल:</strong> सुनकोसी, इन्द्रावती, तामाकोसी, लिखु, त्रिशूली, नारायणी। छोरोल्पा, गोसाइँकुण्ड, टौदह, पाँचपोखरी, बिसहजारी ताल <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <!-- (घ) गण्डकी -->
+        <div class="sub-head-sm"><i class="fas fa-snowflake"></i> (घ) गण्डकी प्रदेश</div>
+        <div class="content-box sky-light">
+            <ul>
+                <li><strong>अवस्थिति:</strong> २७°२०' देखि २९°२०' उत्तरी अक्षांश र ८२°५२' देखि ८५°१२' पूर्वी देशान्तर <span class="ref">[५]</span>।</li>
+                <li><strong>सिमाना:</strong> पूर्व–बागमती, पश्चिम–कर्णाली र लुम्बिनी, उत्तर–तिब्बत (चीन), दक्षिण–लुम्बिनी प्रदेश <span class="ref">[५]</span>।</li>
+                <li><strong>क्षेत्रफल:</strong> नेपालको कुल क्षेत्रफलको <strong>१४.६%</strong> <span class="ref">[५]</span>।</li>
+                <li><strong>जिल्लाहरू:</strong> ११ वटा (ठुलो: गोर्खा — ३,६१० वर्ग कि.मि., सानो: पर्वत — ४९४ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>राजधानी:</strong> पोखरा <span class="ref">[५]</span>।</li>
+                <li><strong>धरातलीय स्वरूप:</strong> होचो भाग त्रिवेणी (१०३ मि.) देखि अग्लो भाग धवलागिरि (८,१६७ मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>जलवायु र वर्षा:</strong> नेपालमै सबैभन्दा बढी वर्षा हुने ठाउँ लुम्ले (४,२७८ मि.मि.) र सबैभन्दा कम वर्षा हुने ठाउँ मुस्ताङ (१४६ मि.मि.) यहीँ पर्छन् <span class="ref">[५]</span>।</li>
+                <li><strong>नदी तथा ताल:</strong> मर्स्याङ्दी, मादी, सेती, दरौँदी, कालीगण्डकी, बुढीगण्डकी। तिलिचो ताल, फेवा, बेगनास, रूपा ताल <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <!-- (ङ) लुम्बिनी -->
+        <div class="sub-head-sm"><i class="fas fa-pagoda"></i> (ङ) लुम्बिनी प्रदेश</div>
+        <div class="content-box gold-light">
+            <ul>
+                <li><strong>अवस्थिति:</strong> २७°३७' देखि २८°५०' उत्तरी अक्षांश र ८०°५८' देखि ८४°०५' पूर्वी देशान्तर <span class="ref">[५]</span>।</li>
+                <li><strong>सिमाना:</strong> पूर्व–गण्डकी, पश्चिम–कर्णाली र सुदूरपश्चिम, उत्तर–गण्डकी र कर्णाली, दक्षिण–उत्तर प्रदेश (भारत) <span class="ref">[५]</span>।</li>
+                <li><strong>क्षेत्रफल:</strong> नेपालको कुल क्षेत्रफलको <strong>१५.१%</strong> <span class="ref">[५]</span>।</li>
+                <li><strong>जिल्लाहरू:</strong> १२ वटा (ठुलो: दाङ — २,९५५ वर्ग कि.मि., सानो: नवलपरासी पश्चिम — ६३४ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>राजधानी:</strong> देउखुरी (दाङ) <span class="ref">[५]</span>।</li>
+                <li><strong>धरातलीय स्वरूप:</strong> एकमात्र हिमाली जिल्ला पूर्वी रुकुम (सिस्ने हिमाल)। बाँकी पहाड, उपत्यका, भित्री मधेस र समथर तराई <span class="ref">[५]</span>।</li>
+                <li><strong>नदीहरू:</strong> तिनाउ, राप्ती, बबई, बाणगङ्गा, कालीगण्डकी र कर्णाली <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <!-- (च) कर्णाली -->
+        <div class="sub-head-sm"><i class="fas fa-water"></i> (च) कर्णाली प्रदेश</div>
+        <div class="content-box orange-light">
+            <ul>
+                <li><strong>अवस्थिति:</strong> २८°१०' देखि ३०°२६' उत्तरी अक्षांश र ८०°५८' देखि ८३°४०' पूर्वी देशान्तर <span class="ref">[५]</span>।</li>
+                <li><strong>सिमाना:</strong> पूर्व–गण्डकी र लुम्बिनी, पश्चिम–सुदूरपश्चिम, उत्तर–तिब्बत (चीन), दक्षिण–लुम्बिनी र सुदूरपश्चिम <span class="ref">[५]</span>।</li>
+                <li><strong>क्षेत्रफल:</strong> नेपालको कुल क्षेत्रफलको <strong>१९%</strong> (क्षेत्रफलका आधारमा सबैभन्दा ठुलो प्रदेश) <span class="ref">[५]</span>।</li>
+                <li><strong>जिल्लाहरू:</strong> १० वटा (ठुलो: डोल्पा — ७,८८९ वर्ग कि.मि., सानो: रुकुम पश्चिम — १,२१३.४९ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>राजधानी:</strong> वीरेन्द्रनगर (सुर्खेत) <span class="ref">[५]</span>।</li>
+                <li><strong>धरातलीय स्वरूप:</strong> विकट र दुर्गम हिमाली र पहाडी धरातल। अग्लो भाग चुरेन हिमाल (७,३७१ मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>नदी तथा ताल:</strong> हुम्ला कर्णाली, मुगु कर्णाली, ठुली भेरी, सानी भेरी, तिला। रारा ताल, फोक्सुण्डो ताल, कुभिन्डे दह <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <!-- (छ) सुदूरपश्चिम -->
+        <div class="sub-head-sm"><i class="fas fa-mountain"></i> (छ) सुदूरपश्चिम प्रदेश</div>
+        <div class="content-box pink-light">
+            <ul>
+                <li><strong>अवस्थिति:</strong> २८°२२' देखि ३०°०९' उत्तरी अक्षांश र ८०°०३' देखि ८१°२५' पूर्वी देशान्तर <span class="ref">[५]</span>।</li>
+                <li><strong>सिमाना:</strong> पूर्व–कर्णाली र लुम्बिनी, पश्चिम–उत्तराखण्ड (भारत), उत्तर–कर्णाली र तिब्बत (चीन), दक्षिण–उत्तर प्रदेश (भारत) <span class="ref">[५]</span>।</li>
+                <li><strong>क्षेत्रफल:</strong> नेपालको कुल क्षेत्रफलको <strong>१३.३%</strong> <span class="ref">[५]</span>।</li>
+                <li><strong>जिल्लाहरू:</strong> ९ वटा (ठुलो: बझाङ — ३,४२२ वर्ग कि.मि., सानो: बैतडी — १,५१९ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>राजधानी:</strong> गोदावरी (कैलाली) <span class="ref">[५]</span>।</li>
+                <li><strong>धरातलीय स्वरूप:</strong> हिमाल (दार्चुला, बझाङ, बाजुरा), पहाड (बैतडी, डडेलधुरा, अछाम, डोटी), र तराई (कैलाली, कञ्चनपुर)। अपी हिमाल, सैपाल हिमाल <span class="ref">[५]</span>।</li>
+                <li><strong>नदी तथा ताल:</strong> सेती, बुढीगङ्गा, चौलानी, महाकाली। घोडाघोडी ताल (रामसार क्षेत्र), झिलमिला ताल, बेदकोट ताल, अलिताल <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ३. सुत्रत्मक घोक्ने बुँदाहरू ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section3">
+            <i class="fas fa-brain"></i>
+            ३. सुत्रत्मक घोक्ने बुँदाहरू
+            <span class="mark-badge green">Mnemonics</span>
+        </div>
+
+        <div class="mnemonic-box">
+            <div class="mn-title"><i class="fas fa-key" style="color:#0D47A1; margin-right:6px;"></i> सुत्र १: क्षेत्रफलका आधारमा प्रदेशहरूको क्रम (ठुलोदेखि सानो)</div>
+            <p><strong>कर्णाली (१९%) &gt; प्रदेश १ (१५.६%) &gt; लुम्बिनी (१५.१%) &gt; गण्डकी (१४.६%) &gt; बागमती (१३.८%) &gt; सुदूरपश्चिम (१३.३%) &gt; मधेश (६.५%)</strong> <span class="ref">[५]</span>।</p>
+            <p style="margin-top:8px;">सर्टकट सुत्र:</p>
+            <div class="mn-formula">क–को–लु–ग–बा–सु–म</div>
+            <p style="font-size:1rem; color:#555;">(कर्णाली → कोशी → लुम्बिनी → गण्डकी → बागमती → सुदूरपश्चिम → मधेश)</p>
+        </div>
+
+        <div class="mnemonic-box">
+            <div class="mn-title"><i class="fas fa-key" style="color:#0D47A1; margin-right:6px;"></i> सुत्र २: जिल्ला सङ्ख्या सुत्र</div>
+            <div class="mn-formula">१४ – १३ – १२ – ११ – १० – ९ – ८</div>
+            <p>प्रदेश १ (१४) → बागमती (१३) → लुम्बिनी (१२) → गण्डकी (११) → कर्णाली (१०) → सुदूरपश्चिम (९) → मधेश (८) <span class="ref">[५]</span>।</p>
+        </div>
+
+        <div class="mnemonic-box">
+            <div class="mn-title"><i class="fas fa-key" style="color:#0D47A1; margin-right:6px;"></i> सुत्र ३: उच्चतम र न्यूनतम वर्षा सुत्र</div>
+            <ul>
+                <li><strong>धेरै वर्षा:</strong> लुम्ले (गण्डकी — ४,२७८ मि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>कम वर्षा:</strong> मुस्ताङ (गण्डकी — १४६ मि.मि.) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-box">
+            <div class="mn-title"><i class="fas fa-key" style="color:#0D47A1; margin-right:6px;"></i> सुत्र ४: सबैभन्दा ठुलो र सानो जिल्ला सुत्र</div>
+            <ul>
+                <li><strong>नेपालकै ठुलो जिल्ला:</strong> डोल्पा (कर्णाली — ७,८८९ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+                <li><strong>नेपालकै सानो जिल्ला:</strong> भक्तपुर (बागमती — ११९ वर्ग कि.मि.) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ४. अभ्यास समाधान ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section4">
+            <i class="fas fa-check-double"></i>
+            ४. पाठ्यपुस्तकका अभ्यासहरूको समाधान
+            <span class="mark-badge purple">Exercise</span>
+        </div>
+
+        <div class="qa-block color1">
+            <div class="q"><span class="qnum">(क)</span> अपी हिमाल कुन प्रदेशमा पर्छ?</div>
+            <div class="a">
+                <strong>उत्तर:</strong> अपी हिमाल <strong>सुदूरपश्चिम प्रदेश</strong> (दार्चुला जिल्ला) मा पर्छ <span class="ref">[५]</span>।
+            </div>
+        </div>
+
+        <div class="qa-block color2">
+            <div class="q"><span class="qnum">(ख)</span> गण्डकी प्रदेशको सबैभन्दा होचो भूमि कुन हो?</div>
+            <div class="a">
+                <strong>उत्तर:</strong> गण्डकी प्रदेशको सबैभन्दा होचो भूमि नवलपुर (नवलपरासी पूर्व) जिल्लाको <strong>त्रिवेणी</strong> हो, जुन समुद्र सतहबाट १०३ मिटरको उचाइमा अवस्थित छ <span class="ref">[५]</span>।
+            </div>
+        </div>
+
+        <div class="qa-block color3">
+            <div class="q"><span class="qnum">(ग)</span> प्रदेश १ र प्रदेश २ (मधेश प्रदेश) का भौगोलिक विशेषताहरूबिचका समानता र भिन्नता उल्लेख गर्नुहोस्।</div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> प्रदेश नं. १ (कोशी प्रदेश) र प्रदेश नं. २ (मधेश प्रदेश) बिचका भौगोलिक समानता र भिन्नताहरू निम्न अनुसार छन् <span class="ref">[५]</span>:</p>
+
+                <p><strong>समानताहरू:</strong></p>
+                <ol>
+                    <li>दुवै प्रदेश नेपालको पूर्वी भागमा अवस्थित छन् र दुवै प्रदेशको दक्षिणी सिमाना भारतको बिहार राज्यसँग जोडिएको छ <span class="ref">[५]</span>।</li>
+                    <li>दुवै प्रदेशमा समथर तराईको भूभाग समावेश छ र दुवै कृषि उत्पादनका दृष्टिले महत्त्वपूर्ण छन् <span class="ref">[५]</span>।</li>
+                    <li>कोसी नदीले दुवै प्रदेशको भौगोलिक र जलस्रोतको क्षेत्रमा महत्त्वपूर्ण भूमिका खेलेको छ <span class="ref">[५]</span>।</li>
+                </ol>
+
+                <p><strong>भिन्नताहरू (तुलनात्मक तालिका):</strong></p>
+                <div class="table-wrap" style="margin-top:8px;">
+                    <div class="table-caption">प्रदेश १ र मधेश प्रदेशको तुलना <span class="ref">[५]</span></div>
+                    <table>
+                        <thead>
+                            <tr><th>भौगोलिक सूचक</th><th>प्रदेश नं. १ (कोशी)</th><th>प्रदेश नं. २ (मधेश)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>धरातलीय विविधता</strong></td><td>हिमाल, पहाड, भित्री मधेस र तराई चारै क्षेत्र समेटिएको छ।</td><td>पूर्ण रूपमा तराई, भावर र चुरे क्षेत्रमा मात्र सीमित छ।</td></tr>
+                            <tr><td><strong>उचाइ सीमा</strong></td><td>सगरमाथा (८,८४८.८६ मि.) देखि ६० मि. (केचनाकल) सम्म।</td><td>होचो समथर तराई भूभाग मात्र रहेको छ।</td></tr>
+                            <tr><td><strong>क्षेत्रफल र जिल्ला</strong></td><td>क्षेत्रफल १५.६% र १४ वटा जिल्ला।</td><td>क्षेत्रफल ६.५% (सबैभन्दा सानो) र ८ वटा जिल्ला।</td></tr>
+                            <tr><td><strong>जलवायु</strong></td><td>समशीतोष्ण, लेकाली, टुन्ड्रादेखि उष्ण जलवायुसम्म पाइन्छ।</td><td>मुख्यतया उष्ण र उपोष्ण हावापानी मात्र पाइन्छ।</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block color4">
+            <div class="q"><span class="qnum">(घ)</span> कर्णाली प्रदेशको सभ्यता नदीको सभ्यतासँग जोडिएको छ, पुष्टि गर्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">परिचय:</span> नेपालको मध्यपश्चिममा अवस्थित कर्णाली प्रदेश ऐतिहासिक, सांस्कृतिक र भौगोलिक दृष्टिले विशाल कर्णाली नदी प्रणालीसँग एकाकार भएको प्राचीन सभ्यताको थलो हो। मानव सभ्यताको विकास जस्तै कर्णालीको जनजीवन र इतिहास पनि नदीकै काखमा हुर्किएको हो <span class="ref">[५]</span>।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">विषय प्रवेश तथा मुख्य विश्लेषण:</span> कर्णाली प्रदेशको सभ्यता नदीको सभ्यतासँग जोडिएको कुरालाई निम्न आधारमा पुष्टि गर्न सकिन्छ <span class="ref">[५]</span>:</p>
+                <ul>
+                    <li><strong>खस भाषा र खस राज्यको उद्गमस्थल:</strong> कर्णाली नदीका शाखा नदीहरू (तिला, सिञ्जा खोला) को उपत्यकामा सिञ्जा उपत्यका विकसित भयो, जहाँबाट नेपाली भाषाको जननी मानिने 'खस भाषा' र खस मल्ल राज्यको उत्पत्ति र विकास भएको थियो <span class="ref">[५]</span>।</li>
+                    <li><strong>नदी प्रणालीमा आधारित जीविकोपार्जन:</strong> हुम्ला कर्णाली, मुगु कर्णाली, ठुली भेरी, सानी भेरी, र तिला नदीहरूले कर्णालीका उब्जाउ उपत्यकाहरू निर्माण गरेका छन्, जहाँ परम्परागत कृषि र पशुपालन फस्टाएको छ <span class="ref">[५]</span>।</li>
+                    <li><strong>जलस्रोत र जलमार्गको ऐतिहासिक प्रयोग:</strong> प्राचीन कालदेखि नै कर्णाली नदी प्रणाली व्यापारिक यातायात, मत्स्यपालन र सिँचाइको मुख्य आधार रहँदै आएको छ <span class="ref">[५]</span>।</li>
+                    <li><strong>धार्मिक तथा सांस्कृतिक आस्था:</strong> कर्णाली नदी र यसका तालतलैयाहरू (रारा, फोक्सुण्डो) सँगै मस्टो संस्कृति र देउती बज्यै जस्ता धार्मिक परम्पराहरू जोडिएका छन् <span class="ref">[५]</span>।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">निष्कर्ष:</span> अतः सिञ्जा उपत्यका र कर्णाली नदी प्रणालीले नै सिङ्गो नेपाली भाषा, संस्कृति र इतिहासलाई जन्म दिएकाले कर्णाली प्रदेशको सभ्यता पूर्ण रूपमा नदीको सभ्यतासँग जोडिएको छ <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <div class="qa-block color5">
+            <div class="q"><span class="qnum">(ङ)</span> सुदूरपश्चिम प्रदेशका मुख्य मुख्य भौगोलिक विशेषता उल्लेख गर्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">परिचय:</span> नेपालको सुदूरपश्चिममा अवस्थित सुदूरपश्चिम प्रदेश भौगोलिक, प्राकृतिक र सांस्कृतिक रूपमा अत्यन्तै सम्पन्न र विविध स्वरूप भएको प्रदेश हो। यसले नेपालको कुल क्षेत्रफलको १३.३% भूभाग ओगटेको छ <span class="ref">[५]</span>।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">विषय प्रवेश तथा मुख्य विश्लेषण:</span> सुदूरपश्चिम प्रदेशका मुख्य भौगोलिक विशेषताहरू निम्न अनुसार छन् <span class="ref">[५]</span>:</p>
+                <ul>
+                    <li><strong>त्रि-धरातलीय स्वरूप:</strong> हिमाली जिल्लाहरू (दार्चुला, बझाङ, बाजुरा), पहाडी जिल्लाहरू (बैतडी, डडेलधुरा, अछाम, डोटी) र तराईका जिल्लाहरू (कैलाली, कञ्चनपुर) गरी तीनै धरातलीय स्वरूपको संगम पाइन्छ <span class="ref">[५]</span>।</li>
+                    <li><strong>प्रमुख हिमशृङ्खलाहरू:</strong> अपी हिमाल (७,१३२ मि.) र सैपाल हिमाल (७,०३१ मि.) यस प्रदेशका प्रमुख आकर्षक हिमशृङ्खला हुन् <span class="ref">[५]</span>।</li>
+                    <li><strong>धनी जलस्रोत र नदी प्रणाली:</strong> सेती, बुढीगङ्गा, चौलानी, र अन्तर्राष्ट्रिय सिमाना बनाउने महाकाली नदी यस प्रदेशका मुख्य नदीहरू हुन् <span class="ref">[५]</span>।</li>
+                    <li><strong>अद्वितीय तालतलैया र रामसार क्षेत्र:</strong> विश्वप्रसिद्ध घोडाघोडी ताल (रामसार सूचीकृत सीमसम् क्षेत्र), झिलमिला ताल, बेदकोट ताल, अलिताल र खप्तड क्षेत्र यसै प्रदेशमा पर्छन् <span class="ref">[५]</span>।</li>
+                    <li><strong>हावापानीमा विविधता:</strong> भौगोलिक उचाइ अनुसार तराईमा उष्ण र उपोष्ण, पहाडमा समशीतोष्ण र हिमाली क्षेत्रमा लेकाली तथा टुन्ड्रा हावापानी पाइन्छ <span class="ref">[५]</span>।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">निष्कर्ष:</span> यसरी सुदूरपश्चिम प्रदेश हिमाल, पहाड, तराई, समृद्ध जलस्रोत र प्राकृतिक तालतलैयाको सुन्दर संयोजन भएको विशिष्ट भौगोलिक पहिचानयुक्त प्रदेश हो <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ५. परीक्षा उपयोगी Q&A ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section5">
+            <i class="fas fa-bullseye"></i>
+            ५. बोर्ड परीक्षा विशेष नमुना प्रश्नोत्तर
+            <span class="mark-badge pink">High-Yield</span>
+        </div>
+
+        <!-- अति छोटो (१ अंक) -->
+        <div class="sub-head"><i class="fas fa-star"></i> अति छोटो उत्तर आउने प्रश्नहरू (१ अङ्क)</div>
+
+        <div class="qa-block color6">
+            <div class="q"><span class="qnum">१.</span> नेपालमा सबैभन्दा धेरै र सबैभन्दा थोरै स्थानीय तह भएका प्रदेशहरू कुन-कुन हुन्?</div>
+            <div class="a"><strong>उत्तर:</strong> सबैभन्दा धेरै स्थानीय तह भएको प्रदेश <strong>प्रदेश नं. १ (कोशी — १३७ वटा)</strong> र सबैभन्दा थोरै स्थानीय तह भएको प्रदेश <strong>कर्णाली प्रदेश (७९ वटा)</strong> हो <span class="ref">[५]</span>।</div>
+        </div>
+
+<!-- छोटो (५ अंक) -->
+        <div class="sub-head"><i class="fas fa-star"></i> छोटो उत्तर आउने प्रश्नहरू (५ अङ्क)</div>
+
+        <div class="qa-block color7">
+            <div class="q"><span class="qnum">१.</span> बागमती प्रदेशका मुख्य भौगोलिक तथा प्राकृतिक विशेषताहरू पाँच बुँदामा स्पष्ट पार्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">परिचय:</span> नेपालको राजधानी काठमाडौँ समेत समेटेको बागमती प्रदेश १३ वटा जिल्लाहरू मिलेर बनेको मध्य नेपालको महत्त्वपूर्ण प्रदेश हो। यसले देशको कुल क्षेत्रफलको १३.८% भूभाग ओगटेको छ <span class="ref">[५]</span>।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">विषय प्रवेश तथा मुख्य विश्लेषण:</span> बागमती प्रदेशका ५ मुख्य भौगोलिक तथा प्राकृतिक विशेषताहरू:</p>
+                <ol>
+                    <li><strong>धरातलीय विविधता:</strong> चितवनको गोलाघाट (१४१ मि.) देखि लाङटाङ लिरुङ हिमाल (७,२२९ मि.) सम्म हिमाल, पहाड, काठमाडौँ उपत्यका र भित्री मधेसको धरातलीय विविधता पाइन्छ <span class="ref">[५]</span>।</li>
+                    <li><strong>प्रचुर जलस्रोत र नदीहरू:</strong> त्रिशूली, सुनकोसी, तामाकोसी, इन्द्रावती, लिखु र नारायणी जस्ता ठुला नदीहरू र जलविद्युत् आयोजनाहरूको उपस्थिति छ <span class="ref">[५]</span>।</li>
+                    <li><strong>प्रसिद्ध तालतलैया र हिमताल:</strong> छोरोल्पा हिमताल, गोसाइँकुण्ड, टौदह, पाँचपोखरी र बिसहजारी ताल यसै प्रदेशका गहना हुन् <span class="ref">[५]</span>।</li>
+                    <li><strong>हावापानीको विविधता:</strong> दक्षिणी क्षेत्रमा उपोष्ण, मध्य क्षेत्रमा समशीतोष्ण र उत्तरी हिमाली क्षेत्रमा लेकाली हावापानी पाइन्छ <span class="ref">[५]</span>।</li>
+                    <li><strong>सङ्घीय राजधानी र पर्यटकीय अवस्थिति:</strong> चितवन, शिवपुरी र लाङटाङ राष्ट्रिय निकुञ्जका साथै पर्यटकीय उपत्यकाहरू रहेका छन् <span class="ref">[५]</span>।</li>
+                </ol>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">निष्कर्ष:</span> अतः बागमती प्रदेश जैविक, भौगोलिक र जलस्रोतको धनी हुनुका साथै प्रशासनिक र आर्थिक दृष्टिकोणले नेपालको केन्द्रीय आधारस्तम्भ हो <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <!-- लामो (८ अंक) -->
+        <div class="sub-head"><i class="fas fa-gem"></i> लामो उत्तर आउने प्रश्नहरू (८ अङ्क)</div>
+
+        <div class="qa-block color8" style="border-left-color:#0D47A1;">
+            <div class="q"><span class="qnum">प्रश्न:</span> "सङ्घीयताले नेपालका सातवटै प्रदेशहरूलाई आफ्नो भौगोलिक अवसर र प्राकृतिक स्रोतको उपयोग गर्ने ढोका खोलेको छ।" यस भनाइलाई सातवटै प्रदेशको भौगोलिक अवसरका आधारमा विश्लेषण गर्नुहोस्।</div>
+            <div class="a">
+
+                <p><span class="step-icon">📌</span> <span class="step-title">परिचय:</span> नेपालको संविधानले विकेन्द्रीकरण र सङ्घीयताको सिद्धान्त अपनाउँदै देशलाई ७ प्रदेशमा विभाजन गरेको छ। विकटता र क्षेत्रीय असन्तुलन अन्त्य गर्दै हरेक प्रदेशले आफ्नो भौगोलिक विशिष्टता, जलस्रोत, कृषि र पर्यटनको उपयोग गरी आर्थिक समृद्धि हासिल गर्ने अवसर सङ्घीयताले प्रदान गरेको छ <span class="ref">[५]</span>।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">विषय प्रवेश तथा मुख्य विश्लेषण:</span> सातवटै प्रदेशका भौगोलिक अवसर र तिनको उपयोगका क्षेत्रहरूलाई निम्न अनुसार विश्लेषण गर्न सकिन्छ <span class="ref">[५]</span>:</p>
+
+                <div class="mermaid-flow">
+                    <div class="mermaid-step">नेपालका ७ प्रदेशका भौगोलिक अवसरहरू</div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:14px; width:100%;">
+                        <div class="mermaid-step" style="min-width:200px;">कोशी &amp; मधेश<br><span style="font-weight:400; font-size:0.9rem;">जलविद्युत् &amp; कृषि</span></div>
+                        <div class="mermaid-step" style="min-width:200px;">बागमती &amp; गण्डकी<br><span style="font-weight:400; font-size:0.9rem;">पर्यटन, उद्योग &amp; ऊर्जा</span></div>
+                        <div class="mermaid-step" style="min-width:220px;">लुम्बिनी, कर्णाली &amp; सुदूरपश्चिम<br><span style="font-weight:400; font-size:0.9rem;">धार्मिक पर्यटन &amp; जडीबुटी</span></div>
+                    </div>
+                </div>
+
+                <ol>
+                    <li><strong>प्रदेश नं. १ (कोशी प्रदेश):</strong> सगरमाथा लगायतका हिमशृङ्खला, अरुण र तमोर जस्ता विशाल नदीहरू रहेकाले जलविद्युत् उत्पादन, चिया र अलैँची खेती तथा पर्वतारोहण पर्यटनको ठुलो अवसर छ <span class="ref">[५]</span>।</li>
+                    <li><strong>मधेश प्रदेश:</strong> पूर्ण रूपमा समथर र उब्जाउशील तराई भूभाग भएकाले यसलाई 'नेपालको अन्नको भण्डार' का रूपमा कृषि औद्योगिकीकरण र सीमावर्ती व्यापार विकास गर्ने अवसर छ <span class="ref">[५]</span>।</li>
+                    <li><strong>बागमती प्रदेश:</strong> देशको राजधानी, चितवन र काठमाडौँ उपत्यका, जलस्रोत र अन्तर्राष्ट्रिय नाकाहरू (तातोपानी, रसुवागढी) भएकाले सेवा क्षेत्र, उद्योग र जलविद्युत्को नेतृत्व गर्ने अवसर छ <span class="ref">[५]</span>।</li>
+                    <li><strong>गण्डकी प्रदेश:</strong> पोखरा, अन्नपूर्ण पदमार्ग, मुस्ताङ, र उच्च वर्षा हुने क्षेत्र भएकाले अन्तर्राष्ट्रिय पर्यटन, जलविद्युत्, फलफूल (स्याउ) र जडीबुटी व्यवसायको अभूतपूर्व अवसर छ <span class="ref">[५]</span>।</li>
+                    <li><strong>लुम्बिनी प्रदेश:</strong> बुद्ध जन्मस्थल लुम्बिनी, दाङको विशाल उपत्यका र तराई भूभाग भएकाले धार्मिक पर्यटन, सिँचाइ आधारित आधुनिक कृषि र उद्योगको अवसर छ <span class="ref">[५]</span>।</li>
+                    <li><strong>कर्णाली प्रदेश:</strong> नेपालकै ठुलो भूगोल (१९%), विशाल वन र जडीबुटी (यार्सागुम्बा), रारा र फोक्सुण्डो ताल तथा कर्णाली नदी भएकाले अर्गानिक कृषि, जडीबुटी प्रशोधन र साहसिक पर्यटनको ठुलो सम्भावना छ <span class="ref">[५]</span>।</li>
+                    <li><strong>सुदूरपश्चिम प्रदेश:</strong> महाकाली र सेती नदी, अपी/सैपाल हिमाल, घोडाघोडी ताल र शुक्लाफाँटा रहेकाले जलविद्युत्, जडीबुटी र धार्मिक-प्राकृतिक पर्यटन विकासको अवसर छ <span class="ref">[५]</span>।</li>
+                </ol>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">निष्कर्ष:</span> अतः सङ्घीयताले हरेक प्रदेशलाई आफ्नै भौगोलिक र प्राकृतिक स्रोतको पहिचान गरी आत्मनिर्भर र समृद्ध बन्ने संवैधानिक अधिकार र अवसर प्रदान गरेको छ <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ===== FINAL TIP ===== -->
+        <div class="tip-box" style="background:#0D47A1; margin-top:20px;">
+            <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+            <strong>अन्तिम सल्लाह:</strong> नेपालका ७ प्रदेशको भौगोलिक विवरण, क्षेत्रफल, जिल्ला सङ्ख्या र विशेषताहरूलाई सुत्र र नक्साको माध्यमबाट सम्झनुहोस्। 'क–को–लु–ग–बा–सु–म' सुत्रले क्षेत्रफलको क्रम सजिलै सम्झाउँछ भने '१४–१३–१२–११–१०–९–८' ले जिल्ला सङ्ख्याको क्रम। परीक्षामा तालिका र भौगोलिक विशेषतासँग सम्बन्धित प्रश्नहरू उच्च सम्भावनाका हुन्छन् — तसर्थ तालिका राम्ररी अभ्यास गर्नुहोस्।
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ १</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('scrollUpBtn');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) { btn.classList.add('visible'); }
+                else { btn.classList.remove('visible'); }
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+
+</body>
+</html>

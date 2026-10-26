@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nepal: Latitude & Longitude · नेपाल: अक्षांश र देशान्तर</title>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213d;--paper:#f4f7fb;--card:#fff;--grid:#b3c4d6;--land:#dbe8cf;--edge:#2f5d3a;--acc:#c8102e;--onacc:#fff;--blue:#1c4e8c;--ok:#1f7a3f;--sea:#e6eff8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8eef6;--paper:#0e1726;--card:#16223a;--grid:#3a5170;--land:#1f3a2a;--edge:#7fc08f;--acc:#ff5d73;--onacc:#0e1726;--blue:#7fb2ff;--ok:#6fd08f;--sea:#101d33}}
+:root[data-theme="dark"]{--ink:#e8eef6;--paper:#0e1726;--card:#16223a;--grid:#3a5170;--land:#1f3a2a;--edge:#7fc08f;--acc:#ff5d73;--onacc:#0e1726;--blue:#7fb2ff;--ok:#6fd08f;--sea:#101d33}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 Mukta,"Noto Sans Devanagari",system-ui,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:3px solid var(--acc)}
+h1{font-size:clamp(20px,4.2vw,30px);margin:0;font-weight:800;line-height:1.2}
+h2{font-size:19px;margin:16px 0 2px}
+p{margin:6px 0;max-width:62ch}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.seg{display:flex;flex-wrap:wrap;border:1.5px solid var(--blue);border-radius:8px;overflow:hidden;width:max-content;max-width:100%}
+.seg button{background:none;border:0;padding:6px 14px}
+.seg button.on{background:var(--blue);color:var(--paper)}
+nav{display:flex;gap:4px;padding:10px 18px 0;border-bottom:1px solid var(--grid);overflow-x:auto}
+nav button{background:none;border:0;border-bottom:3px solid transparent;padding:8px 14px;font-weight:600;white-space:nowrap}
+nav button.on{border-color:var(--acc)}
+main{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:22px;padding:18px;max-width:1200px;margin:0 auto}
+main.q{grid-template-columns:minmax(0,680px);justify-content:center}
+@media(max-width:820px){main{grid-template-columns:minmax(0,1fr)}}
+.mapwrap{position:relative}
+svg{width:100%;height:auto;display:block;background:var(--sea);border:1px solid var(--grid);touch-action:none;cursor:crosshair;font-family:inherit}
+#ro{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);background:var(--card);border:1px solid var(--grid);padding:3px 10px;font-size:15px;pointer-events:none;display:none}
+.cl{font-size:12px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--sea);stroke-width:3px}
+.pl{font-size:13px;font-weight:800;fill:var(--ink);text-anchor:middle;pointer-events:none;paint-order:stroke;stroke:var(--sea);stroke-width:3px}
+.ax{font-size:11px;fill:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.chip{background:var(--card);border:1.5px solid var(--grid);border-radius:999px;padding:2px 12px;font-size:15px}
+.chip.on{border-color:var(--acc);font-weight:600}
+.info{min-height:3.2em;border-left:4px solid var(--blue);padding:4px 12px;margin:10px 0;font-size:18px}
+.big{font-size:clamp(22px,4vw,30px);font-weight:800;margin:10px 0}
+.go{background:var(--acc);color:var(--onacc);border:0;border-radius:8px;padding:8px 20px;font-weight:600;margin-top:8px}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:10px 14px;background:var(--card);border:1.5px solid var(--grid);border-radius:8px}
+.opt.ok{border-color:var(--ok);box-shadow:inset 0 0 0 1.5px var(--ok)}
+.opt.bad{border-color:var(--acc);box-shadow:inset 0 0 0 1.5px var(--acc)}
+small{color:var(--blue);font-weight:600}
+</style>
+</head>
+<body>
+<header><h1 id="ttl"></h1><div class="seg" id="lang"><button data-l="en">English</button><button data-l="ne">नेपाली</button></div></header>
+<nav id="tabs"><button data-t="learn"></button><button data-t="find"></button><button data-t="quiz"></button></nav>
+<main id="main">
+  <div class="mapwrap" id="mw">
+    <svg id="map" viewBox="0 0 766 480" role="img" aria-label="Map of Nepal’s 7 provinces with latitude and longitude grid"><g id="base"></g><g id="dyn"></g></svg>
+    <div id="ro"></div>
+  </div>
+  <section id="panel"></section>
+</main>
+<script>
+const LON0=79.8,LAT1=30.8,S=100,K=88;
+const X=lo=>(lo-LON0)*K,Y=la=>(LAT1-la)*S;
+const P=[{en:'Koshi',ne:'कोशी',r:'86.58,28.11 86.64,28.07 86.69,28.11 86.74,28.1 86.77,28.07 86.76,28.04 86.79,28.02 86.87,28.03 86.93,27.99 86.94,27.96 87.04,27.95 87.11,27.87 87.12,27.84 87.17,27.82 87.23,27.82 87.26,27.85 87.36,27.83 87.42,27.86 87.43,27.84 87.41,27.83 87.45,27.82 87.49,27.85 87.54,27.84 87.56,27.87 87.61,27.81 87.67,27.84 87.67,27.81 87.73,27.81 87.78,27.87 87.79,27.9 87.83,27.92 87.83,27.95 87.86,27.95 87.87,27.91 87.93,27.92 87.99,27.89 88.03,27.91 88.07,27.89 88.09,27.9 88.1,27.87 88.14,27.88 88.2,27.85 88.2,27.84 88.18,27.82 88.2,27.79 88.16,27.74 88.15,27.67 88.08,27.58 88.05,27.5 88.08,27.43 88.05,27.41 88.04,27.37 88.07,27.34 88.03,27.29 88.02,27.17 87.99,27.12 88.02,27.09 88.04,27.04 88.08,27.04 88.09,27 88.14,26.98 88.12,26.95 88.15,26.92 88.14,26.9 88.18,26.87 88.19,26.77 88.16,26.64 88.1,26.54 88.1,26.44 88.05,26.4 88.03,26.36 88,26.37 87.99,26.39 87.9,26.45 87.91,26.46 87.89,26.49 87.85,26.44 87.79,26.47 87.77,26.41 87.74,26.41 87.68,26.44 87.65,26.39 87.61,26.38 87.55,26.42 87.47,26.44 87.37,26.41 87.34,26.35 87.31,26.37 87.27,26.37 87.26,26.41 87.16,26.4 87.09,26.45 87.07,26.59 87.05,26.59 87.02,26.53 86.94,26.52 86.93,26.49 86.91,26.49 86.94,26.53 86.99,26.57 86.98,26.62 87.02,26.67 87.01,26.71 86.99,26.7 86.92,26.77 86.85,26.69 86.83,26.71 86.76,26.69 86.74,26.71 86.69,26.69 86.67,26.7 86.61,26.69 86.56,26.75 86.58,26.78 86.53,26.79 86.55,26.83 86.52,26.83 86.48,26.89 86.39,26.91 86.37,26.87 86.29,26.89 86.25,26.86 86.16,26.92 86.22,26.89 86.29,26.95 86.37,26.98 86.38,27.03 86.35,27.07 86.36,27.1 86.31,27.11 86.33,27.11 86.35,27.15 86.37,27.14 86.39,27.18 86.35,27.2 86.34,27.23 86.27,27.26 86.23,27.24 86.21,27.25 86.24,27.29 86.22,27.33 86.22,27.38 86.27,27.46 86.36,27.52 86.38,27.57 86.44,27.61 86.49,27.61 86.54,27.67 86.58,27.75 86.57,27.8 86.54,27.81 86.56,27.91 86.52,27.94 86.52,27.98 86.54,28.05 86.57,28.07 86.56,28.11'},{en:'Madhesh',ne:'मधेश',r:'84.57,27.46 84.63,27.45 84.65,27.43 84.79,27.44 84.95,27.36 85.09,27.36 85.13,27.29 85.18,27.25 85.4,27.21 85.47,27.16 85.5,27.18 85.5,27.14 85.63,27.14 85.73,27.19 85.83,27.17 85.86,27.13 85.89,27.15 85.94,27.12 85.99,27.02 86.1,27.02 86.24,26.95 86.26,26.91 86.22,26.89 86.16,26.92 86.25,26.86 86.29,26.89 86.37,26.87 86.39,26.91 86.48,26.89 86.52,26.83 86.55,26.83 86.53,26.79 86.58,26.78 86.56,26.75 86.61,26.69 86.67,26.7 86.69,26.69 86.74,26.71 86.76,26.69 86.83,26.71 86.85,26.69 86.92,26.77 86.99,26.7 87.01,26.71 87.02,26.67 86.98,26.62 86.99,26.57 86.93,26.53 86.89,26.49 86.9,26.46 86.84,26.44 86.77,26.46 86.73,26.42 86.7,26.44 86.57,26.5 86.54,26.54 86.5,26.54 86.35,26.62 86.25,26.62 86.22,26.59 86.19,26.61 86.14,26.61 86.14,26.63 86.03,26.67 85.96,26.65 85.95,26.61 85.85,26.57 85.85,26.61 85.82,26.6 85.74,26.65 85.74,26.8 85.64,26.87 85.59,26.85 85.58,26.86 85.46,26.78 85.41,26.79 85.34,26.74 85.21,26.76 85.18,26.81 85.19,26.87 85.02,26.85 85.06,26.89 84.97,26.92 84.98,26.94 84.96,26.96 84.89,26.97 84.83,27.02 84.8,27 84.78,27.02 84.76,27 84.64,27.05 84.65,27.08 84.68,27.1 84.69,27.22 84.62,27.34 84.49,27.36 84.54,27.39 84.53,27.41'},{en:'Bagmati',ne:'बागमती',r:'85.71,28.39 85.75,28.24 85.78,28.21 85.85,28.18 85.87,28.12 85.9,28.11 85.9,28.05 85.98,28 85.95,27.94 85.99,27.92 86.07,27.9 86.13,27.93 86.08,28.02 86.1,28.06 86.09,28.09 86.13,28.1 86.19,28.17 86.22,28.11 86.21,28.08 86.24,27.97 86.29,27.98 86.32,27.95 86.34,27.96 86.35,27.94 86.38,27.94 86.41,27.91 86.44,27.91 86.5,27.96 86.55,27.93 86.54,27.81 86.57,27.8 86.58,27.75 86.53,27.65 86.49,27.61 86.44,27.61 86.38,27.57 86.36,27.52 86.27,27.46 86.22,27.38 86.22,27.33 86.24,27.29 86.21,27.25 86.23,27.24 86.27,27.26 86.34,27.23 86.35,27.2 86.39,27.18 86.37,27.14 86.35,27.15 86.33,27.11 86.31,27.11 86.36,27.1 86.35,27.07 86.38,27.03 86.37,26.98 86.29,26.95 86.26,26.92 86.19,26.98 86.11,27.01 85.99,27.02 85.94,27.12 85.89,27.15 85.86,27.13 85.83,27.17 85.73,27.19 85.63,27.14 85.5,27.14 85.5,27.18 85.47,27.16 85.4,27.21 85.18,27.25 85.11,27.32 85.09,27.36 85,27.36 84.93,27.36 84.79,27.44 84.65,27.43 84.63,27.45 84.57,27.46 84.53,27.41 84.54,27.39 84.49,27.36 84.35,27.37 84.28,27.4 84.26,27.45 84.21,27.44 84.21,27.47 84.15,27.49 84.15,27.52 84.1,27.52 84.1,27.49 84.07,27.48 84.05,27.44 83.95,27.44 83.93,27.45 83.94,27.49 83.97,27.52 83.96,27.53 83.93,27.51 83.92,27.54 84.12,27.55 84.21,27.64 84.35,27.7 84.38,27.68 84.43,27.7 84.42,27.74 84.47,27.75 84.43,27.79 84.43,27.81 84.52,27.82 84.59,27.88 84.63,27.88 84.69,27.81 84.73,27.8 84.76,27.82 84.78,27.81 84.77,27.86 84.74,27.89 84.75,27.96 84.81,28 84.85,28.12 84.87,28.12 84.89,28.1 84.96,28.13 84.98,28.19 84.96,28.21 85.03,28.26 85.05,28.32 85.08,28.35 85.18,28.32 85.2,28.34 85.28,28.29 85.34,28.3 85.38,28.28 85.42,28.33 85.51,28.33 85.6,28.3 85.61,28.26 85.66,28.3 85.67,28.35 85.69,28.35 85.69,28.38'},{en:'Gandaki',ne:'गण्डकी',r:'83.97,29.33 84.02,29.29 84.05,29.3 84.12,29.28 84.12,29.24 84.2,29.24 84.2,29.21 84.16,29.19 84.18,29.13 84.2,29.12 84.19,29.05 84.25,29.04 84.23,28.89 84.27,28.9 84.33,28.86 84.35,28.87 84.41,28.85 84.4,28.83 84.44,28.82 84.44,28.77 84.46,28.75 84.49,28.73 84.56,28.75 84.57,28.74 84.63,28.74 84.67,28.68 84.71,28.67 84.7,28.64 84.86,28.57 84.9,28.59 84.95,28.59 84.95,28.58 84.99,28.59 85.06,28.68 85.09,28.67 85.12,28.69 85.2,28.63 85.18,28.6 85.19,28.53 85.17,28.53 85.16,28.49 85.12,28.49 85.1,28.46 85.13,28.39 85.11,28.35 85.05,28.33 85.03,28.26 84.97,28.22 84.96,28.13 84.89,28.1 84.87,28.12 84.85,28.12 84.81,28 84.75,27.96 84.74,27.89 84.77,27.86 84.78,27.81 84.76,27.82 84.73,27.8 84.69,27.81 84.62,27.88 84.58,27.87 84.52,27.82 84.45,27.82 84.43,27.79 84.47,27.75 84.42,27.74 84.43,27.7 84.38,27.68 84.35,27.7 84.21,27.64 84.12,27.55 84.05,27.56 84.03,27.54 83.93,27.54 83.93,27.51 83.96,27.53 83.97,27.51 83.94,27.49 83.94,27.45 83.9,27.44 83.88,27.49 83.9,27.5 83.88,27.51 83.88,27.53 83.85,27.56 83.84,27.54 83.84,27.59 83.79,27.61 83.81,27.66 83.7,27.66 83.71,27.68 83.68,27.72 83.82,27.71 83.85,27.71 83.85,27.73 83.93,27.73 84,27.75 84.03,27.86 83.88,27.89 83.85,27.87 83.81,27.87 83.76,27.91 83.75,27.9 83.68,27.93 83.64,27.9 83.63,27.93 83.57,27.94 83.53,27.92 83.51,27.94 83.49,27.92 83.44,27.93 83.48,27.98 83.53,27.96 83.61,28 83.6,28.02 83.56,28.04 83.56,28.06 83.58,28.08 83.56,28.12 83.43,28.13 83.36,28.2 83.28,28.19 83.19,28.27 83.13,28.25 83.1,28.26 83.07,28.31 82.96,28.36 82.95,28.4 82.92,28.4 82.92,28.43 82.88,28.47 82.91,28.48 82.88,28.52 82.92,28.53 82.92,28.57 82.98,28.55 82.99,28.57 82.95,28.6 82.98,28.63 83.12,28.63 83.12,28.67 83.15,28.7 83.15,28.75 83.28,28.72 83.36,28.73 83.39,28.76 83.49,28.78 83.48,28.84 83.5,28.85 83.5,28.88 83.59,28.98 83.62,28.99 83.61,29.04 83.63,29.06 83.62,29.1 83.68,29.12 83.66,29.2 83.71,29.24 83.8,29.25 83.81,29.3'},{en:'Lumbini',ne:'लुम्बिनी',r:'82.67,28.85 82.7,28.86 82.74,28.85 82.77,28.81 82.82,28.83 82.95,28.83 82.98,28.8 83.08,28.79 83.12,28.74 83.15,28.75 83.15,28.7 83.12,28.67 83.12,28.63 82.98,28.63 82.95,28.6 82.99,28.57 82.98,28.55 82.92,28.56 82.92,28.53 82.88,28.52 82.91,28.48 82.88,28.48 82.88,28.46 82.92,28.43 82.92,28.4 82.95,28.4 82.96,28.36 83.06,28.32 83.1,28.28 83.1,28.26 83.13,28.25 83.19,28.27 83.28,28.19 83.36,28.2 83.43,28.13 83.56,28.12 83.58,28.08 83.56,28.06 83.56,28.04 83.6,28.02 83.61,28 83.53,27.96 83.48,27.98 83.44,27.93 83.49,27.92 83.51,27.94 83.53,27.92 83.57,27.94 83.63,27.93 83.64,27.9 83.68,27.93 83.75,27.9 83.76,27.91 83.81,27.87 83.85,27.87 83.88,27.89 84.03,27.86 83.99,27.75 83.93,27.73 83.85,27.73 83.85,27.71 83.78,27.72 83.73,27.71 83.68,27.72 83.71,27.68 83.7,27.66 83.81,27.66 83.79,27.61 83.84,27.59 83.84,27.54 83.85,27.56 83.87,27.54 83.88,27.51 83.9,27.5 83.89,27.5 83.9,27.44 83.87,27.43 83.87,27.39 83.91,27.38 83.87,27.35 83.62,27.47 83.39,27.48 83.4,27.46 83.39,27.44 83.41,27.41 83.36,27.34 83.32,27.33 83.27,27.35 83.27,27.38 83.19,27.45 83.04,27.45 82.96,27.47 82.93,27.5 82.74,27.5 82.76,27.59 82.71,27.66 82.71,27.72 82.45,27.68 82.21,27.84 82.13,27.86 82.07,27.92 81.97,27.93 81.93,27.86 81.89,27.86 81.7,27.99 81.63,28 81.48,28.08 81.49,28.12 81.45,28.16 81.38,28.18 81.37,28.14 81.32,28.13 81.33,28.15 81.3,28.17 81.32,28.17 81.32,28.2 81.23,28.29 81.22,28.36 81.07,28.39 81.06,28.41 81.09,28.46 81.16,28.5 81.27,28.62 81.29,28.67 81.31,28.67 81.32,28.67 81.32,28.64 81.4,28.61 81.44,28.56 81.66,28.42 81.77,28.37 81.75,28.31 81.79,28.29 81.8,28.27 81.85,28.27 81.86,28.24 81.92,28.23 82.01,28.15 82.04,28.23 82.1,28.26 82.15,28.24 82.17,28.25 82.3,28.25 82.37,28.19 82.39,28.19 82.4,28.17 82.41,28.22 82.44,28.25 82.41,28.26 82.37,28.32 82.39,28.37 82.35,28.42 82.38,28.43 82.42,28.53 82.46,28.52 82.49,28.55 82.58,28.59 82.58,28.61 82.51,28.63 82.49,28.64 82.49,28.66 82.56,28.64 82.6,28.67 82.62,28.71 82.6,28.74 82.57,28.74 82.56,28.77 82.62,28.81 82.62,28.83 82.64,28.87'},{en:'Karnali',ne:'कर्णाली',r:'81.63,30.45 81.75,30.39 81.87,30.38 81.92,30.35 81.95,30.36 81.99,30.32 82.02,30.34 82.06,30.33 82.08,30.36 82.11,30.35 82.13,30.3 82.1,30.24 82.14,30.2 82.19,30.19 82.18,30.16 82.21,30.15 82.17,30.12 82.19,30.11 82.17,30.07 82.25,30.08 82.3,30.04 82.34,30.05 82.36,30.01 82.4,30.02 82.5,29.95 82.53,29.97 82.55,29.96 82.6,29.89 82.64,29.87 82.62,29.84 82.7,29.86 82.73,29.84 82.74,29.81 82.7,29.79 82.69,29.76 82.75,29.77 82.76,29.73 82.82,29.72 82.83,29.69 82.94,29.71 82.96,29.66 83.01,29.67 83.09,29.6 83.12,29.63 83.17,29.62 83.17,29.59 83.22,29.61 83.22,29.59 83.29,29.56 83.26,29.56 83.27,29.51 83.35,29.49 83.34,29.47 83.37,29.43 83.42,29.42 83.42,29.36 83.45,29.34 83.44,29.31 83.47,29.27 83.49,29.28 83.52,29.26 83.52,29.22 83.64,29.16 83.67,29.17 83.68,29.12 83.62,29.1 83.63,29.06 83.61,29.04 83.62,28.99 83.59,28.98 83.5,28.88 83.5,28.85 83.48,28.84 83.49,28.78 83.39,28.76 83.36,28.73 83.28,28.72 83.23,28.74 83.12,28.74 83.08,28.79 82.98,28.8 82.95,28.83 82.82,28.83 82.77,28.81 82.75,28.84 82.7,28.86 82.67,28.85 82.65,28.87 82.63,28.85 82.62,28.81 82.56,28.77 82.57,28.74 82.6,28.74 82.62,28.69 82.56,28.64 82.5,28.67 82.49,28.64 82.58,28.61 82.58,28.59 82.49,28.55 82.46,28.52 82.42,28.53 82.38,28.43 82.35,28.42 82.39,28.37 82.37,28.32 82.41,28.26 82.44,28.25 82.41,28.22 82.4,28.17 82.3,28.25 82.17,28.25 82.15,28.24 82.1,28.26 82.04,28.23 82.01,28.15 81.92,28.23 81.86,28.24 81.85,28.27 81.8,28.27 81.79,28.29 81.75,28.31 81.77,28.37 81.66,28.42 81.44,28.56 81.4,28.61 81.32,28.64 81.32,28.67 81.29,28.67 81.27,28.7 81.27,28.73 81.23,28.8 81.24,28.81 81.21,28.86 81.21,28.82 81.15,28.83 81.15,28.87 81.1,28.84 80.98,28.94 81.05,28.98 81.12,28.96 81.21,28.91 81.27,28.9 81.3,28.93 81.36,28.89 81.43,28.91 81.47,28.89 81.47,28.85 81.52,28.8 81.52,28.78 81.54,28.76 81.52,28.75 81.58,28.76 81.51,28.89 81.45,28.94 81.41,29 81.47,29.08 81.57,29.13 81.5,29.15 81.49,29.17 81.5,29.24 81.47,29.27 81.51,29.31 81.56,29.36 81.62,29.37 81.65,29.36 81.65,29.32 81.74,29.33 81.76,29.39 81.8,29.41 81.81,29.48 81.76,29.51 81.79,29.53 81.8,29.58 81.78,29.61 81.72,29.62 81.7,29.68 81.74,29.79 81.78,29.81 81.8,29.9 81.72,29.91 81.69,29.95 81.65,29.95 81.52,29.92 81.51,29.89 81.47,29.89 81.45,29.95 81.47,29.96 81.46,30 81.4,30.02 81.36,30.01 81.27,30.05 81.29,30.11 81.26,30.15 81.31,30.16 81.33,30.15 81.4,30.21 81.39,30.25 81.42,30.28 81.4,30.29 81.43,30.31 81.4,30.32 81.4,30.37 81.43,30.38 81.4,30.4 81.41,30.42 81.55,30.37 81.56,30.43 81.61,30.41'},{en:'Sudurpashchim',ne:'सुदूरपश्चिम',r:'80.61,30.47 80.74,30.4 80.81,30.32 80.91,30.3 80.94,30.26 80.98,30.27 81.02,30.25 81.05,30.21 81.04,30.2 81.08,30.15 81.08,30.1 81.11,30.09 81.09,30.05 81.13,30.02 81.23,30.01 81.26,30.02 81.24,30.03 81.27,30.05 81.38,30.01 81.41,30.02 81.46,30 81.47,29.96 81.45,29.95 81.47,29.89 81.51,29.89 81.52,29.92 81.65,29.95 81.69,29.95 81.72,29.91 81.8,29.9 81.78,29.81 81.74,29.79 81.7,29.68 81.72,29.62 81.78,29.61 81.8,29.58 81.79,29.53 81.76,29.51 81.81,29.48 81.8,29.41 81.76,29.39 81.74,29.33 81.65,29.32 81.65,29.36 81.62,29.37 81.56,29.36 81.51,29.31 81.47,29.27 81.5,29.24 81.49,29.17 81.5,29.15 81.57,29.13 81.47,29.08 81.41,29 81.45,28.94 81.51,28.89 81.58,28.76 81.52,28.75 81.54,28.76 81.52,28.78 81.52,28.8 81.47,28.85 81.47,28.89 81.43,28.91 81.36,28.89 81.3,28.93 81.27,28.9 81.19,28.92 81.12,28.96 81.05,28.98 80.98,28.94 81.1,28.84 81.15,28.87 81.15,28.83 81.21,28.82 81.21,28.86 81.24,28.81 81.23,28.8 81.25,28.78 81.29,28.68 81.27,28.62 81.16,28.5 81.09,28.46 81.06,28.41 81.07,28.39 81.02,28.41 81.04,28.43 81.02,28.45 80.97,28.44 80.98,28.46 80.92,28.46 80.9,28.51 80.85,28.5 80.79,28.52 80.77,28.57 80.72,28.57 80.67,28.64 80.59,28.65 80.59,28.68 80.57,28.69 80.54,28.69 80.51,28.67 80.53,28.57 80.52,28.55 80.47,28.58 80.45,28.63 80.36,28.64 80.32,28.7 80.26,28.73 80.25,28.76 80.22,28.76 80.12,28.83 80.07,28.84 80.06,28.92 80.1,28.99 80.12,28.98 80.14,29.01 80.15,29.1 80.19,29.14 80.23,29.12 80.27,29.14 80.24,29.2 80.25,29.22 80.29,29.2 80.3,29.21 80.32,29.31 80.28,29.35 80.28,29.39 80.24,29.41 80.24,29.44 80.3,29.45 80.29,29.48 80.35,29.52 80.34,29.55 80.38,29.56 80.41,29.6 80.42,29.64 80.39,29.67 80.37,29.75 80.44,29.81 80.5,29.8 80.55,29.85 80.6,29.95 80.68,29.96 80.75,30.01 80.76,30.05 80.81,30.09 80.88,30.13 80.87,30.16 80.76,30.28 80.76,30.31 80.67,30.34 80.61,30.44 80.55,30.43 80.57,30.46'}];
+P.forEach(p=>p.r=p.r.split(" ").map(q=>q.split(",").map(Number)));
+const PH=[200,45,130,285,20,170,340];
+const inR=(r,lo,la)=>{let c=false;for(let i=0,j=r.length-1;i<r.length;j=i++){const[a,b]=r[i],[p,q]=r[j];if((b>la)!=(q>la)&&lo<(p-a)*(la-b)/(q-b)+a)c=!c}return c};
+const provAt=(lo,la)=>P.find(p=>inR(p.r,lo,la));
+const cen=r=>{let A=0,x=0,y=0;for(let i=0,j=r.length-1;i<r.length;j=i++){const f=r[j][0]*r[i][1]-r[i][0]*r[j][1];A+=f;x+=(r[j][0]+r[i][0])*f;y+=(r[j][1]+r[i][1])*f}return[x/(3*A),y/(3*A)]};
+const C=[
+{en:'Kathmandu',ne:'काठमाडौं',la:27.7172,lo:85.324},{en:'Pokhara',ne:'पोखरा',la:28.2096,lo:83.9856},
+{en:'Biratnagar',ne:'विराटनगर',la:26.4525,lo:87.2718},{en:'Birgunj',ne:'वीरगञ्ज',la:27.0104,lo:84.877},
+{en:'Dhangadhi',ne:'धनगढी',la:28.69,lo:80.59},{en:'Nepalgunj',ne:'नेपालगञ्ज',la:28.05,lo:81.617},
+{en:'Janakpur',ne:'जनकपुर',la:26.7288,lo:85.9266},{en:'Butwal',ne:'बुटवल',la:27.7006,lo:83.4484},
+{en:'Dharan',ne:'धरान',la:26.8065,lo:87.2846},{en:'Jumla',ne:'जुम्ला',la:29.2747,lo:82.1838},
+{en:'Lumbini',ne:'लुम्बिनी',la:27.4833,lo:83.2764},{en:'Mt Everest',ne:'सगरमाथा',la:27.9881,lo:86.925}];
+const T={en:{title:'Nepal: Latitude & Longitude',learn:'Learn',find:'Find the place',quiz:'Quiz',
+lat_h:'Latitude',lat:'Latitude tells how far north of the equator a place is. Lines of latitude run east–west.',
+lon_h:'Longitude',lon:'Longitude tells how far east of the prime meridian a place is. Lines of longitude run north–south.',
+tip:'Move your mouse or finger over the map. Tap a city dot to see its coordinates.',
+ext:'Nepal lies between about 26°22′N–30°27′N and 80°04′E–88°12′E. Province boundaries are simplified from official data.',
+in:'Inside Nepal',out:'Outside Nepal',latn:'Latitude',lonn:'Longitude',
+lv1:'Easy: whole degrees',lv2:'Medium: decimals',lv3:'Hard: degrees & minutes',click:'Click the map where this point is:',
+right:'Correct! You were {d} km away.',far:'{d} km away.',go:'Go {dir}.',dn:'north',ds:'south',de:'east',dw:'west',and:' and ',
+reveal:'The correct spot is now marked.',tries:'Tries left: {n}',score:'Score',next:'Next',
+qat:'Which place is at {c}?',north:'Which place is further north?',east:'Which place is further east?',qlat:'About what latitude is {n}?',
+c1:'Which lines run east–west?',c2:'Longitude is measured from the…',o0:'Equator',o1:'Prime Meridian',o2:'Tropic of Cancer',
+ok:'Correct!',no:'Not quite.',qn:'Question {i} of {n}',res:'Your score: {s} / {n}',again:'Try again'},
+ne:{title:'नेपाल: अक्षांश र देशान्तर',learn:'सिक्नुहोस्',find:'स्थान खोज्नुहोस्',quiz:'प्रश्नोत्तरी',
+lat_h:'अक्षांश',lat:'अक्षांशले कुनै स्थान भूमध्य रेखाबाट कति उत्तरमा छ भन्ने बताउँछ। अक्षांश रेखाहरू पूर्व–पश्चिम फैलिएका हुन्छन्।',
+lon_h:'देशान्तर',lon:'देशान्तरले कुनै स्थान प्रधान मध्याह्न रेखाबाट कति पूर्वमा छ भन्ने बताउँछ। देशान्तर रेखाहरू उत्तर–दक्षिण फैलिएका हुन्छन्।',
+tip:'नक्सामाथि माउस वा औँला चलाउनुहोस्। सहरको थोप्लोमा छोएर यसको निर्देशाङ्क हेर्नुहोस्।',
+ext:'नेपाल लगभग २६°२२′ उ.–३०°२७′ उ. र ८०°०४′ पू.–८८°१२′ पू. बीचमा छ। प्रदेश सीमाना आधिकारिक तथ्याङ्कबाट सरलीकृत गरिएको हो।',
+in:'नेपालभित्र',out:'नेपालबाहिर',latn:'अक्षांश',lonn:'देशान्तर',
+lv1:'सजिलो: पूर्ण डिग्री',lv2:'मध्यम: दशमलव',lv3:'कठिन: डिग्री र मिनेट',click:'यो बिन्दु नक्सामा कहाँ छ, छुनुहोस्:',
+right:'सही! तपाईं {d} किमी टाढा हुनुहुन्थ्यो।',far:'{d} किमी टाढा।',go:'{dir} तिर जानुहोस्।',dn:'उत्तर',ds:'दक्षिण',de:'पूर्व',dw:'पश्चिम',and:' र ',
+reveal:'सही स्थान अब चिन्ह लगाइएको छ।',tries:'बाँकी प्रयास: {n}',score:'अङ्क',next:'अर्को',
+qat:'{c} मा कुन ठाउँ पर्छ?',north:'कुन स्थान बढी उत्तरमा छ?',east:'कुन स्थान बढी पूर्वमा छ?',qlat:'{n} को अक्षांश लगभग कति हो?',
+c1:'कुन रेखाहरू पूर्व–पश्चिम फैलिएका हुन्छन्?',c2:'देशान्तर कहाँबाट नापिन्छ?',o0:'भूमध्य रेखा',o1:'प्रधान मध्याह्न रेखा',o2:'कर्कट रेखा',
+ok:'सही!',no:'मिलेन।',qn:'प्रश्न {i} / {n}',res:'तपाईंको अङ्क: {s} / {n}',again:'फेरि प्रयास गर्नुहोस्'}};
+let L='en',tab='learn',lv=1,T0=null,tries=3,guesses=[],done=false,sc=0,res=null,sel=null,cp=null,quiz=null;
+const $=id=>document.getElementById(id),isNe=()=>L=='ne';
+const t=(k,v={})=>T[L][k].replace(/\{(\w+)\}/g,(m,x)=>v[x]);
+const nd=s=>isNe()?String(s).replace(/\d/g,d=>'०१२३४५६७८९'[d]):String(s);
+const fl=(la,d)=>nd(la.toFixed(d))+(isNe()?'° उ.':'°N'),fo=(lo,d)=>nd(lo.toFixed(d))+(isNe()?'° पू.':'°E');
+const pip=(lo,la)=>!!provAt(lo,la);
+const hv=(a,b,c,d)=>{const r=Math.PI/180,h=Math.sin((c-a)*r/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin((d-b)*r/2)**2;return 12742*Math.asin(Math.sqrt(h))};
+const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function cs(la,lo,l){
+  if(l==3){const f=x=>{const g=Math.floor(x+1e-9),m=Math.round((x-g)*60);return nd(g+'°'+String(m).padStart(2,'0')+'′')};return f(la)+(isNe()?' उ.':'N')+', '+f(lo)+(isNe()?' पू.':'E')}
+  const d=l==1?0:l==2?1:2;return fl(la,d)+', '+fo(lo,d)}
+function drawBase(){
+  let h=P.map((p,i)=>`<polygon points="${p.r.map(([lo,la])=>X(lo).toFixed(1)+','+Y(la).toFixed(1)).join(' ')}" fill="hsl(${PH[i]} 55% 60%)" fill-opacity=".5" stroke="var(--edge)" stroke-width="1.3" stroke-linejoin="round"/>`).join('');
+  for(let lo=80;lo<=88;lo++)h+=`<path d="M${X(lo)} 0V480" stroke="var(--grid)" stroke-width="1"/><text class="ax" x="${X(lo)+3}" y="13">${nd(lo)}°${isNe()?' पू.':'E'}</text>`;
+  for(let la=27;la<=30;la++)h+=`<path d="M0 ${Y(la)}H766" stroke="var(--grid)" stroke-width="1"/><text class="ax" x="4" y="${Y(la)-4}">${nd(la)}°${isNe()?' उ.':'N'}</text>`;
+  h+=P.map(p=>{const c=cen(p.r);return `<text class="pl" x="${X(c[0])}" y="${Y(c[1])}">${p[L]}</text>`}).join('');$('base').innerHTML=h}
+const cross=(x,y,c)=>`<path d="M${x-6} ${y-6}l12 12m-12 0l12 -12" stroke="${c}" stroke-width="3" stroke-linecap="round"/>`;
+function drawDyn(){
+  let h='';
+  if(cp&&tab!='quiz'){const x=X(cp[0]),y=Y(cp[1]);h+=`<path d="M${x} 0V480M0 ${y}H766" stroke="var(--acc)" stroke-width="1" stroke-dasharray="4 3"/>`}
+  if(tab=='learn')C.forEach((c,i)=>{const x=X(c.lo),y=Y(c.la),s=sel==i;h+=`<circle cx="${x}" cy="${y}" r="${s?7:4.5}" fill="${s?'var(--acc)':'var(--blue)'}" stroke="var(--paper)" stroke-width="1.5"/><text class="cl" x="${x+9}" y="${y+4}">${c[L]}</text>`});
+  if(tab=='find'){guesses.forEach(g=>h+=cross(X(g[1]),Y(g[0]),'var(--acc)'));if(done)h+=`<circle cx="${X(T0[1])}" cy="${Y(T0[0])}" r="10" fill="none" stroke="var(--ok)" stroke-width="3"/>`}
+  $('dyn').innerHTML=h}
+function ro(){
+  const R=$('ro');if(!cp||tab=='quiz'){R.style.display='none';return}
+  R.style.display='block';
+  R.innerHTML=`${t('latn')} <b>${fl(cp[1],2)}</b> · ${t('lonn')} <b>${fo(cp[0],2)}</b>`+(tab=='learn'?` <small>${(()=>{const q=provAt(cp[0],cp[1]);return q?q[L]:t('out')})()}</small>`:'')}
+function xy(e){const r=$('map').getBoundingClientRect();return[(e.clientX-r.left)/r.width*766,(e.clientY-r.top)/r.height*480]}
+const ll=([x,y])=>[LON0+x/K,LAT1-y/S];
+$('map').addEventListener('pointermove',e=>{cp=ll(xy(e));drawDyn();ro()});
+$('map').addEventListener('pointerleave',e=>{if(e.pointerType=='mouse'){cp=null;drawDyn();ro()}});
+$('map').addEventListener('pointerdown',e=>{
+  const p=xy(e);cp=ll(p);
+  if(tab=='learn'){let b=-1,bd=18;C.forEach((c,i)=>{const d=Math.hypot(X(c.lo)-p[0],Y(c.la)-p[1]);if(d<bd){bd=d;b=i}});
+    if(b>=0){sel=b;cp=[C[b].lo,C[b].la]}render()}
+  else if(tab=='find'&&!done){
+    const g=[cp[1],cp[0]],d=hv(T0[0],T0[1],g[0],g[1]),tol=[0,60,30,15][lv],ok=d<=tol;
+    guesses.push(g);tries--;if(ok)sc+=tries+1;done=ok||tries==0;
+    const dla=T0[0]-g[0],dlo=T0[1]-g[1],dirs=[];
+    if(!ok){if(Math.abs(dla)>.15)dirs.push(dla>0?'dn':'ds');if(Math.abs(dlo)>.15)dirs.push(dlo>0?'de':'dw')}
+    res={ok,d:Math.round(d),dirs};render()}
+  drawDyn();ro()});
+function newRound(){
+  for(;;){let la=26.4+Math.random()*3.9,lo=80.2+Math.random()*7.9;
+    if(lv==1){la=Math.round(la);lo=Math.round(lo)}else if(lv==2){la=+la.toFixed(1);lo=+lo.toFixed(1)}else{la=Math.round(la*60)/60;lo=Math.round(lo*60)/60}
+    if(pip(lo,la)){T0=[la,lo];break}}
+  tries=3;guesses=[];done=false;res=null}
+function mkQuiz(){
+  const qs=[{k:'c1',o:[0,1],a:0},{k:'c2',o:[0,1,2],a:1}],ids=()=>shuf(C.map((_,i)=>i));
+  shuf(['at','at','north','east','lat','lat']).forEach(k=>{
+    if(k=='at'){const o=ids().slice(0,4);qs.push({k,o,a:Math.floor(Math.random()*4)})}
+    else if(k=='lat'){const c=Math.floor(Math.random()*C.length),r=Math.round(C[c].la),o=shuf([26,27,28,29,30].filter(v=>v!=r)).slice(0,3).concat(r);const so=shuf(o);qs.push({k,c,o:so,a:so.indexOf(r)})}
+    else{let o;do{o=ids().slice(0,2)}while(Math.abs(C[o[0]][k=='north'?'la':'lo']-C[o[1]][k=='north'?'la':'lo'])<.4);
+      const f=k=='north'?'la':'lo';qs.push({k,o,a:C[o[0]][f]>C[o[1]][f]?0:1})}});
+  return{qs,i:0,s:0,p:null}}
+const qText=q=>q.k=='at'?t('qat',{c:cs(C[q.o[q.a]].la,C[q.o[q.a]].lo,2)}):q.k=='lat'?t('qlat',{n:C[q.c][L]}):t(q.k);
+const oText=(q,o)=>q.k=='c1'?t(o?'lonn':'latn'):q.k=='c2'?t('o'+o):q.k=='lat'?nd(o)+'°'+(isNe()?' उ.':'N'):C[o][L];
+function render(){
+  document.documentElement.lang=L;$('ttl').textContent=t('title');document.title=t('title');
+  document.querySelectorAll('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.l==L));
+  document.querySelectorAll('#tabs button').forEach(b=>{b.textContent=t(b.dataset.t);b.classList.toggle('on',b.dataset.t==tab)});
+  $('main').className=tab=='quiz'?'q':'';$('mw').hidden=tab=='quiz';
+  const P=$('panel');let h='';
+  if(tab=='learn'){
+    h=`<h2>${t('lat_h')}</h2><p>${t('lat')}</p><h2>${t('lon_h')}</h2><p>${t('lon')}</p>
+    <div class="info">${sel==null?t('tip'):`<b>${C[sel][L]}</b><br>${t('latn')}: ${fl(C[sel].la,2)} · ${t('lonn')}: ${fo(C[sel].lo,2)}`}</div>
+    <div class="chips">${C.map((c,i)=>`<button class="chip ${sel==i?'on':''}" data-c="${i}">${c[L]}</button>`).join('')}</div><p>${t('ext')}</p>`}
+  else if(tab=='find'){
+    if(!T0)newRound();
+    let m='';
+    if(res){const dir=res.dirs.map(k=>t(k)).join(t('and'));m=res.ok?t('right',{d:nd(res.d)}):t('far',{d:nd(res.d)})+(dir?' '+t('go',{dir}):'')+(done?' '+t('reveal'):'')}
+    h=`<div class="seg">${[1,2,3].map(n=>`<button data-lv="${n}" class="${lv==n?'on':''}">${t('lv'+n)}</button>`).join('')}</div>
+    <p>${t('click')}</p><p class="big">${cs(T0[0],T0[1],lv)}</p><p aria-live="polite" style="min-height:3em">${m}</p>
+    <p><b>${t('score')}: ${nd(sc)}</b> · ${t('tries',{n:nd(tries)})}</p>${done?`<button class="go" id="next">${t('next')}</button>`:''}`}
+  else{
+    if(!quiz)quiz=mkQuiz();
+    const z=quiz,n=z.qs.length;
+    if(z.i>=n)h=`<p class="big">${t('res',{s:nd(z.s),n:nd(n)})}</p><button class="go" id="again">${t('again')}</button>`;
+    else{const q=z.qs[z.i];
+      h=`<p><small>${t('qn',{i:nd(z.i+1),n:nd(n)})}</small></p><p class="big" style="font-size:clamp(20px,3.6vw,26px)">${qText(q)}</p>`+
+      q.o.map((o,j)=>`<button class="opt ${z.p!=null?(j==q.a?'ok':j==z.p?'bad':''):''}" data-o="${j}" ${z.p!=null?'disabled':''}>${oText(q,o)}</button>`).join('')+
+      (z.p!=null?`<p><b>${z.p==q.a?t('ok'):t('no')}</b></p><button class="go" id="qnext">${t('next')}</button>`:'')}}
+  P.innerHTML=h;drawDyn();ro()}
+$('lang').onclick=e=>{const l=e.target.dataset.l;if(l){L=l;drawBase();render()}};
+$('tabs').onclick=e=>{const k=e.target.dataset.t;if(k){tab=k;cp=null;render()}};
+$('panel').onclick=e=>{
+  const d=e.target.dataset,id=e.target.id;
+  if(d.c!=null){sel=+d.c;cp=[C[sel].lo,C[sel].la];render()}
+  else if(d.lv){lv=+d.lv;sc=0;newRound();render()}
+  else if(id=='next'){newRound();render()}
+  else if(d.o!=null&&quiz.p==null){quiz.p=+d.o;if(quiz.p==quiz.qs[quiz.i].a)quiz.s++;render()}
+  else if(id=='qnext'){quiz.i++;quiz.p=null;render()}
+  else if(id=='again'){quiz=mkQuiz();render()}};
+drawBase();render();
+</script>
+</body>
+</html>
