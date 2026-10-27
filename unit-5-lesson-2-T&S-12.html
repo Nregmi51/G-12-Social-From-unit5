@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ २ – प्रदेशहरूको जनसाङ्ख्यिक अवस्था (कक्षा १२)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #f3effa;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fefcff;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #d3c8e4;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #4A148C;
+            line-height: 1.2;
+        }
+
+        .main-header h1 i { color: #6A1B9A; margin-right: 10px; }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #6A1B9A;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .credit-bar {
+            background: #ebe3f5;
+            border-radius: 60px;
+            padding: 14px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #d3c8e4;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .credit-bar .name { color: #0b2b4a; font-weight: 800; font-size: 1.15rem; }
+        .credit-bar .email { color: #4A148C; font-weight: 700; }
+        .credit-bar i { color: #4A148C; margin-right: 6px; }
+
+        /* ----- TABLE OF CONTENTS ----- */
+        .toc-section {
+            background: #4A148C;
+            border-radius: 20px;
+            padding: 18px 24px;
+            margin: 6px 0 28px;
+            border: 2px solid #7B1FA2;
+        }
+
+        .toc-section h3 {
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.36rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toc-section h3 i { color: #f5d742; font-size: 1.3rem; }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4px 16px;
+        }
+
+        .toc-grid a {
+            color: #ede4f7;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16.5px;
+            padding: 4px 0 4px 6px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toc-grid a:hover {
+            color: #f5d742;
+            border-bottom-color: #f5d742;
+            transform: translateX(4px);
+        }
+
+        .toc-grid a i { color: #f5d742; font-size: 0.6rem; min-width: 14px; }
+
+        @media (max-width: 700px) { .toc-grid { grid-template-columns: 1fr 1fr; } .toc-grid a { font-size: 15px; } }
+        @media (max-width: 480px) { .toc-grid { grid-template-columns: 1fr; } .toc-grid a { font-size: 14px; } }
+
+        /* ----- QUICK STATS ----- */
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 14px;
+            margin: 20px 0 24px;
+        }
+
+        .stat-card {
+            background: #fefcff;
+            border-radius: 14px;
+            padding: 14px 18px;
+            border-left: 5px solid #4A148C;
+            border-top: 2px solid #ebe3f5;
+            border-right: 2px solid #ebe3f5;
+            border-bottom: 2px solid #ebe3f5;
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(74, 20, 140, 0.15);
+        }
+
+        .stat-card .stat-label {
+            font-size: 0.85rem;
+            color: #4A148C;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-card .stat-value {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #0b2b4a;
+            line-height: 1.3;
+        }
+
+        .stat-card .stat-detail {
+            font-size: 0.95rem;
+            color: #4d5f72;
+            font-weight: 500;
+        }
+
+        /* ----- SECTION HEADERS ----- */
+        .section-head {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #4A148C;
+            margin: 42px 0 16px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            scroll-margin-top: 80px;
+            box-shadow: 0 3px 12px rgba(74, 20, 140, 0.35);
+        }
+
+        .section-head i { font-size: 1.5rem; color: #f5d742; }
+
+        .section-head .mark-badge {
+            color: #4A148C;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: 4px;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #f5d742; color: #0b2b4a; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.pink { background: #f48fb1; color: #0b2b4a; }
+
+        .sub-head {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #38006b;
+            margin: 28px 0 12px;
+            padding-left: 14px;
+            border-left: 6px solid #4A148C;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            scroll-margin-top: 80px;
+        }
+
+        .sub-head i { color: #4A148C; font-size: 1.1rem; }
+
+        /* ----- CONTENT BOXES ----- */
+        .content-box {
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #4A148C;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .content-box p, .content-box ul, .content-box ol, .content-box li {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .content-box ul, .content-box ol { padding-left: 28px; margin: 8px 0 8px; }
+        .content-box li { margin-bottom: 6px; }
+        .content-box strong { color: #0b2b4a; font-weight: 900; }
+
+        .content-box.purple-light { border-left-color: #4A148C; background: #f3effa; }
+        .content-box.blue-light { border-left-color: #1a3a5c; background: #e8f0f8; }
+        .content-box.gold-light { border-left-color: #b45309; background: #fef8ee; }
+        .content-box.green-light { border-left-color: #1f7a4a; background: #eef8f2; }
+        .content-box.teal-light { border-left-color: #0f7a7a; background: #eef8f8; }
+
+        /* ----- GLOSSARY GRID ----- */
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 16px 0 8px;
+        }
+
+        .glossary-item {
+            background: #faf8f5;
+            border-radius: 12px;
+            padding: 14px 18px;
+            border-left: 5px solid #4A148C;
+        }
+
+        .glossary-item strong { color: #38006b; font-size: 1.15rem; font-weight: 900; }
+        .glossary-item p { margin-top: 3px; font-size: 1.1rem; color: #2d3a4a; font-weight: 500; }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0 14px;
+            border-radius: 14px;
+            border: 2px solid #d3c8e4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.02rem;
+            min-width: 500px;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            border: 1px solid #d3c8e4;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #4A148C;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.02rem;
+            text-align: center;
+        }
+
+        td { font-weight: 500; font-size: 1rem; }
+        td.num { text-align: right; font-variant-numeric: tabular-nums; }
+        td.ctr { text-align: center; }
+
+        tr:nth-child(even) td { background: #faf7fc; }
+        tr:hover td { background: #f3effa; }
+
+        tr.total-row td {
+            background: #ebe3f5 !important;
+            font-weight: 900;
+            color: #4A148C;
+        }
+
+        .table-caption {
+            background: #ebe3f5;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #d3c8e4;
+        }
+
+        /* ============ PIE CHART SECTION ============ */
+        .pie-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            margin: 20px 0;
+            padding: 24px;
+            background: #faf7fc;
+            border-radius: 20px;
+            border: 2px solid #d3c8e4;
+        }
+
+        @media (max-width: 700px) {
+            .pie-wrap { grid-template-columns: 1fr; gap: 20px; padding: 16px; }
+        }
+
+        .pie-chart-container {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            margin: 0 auto;
+            filter: drop-shadow(0 6px 18px rgba(74, 20, 140, 0.2));
+        }
+
+        @media (max-width: 480px) {
+            .pie-chart-container { width: 260px; height: 260px; }
+        }
+
+        .pie-chart {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(
+                #4A148C 0% 20.97%,
+                #D32F2F 20.97% 41.94%,
+                #F57C00 41.94% 59.50%,
+                #388E3C 59.50% 76.51%,
+                #1976D2 76.51% 85.75%,
+                #7B1FA2 85.75% 94.21%,
+                #00838F 94.21% 100%
+            );
+            position: relative;
+            animation: pieRotate 1.2s ease-out;
+        }
+
+        @keyframes pieRotate {
+            from { transform: rotate(-90deg) scale(0.85); opacity: 0.3; }
+            to { transform: rotate(0deg) scale(1); opacity: 1; }
+        }
+
+        .pie-chart::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 45%;
+            height: 45%;
+            background: #faf7fc;
+            border-radius: 50%;
+            box-shadow: inset 0 0 8px rgba(74, 20, 140, 0.15);
+        }
+
+        .pie-chart-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 2;
+        }
+
+        .pie-chart-label .big {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #4A148C;
+            line-height: 1.1;
+        }
+
+        .pie-chart-label .small {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #6A1B9A;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .pie-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .legend-item {
+            display: grid;
+            grid-template-columns: 20px 1fr auto;
+            gap: 10px;
+            align-items: center;
+            padding: 8px 12px;
+            background: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #e8e0f0;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+
+        .legend-item:hover {
+            transform: translateX(4px);
+            border-color: #4A148C;
+            box-shadow: 0 2px 8px rgba(74, 20, 140, 0.12);
+        }
+
+        .legend-color {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+        }
+
+        .legend-label { font-weight: 600; color: #1a1a2e; }
+        .legend-value {
+            font-weight: 900;
+            color: #4A148C;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ----- INSIGHT BOX ----- */
+        .insight-box {
+            background: #fff8e1;
+            border-radius: 12px;
+            padding: 14px 20px;
+            margin: 12px 0 18px;
+            border-left: 5px solid #f5d742;
+            border-top: 1px solid #ffe082;
+            border-right: 1px solid #ffe082;
+            border-bottom: 1px solid #ffe082;
+        }
+
+        .insight-box .insight-title {
+            font-weight: 900;
+            color: #B45309;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .insight-box .insight-title i { color: #f5b800; }
+        .insight-box p, .insight-box li { font-size: 1.05rem; color: #4a3500; font-weight: 500; margin-bottom: 3px; }
+        .insight-box ul { padding-left: 22px; margin: 4px 0; }
+
+        /* ----- MNEMONIC BOX ----- */
+        .mnemonic-box {
+            background: #f3effa;
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 12px 0;
+            border: 2px solid #d3c8e4;
+            border-left: 6px solid #4A148C;
+        }
+
+        .mnemonic-box .mn-title {
+            font-weight: 900;
+            color: #38006b;
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+        }
+
+        .mnemonic-box .mn-formula {
+            background: #ffffff;
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 30px;
+            border: 2px solid #4A148C;
+            font-weight: 900;
+            color: #4A148C;
+            font-size: 1.05rem;
+            margin: 6px 0;
+        }
+
+        .mnemonic-box p, .mnemonic-box li {
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        /* ----- Q&A BLOCKS ----- */
+        .qa-block {
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #4A148C;
+        }
+
+        .qa-block.color1 { border-left-color: #4A148C; background: #f3effa; }
+        .qa-block.color2 { border-left-color: #1a3a5c; background: #f0f5fa; }
+        .qa-block.color3 { border-left-color: #1f7a4a; background: #f2f8f5; }
+        .qa-block.color4 { border-left-color: #6b3fa0; background: #f6f2f8; }
+        .qa-block.color5 { border-left-color: #b45309; background: #fcf9f4; }
+        .qa-block.color6 { border-left-color: #0f7a7a; background: #eef8f8; }
+
+        .qa-block .q {
+            font-weight: 900;
+            color: #38006b;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 1.2rem;
+        }
+
+        .qa-block .q .qnum { color: #4A148C; font-weight: 900; min-width: 30px; }
+
+        .qa-block .a {
+            margin-top: 6px;
+            padding-left: 46px;
+            color: #1e2a3a;
+            font-weight: 500;
+            font-size: 1.15rem;
+        }
+
+        .qa-block .a ul, .qa-block .a ol { padding-left: 24px; margin: 6px 0 6px; }
+        .qa-block .a li { margin-bottom: 5px; font-weight: 500; }
+        .qa-block .a strong { color: #0b2b4a; font-weight: 900; }
+        .qa-block .a .step-icon { display: inline-block; margin-right: 6px; font-weight: 900; }
+        .qa-block .a .step-title { font-weight: 700; color: #38006b; font-size: 1.1rem; }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #4A148C;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(74, 20, 140, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+        #scrollUpBtn:hover { background: #38006b; transform: scale(1.08); }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 3px solid #d3c8e4;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 28px;
+            font-weight: 600;
+        }
+
+        .footer-copy i { color: #4A148C; margin-right: 6px; }
+        .footer-copy .highlight { font-weight: 800; color: #0b2b4a; }
+
+        hr { border: none; border-top: 3px dotted #d3c8e4; margin: 28px 0 10px; }
+
+        .tip-box {
+            background: #4A148C;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.08rem;
+        }
+
+        .tip-box i { margin-right: 8px; }
+        .tip-box strong { color: #f5d742; }
+
+        .back-toc {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 8px;
+            padding: 6px 16px;
+            background: #ebe3f5;
+            color: #4A148C;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            border: 1.5px solid #d3c8e4;
+            transition: all 0.2s;
+        }
+
+        .back-toc:hover { background: #4A148C; color: #fff; border-color: #4A148C; }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container { padding: 16px 12px 24px; border-radius: 20px; }
+            .main-header h1 { font-size: 1.35rem; }
+            .section-head { font-size: 1.25rem; padding: 10px 16px; }
+            .sub-head { font-size: 1.15rem; }
+            .qa-block .a { padding-left: 12px; font-size: 1.02rem; }
+            .qa-block .q { font-size: 1.05rem; flex-wrap: wrap; }
+            .credit-bar { flex-direction: column; align-items: flex-start; gap: 4px; font-size: 0.9rem; padding: 10px 16px; }
+            .glossary-grid { grid-template-columns: 1fr; }
+            #scrollUpBtn { width: 50px; height: 50px; font-size: 1.3rem; bottom: 18px; right: 18px; }
+            .toc-section { padding: 14px 16px; }
+            .content-box { padding: 14px 16px; }
+            .content-box p, .content-box ul, .content-box ol, .content-box li { font-size: 1rem; }
+            table { font-size: 0.82rem; min-width: 480px; }
+            th, td { font-size: 0.82rem; padding: 6px 6px; }
+            .glossary-item strong { font-size: 1.05rem; }
+            .glossary-item p { font-size: 0.98rem; }
+            .mnemonic-box p, .mnemonic-box li { font-size: 1rem; }
+            .insight-box p, .insight-box li { font-size: 0.98rem; }
+            .stat-card .stat-value { font-size: 1.2rem; }
+            .toc-grid a { font-size: 15px; }
+            .pie-chart-label .big { font-size: 1.2rem; }
+            .legend-item { font-size: 0.9rem; padding: 6px 10px; }
+        }
+
+        @media (min-width: 768px) { .container { padding: 36px 46px 50px; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <div>
+                <h1>
+                    <i class="fas fa-users-cog"></i>
+                    एकाइ ५, पाठ २: प्रदेशहरूको जनसाङ्ख्यिक अवस्था र विशेषता
+                </h1>
+                <div class="subtitle">
+                    कक्षा १२ · सामाजिक अध्ययन तथा जीवनोपयोगी शिक्षा
+                    <span class="badge-class"><i class="fas fa-check-circle"></i> जनगणना २०७८ (v2)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit-bar">
+            <span><i class="fas fa-user-edit"></i> <span class="name">Prepared by: Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> <span class="email">nregmi511@gmail.com</span></span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ २</span>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <!-- ========================================================== -->
+
+        <div class="toc-section" id="toc">
+            <h3><i class="fas fa-list-ul"></i> विषयसूची (जल्दी नेभिगेसन)</h3>
+            <div class="toc-grid">
+                <a href="#section1"><i class="fas fa-chevron-right"></i> पारिभाषिक शब्दावली</a>
+                <a href="#section2"><i class="fas fa-chevron-right"></i> जनसङ्ख्या तालिका</a>
+                <a href="#section3"><i class="fas fa-chevron-right"></i> वृत्तचित्र (Pie Chart)</a>
+                <a href="#section4"><i class="fas fa-chevron-right"></i> सुत्रत्मक घोक्ने बुँदाहरू</a>
+                <a href="#section5"><i class="fas fa-chevron-right"></i> अभ्यास समाधान</a>
+                <a href="#section6"><i class="fas fa-chevron-right"></i> परीक्षा उपयोगी Q&A</a>
+            </div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== QUICK STATS ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="quick-stats">
+            <i class="fas fa-bolt"></i>
+            तथ्याङ्क झलक (Quick Stats)
+            <span class="mark-badge gold">Overview</span>
+        </div>
+
+        <div class="quick-stats">
+            <div class="stat-card">
+                <div class="stat-label">कुल जनसंख्या</div>
+                <div class="stat-value">२,९१,६४,५७८</div>
+                <div class="stat-detail">पुरुष ४८.८७% | महिला ५१.१३%</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">राष्ट्रिय जनघनत्व</div>
+                <div class="stat-value">१९८</div>
+                <div class="stat-detail">प्रति वर्ग कि.मि.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">उच्चतम जनघनत्व</div>
+                <div class="stat-value">मधेश</div>
+                <div class="stat-detail">६३३ / कि.मि.²</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">न्यूनतम जनघनत्व</div>
+                <div class="stat-value">कर्णाली</div>
+                <div class="stat-detail">६० / कि.मि.²</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">सक्रिय जनसंख्या</div>
+                <div class="stat-value">६१.९६%</div>
+                <div class="stat-detail">१५–५९ वर्ष</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">लैङ्गिक अनुपात</div>
+                <div class="stat-value">९५.५९</div>
+                <div class="stat-detail">पुरुष प्रति १०० महिला</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">ऋणात्मक वृद्धि जिल्ला</div>
+                <div class="stat-value">३२</div>
+                <div class="stat-detail">७७ मध्ये</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">सबैभन्दा ठुलो जिल्ला</div>
+                <div class="stat-value">काठमाडौँ</div>
+                <div class="stat-detail">२०,४१,५८७ जना</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== १. पारिभाषिक शब्दावली ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section1">
+            <i class="fas fa-book-open"></i>
+            १. विषयगत पारिभाषिक शब्दावली
+            <span class="mark-badge blue">Glossary</span>
+        </div>
+
+        <div class="glossary-grid">
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#4A148C; margin-right:4px;"></i> जनसाङ्ख्यिक अवस्था (Demographic Condition)</strong>
+                <p>कुनै निश्चित भौगोलिक क्षेत्र वा प्रदेशमा बसोबास गर्ने मानिसहरूको जनसङ्ख्याको आकार, घनत्व, लिङ्ग, उमेर समूह, वृद्धिदर र वितरणको समग्र स्थिति <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#4A148C; margin-right:4px;"></i> जनघनत्व (Population Density)</strong>
+                <p>प्रति वर्ग किलोमिटर भौगोलिक क्षेत्रफलमा औसत कति जना मानिस बसोबास गर्छन् भन्ने नाप। (राष्ट्रिय: <strong>१९८ जना/कि.मी.²</strong>) <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#4A148C; margin-right:4px;"></i> सक्रिय जनसङ्ख्या (Active Population)</strong>
+                <p>देशको अर्थतन्त्रमा प्रत्यक्ष श्रम र उत्पादनमा योगदान पुर्‍याउन सक्ने <strong>१५ देखि ५९ वर्ष</strong> उमेर समूहको जनसङ्ख्या (राष्ट्रिय: ६१.९६%) <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#4A148C; margin-right:4px;"></i> आश्रित जनसङ्ख्या (Dependent Population)</strong>
+                <p>१४ वर्षभन्दा मुनिका बालबालिका (<strong>२७.८३%</strong>) तथा ६० वर्षभन्दा माथिका ज्येष्ठ नागरिक (<strong>१०.२१%</strong>) को जनसङ्ख्या <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#4A148C; margin-right:4px;"></i> लैङ्गिक अनुपात (Sex Ratio)</strong>
+                <p>प्रति १०० जना महिला बराबर कति जना पुरुष छन् भन्ने अनुपात। (राष्ट्रिय: <strong>९५.५९ पुरुष / १०० महिला</strong>) <span class="ref">[५]</span>।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#4A148C; margin-right:4px;"></i> ऋणात्मक जनसङ्ख्या वृद्धिदर</strong>
+                <p>बाह्य बसाइँसराइ वा जन्मदरभन्दा उत्प्रवास बढी भई कुनै जिल्ला वा प्रदेशको जनसङ्ख्या अघिल्लो जनगणनाको तुलनामा घट्ने अवस्था (नेपालका <strong>३२ जिल्ला</strong>मा) <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== २. जनसङ्ख्या तालिका ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section2">
+            <i class="fas fa-table"></i>
+            २. प्रदेशगत जनसङ्ख्या, जनघनत्व र ऋणात्मक वृद्धि
+            <span class="mark-badge gold">Core Tables</span>
+        </div>
+
+        <div class="content-box purple-light">
+            <p>नेपालको कुल राष्ट्रिय जनसङ्ख्या <strong>२,९१,६४,५७८</strong> (पुरुष ४८.८७%, महिला ५१.१३%, अन्य ०.०१%) रहेको छ <span class="ref">[५]</span>।</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#4A148C;"></i> तालिका १: प्रदेशगत जनसङ्ख्या, जनघनत्व र ऋणात्मक वृद्धिका जिल्लाहरू <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेशको नाम</th>
+                        <th>पुरुष जनसङ्ख्या</th>
+                        <th>महिला जनसङ्ख्या</th>
+                        <th>कुल जनसङ्ख्या</th>
+                        <th>जनसङ्ख्या हिस्सा (%)</th>
+                        <th>जनघनत्व (प्रति किमी²)</th>
+                        <th>ऋणात्मक वृद्धि जिल्ला</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ctr">१</td><td><strong>कोशी प्रदेश</strong></td><td class="num">२४,१७,३२८</td><td class="num">२५,४४,०८४</td><td class="num"><strong>४९,६१,४१२</strong></td><td class="ctr">१७.०१%</td><td class="ctr">१९२</td><td class="ctr"><strong>५</strong></td></tr>
+                    <tr><td class="ctr">२</td><td><strong>मधेश प्रदेश</strong></td><td class="num">३०,६५,७५१</td><td class="num">३०,४८,८४९</td><td class="num"><strong>६१,१४,६००</strong></td><td class="ctr">२०.९७%</td><td class="ctr">६३३</td><td class="ctr"><strong>०</strong></td></tr>
+                    <tr><td class="ctr">३</td><td><strong>बागमती प्रदेश</strong></td><td class="num">३०,४८,६८४</td><td class="num">३०,६८,१८२</td><td class="num"><strong>६१,१६,८६६</strong></td><td class="ctr">२०.९७%</td><td class="ctr">३०१</td><td class="ctr"><strong>६</strong></td></tr>
+                    <tr><td class="ctr">४</td><td><strong>गण्डकी प्रदेश</strong></td><td class="num">११,७०,८३३</td><td class="num">१२,९५,५९४</td><td class="num"><strong>२४,६६,४२७</strong></td><td class="ctr">८.४६%</td><td class="ctr">११५</td><td class="ctr"><strong>७</strong></td></tr>
+                    <tr><td class="ctr">५</td><td><strong>लुम्बिनी प्रदेश</strong></td><td class="num">२४,५७,४०७</td><td class="num">२६,६४,६७१</td><td class="num"><strong>५१,२२,०७८</strong></td><td class="ctr">१७.५६%</td><td class="ctr">२३०</td><td class="ctr"><strong>५</strong></td></tr>
+                    <tr><td class="ctr">६</td><td><strong>कर्णाली प्रदेश</strong></td><td class="num">८,२३,७६१</td><td class="num">८,६४,६५१</td><td class="num"><strong>१६,८८,४१२</strong></td><td class="ctr">५.७९%</td><td class="ctr">६०</td><td class="ctr"><strong>२</strong></td></tr>
+                    <tr><td class="ctr">७</td><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td class="num">१२,७०,३७२</td><td class="num">१४,२४,४११</td><td class="num"><strong>२६,९४,७८३</strong></td><td class="ctr">९.२४%</td><td class="ctr">१३८</td><td class="ctr"><strong>७</strong></td></tr>
+                    <tr class="total-row"><td class="ctr">—</td><td><strong>नेपाल (कुल)</strong></td><td class="num"><strong>१,४२,५३,५५१</strong></td><td class="num"><strong>१,४९,११,०२७</strong></td><td class="num"><strong>२,९१,६४,५७८</strong></td><td class="ctr"><strong>१००%</strong></td><td class="ctr"><strong>१९८</strong></td><td class="ctr"><strong>३२</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#4A148C;"></i> तालिका २: प्रदेशगत घरपरिवार, लैङ्गिक अनुपात, सहरी जनसङ्ख्या र उमेर समूह <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>प्रदेश</th>
+                        <th>औसत परिवार आकार</th>
+                        <th>लैङ्गिक अनुपात (पुरुष/१०० महिला)</th>
+                        <th>सहरी जनसङ्ख्या (%)</th>
+                        <th>१४ वर्ष मुनि (%)</th>
+                        <th>१५–५९ वर्ष (%)</th>
+                        <th>६० वर्ष माथि (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>कोशी प्रदेश</strong></td><td class="ctr">४.२३</td><td class="ctr">९५.०२</td><td class="ctr">६१.४%</td><td class="ctr">२७.४%</td><td class="ctr">६१.५%</td><td class="ctr">११.१%</td></tr>
+                    <tr><td><strong>मधेश प्रदेश</strong></td><td class="ctr">५.३१</td><td class="ctr">१०१.००</td><td class="ctr">६३.४%</td><td class="ctr">३४.६%</td><td class="ctr">५७.८%</td><td class="ctr">७.६%</td></tr>
+                    <tr><td><strong>बागमती प्रदेश</strong></td><td class="ctr">३.८२</td><td class="ctr">९९.३६</td><td class="ctr">७९.६%</td><td class="ctr">२५.२%</td><td class="ctr"><strong>६४.१%</strong></td><td class="ctr">१०.७%</td></tr>
+                    <tr><td><strong>गण्डकी प्रदेश</strong></td><td class="ctr">३.७५</td><td class="ctr">९०.३८</td><td class="ctr">५७.८%</td><td class="ctr">२३.९%</td><td class="ctr">६२.८%</td><td class="ctr"><strong>१३.३%</strong></td></tr>
+                    <tr><td><strong>लुम्बिनी प्रदेश</strong></td><td class="ctr">४.७६</td><td class="ctr">९२.२२</td><td class="ctr">६३.२%</td><td class="ctr">३०.५%</td><td class="ctr">५९.१%</td><td class="ctr">१०.४%</td></tr>
+                    <tr><td><strong>कर्णाली प्रदेश</strong></td><td class="ctr">४.७४</td><td class="ctr">९५.२७</td><td class="ctr">३५.५%</td><td class="ctr"><strong>३४.१%</strong></td><td class="ctr">५७.०%</td><td class="ctr">८.९%</td></tr>
+                    <tr><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td class="ctr">४.५८</td><td class="ctr">८९.१८</td><td class="ctr">३४.६%</td><td class="ctr">३२.०%</td><td class="ctr">५६.९%</td><td class="ctr">११.१%</td></tr>
+                    <tr class="total-row"><td><strong>नेपाल (औसत)</strong></td><td class="ctr"><strong>४.३७</strong></td><td class="ctr"><strong>९५.५९</strong></td><td class="ctr"><strong>६६.१७%</strong></td><td class="ctr"><strong>२७.८३%</strong></td><td class="ctr"><strong>६१.९६%</strong></td><td class="ctr"><strong>१०.२१%</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight-box">
+            <div class="insight-title"><i class="fas fa-lightbulb"></i> मुख्य अवलोकन</div>
+            <ul>
+                <li><strong>बागमती र मधेश:</strong> दुवैको जनसंख्या २०.९७% (करिब बराबर), दुवै मिलेर ४१.९४% <span class="ref">[५]</span>।</li>
+                <li><strong>सबैभन्दा कम:</strong> कर्णाली (५.७९%) <span class="ref">[५]</span>।</li>
+                <li><strong>जनघनत्व:</strong> उच्चतम मधेश (६३३), न्यूनतम कर्णाली (६०) <span class="ref">[५]</span>।</li>
+                <li><strong>सक्रिय जनसंख्या उच्चतम:</strong> बागमती (६४.१%); <strong>ज्येष्ठ नागरिक उच्चतम:</strong> गण्डकी (१३.३%) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ३. PIE CHART - वृत्तचित्र ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section3">
+            <i class="fas fa-chart-pie"></i>
+            ३. वृत्तचित्र (Pie Chart) — जनसङ्ख्या वितरण
+            <span class="mark-badge purple">Visual</span>
+        </div>
+
+        <div class="content-box purple-light">
+            <p>तलको वृत्तचित्रले जनगणना २०७८ अनुसार नेपालको कुल जनसंख्यामा ७ प्रदेशको हिस्सा (प्रतिशत) देखाउँछ <span class="ref">[५]</span>।</p>
+        </div>
+
+        <!-- ============ PIE CHART ============ -->
+        <div class="pie-wrap">
+            <div class="pie-chart-container">
+                <div class="pie-chart"></div>
+                <div class="pie-chart-label">
+                    <div class="big">२,९१,६४,५७८</div>
+                    <div class="small">कुल जनसंख्या</div>
+                </div>
+            </div>
+
+            <div class="pie-legend">
+                <div class="legend-item">
+                    <span class="legend-color" style="background:#4A148C;"></span>
+                    <span class="legend-label">बागमती प्रदेश</span>
+                    <span class="legend-value">२०.९७%</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background:#D32F2F;"></span>
+                    <span class="legend-label">मधेश प्रदेश</span>
+                    <span class="legend-value">२०.९७%</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background:#F57C00;"></span>
+                    <span class="legend-label">लुम्बिनी प्रदेश</span>
+                    <span class="legend-value">१७.५६%</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background:#388E3C;"></span>
+                    <span class="legend-label">कोशी प्रदेश</span>
+                    <span class="legend-value">१७.०१%</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background:#1976D2;"></span>
+                    <span class="legend-label">सुदूरपश्चिम प्रदेश</span>
+                    <span class="legend-value">९.२४%</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background:#7B1FA2;"></span>
+                    <span class="legend-label">गण्डकी प्रदेश</span>
+                    <span class="legend-value">८.४६%</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background:#00838F;"></span>
+                    <span class="legend-label">कर्णाली प्रदेश</span>
+                    <span class="legend-value">५.७९%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ DEGREE TABLE ============ -->
+        <div class="sub-head"><i class="fas fa-calculator"></i> वृत्तचित्र कोण (Degree) गणना तालिका</div>
+
+        <div class="content-box purple-light">
+            <p><strong>सुत्र:</strong> कोण = (प्रदेशको जनसंख्या % ÷ १००) × ३६०° <span class="ref">[५]</span>।</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-caption"><i class="fas fa-table" style="margin-right:6px; color:#4A148C;"></i> तालिका ३: वृत्तचित्र कोण गणना <span class="ref">[५]</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेशको नाम</th>
+                        <th>जनसंख्या प्रतिशत (%)</th>
+                        <th>वृत्तचित्र कोण (Degree)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ctr">१</td><td><strong>बागमती प्रदेश</strong></td><td class="ctr">२०.९७%</td><td class="ctr"><strong>७५.४९°</strong></td></tr>
+                    <tr><td class="ctr">२</td><td><strong>मधेश प्रदेश</strong></td><td class="ctr">२०.९७%</td><td class="ctr"><strong>७५.४९°</strong></td></tr>
+                    <tr><td class="ctr">३</td><td><strong>लुम्बिनी प्रदेश</strong></td><td class="ctr">१७.५६%</td><td class="ctr"><strong>६३.२२°</strong></td></tr>
+                    <tr><td class="ctr">४</td><td><strong>कोशी प्रदेश</strong></td><td class="ctr">१७.०१%</td><td class="ctr"><strong>६१.२४°</strong></td></tr>
+                    <tr><td class="ctr">५</td><td><strong>सुदूरपश्चिम प्रदेश</strong></td><td class="ctr">९.२४%</td><td class="ctr"><strong>३३.२६°</strong></td></tr>
+                    <tr><td class="ctr">६</td><td><strong>गण्डकी प्रदेश</strong></td><td class="ctr">८.४६%</td><td class="ctr"><strong>३०.४६°</strong></td></tr>
+                    <tr><td class="ctr">७</td><td><strong>कर्णाली प्रदेश</strong></td><td class="ctr">५.७९%</td><td class="ctr"><strong>२०.८४°</strong></td></tr>
+                    <tr class="total-row"><td class="ctr">—</td><td><strong>नेपाल</strong></td><td class="ctr"><strong>१००%</strong></td><td class="ctr"><strong>३६०°</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight-box">
+            <div class="insight-title"><i class="fas fa-lightbulb"></i> वृत्तचित्रको विश्लेषण</div>
+            <ul>
+                <li><strong>बागमती र मधेश:</strong> दुवैको स्लाइस ठुलो (७५.४९° प्रत्येक) — दुवै मिलेर वृत्तको करिब आधा हिस्सा <span class="ref">[५]</span>।</li>
+                <li><strong>लुम्बिनी र कोशी:</strong> क्रमशः ६३.२२° र ६१.२४° — मध्यम आकारका स्लाइस <span class="ref">[५]</span>।</li>
+                <li><strong>सुदूरपश्चिम, गण्डकी र कर्णाली:</strong> साना स्लाइस (३३.२६°, ३०.४६°, २०.८४°) — तीनवटै मिलेर २३.४९% मात्र <span class="ref">[५]</span>।</li>
+                <li><strong>निष्कर्ष:</strong> नेपालको जनसंख्या वितरण अत्यन्त असन्तुलित छ — २ प्रदेशमा ४१.९४% र ३ प्रदेशमा मात्र २३.४९% <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ४. सुत्रत्मक घोक्ने बुँदाहरू ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section4">
+            <i class="fas fa-brain"></i>
+            ४. सुत्रत्मक घोक्ने बुँदाहरू
+            <span class="mark-badge green">Mnemonics</span>
+        </div>
+
+        <div class="mnemonic-box">
+            <div class="mn-title"><i class="fas fa-key" style="color:#4A148C; margin-right:6px;"></i> सुत्र १: जनसङ्ख्या आकारको क्रम</div>
+            <div class="mn-formula">बा/म – लु – को – सु – ग – क</div>
+            <ul>
+                <li><strong>बागमती र मधेश:</strong> जनसंख्या बराबरी जस्तै (प्रत्येकको <strong>२०.९७%</strong>, दुवै मिलेर <strong>४१.९४%</strong>) <span class="ref">[५]</span>।</li>
+                <li><strong>लुम्बिनी:</strong> १७.५६% | <strong>कोशी:</strong> १७.०१% | <strong>सुदूरपश्चिम:</strong> ९.२४% | <strong>गण्डकी:</strong> ८.४६% | <strong>कर्णाली:</strong> ५.७९% (सबैभन्दा थोरै) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-box">
+            <div class="mn-title"><i class="fas fa-key" style="color:#4A148C; margin-right:6px;"></i> सुत्र २: जनघनत्व (धेरैदेखि कम)</div>
+            <div class="mn-formula">म – बा – लु – को – सु – ग – क</div>
+            <ul>
+                <li><strong>मधेश:</strong> <strong>६३३ जना/कि.मी.²</strong> (सबैभन्दा बढी) <span class="ref">[५]</span>।</li>
+                <li><strong>बागमती:</strong> ३०१ जना/कि.मी.² <span class="ref">[५]</span>।</li>
+                <li><strong>कर्णाली:</strong> <strong>६० जना/कि.मी.²</strong> (सबैभन्दा कम) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-box">
+            <div class="mn-title"><i class="fas fa-key" style="color:#4A148C; margin-right:6px;"></i> सुत्र ३: उमेर र क्षेत्र तथ्याङ्क सुत्र (`३२-भ-रा`)</div>
+            <ul>
+                <li><strong>३२ जिल्ला:</strong> पहाडी तथा हिमाली ३२ जिल्लामा <strong>ऋणात्मक जनसङ्ख्या वृद्धिदर</strong> <span class="ref">[५]</span>।</li>
+                <li><strong>भक्तपुर (३.३५%):</strong> वार्षिक वृद्धिदर सबैभन्दा बढी भएको जिल्ला <span class="ref">[५]</span>।</li>
+                <li><strong>रामेछाप (-१.६७%):</strong> वार्षिक वृद्धिदर सबैभन्दा कम (ऋणात्मक) भएको जिल्ला <span class="ref">[५]</span>।</li>
+                <li><strong>सक्रिय जनसंख्या धेरै:</strong> बागमती (<strong>६४.१%</strong>) <span class="ref">[५]</span>।</li>
+                <li><strong>बाल जनसंख्या धेरै:</strong> मधेश (<strong>३४.६%</strong>) र कर्णाली (<strong>३४.१%</strong>) <span class="ref">[५]</span>।</li>
+                <li><strong>ज्येष्ठ नागरिक धेरै:</strong> गण्डकी (<strong>१३.३%</strong>) <span class="ref">[५]</span>।</li>
+            </ul>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ५. अभ्यास समाधान ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section5">
+            <i class="fas fa-check-double"></i>
+            ५. पाठ्यपुस्तकका अभ्यास तथा प्रश्नहरूको पूर्ण समाधान
+            <span class="mark-badge purple">Exercise</span>
+        </div>
+
+        <div class="qa-block color1">
+            <div class="q"><span class="qnum">(क)</span> जनसङ्ख्याका आधारमा नेपालको सबैभन्दा धेरै र थोरै जनसङ्ख्या भएको जिल्ला कुन हो?</div>
+            <div class="a">
+                <strong>उत्तर:</strong> राष्ट्रिय जनगणना २०७८ अनुसार नेपालको सबैभन्दा धेरै जनसङ्ख्या भएको जिल्ला <strong>काठमाडौँ (२०,४१,५८७ जना)</strong> र सबैभन्दा थोरै जनसङ्ख्या भएको जिल्ला <strong>मनाङ (५,६५८ जना)</strong> हो <span class="ref">[५]</span>।
+            </div>
+        </div>
+
+        <div class="qa-block color2">
+            <div class="q"><span class="qnum">(ख)</span> जनसङ्ख्या धेरैदेखि थोरैको आधारमा क्रमशः प्रदेशहरूको नाम लेख्नुहोस्।</div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> जनगणना २०७८ को आधारमा प्रदेशहरूको क्रम निम्न अनुसार छ <span class="ref">[५]</span>:</p>
+                <ol>
+                    <li><strong>बागमती प्रदेश:</strong> ६१,१६,८६६ जना (२०.९७%)</li>
+                    <li><strong>मधेश प्रदेश:</strong> ६१,१४,६०० जना (२०.९७%)</li>
+                    <li><strong>लुम्बिनी प्रदेश:</strong> ५१,२२,०७८ जना (१७.५६%)</li>
+                    <li><strong>कोशी प्रदेश:</strong> ४९,६१,४१२ जना (१७.०१%)</li>
+                    <li><strong>सुदूरपश्चिम प्रदेश:</strong> २६,९४,७८३ जना (९.२४%)</li>
+                    <li><strong>गण्डकी प्रदेश:</strong> २४,६६,४२७ जना (८.४६%)</li>
+                    <li><strong>कर्णाली प्रदेश:</strong> १६,८८,४१२ जना (५.७९%)</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="qa-block color3">
+            <div class="q"><span class="qnum">(ग)</span> नेपालको जनसङ्ख्याको प्रदेशगत आकारलाई वृत्तचित्र (Pie Chart) प्रस्तुत गर्नका लागि कोण (Degree) मा रूपान्तरण गर्नुहोस्।</div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> माथिको <strong>खण्ड ३ (वृत्तचित्र)</strong> मा पूर्ण कोण गणना तालिका र visual pie chart दुवै प्रस्तुत गरिएको छ <span class="ref">[५]</span>।</p>
+                <p><strong>सुत्र:</strong> कोण = (प्रतिशत ÷ १००) × ३६०°</p>
+                <p><strong>मुख्य नतिजा:</strong> बागमती र मधेश प्रत्येक ७५.४९°; लुम्बिनी ६३.२२°; कोशी ६१.२४°; सुदूरपश्चिम ३३.२६°; गण्डकी ३०.४६°; कर्णाली २०.८४° <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <div class="qa-block color4">
+            <div class="q"><span class="qnum">(घ)</span> नेपालको प्रदेशगत जनसङ्ख्या वितरणको अवस्थालाई जनगणना २०७८ को आधारमा विश्लेषण गर्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">परिचय:</span> नेपालमा धरातलीय स्वरूप, जलवायु, औद्योगिक विकास र पूर्वाधारको उपलब्धताका आधारमा प्रदेशगत जनसङ्ख्याको वितरण अत्यधिक असन्तुलित रहेको छ। राष्ट्रिय जनगणना २०७८ ले देशको जनसङ्ख्या तराई र सहरी क्षेत्रमा केन्द्रित हुँदै गएको स्पष्ट देखाउँछ <span class="ref">[५]</span>।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">विषय प्रवेश तथा मुख्य विश्लेषण:</span></p>
+                <ul>
+                    <li><strong>तराई र बागमती/मधेशमा उच्च चाप:</strong> बागमती र मधेश प्रदेशमा मात्रै देशको कुल जनसङ्ख्याको <strong>४१.९४%</strong> मानिस बसोबास गर्छन्। भौगोलिक रूपमा सुगम तराई क्षेत्रमा कुल जनसङ्ख्याको <strong>५३.६१%</strong> हिस्सा पुगेको छ <span class="ref">[५]</span>।</li>
+                    <li><strong>जनघनत्वको चरम विषमता:</strong> सुगम तराई क्षेत्रको मधेश प्रदेशमा जनघनत्व <strong>६३३ जना/कि.मी.²</strong> पुगेको छ भने हिमाली विकटताको कर्णाली प्रदेशमा जनघनत्व जम्मा <strong>६० जना/कि.मी.²</strong> मात्र छ <span class="ref">[५]</span>।</li>
+                    <li><strong>३२ जिल्लामा ऋणात्मक वृद्धि:</strong> पहाडी र हिमाली दुर्गम क्षेत्रबाट तराई र सहरी क्षेत्रतर्फ तीव्र बाह्य बसाइँसराइ भएकाले देशका <strong>३२ वटा जिल्लाहरूमा जनसङ्ख्या घटेको</strong> छ <span class="ref">[५]</span>।</li>
+                    <li><strong>उमेरगत संरचनामा भिन्नता:</strong> बागमतीमा वैदेशिक र आन्तरिक श्रम आकर्षणका कारण सक्रिय जनसङ्ख्या (<strong>६४.१%</strong>) उच्च छ भने कर्णाली र मधेशमा बाल जनसङ्ख्या (<strong>३४.६%</strong>) र गण्डकीमा ज्येष्ठ नागरिक (<strong>१३.३%</strong>) को अनुपात बढी छ <span class="ref">[५]</span>।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">निष्कर्ष:</span> अतः जनसङ्ख्याको यो असन्तुलन रोक्न प्रदेश र स्थानीय सरकारहरूले पहाडी र हिमाली क्षेत्रमा शिक्षा, स्वास्थ्य र स्वरोजगारका पूर्वाधार पुर्‍याई प्रादेशिक सन्तुलन कायम गर्नु अपरिहार्य छ <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ६. परीक्षा उपयोगी Q&A ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section6">
+            <i class="fas fa-bullseye"></i>
+            ६. बोर्ड परीक्षा विशेष नमुना प्रश्नोत्तर
+            <span class="mark-badge pink">High-Yield</span>
+        </div>
+
+        <!-- अति छोटो -->
+        <div class="sub-head"><i class="fas fa-star"></i> अति छोटो उत्तर आउने प्रश्नहरू (१ अङ्क)</div>
+
+        <div class="qa-block color5">
+            <div class="q"><span class="qnum">१.</span> जनगणना २०७८ अनुसार नेपालमा सबैभन्दा बढी र कम जनघनत्व भएका प्रदेशहरू कुन-कुन हुन्?</div>
+            <div class="a"><strong>उत्तर:</strong> सबैभन्दा बढी जनघनत्व भएको प्रदेश <strong>मधेश (६३३ जना/कि.मी.²)</strong> र सबैभन्दा कम जनघनत्व भएको प्रदेश <strong>कर्णाली (६० जना/कि.मी.²)</strong> हो <span class="ref">[५]</span>।</div>
+        </div>
+
+        <!-- छोटो (५ अंक) -->
+        <div class="sub-head"><i class="fas fa-star"></i> छोटो उत्तर आउने प्रश्नहरू (५ अङ्क)</div>
+
+        <div class="qa-block color6">
+            <div class="q"><span class="qnum">१.</span> बागमती प्रदेश र कर्णाली प्रदेशबिच जनगणना २०७८ का आधारमा जनसाङ्ख्यिक अवस्थाको तुलनात्मक तालिका प्रस्तुत गर्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">परिचय:</span> नेपालको औद्योगिक र राजनीतिक केन्द्र रहेको बागमती प्रदेश र भौगोलिक विकटता रहेको कर्णाली प्रदेशबिच जनसाङ्ख्यिक अवस्थामा व्यापक भिन्नता पाइन्छ <span class="ref">[५]</span>।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">तुलनात्मक विश्लेषण तालिका:</span></p>
+                <div class="table-wrap" style="margin-top:8px;">
+                    <table style="min-width:400px;">
+                        <thead>
+                            <tr><th>तुलनाका आधारहरू</th><th>बागमती प्रदेश</th><th>कर्णाली प्रदेश</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>१. जनसङ्ख्या र हिस्सा</strong></td><td class="ctr">६१,१६,८६६ जना (२०.९७%)</td><td class="ctr">१६,८८,४१२ जना (५.७९%)</td></tr>
+                            <tr><td><strong>२. जनघनत्व</strong></td><td class="ctr">३०१ जना/कि.मी.²</td><td class="ctr">६० जना/कि.मी.²</td></tr>
+                            <tr><td><strong>३. सक्रिय जनसंख्या (१५–५९)</strong></td><td class="ctr"><strong>६४.१%</strong> (उच्चतम)</td><td class="ctr">५७.०%</td></tr>
+                            <tr><td><strong>४. बाल जनसंख्या (१४ मुनि)</strong></td><td class="ctr">२५.२%</td><td class="ctr"><strong>३४.१%</strong></td></tr>
+                            <tr><td><strong>५. सहरी जनसंख्या %</strong></td><td class="ctr"><strong>७९.६%</strong></td><td class="ctr">३५.५%</td></tr>
+                            <tr><td><strong>६. औसत परिवार आकार</strong></td><td class="ctr">३.८२ जना</td><td class="ctr">४.७४ जना</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">निष्कर्ष:</span> बागमती प्रदेशमा उच्च सहरीकरण र सक्रिय श्रमशक्तिको चाप देखिन्छ भने कर्णाली प्रदेशमा पातलो जनघनत्व र उच्च आश्रित अनुपात रहेको स्पष्ट हुन्छ <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <!-- लामो (८ अंक) -->
+        <div class="sub-head"><i class="fas fa-gem"></i> लामो उत्तर आउने प्रश्नहरू (८ अङ्क)</div>
+
+        <div class="qa-block color1" style="border-left-color:#4A148C;">
+            <div class="q"><span class="qnum">प्रश्न:</span> "नेपालका पहाडी र हिमाली जिल्लाहरूबाट भइरहेको तीव्र आन्तरिक बसाइँसराइले देशका ३२ जिल्लामा ऋणात्मक जनसङ्ख्या वृद्धि ल्याएको छ।" यस समस्याका कारण, सामाजिक-आर्थिक प्रभाव र समाधानका उपायहरू विस्तृत रूपमा लेख्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">परिचय:</span> राष्ट्रिय जनगणना २०७८ अनुसार नेपालका ७७ जिल्लामध्ये पहाडी तथा हिमाली भूभागका <strong>३२ वटा जिल्लाहरूमा जनसङ्ख्या वृद्धिदर ऋणात्मक</strong> (−१.६७% सम्म) देखिएको छ। सुविधायुक्त तराई (५३.६१% जनसङ्ख्या) र सहरी क्षेत्रतर्फ भइरहेको अव्यवस्थित बसाइँसराइ यसको मूल कारण हो <span class="ref">[५]</span>।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">मुख्य विश्लेषण:</span></p>
+
+                <p><strong>(क) बसाइँसराइ र ऋणात्मक वृद्धिका कारणहरू:</strong></p>
+                <ul>
+                    <li><strong>सेवा-सुविधाको केन्द्रीकरण:</strong> पहाडी र हिमाली गाउँहरूमा उच्च शिक्षा, गुणस्तरीय स्वास्थ्य सेवा र प्राविधिक तालिमको अभाव <span class="ref">[५]</span>।</li>
+                    <li><strong>रोजगारीको कमी र कृषिमा निर्वाहमुखीपन:</strong> गैर-कृषि क्षेत्रमा रोजगारी नहुनु र परम्परागत कृषिबाट जीविकोपार्जन कठिन हुनु <span class="ref">[५]</span>।</li>
+                    <li><strong>जलवायु परिवर्तन र विपद्:</strong> खानेपानीका मुहान सुक्नु, पहिरो जानु र वैदेशिक रोजगारको कमाइले तराई/सहरमा घडेरी किन्ने होडबाजी <span class="ref">[५]</span>।</li>
+                </ul>
+
+                <p><strong>(ख) सामाजिक-आर्थिक प्रभावहरू:</strong></p>
+                <ul>
+                    <li><strong>उद्गम स्थलमा (गाउँघरमा):</strong> गाउँमा युवा जनशक्ति रित्तिएर केवल बालबालिका र वृद्धवृद्धा मात्र बाँकी रहनु, उब्जाउ खेतबारी बाँझो हुनु र स्थानीय संस्कृति लोप हुनु <span class="ref">[५]</span>।</li>
+                    <li><strong>गन्तव्य स्थलमा (तराई र सहरमा):</strong> सहरी क्षेत्रमा ढल, खानेपानी, सडक र यातायातमा क्षमताभन्दा बढी चाप पर्नु, सुकुम्बासी समस्या र वातावरणीय प्रदूषण बढ्नु <span class="ref">[५]</span>।</li>
+                </ul>
+
+                <p><strong>(ग) समाधानका व्यावहारिक उपायहरू:</strong></p>
+                <ol>
+                    <li><strong>आधारभूत पूर्वाधारको ग्यारेन्टी:</strong> प्रत्येक स्थानीय तहमा डाक्टरसहितको अस्पताल, नमुना आवासीय विद्यालय र बारैमास चल्ने कृषि सडक निर्माण गर्ने <span class="ref">[५]</span>।</li>
+                    <li><strong>स्थानीय स्वरोजगार र उद्यमशीलता:</strong> पहाडी क्षेत्रका युवाहरूलाई फलफूल खेती, जडीबुटी प्रशोधन, र होमस्टे पर्यटनका लागि सहुलियतपूर्ण बीउ पुँजी दिने <span class="ref">[५]</span>।</li>
+                    <li><strong>एकीकृत बस्ती विकास:</strong> छरिएर रहेका दुर्गम पहाडी बस्तीहरूलाई सडक र सेवा पुगेको स्थानमा एकीकृत गर्ने <span class="ref">[५]</span>।</li>
+                    <li><strong>प्रादेशिक सन्तुलित विकास बजेट:</strong> कर्णाली, सुदूरपश्चिम र कोशीका पहाडी जिल्लाहरूका लागि सङ्घीय सरकारले विशेष विकास प्याकेज सञ्चालन गर्ने <span class="ref">[५]</span>।</li>
+                </ol>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">निष्कर्ष:</span> अतः आन्तरिक बसाइँसराइलाई व्यवस्थित गर्दै पहाडी र हिमाली गाउँहरूमा आर्थिक सम्भावना र जीवनका आधारभूत सुविधाहरू पुर्‍याउन सकेमा मात्र ऋणात्मक वृद्धिदर रोकिई सन्तुलित र समृद्ध नेपाल निर्माण हुन सक्छ <span class="ref">[५]</span>।</p>
+            </div>
+        </div>
+
+        <a href="#toc" class="back-toc"><i class="fas fa-arrow-up"></i> विषयसूचीमा फर्कनुहोस्</a>
+
+        <hr>
+
+        <!-- ===== FINAL TIP ===== -->
+        <div class="tip-box" style="background:#4A148C; margin-top:20px;">
+            <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+            <strong>अन्तिम सल्लाह:</strong> जनसङ्ख्या, जनघनत्व र उमेर समूहका तथ्याङ्क परीक्षामा बारम्बार सोधिन्छन्। <strong>बागमती र मधेश (दुवै २०.९७%, कुल ४१.९४%)</strong>, <strong>मधेशको उच्चतम जनघनत्व (६३३)</strong>, र <strong>कर्णालीको न्यूनतम (६०)</strong> — यी तथ्याङ्क मनमा राख्नुहोस्। वृत्तचित्र (Pie Chart) को कोण गणना सुत्र (प्रतिशत ÷ १०० × ३६०°) पनि अभ्यास गर्नुहोस्।
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ २</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('scrollUpBtn');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) { btn.classList.add('visible'); }
+                else { btn.classList.remove('visible'); }
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+
+</body>
+</html>
