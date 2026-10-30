@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ ३ – नेपालका प्रदेशको सामाजिक-सांस्कृतिक अवस्था र विशेषता (कक्षा १२)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family:'Noto Sans Devanagari', sans-serif;
+            background:#e8f0f8;
+            color:#1f2d3a;
+            padding:16px 12px 30px;
+            line-height:2;
+            scroll-behavior:smooth;
+        }
+        .container {
+            max-width:1150px; margin:0 auto;
+            background:#fcfdfc; color:#1f2d3a;
+            border-radius:32px;
+            box-shadow:0 16px 56px rgba(0,0,0,0.08);
+            padding:28px 22px 40px;
+            position:relative;
+        }
+        .main-header {
+            border-bottom:4px solid #b0cfe0;
+            padding-bottom:16px; margin-bottom:16px;
+            display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:8px;
+        }
+        .main-header h1 {
+            font-size:2rem; font-weight:900; color:#01579B; line-height:1.2;
+        }
+        .main-header h1 i { color:#0277BD; margin-right:10px; }
+        .main-header .subtitle {
+            font-size:1.16rem; color:#4d5f72; font-weight:600; margin-top:4px;
+        }
+        .badge-class {
+            background:#0277BD; color:#fff;
+            font-size:0.8rem; font-weight:800;
+            padding:4px 18px; border-radius:40px;
+            letter-spacing:0.5px; display:inline-block; margin-left:6px;
+        }
+        .credit-bar {
+            background:#e3f2fd; border-radius:60px;
+            padding:14px 28px;
+            display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center;
+            gap:8px 20px; margin:6px 0 24px;
+            border:2px solid #b0cfe0;
+            font-size:1.05rem; font-weight:700; color:#1f2d3a;
+        }
+        .credit-bar .name { color:#0b2b4a; font-weight:800; font-size:1.15rem; }
+        .credit-bar .email { color:#0277BD; font-weight:700; }
+        .credit-bar i { color:#0277BD; margin-right:6px; }
+
+        .intro-note {
+            background:#edf7fc;
+            border:2px dashed #b0cfe0;
+            border-left:6px solid #0277BD;
+            border-radius:16px;
+            padding:14px 22px;
+            margin:6px 0 24px;
+            font-weight:500;
+            font-size:1.05rem;
+            color:#1f2d3a;
+        }
+        .intro-note i { color:#0277BD; margin-right:8px; }
+        .intro-note strong { color:#01579B; font-weight:900; }
+
+        .toc-section {
+            background:#0277BD; border-radius:20px;
+            padding:18px 24px; margin:6px 0 28px;
+            border:2px solid #42A5F5;
+        }
+        .toc-section h3 {
+            font-weight:800; color:#fff; font-size:1.36rem; margin-bottom:12px;
+            display:flex; align-items:center; gap:12px;
+        }
+        .toc-section h3 i { color:#f5d742; font-size:1.3rem; }
+        .toc-grid {
+            display:grid; grid-template-columns:1fr 1fr 1fr; gap:4px 16px;
+        }
+        .toc-grid a {
+            color:#e0eefa; text-decoration:none;
+            font-weight:600; font-size:16.5px;
+            padding:4px 0 4px 6px;
+            border-bottom:2px solid transparent;
+            transition:all 0.2s ease;
+            display:flex; align-items:center; gap:6px;
+        }
+        .toc-grid a:hover { color:#f5d742; border-bottom-color:#f5d742; transform:translateX(4px); }
+        .toc-grid a i { color:#f5d742; font-size:0.6rem; min-width:14px; }
+
+        @media (max-width:700px) { .toc-grid { grid-template-columns:1fr 1fr; } .toc-grid a { font-size:15px; } }
+        @media (max-width:480px) { .toc-grid { grid-template-columns:1fr; } .toc-grid a { font-size:14px; } }
+
+        .section-head {
+            font-size:1.7rem; font-weight:900; color:#fff;
+            background:#0277BD;
+            margin:42px 0 16px; padding:12px 22px; border-radius:12px;
+            display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+            scroll-margin-top:80px;
+            box-shadow:0 3px 12px rgba(2,119,189,0.35);
+        }
+        .section-head i { font-size:1.5rem; color:#f5d742; }
+        .section-head .mark-badge {
+            color:#0277BD; font-size:0.7rem; font-weight:800;
+            padding:3px 14px; border-radius:40px; margin-left:4px; background:#fff;
+        }
+        .section-head .mark-badge.gold { background:#f5d742; color:#0b2b4a; }
+        .section-head .mark-badge.green { background:#7dcea0; color:#0b2b4a; }
+        .section-head .mark-badge.purple { background:#b39ddb; color:#0b2b4a; }
+        .section-head .mark-badge.blue { background:#81d4fa; color:#0b2b4a; }
+        .section-head .mark-badge.pink { background:#f48fb1; color:#0b2b4a; }
+
+        .sub-head {
+            font-size:1.3rem; font-weight:800; color:#01579B;
+            margin:28px 0 12px; padding-left:14px;
+            border-left:6px solid #0277BD;
+            display:flex; align-items:center; gap:10px;
+            scroll-margin-top:80px;
+        }
+        .sub-head i { color:#0277BD; font-size:1.1rem; }
+
+        .content-box {
+            border-radius:16px; padding:20px 26px; margin:14px 0 18px;
+            border-left:6px solid #0277BD; font-weight:500; line-height:2;
+        }
+        .content-box p, .content-box ul, .content-box ol, .content-box li {
+            font-size:1.19rem; font-weight:500; margin-bottom:8px;
+        }
+        .content-box ul, .content-box ol { padding-left:28px; margin:8px 0 8px; }
+        .content-box li { margin-bottom:6px; }
+        .content-box strong { color:#01579B; font-weight:900; }
+
+        .content-box.blue-light { border-left-color:#0277BD; background:#e3f2fd; }
+        .content-box.darkblue-light { border-left-color:#1a3a5c; background:#e8f0f8; }
+        .content-box.gold-light { border-left-color:#b45309; background:#fef8ee; }
+        .content-box.green-light { border-left-color:#1f7a4a; background:#eef8f2; }
+        .content-box.purple-light { border-left-color:#6A1B9A; background:#f4eef8; }
+        .content-box.pink-light { border-left-color:#a03a5a; background:#f8eef2; }
+        .content-box.teal-light { border-left-color:#0f7a7a; background:#eef8f8; }
+        .content-box.orange-light { border-left-color:#d97706; background:#fef6ed; }
+
+        .table-wrap {
+            overflow-x:auto; margin:16px 0 14px;
+            border-radius:14px; border:2px solid #b0cfe0;
+        }
+        table {
+            width:100%; border-collapse:collapse; font-size:1.05rem; min-width:280px;
+        }
+        th, td {
+            padding:12px 16px; border:1px solid #b0cfe0;
+            text-align:left; vertical-align:top;
+        }
+        th {
+            background:#0277BD; font-weight:800; color:#fff; font-size:1.08rem;
+        }
+        td { font-weight:500; font-size:1.05rem; }
+        .table-caption {
+            background:#e3f2fd; padding:10px 18px;
+            font-weight:700; font-size:1.08rem; color:#01579B;
+            border-bottom:2px solid #b0cfe0;
+        }
+
+        .qa-block {
+            border-radius:16px; padding:18px 24px; margin:14px 0 18px;
+            border-left:6px solid #0277BD;
+        }
+        .qa-block.color1 { border-left-color:#0277BD; background:#e3f2fd; }
+        .qa-block.color2 { border-left-color:#1a3a5c; background:#f0f5fa; }
+        .qa-block.color3 { border-left-color:#1f7a4a; background:#f2f8f5; }
+        .qa-block.color4 { border-left-color:#6b3fa0; background:#f6f2f8; }
+        .qa-block.color5 { border-left-color:#b45309; background:#fcf9f4; }
+        .qa-block.color6 { border-left-color:#0f7a7a; background:#eef8f8; }
+        .qa-block.color7 { border-left-color:#a03a5a; background:#fcf5f8; }
+        .qa-block.color8 { border-left-color:#d97706; background:#fef8ef; }
+
+        .qa-block .q {
+            font-weight:900; color:#01579B;
+            display:flex; gap:10px; align-items:baseline;
+            font-size:1.22rem;
+        }
+        .qa-block .q .qnum { color:#0277BD; font-weight:900; min-width:30px; }
+        .qa-block .a {
+            margin-top:6px; padding-left:46px;
+            color:#1f2d3a; font-weight:500; font-size:1.19rem;
+        }
+        .qa-block .a ul, .qa-block .a ol { padding-left:24px; margin:6px 0 6px; }
+        .qa-block .a li { margin-bottom:5px; font-weight:500; }
+        .qa-block .a strong { color:#01579B; font-weight:900; }
+        .qa-block .a .step-icon { display:inline-block; margin-right:6px; font-weight:900; }
+        .qa-block .a .step-title { font-weight:700; color:#01579B; font-size:1.1rem; }
+
+        .glossary-grid {
+            display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:16px 0 8px;
+        }
+        .glossary-item {
+            background:#edf7fc; border-radius:12px;
+            padding:14px 18px; border-left:5px solid #0277BD;
+        }
+        .glossary-item strong { color:#01579B; font-size:1.15rem; font-weight:900; }
+        .glossary-item p { margin-top:3px; font-size:1.125rem; color:#1f2d3a; font-weight:500; }
+
+        .mermaid-flow {
+            display:flex; flex-direction:column; align-items:center; gap:6px;
+            margin:16px 0; padding:14px 10px;
+            background:#e3f2fd; border-radius:20px; border:2px dashed #42A5F5;
+        }
+        .mermaid-step {
+            background:#fff; padding:8px 22px; border-radius:40px;
+            font-weight:800; font-size:1rem; color:#01579B;
+            box-shadow:0 2px 6px rgba(0,0,0,0.04);
+            border:2px solid #0277BD; text-align:center; min-width:160px;
+        }
+        .mermaid-arrow { font-size:1.6rem; color:#7f8fa6; line-height:1; }
+
+        @media (max-width:600px) {
+            .mermaid-step { font-size:0.85rem; padding:6px 14px; min-width:120px; }
+        }
+        @media (min-width:768px) {
+            .mermaid-flow { flex-direction:row; flex-wrap:wrap; justify-content:center; gap:4px 14px; }
+            .mermaid-arrow { transform:rotate(0deg); }
+        }
+
+        .analysis-box, .activity-box, .dialogue-box {
+            border-radius:16px; padding:20px 26px;
+            border:2px solid #b0cfe0; margin:12px 0;
+        }
+        .analysis-box, .dialogue-box { background:#edf7fc; }
+        .activity-box { background:#f5f9fc; }
+        .analysis-box .analysis-title, .activity-box .act-title, .dialogue-box .dialogue-title {
+            font-weight:900; color:#01579B; font-size:1.15rem;
+        }
+        .dialogue-box .dialogue-title { text-align:center; }
+        .analysis-box p, .analysis-box li,
+        .activity-box p, .activity-box li,
+        .dialogue-box p {
+            font-weight:500; font-size:1.12rem; margin-bottom:4px;
+        }
+        .analysis-box ul, .analysis-box ol,
+        .activity-box ul, .activity-box ol {
+            padding-left:24px;
+        }
+        .dialogue-box .speaker { font-weight:700; color:#0277BD; }
+
+        .mnemonic-box {
+            background:#fff8e1;
+            border:2px solid #f5d742;
+            border-left:6px solid #d97706;
+            border-radius:16px;
+            padding:18px 24px;
+            margin:14px 0 18px;
+        }
+        .mnemonic-box .mnemonic-title {
+            font-weight:900;
+            color:#7A2400;
+            font-size:1.15rem;
+            margin-bottom:8px;
+        }
+        .mnemonic-box .mnemonic-formula {
+            display:inline-block;
+            background:#fff;
+            border:2px solid #d97706;
+            border-radius:40px;
+            padding:4px 20px;
+            font-weight:800;
+            color:#BF360C;
+            font-size:1.15rem;
+            margin-bottom:8px;
+            letter-spacing:1px;
+        }
+        .mnemonic-box p, .mnemonic-box li {
+            font-weight:500;
+            font-size:1.1rem;
+            margin-bottom:4px;
+            color:#3a2a1a;
+        }
+        .mnemonic-box strong { color:#BF360C; font-weight:900; }
+        .mnemonic-box ul, .mnemonic-box ol { padding-left:24px; }
+
+        #scrollUpBtn {
+            position:fixed; bottom:28px; right:28px;
+            background:#0277BD; color:#fff; border:none; border-radius:50%;
+            width:60px; height:60px; font-size:1.8rem; cursor:pointer;
+            box-shadow:0 4px 20px rgba(2,119,189,0.4);
+            transition:all 0.3s ease;
+            display:flex; align-items:center; justify-content:center;
+            z-index:999; opacity:0; visibility:hidden; transform:translateY(20px);
+        }
+        #scrollUpBtn.visible { opacity:1; visibility:visible; transform:translateY(0); }
+        #scrollUpBtn:hover { background:#01579B; transform:scale(1.08); box-shadow:0 6px 28px rgba(2,119,189,0.5); }
+
+        .footer-copy {
+            margin-top:40px; padding-top:18px; border-top:3px solid #b0cfe0;
+            text-align:center; font-size:0.95rem; color:#5f6f80;
+            display:flex; flex-wrap:wrap; justify-content:center; gap:6px 28px; font-weight:600;
+        }
+        .footer-copy i { color:#0277BD; margin-right:6px; }
+        .footer-copy .highlight { font-weight:800; color:#0b2b4a; }
+
+        hr { border:none; border-top:3px dotted #b0cfe0; margin:28px 0 10px; }
+
+        .tip-box {
+            background:#0277BD; color:#fff; border-radius:14px;
+            padding:16px 22px; margin:12px 0; font-weight:500; font-size:1.1rem;
+        }
+        .tip-box i { margin-right:8px; }
+        .tip-box strong { color:#f5d742; }
+        .tip-box p { color:#fff; }
+
+        @media (max-width:600px) {
+            .container { padding:16px 12px 24px; border-radius:20px; }
+            .main-header h1 { font-size:1.5rem; }
+            .section-head { font-size:1.35rem; padding:10px 16px; }
+            .sub-head { font-size:1.15rem; }
+            .qa-block .a { padding-left:12px; }
+            .qa-block .q { font-size:1.05rem; flex-wrap:wrap; }
+            .credit-bar { flex-direction:column; align-items:flex-start; gap:4px; font-size:0.9rem; padding:10px 16px; }
+            .glossary-grid { grid-template-columns:1fr; }
+            #scrollUpBtn { width:50px; height:50px; font-size:1.3rem; bottom:18px; right:18px; }
+            .toc-section { padding:14px 16px; }
+            .content-box { padding:14px 16px; }
+            .content-box p, .content-box ul, .content-box ol, .content-box li { font-size:1.02rem; }
+            .qa-block .a { font-size:1.02rem; }
+            table { font-size:0.9rem; }
+            th, td { font-size:0.9rem; padding:6px 8px; }
+            .glossary-item strong { font-size:1.05rem; }
+            .glossary-item p { font-size:0.98rem; }
+            .activity-box p, .activity-box li,
+            .analysis-box p, .analysis-box li,
+            .dialogue-box p,
+            .mnemonic-box p, .mnemonic-box li { font-size:1.02rem; }
+            .mermaid-step { font-size:0.8rem; padding:4px 12px; min-width:100px; }
+            .toc-grid a { font-size:15px; }
+        }
+        @media (min-width:768px) {
+            .container { padding:36px 46px 50px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="main-header">
+        <div>
+            <h1>
+                <i class="fas fa-map-marked-alt"></i>
+                एकाइ ५, पाठ ३: नेपालका प्रदेशको सामाजिक-सांस्कृतिक अवस्था र विशेषता
+            </h1>
+            <div class="subtitle">
+                कक्षा १२ · सामाजिक अध्ययन तथा जीवनोपयोगी शिक्षा
+                <span class="badge-class"><i class="fas fa-check-circle"></i> NEB परीक्षा विशेष क्याप्सुल</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit-bar">
+        <span><i class="fas fa-user-edit"></i> <span class="name">Prepared by: Narayan Sir</span></span>
+        <span><i class="fas fa-envelope"></i> <span class="email">nregmi511@gmail.com</span></span>
+        <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ३</span>
+    </div>
+
+    <div class="intro-note">
+        <i class="fas fa-info-circle"></i>
+        यो शैक्षिक क्याप्सुल कक्षा १२ सामाजिक अध्ययनको <strong>एकाइ ५ (भूगोल र सामाजिक जीवन) अन्तर्गतको पाठ ३ ("नेपालका प्रदेशको सामाजिक-सांस्कृतिक अवस्था र विशेषता")</strong> को पूर्ण, अद्यावधिक र परीक्षा-उपयोगी अध्ययन सामग्री हो। यसमा <strong>राष्ट्रिय जनगणना २०७८ (NPHC 2021)</strong> र <strong>UNDP मानव विकास प्रतिवेदन (HDR 2025 Update)</strong> का अद्यावधिक प्रामाणिक तथ्याङ्कहरू समेटिएको छ।
+    </div>
+
+    <div class="toc-section" id="toc">
+        <h3><i class="fas fa-list-ul"></i> विषयसूची</h3>
+        <div class="toc-grid">
+            <a href="#section1"><i class="fas fa-chevron-right"></i> पारिभाषिक शब्दावली</a>
+            <a href="#section2"><i class="fas fa-chevron-right"></i> सामाजिक-सांस्कृतिक तथ्याङ्क</a>
+            <a href="#section3"><i class="fas fa-chevron-right"></i> सातै प्रदेशको प्रोफाइल</a>
+            <a href="#section4"><i class="fas fa-chevron-right"></i> सुत्रत्मक घोक्ने बुँदाहरू</a>
+            <a href="#section5"><i class="fas fa-chevron-right"></i> क्रियाकलाप समाधान</a>
+            <a href="#section6"><i class="fas fa-chevron-right"></i> अभ्यास समाधान</a>
+            <a href="#section7"><i class="fas fa-chevron-right"></i> परीक्षा उपयोगी Q&A</a>
+        </div>
+    </div>
+
+    <div class="section-head" id="section1">
+        <i class="fas fa-book-open"></i>
+        १. विषयगत पारिभाषिक शब्दावली
+        <span class="mark-badge blue">Glossary</span>
+    </div>
+
+    <div class="glossary-grid">
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#0277BD; margin-right:4px;"></i> १. सामाजिक-सांस्कृतिक अवस्था</strong>
+            <p>कुनै निश्चित भौगोलिक क्षेत्र वा प्रदेशमा बसोबास गर्ने विभिन्न जातजाति, भाषा, धर्म, चाडपर्व, भेषभूषा, रहनसहन, साक्षरता र मानव विकासको समग्र स्थितिलाई <strong>सामाजिक-सांस्कृतिक अवस्था</strong> भनिन्छ।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#0277BD; margin-right:4px;"></i> २. बहुजातीयता र बहुभाषिकता</strong>
+            <p>एउटै राष्ट्र वा प्रदेशभित्र धेरै जातजाति (नेपालमा <strong>१४२ जातजाति</strong>) र धेरै मातृभाषाहरू (नेपालमा <strong>१२४ मातृभाषा</strong>) बोलिने सांस्कृतिक विविधतायुक्त अवस्था।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#0277BD; margin-right:4px;"></i> ३. साक्षरता दर (Census 2078)</strong>
+            <p>५ वर्ष वा सोभन्दा बढी उमेरका जनसङ्ख्यामध्ये साधारण लेखपढ गर्न र हिसाबकिताब राख्न सक्ने मानिसहरूको प्रतिशत। (नेपालको राष्ट्रिय साक्षरता दर: <strong>७६.३%</strong>; पुरुष: <strong>८३.६%</strong>, महिला: <strong>६९.४%</strong>)।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#0277BD; margin-right:4px;"></i> ४. मानव विकास सूचकाङ्क (HDI 2025)</strong>
+            <p>मानिसको औसत आयु (स्वास्थ्य), साक्षरता/शिक्षा र प्रतिव्यक्ति आय (जीवनस्तर) लाई मापन गरी ० देखि १ बिचमा निकालिने सूचक। (नेपालको राष्ट्रिय HDI: <strong>०.६२२</strong> — मध्यम मानव विकास श्रेणी, विश्वमा <strong>१४५ औँ स्थान</strong>)।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#0277BD; margin-right:4px;"></i> ५. मस्टो संस्कृति</strong>
+            <p>मुख्य गरी कर्णाली र सुदूरपश्चिम प्रदेशको खस समुदायमा परम्परागत रूपमा मस्टो देवताका विभिन्न रूपहरू (जस्तै: ९ भाइ मस्टो र १६ बहिनी भवानी) को पूजाआजा गरिने मौलिक धार्मिक-सांस्कृतिक परम्परा।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#0277BD; margin-right:4px;"></i> ६. देउडा नाच</strong>
+            <p>सुदूरपश्चिम र कर्णाली प्रदेशमा महिला-पुरुषहरू हातमा हात समातेर गोलो घेरामा गीत गाउँदै नाचिने प्रसिद्ध लोकसांस्कृतिक नृत्य।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#0277BD; margin-right:4px;"></i> ७. रोदी संस्कृति</strong>
+            <p>गण्डकी प्रदेशको गुरुङ र मगर समुदायमा साँझपख युवायुवतीहरू भेला भई लोकगीत, नृत्य र सामाजिक अनुभव साटासाट गर्ने मौलिक परम्परागत चौतारी/संस्कृति।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#0277BD; margin-right:4px;"></i> ८. गौरा पर्व</strong>
+            <p>सुदूरपश्चिम र कर्णाली क्षेत्रमा भाद्र शुक्ल पक्षमा धुमधामका साथ मनाइने, भदौमा गौरा देवी (पार्वती) र महेश्वर (शिव) को पूजाआजा गरिने प्रमुख धार्मिक चाड।</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section2">
+        <i class="fas fa-chart-bar"></i>
+        २. राष्ट्रिय तथा प्रादेशिक सामाजिक-सांस्कृतिक तथ्याङ्क तालिका
+        <span class="mark-badge gold">Census 2078 Data</span>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-flag"></i> १. राष्ट्रिय जातीय, भाषिक र धार्मिक स्थिति</div>
+
+    <div class="content-box blue-light">
+        <ul>
+            <li><strong>कुल जनसङ्ख्या:</strong> २,९१,६४,५७८ (पुरुष: ४८.८७%, महिला: ५१.१३%)</li>
+            <li><strong>कुल पहिचान भएका जातजाति:</strong> १४२ वटा (शीर्ष ५: क्षेत्री १६.४५%, पहाडी ब्राह्मण ११.२९%, मगर ६.९०%, थारू ६.२०%, तामाङ ५.६२%)</li>
+            <li><strong>कुल पहिचान भएका मातृभाषा:</strong> १२४ वटा (शीर्ष ५: नेपाली ४४.८६%, मैथिली ११.०५%, भोजपुरी ६.२४%, थारू ५.८८%, तामाङ ४.८८%)</li>
+            <li><strong>धार्मिक संरचना:</strong> हिन्दू ८१.१९%, बौद्ध ८.२१%, इस्लाम ५.०९%, किराँत ३.१७%, इसाई १.७६%</li>
+            <li><strong>राष्ट्रिय साक्षरता दर (५ वर्ष र माथि):</strong> ७६.३% (पुरुष: ८३.६%, महिला: ६९.४%)</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-users"></i> २. बढी जनसङ्ख्या भएका शीर्ष १० जातजातिहरू (जनगणना २०७८)</div>
+
+    <div class="content-box green-light">
+        <div class="table-wrap">
+            <div class="table-caption">तालिका: शीर्ष १० जातजातिहरूको जनसङ्ख्या</div>
+            <table>
+                <thead>
+                    <tr><th>क्र.सं.</th><th>जातजाति</th><th>जनसङ्ख्या</th><th>प्रतिशत (%)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>१</strong></td><td>क्षेत्री</td><td>४७,९६,९९५</td><td><strong>१६.४५%</strong></td></tr>
+                    <tr><td><strong>२</strong></td><td>ब्राह्मण (पहाडी)</td><td>३२,९२,३७३</td><td><strong>११.२९%</strong></td></tr>
+                    <tr><td><strong>३</strong></td><td>मगर</td><td>२०,१३,४९८</td><td><strong>६.९०%</strong></td></tr>
+                    <tr><td><strong>४</strong></td><td>थारू</td><td>१८,०७,१२४</td><td><strong>६.२०%</strong></td></tr>
+                    <tr><td><strong>५</strong></td><td>तामाङ</td><td>१६,३९,८६६</td><td><strong>५.६२%</strong></td></tr>
+                    <tr><td><strong>६</strong></td><td>विश्वकर्मा</td><td>१४,७०,०१०</td><td><strong>५.०४%</strong></td></tr>
+                    <tr><td><strong>७</strong></td><td>मुसलमान</td><td>१४,१८,६७७</td><td><strong>४.८६%</strong></td></tr>
+                    <tr><td><strong>८</strong></td><td>नेवार</td><td>१३,४१,३६३</td><td><strong>४.६०%</strong></td></tr>
+                    <tr><td><strong>९</strong></td><td>यादव</td><td>१२,२८,५८१</td><td><strong>४.२१%</strong></td></tr>
+                    <tr><td><strong>१०</strong></td><td>राई</td><td>६,४०,६७४</td><td><strong>२.२०%</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-landmark"></i> ३. प्रदेशगत सामाजिक-सांस्कृतिक तथा मानव विकास सूचकाङ्क (HDI)</div>
+
+    <div class="content-box purple-light">
+        <div class="table-wrap">
+            <div class="table-caption">तालिका: सातै प्रदेशको साक्षरता दर र HDI (2025)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेशको नाम</th>
+                        <th>विशेष/मुख्य जातजातिहरू</th>
+                        <th>प्रमुख भाषाहरू</th>
+                        <th>साक्षरता दर (%)</th>
+                        <th>HDI (2025)</th>
+                        <th>क्रम</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>१</strong></td>
+                        <td><strong>बागमती प्रदेश</strong></td>
+                        <td>तामाङ, नेवार, चेपाङ, थामी, ह्योल्मो, क्षेत्री, ब्राह्मण</td>
+                        <td>नेपाली (५७.४%), तामाङ (१८.३%), नेवारी</td>
+                        <td><strong>८२.१%</strong></td>
+                        <td><strong>०.६५२</strong></td>
+                        <td><strong>१</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>२</strong></td>
+                        <td><strong>गण्डकी प्रदेश</strong></td>
+                        <td>गुरुङ, थकाली, दुरा, छन्त्याल, बाह्रगाउँले, मगर</td>
+                        <td>नेपाली (६८.९%), मगर (९.०%), गुरुङ</td>
+                        <td><strong>८१.७%</strong></td>
+                        <td><strong>०.६४१</strong></td>
+                        <td><strong>२</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>३</strong></td>
+                        <td><strong>कोशी प्रदेश</strong></td>
+                        <td>राई, लिम्बु, शेर्पा, लेप्चा, राजवंशी, सतार, क्षेत्री</td>
+                        <td>नेपाली (४४.८%), मैथिली (११.१%), लिम्बु, राई</td>
+                        <td><strong>७९.७%</strong></td>
+                        <td><strong>०.६१७</strong></td>
+                        <td><strong>३</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>४</strong></td>
+                        <td><strong>लुम्बिनी प्रदेश</strong></td>
+                        <td>मुसलमान, मगर, थारू, क्षेत्री, ब्राह्मण, यादव</td>
+                        <td>नेपाली (४९.९%), थारू (१३.२%), अवधी, भोजपुरी</td>
+                        <td><strong>७८.१%</strong></td>
+                        <td><strong>०.६०८</strong></td>
+                        <td><strong>४</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>५</strong></td>
+                        <td><strong>सुदूरपश्चिम प्रदेश</strong></td>
+                        <td>राना थारू, व्याँसी, ठकुरी, क्षेत्री, कामी</td>
+                        <td>डोटेली (३०.४%), नेपाली (२८.३%), थारू</td>
+                        <td><strong>७६.२%</strong></td>
+                        <td><strong>०.६०१</strong></td>
+                        <td><strong>५</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>६</strong></td>
+                        <td><strong>कर्णाली प्रदेश</strong></td>
+                        <td>ठकुरी, मुगाली, डोल्पो, क्षेत्री, कामी</td>
+                        <td>नेपाली (९५.१%), मगर (२.२%), भोटे</td>
+                        <td><strong>७६.१%</strong></td>
+                        <td><strong>०.५९०</strong></td>
+                        <td><strong>६</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>७</strong></td>
+                        <td><strong>मधेश प्रदेश</strong></td>
+                        <td>यादव, मुसलमान, थारू, मुसहर, तेली, चमार</td>
+                        <td>मैथिली (४५.३%), भोजपुरी (१८.६%), बज्जिका</td>
+                        <td><strong>६३.५%</strong></td>
+                        <td><strong>०.५६१</strong></td>
+                        <td><strong>७</strong></td>
+                    </tr>
+                    <tr style="background:#e3f2fd;">
+                        <td><strong>—</strong></td>
+                        <td><strong>नेपाल (राष्ट्रिय औसत)</strong></td>
+                        <td>१४२ जातजाति</td>
+                        <td>१२४ मातृभाषा (नेपाली ४४.८६%)</td>
+                        <td><strong>७६.३%</strong></td>
+                        <td><strong>०.६२२</strong></td>
+                        <td>१४५ औँ (विश्वमा)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section3">
+        <i class="fas fa-map"></i>
+        ३. सातै प्रदेशको सामाजिक-सांस्कृतिक विस्तृत प्रोफाइल
+        <span class="mark-badge green">Province Profiles</span>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-mountain"></i> १. कोशी प्रदेश (प्रदेश १)</div>
+    <div class="content-box blue-light">
+        <ul>
+            <li><strong>जातीय तथा भाषिक स्वरूप:</strong> क्षेत्री, राई, लिम्बु, ब्राह्मण, मगर, थारू, शेर्पा, लेप्चा, राजवंशी, सतार। मुख्य भाषा: नेपाली (~४४.८%), मैथिली (~११.१%), लिम्बु, राई।</li>
+            <li><strong>धार्मिक तथा सांस्कृतिक उत्सव:</strong> हिन्दू, किराँत र बौद्ध धर्म बहुल। साकेला (उधौली/उभौली), चासोक तङ्नाम, दसैँ, तिहार, ल्होसार।</li>
+            <li><strong>साक्षरता र HDI:</strong> साक्षरता दर <strong>७९.७%</strong>, मानव विकास सूचकाङ्क <strong>०.६१७</strong> (तेस्रो स्थान)।</li>
+            <li><strong>प्रमुख धार्मिक तथा पर्यटकीय स्थलहरू:</strong> पाथीभरा, हलेसी महादेव, वराहक्षेत्र, पिण्डेश्वर, दन्तकाली।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-tree"></i> २. मधेश प्रदेश (प्रदेश २)</div>
+    <div class="content-box gold-light">
+        <ul>
+            <li><strong>जातीय तथा भाषिक स्वरूप:</strong> यादव, तेली, मुस्लिम, थारू, धानुक, चमार, मुसहर। मुख्य भाषा: मैथिली (~४५.३%), भोजपुरी (~१८.६%), बज्जिका, उर्दू।</li>
+            <li><strong>धार्मिक तथा सांस्कृतिक उत्सव:</strong> हिन्दू, इस्लाम र बौद्ध। छठ, जुडशीतल, समा चकेवा, ईद, फागु पूर्णिमा (होली)।</li>
+            <li><strong>साक्षरता र HDI:</strong> साक्षरता दर <strong>६३.५%</strong>, मानव विकास सूचकाङ्क <strong>०.५६१</strong> (सातौँ/न्यूनतम)।</li>
+            <li><strong>प्रमुख धार्मिक स्थलहरू:</strong> जानकी मन्दिर (जनकपुर), गढीमाई (बारा), छिन्नमस्ता (सप्तरी), पाथीभरा (महोत्तरी)।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-city"></i> ३. बागमती प्रदेश</div>
+    <div class="content-box green-light">
+        <ul>
+            <li><strong>जातीय तथा भाषिक स्वरूप:</strong> तामाङ, नेवार, चेपाङ, थामी, ह्योल्मो, क्षेत्री, ब्राह्मण, विश्वकर्मा। मुख्य भाषा: नेपाली (~५७.४%), तामाङ (~१८.३%), नेवारी (नेपाल भाषा)।</li>
+            <li><strong>धार्मिक तथा सांस्कृतिक उत्सव:</strong> हिन्दू, बौद्ध र क्रिश्चियन। येँया (इन्द्रजात्रा), ल्होसार, मछिन्द्रनाथ रथयात्रा, बिस्केट जात्रा, दसैँ, तिहार।</li>
+            <li><strong>साक्षरता र HDI:</strong> साक्षरता दर <strong>८२.१%</strong> (सर्वोच्च), मानव विकास सूचकाङ्क <strong>०.६५२</strong> (प्रथम स्थान)।</li>
+            <li><strong>प्रमुख धार्मिक स्थलहरू:</strong> पशुपतिनाथ, स्वयम्भूनाथ, बौद्धनाथ, चाँगुनारायण, गोसाइँकुण्ड, देवघाट।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-hiking"></i> ४. गण्डकी प्रदेश</div>
+    <div class="content-box purple-light">
+        <ul>
+            <li><strong>जातीय तथा भाषिक स्वरूप:</strong> मगर, क्षेत्री, ब्राह्मण, गुरुङ, थकाली, दुरा, छन्त्याल, बाह्रगाउँले, विश्वकर्मा। मुख्य भाषा: नेपाली (~६८.९%), मगर (~९.०%), गुरुङ, नेवारी।</li>
+            <li><strong>धार्मिक तथा सांस्कृतिक उत्सव:</strong> हिन्दू, बौद्ध र इस्लाम। टोल्होसार, ल्होसार, कौरा/घाटु, सोरठी, दसैँ, तिहार।</li>
+            <li><strong>साक्षरता र HDI:</strong> साक्षरता दर <strong>८१.७%</strong>, मानव विकास सूचकाङ्क <strong>०.६४१</strong> (दोस्रो स्थान)।</li>
+            <li><strong>प्रमुख धार्मिक स्थलहरू:</strong> मुक्तिनाथ, विन्ध्यवासिनी, तालबाराही, गलेश्वर, देवघाट, मनकामना।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-dharmachakra"></i> ५. लुम्बिनी प्रदेश</div>
+    <div class="content-box pink-light">
+        <ul>
+            <li><strong>जातीय तथा भाषिक स्वरूप:</strong> थारू, क्षेत्री, मगर, ब्राह्मण, मुस्लिम, यादव। मुख्य भाषा: नेपाली (~४९.९%), थारू (~१३.२%), अवधी, भोजपुरी, उर्दू।</li>
+            <li><strong>धार्मिक तथा सांस्कृतिक उत्सव:</strong> हिन्दू, इस्लाम र बौद्ध। थारू समुदायको <strong>माघी (माघे सङ्क्रान्ति)</strong>, ईद, बडका अतवारी, दसैँ, तिहार।</li>
+            <li><strong>साक्षरता र HDI:</strong> साक्षरता दर <strong>७८.१%</strong>, मानव विकास सूचकाङ्क <strong>०.६०८</strong> (चौथो स्थान)।</li>
+            <li><strong>प्रमुख धार्मिक स्थलहरू:</strong> <strong>लुम्बिनी (मायादेवी मन्दिर)</strong> — बुद्ध जन्मस्थल, रेसुङ्गा, स्वर्गद्वारी, ठाकुरद्वारा (बर्दिया)।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-snowflake"></i> ६. कर्णाली प्रदेश</div>
+    <div class="content-box teal-light">
+        <ul>
+            <li><strong>जातीय तथा भाषिक स्वरूप:</strong> क्षेत्री, कामी, ठकुरी, ब्राह्मण, दमाइ/ढोली, मुगाली, डोल्पो, राउटे। मुख्य भाषा: नेपाली/खस भाषा (~९५.१%), मगर (~२.२%), भोटे।</li>
+            <li><strong>धार्मिक तथा सांस्कृतिक उत्सव:</strong> हिन्दू, बौद्ध र मस्टो। <strong>मस्टो पूजा</strong>, चैते दसैँ, माघे सङ्क्रान्ति, गौरा, तिहार।</li>
+            <li><strong>साक्षरता र HDI:</strong> साक्षरता दर <strong>७६.१%</strong>, मानव विकास सूचकाङ्क <strong>०.५९०</strong> (छैठौँ स्थान)।</li>
+            <li><strong>प्रमुख धार्मिक स्थलहरू:</strong> काँक्रेविहार, चन्दननाथ (जुम्ला), छायाँनाथ, रारा क्षेत्र, शे-गुम्बा (डोल्पा)।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-sun"></i> ७. सुदूरपश्चिम प्रदेश</div>
+    <div class="content-box orange-light">
+        <ul>
+            <li><strong>जातीय तथा भाषिक स्वरूप:</strong> क्षेत्री, थारू (राना/डङ्गौरा), कामी, ब्राह्मण, ठकुरी, व्याँसी (सौका)। मुख्य भाषा: डोटेली (~३०.४%), नेपाली (~२८.३%), थारू।</li>
+            <li><strong>धार्मिक तथा सांस्कृतिक उत्सव:</strong> हिन्दू, बौद्ध र क्रिश्चियन। <strong>गौरा पर्व</strong>, माघी (भुवा पर्व), विषु/विशु, देउडा नाच।</li>
+            <li><strong>साक्षरता र HDI:</strong> साक्षरता दर <strong>७६.२%</strong>, मानव विकास सूचकाङ्क <strong>०.६०१</strong> (पाँचौँ स्थान)।</li>
+            <li><strong>प्रमुख धार्मिक स्थलहरू:</strong> उग्रतारा, शैल्येश्वरी, बडीमालिका, परशुराम मन्दिर, खप्तड।</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section4">
+        <i class="fas fa-brain"></i>
+        ४. सुत्रत्मक घोक्ने बुँदाहरू (Mnemonics)
+        <span class="mark-badge pink">Shortcuts</span>
+    </div>
+
+    <div class="mnemonic-box">
+        <div class="mnemonic-title"><i class="fas fa-key" style="color:#d97706; margin-right:8px;"></i> सुत्र १: शीर्ष ५ जातजाति (जनगणना २०७८)</div>
+        <div class="mnemonic-formula">क्षे → ब्रा → म → था → ता</div>
+        <ul>
+            <li><strong>क्षे (क्षेत्री):</strong> १६.४५%</li>
+            <li><strong>ब्रा (पहाडी ब्राह्मण):</strong> ११.२९%</li>
+            <li><strong>म (मगर):</strong> ६.९०%</li>
+            <li><strong>था (थारू):</strong> ६.२०%</li>
+            <li><strong>ता (तामाङ):</strong> ५.६२%</li>
+        </ul>
+    </div>
+
+    <div class="mnemonic-box">
+        <div class="mnemonic-title"><i class="fas fa-key" style="color:#d97706; margin-right:8px;"></i> सुत्र २: शीर्ष ५ मातृभाषाहरू</div>
+        <div class="mnemonic-formula">ने → मै → भो → था → ता</div>
+        <ul>
+            <li><strong>ने (नेपाली):</strong> ४४.८६%</li>
+            <li><strong>मै (मैथिली):</strong> ११.०५%</li>
+            <li><strong>भो (भोजपुरी):</strong> ६.२४%</li>
+            <li><strong>था (थारू):</strong> ५.८८%</li>
+            <li><strong>ता (तामाङ):</strong> ४.८८%</li>
+        </ul>
+    </div>
+
+    <div class="mnemonic-box">
+        <div class="mnemonic-title"><i class="fas fa-key" style="color:#d97706; margin-right:8px;"></i> सुत्र ३: साक्षरता र HDI मा प्रदेशको क्रम (उच्चबाट निम्न)</div>
+        <div class="mnemonic-formula">बा → ग → को → लु → सु → क → म</div>
+        <ul>
+            <li><strong>बा (बागमती):</strong> साक्षरता ८२.१% | HDI ०.६५२ (प्रथम)</li>
+            <li><strong>ग (गण्डकी):</strong> साक्षरता ८१.७% | HDI ०.६४१ (दोस्रो)</li>
+            <li><strong>को (कोशी):</strong> साक्षरता ७९.७% | HDI ०.६१७ (तेस्रो)</li>
+            <li><strong>लु (लुम्बिनी):</strong> साक्षरता ७८.१% | HDI ०.६०८ (चौथो)</li>
+            <li><strong>सु (सुदूरपश्चिम):</strong> साक्षरता ७६.२% | HDI ०.६०१ (पाँचौँ)</li>
+            <li><strong>क (कर्णाली):</strong> साक्षरता ७६.१% | HDI ०.५९० (छैठौँ)</li>
+            <li><strong>म (मधेश):</strong> साक्षरता ६३.५% | HDI ०.५६१ (सातौँ/न्यूनतम)</li>
+        </ul>
+    </div>
+
+    <div class="mnemonic-box">
+        <div class="mnemonic-title"><i class="fas fa-key" style="color:#d97706; margin-right:8px;"></i> सुत्र ४: प्रादेशिक मौलिक सांस्कृतिक पहिचान</div>
+        <ul>
+            <li><strong>कोशी:</strong> साकेला (उधौली/उभौली) / चासोक तङ्नाम</li>
+            <li><strong>मधेश:</strong> छठ / जुडशीतल / समा चकेवा</li>
+            <li><strong>बागमती:</strong> येँया (इन्द्रजात्रा) / मछिन्द्रनाथ रथयात्रा / ल्होसार</li>
+            <li><strong>गण्डकी:</strong> रोदी संस्कृति / घाटु / कौरा / सोरठी</li>
+            <li><strong>लुम्बिनी:</strong> बुद्ध जन्मभूमि लुम्बिनी / थारू माघी पर्व / बडका अतवारी</li>
+            <li><strong>कर्णाली:</strong> खस भाषा उद्गम (९५.१%) / मस्टो पूजा परम्परा</li>
+            <li><strong>सुदूरपश्चिम:</strong> गौरा पर्व / देउडा नाच / भुवा पर्व / विषु</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section5">
+        <i class="fas fa-hands"></i>
+        ५. परीक्षा-उपयोगी ४ वटा मुख्य क्रियाकलापहरू
+        <span class="mark-badge green">Activities</span>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-table"></i> क्रियाकलाप १: बागमती र मधेश प्रदेशको तुलनात्मक तालिका</div>
+
+    <div class="activity-box">
+        <p class="act-title"><i class="fas fa-question-circle" style="color:#0277BD; margin-right:8px;"></i> प्रश्न:</p>
+        <p>बागमती प्रदेश र मधेश प्रदेशको सामाजिक-सांस्कृतिक जनजीवनको तुलनात्मक तालिका तयार पार्नुहोस्।</p>
+    </div>
+
+    <div class="analysis-box">
+        <div class="table-wrap">
+            <div class="table-caption">तालिका: बागमती र मधेश प्रदेशको तुलना</div>
+            <table>
+                <thead>
+                    <tr><th>तुलनाका आधारहरू</th><th>बागमती प्रदेश</th><th>मधेश प्रदेश (प्रदेश २)</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>१. मुख्य जातजातिहरू</strong></td>
+                        <td>तामाङ, नेवार, क्षेत्री, ब्राह्मण, चेपाङ, थामी</td>
+                        <td>यादव, तेली, मुस्लिम, थारू, धानुक, चमार, मुसहर</td>
+                    </tr>
+                    <tr>
+                        <td><strong>२. मुख्य बोलिने भाषा</strong></td>
+                        <td>नेपाली (५७.४%), तामाङ (१८.३%), नेवारी</td>
+                        <td>मैथिली (४५.३%), भोजपुरी (१८.६%), बज्जिका</td>
+                    </tr>
+                    <tr>
+                        <td><strong>३. साक्षरता दर (%)</strong></td>
+                        <td><strong>८२.१%</strong> (नेपालमै सबैभन्दा उच्च)</td>
+                        <td><strong>६३.५%</strong> (सबैभन्दा कम)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>४. मानव विकास सूचकाङ्क (HDI)</strong></td>
+                        <td><strong>०.६५२</strong> (प्रथम स्थान)</td>
+                        <td><strong>०.५६१</strong> (सातौँ स्थान)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>५. मुख्य चाडपर्वहरू</strong></td>
+                        <td>येँया (इन्द्रजात्रा), ल्होसार, मछिन्द्रनाथ यात्रा, दसैँ</td>
+                        <td>छठ, जुडशीतल, समा चकेवा, ईद, होली</td>
+                    </tr>
+                    <tr>
+                        <td><strong>६. प्रमुख धार्मिक स्थलहरू</strong></td>
+                        <td>पशुपतिनाथ, स्वयम्भूनाथ, बौद्धनाथ, गोसाइँकुण्ड</td>
+                        <td>जानकी मन्दिर (जनकपुर), गढीमाई, छिन्नमस्ता</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-comments"></i> क्रियाकलाप २: "कर्णाली प्रदेश संस्कृतिमा धनी छ" विषयमा संवाद</div>
+
+    <div class="activity-box">
+        <p class="act-title"><i class="fas fa-question-circle" style="color:#0277BD; margin-right:8px;"></i> प्रश्न:</p>
+        <p>"कर्णाली प्रदेश सामाजिक र सांस्कृतिक दृष्टिकोणले धनी छ" भन्ने विषयमा दुई साथीहरूबिच भएको नमुना संवाद तयार पार्नुहोस्।</p>
+    </div>
+
+    <div class="dialogue-box">
+        <p class="dialogue-title"><i class="fas fa-pen-fancy" style="color:#0277BD; margin-right:8px;"></i> संवाद: कर्णालीको सांस्कृतिक समृद्धि</p>
+        <p><strong>पात्रहरू:</strong> रमेश र रीता (कक्षा १२ का विद्यार्थीहरू) · <strong>स्थान:</strong> विद्यालयको पुस्तकालय</p>
+
+        <p><span class="speaker">रमेश:</span> नमस्ते रीता! हिजो सामाजिक अध्ययन कक्षामा सरले कर्णाली प्रदेशको सांस्कृतिक समृद्धिबारे भन्नुभएको कुराले मलाई अचम्म लाग्यो।</p>
+        <p><span class="speaker">रीता:</span> हो रमेश! बाहिरबाट हेर्दा कर्णालीलाई विकट मानिए पनि सामाजिक र सांस्कृतिक दृष्टिकोणले यो प्रदेश नेपालको सर्वोच्च धरोहर हो।</p>
+        <p><span class="speaker">रमेश:</span> हो त रीता! नेपाली भाषाको जननी मानिने <strong>'खस भाषा'</strong> को उद्गम सिञ्जा उपत्यका कर्णालीमै पर्छ। जनगणना २०७८ अनुसार यहाँ <strong>९५.१%</strong> मानिसहरू नेपाली/खस भाषा बोल्छन्।</p>
+        <p><span class="speaker">रीता:</span> सही भन्यौ रमेश! यसका साथै खस समुदायको मौलिक <strong>मस्टो पूजा परम्परा</strong> (९ भाइ मस्टो र १६ बहिनी भवानी) कर्णालीकै अद्वितीय पहिचान हो।</p>
+        <p><span class="speaker">रमेश:</span> यहाँ जुम्लाको चन्दननाथ, डोल्पाको शे-गुम्बा, सुर्खेतको काँक्रेविहार र छायाँनाथ जस्ता ऐतिहासिक हिन्दू र बौद्ध धार्मिक स्थलहरू पनि रहेका छन्।</p>
+        <p><span class="speaker">रीता:</span> अनि हुम्ला, डोल्पाका भोटे र डोल्पो समुदायको आफ्नै बौद्ध संस्कृति, देउडा नाच र बहुपति प्रथा जस्ता परम्पराहरूले कर्णालीलाई सांस्कृतिक रूपमा अति धनी बनाएका छन्।</p>
+        <p><span class="speaker">रमेश:</span> साच्चै रीता! अब हामीले कर्णालीको यो समृद्ध संस्कृतिको संरक्षण र प्रवर्धनमा योगदान पुर्‍याउनुपर्छ। धन्यवाद!</p>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-clipboard-list"></i> क्रियाकलाप ३: बागमती प्रदेशको सामाजिक-सांस्कृतिक प्रोफाइल</div>
+
+    <div class="analysis-box">
+        <p class="analysis-title"><i class="fas fa-project-diagram" style="color:#0277BD; margin-right:8px;"></i> बागमती प्रदेशको सामाजिक-सांस्कृतिक प्रोफाइल अध्ययन प्रतिवेदन</p>
+
+        <p><strong>१. परिचय:</strong> बागमती प्रदेश नेपालको सङ्घीय राजधानी काठमाडौँ उपत्यका समेटिएको, जैविक तथा सांस्कृतिक विविधताले युक्त प्रदेश हो।</p>
+
+        <p><strong>२. तथ्याङ्कीय विवरण (जनगणना २०७८):</strong></p>
+        <ul>
+            <li><strong>साक्षरता दर:</strong> ८२.१% (नेपालमै उच्च)</li>
+            <li><strong>मानव विकास सूचकाङ्क (HDI):</strong> ०.६५२ (नेपालमा पहिलो)</li>
+            <li><strong>मुख्य भाषा:</strong> नेपाली (५७.४%), तामाङ (१८.३%), नेवारी (नेपाल भाषा)</li>
+            <li><strong>मुख्य जातजाति:</strong> क्षेत्री, तामाङ, नेवार, ब्राह्मण, विश्वकर्मा, चेपाङ, थामी</li>
+        </ul>
+
+        <p><strong>३. निष्कर्ष:</strong> काठमाडौँ उपत्यकाका पौराणिक जात्राहरू (इन्द्रजात्रा, रातो मच्छिन्द्रनाथ रथयात्रा) र तामाङ समुदायको ल्होसारले बागमती प्रदेशलाई धार्मिक सहिष्णुता र सांस्कृतिक समृद्धिको नमुना बनाएको छ।</p>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-file-alt"></i> क्रियाकलाप ४: स्थानीय चाडपर्व, सामाजिक सद्भाव र राष्ट्रिय एकता</div>
+
+    <div class="analysis-box">
+        <p class="analysis-title"><i class="fas fa-bullseye" style="color:#0277BD; margin-right:8px;"></i> कार्यपत्र: स्थानीय चाडपर्वहरूले सामाजिक सद्भाव र राष्ट्रिय एकता प्रवर्धनमा खेलेको भूमिका</p>
+        <ol>
+            <li><strong>आपसी भाइचारा र मेलमिलाप:</strong> छठ, दसैँ-तिहार, ल्होसार, ईद, गौरा पर्व र माघी जस्ता चाडपर्वमा विभेद भुलेर छरछिमेकी एकैठाउँमा भेला भई शुभकामना साटासाट गर्नाले सामाजिक सामञ्जस्यता कायम हुन्छ।</li>
+            <li><strong>अन्तरसांस्कृतिक आदानप्रदान:</strong> तराईमा मनाइने छठ पर्वमा पहाडी समुदाय र पहाड/हिमाली क्षेत्रमा मनाइने ल्होसार वा गौरा पर्वमा अन्य समुदायको उत्साहजनक सहभागिताले 'सांस्कृतिक घुलमिल' (Cultural Integration) गराउँछ।</li>
+            <li><strong>सहिष्णुता र सहअस्तित्वको सिकाइ:</strong> विभिन्न धार्मिक तथा सांस्कृतिक परम्पराहरूलाई नजिकबाट बुझ्ने अवसर मिल्दा नयाँ पुस्तामा बहुसांस्कृतिक दृष्टिकोण (Multicultural Worldview) र सम्मानको भावना अभिवृद्धि हुन्छ।</li>
+            <li><strong>स्थानीय अर्थतन्त्र र पर्यटन प्रवर्धन:</strong> चाडपर्वका समयमा मेला, जात्रा र सांस्कृतिक प्रदर्शनीहरू आयोजना हुँदा स्थानीय हस्तकला, परम्परागत खाना र भेषभूषाको व्यापार बढी आर्थिक टेवा पुग्छ।</li>
+            <li><strong>संवैधानिक मर्म र राष्ट्रिय एकताको सुदृढीकरण:</strong> चाडपर्वमा हुने साझा उत्सवले "अनेकौँ फूलहरूको एउटै गुच्छा" का रूपमा रहेको नेपाली राष्ट्रियतालाई मजबुत बनाई राष्ट्रिय एकता सुदृढ बनाउँछ।</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section6">
+        <i class="fas fa-check-double"></i>
+        ६. पाठ्यपुस्तकका अभ्यास तथा प्रश्नहरूको पूर्ण समाधान
+        <span class="mark-badge purple">Exercise</span>
+    </div>
+
+    <div class="qa-block color1">
+        <div class="q"><span class="qnum">१ (क).</span> बागमती प्रदेशका कुनै तीनवटा सामाजिक विशेषताहरू उल्लेख गर्नुहोस्।</div>
+        <div class="a">
+            <p><strong>उत्तर:</strong> बागमती प्रदेशका तीन मुख्य सामाजिक विशेषताहरू निम्न अनुसार छन्:</p>
+            <ol>
+                <li><strong>जातीय तथा भाषिक विविधता:</strong> यहाँ तामाङ र नेवार जातिको बाहुल्य हुनुका साथै नेपाली (५७.४%), तामाङ (१८.३%) र नेवारी मुख्य रूपमा बोलिन्छ।</li>
+                <li><strong>उच्च साक्षरता दर र HDI:</strong> यो प्रदेश नेपालमै सबैभन्दा बढी साक्षरता दर (८२.१%) र सर्वोच्च मानव विकास सूचकाङ्क (०.६५२) भएको प्रदेश हो।</li>
+                <li><strong>सहरी जीवनशैली र पूर्वाधार:</strong> देशको राजधानी काठमाडौँ उपत्यका यसै प्रदेशमा रहेकाले यहाँ ७९.६% मानिस सहरी क्षेत्रमा आधुनिक सुविधायुक्त जीवनशैली बिताउँछन्।</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="qa-block color2">
+        <div class="q"><span class="qnum">१ (ख).</span> सुदूरपश्चिम प्रदेशका मुख्य मुख्य सामाजिक पहिचान उल्लेख गर्नुहोस्।</div>
+        <div class="a">
+            <p><strong>उत्तर:</strong> सुदूरपश्चिम प्रदेशका मुख्य सामाजिक-सांस्कृतिक पहिचानहरू निम्न बमोजिम छन्:</p>
+            <ul>
+                <li><strong>गौरा पर्व र देउडा नाच:</strong> भाद्र महिनामा मनाइने गौरा पर्व र सामूहिक रूपमा गाइने तथा नाचिने देउडा नाच यस प्रदेशको अन्तर्राष्ट्रिय पहिचान हो।</li>
+                <li><strong>भाषिक मौलिकता:</strong> यहाँ डोटेली (३०.४%), नेपाली (२८.३%), थारू र बैतडेली भाषाहरू मुख्य रूपमा बोलिन्छन्।</li>
+                <li><strong>धार्मिक आस्था:</strong> उग्रतारा, बडीमालिका, शैल्येश्वरी र परशुराम मन्दिर जस्ता प्रसिद्ध धार्मिक शक्तिपीठहरू रहेका छन्।</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="qa-block color3">
+        <div class="q"><span class="qnum">१ (ग).</span> बागमती प्रदेशका मुख्य मुख्य जातजातिहरूको सूची तयार पार्नुहोस्।</div>
+        <div class="a">
+            <p><strong>उत्तर:</strong> जनगणना २०७८ अनुसार बागमती प्रदेशमा बसोबास गर्ने मुख्य जातजातिहरू:</p>
+            <ul>
+                <li><strong>आदिवासी/जनजाति:</strong> तामाङ (१८.३%), नेवार, चेपाङ, थामी, ह्योल्मो, जिरेल, बोटे।</li>
+                <li><strong>अन्य मुख्य समुदाय:</strong> क्षेत्री, पहाडी ब्राह्मण, विश्वकर्मा (दलित), मगर, गुरुङ आदि।</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="qa-block color4">
+        <div class="q"><span class="qnum">१ (घ).</span> "सामाजिक विविधता नेपालको पहिचान" शीर्षकमा एक संक्षिप्त परिचयात्मक लेख तयार पार्नुहोस्।</div>
+        <div class="a">
+            <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपाल भौगोलिक रूपमा सानो भए तापनि जातीय, भाषिक, धार्मिक र सांस्कृतिक दृष्टिकोणले अत्यन्त धनी र विविधतायुक्त राष्ट्र हो। राष्ट्रिय जनगणना २०७८ अनुसार नेपालमा १४२ जातजाति, १२४ मातृभाषा र १० धार्मिक सम्प्रदायहरू शान्तिपूर्ण रूपमा सहअस्तित्वमा रहेका छन्।</p>
+
+            <p><span class="step-icon">📊</span> <span class="step-title">२. मुख्य विश्लेषण:</span> नेपालको सामाजिक विविधताका मुख्य आयामहरू निम्न अनुसार छन्:</p>
+            <ul>
+                <li><strong>जातीय तथा भाषिक सङ्गम:</strong> हिमालमा शेर्पा र मनाङ्गे, पहाडमा राई, लिम्बु, मगर, गुरुङ, नेवार, तामाङ र तराईमा थारू, यादव, मैथिल, मुस्लिम समुदायको बसोबास छ। नेपाली भाषा (४४.८६%) सम्पर्क भाषा बनेको छ भने मैथिली (११.०५%), भोजपुरी (६.२४%), थारू (५.८८%) र तामाङ (४.८८%) समृद्ध मातृभाषा हुन्।</li>
+                <li><strong>सांस्कृतिक एकता (Unity in Diversity):</strong> पूर्वको उँधौली-उँभौलीदेखि पश्चिमको देउडा, तराईको छठ र माघीदेखि हिमालको ल्होसारसम्मका चाडपर्वहरूले नेपाली समाजलाई एउटै राष्ट्रिय धागोमा उनेका छन्।</li>
+                <li><strong>सहिष्णुता र सहअस्तित्व:</strong> नेपालको इतिहासमा कहिल्यै जातीय वा धार्मिक दङ्गा नहुनु नेपाली विविधता र सामाजिक सद्भावको सर्वोत्कृष्ट उदाहरण हो।</li>
+            </ul>
+
+            <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> अतः "अनेकौँ फूलहरूको एउटै गुच्छा" का रूपमा रहेको यो विविधता नै नेपालको मूल पहिचान र सौन्दर्य हो। यस विविधताको संरक्षण र सम्मान गर्दै समतामूलक समाज निर्माण गर्नु नै समृद्ध नेपालको आधार हो।</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section7">
+        <i class="fas fa-bullseye"></i>
+        ७. बोर्ड परीक्षा विशेष नमुना प्रश्नोत्तर
+        <span class="mark-badge pink">High-Yield NEB</span>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-star"></i> अति संक्षिप्त प्रश्न (अङ्क भार: १)</div>
+
+    <div class="qa-block color5">
+        <div class="q"><span class="qnum">१.</span> जनगणना २०७८ अनुसार नेपालमा साक्षरता दर सबैभन्दा बढी र सबैभन्दा कम भएका प्रदेशको नाम र प्रतिशत लेख्नुहोस्।</div>
+        <div class="a">
+            <strong>उत्तर:</strong> जनगणना २०७८ अनुसार नेपालमा सबैभन्दा बढी साक्षरता दर भएको प्रदेश <strong>बागमती प्रदेश (८२.१%)</strong> र सबैभन्दा कम साक्षरता दर भएको प्रदेश <strong>मधेश प्रदेश (६३.५%)</strong> हो।
+        </div>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-star"></i> संक्षिप्त प्रश्न (अङ्क भार: ५)</div>
+
+    <div class="qa-block color6">
+        <div class="q"><span class="qnum">२.</span> नेपालको सामाजिक-सांस्कृतिक विविधताले देश विकासमा ल्याएका अवसर र चुनौतीहरू पाँच-पाँच बुँदामा स्पष्ट पार्नुहोस्।</div>
+        <div class="a">
+            <p><strong>पृष्ठभूमि:</strong> नेपालमा बसोबास गर्ने १४२ जातजाति र १२४ भाषाहरूको उपस्थिति स्वयंमा एक अतुलनीय सामाजिक-सांस्कृतिक पूँजी हो। यस विविधताका आफ्नै अवसर र व्यवस्थापकीय चुनौतीहरू रहेका छन्।</p>
+
+            <div class="table-wrap">
+                <div class="table-caption">तालिका: अवसर र चुनौतीहरूको विश्लेषण</div>
+                <table>
+                    <thead>
+                        <tr><th>क्षेत्र</th><th>मुख्य बुँदाहरू</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>अवसरहरू (Opportunities)</strong></td>
+                            <td>
+                                १. <strong>सांस्कृतिक पर्यटनको प्रवर्धन:</strong> देउडा, जात्रा, ल्होसार र छठले विदेशी पर्यटक आकर्षित गर्छन्।<br>
+                                २. <strong>मौलिक परम्परागत ज्ञान र सीप:</strong> जडीबुटी प्रयोग, हस्तकला र जैविक खेतीको संरक्षण।<br>
+                                ३. <strong>अन्तर्राष्ट्रिय पहिचान:</strong> विश्वसामु बुद्ध, जनक र बहुसांस्कृतिक शान्तिप्रिय राष्ट्रको परिचय।<br>
+                                ४. <strong>सामाजिक लचकता:</strong> विविध सोच र अनुभवबाट समस्या समाधानको क्षमता अभिवृद्धि।
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>चुनौतीहरू (Challenges)</strong></td>
+                            <td>
+                                १. <strong>समानुपातिक समावेशीकरण:</strong> सबै जातजाति र भाषालाई राज्यको मूल प्रवाहमा ल्याउनु।<br>
+                                २. <strong>संकीर्ण साम्प्रदायिकताको जोखिम:</strong> राजनीतिक स्वार्थका लागि विविधतालाई विभाजनमा रूपान्तरण हुन नदिनु।<br>
+                                ३. <strong>लोपोन्मुख भाषा/संस्कृतिको संरक्षण:</strong> सानो सङ्ख्यामा रहेका मातृभाषा र संस्कृतिको जगेर्ना गर्नु।
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>निष्कर्ष:</strong> तसर्थ, सांस्कृतिक विविधतालाई चुनौतीको रूपमा नभई राष्ट्रिय एकता र आर्थिक समृद्धिको संवाहकका रूपमा उपयोग गर्नु आजको आवश्यकता हो।</p>
+        </div>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-gem"></i> विस्तृत प्रश्न (अङ्क भार: ८)</div>
+
+    <div class="qa-block color7" style="border-left-color:#0277BD;">
+        <div class="q"><span class="qnum">३.</span> "नेपाल एक बहुजातीय, बहुभाषिक र बहुसांस्कृतिक मुलुक हो।" यस भनाइलाई आधार मानी नेपालमा विद्यमान सामाजिक-सांस्कृतिक विविधताको व्याख्या गर्दै सामाजिक सद्भाव र राष्ट्रिय एकता कायम राख्ने उपायहरू विस्तृत रूपमा लेख्नुहोस्।</div>
+        <div class="a">
+
+            <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपालको संविधानको धारा ३ ले नेपाललाई 'बहुजातीय, बहुभाषिक, बहुधार्मिक, बहुसांस्कृतिक विशेषतायुक्त राष्ट्र' का रूपमा अङ्गीकार गरेको छ। राष्ट्रिय जनगणना २०७८ अनुसार नेपालमा १४२ जातजाति, १२४ मातृभाषा र विविध धार्मिक सम्प्रदायहरू परापूर्वकालदेखि मिलेर बस्दै आएका छन्।</p>
+
+            <div class="mermaid-flow">
+                <div class="mermaid-step">नेपालको विविधता</div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">विविधताका आयामहरू<br><span style="font-weight:400; font-size:0.85em;">जातीय, भाषिक, धार्मिक</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">चुनौतीहरू<br><span style="font-weight:400; font-size:0.85em;">विभेद, भड्काव</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">राष्ट्रिय एकताका उपायहरू</div>
+            </div>
+
+            <p><span class="step-icon">📊</span> <span class="step-title">२. विषय प्रवेश तथा मुख्य विश्लेषण:</span></p>
+
+            <p><strong>(क) सामाजिक-सांस्कृतिक विविधताका मुख्य आयामहरू:</strong></p>
+            <ul>
+                <li><strong>जातीय संरचना:</strong> नेपालमा क्षेत्री (१६.४५%), पहाडी ब्राह्मण (११.२९%), मगर (६.९०%), थारू (६.२०%), तामाङ (५.६२%) लगायत १४२ जातजाति बसोबास गर्दछन्।</li>
+                <li><strong>भाषिक धनीपना:</strong> नेपालमा बोलिने १२४ मातृभाषाहरूमध्ये नेपाली (४४.८६%), मैथिली (११.०५%), भोजपुरी (६.२४%) प्रमुख हुन्।</li>
+                <li><strong>धार्मिक तथा सांस्कृतिक उत्सव:</strong> हिन्दू (८१.१९%), बौद्ध (८.२१%), इस्लाम (५.०९%), किराँत (३.१७%) लगायतका धर्मावलम्बीहरूले छठ, ल्होसार, ईद, गौरा, माघी र दसैँ-तिहार जस्ता पर्वहरू साझा खुसीका साथ मनाउँछन्।</li>
+            </ul>
+
+            <p><strong>(ख) सामाजिक सद्भाव र राष्ट्रिय एकता सुदृढ गर्ने व्यावहारिक उपायहरू:</strong></p>
+            <ol>
+                <li><strong>समानुपातिक समावेशीकरणको व्यावहारिक कार्यान्वयन:</strong> राज्यका हरेक अङ्ग (प्रशासन, राजनीति, शिक्षा) मा पछाडि पारिएका जातजाति, महिला, दलित र अल्पसङ्ख्यक समुदायको न्यायोचित प्रतिनिधित्व सुनिश्चित गर्ने।</li>
+                <li><strong>मातृभाषामा शिक्षा र भाषा आयोगको क्रियाशीलता:</strong> बालबालिकालाई प्रारम्भिक तहमा मातृभाषामा शिक्षा दिने व्यवस्था लागू गरी लोपोन्मुख १२४ मातृभाषाहरूको अभिलेख र संरक्षण गर्ने।</li>
+                <li><strong>अन्तरसांस्कृतिक आदानप्रदान र सहभागिता:</strong> एक प्रदेश वा समुदायको चाडपर्वमा (जस्तै: तराईको छठमा पहाडी समुदाय र पहाडको देउडा/जात्रामा तराईका समुदाय) आपसी सहभागिता र सम्मान बढाउने।</li>
+                <li><strong>सामाजिक सञ्जालको मर्यादित प्रयोग र घृणास्पद अभिव्यक्ति (Hate Speech) नियन्त्रण:</strong> अनलाइन वा मिडियामार्फत कुनै पनि जाति, धर्म वा भाषाविरुद्ध फैलाइने भ्रामक सूचना र साम्प्रदायिक भड्कावलाई कडा कानुनी कारबाही गर्ने।</li>
+                <li><strong>विद्यालय स्तरबाटै भाइचारा र जीवनोपयोगी सीपको सिकाइ:</strong> पाठ्यक्रममा सामाजिक सद्भाव, समानुभूति र एकता प्रवर्धन गर्ने विषयवस्तु समावेश गरी असल नागरिक निर्माण गर्ने।</li>
+            </ol>
+
+            <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> अतः विविधता नेपाली समाजको कमजोरी नभई हाम्रो अद्वितीय पहिचान र तागत हो। "सबै जातजातिको साझा फूलबारी" का रूपमा रहेको नेपालमा विभेदमुक्त, समतामूलक र समावेशी समाज निर्माण गरेर मात्र राष्ट्रिय एकतालाई अझ मजबुत बनाउन सकिन्छ।</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="tip-box" style="background:#0277BD; margin-top:20px;">
+        <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+        <strong>अन्तिम सल्लाह:</strong> नेपालको सामाजिक-सांस्कृतिक विविधता नै हाम्रो राष्ट्रिय पहिचान र शक्ति हो। जनगणना २०७८ का तथ्याङ्क, प्रादेशिक क्रम (बा-ग-को-लु-सु-क-म) र सांस्कृतिक पहिचानका सुत्रहरू राम्ररी सम्झनुहोस्। परीक्षामा तालिका, वर्गीकृत बुँदा र प्रमाणिक तथ्याङ्क प्रयोग गर्दा उच्च अङ्क प्राप्त गर्न सकिन्छ। स्मरण राख्नुहोस् — <strong>"अनेकतामा एकता"</strong> नै नेपालको मूल मन्त्र हो।
+    </div>
+
+    <div class="footer-copy">
+        <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+        <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+        <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ३</span>
+        <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+    </div>
+
+</div>
+
+<button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<script>
+    (function() {
+        const btn = document.getElementById('scrollUpBtn');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    })();
+</script>
+
+</body>
+</html>
