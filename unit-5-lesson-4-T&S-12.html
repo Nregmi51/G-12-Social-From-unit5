@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ ४ – नेपालका प्रदेशको आर्थिक अवस्था र विशेषता (कक्षा १२)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family:'Noto Sans Devanagari', sans-serif;
+            background:#fdf5ee;
+            color:#2d2416;
+            padding:16px 12px 30px;
+            line-height:2;
+            scroll-behavior:smooth;
+        }
+        .container {
+            max-width:1150px; margin:0 auto;
+            background:#fcfdfc; color:#2d2416;
+            border-radius:32px;
+            box-shadow:0 16px 56px rgba(0,0,0,0.08);
+            padding:28px 22px 40px;
+            position:relative;
+        }
+        .main-header {
+            border-bottom:4px solid #e0c8b0;
+            padding-bottom:16px; margin-bottom:16px;
+            display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:8px;
+        }
+        .main-header h1 {
+            font-size:2rem; font-weight:900; color:#BF360C; line-height:1.2;
+        }
+        .main-header h1 i { color:#E65100; margin-right:10px; }
+        .main-header .subtitle {
+            font-size:1.16rem; color:#4d5f72; font-weight:600; margin-top:4px;
+        }
+        .badge-class {
+            background:#E65100; color:#fff;
+            font-size:0.8rem; font-weight:800;
+            padding:4px 18px; border-radius:40px;
+            letter-spacing:0.5px; display:inline-block; margin-left:6px;
+        }
+        .credit-bar {
+            background:#fff3e0; border-radius:60px;
+            padding:14px 28px;
+            display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center;
+            gap:8px 20px; margin:6px 0 24px;
+            border:2px solid #e0c8b0;
+            font-size:1.05rem; font-weight:700; color:#2d2416;
+        }
+        .credit-bar .name { color:#0b2b4a; font-weight:800; font-size:1.15rem; }
+        .credit-bar .email { color:#E65100; font-weight:700; }
+        .credit-bar i { color:#E65100; margin-right:6px; }
+
+        .intro-note {
+            background:#fffaf3;
+            border:2px dashed #e0c8b0;
+            border-left:6px solid #E65100;
+            border-radius:16px;
+            padding:14px 22px;
+            margin:6px 0 24px;
+            font-weight:500;
+            font-size:1.05rem;
+            color:#3a2a1a;
+        }
+        .intro-note i { color:#E65100; margin-right:8px; }
+        .intro-note strong { color:#BF360C; font-weight:900; }
+
+        .toc-section {
+            background:#E65100; border-radius:20px;
+            padding:18px 24px; margin:6px 0 28px;
+            border:2px solid #FF9800;
+        }
+        .toc-section h3 {
+            font-weight:800; color:#fff; font-size:1.36rem; margin-bottom:12px;
+            display:flex; align-items:center; gap:12px;
+        }
+        .toc-section h3 i { color:#f5d742; font-size:1.3rem; }
+        .toc-grid {
+            display:grid; grid-template-columns:1fr 1fr 1fr; gap:4px 16px;
+        }
+        .toc-grid a {
+            color:#fde8d8; text-decoration:none;
+            font-weight:600; font-size:16.5px;
+            padding:4px 0 4px 6px;
+            border-bottom:2px solid transparent;
+            transition:all 0.2s ease;
+            display:flex; align-items:center; gap:6px;
+        }
+        .toc-grid a:hover { color:#f5d742; border-bottom-color:#f5d742; transform:translateX(4px); }
+        .toc-grid a i { color:#f5d742; font-size:0.6rem; min-width:14px; }
+
+        @media (max-width:700px) { .toc-grid { grid-template-columns:1fr 1fr; } .toc-grid a { font-size:15px; } }
+        @media (max-width:480px) { .toc-grid { grid-template-columns:1fr; } .toc-grid a { font-size:14px; } }
+
+        .section-head {
+            font-size:1.7rem; font-weight:900; color:#fff;
+            background:#E65100;
+            margin:42px 0 16px; padding:12px 22px; border-radius:12px;
+            display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+            scroll-margin-top:80px;
+            box-shadow:0 3px 12px rgba(230,81,0,0.35);
+        }
+        .section-head i { font-size:1.5rem; color:#f5d742; }
+        .section-head .mark-badge {
+            color:#E65100; font-size:0.7rem; font-weight:800;
+            padding:3px 14px; border-radius:40px; margin-left:4px; background:#fff;
+        }
+        .section-head .mark-badge.gold { background:#f5d742; color:#0b2b4a; }
+        .section-head .mark-badge.green { background:#7dcea0; color:#0b2b4a; }
+        .section-head .mark-badge.purple { background:#b39ddb; color:#0b2b4a; }
+        .section-head .mark-badge.blue { background:#81d4fa; color:#0b2b4a; }
+        .section-head .mark-badge.pink { background:#f48fb1; color:#0b2b4a; }
+
+        .sub-head {
+            font-size:1.3rem; font-weight:800; color:#BF360C;
+            margin:28px 0 12px; padding-left:14px;
+            border-left:6px solid #E65100;
+            display:flex; align-items:center; gap:10px;
+            scroll-margin-top:80px;
+        }
+        .sub-head i { color:#E65100; font-size:1.1rem; }
+
+        .content-box {
+            border-radius:16px; padding:20px 26px; margin:14px 0 18px;
+            border-left:6px solid #E65100; font-weight:500; line-height:2;
+        }
+        .content-box p, .content-box ul, .content-box ol, .content-box li {
+            font-size:1.19rem; font-weight:500; margin-bottom:8px;
+        }
+        .content-box ul, .content-box ol { padding-left:28px; margin:8px 0 8px; }
+        .content-box li { margin-bottom:6px; }
+        .content-box strong { color:#BF360C; font-weight:900; }
+
+        .content-box.amber-light { border-left-color:#E65100; background:#fff3e0; }
+        .content-box.blue-light { border-left-color:#1a3a5c; background:#e8f0f8; }
+        .content-box.gold-light { border-left-color:#b45309; background:#fef8ee; }
+        .content-box.green-light { border-left-color:#1f7a4a; background:#eef8f2; }
+        .content-box.purple-light { border-left-color:#6A1B9A; background:#f4eef8; }
+        .content-box.pink-light { border-left-color:#a03a5a; background:#f8eef2; }
+        .content-box.teal-light { border-left-color:#0f7a7a; background:#eef8f8; }
+        .content-box.orange-light { border-left-color:#d97706; background:#fef6ed; }
+
+        .table-wrap {
+            overflow-x:auto; margin:16px 0 14px;
+            border-radius:14px; border:2px solid #e0c8b0;
+        }
+        table {
+            width:100%; border-collapse:collapse; font-size:1.02rem; min-width:280px;
+        }
+        th, td {
+            padding:11px 14px; border:1px solid #e0c8b0;
+            text-align:left; vertical-align:top;
+        }
+        th {
+            background:#E65100; font-weight:800; color:#fff; font-size:1.05rem;
+        }
+        td { font-weight:500; font-size:1.02rem; }
+        .table-caption {
+            background:#fff3e0; padding:10px 18px;
+            font-weight:700; font-size:1.08rem; color:#BF360C;
+            border-bottom:2px solid #e0c8b0;
+        }
+
+        .qa-block {
+            border-radius:16px; padding:18px 24px; margin:14px 0 18px;
+            border-left:6px solid #E65100;
+        }
+        .qa-block.color1 { border-left-color:#E65100; background:#fff3e0; }
+        .qa-block.color2 { border-left-color:#1a3a5c; background:#f0f5fa; }
+        .qa-block.color3 { border-left-color:#1f7a4a; background:#f2f8f5; }
+        .qa-block.color4 { border-left-color:#6b3fa0; background:#f6f2f8; }
+        .qa-block.color5 { border-left-color:#b45309; background:#fcf9f4; }
+        .qa-block.color6 { border-left-color:#0f7a7a; background:#eef8f8; }
+        .qa-block.color7 { border-left-color:#a03a5a; background:#fcf5f8; }
+        .qa-block.color8 { border-left-color:#d97706; background:#fef8ef; }
+
+        .qa-block .q {
+            font-weight:900; color:#BF360C;
+            display:flex; gap:10px; align-items:baseline;
+            font-size:1.22rem;
+        }
+        .qa-block .q .qnum { color:#E65100; font-weight:900; min-width:30px; }
+        .qa-block .a {
+            margin-top:6px; padding-left:46px;
+            color:#2d2416; font-weight:500; font-size:1.19rem;
+        }
+        .qa-block .a ul, .qa-block .a ol { padding-left:24px; margin:6px 0 6px; }
+        .qa-block .a li { margin-bottom:5px; font-weight:500; }
+        .qa-block .a strong { color:#BF360C; font-weight:900; }
+        .qa-block .a .step-icon { display:inline-block; margin-right:6px; font-weight:900; }
+        .qa-block .a .step-title { font-weight:700; color:#BF360C; font-size:1.1rem; }
+
+        .glossary-grid {
+            display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:16px 0 8px;
+        }
+        .glossary-item {
+            background:#fffaf3; border-radius:12px;
+            padding:14px 18px; border-left:5px solid #E65100;
+        }
+        .glossary-item strong { color:#BF360C; font-size:1.15rem; font-weight:900; }
+        .glossary-item p { margin-top:3px; font-size:1.125rem; color:#2d2416; font-weight:500; }
+
+        .mermaid-flow {
+            display:flex; flex-direction:column; align-items:center; gap:6px;
+            margin:16px 0; padding:14px 10px;
+            background:#fff3e0; border-radius:20px; border:2px dashed #FF9800;
+        }
+        .mermaid-step {
+            background:#fff; padding:8px 22px; border-radius:40px;
+            font-weight:800; font-size:1rem; color:#BF360C;
+            box-shadow:0 2px 6px rgba(0,0,0,0.04);
+            border:2px solid #E65100; text-align:center; min-width:160px;
+        }
+        .mermaid-arrow { font-size:1.6rem; color:#7f8fa6; line-height:1; }
+
+        @media (max-width:600px) {
+            .mermaid-step { font-size:0.85rem; padding:6px 14px; min-width:120px; }
+        }
+        @media (min-width:768px) {
+            .mermaid-flow { flex-direction:row; flex-wrap:wrap; justify-content:center; gap:4px 14px; }
+            .mermaid-arrow { transform:rotate(0deg); }
+        }
+
+        .analysis-box, .activity-box, .dialogue-box {
+            border-radius:16px; padding:20px 26px;
+            border:2px solid #e0c8b0; margin:12px 0;
+        }
+        .analysis-box, .dialogue-box { background:#fffaf3; }
+        .activity-box { background:#fef6ee; }
+        .analysis-box .analysis-title, .activity-box .act-title, .dialogue-box .dialogue-title {
+            font-weight:900; color:#BF360C; font-size:1.15rem;
+        }
+        .dialogue-box .dialogue-title { text-align:center; }
+        .analysis-box p, .analysis-box li,
+        .activity-box p, .activity-box li,
+        .dialogue-box p {
+            font-weight:500; font-size:1.12rem; margin-bottom:4px;
+        }
+        .analysis-box ul, .analysis-box ol,
+        .activity-box ul, .activity-box ol {
+            padding-left:24px;
+        }
+        .dialogue-box .speaker { font-weight:700; color:#E65100; }
+
+        .mnemonic-box {
+            background:#fff8e1;
+            border:2px solid #f5d742;
+            border-left:6px solid #d97706;
+            border-radius:16px;
+            padding:18px 24px;
+            margin:14px 0 18px;
+        }
+        .mnemonic-box .mnemonic-title {
+            font-weight:900;
+            color:#7A2400;
+            font-size:1.15rem;
+            margin-bottom:8px;
+        }
+        .mnemonic-box .mnemonic-formula {
+            display:inline-block;
+            background:#fff;
+            border:2px solid #d97706;
+            border-radius:40px;
+            padding:4px 20px;
+            font-weight:800;
+            color:#BF360C;
+            font-size:1.15rem;
+            margin-bottom:8px;
+            letter-spacing:1px;
+        }
+        .mnemonic-box p, .mnemonic-box li {
+            font-weight:500;
+            font-size:1.1rem;
+            margin-bottom:4px;
+            color:#3a2a1a;
+        }
+        .mnemonic-box strong { color:#BF360C; font-weight:900; }
+        .mnemonic-box ul, .mnemonic-box ol { padding-left:24px; }
+
+        .ref {
+            display:inline; font-size:0.72em; color:#E65100; font-weight:700;
+            vertical-align:super; margin-left:2px; letter-spacing:0.5px;
+        }
+
+        #scrollUpBtn {
+            position:fixed; bottom:28px; right:28px;
+            background:#E65100; color:#fff; border:none; border-radius:50%;
+            width:60px; height:60px; font-size:1.8rem; cursor:pointer;
+            box-shadow:0 4px 20px rgba(230,81,0,0.4);
+            transition:all 0.3s ease;
+            display:flex; align-items:center; justify-content:center;
+            z-index:999; opacity:0; visibility:hidden; transform:translateY(20px);
+        }
+        #scrollUpBtn.visible { opacity:1; visibility:visible; transform:translateY(0); }
+        #scrollUpBtn:hover { background:#BF360C; transform:scale(1.08); box-shadow:0 6px 28px rgba(230,81,0,0.5); }
+
+        .footer-copy {
+            margin-top:40px; padding-top:18px; border-top:3px solid #e0c8b0;
+            text-align:center; font-size:0.95rem; color:#5f6f80;
+            display:flex; flex-wrap:wrap; justify-content:center; gap:6px 28px; font-weight:600;
+        }
+        .footer-copy i { color:#E65100; margin-right:6px; }
+        .footer-copy .highlight { font-weight:800; color:#0b2b4a; }
+
+        hr { border:none; border-top:3px dotted #e0c8b0; margin:28px 0 10px; }
+
+        .tip-box {
+            background:#E65100; color:#fff; border-radius:14px;
+            padding:16px 22px; margin:12px 0; font-weight:500; font-size:1.1rem;
+        }
+        .tip-box i { margin-right:8px; }
+        .tip-box strong { color:#f5d742; }
+        .tip-box p { color:#fff; }
+
+        @media (max-width:600px) {
+            .container { padding:16px 12px 24px; border-radius:20px; }
+            .main-header h1 { font-size:1.5rem; }
+            .section-head { font-size:1.35rem; padding:10px 16px; }
+            .sub-head { font-size:1.15rem; }
+            .qa-block .a { padding-left:12px; }
+            .qa-block .q { font-size:1.05rem; flex-wrap:wrap; }
+            .credit-bar { flex-direction:column; align-items:flex-start; gap:4px; font-size:0.9rem; padding:10px 16px; }
+            .glossary-grid { grid-template-columns:1fr; }
+            #scrollUpBtn { width:50px; height:50px; font-size:1.3rem; bottom:18px; right:18px; }
+            .toc-section { padding:14px 16px; }
+            .content-box { padding:14px 16px; }
+            .content-box p, .content-box ul, .content-box ol, .content-box li { font-size:1.02rem; }
+            .qa-block .a { font-size:1.02rem; }
+            table { font-size:0.85rem; }
+            th, td { font-size:0.85rem; padding:6px 8px; }
+            .glossary-item strong { font-size:1.05rem; }
+            .glossary-item p { font-size:0.98rem; }
+            .activity-box p, .activity-box li,
+            .analysis-box p, .analysis-box li,
+            .dialogue-box p,
+            .mnemonic-box p, .mnemonic-box li { font-size:1.02rem; }
+            .mermaid-step { font-size:0.8rem; padding:4px 12px; min-width:100px; }
+            .toc-grid a { font-size:15px; }
+        }
+        @media (min-width:768px) {
+            .container { padding:36px 46px 50px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="main-header">
+        <div>
+            <h1>
+                <i class="fas fa-coins"></i>
+                एकाइ ५, पाठ ४: नेपालका प्रदेशको आर्थिक अवस्था र विशेषता
+            </h1>
+            <div class="subtitle">
+                कक्षा १२ · सामाजिक अध्ययन तथा जीवनोपयोगी शिक्षा
+                <span class="badge-class"><i class="fas fa-check-circle"></i> NEB परीक्षा विशेष क्याप्सुल</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit-bar">
+        <span><i class="fas fa-user-edit"></i> <span class="name">Prepared by: Narayan Sir</span></span>
+        <span><i class="fas fa-envelope"></i> <span class="email">nregmi511@gmail.com</span></span>
+        <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ४</span>
+    </div>
+
+    <div class="intro-note">
+        <i class="fas fa-info-circle"></i>
+        यो शैक्षिक क्याप्सुल कक्षा १२ सामाजिक अध्ययनको <strong>एकाइ ५ (भूगोल र सामाजिक जीवन) अन्तर्गतको पाठ ४ ("नेपालका प्रदेशको आर्थिक अवस्था र विशेषता")</strong> को पूर्ण, अद्यावधिक र परीक्षा-उपयोगी अध्ययन सामग्री हो। यसमा आर्थिक आयाम, GDP मा प्रदेशहरूको योगदान, कृषि, उद्योग, व्यापार, पर्यटन, जलविद्युत्, सडक पूर्वाधार, र अभ्यासका सम्पूर्ण प्रश्नहरूको ३-स्तरीय नमुना उत्तर समेटिएको छ।
+    </div>
+
+    <div class="toc-section" id="toc">
+        <h3><i class="fas fa-list-ul"></i> विषयसूची</h3>
+        <div class="toc-grid">
+            <a href="#section1"><i class="fas fa-chevron-right"></i> पारिभाषिक शब्दावली</a>
+            <a href="#section2"><i class="fas fa-chevron-right"></i> आर्थिक तथ्याङ्क तालिका</a>
+            <a href="#section3"><i class="fas fa-chevron-right"></i> सुत्रत्मक घोक्ने बुँदाहरू</a>
+            <a href="#section4"><i class="fas fa-chevron-right"></i> प्रादेशिक आर्थिक प्रोफाइल</a>
+            <a href="#section5"><i class="fas fa-chevron-right"></i> क्रियाकलाप समाधान</a>
+            <a href="#section6"><i class="fas fa-chevron-right"></i> अभ्यास तथा Q&A</a>
+        </div>
+    </div>
+
+    <div class="section-head" id="section1">
+        <i class="fas fa-book-open"></i>
+        १. विषयगत पारिभाषिक शब्दावली
+        <span class="mark-badge blue">Glossary</span>
+    </div>
+
+    <div class="glossary-grid">
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#E65100; margin-right:4px;"></i> १. प्रदेशको आर्थिक आयाम</strong>
+            <p>मानिसहरूको उत्पादनका साधनहरूमा पहुँच, स्रोत र साधनको समुचित उपयोग, र श्रम बजारमा सहभागी हुने क्षमता तथा क्रियाकलापको समग्र स्थितिलाई <strong>प्रदेशको आर्थिक आयाम</strong> भनिन्छ।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#E65100; margin-right:4px;"></i> २. कुल गार्हस्थ्य उत्पादन (GDP)</strong>
+            <p>कुनै निश्चित आर्थिक वर्षभित्र देश वा प्रदेशको भौगोलिक सीमाभित्र उत्पादन भएका सम्पूर्ण अन्तिम वस्तु तथा सेवाहरूको कुल मौद्रिक मूल्य।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#E65100; margin-right:4px;"></i> ३. विशेष आर्थिक क्षेत्र (SEZ)</strong>
+            <p>व्यापार, उद्योग, र निर्यात प्रवर्धनका लागि सरकारद्वारा पूर्वाधार, कर छुट र कानुनी सहजीकरणसहित तोकिएको विशिष्ट औद्योगिक क्षेत्र (जस्तै: भैरहवा SEZ, पाँचखाल SEZ, सिमरा SEZ)।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#E65100; margin-right:4px;"></i> ४. सुख्खा बन्दरगाह (Dry Port)</strong>
+            <p>समुद्री तट नभएका स्थानमा अन्तर्राष्ट्रिय व्यापारका लागि भन्सार, क्वारेन्टिन, र सामान भण्डारणको एकीकृत सुविधा उपलब्ध गराउने ठाउँ (जस्तै: वीरगञ्ज सुखा बन्दरगाह)।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#E65100; margin-right:4px;"></i> ५. वैदेशिक रोजगारी र विप्रेषण</strong>
+            <p>स्वदेशमा पर्याप्त रोजगारी नहुँदा नागरिकहरू वैदेशिक श्रम बजारमा गई आर्जन गरेर स्वदेशमा पठाउने रकम (विप्रेषण/Remittance), जसले नेपालका प्रदेशहरूको अर्थतन्त्रमा ठुलो योगदान पुर्‍याएको छ।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#E65100; margin-right:4px;"></i> ६. गैर-काष्ठ वन पैदावार (NTFPs)</strong>
+            <p>हिमाली र पहाडी क्षेत्रमा पाइने यार्सागुम्बा, पाँचऔँले, टिमुर, जडीबुटी तथा गैर-काष्ठ वन पैदावारहरू, जसले दुर्गम प्रदेशहरूको जीविकोपार्जनमा मुख्य भूमिका खेलेका छन्।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#E65100; margin-right:4px;"></i> ७. अन्तरप्रादेशिक व्यापार</strong>
+            <p>नेपालभित्रै एउटा प्रदेशले आफूसँग उपभोगभन्दा बढी भएको वस्तु (जस्तै: खाद्यान्न, जलविद्युत्, तरकारी) अर्को प्रदेशमा बिक्री गर्ने वा आदानप्रदान गर्ने व्यापारिक प्रक्रिया।</p>
+        </div>
+        <div class="glossary-item">
+            <strong><i class="fas fa-arrow-right" style="color:#E65100; margin-right:4px;"></i> ८. जलविद्युत् क्षमता</strong>
+            <p>नेपालका तीन मुख्य नदी प्रणालीहरू (कोशी, गण्डकी, कर्णाली) र तिनका सहायक नदीहरूबाट विद्युत् ऊर्जा उत्पादन गर्न सकिने प्राकृतिक जलस्रोत क्षमता।</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section2">
+        <i class="fas fa-chart-bar"></i>
+        २. प्रादेशिक आर्थिक अवस्था तथ्याङ्क तालिका
+        <span class="mark-badge gold">Economic Data Matrix</span>
+    </div>
+
+    <div class="content-box amber-light">
+        <p>नेपालका सात प्रदेशहरूको कुल गार्हस्थ उत्पादन (GDP) मा योगदान, कृषिमा संलग्न जनसङ्ख्या प्रतिशत, मुख्य औद्योगिक/व्यापारिक केन्द्रहरू र आर्थिक सम्भावनाहरूको तुलनात्मक तालिका:</p>
+
+        <div class="table-wrap">
+            <div class="table-caption">तालिका: प्रादेशिक आर्थिक अवस्था तथ्याङ्क</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>क्र.सं.</th>
+                        <th>प्रदेशको नाम</th>
+                        <th>GDP मा योगदान (%)</th>
+                        <th>कृषिमा संलग्न %</th>
+                        <th>मुख्य औद्योगिक तथा व्यापारिक केन्द्रहरू</th>
+                        <th>प्रमुख नाकाहरू (भन्सार)</th>
+                        <th>मुख्य आर्थिक सम्भावनाहरू</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>१</strong></td>
+                        <td><strong>बागमती प्रदेश</strong></td>
+                        <td><strong>३५.८% - ३९.१%</strong> (सर्वोच्च)</td>
+                        <td>~६०%</td>
+                        <td>काठमाडौँ, हेटौँडा, बनेपा, नारायणगढ, पाँचखाल</td>
+                        <td>तातोपानी, रसुवागढी (चीन)</td>
+                        <td>सेवा क्षेत्र, उद्योग, पर्यटन, जलविद्युत्, व्यापार</td>
+                    </tr>
+                    <tr>
+                        <td><strong>२</strong></td>
+                        <td><strong>कोशी प्रदेश</strong></td>
+                        <td>~१५.०% - १५.८%</td>
+                        <td><strong>८१.९%</strong> (सर्वोच्च)</td>
+                        <td>विराटनगर, इटहरी, धरान, विर्तामोड, दमक</td>
+                        <td>रानी भन्सार, पशुपतिनगर, ओलाङचुङगोला</td>
+                        <td>व्यावसायिक कृषि (चिया, अलैँची), उद्योग, पर्यटन, जलविद्युत्</td>
+                    </tr>
+                    <tr>
+                        <td><strong>३</strong></td>
+                        <td><strong>लुम्बिनी प्रदेश</strong></td>
+                        <td>~१४.०% - १४.५%</td>
+                        <td>बहुसङ्ख्यक</td>
+                        <td>बुटवल, भैरहवा, नेपालगञ्ज, घोराही, तुलसीपुर</td>
+                        <td>बेलहिया (भैरहवा), जमुनाह (नेपालगञ्ज)</td>
+                        <td>धार्मिक पर्यटन (लुम्बिनी), कृषि (अन्न), उद्योग, व्यापार</td>
+                    </tr>
+                    <tr>
+                        <td><strong>४</strong></td>
+                        <td><strong>मधेश प्रदेश</strong></td>
+                        <td>~१३.०% - १३.५%</td>
+                        <td><strong>६६.०%</strong></td>
+                        <td>वीरगञ्ज, पथलैया, जनकपुर, राजविराज, लहान</td>
+                        <td>वीरगञ्ज (सुखा बन्दरगाह), जलेश्वर</td>
+                        <td>"अन्नको भण्डार" कृषि, माछापालन, उद्योग, व्यापार</td>
+                    </tr>
+                    <tr>
+                        <td><strong>५</strong></td>
+                        <td><strong>गण्डकी प्रदेश</strong></td>
+                        <td>~८.८% - ९.०%</td>
+                        <td><strong>७२.४%</strong></td>
+                        <td>पोखरा, नवलपुर (सुस्तापूर्व), दुलेगौँडा, वालिङ</td>
+                        <td>कोराला (मुस्ताङ - चीन)</td>
+                        <td>पर्यटन (३३% विदेशी पर्यटक), जलविद्युत्, फलफूल/पशुपालन</td>
+                    </tr>
+                    <tr>
+                        <td><strong>६</strong></td>
+                        <td><strong>सुदूरपश्चिम प्रदेश</strong></td>
+                        <td>~६.९% - ७.१%</td>
+                        <td><strong>६०.०%</strong></td>
+                        <td>धनगढी, महेन्द्रनगर, टीकापुर, अत्तरिया</td>
+                        <td>गौरीफन्टा, गड्डाचौकी, झुलाघाट</td>
+                        <td>कैलाली/कञ्चनपुर कृषि, जडीबुटी, जलविद्युत्, पर्यटन (खप्तड)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>७</strong></td>
+                        <td><strong>कर्णाली प्रदेश</strong></td>
+                        <td><strong>४.३%</strong> (न्यूनतम)</td>
+                        <td><strong>७५.०%</strong></td>
+                        <td>वीरेन्द्रनगर (सुर्खेत), जुम्ला खलङ्गा, छिन्चु</td>
+                        <td>हिल्सा (हुम्ला - चीन)</td>
+                        <td>जडीबुटी, फलफूल (स्याउ), जलविद्युत्, साहसिक पर्यटन</td>
+                    </tr>
+                    <tr style="background:#fff3e0;">
+                        <td><strong>—</strong></td>
+                        <td><strong>नेपाल (कुल)</strong></td>
+                        <td><strong>१००%</strong></td>
+                        <td><strong>६२% - ६५%</strong></td>
+                        <td><strong>विराटनगर-वीरगञ्ज-बुटवल-पोखरा-काठमाडौँ</strong></td>
+                        <td><strong>वीरगञ्ज, रानी, तातोपानी, बेलहिया</strong></td>
+                        <td><strong>कृषि, जलविद्युत्, पर्यटन र मानव संसाधन</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section3">
+        <i class="fas fa-brain"></i>
+        ३. सुत्रत्मक घोक्ने बुँदाहरू (Mnemonics)
+        <span class="mark-badge pink">Shortcuts</span>
+    </div>
+
+    <div class="mnemonic-box">
+        <div class="mnemonic-title"><i class="fas fa-key" style="color:#d97706; margin-right:8px;"></i> सुत्र १: GDP मा प्रदेशहरूको योगदान (ठुलोदेखि सानो)</div>
+        <div class="mnemonic-formula">बा → को → लु → म → ग → सु → क</div>
+        <ul>
+            <li><strong>बा (बागमती):</strong> ३५.८% - ३९.१% (प्रथम — नेपालको मुख्य आर्थिक इन्जिन)</li>
+            <li><strong>को (कोशी):</strong> दोस्रो उच्च योगदान (~१५.०% - १५.८%)</li>
+            <li><strong>लु (लुम्बिनी):</strong> तेस्रो स्थान (~१४.०% - १४.५%)</li>
+            <li><strong>म (मधेश):</strong> चौथो स्थान (~१३.०% - १३.५%)</li>
+            <li><strong>ग (गण्डकी):</strong> पाँचौँ स्थान (~८.८% - ९.०%)</li>
+            <li><strong>सु (सुदूरपश्चिम):</strong> छैठौँ स्थान (~६.९% - ७.१%)</li>
+            <li><strong>क (कर्णाली):</strong> ४.३% (सबैभन्दा कम GDP योगदान)</li>
+        </ul>
+    </div>
+
+    <div class="mnemonic-box">
+        <div class="mnemonic-title"><i class="fas fa-key" style="color:#d97706; margin-right:8px;"></i> सुत्र २: कृषि निर्भरता (बढीदेखि कम)</div>
+        <div class="mnemonic-formula">को → क → ग → म → सु → बा</div>
+        <ul>
+            <li><strong>कोशी प्रदेश:</strong> ८१.९% मानिस कृषिमा (सबैभन्दा बढी)</li>
+            <li><strong>कर्णाली प्रदेश:</strong> ७५.०% मानिस कृषिमा</li>
+            <li><strong>गण्डकी प्रदेश:</strong> ७२.४% मानिस कृषिमा</li>
+            <li><strong>मधेश प्रदेश:</strong> ६६.०% मानिस कृषिमा ("नेपालको अन्न भण्डार" — २४.९६% धान र २९.०९% गहुँ)</li>
+            <li><strong>सुदूरपश्चिम प्रदेश:</strong> ६०.०% मानिस कृषिमा</li>
+            <li><strong>बागमती प्रदेश:</strong> ६०.०% मानिस कृषिमा (तर सेवा र औद्योगिक क्षेत्र बढी विकसित)</li>
+        </ul>
+    </div>
+
+    <div class="mnemonic-box">
+        <div class="mnemonic-title"><i class="fas fa-key" style="color:#d97706; margin-right:8px;"></i> सुत्र ३: व्यापारिक नाका तथा बन्दरगाह</div>
+        <ul>
+            <li><strong>भारतसँगको मुख्य नाका:</strong> वीरगञ्ज (सुखा बन्दरगाह/पेट्रोलियम पाइपलाइन), रानी भन्सार (विराटनगर), बेलहिया (भैरहवा), जमुनाह (नेपालगञ्ज), गड्डाचौकी (महेन्द्रनगर)।</li>
+            <li><strong>चीनसँगको मुख्य नाका:</strong> तातोपानी (सिन्धुपाल्चोक), रसुवागढी (रसुवा), कोराला (मुस्ताङ), किमाथाङ्का (सङ्खुवासभा), ओलाङचुङगोला (ताप्लेजुङ), हिल्सा (हुम्ला)।</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section4">
+        <i class="fas fa-building"></i>
+        ४. सातै प्रदेशको अद्यावधिक आर्थिक प्रोफाइल
+        <span class="mark-badge green">Province Profiles</span>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-mountain"></i> १. कोशी प्रदेश (प्रदेश १)</div>
+    <div class="content-box blue-light">
+        <ul>
+            <li><strong>कृषि:</strong> ८१.९% जनसङ्ख्या कृषिमा संलग्न। झापा, मोरङ, सुनसरी तराई क्षेत्र अन्न उत्पादक; इलाम, धनकुटा, पाँचथर, तेह्रथुममा चिया, अलैँची, अदुवा, अम्रिसो, बेमौसमी तरकारी र दुग्ध व्यवसाय।</li>
+            <li><strong>उद्योग र व्यापार:</strong> विराटनगर (प्रमुख औद्योगिक केन्द्र), जुट, चिनी, साबुन, सिमेन्ट, छड, चिया प्रशोधन। व्यापारिक नाका: रानी भन्सार, पशुपतिनगर, ओलाङचुङगोला, किमाथाङ्का।</li>
+            <li><strong>पर्यटन र जलविद्युत्:</strong> विश्वको सर्वोच्च शिखर सगरमाथा (८,८४८.८६ मि.), कोशीटप्पु, मकालु बरुण, हलेसी, पाथीभरा। अरुण, पिलुवा, कावेली जलविद्युत् आयोजना।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-tree"></i> २. मधेश प्रदेश (प्रदेश २)</div>
+    <div class="content-box gold-light">
+        <ul>
+            <li><strong>कृषि:</strong> ६६% मानिस कृषिमा संलग्न। "नेपालको अन्न भण्डार" (देशको कुल धानको २४.९६% र गहुँको २९.०९% उत्पादन)। तराईका ८ वटै जिल्लामा सघन खेती र माछापालन।</li>
+            <li><strong>उद्योग र व्यापार:</strong> वीरगञ्ज-पथलैया औद्योगिक करिडोर (सिमेन्ट, छड, चिनी, चुरोट, साबुन)। वीरगञ्ज भन्सार र नेपालको एकमात्र सुखा बन्दरगाह (Dry Port)। रक्सौल-अमलेखगञ्ज पेट्रोलियम पाइपलाइन।</li>
+            <li><strong>यातायात र पर्यटन:</strong> महेन्द्र राजमार्ग, हुलाकी मार्ग, जयनगर-जनकपुर-कुर्था रेल सेवा। जानकी मन्दिर, गढीमाई, पर्सा राष्ट्रिय निकुञ्ज।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-city"></i> ३. बागमती प्रदेश</div>
+    <div class="content-box green-light">
+        <ul>
+            <li><strong>आर्थिक हैसियत:</strong> नेपालको कुल GDP मा सर्वोच्च योगदान (३५.८% - ३९.१%)। देशको मुख्य प्रशासनिक, व्यापारिक र वित्तीय केन्द्र।</li>
+            <li><strong>उद्योग र व्यापार:</strong> बालाजु, पाटन, भक्तपुर र हेटौँडा औद्योगिक क्षेत्र। पाँचखाल र चितवन विशेष औद्योगिक क्षेत्र। काठमाडौँ उपत्यका, नारायणगढ र हेटौँडा मुख्य व्यापारिक बजार। तातोपानी र रसुवागढी चीनसँगका मुख्य नाका।</li>
+            <li><strong>पर्यटन र पूर्वाधार:</strong> पशुपति, बौद्ध, स्वयम्भूनाथ, लाङटाङ, शिवपुरी। त्रिभुवन अन्तर्राष्ट्रिय विमानस्थल, काठमाडौँ-तराई द्रुतमार्ग, नागढुङ्गा सुरुङमार्ग। कुलेखानी, तामाकोशी, त्रिशुली जलविद्युत्।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-hiking"></i> ४. गण्डकी प्रदेश</div>
+    <div class="content-box purple-light">
+        <ul>
+            <li><strong>पर्यटन:</strong> नेपाल भित्रिने कुल विदेशी पर्यटकमध्ये करिब ३३% पर्यटक गण्डकी प्रदेश आउँछन्। पोखरा (पर्यटकीय राजधानी), अन्नपूर्ण चक्रिय पदमार्ग, मुस्ताङ, मनाङ, सिरुबारी, गलेगाउँ होमस्टे।</li>
+            <li><strong>कृषि र उद्योग:</strong> ७२.४% मानिस कृषिमा। पोखरा र नवलपुर (सुस्तापूर्व) औद्योगिक केन्द्र। कास्की, बागलुङ, स्याङ्जामा तरकारी, सुन्तला, पशुपालन।</li>
+            <li><strong>जलविद्युत् र यातायात:</strong> कालीगण्डकी, मर्स्याङ्दी, मध्य मर्स्याङ्दी जलविद्युत्। पोखरा अन्तर्राष्ट्रिय विमानस्थल, कोराला नाका (चीन)।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-dharmachakra"></i> ५. लुम्बिनी प्रदेश</div>
+    <div class="content-box pink-light">
+        <ul>
+            <li><strong>कृषि र उद्योग:</strong> रुपन्देही, कपिलवस्तु, दाङ, बाँके, बर्दिया तराईका जिल्लामा धान, गहुँ, तेलहन, दलहन र उहुको उच्च उत्पादन। बुटवल, भैरहवा र नेपालगञ्ज प्रमुख औद्योगिक तथा व्यावसायिक सहर।</li>
+            <li><strong>पर्यटन र नाका:</strong> विश्वशान्तिको प्रतीक <strong>लुम्बिनी</strong> (भगवान् बुद्धको जन्मस्थल), बर्दिया राष्ट्रिय निकुञ्ज, स्वर्गद्वारी, रानीमहल। बेलहिया (भैरहवा) र जमुनाह (नेपालगञ्ज) भारतसँगका ठुला नाका। गौतम बुद्ध अन्तर्राष्ट्रिय विमानस्थल।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-snowflake"></i> ६. कर्णाली प्रदेश</div>
+    <div class="content-box teal-light">
+        <ul>
+            <li><strong>आर्थिक विशेषता:</strong> GDP मा ४.३% योगदान। ७५% मानिस कृषिमा। सुर्खेत प्रमुख आर्थिक केन्द्र। जुम्ला, मुगु, कालिकोटमा स्याउ, ओखर, फापर, चिनो, मार्सी धान र हिमाली जडीबुटी (यार्सागुम्बा)।</li>
+            <li><strong>पर्यटन र सम्भावना:</strong> रारा ताल, शे-फोक्सुण्डो ताल, काँक्रेविहार, मानसरोवर पदमार्ग। भेरी, कर्णाली, तिला नदीमा जलविद्युत्को अपार सम्भावना (भेरी बबई डाइभर्सन आयोजना)।</li>
+        </ul>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-sun"></i> ७. सुदूरपश्चिम प्रदेश</div>
+    <div class="content-box orange-light">
+        <ul>
+            <li><strong>कृषि र उद्योग:</strong> ६०% मानिस कृषिमा। कैलाली र कञ्चनपुर खाद्यान्न उत्पादनका मुख्य भण्डार। धनगढी र अत्तरिया प्रमुख व्यापारिक केन्द्र। दैजी (कञ्चनपुर) औद्योगिक क्षेत्र।</li>
+            <li><strong>पर्यटन र नाका:</strong> खप्तड राष्ट्रिय निकुञ्ज, शुक्लाफाँटा राष्ट्रिय निकुञ्ज, रामारोशन, घोडाघोडी ताल। गौरीफन्टा र गड्डाचौकी भारतसँगका मुख्य व्यापारिक नाका। महाकाली र सेती नदीमा जलविद्युत् सम्भावना (पश्चिम सेती आयोजना)।</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section5">
+        <i class="fas fa-hands"></i>
+        ५. पाठ्यपुस्तकका क्रियाकलापहरूको समाधान
+        <span class="mark-badge green">Activities</span>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-project-diagram"></i> क्रियाकलाप १: बागमती प्रदेशका मुख्य आर्थिक क्रियाकलाप</div>
+
+    <div class="activity-box">
+        <p class="act-title"><i class="fas fa-question-circle" style="color:#E65100; margin-right:8px;"></i> प्रश्न:</p>
+        <p>आफू बसेको प्रदेशमा हुने मुख्य मुख्य आर्थिक क्रियाकलापका क्षेत्र नक्सा/चार्टमा देखाउनुहोस्। (नमुना उत्तर — बागमती प्रदेशको सन्दर्भमा)</p>
+    </div>
+
+    <div class="analysis-box">
+        <div class="mermaid-flow">
+            <div class="mermaid-step">बागमती प्रदेशका आर्थिक क्षेत्रहरू</div>
+            <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="mermaid-step">सेवा तथा व्यापार<br><span style="font-weight:400; font-size:0.85em;">बैङ्किङ, सूचना प्रविधि</span></div>
+            <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="mermaid-step">औद्योगिक क्षेत्र<br><span style="font-weight:400; font-size:0.85em;">बालाजु, पाटन, हेटौँडा</span></div>
+            <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="mermaid-step">व्यावसायिक कृषि<br><span style="font-weight:400; font-size:0.85em;">चितवन, काभ्रे</span></div>
+            <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="mermaid-step">पर्यटन तथा ऊर्जा<br><span style="font-weight:400; font-size:0.85em;">पशुपति, तामाकोशी</span></div>
+        </div>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-table"></i> क्रियाकलाप २: कोशी र सुदूरपश्चिम प्रदेशको आर्थिक विशेषता तुलना</div>
+
+    <div class="activity-box">
+        <p class="act-title"><i class="fas fa-question-circle" style="color:#E65100; margin-right:8px;"></i> प्रश्न:</p>
+        <p>कोशी प्रदेश (प्रदेश १) र सुदूरपश्चिम प्रदेशका आर्थिक विशेषताहरूको तुलना गर्नुहोस् (समानता र भिन्नता)।</p>
+    </div>
+
+    <div class="analysis-box">
+        <div class="table-wrap">
+            <div class="table-caption">तालिका: कोशी र सुदूरपश्चिम प्रदेशको तुलना</div>
+            <table>
+                <thead>
+                    <tr><th>तुलनाको आधार</th><th>कोशी प्रदेश (प्रदेश १)</th><th>सुदूरपश्चिम प्रदेश</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>१. समानता</strong></td>
+                        <td>• दुवै प्रदेशमा हिमाली जडीबुटी, फलफूल र कृषि उत्पादनको राम्रो सम्भावना छ।<br>• दुवै प्रदेश भारतसँग जोडिएका छन्।<br>• दुवैमा अपार जलविद्युत् सम्भावना (अरुण / पश्चिम सेती) छ।</td>
+                        <td>• दुवै प्रदेशमा हिमाली जडीबुटी, फलफूल र कृषि उत्पादनको राम्रो सम्भावना छ।<br>• दुवै प्रदेश भारतसँग जोडिएका छन्।<br>• दुवैमा अपार जलविद्युत् सम्भावना (अरुण / पश्चिम सेती) छ।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>२. कृषि संलग्नता</strong></td>
+                        <td><strong>८१.९% मानिस</strong> कृषि पेसामा संलग्न छन्।</td>
+                        <td><strong>६०.०% मानिस</strong> कृषि पेसामा संलग्न छन्।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>३. मुख्य नगदे बाली</strong></td>
+                        <td>चिया, अलैँची, अदुवा, अम्लिसो र बेमौसमी तरकारी।</td>
+                        <td>खाद्यान्न (धान, गहुँ), आलु, गहत र जडीबुटी।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>४. औद्योगिक विकास</strong></td>
+                        <td>विराटनगर-इटहरी क्षेत्रमा देशकै ठुला उद्योग तथा जुट/सिमेन्ट कारखाना छन्।</td>
+                        <td>धनगढी र अत्तरियामा कृषि तथा काष्ठमा आधारित साना-मझौला उद्योग बढी छन्।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>५. पर्यटन आकर्षण</strong></td>
+                        <td>सगरमाथा, मकालु, बराहक्षेत्र, पाठीभरा, हलेसी।</td>
+                        <td>खप्तड, शुक्लाफाँटा, घोडाघोडी ताल, अपी/सैपाल हिमाल।</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-map-marker-alt"></i> क्रियाकलाप ३: विशेष आर्थिक क्षेत्र (SEZ) को वर्णन</div>
+
+    <div class="activity-box">
+        <p class="act-title"><i class="fas fa-question-circle" style="color:#E65100; margin-right:8px;"></i> प्रश्न:</p>
+        <p>आफू बसेको प्रदेशको विशेष आर्थिक क्षेत्र (SEZ) वा प्रमुख व्यापारिक केन्द्रको छोटो वर्णन गर्नुहोस्।</p>
+    </div>
+
+    <div class="analysis-box">
+        <p><strong>उत्तर (विशेष आर्थिक क्षेत्र — सिमरा/भैरहवा SEZ को उदाहरण):</strong></p>
+        <p>"विशेष आर्थिक क्षेत्र (SEZ) उद्योग स्थापना गरी वैदेशिक लगानी आकर्षित गर्न र निर्यात प्रवर्धनका लागि राज्यद्वारा कर छुट, २४ सै घण्टा विद्युत्, सुरक्षा र लचिलो कानुनी व्यवस्था उपलब्ध गराइएको क्षेत्र हो। लुम्बिनी प्रदेशको भैरहवा SEZ र मधेश प्रदेशको सिमरा SEZ नेपालका प्रमुख क्रियाशील विशेष आर्थिक क्षेत्र हुन्। यसले कच्चा पदार्थ प्रशोधन गरी तयारी वस्तु वैदेशिक बजारमा निर्यात गर्न र हजारौँ युवालाई स्वदेशमै रोजगारी सिर्जना गर्न महत्त्वपूर्ण भूमिका खेलेको छ।"</p>
+    </div>
+
+    <hr>
+
+    <div class="section-head" id="section6">
+        <i class="fas fa-bullseye"></i>
+        ६. पाठ्यपुस्तकका अभ्यास तथा बोर्ड परीक्षा नमुना प्रश्नोत्तर
+        <span class="mark-badge pink">NEB Board Q&A</span>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-star"></i> संक्षिप्त प्रश्नोत्तर (अङ्क भार: ५)</div>
+
+    <div class="qa-block color1">
+        <div class="q"><span class="qnum">प्र.न. १.</span> कोशी प्रदेश (प्रदेश १) र मधेश प्रदेशका आर्थिक विशेषताहरूको तुलना गर्नुहोस्।</div>
+        <div class="a">
+            <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपालको पूर्वी सीमामा रहेको कोशी प्रदेश र दक्षिणको समथर तराईमा फैलिएको मधेश प्रदेश दुवै नेपालको अर्थतन्त्रका प्रमुख आधार स्तम्भ हुन्। भौगोलिक बनोट र पूर्वाधारका आधारमा यी दुई प्रदेशका आर्थिक विशेषताहरूमा भिन्नता पाइन्छ।</p>
+
+            <p><span class="step-icon">📊</span> <span class="step-title">२. तुलनात्मक विश्लेषण तालिका:</span></p>
+            <div class="table-wrap">
+                <div class="table-caption">तालिका: कोशी र मधेश प्रदेशको आर्थिक तुलना</div>
+                <table>
+                    <thead>
+                        <tr><th>आर्थिक आयाम</th><th>कोशी प्रदेश (प्रदेश १)</th><th>मधेश प्रदेश (प्रदेश २)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>१. कृषि क्षेत्र</strong></td>
+                            <td>८१.९% जनसङ्ख्या कृषिमा। मुख्य रूपमा चिया, अलैँची, अदुवा, फलफूल र तरकारी।</td>
+                            <td>६६% जनसङ्ख्या कृषिमा। "नेपालको अन्न भण्डार" (धान २४.९६%, गहुँ २९.०९%) र माछापालन।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>२. औद्योगिक क्षेत्र</strong></td>
+                            <td>विराटनगर, इटहरी, धरान मुख्य औद्योगिक क्षेत्र। जुट, चिया प्रशोधन, सिमेन्ट उद्योग।</td>
+                            <td>वीरगञ्ज-पथलैया करिडोर। सिमेन्ट, छड, चिनी, चुरोट र औषधी उद्योग।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>३. व्यापारिक नाका</strong></td>
+                            <td>रानी भन्सार (विराटनगर), पशुपतिनगर र चीनतर्फ किमाथाङ्का/ओलाङचुङगोला।</td>
+                            <td>वीरगञ्ज भन्सार (नेपालको ठुलो नाका), सुखा बन्दरगाह, रक्सौल-अमलेखगञ्ज पाइपलाइन।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>४. पर्यटन</strong></td>
+                            <td>सगरमाथा, मकालु बरुण, कोशीटप्पु, पाथीभरा र हलेसी (पर्वतारोहण र धार्मिक)।</td>
+                            <td>जानकी मन्दिर, गढीमाई, छिन्नमस्ता, पर्सा राष्ट्रिय निकुञ्ज (धार्मिक पर्यटन)।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> अतः कोशी प्रदेश व्यावसायिक कृषि, पर्यटन र जलविद्युत्मा अग्रणी छ भने मधेश प्रदेश खाद्यान्न उत्पादन, आयात-निर्यात व्यापार र औद्योगिक उत्पादनमा देशकै मेरुदण्डका रूपमा रहेको छ।</p>
+        </div>
+    </div>
+
+    <div class="qa-block color2">
+        <div class="q"><span class="qnum">प्र.न. २.</span> बागमती प्रदेश नेपालको प्रमुख व्यापारिक र औद्योगिक केन्द्र हुनुका कुनै पाँचवटा कारणहरू उल्लेख गर्नुहोस्।</div>
+        <div class="a">
+            <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपालको कुल गार्हस्थ उत्पादन (GDP) मा करिब ३५.८% देखि ३९.१% सम्मको उच्च योगदान पुर्‍याउने बागमती प्रदेश देशको प्रमुख व्यापारिक र औद्योगिक केन्द्रका रूपमा स्थापित छ।</p>
+
+            <p><span class="step-icon">📊</span> <span class="step-title">२. मुख्य पाँच कारणहरू:</span></p>
+            <ol>
+                <li><strong>देशको राजधानी र उच्च जनघनत्व (सहरी बजार):</strong> काठमाडौँ उपत्यका देशको केन्द्रीय राजधानी हुनुका साथै यहाँ उच्च जनसङ्ख्या र क्रयशक्ति भएका उपभोक्ता रहेकाले व्यापार र सेवा क्षेत्रको उच्च माग छ।</li>
+                <li><strong>सडक तथा हवाई पूर्वाधारको केन्द्रीय पहुँच:</strong> देशको एक मात्र त्रिभुवन अन्तर्राष्ट्रिय विमानस्थल, पृथ्वी राजमार्ग, त्रिभुवन राजपथ, अरनिको राजमार्ग र काठमाडौँ-तराई द्रुतमार्ग जस्ता मुख्य पूर्वाधारहरू यसै प्रदेशसँग जोडिएका छन्।</li>
+                <li><strong>औद्योगिक क्षेत्रहरूको स्थापना:</strong> बालाजु, पाटन, भक्तपुर र हेटौँडा जस्ता पुराना औद्योगिक क्षेत्रहरू र पाँचखाल तथा चितवनका नयाँ विशेष आर्थिक क्षेत्रहरू (SEZ) यसै प्रदेशमा अवस्थित छन्।</li>
+                <li><strong>बैङ्किङ तथा वित्तीय संस्थाको केन्द्रीयता:</strong> नेपालका प्रमुख वाणिज्य बैङ्क, वित्तीय संस्था, व्यापारिक घराना र विदेशी लगानीकर्ताहरूको केन्द्रीय कार्यालय बागमती प्रदेशमा नै रहेका छन्।</li>
+                <li><strong>चीनसँगका प्रमुख व्यापारिक नाकाहरू:</strong> नेपाल र चीनबिच व्यापार हुने दुई मुख्य उत्तरी नाकाहरू (तातोपानी र रसुवागढी) बागमती प्रदेशमै पर्दछन्।</li>
+            </ol>
+
+            <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> तसर्थ, सुलभ पूर्वाधार, केन्द्रीय प्रशासनिक सुगमता, फराकिलो बजार र वित्तीय पहुँचका कारण बागमती प्रदेश नेपालको आर्थिक राजधानीका रूपमा विकसित भएको छ।</p>
+        </div>
+    </div>
+
+    <div class="qa-block color3">
+        <div class="q"><span class="qnum">प्र.न. ३.</span> प्रदेशको विकासमा सडक पूर्वाधारको महत्त्व उदाहरणसहित बताउनुहोस्।</div>
+        <div class="a">
+            <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> "सडक पूर्वाधार नै आर्थिक विकासको मेरुदण्ड हो।" सडक यातायातको पहुँचबिना कृषि, उद्योग, व्यापार र पर्यटन जस्ता कुनै पनि आर्थिक क्रियाकलापको समुचित विकास सम्भव हुँदैन।</p>
+
+            <p><span class="step-icon">📊</span> <span class="step-title">२. सडक पूर्वाधारको बहुआयामिक महत्त्व:</span></p>
+            <ul>
+                <li><strong>उत्पादित वस्तुको बजारसम्म पहुँच:</strong> पहाडी र हिमाली क्षेत्रका किसानले उत्पादन गरेका तरकारी, फलफूल (जस्तै: जुम्लाको स्याउ, इलामको चिया) सडक पहुँच पुगेपछि मात्र सहरी बजारमा पुगी उचित मूल्य पाउँछन्।</li>
+                <li><strong>औद्योगिक कच्चा पदार्थ र आयात-निर्यात सहजीकरण:</strong> वीरगञ्ज वा रानी भन्सारबाट आयात गरिएका कच्चा पदार्थहरू सञ्जालयुक्त सडकमार्फत देशभरीका कारखाना र पसलहरूमा पुर्‍याउन सकिन्छ।</li>
+                <li><strong>पर्यटन प्रवर्धन:</strong> पोखरा, मुस्ताङ, लुम्बिनी वा खप्तडसम्म पक्की सडक पुगेपछि आन्तरिक तथा बाह्य पर्यटकको सङ्ख्यामा उल्लेख्य वृद्धि भई स्थानीय होमस्टे र होटल व्यवसाय फस्टाउँछ।</li>
+                <li><strong>अन्तरप्रादेशिक व्यापार र सन्तुलित विकास:</strong> महेन्द्र राजमार्ग र मध्यपहाडी लोकमार्गले सातै प्रदेशलाई आपसमा जोडी वस्तु, सेवा र श्रमको आदानप्रदान सहज बनाएको छ।</li>
+            </ul>
+
+            <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> अतः प्रदेशको आर्थिक समृद्धि, गरिबी निवारण र नागरिकको जीवनस्तर सुधारका लागि सडक पूर्वाधार निर्माणमा लगानी बढाउनु पहिलो शर्त हो।</p>
+        </div>
+    </div>
+
+    <div class="sub-head"><i class="fas fa-gem"></i> विस्तृत प्रश्न (अङ्क भार: ८)</div>
+
+    <div class="qa-block color4" style="border-left-color:#E65100;">
+        <div class="q"><span class="qnum">प्र.न. ४.</span> गण्डकी प्रदेशको आर्थिक क्रियाकलापमा पर्यटन उद्योगको भूमिकाको विश्लेषणात्मक समीक्षा गर्नुहोस्।</div>
+        <div class="a">
+            <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> प्राकृतिक सौन्दर्य, उच्च हिमशृङ्खला, तालतलैया र सांस्कृतिक विविधताले भरिपूर्ण गण्डकी प्रदेश नेपालको 'पर्यटनको राजधानी' का रूपमा परिचित छ। नेपाल भित्रिने कुल विदेशी पर्यटकमध्ये करिब ३३% पर्यटक गण्डकी प्रदेशमा आउने हुनाले यहाँको अर्थतन्त्रमा पर्यटन उद्योगको भूमिका निर्णयात्मक रहेको छ।</p>
+
+            <div class="mermaid-flow">
+                <div class="mermaid-step">पर्यटनको भूमिका</div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">रोजगारी सिर्जना<br><span style="font-weight:400; font-size:0.85em;">गाइड, होटल, होमस्टे</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">स्थानीय अर्थतन्त्र<br><span style="font-weight:400; font-size:0.85em;">कृषि, हस्तकला</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">पूर्वाधार विकास<br><span style="font-weight:400; font-size:0.85em;">विमानस्थल, सडक</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">अन्तर्राष्ट्रिय पहिचान</div>
+            </div>
+
+            <p><span class="step-icon">📊</span> <span class="step-title">२. विषय प्रवेश तथा मुख्य विश्लेषणात्मक बुँदाहरू:</span></p>
+
+            <p><strong>(क) पर्यटन उद्योगका मुख्य आर्थिक योगदानहरू:</strong></p>
+            <ol>
+                <li><strong>प्रत्यक्ष तथा अप्रत्यक्ष रोजगारी सिर्जना:</strong> पोखराका सयौँ होटल, अन्नपूर्ण पदमार्गका टि-हाउस, होमस्टे, टुर गाइड, साहसिक खेल (प्याराग्लाइडिङ, बञ्जी जम्पिङ, र्याफ्टिङ) ले हजारौँ युवालाई स्वदेशमै रोजगारी दिएको छ।</li>
+                <li><strong>ग्रामीण अर्थतन्त्रको सबलीकरण (होमस्टे संस्कृति):</strong> सिरुबारी (स्याङ्जा), गलेगाउँ (लम्जुङ) र धम्पुसका गाउँले होमस्टेहरूले ग्रामीण महिला र किसानलाई तरकारी, कुखुरा, र हस्तकला बिक्री गरी आत्मनिर्भर बनाएको छ।</li>
+                <li><strong>वैदेशिक मुद्रा आर्जन र राज्यको राजस्व:</strong> विदेशी पर्यटकको बसाइ, पदयात्रा परमिट (ACAP/TIMS) र भिसा शुल्कबाट प्रदेश र राष्ट्रिय अर्थतन्त्रमा ठुलो मात्रामा वैदेशिक मुद्रा भित्रिन्छ।</li>
+                <li><strong>पूर्वाधार विकासमा उत्प्रेरक:</strong> पर्यटनकै कारण पोखरामा अन्तर्राष्ट्रिय विमानस्थल निर्माण हुनुका साथै पोखरा-जोमसोम-मुस्ताङ सडक र पदमार्ग पूर्वाधारहरूको विस्तार भएको छ।</li>
+            </ol>
+
+            <p><strong>(ख) विद्यमान चुनौतीहरू र सुधारका उपायहरू:</strong></p>
+            <ul>
+                <li><strong>मौसमी उतारचढाव (Seasonality):</strong> पर्यटकीय याम (अक्टोबर-नोभेम्बर र मार्च-अप्रिल) मा मात्र अत्यधिक भीड हुने र अन्य समयमा मन्दी आउने समस्या।</li>
+                <li><strong>पर्यावरणीय संवेदनशीलता:</strong> अन्नपूर्ण क्षेत्रमा अव्यवस्थित सडक विस्तारले परम्परागत पदमार्ग विस्थापित हुनु र फोहोरमैला बढ्नु।</li>
+                <li><strong>सुधारका उपायहरू:</strong> बाह्रै महिना आन्तरिक तथा बाह्य पर्यटक आकर्षित गर्ने प्याकेज ल्याउने, साहसिक र आध्यात्मिक (मुक्तिनाथ, मनकामना) पर्यटन प्रवर्धन गर्ने, र पर्यावरण-मैत्री (Eco-Tourism) विकास अपनाउने।</li>
+            </ul>
+
+            <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> अतः पर्यटन उद्योग गण्डकी प्रदेशको समृद्धिको मुख्य इन्जिन हो। दिगो पर्यटन नीति लागू गरी स्थानीय समुदायलाई थप लाभान्वित बनाउन सके गण्डकी प्रदेश सिङ्गो नेपालकै लागि आर्थिक मोडल बन्न सक्छ।</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="tip-box" style="background:#E65100; margin-top:20px;">
+        <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+        <strong>अन्तिम सल्लाह:</strong> नेपालका प्रदेशको आर्थिक अवस्था र विशेषता बुझ्न GDP योगदान, कृषि निर्भरता, व्यापारिक नाका र प्रादेशिक सम्भावनाहरू राम्ररी सम्झनुहोस्। परीक्षामा सुत्रहरू (बा-को-लु-म-ग-सु-क) र तालिकाहरू प्रयोग गर्दा उच्च अङ्क प्राप्त गर्न सकिन्छ। स्मरण राख्नुहोस् — <strong>"प्रादेशिक आर्थिक सन्तुलन नै समृद्ध नेपालको आधार हो"</strong>।
+    </div>
+
+    <div class="footer-copy">
+        <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+        <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+        <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ४</span>
+        <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+    </div>
+
+</div>
+
+<button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<script>
+    (function() {
+        const btn = document.getElementById('scrollUpBtn');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    })();
+</script>
+
+</body>
+</html>
