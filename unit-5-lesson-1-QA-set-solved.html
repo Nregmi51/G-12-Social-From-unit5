@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>कक्षा १२ सामाजिक — एकाइ ५ पाठ १: नेपालका प्रशासनिक प्रदेश (मोडल प्रश्नोत्तर)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===================== BASE ===================== */
+*,*::before,*::after{box-sizing:border-box;}
+:root{
+  --ink:#0f172a;
+  --soft:#475569;
+  --paper:#ffffff;
+  --line:#e6eef3;
+  --teal:#0e7490;
+  --teal-deep:#155e75;
+  --teal-soft:#ecfeff;
+  --amber:#b45309;
+  --amber-soft:#fffbeb;
+  --rose:#be123c;
+  --rose-soft:#fff1f2;
+  --indigo:#4338ca;
+  --indigo-soft:#eef2ff;
+  --green:#15803d;
+  --green-soft:#f0fdf4;
+  --shadow:0 10px 30px rgba(14,116,144,.10);
+  --radius:22px;
+}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:'Mukta','Noto Sans Devanagari',system-ui,sans-serif;
+  font-size:21px;
+  line-height:1.88;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 620px at 6% -10%, #cffafe 0%, transparent 58%),
+    radial-gradient(1000px 540px at 102% 0%, #fef3c7 0%, transparent 55%),
+    linear-gradient(180deg,#f0fdff,#fafaf9 45%,#fffbeb 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  -webkit-text-size-adjust:100%;
+}
+[id]{scroll-margin-top:100px;}
+strong,b{font-weight:800;}
+em{font-style:italic;}
+
+/* ===================== TOP BAR ===================== */
+.topbar{
+  position:sticky; top:0; z-index:60;
+  display:flex; align-items:center; gap:14px;
+  padding:12px 18px;
+  background:linear-gradient(120deg,#155e75 0%,#0e7490 45%,#b45309 100%);
+  color:#fff;
+  box-shadow:0 6px 24px rgba(14,116,144,.32);
+}
+.brand{display:flex; flex-direction:column; line-height:1.2; flex:1 1 auto; min-width:0;}
+.brand h1{
+  margin:0;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:22px; font-weight:800; letter-spacing:.2px;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.brand-sub{font-size:14px; font-weight:600; opacity:.92;}
+.hamburger{
+  display:none; align-items:center; justify-content:center;
+  width:46px; height:46px; flex:0 0 auto;
+  border-radius:13px; border:1px solid rgba(255,255,255,.38);
+  background:rgba(255,255,255,.16); color:#fff;
+  font-size:22px; cursor:pointer; transition:.2s;
+}
+.hamburger:hover{background:rgba(255,255,255,.28);}
+.top-link{
+  flex:0 0 auto; text-decoration:none; color:#fff;
+  font-size:16px; font-weight:700;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.38);
+  padding:8px 14px; border-radius:999px; transition:.2s;
+}
+.top-link:hover{background:rgba(255,255,255,.32);}
+
+/* ===================== LAYOUT ===================== */
+.layout{
+  display:flex; align-items:flex-start; gap:26px;
+  max-width:1440px; margin:0 auto;
+  padding:26px 20px 70px;
+}
+.content{flex:1 1 auto; min-width:0;}
+
+/* ===================== SIDE NAV ===================== */
+.sidenav{
+  width:320px; flex:0 0 320px;
+  position:sticky; top:88px;
+  max-height:calc(100vh - 110px);
+  overflow-y:auto;
+  background:rgba(255,255,255,.96);
+  border:1px solid #cffafe;
+  border-radius:var(--radius);
+  padding:18px 14px 22px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(10px);
+}
+.sidenav-head{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:18px; font-weight:800; color:var(--teal-deep);
+  display:flex; align-items:center; gap:8px;
+  padding-bottom:12px; margin-bottom:8px;
+  border-bottom:3px solid #fde68a;
+}
+.nav-main{
+  display:block; text-decoration:none;
+  font-size:18px; font-weight:800; line-height:1.5;
+  color:var(--ink);
+  padding:11px 13px; border-radius:12px;
+  border-left:5px solid transparent; transition:.22s;
+}
+.nav-main:hover,.nav-main.active{
+  background:linear-gradient(90deg,#cffafe,#fef3c7);
+  border-left-color:var(--teal);
+  color:var(--teal-deep);
+  transform:translateX(3px);
+}
+.nav-group{
+  margin-top:6px;
+  padding:8px 12px;
+  background:#f6fdff;
+  border:1px dashed #a5f3fc;
+  border-radius:12px;
+}
+.nav-group-title{
+  display:block;
+  font-size:14px; font-weight:800; letter-spacing:.05em;
+  text-transform:uppercase; color:var(--teal-deep);
+  margin-bottom:6px;
+}
+.nav-sub{display:flex; flex-direction:column; gap:3px;}
+.nav-sub a{
+  display:flex; align-items:flex-start; gap:8px;
+  text-decoration:none; font-size:16px; font-weight:700;
+  color:var(--soft); padding:7px 10px;
+  border-radius:9px; transition:.18s;
+  line-height:1.45;
+}
+.nav-sub a:hover{
+  background:#cffafe; color:var(--teal-deep);
+  transform:translateX(2px);
+}
+.nav-sub a .num{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex:0 0 auto;
+  min-width:26px; height:26px; padding:0 6px;
+  background:var(--teal); color:#fff;
+  border-radius:7px;
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800;
+  margin-top:1px;
+}
+.nav-sub.amber a:hover{background:#fef3c7; color:var(--amber);}
+.nav-sub.amber a .num{background:var(--amber);}
+.nav-note{
+  margin-top:18px; padding:13px 15px;
+  font-size:15px; font-weight:700; line-height:1.65;
+  color:#155e75;
+  background:linear-gradient(135deg,#cffafe,#fef3c7);
+  border-radius:14px;
+}
+.overlay{
+  position:fixed; inset:0; z-index:70;
+  background:rgba(15,23,42,.48);
+  opacity:0; visibility:hidden; transition:.3s;
+}
+.overlay.show{opacity:1; visibility:visible;}
+
+/* ===================== CARD ===================== */
+.card{
+  --acc:#0e7490;
+  --acc-soft:#ecfeff;
+  background:var(--paper);
+  border:1px solid #eef3f6;
+  border-top:9px solid var(--acc);
+  border-radius:var(--radius);
+  padding:26px 26px 32px;
+  margin-bottom:30px;
+  box-shadow:var(--shadow);
+}
+.card.intro{--acc:#155e75; --acc-soft:#ecfeff;}
+.card.c1{--acc:#0e7490; --acc-soft:#ecfeff;}
+.card.c2{--acc:#b45309; --acc-soft:#fffbeb;}
+
+.card-head{display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:6px;}
+.pill{
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:#fff; background:var(--acc);
+  padding:6px 15px; border-radius:999px;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+h2{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:27px; font-weight:800; line-height:1.4;
+  margin:0; color:var(--ink);
+}
+.lead{
+  margin:10px 0 0; font-size:20px; font-weight:600; color:var(--soft);
+  line-height:1.8;
+}
+
+/* ===================== INFO BANNER ===================== */
+.info-banner{
+  background:linear-gradient(135deg,#cffafe,#fef3c7);
+  border:1.5px dashed #67e8f9;
+  border-radius:16px;
+  padding:16px 20px;
+  margin:14px 0 4px;
+  font-size:19px; font-weight:600; color:#155e75;
+  line-height:1.85;
+}
+.info-banner strong{color:var(--teal-deep);}
+
+/* ===================== SECTION TITLES ===================== */
+.sect{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:22px; font-weight:800; line-height:1.55;
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:10px;
+  justify-content:space-between;
+  margin:34px 0 18px;
+  padding:14px 18px;
+  background:linear-gradient(90deg,var(--acc-soft),#ffffff);
+  border:1px solid var(--line);
+  border-left:7px solid var(--acc);
+  border-radius:0 14px 14px 0;
+  color:var(--ink);
+}
+.sect:first-of-type{margin-top:22px;}
+.marks{
+  flex:0 0 auto; font-size:14px; font-weight:800;
+  color:#fff; background:var(--acc);
+  padding:3px 13px; border-radius:999px; white-space:nowrap;
+}
+
+/* ===================== QUESTION CARD ===================== */
+.q-card{
+  background:#ffffff;
+  border:1px solid #e5eef2;
+  border-left:7px solid var(--acc);
+  border-radius:16px;
+  padding:18px 22px 22px;
+  margin:20px 0;
+  box-shadow:0 4px 18px rgba(14,116,144,.06);
+  transition:.22s;
+}
+.q-card:hover{box-shadow:0 10px 26px rgba(14,116,144,.10);}
+
+.q-head{
+  display:flex; align-items:flex-start; gap:13px;
+  margin-bottom:14px;
+  padding-bottom:14px;
+  border-bottom:2px dashed #cffafe;
+}
+.q-badge{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex:0 0 auto;
+  min-width:56px; height:52px; padding:0 10px;
+  background:linear-gradient(135deg,var(--teal-deep),var(--teal));
+  color:#fff; font-family:'Poppins',sans-serif;
+  font-size:15px; font-weight:800;
+  border-radius:13px;
+  box-shadow:0 5px 14px rgba(14,116,144,.28);
+  text-align:center; line-height:1.15;
+}
+.q-badge small{
+  display:block; font-size:10px; font-weight:700;
+  opacity:.9; letter-spacing:.03em;
+}
+.q-title{
+  margin:0; font-size:21px; font-weight:800;
+  line-height:1.6; color:#0f172a;
+  flex:1;
+}
+
+/* ===================== ANSWER ===================== */
+.answer{
+  margin-top:6px;
+  padding:16px 20px;
+  background:linear-gradient(135deg,#f6fdff,#ffffff);
+  border-left:5px solid var(--teal);
+  border-radius:0 12px 12px 0;
+  font-size:21px; line-height:1.9; color:#1e293b;
+}
+.answer .lbl{
+  display:inline-block;
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800; letter-spacing:.08em;
+  text-transform:uppercase; color:#fff;
+  background:var(--teal);
+  padding:3px 12px; border-radius:8px;
+  margin-bottom:10px;
+}
+.answer p{margin:0 0 10px;}
+.answer p:last-child{margin-bottom:0;}
+
+/* ===================== EMAIL BOX ===================== */
+.email-box{
+  background:linear-gradient(135deg,#f8fafc,#ffffff);
+  border:2px solid #cbd5e1;
+  border-radius:16px;
+  overflow:hidden;
+  margin:14px 0;
+  font-family:'Lora',Georgia,serif;
+  box-shadow:0 6px 20px rgba(15,23,42,.08);
+}
+.email-head{
+  background:linear-gradient(135deg,#155e75,#0e7490);
+  color:#fff;
+  padding:16px 20px;
+}
+.email-head .subject{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:17px; font-weight:800; line-height:1.5;
+  margin:0 0 10px;
+}
+.email-meta{
+  display:flex; flex-direction:column; gap:3px;
+  font-family:'Inter','Mukta',sans-serif;
+  font-size:15px; font-weight:600; opacity:.95;
+  line-height:1.5;
+}
+.email-meta span{
+  display:flex; gap:8px; align-items:baseline;
+}
+.email-meta span b{
+  flex:0 0 auto; font-size:13px; font-weight:800;
+  text-transform:uppercase; letter-spacing:.05em;
+  opacity:.85;
+}
+.email-body{
+  padding:20px 22px;
+  font-size:19px; line-height:1.95;
+  color:#1e293b;
+}
+.email-body p{margin:0 0 12px;}
+.email-body p:last-child{margin-bottom:0;}
+.email-body .greeting{
+  font-weight:700; font-size:20px; color:#0f172a;
+  margin-bottom:12px;
+}
+.email-body .signoff{
+  margin-top:16px; padding-top:12px;
+  border-top:1px dashed #cbd5e1;
+}
+.email-body .signoff p{margin:0; font-weight:700; color:#0f172a;}
+.email-body .signoff .name{
+  font-family:'Mukta',sans-serif;
+  font-size:20px; color:var(--teal-deep);
+}
+.email-body .signoff .addr{
+  font-size:17px; color:var(--soft); font-weight:600;
+}
+.email-body ol{
+  margin:10px 0 12px 24px;
+  padding:0;
+}
+.email-body ol li{
+  margin:6px 0; padding-left:4px;
+  font-size:19px;
+  line-height:1.85;
+}
+.email-body ul{
+  margin:6px 0 10px 22px;
+  padding:0;
+}
+.email-body ul li{
+  margin:5px 0;
+  font-size:19px;
+  line-height:1.85;
+}
+
+/* ===================== INTRO BLOCK (for 5-mark answers) ===================== */
+.block{
+  margin:16px 0;
+}
+.block-head{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:17px; font-weight:800;
+  color:#fff; background:var(--teal);
+  padding:6px 16px; border-radius:22px;
+  margin:0 0 10px;
+  box-shadow:0 4px 12px rgba(14,116,144,.24);
+}
+.block-content{
+  background:linear-gradient(135deg,#f6fdff,#ffffff);
+  border-left:5px solid var(--teal);
+  border-radius:0 13px 13px 0;
+  padding:14px 18px;
+  font-size:20px; line-height:1.85;
+  color:#334155;
+}
+.block-content p{margin:0 0 8px;}
+.block-content p:last-child{margin-bottom:0;}
+
+/* ===================== FLOW DIAGRAM (CSS) ===================== */
+.flow-diagram{
+  background:linear-gradient(135deg,#cffafe,#fef3c7);
+  border:1.5px dashed #67e8f9;
+  border-radius:18px;
+  padding:22px 20px;
+  margin:16px 0;
+}
+.flow-title{
+  text-align:center;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:18px; font-weight:800; color:var(--teal-deep);
+  margin-bottom:16px;
+}
+.flow-root{
+  background:#fff;
+  border:2px solid var(--teal);
+  border-radius:14px;
+  padding:14px 18px;
+  text-align:center;
+  font-weight:800; font-size:18px;
+  color:var(--teal-deep);
+  max-width:360px; margin:0 auto 14px;
+  box-shadow:0 4px 14px rgba(14,116,144,.15);
+}
+.flow-branches{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:10px;
+}
+.flow-branch{
+  background:#fff;
+  border:1.5px solid #a5f3fc;
+  border-top:5px solid var(--teal);
+  border-radius:12px;
+  padding:12px 14px;
+  font-size:16px; font-weight:700;
+  color:#334155; line-height:1.55;
+  text-align:center;
+}
+.flow-branch:nth-child(2){border-top-color:#0ea5e9;}
+.flow-branch:nth-child(3){border-top-color:#b45309;}
+.flow-branch:nth-child(4){border-top-color:#15803d;}
+
+/* ===================== LISTS ===================== */
+.list-arrow{
+  list-style:none; padding:0; margin:10px 0;
+}
+.list-arrow li{
+  position:relative;
+  padding:10px 14px 10px 42px;
+  margin:8px 0;
+  background:#f6fdff;
+  border:1px solid #cffafe;
+  border-radius:12px;
+  font-size:20px; font-weight:600; line-height:1.75;
+  color:#334155;
+  transition:.18s;
+}
+.list-arrow li:hover{background:#ecfeff; border-color:#67e8f9;}
+.list-arrow li::before{
+  content:"▸";
+  position:absolute; left:16px; top:9px;
+  color:var(--teal); font-weight:800; font-size:20px;
+}
+.list-arrow li strong{color:var(--teal-deep);}
+
+/* ===================== TABLES ===================== */
+.table-wrap{
+  overflow-x:auto; -webkit-overflow-scrolling:touch;
+  border:1px solid var(--line); border-radius:15px;
+  margin:16px 0; box-shadow:0 4px 16px rgba(15,23,42,.05);
+}
+table{width:100%; border-collapse:collapse; min-width:620px; font-size:19px;}
+th{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:17px; font-weight:800; text-align:left;
+  color:#fff; background:var(--teal);
+  padding:13px 14px; letter-spacing:.02em;
+  line-height:1.5;
+}
+td{padding:12px 14px; border-top:1px solid #eef1f7; font-weight:600; vertical-align:top; line-height:1.7;}
+tbody tr:nth-child(even){background:#f6fdff;}
+tbody tr:hover{background:#ecfeff;}
+
+/* ===================== CONCLUSION ===================== */
+.conclusion{
+  background:linear-gradient(90deg,#fef3c7,#fffbeb);
+  border-left:6px solid #d97706;
+  border-radius:0 12px 12px 0;
+  padding:14px 18px;
+  margin:18px 0 6px;
+  font-size:20px; font-weight:700; line-height:1.85;
+  color:#3f2d08;
+}
+.conclusion strong{color:#b45309;}
+
+/* ===================== FOOTER ===================== */
+.footer{
+  margin-top:10px;
+  background:linear-gradient(135deg,#155e75,#1e293b);
+  color:#fff; text-align:center;
+  padding:30px 20px;
+  border-radius:22px 22px 0 0;
+}
+.footer .big{font-family:'Mukta','Poppins',sans-serif; font-size:21px; font-weight:800; color:#fcd34d;}
+.footer .small{font-size:16px; opacity:.88; margin-top:6px;}
+
+/* ===================== BACK TO TOP ===================== */
+#toTop{
+  position:fixed; right:20px; bottom:24px; z-index:90;
+  width:56px; height:56px; border-radius:50%;
+  border:none; cursor:pointer;
+  font-size:24px; font-weight:800; color:#fff;
+  background:linear-gradient(135deg,#0e7490,#b45309);
+  box-shadow:0 10px 26px rgba(14,116,144,.42);
+  display:none; align-items:center; justify-content:center;
+  transition:transform .25s, box-shadow .25s;
+}
+#toTop:hover{transform:translateY(-4px) scale(1.06);}
+#toTop.show{display:flex;}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:1023px){
+  .hamburger{display:inline-flex;}
+  .layout{padding:18px 14px 80px; gap:0;}
+  .sidenav{
+    position:fixed; top:0; left:0; z-index:80;
+    width:318px; flex:none; height:100%;
+    max-height:none; border-radius:0 18px 18px 0;
+    padding:78px 14px 40px;
+    transform:translateX(-108%);
+    transition:transform .32s ease;
+    border:none;
+  }
+  .sidenav.open{transform:translateX(0);}
+}
+@media (max-width:640px){
+  body{font-size:20px;}
+  .brand h1{font-size:18px;}
+  .brand-sub{display:none;}
+  .top-link{display:none;}
+  .card{padding:20px 16px 26px; border-top-width:7px;}
+  h2{font-size:22px;}
+  .lead{font-size:18px;}
+  .sect{font-size:18px; padding:11px 13px;}
+  .q-card{padding:14px 14px 18px;}
+  .q-head{flex-direction:row; gap:10px;}
+  .q-badge{min-width:48px; height:46px; font-size:13px; border-radius:11px;}
+  .q-title{font-size:18px; line-height:1.55;}
+  .answer{font-size:19px; padding:13px 15px;}
+  .email-body{font-size:18px; padding:16px 16px;}
+  .email-body ol li,.email-body ul li{font-size:18px;}
+  .email-meta{font-size:14px;}
+  .email-head .subject{font-size:16px;}
+  .block-content{font-size:18px; padding:12px 14px;}
+  .list-arrow li{font-size:18px; padding:9px 12px 9px 38px;}
+  .list-arrow li::before{left:14px; font-size:18px;}
+  .flow-branches{grid-template-columns:1fr 1fr;}
+  .pill{font-size:12px;}
+}
+@media (max-width:400px){
+  body{font-size:19px;}
+  .q-title,.list-arrow li{font-size:17px;}
+  .answer,.email-body{font-size:17px;}
+}
+
+/* ===================== PRINT ===================== */
+@media print{
+  .topbar,.sidenav,.overlay,#toTop{display:none !important;}
+  .layout{padding:0;}
+  .card{box-shadow:none; border:1px solid #ddd; page-break-inside:avoid;}
+  body{background:#fff; font-size:12pt;}
+  .q-card,.email-box{break-inside:avoid; box-shadow:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar" id="top">
+  <button class="hamburger" id="menuBtn" aria-label="खोल्नुहोस्" aria-controls="sidenav" aria-expanded="false">☰</button>
+  <div class="brand">
+    <h1>कक्षा १२ सामाजिक — एकाइ ५ · पाठ १</h1>
+    <span class="brand-sub">नेपालका प्रशासनिक प्रदेश · मोडल प्रश्नोत्तर (v2)</span>
+  </div>
+  <a class="top-link" href="#top">↑ माथि</a>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="layout">
+
+  <!-- ================= SIDE NAVIGATION ================= -->
+  <nav class="sidenav" id="sidenav" aria-label="विषयसूची">
+    <div class="sidenav-head">📑 विषयसूची</div>
+
+    <a class="nav-main" href="#intro">🇳🇵 परिचय</a>
+
+    <a class="nav-main" href="#sec1">🎯 खण्ड १ — अति सङ्क्षिप्त (१ अङ्क)</a>
+    <div class="nav-group">
+      <span class="nav-group-title">प्रश्नहरू</span>
+      <div class="nav-sub">
+        <a href="#q1"><span class="num">१</span>स्थानीय तह सङ्ख्या</a>
+        <a href="#q2"><span class="num">२</span>ठूलो र सानो प्रदेश</a>
+        <a href="#q3"><span class="num">३</span>अपि हिमाल</a>
+        <a href="#q4"><span class="num">४</span>गण्डकीको ठूलो जिल्ला</a>
+      </div>
+    </div>
+
+    <a class="nav-main" href="#sec2">📊 खण्ड २ — सङ्क्षिप्त (५ अङ्क)</a>
+    <div class="nav-group">
+      <span class="nav-group-title">प्रश्नहरू</span>
+      <div class="nav-sub amber">
+        <a href="#q5"><span class="num">५</span>लुम्बिनी प्रदेश — इमेल</a>
+        <a href="#q6"><span class="num">६</span>सुदूरपश्चिम प्रदेश</a>
+        <a href="#q7"><span class="num">७</span>कोशी vs मधेश</a>
+      </div>
+    </div>
+
+    <div class="nav-note">
+      💡 जुनसुकै प्रश्नमा क्लिक गर्नुहोस् — सिधै त्यही प्रश्नमा पुग्नुहुनेछ।
+    </div>
+  </nav>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="content">
+
+    <!-- ================= INTRO ================= -->
+    <article class="card intro" id="intro">
+      <div class="card-head">
+        <span class="pill">Model Q&amp;A · v2</span>
+      </div>
+      <h2>📌 एकाइ ५: भूगोल र सामाजिक जीवन — पाठ १</h2>
+      <p class="lead" style="font-size:22px; color:#155e75; font-weight:800;">नेपालका प्रशासनिक प्रदेश — मोडल प्रश्नोत्तर सङ्ग्रह</p>
+
+      <div class="info-banner">
+        <strong>विशेष निर्देशिका:</strong> यस प्रश्नोत्तर सङ्ग्रहमा <strong>२०८१ सेट बी प्र.नं. १४</strong> को प्रश्नमा प्रयोगकर्ताको रोजाइ अनुसार <strong>लुम्बिनी प्रदेश</strong> लाई आधार मानी औपचारिक इमेल (E-Mail) को नमुना समावेश गरिएको छ। अन्य सम्पूर्ण प्रश्नहरू मोडल प्रश्नपत्रकै ढाँचामा प्रामाणिक र परीक्षा-उपयोगी रूपमा हल गरिएका छन्।
+      </div>
+    </article>
+
+    <!-- ================= SECTION 1 ================= -->
+    <article class="card c1" id="sec1">
+      <div class="card-head">
+        <span class="pill">खण्ड १</span>
+      </div>
+      <h2>🎯 अति सङ्क्षिप्त उत्तरात्मक प्रश्नहरू</h2>
+      <p class="lead">प्रत्येक प्रश्न १ अङ्कको — छोटो र स्पष्ट उत्तर।</p>
+
+      <h3 class="sect">
+        <span>Very Short Answer Questions</span>
+        <span class="marks">१ × ४ = ४</span>
+      </h3>
+
+      <!-- Q1 -->
+      <div class="q-card" id="q1">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>१</small></span>
+          <p class="q-title">नेपालमा हाल जम्मा कतिओटा स्थानीय तहहरू रहेका छन्?</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+          <p>नेपालमा हाल जम्मा <strong>७५३ वटा</strong> स्थानीय तहहरू रहेका छन्। (जसमा ६ महानगरपालिका, ११ उपमहानगरपालिका, २७६ नगरपालिका र ४६० गाउँपालिका समावेश छन्)।</p>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="q-card" id="q2">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>२</small></span>
+          <p class="q-title">नेपालको सात प्रदेशमध्ये भौगोलिक रूपमा सबैभन्दा ठूलो र सानो प्रदेश कुन कुन हुन्?</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+          <p>नेपालका सात प्रदेशहरूमध्ये भौगोलिक रूपमा सबैभन्दा ठूलो प्रदेश <strong>कर्णाली प्रदेश</strong> (२७,९८४ वर्ग कि.मी. / १९.१३%) र सबैभन्दा सानो प्रदेश <strong>मधेश प्रदेश</strong> (९,६६१ वर्ग कि.मी. / ६.५६%) हुन्।</p>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="q-card" id="q3">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>३</small></span>
+          <p class="q-title">अपि हिमाल कुन प्रदेशमा पर्छ?</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+          <p>अपि हिमाल (७,१३२ मिटर) <strong>सुदूरपश्चिम प्रदेश</strong> को दार्चुला जिल्लामा पर्दछ।</p>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="q-card" id="q4">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>४</small></span>
+          <p class="q-title">गण्डकी प्रदेशको सबैभन्दा ठूलो जिल्ला कुन हो?</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+          <p>गण्डकी प्रदेशको सबैभन्दा ठूलो जिल्ला <strong>मुस्ताङ</strong> (३,५६३ वर्ग कि.मी.) हो।</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ================= SECTION 2 ================= -->
+    <article class="card c2" id="sec2">
+      <div class="card-head">
+        <span class="pill">खण्ड २</span>
+      </div>
+      <h2>📊 सङ्क्षिप्त उत्तरात्मक प्रश्नहरू</h2>
+      <p class="lead">प्रत्येक प्रश्न ५ अङ्कको — परिचय, विश्लेषण र निष्कर्षसहित।</p>
+
+      <h3 class="sect">
+        <span>Short Answer Questions</span>
+        <span class="marks">५ × ३ = १५</span>
+      </h3>
+
+      <!-- Q5 — Email -->
+      <div class="q-card" id="q5">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>५</small></span>
+          <p class="q-title">तपाईँले बसोबास गर्ने प्रदेश (लुम्बिनी प्रदेश) को भौगोलिक अवस्थाले प्रदेशको आर्थिक-सामाजिक अवस्थामा पारेको प्रभाव समेटी विदेशमा रहेको साथीलाई पठाउने इमेल (E-Mail) को नमुना तयार पार्नुहोस्। <em>(२०८१ सेट बी प्र.नं. १४)</em></p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर · इमेल नमुना</span>
+
+          <div class="email-box">
+            <div class="email-head">
+              <p class="subject">विषय: लुम्बिनी प्रदेशको भौगोलिक अवस्था र यसले यहाँको सामाजिक-आर्थिक जीवनमा पारेको प्रभावबारे</p>
+              <div class="email-meta">
+                <span><b>To</b> sameer.karki99@gmail.com</span>
+                <span><b>From</b> rohan.sharma2081@gmail.com</span>
+                <span><b>मिति</b> २०८१/०७/१५</span>
+              </div>
+            </div>
+
+            <div class="email-body">
+              <p class="greeting">प्यारो साथी समीर,<br>सप्रेम नमस्ते !</p>
+
+              <p>आशा छ तिमी अस्ट्रेलियामा सकुशल छौ। धेरै समय भयो हामीबिच कुराकानी नभएको। हालै तिमीले म बसोबास गर्ने <strong>लुम्बिनी प्रदेश</strong> को भौगोलिक स्वरूप र यसले यहाँको जनजीवनमा पारेको प्रभावबारे सोधेका थियौ, त्यसैले यो इमेलमार्फत संक्षिप्त जानकारी पठाउँदै छु।</p>
+
+              <p>हाम्रो लुम्बिनी प्रदेश भौगोलिक दृष्टिले तराईका समथर मैदान, भित्री मधेस (दाङ उपत्यका), चुरे पहाड र महाभारत पर्वत शृङ्खला गरी विविध धरातलीय स्वरूपमा फैलिएको छ। यो प्रदेश पूर्वमा नवलपरासी (बर्दघाट सुस्ता पश्चिम) देखि पश्चिममा बर्दियासम्म २२,२८८ वर्ग कि.मी. क्षेत्रफल (देशको कुल क्षेत्रफलको १५.१%) मा फैलिएको छ।</p>
+
+              <p>यहाँको भौगोलिक अवस्थाले सामाजिक र आर्थिक जीवनमा पारेका मुख्य प्रभावहरू निम्न अनुसार छन्:</p>
+
+              <p><strong>१. आर्थिक क्षेत्रमा परेको प्रभाव:</strong></p>
+              <ul>
+                <li><strong>कृषि उत्पादन र खाद्यान्न सुरक्षा:</strong> तराईका उर्वर मैदान (रुपन्देही, कपिलवस्तु, दाङ, बाँके, बर्दिया) र सिँचाइ सुविधा (राप्ती, बबई, तिनाउ नदी) का कारण लुम्बिनी प्रदेशलाई नेपालको मुख्य कृषि भण्डार मानिन्छ। यहाँ धान, गहुँ, तोरी र नगदे बालीको उच्च उत्पादन हुन्छ।</li>
+                <li><strong>पर्यटन र अन्तर्राष्ट्रिय व्यापार:</strong> विश्वसम्पदा सूचीमा सूचीकृत भगवान् बुद्धको जन्मस्थल 'लुम्बिनी', स्वर्गद्वारी, तथा बर्दिया राष्ट्रिय निकुञ्जजस्ता भौगोलिक तथा धार्मिक-सांस्कृतिक सम्पदाले पर्यटन उद्योगको ठुलो सम्भावना बोकेको छ। साथै भारतसँग जोडिएका बेलहिया (भैरहवा) र जमुनाह (नेपालगञ्ज) जस्ता मुख्य भन्सार नाकाहरूले प्रादेशिक व्यापारलाई गति दिएका छन्।</li>
+              </ul>
+
+              <p><strong>२. सामाजिक तथा सांस्कृतिक क्षेत्रमा परेको प्रभाव:</strong></p>
+              <ul>
+                <li><strong>सांस्कृतिक विविधता र जनसङ्ख्या सङ्गम:</strong> पहाडी र तराई दुवै धरातल जोडिएकाले यहाँ थारू (माघी पर्व), मगर, यादव, मुस्लिम र पहाडी समुदायको बसोबास छ। यसले सांस्कृतिक सहिष्णुता र सद्भाव अभिवृद्धि गरेको छ।</li>
+                <li><strong>पूर्वाधार विकास र प्रादेशिक विषमता:</strong> तराई र उपत्यका क्षेत्रमा सडक, शिक्षा र स्वास्थ्यका आधुनिक पूर्वाधारहरू तीव्र गतिमा विकास भइरहेका छन् भने रुकुम पूर्व, रोल्पा र प्युठानजस्ता पहाडी जिल्लाहरूमा भौगोलिक विकटताका कारण यातायात र आधारभूत सेवा पहुँचमा अझै पनि चुनौती रहेको छ।</li>
+              </ul>
+
+              <p>समग्रमा, हाम्रो लुम्बिनी प्रदेश भौगोलिक विविधताका कारण जलस्रोत, कृषि, पर्यटन र उद्योगका लागि अत्यन्त सम्भावना बोकेको समृद्ध प्रदेश हो।</p>
+
+              <p>समय मिलेमा नेपाल आउँदा लुम्बिनी भ्रमण गर्ने योजना बनाउनु है। बाँकी कुरा अर्को इमेलमा गरौँला।</p>
+
+              <div class="signoff">
+                <p>तिमीलाई सम्झिरहने साथी,</p>
+                <p class="name">रोहन शर्मा</p>
+                <p class="addr">बुटवल, लुम्बिनी प्रदेश, नेपाल।</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Q6 — Sudurpashchim -->
+      <div class="q-card" id="q6">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>६</small></span>
+          <p class="q-title">सुदूरपश्चिम प्रदेशको मुख्यमुख्य भौगोलिक विशेषताहरू उल्लेख गर्नुहोस्।</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+
+          <div class="block">
+            <span class="block-head">📌 १. परिचय</span>
+            <div class="block-content">
+              <p>नेपालको सुदूरपश्चिममा अवस्थित सुदूरपश्चिम प्रदेश भौगोलिक, सांस्कृतिक र प्राकृतिक दृष्टिकोणले अत्यन्त विशिष्ट प्रदेश हो। यस प्रदेशले देशको कुल क्षेत्रफलको करिब १३.२२% (१९,५३९ वर्ग कि.मी.) भूभाग ओगटेको छ।</p>
+            </div>
+          </div>
+
+          <div class="flow-diagram">
+            <div class="flow-title">सुदूरपश्चिम प्रदेशका भौगोलिक विशेषताहरू</div>
+            <div class="flow-root">सुदूरपश्चिम प्रदेश</div>
+            <div class="flow-branches">
+              <div class="flow-branch">त्रि-धरातलीय स्वरूप<br>(हिमाल, पहाड, तराई)</div>
+              <div class="flow-branch">समृद्ध नदी प्रणाली<br>(महाकाली र सेती)</div>
+              <div class="flow-branch">हिमाल र पर्यटकीय स्थल<br>(अपि, सैपाल, खप्तड)</div>
+              <div class="flow-branch">जैविक विविधता<br>(शुक्लाफाँटा)</div>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head">📊 २. मुख्य भौगोलिक विशेषताहरू</span>
+            <div class="block-content">
+              <ul class="list-arrow">
+                <li><strong>त्रि-धरातलीय बनोट:</strong> यो प्रदेश उत्तरमा उच्च हिमाली क्षेत्र (दार्चुला, बाजुरा, बझाङ), मध्यमा पहाडी क्षेत्र (बैतडी, डडेल्धुरा, डोटी, अछाम) र दक्षिणमा तराईका समथर भूभाग (कैलाली र कञ्चनपुर) गरी तीनवटै भौगोलिक प्रदेशमा फैलिएको छ।</li>
+                <li><strong>प्रमुख हिमशिखरहरू:</strong> यस प्रदेशमा अपि हिमाल (७,१३२ मिटर) र सैपाल हिमाल (७,०३१ मिटर) जस्ता उच्च र मनोरम हिमशृङ्खलाहरू रहेका छन्।</li>
+                <li><strong>जलस्रोत र नदी प्रणाली:</strong> नेपालको पश्चिमी सीमा निर्धारण गर्ने महाकाली नदी, सेती नदी र कर्णाली नदीका सहायक नदीहरू यसै प्रदेश भएर बग्छन्। चमेलिया जलविद्युत् आयोजना यसै क्षेत्रको जलस्रोतको प्रमुख उदाहरण हो।</li>
+                <li><strong>जैविक विविधता र संरक्षित क्षेत्रहरू:</strong> जैविक विविधताले धनी यस प्रदेशमा <strong>शुक्लाफाँटा राष्ट्रिय निकुञ्ज</strong> (बाह्रसिङ्गेका लागि प्रसिद्ध), <strong>खप्तड राष्ट्रिय निकुञ्ज</strong> (खप्तड बाबाको तपोभूमि र पाटनहरू), र प्रसिद्ध रामसार क्षेत्र <strong>घोडाघोडी ताल</strong> रहेका छन्।</li>
+                <li><strong>अन्तर्राष्ट्रिय सीमा र भन्सार नाका:</strong> पश्चिम र उत्तरमा भारत तथा चीनसँग सीमा जोडिएको यस प्रदेशमा गड्डाचौकी (कञ्चनपुर) र झुलाघाट (बैतडी) जस्ता मुख्य व्यापारिक भन्सार नाकाहरू रहेका छन्।</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="conclusion"><strong>🎯 ३. निष्कर्ष:</strong> अतः सुदूरपश्चिम प्रदेश जडीबुटी, जलस्रोत, पर्यटन र जैविक विविधताका दृष्टिले प्रचुर सम्भावना बोकेको प्रदेश हो, जसको समुचित विकासले समग्र राष्ट्रकै समृद्धिमा योगदान पुर्‍याउन सक्छ।</p>
+        </div>
+      </div>
+
+      <!-- Q7 — Koshi vs Madhesh -->
+      <div class="q-card" id="q7">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>७</small></span>
+          <p class="q-title">कोशी प्रदेश र मधेश प्रदेशका भौगोलिक विशेषताहरूबिचका समानता र भिन्नताहरू उल्लेख गर्नुहोस्।</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+
+          <div class="block">
+            <span class="block-head">📌 १. परिचय</span>
+            <div class="block-content">
+              <p>नेपालको पूर्वी भागमा अवस्थित <strong>कोशी प्रदेश</strong> (क्षेत्रफल: २५,९०५ कि.मी.²) र दक्षिण-पूर्वी भागमा अवस्थित <strong>मधेश प्रदेश</strong> (क्षेत्रफल: ९,६६१ कि.मी.²) भौगोलिक, धरातलीय र हावापानीका दृष्टिले आ-आफ्नै विशिष्टता बोकेका छिमेकी प्रदेशहरू हुन्।</p>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head">(क) भौगोलिक समानताहरू</span>
+            <div class="block-content">
+              <ol class="list-arrow" style="counter-reset:none; list-style:decimal;">
+                <li><strong>अन्तर्राष्ट्रिय सीमा:</strong> दुवै प्रदेशको दक्षिणी सीमा भारतसँग जोडिएको छ।</li>
+                <li><strong>तराईको समथर भूभाग:</strong> दुवै प्रदेशमा कृषि उत्पादनका लागि अत्यन्त उपयुक्त उर्वर तराईका मैदानहरू रहेका छन्।</li>
+                <li><strong>मनसुनी हावापानी:</strong> दुवै प्रदेशमा ग्रीष्मकालमा बङ्गालको खाडीबाट आउने मानसुनी वायुले प्रशस्त वर्षा गराउँछ।</li>
+                <li><strong>प्रमुख जलस्रोत:</strong> दुवै प्रदेशमा सिँचाइ र खानेपानीका लागि ठुला नदी प्रणाली र भूमिगत जलस्रोतको प्रचुरता छ।</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head">(ख) भौगोलिक भिन्नताहरू</span>
+            <div class="block-content" style="padding:0; background:transparent; border:none;">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th style="width:32%;">तुलनाका आधारहरू</th>
+                      <th>कोशी प्रदेश (प्रदेश १)</th>
+                      <th>मधेश प्रदेश (प्रदेश २)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>१. धरातलीय विविधता</strong></td>
+                      <td>हिमाल, पहाड र तराई गरी तीनवटै भौगोलिक क्षेत्रमा फैलिएको।</td>
+                      <td>केवल तराई र चुरे क्षेत्रमा मात्र फैलिएको समथर भूभाग।</td>
+                    </tr>
+                    <tr>
+                      <td><strong>२. सर्वोच्च उचाइ</strong></td>
+                      <td>विश्वको सर्वोच्च शिखर <strong>सगरमाथा (८,८४८.८६ मि.)</strong> यसै प्रदेशमा छ।</td>
+                      <td>होचो भूभाग (समुद्री सतहदेखि ६० मिटरदेखि चुरे पहाडसम्म)।</td>
+                    </tr>
+                    <tr>
+                      <td><strong>३. क्षेत्रफल र हिस्सा</strong></td>
+                      <td>२५,९०५ वर्ग कि.मी. (देशको १७.६% भूभाग — दोस्रो ठूलो)।</td>
+                      <td>९,६६१ वर्ग कि.मी. (देशको ६.५६% भूभाग — सबैभन्दा सानो)।</td>
+                    </tr>
+                    <tr>
+                      <td><strong>४. मुख्य नदी प्रणाली</strong></td>
+                      <td>सप्तकोशी नदी प्रणाली (अरुण, तमोर, दुधकोशी आदि)।</td>
+                      <td>कमला, बागमती, लालबकैया, खाँडो नदीहरू।</td>
+                    </tr>
+                    <tr>
+                      <td><strong>५. जनघनत्व</strong></td>
+                      <td>प्रति वर्ग कि.मी. १९२ जना (मध्यम जनघनत्व)।</td>
+                      <td>प्रति वर्ग कि.मी. ६३३ जना (नेपालमै सबैभन्दा बढी जनघनत्व)।</td>
+                    </tr>
+                    <tr>
+                      <td><strong>६. वनजङ्गल र संरक्षण</strong></td>
+                      <td>सगरमाथा, मकालु बरुण राष्ट्रिय निकुञ्ज र कञ्चनजङ्घा संरक्षण क्षेत्र।</td>
+                      <td>पर्सा राष्ट्रिय निकुञ्ज र तालतलैयाहरू (जस्तै: सिम्रौनगढ)।</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <p class="conclusion"><strong>🎯 ३. निष्कर्ष:</strong> यसरी कोशी प्रदेश हिमाली विकटतादेखि तराईको सुगमतासम्म फैलिएको बहु-धरातलीय प्रदेश हो भने मधेश प्रदेश पूर्ण रूपमा तराईमा आधारित सुगम र घना बस्ती भएको कृषिप्रधान प्रदेश हो। दुवै प्रदेशको भौगोलिक पूरकताले नेपालको आर्थिक र सामाजिक विकासमा ठुलो योगदान पुर्‍याएको छ।</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="big">✨ कक्षा १२ सामाजिक — एकाइ ५ · पाठ १ ✨</div>
+      <div class="small">नेपालका प्रशासनिक प्रदेश · मोडल प्रश्नोत्तर सङ्ग्रह (v2)</div>
+      <div class="small" style="margin-top:10px; font-size:15px;">
+        उत्तर लेख्ने बानी बसाल्नुहोस् — पढेर मात्र अङ्क आउँदैन, अभ्यासले मात्र आउँछ।
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="माथि जानुहोस्">↑</button>
+
+<script>
+(function () {
+  /* ---- Drawer navigation ---- */
+  const menuBtn = document.getElementById('menuBtn');
+  const sidenav  = document.getElementById('sidenav');
+  const overlay  = document.getElementById('overlay');
+
+  function openNav() {
+    sidenav.classList.add('open');
+    overlay.classList.add('show');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
+    sidenav.classList.remove('open');
+    overlay.classList.remove('show');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  menuBtn.addEventListener('click', function () {
+    sidenav.classList.contains('open') ? closeNav() : openNav();
+  });
+  overlay.addEventListener('click', closeNav);
+
+  /* Close drawer when any nav link is clicked (mobile only) */
+  document.querySelectorAll('.sidenav a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (window.innerWidth < 1024) closeNav();
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeNav();
+  });
+
+  /* ---- Back-to-top visibility ---- */
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 420) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  });
+
+  /* ---- Active link highlight ---- */
+  const sections = document.querySelectorAll('article[id]');
+  const navLinks = document.querySelectorAll('.nav-main');
+  window.addEventListener('scroll', function () {
+    let current = '';
+    sections.forEach(function (sec) {
+      if (window.scrollY >= sec.offsetTop - 140) current = sec.id;
+    });
+    navLinks.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>
