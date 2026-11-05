@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>कक्षा १२ सामाजिक — एकाइ ५ पाठ ५: अन्तरप्रादेशिक सम्बन्धका आयामहरू</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===================== BASE ===================== */
+*,*::before,*::after{box-sizing:border-box;}
+:root{
+  --ink:#0f172a;
+  --soft:#475569;
+  --paper:#ffffff;
+  --line:#e6eef3;
+  --violet:#6d28d9;
+  --violet-deep:#4c1d95;
+  --violet-soft:#f5f3ff;
+  --teal:#0e7490;
+  --teal-deep:#155e75;
+  --teal-soft:#ecfeff;
+  --rose:#be123c;
+  --rose-soft:#fff1f2;
+  --amber:#b45309;
+  --amber-soft:#fffbeb;
+  --green:#15803d;
+  --green-soft:#f0fdf4;
+  --shadow:0 10px 30px rgba(76,29,149,.10);
+  --radius:22px;
+}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:'Mukta','Noto Sans Devanagari',system-ui,sans-serif;
+  font-size:21px;
+  line-height:1.88;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 620px at 6% -10%, #ede9fe 0%, transparent 58%),
+    radial-gradient(1000px 540px at 102% 0%, #cffafe 0%, transparent 55%),
+    linear-gradient(180deg,#faf5ff,#fafaf9 45%,#ecfeff 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  -webkit-text-size-adjust:100%;
+}
+[id]{scroll-margin-top:100px;}
+strong,b{font-weight:800;}
+em{font-style:italic;}
+
+/* ===================== TOP BAR ===================== */
+.topbar{
+  position:sticky; top:0; z-index:60;
+  display:flex; align-items:center; gap:14px;
+  padding:12px 18px;
+  background:linear-gradient(120deg,#4c1d95 0%,#6d28d9 45%,#0e7490 100%);
+  color:#fff;
+  box-shadow:0 6px 24px rgba(76,29,149,.32);
+}
+.brand{display:flex; flex-direction:column; line-height:1.2; flex:1 1 auto; min-width:0;}
+.brand h1{
+  margin:0;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:22px; font-weight:800; letter-spacing:.2px;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.brand-sub{font-size:14px; font-weight:600; opacity:.92;}
+.hamburger{
+  display:none; align-items:center; justify-content:center;
+  width:46px; height:46px; flex:0 0 auto;
+  border-radius:13px; border:1px solid rgba(255,255,255,.38);
+  background:rgba(255,255,255,.16); color:#fff;
+  font-size:22px; cursor:pointer; transition:.2s;
+}
+.hamburger:hover{background:rgba(255,255,255,.28);}
+.top-link{
+  flex:0 0 auto; text-decoration:none; color:#fff;
+  font-size:16px; font-weight:700;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.38);
+  padding:8px 14px; border-radius:999px; transition:.2s;
+}
+.top-link:hover{background:rgba(255,255,255,.32);}
+
+/* ===================== LAYOUT ===================== */
+.layout{
+  display:flex; align-items:flex-start; gap:26px;
+  max-width:1440px; margin:0 auto;
+  padding:26px 20px 70px;
+}
+.content{flex:1 1 auto; min-width:0;}
+
+/* ===================== SIDE NAV ===================== */
+.sidenav{
+  width:322px; flex:0 0 322px;
+  position:sticky; top:88px;
+  max-height:calc(100vh - 110px);
+  overflow-y:auto;
+  background:rgba(255,255,255,.96);
+  border:1px solid #ede9fe;
+  border-radius:var(--radius);
+  padding:18px 14px 22px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(10px);
+}
+.sidenav-head{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:18px; font-weight:800; color:var(--violet-deep);
+  display:flex; align-items:center; gap:8px;
+  padding-bottom:12px; margin-bottom:8px;
+  border-bottom:3px solid #fde68a;
+}
+.nav-main{
+  display:block; text-decoration:none;
+  font-size:18px; font-weight:800; line-height:1.5;
+  color:var(--ink);
+  padding:11px 13px; border-radius:12px;
+  border-left:5px solid transparent; transition:.22s;
+}
+.nav-main:hover,.nav-main.active{
+  background:linear-gradient(90deg,#ede9fe,#cffafe);
+  border-left-color:var(--violet);
+  color:var(--violet-deep);
+  transform:translateX(3px);
+}
+.nav-group{
+  margin-top:6px;
+  padding:8px 12px;
+  background:#f8f6ff;
+  border:1px dashed #ddd6fe;
+  border-radius:12px;
+}
+.nav-group-title{
+  display:block;
+  font-size:14px; font-weight:800; letter-spacing:.05em;
+  text-transform:uppercase; color:var(--violet-deep);
+  margin-bottom:6px;
+}
+.nav-sub{display:flex; flex-direction:column; gap:3px;}
+.nav-sub a{
+  display:flex; align-items:flex-start; gap:8px;
+  text-decoration:none; font-size:16px; font-weight:700;
+  color:var(--soft); padding:7px 10px;
+  border-radius:9px; transition:.18s;
+  line-height:1.45;
+}
+.nav-sub a:hover{
+  background:#ede9fe; color:var(--violet-deep);
+  transform:translateX(2px);
+}
+.nav-sub a .num{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex:0 0 auto;
+  min-width:26px; height:26px; padding:0 6px;
+  background:var(--violet); color:#fff;
+  border-radius:7px;
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800;
+  margin-top:1px;
+}
+.nav-sub.teal a:hover{background:#cffafe; color:var(--teal-deep);}
+.nav-sub.teal a .num{background:var(--teal);}
+.nav-sub.amber a:hover{background:#fef3c7; color:var(--amber);}
+.nav-sub.amber a .num{background:var(--amber);}
+.nav-sub.rose a:hover{background:#ffe4e6; color:var(--rose);}
+.nav-sub.rose a .num{background:var(--rose);}
+.nav-sub.green a:hover{background:#dcfce7; color:var(--green);}
+.nav-sub.green a .num{background:var(--green);}
+.nav-note{
+  margin-top:18px; padding:13px 15px;
+  font-size:15px; font-weight:700; line-height:1.65;
+  color:#4c1d95;
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  border-radius:14px;
+}
+.overlay{
+  position:fixed; inset:0; z-index:70;
+  background:rgba(15,23,42,.48);
+  opacity:0; visibility:hidden; transition:.3s;
+}
+.overlay.show{opacity:1; visibility:visible;}
+
+/* ===================== CARD ===================== */
+.card{
+  --acc:#6d28d9;
+  --acc-soft:#f5f3ff;
+  background:var(--paper);
+  border:1px solid #eef3f6;
+  border-top:9px solid var(--acc);
+  border-radius:var(--radius);
+  padding:26px 26px 32px;
+  margin-bottom:30px;
+  box-shadow:var(--shadow);
+}
+.card.intro{--acc:#4c1d95; --acc-soft:#f5f3ff;}
+.card.c1{--acc:#6d28d9; --acc-soft:#f5f3ff;}
+.card.c2{--acc:#0e7490; --acc-soft:#ecfeff;}
+.card.c3{--acc:#b45309; --acc-soft:#fffbeb;}
+.card.c4{--acc:#be123c; --acc-soft:#fff1f2;}
+.card.c5{--acc:#15803d; --acc-soft:#f0fdf4;}
+
+.card-head{display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:6px;}
+.pill{
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:#fff; background:var(--acc);
+  padding:6px 15px; border-radius:999px;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+h2{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:27px; font-weight:800; line-height:1.4;
+  margin:0; color:var(--ink);
+}
+.lead{
+  margin:10px 0 0; font-size:20px; font-weight:600; color:var(--soft);
+  line-height:1.8;
+}
+
+/* ===================== INFO BANNER ===================== */
+.info-banner{
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  border:1.5px dashed #a78bfa;
+  border-radius:16px;
+  padding:16px 20px;
+  margin:14px 0 4px;
+  font-size:19px; font-weight:600; color:#4c1d95;
+  line-height:1.85;
+}
+.info-banner strong{color:var(--violet-deep);}
+
+/* ===================== SECTION TITLES ===================== */
+.sect{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:22px; font-weight:800; line-height:1.55;
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:10px;
+  justify-content:space-between;
+  margin:34px 0 18px;
+  padding:14px 18px;
+  background:linear-gradient(90deg,var(--acc-soft),#ffffff);
+  border:1px solid var(--line);
+  border-left:7px solid var(--acc);
+  border-radius:0 14px 14px 0;
+  color:var(--ink);
+}
+.sect:first-of-type{margin-top:22px;}
+.marks{
+  flex:0 0 auto; font-size:14px; font-weight:800;
+  color:#fff; background:var(--acc);
+  padding:3px 13px; border-radius:999px; white-space:nowrap;
+}
+
+/* ===================== GLOSSARY ===================== */
+.glossary{display:flex; flex-direction:column; gap:12px; margin-top:6px;}
+.gloss-item{
+  display:grid; grid-template-columns:52px 1fr; gap:14px;
+  align-items:start;
+  background:#faf8ff;
+  border:1px solid #ede9fe;
+  border-radius:15px;
+  padding:14px 16px;
+  transition:.2s;
+}
+.gloss-item:hover{background:#f5f3ff; border-color:#c4b5fd; transform:translateX(3px);}
+.gloss-no{
+  display:flex; align-items:center; justify-content:center;
+  width:52px; height:52px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#4c1d95,#6d28d9);
+  color:#fff; font-family:'Poppins',sans-serif;
+  font-size:19px; font-weight:800;
+  box-shadow:0 5px 14px rgba(76,29,149,.3);
+}
+.gloss-term{
+  display:block; font-weight:800; font-size:20px;
+  color:var(--violet-deep); margin-bottom:3px;
+}
+.gloss-def{
+  margin:0; font-size:20px; font-weight:600; color:#334155;
+  line-height:1.78;
+}
+
+/* ===================== TABLES ===================== */
+.table-wrap{
+  overflow-x:auto; -webkit-overflow-scrolling:touch;
+  border:1px solid var(--line); border-radius:15px;
+  margin:16px 0; box-shadow:0 4px 16px rgba(15,23,42,.05);
+}
+table{width:100%; border-collapse:collapse; min-width:640px; font-size:18px;}
+th{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:16px; font-weight:800; text-align:left;
+  color:#fff; background:var(--acc);
+  padding:12px 14px; letter-spacing:.02em;
+  line-height:1.5; vertical-align:middle;
+}
+td{padding:12px 14px; border-top:1px solid #eef1f7; font-weight:600; vertical-align:top; line-height:1.75;}
+tbody tr:nth-child(even){background:#faf8ff;}
+tbody tr:hover{background:#f5f3ff;}
+td.hl{background:#fef3c7 !important; font-weight:800; color:var(--amber);}
+td.sec-name{font-weight:800; color:var(--violet-deep);}
+
+/* ===================== MNEMONIC CARDS ===================== */
+.mnemonic{
+  background:linear-gradient(135deg,#fef3c7,#fffbeb);
+  border:2px solid #fcd34d;
+  border-radius:18px;
+  padding:20px 22px 22px;
+  margin:18px 0;
+  position:relative;
+}
+.mnemonic::before{
+  content:attr(data-label);
+  position:absolute; top:-13px; left:18px;
+  background:#b45309; color:#fff;
+  font-family:'Poppins',sans-serif;
+  font-size:12px; font-weight:800; letter-spacing:.1em;
+  padding:3px 14px; border-radius:999px;
+}
+.mnemonic h4{
+  margin:6px 0 12px;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:20px; font-weight:800; color:#92400e;
+  line-height:1.5;
+}
+.formula{
+  display:inline-block;
+  background:#fff;
+  border:2px dashed #d97706;
+  border-radius:12px;
+  padding:8px 18px;
+  margin:4px 0 14px;
+  font-family:'Poppins',sans-serif;
+  font-size:22px; font-weight:800; letter-spacing:.06em;
+  color:#b45309;
+  box-shadow:0 4px 12px rgba(217,119,6,.12);
+}
+.mnemonic ul{margin:8px 0 0; padding-left:0; list-style:none;}
+.mnemonic li{
+  font-size:19px; font-weight:600; margin:7px 0;
+  color:#3f2d08; line-height:1.7;
+  padding:8px 12px 8px 40px;
+  background:#fff;
+  border:1px solid #fde68a;
+  border-radius:11px;
+  position:relative;
+}
+.mnemonic li::before{
+  content:"▸";
+  position:absolute; left:14px; top:7px;
+  color:var(--amber); font-weight:800; font-size:18px;
+}
+.mnemonic li strong{color:#b45309;}
+
+/* ===================== DIMENSION CARDS ===================== */
+.dimension{
+  background:#ffffff;
+  border:1px solid #e5eef2;
+  border-left:7px solid var(--teal);
+  border-radius:16px;
+  padding:18px 22px 20px;
+  margin:18px 0;
+  box-shadow:0 4px 16px rgba(14,116,144,.06);
+  transition:.2s;
+}
+.dimension:hover{box-shadow:0 8px 22px rgba(14,116,144,.10);}
+.dim-head{
+  display:flex; align-items:center; gap:12px;
+  margin-bottom:12px;
+  padding-bottom:12px;
+  border-bottom:2px dashed #cffafe;
+}
+.dim-num{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex:0 0 auto;
+  min-width:48px; height:48px;
+  background:linear-gradient(135deg,#155e75,#0e7490);
+  color:#fff; font-family:'Poppins',sans-serif;
+  font-size:20px; font-weight:800;
+  border-radius:13px;
+  box-shadow:0 5px 14px rgba(14,116,144,.28);
+}
+.dim-title{
+  margin:0; font-size:21px; font-weight:800;
+  color:#0f172a; line-height:1.5;
+}
+.dimension ul{
+  margin:8px 0 0; padding:0; list-style:none;
+}
+.dimension li{
+  position:relative;
+  padding:9px 14px 9px 42px;
+  margin:7px 0;
+  background:#f6fdff;
+  border:1px solid #cffafe;
+  border-radius:11px;
+  font-size:19px; font-weight:600; line-height:1.72;
+  color:#334155;
+  transition:.18s;
+}
+.dimension li:hover{background:#ecfeff; border-color:#a5f3fc;}
+.dimension li::before{
+  content:"▸";
+  position:absolute; left:15px; top:8px;
+  color:var(--teal); font-weight:800; font-size:19px;
+}
+.dimension li strong{color:var(--teal-deep);}
+
+/* ===================== ACTIVITY / QA BLOCKS ===================== */
+.activity{
+  background:#ffffff;
+  border:1px solid #e5eef2;
+  border-left:7px solid var(--rose);
+  border-radius:16px;
+  padding:18px 22px 20px;
+  margin:20px 0;
+  box-shadow:0 4px 16px rgba(190,18,60,.06);
+}
+.activity-title{
+  display:flex; align-items:flex-start; gap:12px;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:19px; font-weight:800;
+  color:#0f172a; line-height:1.55;
+  margin:0 0 12px;
+  padding-bottom:12px;
+  border-bottom:2px dashed #ffe4e6;
+}
+.act-badge{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex:0 0 auto;
+  min-width:42px; height:42px; padding:0 8px;
+  background:linear-gradient(135deg,#9f1239,#be123c);
+  color:#fff; font-family:'Poppins',sans-serif;
+  font-size:14px; font-weight:800;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(190,18,60,.28);
+  margin-top:2px;
+}
+.answer-block{
+  background:linear-gradient(135deg,#fff1f2,#ffffff);
+  border-left:5px solid var(--rose);
+  border-radius:0 12px 12px 0;
+  padding:14px 18px;
+  font-size:20px; line-height:1.85; color:#334155;
+}
+.answer-block p{margin:0 0 10px;}
+.answer-block p:last-child{margin-bottom:0;}
+.answer-block ul, .answer-block ol{margin:8px 0 10px 24px; padding:0;}
+.answer-block li{font-size:19px; margin:6px 0; line-height:1.75;}
+.answer-block strong{color:var(--rose);}
+
+/* ===================== EXERCISE QA ===================== */
+.qa{
+  background:#fafbfe;
+  border:1px solid #eef1f7;
+  border-radius:15px;
+  padding:16px 18px;
+  margin:15px 0;
+  transition:.2s;
+}
+.qa:hover{background:#f6f9ff; border-color:#dde6f6;}
+.qa-q{
+  margin:0 0 12px; font-size:21px; font-weight:800;
+  line-height:1.6; color:#111827;
+  display:flex; gap:11px; align-items:flex-start;
+}
+.qnum{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex:0 0 auto; min-width:44px; height:44px; padding:0 8px;
+  background:var(--acc); color:#fff;
+  border-radius:12px; font-size:15px; font-weight:800;
+  margin-top:2px;
+}
+.qa-a{
+  margin:0; padding:14px 18px;
+  background:#ffffff;
+  border-left:5px solid var(--acc);
+  border-radius:0 12px 12px 0;
+  font-size:21px; line-height:1.9;
+  color:#243043;
+}
+.qa-a .lbl{
+  display:block; margin-bottom:6px;
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--acc);
+}
+.qa-a p{margin:0 0 10px;}
+.qa-a p:last-child{margin-bottom:0;}
+.qa-a ul, .qa-a ol{margin:8px 0 10px 24px; padding:0;}
+.qa-a li{font-size:20px; margin:6px 0; line-height:1.8;}
+
+/* ===================== LONG ANSWER ===================== */
+.long-q{
+  background:#ffffff;
+  border:1px solid #eef1f7;
+  border-radius:18px;
+  padding:22px 24px 22px;
+  margin:22px 0;
+  box-shadow:0 6px 20px rgba(15,23,42,.06);
+}
+.long-q .q-title{
+  font-size:21px; font-weight:800; color:#0f172a;
+  background:linear-gradient(135deg,var(--acc-soft),#ffffff);
+  border-left:6px solid var(--acc);
+  padding:13px 18px;
+  border-radius:0 12px 12px 0;
+  margin:0 0 18px;
+  line-height:1.65;
+}
+.lead-block{
+  background:linear-gradient(135deg,#faf8ff,#ffffff);
+  border:1px solid #ede9fe;
+  border-left:5px solid var(--violet);
+  border-radius:0 13px 13px 0;
+  padding:14px 18px;
+  margin:14px 0;
+  font-weight:600;
+  font-size:20px;
+  color:#334155;
+  line-height:1.85;
+}
+.lead-block strong{color:var(--violet-deep);}
+.block-head{
+  display:inline-block;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:18px; font-weight:800;
+  color:#fff; background:var(--acc);
+  padding:6px 18px; border-radius:22px;
+  margin:22px 0 10px;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+.mini-list{
+  list-style:none; padding:0; margin:12px 0;
+  counter-reset:mini;
+}
+.mini-list li{
+  counter-increment:mini;
+  position:relative;
+  background:#faf8ff;
+  border:1px solid #ede9fe;
+  border-radius:13px;
+  padding:12px 16px 12px 52px;
+  margin:9px 0;
+  font-size:20px; font-weight:600; line-height:1.78;
+  color:#334155;
+  transition:.2s;
+}
+.mini-list li:hover{background:#f5f3ff; border-color:#c4b5fd;}
+.mini-list li::before{
+  content:counter(mini) ".";
+  position:absolute; left:15px; top:12px;
+  width:28px; height:28px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--acc); color:#fff;
+  border-radius:8px;
+  font-family:'Poppins',sans-serif;
+  font-size:14px; font-weight:800;
+}
+.mini-list li strong{color:var(--violet-deep);}
+.conclusion{
+  background:linear-gradient(90deg,#fef3c7,#fffbeb);
+  border-left:6px solid #d97706;
+  border-radius:0 12px 12px 0;
+  padding:14px 18px;
+  margin:18px 0 6px;
+  font-size:20px; font-weight:700; line-height:1.85;
+  color:#3f2d08;
+}
+.conclusion strong{color:#b45309;}
+
+/* ===================== FLOW DIAGRAM ===================== */
+.flow-diagram{
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  border:1.5px dashed #a78bfa;
+  border-radius:18px;
+  padding:22px 20px;
+  margin:18px 0;
+}
+.flow-title{
+  text-align:center;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:18px; font-weight:800; color:var(--violet-deep);
+  margin-bottom:16px;
+}
+.flow-root{
+  background:#fff;
+  border:2px solid var(--violet);
+  border-radius:14px;
+  padding:14px 18px;
+  text-align:center;
+  font-weight:800; font-size:18px;
+  color:var(--violet-deep);
+  max-width:400px; margin:0 auto 16px;
+  box-shadow:0 4px 14px rgba(109,40,217,.15);
+}
+.flow-branches{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:12px;
+}
+.flow-col{
+  background:#fff;
+  border:1.5px solid #ddd6fe;
+  border-top:5px solid var(--violet);
+  border-radius:13px;
+  padding:12px 14px;
+}
+.flow-col:nth-child(2){border-top-color:var(--teal);}
+.flow-col:nth-child(3){border-top-color:var(--green);}
+.flow-col-head{
+  display:block;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:16px; font-weight:800;
+  color:var(--violet-deep);
+  margin-bottom:8px;
+  padding-bottom:6px;
+  border-bottom:1px dashed #ddd6fe;
+  line-height:1.4;
+}
+.flow-col:nth-child(2) .flow-col-head{color:var(--teal-deep);}
+.flow-col:nth-child(3) .flow-col-head{color:var(--green);}
+.flow-col ul{margin:0; padding:0; list-style:none;}
+.flow-col li{
+  position:relative;
+  font-size:15px; font-weight:600;
+  color:#334155; line-height:1.55;
+  padding:6px 0 6px 18px;
+  border-bottom:1px dotted #f1f5f9;
+}
+.flow-col li:last-child{border-bottom:none;}
+.flow-col li::before{
+  content:"▸";
+  position:absolute; left:0; top:6px;
+  color:var(--violet); font-weight:800;
+}
+.flow-col:nth-child(2) li::before{color:var(--teal);}
+.flow-col:nth-child(3) li::before{color:var(--green);}
+
+/* ===================== TIP BOX ===================== */
+.tipbox{
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  border:1px solid #a78bfa;
+  border-radius:15px;
+  padding:16px 18px;
+  margin-top:20px;
+}
+.tipbox h4{
+  margin:0 0 8px;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:17px; font-weight:800; color:var(--violet-deep);
+  letter-spacing:.04em;
+}
+.tipbox p{margin:0; font-size:19px; font-weight:600; color:#334155; line-height:1.8;}
+
+/* ===================== FOOTER ===================== */
+.footer{
+  margin-top:10px;
+  background:linear-gradient(135deg,#4c1d95,#1e293b);
+  color:#fff; text-align:center;
+  padding:30px 20px;
+  border-radius:22px 22px 0 0;
+}
+.footer .big{font-family:'Mukta','Poppins',sans-serif; font-size:21px; font-weight:800; color:#fcd34d;}
+.footer .small{font-size:16px; opacity:.88; margin-top:6px;}
+
+/* ===================== BACK TO TOP ===================== */
+#toTop{
+  position:fixed; right:20px; bottom:24px; z-index:90;
+  width:56px; height:56px; border-radius:50%;
+  border:none; cursor:pointer;
+  font-size:24px; font-weight:800; color:#fff;
+  background:linear-gradient(135deg,#6d28d9,#0e7490);
+  box-shadow:0 10px 26px rgba(109,40,217,.42);
+  display:none; align-items:center; justify-content:center;
+  transition:transform .25s, box-shadow .25s;
+}
+#toTop:hover{transform:translateY(-4px) scale(1.06);}
+#toTop.show{display:flex;}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:1023px){
+  .hamburger{display:inline-flex;}
+  .layout{padding:18px 14px 80px; gap:0;}
+  .sidenav{
+    position:fixed; top:0; left:0; z-index:80;
+    width:318px; flex:none; height:100%;
+    max-height:none; border-radius:0 18px 18px 0;
+    padding:78px 14px 40px;
+    transform:translateX(-108%);
+    transition:transform .32s ease;
+    border:none;
+  }
+  .sidenav.open{transform:translateX(0);}
+}
+@media (max-width:640px){
+  body{font-size:20px;}
+  .brand h1{font-size:17px;}
+  .brand-sub{display:none;}
+  .top-link{display:none;}
+  .card{padding:20px 16px 26px; border-top-width:7px;}
+  h2{font-size:22px;}
+  .lead{font-size:18px;}
+  .sect{font-size:18px; padding:11px 13px;}
+  .gloss-item{grid-template-columns:44px 1fr; gap:11px; padding:11px 12px;}
+  .gloss-no{width:44px; height:44px; font-size:17px; border-radius:12px;}
+  .gloss-term,.gloss-def{font-size:18px;}
+  .dimension{padding:14px 16px;}
+  .dim-num{min-width:42px; height:42px; font-size:18px;}
+  .dim-title{font-size:18px;}
+  .dimension li{font-size:17px; padding:8px 12px 8px 36px;}
+  .dimension li::before{left:12px; font-size:17px;}
+  .activity{padding:14px 16px;}
+  .activity-title{font-size:17px;}
+  .answer-block{font-size:18px; padding:12px 14px;}
+  .answer-block li{font-size:17px;}
+  .qa{padding:13px 14px;}
+  .qa-q{font-size:19px;}
+  .qa-a{font-size:19px; padding:11px 13px;}
+  .qa-a li{font-size:18px;}
+  .qnum{min-width:38px; height:38px; font-size:13px;}
+  .mini-list li{font-size:18px; padding:11px 13px 11px 46px;}
+  .lead-block{font-size:18px; padding:12px 14px;}
+  .long-q{padding:16px 14px;}
+  .long-q .q-title{font-size:18px; padding:11px 13px;}
+  .mnemonic h4{font-size:18px;}
+  .formula{font-size:19px; padding:6px 14px;}
+  .mnemonic li{font-size:17px; padding:7px 10px 7px 36px;}
+  .pill{font-size:12px;}
+}
+@media (max-width:400px){
+  body{font-size:19px;}
+  .qa-q,.mini-list li,.dimension li{font-size:17px;}
+  .qa-a,.answer-block{font-size:17px;}
+}
+
+/* ===================== PRINT ===================== */
+@media print{
+  .topbar,.sidenav,.overlay,#toTop{display:none !important;}
+  .layout{padding:0;}
+  .card{box-shadow:none; border:1px solid #ddd; page-break-inside:avoid;}
+  body{background:#fff; font-size:12pt;}
+  .qa,.gloss-item,.dimension,.activity,.long-q{break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar" id="top">
+  <button class="hamburger" id="menuBtn" aria-label="खोल्नुहोस्" aria-controls="sidenav" aria-expanded="false">☰</button>
+  <div class="brand">
+    <h1>कक्षा १२ सामाजिक — एकाइ ५ · पाठ ५</h1>
+    <span class="brand-sub">अन्तरप्रादेशिक सम्बन्धका आयामहरू</span>
+  </div>
+  <a class="top-link" href="#top">↑ माथि</a>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="layout">
+
+  <!-- ================= SIDE NAVIGATION ================= -->
+  <nav class="sidenav" id="sidenav" aria-label="विषयसूची">
+    <div class="sidenav-head">📑 विषयसूची</div>
+
+    <a class="nav-main" href="#intro">🇳🇵 परिचय</a>
+
+    <a class="nav-main" href="#sec1">📖 खण्ड १ — पारिभाषिक शब्दावली</a>
+
+    <a class="nav-main" href="#sec2">📊 खण्ड २ — कानुनी व्यवस्था</a>
+    <div class="nav-group">
+      <span class="nav-group-title">तालिकाहरू</span>
+      <div class="nav-sub teal">
+        <a href="#law-table"><span class="num">१</span>संवैधानिक व्यवस्था</a>
+        <a href="#council-table"><span class="num">२</span>अन्तरप्रदेश परिषद्</a>
+      </div>
+    </div>
+
+    <a class="nav-main" href="#sec3">🧠 खण्ड ३ — घोक्ने सुत्रहरू</a>
+    <div class="nav-sub amber">
+      <a href="#m1"><span class="num">१</span>सह-सह-स</a>
+      <a href="#m2"><span class="num">२</span>प्र-गृ-अ-मु</a>
+      <a href="#m3"><span class="num">३</span>धारा सुत्र</a>
+      <a href="#m4"><span class="num">४</span>सा-आ-वा-का</a>
+    </div>
+
+    <a class="nav-main" href="#sec4">🌐 खण्ड ४ — ४ मुख्य आयाम</a>
+    <div class="nav-sub rose">
+      <a href="#dim1"><span class="num">१</span>सामाजिक-सांस्कृतिक</a>
+      <a href="#dim2"><span class="num">२</span>आर्थिक</a>
+      <a href="#dim3"><span class="num">३</span>वातावरणीय</a>
+      <a href="#dim4"><span class="num">४</span>कानुनी-प्रशासनिक</a>
+    </div>
+
+    <a class="nav-main" href="#sec5">✍️ खण्ड ५ — क्रियाकलाप समाधान</a>
+    <div class="nav-sub">
+      <a href="#act1"><span class="num">१</span>परिषद् गठन</a>
+      <a href="#act2"><span class="num">२</span>साझा नदी</a>
+      <a href="#act3"><span class="num">३</span>नागरिक जीवन</a>
+      <a href="#act4"><span class="num">४</span>व्यापार अवरोध</a>
+    </div>
+
+    <a class="nav-main" href="#sec6">📝 खण्ड ६ — अभ्यास समाधान</a>
+    <div class="nav-sub green">
+      <a href="#ex-k"><span class="num">क</span>अवधारणा</a>
+      <a href="#ex-kh"><span class="num">ख</span>कानुनी औचित्य</a>
+      <a href="#ex-g"><span class="num">ग</span>परिषद्</a>
+      <a href="#ex-gh"><span class="num">घ</span>स्रोत नीति</a>
+      <a href="#ex-ng"><span class="num">ङ</span>सम्बन्ध सुदृढ</a>
+    </div>
+
+    <a class="nav-main" href="#sec7">🎯 खण्ड ७ — NEB प्रश्नोत्तर</a>
+    <div class="nav-sub teal">
+      <a href="#neb1"><span class="num">१</span>१ अङ्क</a>
+      <a href="#neb5"><span class="num">५</span>५ अङ्क</a>
+      <a href="#neb8"><span class="num">८</span>८ अङ्क</a>
+    </div>
+
+    <div class="nav-note">
+      💡 जुनसुकै शीर्षकमा क्लिक गर्नुहोस् — सिधै त्यही भागमा पुग्नुहुनेछ।
+    </div>
+  </nav>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="content">
+
+    <!-- ================= INTRO ================= -->
+    <article class="card intro" id="intro">
+      <div class="card-head">
+        <span class="pill">Study Capsule</span>
+      </div>
+      <h2>📌 एकाइ ५: भूगोल र सामाजिक जीवन — पाठ ५</h2>
+      <p class="lead" style="font-size:22px; color:#4c1d95; font-weight:800;">अन्तरप्रादेशिक सम्बन्धका आयामहरू</p>
+
+      <div class="info-banner">
+        <strong>अध्ययन निर्देशिका:</strong> यो शैक्षिक क्याप्सुल कक्षा १२ सामाजिक अध्ययनको <strong>एकाइ ५ (भूगोल र सामाजिक जीवन) अन्तर्गतको पाठ ५ ("अन्तरप्रादेशिक सम्बन्धका आयामहरू")</strong> को पूर्ण, अद्यावधिक र परीक्षा-उपयोगी अध्ययन सामग्री हो। यसमा नेपालको संविधानका व्यवस्था (भाग ५, भाग २०, धारा २३२, २३४, २३६), अन्तरप्रदेश परिषद्को संरचना, अन्तरसम्बन्धका मुख्य ४ आयामहरू, सुत्रत्मक घोक्ने बुँदा, पाठ्यपुस्तकका सम्पूर्ण क्रियाकलापहरू, अभ्यासका प्रश्नोत्तर र बोर्ड परीक्षा विशेष नमुना उत्तर समेटिएको छ।
+      </div>
+    </article>
+
+    <!-- ================= SECTION 1: GLOSSARY ================= -->
+    <article class="card c1" id="sec1">
+      <div class="card-head">
+        <span class="pill">खण्ड १</span>
+      </div>
+      <h2>📖 पारिभाषिक शब्दावली (Key Glossary)</h2>
+      <p class="lead">परीक्षामा प्रायः सोधिने मुख्य ६ शब्दहरू — छोटो र स्पष्ट परिभाषासहित।</p>
+
+      <div class="glossary">
+
+        <div class="gloss-item">
+          <div class="gloss-no">१</div>
+          <div>
+            <span class="gloss-term">अन्तरप्रादेशिक सम्बन्ध</span>
+            <p class="gloss-def">सङ्घीय शासन प्रणालीमा एक प्रदेशले अर्को प्रदेशसँग सामाजिक, सांस्कृतिक, आर्थिक, वातावरणीय, कानुनी र प्रशासनिक क्षेत्रमा कायम गर्ने सुमधुर सम्बन्ध, आपसी सहयोग र सहकार्यलाई <strong>अन्तरप्रादेशिक सम्बन्ध</strong> भनिन्छ।</p>
+          </div>
+        </div>
+
+        <div class="gloss-item">
+          <div class="gloss-no">२</div>
+          <div>
+            <span class="gloss-term">सहकारिता, सहअस्तित्व र समन्वय</span>
+            <p class="gloss-def">नेपालको संविधानको धारा २३२ बमोजिम सङ्घ, प्रदेश र स्थानीय तहबिचको सम्बन्ध सञ्चालन हुने मुख्य तीन मार्गदर्शन सिद्धान्तहरू।</p>
+          </div>
+        </div>
+
+        <div class="gloss-item">
+          <div class="gloss-no">३</div>
+          <div>
+            <span class="gloss-term">अन्तरप्रदेश परिषद्</span>
+            <p class="gloss-def">नेपालको संविधानको धारा २३४ अनुसार सङ्घ र प्रदेशबिच तथा प्रदेश-प्रदेशबिच उत्पन्न राजनीतिक एवं साधन-स्रोत उपयोगसम्बन्धी विवाद समाधान गर्न प्रधानमन्त्रीको अध्यक्षतामा गठित संवैधानिक संयन्त्र।</p>
+          </div>
+        </div>
+
+        <div class="gloss-item">
+          <div class="gloss-no">४</div>
+          <div>
+            <span class="gloss-term">अन्तरप्रदेश व्यापार स्वतन्त्रता</span>
+            <p class="gloss-def">संविधानको धारा २३६ अनुसार कुनै पनि प्रदेश वा स्थानीय तहबाट अर्को प्रदेश वा स्थानीय तहको क्षेत्रमा हुने वस्तु तथा सेवाको ओसारपसार र विस्तारमा कुनै बाधा अवरोध गर्न, कर/शुल्क लगाउन वा भेदभाव गर्न नपाइने संवैधानिक ग्यारेन्टी।</p>
+          </div>
+        </div>
+
+        <div class="gloss-item">
+          <div class="gloss-no">५</div>
+          <div>
+            <span class="gloss-term">प्रादेशिक अन्तरनिर्भरता</span>
+            <p class="gloss-def">भौगोलिक, प्राकृतिक र आर्थिक दृष्टिले कुनै पनि प्रदेश एक्लै पूर्ण आत्मनिर्भर हुन नसक्ने भएकाले आफ्ना आवश्यकता परिपूर्तिका लागि एक-अर्का प्रदेशमा निर्भर रहने अवस्था।</p>
+          </div>
+        </div>
+
+        <div class="gloss-item">
+          <div class="gloss-no">६</div>
+          <div>
+            <span class="gloss-term">साझा जलस्रोत व्यवस्थापन</span>
+            <p class="gloss-def">दुई वा सोभन्दा बढी प्रदेश भएर बग्ने नदीहरू (जस्तै: कोशी, गण्डकी, कर्णाली) को खानेपानी, सिँचाइ र जलविद्युत् उत्पादनमा वातावरणीय सन्तुलन कायम गर्दै गरिने न्यायोचित उपयोग र सहकार्य।</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ================= SECTION 2: LAW & COUNCIL TABLES ================= -->
+    <article class="card c2" id="sec2">
+      <div class="card-head">
+        <span class="pill">खण्ड २</span>
+      </div>
+      <h2>📊 कानुनी व्यवस्था र सङ्घीय संरचना</h2>
+      <p class="lead">संविधानका मुख्य धाराहरू र अन्तरप्रदेश परिषद्को संरचना एकै नजरमा।</p>
+
+      <h3 class="sect" id="law-table">
+        <span>संवैधानिक व्यवस्थाहरू</span>
+        <span class="marks">धारा २३२–२३६</span>
+      </h3>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:32%;">संवैधानिक व्यवस्था</th>
+              <th style="width:22%;">धारा / भाग</th>
+              <th>मुख्य विषयवस्तु तथा संवैधानिक मर्म</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sec-name">राज्यको संरचना र अन्तरसम्बन्ध</td>
+              <td>भाग ५ र भाग २०</td>
+              <td>सङ्घ, प्रदेश र स्थानीय तहबिचको अधिकार बाँडफाँड र अन्तरसम्बन्धको खाका।</td>
+            </tr>
+            <tr>
+              <td class="sec-name">सम्बन्धका मार्गदर्शन सिद्धान्त</td>
+              <td class="hl">धारा २३२</td>
+              <td>सङ्घ, प्रदेश र स्थानीय तहबिचको सम्बन्ध <strong>सहकारिता, सहअस्तित्व र समन्वय</strong>को सिद्धान्तमा आधारित हुने।</td>
+            </tr>
+            <tr>
+              <td class="sec-name">अन्तरप्रदेश परिषद्</td>
+              <td class="hl">धारा २३४</td>
+              <td>सङ्घ र प्रदेशबिच तथा प्रदेशहरूबिच उत्पन्न राजनीतिक तथा साधन स्रोत उपयोग विवाद समाधान गर्ने संयन्त्र।</td>
+            </tr>
+            <tr>
+              <td class="sec-name">प्रदेश-प्रदेशबिचको कानुनी सहयोग</td>
+              <td class="hl">धारा २३३</td>
+              <td>एक प्रदेशले अर्को प्रदेशको कानुनी व्यवस्था, न्यायिक निर्णय, सूचना आदानप्रदान र बासिन्दालाई समान सुरक्षा र सुविधा दिनुपर्ने।</td>
+            </tr>
+            <tr>
+              <td class="sec-name">अन्तरप्रदेश व्यापार स्वतन्त्रता</td>
+              <td class="hl">धारा २३६</td>
+              <td>एक प्रदेशबाट अर्को प्रदेशमा हुने वस्तु वा सेवाको ढुवानी, व्यापार र विस्तारमा कुनै कर, शुल्क वा अवरोध लगाउन नपाइने।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sect" id="council-table">
+        <span>अन्तरप्रदेश परिषद्को संरचना</span>
+        <span class="marks">धारा २३४</span>
+      </h3>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:28%;">पद / भूमिका</th>
+              <th style="width:32%;">पदाधिकारी</th>
+              <th>कार्य तथा अधिकार क्षेत्र</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sec-name">अध्यक्ष (Chairperson)</td>
+              <td class="hl"><strong>प्रधानमन्त्री</strong></td>
+              <td>परिषद्को बैठक बोलाउने, अध्यक्षता गर्ने र निर्णय प्रमाणित गर्ने।</td>
+            </tr>
+            <tr>
+              <td class="sec-name">सदस्य (Member)</td>
+              <td><strong>नेपाल सरकारका गृहमन्त्री</strong></td>
+              <td>सुरक्षा, कानुनी समन्वय र प्रशासनिक विवादमा राय दिने।</td>
+            </tr>
+            <tr>
+              <td class="sec-name">सदस्य (Member)</td>
+              <td><strong>नेपाल सरकारका अर्थमन्त्री</strong></td>
+              <td>वित्तीय हस्तान्तरण, कर प्रणाली र स्रोत बाँडफाँडमा समन्वय गर्ने।</td>
+            </tr>
+            <tr>
+              <td class="sec-name">सदस्यहरू (Members)</td>
+              <td><strong>सम्बन्धित प्रदेशका मुख्यमन्त्रीहरू</strong></td>
+              <td>प्रदेशका समस्या, योजना र अन्तरप्रादेशिक विवाद प्रस्तुत गर्ने।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ================= SECTION 3: MNEMONICS ================= -->
+    <article class="card c3" id="sec3">
+      <div class="card-head">
+        <span class="pill">खण्ड ३</span>
+      </div>
+      <h2>🧠 सुत्रत्मक घोक्ने बुँदाहरू</h2>
+      <p class="lead">ठुला तथ्याङ्क र धाराहरू कण्ठ गर्न सजिलो बनाउने छोटा सुत्रहरू।</p>
+
+      <div class="mnemonic" data-label="सुत्र १" id="m1">
+        <h4>संवैधानिक मार्गदर्शन सिद्धान्त (धारा २३२)</h4>
+        <div class="formula">सह – सह – स</div>
+        <ul>
+          <li><strong>सह (सहकारिता — Cooperation):</strong> आपसमा मिलेर काम गर्ने।</li>
+          <li><strong>सह (सहअस्तित्व — Coexistence):</strong> एक-अर्काको अस्तित्वलाई स्वीकार र सम्मान गर्ने।</li>
+          <li><strong>स (समन्वय — Coordination):</strong> योजना र नीतिमा तालमेल मिलाउने।</li>
+        </ul>
+      </div>
+
+      <div class="mnemonic" data-label="सुत्र २" id="m2">
+        <h4>अन्तरप्रदेश परिषद् संरचना (धारा २३४)</h4>
+        <div class="formula">प्र – गृ – अ – मु</div>
+        <ul>
+          <li><strong>प्र (प्रधानमन्त्री):</strong> अध्यक्ष</li>
+          <li><strong>गृ (गृहमन्त्री):</strong> सदस्य</li>
+          <li><strong>अ (अर्थमन्त्री):</strong> सदस्य</li>
+          <li><strong>मु (मुख्यमन्त्रीहरू):</strong> सदस्य</li>
+        </ul>
+      </div>
+
+      <div class="mnemonic" data-label="सुत्र ३" id="m3">
+        <h4>संवैधानिक धारा सम्झिने सुत्र</h4>
+        <div class="formula">२३२ – २३३ – २३४ – २३६</div>
+        <ul>
+          <li><strong>धारा २३२:</strong> सम्बन्धका ३ सिद्धान्त (सहकारिता, सहअस्तित्व, समन्वय)</li>
+          <li><strong>धारा २३३:</strong> प्रदेशबिच कानुनी/न्यायिक सहयोग र समान व्यवहार</li>
+          <li><strong>धारा २३४:</strong> अन्तरप्रदेश परिषद् गठन र विवाद समाधान</li>
+          <li><strong>धारा २३६:</strong> अन्तरप्रदेश व्यापारमा कर/अवरोध निषेध (स्वतन्त्र व्यापार)</li>
+        </ul>
+      </div>
+
+      <div class="mnemonic" data-label="सुत्र ४" id="m4">
+        <h4>अन्तरसम्बन्धका ४ मुख्य आयामहरू</h4>
+        <div class="formula">सा – आ – वा – का</div>
+        <ul>
+          <li><strong>सा (सामाजिक-सांस्कृतिक):</strong> विवाहवारी, भाइचारा, चाडपर्वमा सहभागिता।</li>
+          <li><strong>आ (आर्थिक):</strong> व्यापार, श्रम, लगानी, खाद्यान्न र औद्योगिकीकरण।</li>
+          <li><strong>वा (वातावरणीय):</strong> कार्बन सन्तुलन, जलाधार संरक्षण, नदी/वन जोगाउने।</li>
+          <li><strong>का (कानुनी तथा प्रशासनिक):</strong> फैसला कार्यान्वयन, सुरक्षा र सूचना आदानप्रदान।</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ================= SECTION 4: DIMENSIONS ================= -->
+    <article class="card c4" id="sec4">
+      <div class="card-head">
+        <span class="pill">खण्ड ४</span>
+      </div>
+      <h2>🌐 अन्तरप्रादेशिक सम्बन्धका ४ मुख्य आयामहरू</h2>
+      <p class="lead">प्रत्येक आयामको विस्तृत व्याख्या — उदाहरणसहित।</p>
+
+      <!-- Dim 1 -->
+      <div class="dimension" id="dim1">
+        <div class="dim-head">
+          <span class="dim-num">१</span>
+          <h3 class="dim-title">सामाजिक-सांस्कृतिक अन्तरसम्बन्ध</h3>
+        </div>
+        <ul>
+          <li><strong>नागरिकहरूको निर्बाध आवतजावत:</strong> कुनै पनि प्रदेशका नागरिक अर्को प्रदेशमा बिना रोकटोक घुम्न, बस्न र रोजगारी गर्न पाउने।</li>
+          <li><strong>वैवाहिक तथा सामाजिक सम्बन्ध:</strong> पहाड, हिमाल र तराईका प्रदेशहरूबिच वैवाहिक सम्बन्ध (रोटी-बेटीको सम्बन्ध) ले सामाजिक एकता सुदृढ बनाएको छ।</li>
+          <li><strong>सांस्कृतिक आदानप्रदान:</strong> तराईको छठमा पहाडी समुदाय र पहाडको जात्रा/गौरा/ल्होसारमा तराईका समुदायको सहभागिताले बहुसांस्कृतिक सहिष्णुता कायम गर्दछ।</li>
+          <li><strong>विपद्मा मानवीय सहयोग:</strong> कुनै प्रदेशमा बाढी, पहिरो वा भूकम्प जाँदा अन्य प्रदेशका सरकार र नागरिकहरूले राहत र पुनर्स्थापनामा सहयोग पुर्‍याउनु।</li>
+        </ul>
+      </div>
+
+      <!-- Dim 2 -->
+      <div class="dimension" id="dim2">
+        <div class="dim-head">
+          <span class="dim-num">२</span>
+          <h3 class="dim-title">आर्थिक अन्तरसम्बन्ध</h3>
+        </div>
+        <ul>
+          <li><strong>अन्तरप्रादेशिक व्यापार:</strong> मधेश र लुम्बिनी प्रदेशबाट अन्न र गहुँ पहाडी प्रदेशमा जाने; पहाडी प्रदेश (कोशी, बागमती, गण्डकी) बाट फलफूल, चिया, अलैँची र तरकारी तराईमा जाने।</li>
+          <li><strong>ऊर्जा र जलस्रोतको बाँडफाँड:</strong> कर्णाली र गण्डकी प्रदेशमा उत्पादित जलविद्युत् बागमती र मधेश प्रदेशका उद्योगहरूमा खपत हुनु।</li>
+          <li><strong>श्रम र लगानीको परिचालन:</strong> एक प्रदेशका उद्योगीहरूले अर्को प्रदेशमा (जस्तै: विशेष आर्थिक क्षेत्र SEZ मा) लगानी गर्ने र श्रमिकहरूले निर्बाध काम गर्न पाउने।</li>
+          <li><strong>पर्यटन प्रवर्धन:</strong> पोखरा (गण्डकी), लुम्बिनी (लुम्बिनी), जनकपुर (मधेश) र काठमाडौँ (बागमती) बिच पर्यटकीय परिपथ (Tourism Circuit) निर्माण गरी लाभ लिने।</li>
+        </ul>
+      </div>
+
+      <!-- Dim 3 -->
+      <div class="dimension" id="dim3">
+        <div class="dim-head">
+          <span class="dim-num">३</span>
+          <h3 class="dim-title">वातावरण संरक्षण र संवर्धन</h3>
+        </div>
+        <ul>
+          <li><strong>उपल्लो र तल्लो तटीय सम्बन्ध:</strong> कर्णाली, गण्डकी र कोशीका उपल्ला पहाडी क्षेत्रले वनजङ्गल जोगाउँदा तल्लो तराईका मधेश र लुम्बिनी प्रदेश बाढी र कटानबाट जोगिनु।</li>
+          <li><strong>कार्बन उत्सर्जन र सन्तुलन:</strong> सहरी र औद्योगिक प्रदेशहरू (बागमती, मधेश) ले उत्सर्जन गर्ने कार्बनलाई कर्णाली र सुदूरपश्चिमका घनघोर वनजङ्गलले सोसेर वातावरणीय सन्तुलन मिलाउनु।</li>
+          <li><strong>साझा जैविक विविधता र संरक्षण क्षेत्र:</strong> राष्ट्रिय निकुञ्ज र वन्यजन्तु कोरिडोर (जस्तै: चितवन-पार्स-बाँके-बर्दिया) व्यवस्थापनमा प्रदेशहरूबिच सहकार्य।</li>
+        </ul>
+      </div>
+
+      <!-- Dim 4 -->
+      <div class="dimension" id="dim4">
+        <div class="dim-head">
+          <span class="dim-num">४</span>
+          <h3 class="dim-title">कानुनी, प्रशासनिक र विवाद समाधान</h3>
+        </div>
+        <ul>
+          <li><strong>समान सुरक्षा र अधिकार:</strong> एक प्रदेशका बासिन्दाले अर्को प्रदेशमा जाँदा त्यहीँका नागरिक सरह कानुनी सुरक्षा र सुविधा प्राप्त गर्ने।</li>
+          <li><strong>न्यायिक तथा प्रशासकीय निर्णय कार्यान्वयन:</strong> एक प्रदेशको अदालत वा प्रशासनिक निकायको निर्णय कार्यान्वयनमा अर्को प्रदेशले सहयोग गर्नुपर्ने।</li>
+          <li><strong>अन्तरप्रदेश परिषद्मार्फत विवाद समाधान:</strong> स्रोत साधनको उपयोग वा सीमा विवाद उत्पन्न भएमा संवैधानिक संयन्त्रमार्फत वार्ता र सहमतिबाट समाधान गर्ने।</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ================= SECTION 5: ACTIVITIES ================= -->
+    <article class="card c5" id="sec5">
+      <div class="card-head">
+        <span class="pill">खण्ड ५</span>
+      </div>
+      <h2>✍️ पाठ्यपुस्तकका क्रियाकलापहरूको समाधान</h2>
+      <p class="lead">चार क्रियाकलापको नमुना उत्तर।</p>
+
+      <!-- Activity 1 -->
+      <div class="activity" id="act1">
+        <p class="activity-title"><span class="act-badge">क्रि. १</span>अन्तरप्रदेश परिषद्को गठन प्रक्रिया र यसको कार्यक्षेत्र सम्बन्धमा संक्षिप्त विवरण प्रस्तुत गर्नुहोस्।</p>
+        <div class="answer-block">
+          <p><strong>संवैधानिक आधार:</strong> नेपालको संविधानको <strong>धारा २३४</strong> अनुसार गठित।</p>
+          <p><strong>गठन प्रक्रिया:</strong></p>
+          <ol>
+            <li><strong>अध्यक्ष:</strong> सम्माननीय प्रधानमन्त्री</li>
+            <li><strong>सदस्य:</strong> माननीय गृहमन्त्री (नेपाल सरकार)</li>
+            <li><strong>सदस्य:</strong> माननीय अर्थमन्त्री (नेपाल सरकार)</li>
+            <li><strong>सदस्यहरू:</strong> सातै प्रदेशका माननीय मुख्यमन्त्रीहरू</li>
+          </ol>
+          <p><strong>मुख्य कार्यहरू:</strong></p>
+          <ul>
+            <li>सङ्घ र प्रदेशबिच तथा प्रदेश-प्रदेशबिच उत्पन्न राजनीतिक विवाद समाधान गर्ने।</li>
+            <li>प्राकृतिक साधन-स्रोत (जलस्रोत, वन, खानी) को उपयोग र राजस्व बाँडफाँडसम्बन्धी मतभेद सुल्झाउने।</li>
+            <li>सङ्घीयता कार्यान्वयनमा देखिएका कानुनी र प्रशासनिक जटिलताहरू निराकरण गर्ने।</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Activity 2 -->
+      <div class="activity" id="act2">
+        <p class="activity-title"><span class="act-badge">क्रि. २</span>आफू बसेको प्रदेश र छिमेकी प्रदेशको साझा नदी तथा वातावरण संरक्षणबाट हुने फाइदा र चुनौतीको तालिका बनाउनुहोस्।</p>
+        <div class="answer-block">
+          <p><em>(बागमती प्रदेश र मधेश प्रदेशबिचको साझा नदी 'बागमती नदी' तथा जलाधार संरक्षणको उदाहरण)</em></p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:60px;">क्र.</th>
+                  <th>फाइदाहरू (Benefits)</th>
+                  <th>चुनौतीहरू (Challenges)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>१</td>
+                  <td><strong>बाढी र कटान नियन्त्रण:</strong> बागमतीको माथिल्लो तटीय क्षेत्र (चोभार/चुरे) मा वृक्षारोपण गर्दा तल्लो मधेश प्रदेशमा बाढी र मरुभूमीकरण रोकिन्छ।</td>
+                  <td><strong>प्रदूषण नियन्त्रणमा कठिनाई:</strong> उपत्यकाको फोहोर र ढल नदीमा मिसाउँदा तल्लो क्षेत्रमा स्वच्छ पानीको अभाव हुनु।</td>
+                </tr>
+                <tr>
+                  <td>२</td>
+                  <td><strong>सिँचाइ र कृषि उत्पादन:</strong> जलाधार जोगिँदा मधेश प्रदेशका रौतहट र सर्लाहीका खेतहरूमा वर्षैभरि सिँचाइ सुविधा पुग्छ।</td>
+                  <td><strong>चुरे दोहन र बालुवा/गिट्टी उत्खनन:</strong> माथिल्लो क्षेत्रमा अवैध ढुङ्गा-गिट्टी दोहनले नदीको बहाव बिग्रिनु।</td>
+                </tr>
+                <tr>
+                  <td>३</td>
+                  <td><strong>जैविक विविधता र पर्यटन:</strong> साझा जलाधार जोगिँदा सिमसार क्षेत्र, वन्यजन्तु र जलपर्यटनको प्रवर्धन हुन्छ।</td>
+                  <td><strong>स्रोत उपयोगमा विवाद:</strong> जलस्रोतको उपयोग र बजेट विनियोजनमा दुई प्रदेशबिच समन्वयको कमी हुनु।</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity 3 -->
+      <div class="activity" id="act3">
+        <p class="activity-title"><span class="act-badge">क्रि. ३</span>अन्तरप्रादेशिक सम्बन्धले सामान्य नागरिकको दैनिक जीवनमा ल्याउने सहजतासम्बन्धी नमुना प्रतिवेदन।</p>
+        <div class="answer-block">
+          <p><strong>अध्ययन प्रतिवेदन: "अन्तरप्रादेशिक सम्बन्ध र नागरिकको दैनिक जीवन"</strong></p>
+          <p><strong>१. परिचय:</strong> सङ्घीय नेपालमा अन्तरप्रादेशिक सम्बन्ध केवल सरकारी तहमा मात्र सीमित नभई आम नागरिकको दैनिक जीवनयापन, व्यापार, शिक्षा र रोजगारीसँग प्रत्यक्ष जोडिएको छ।</p>
+          <p><strong>२. नागरिक जीवनमा आएका सहजताहरू:</strong></p>
+          <ul>
+            <li><strong>अबाध आवतजावत र रोजगारी:</strong> धारा २३६ को ग्यारेन्टीका कारण कर्णालीका युवा बागमतीमा आएर व्यापार गर्न वा मधेशका कृषकले लुम्बिनीमा उत्पादन बिक्री गर्न कुनै अतिरिक्त कर तिर्नुपर्दैन।</li>
+            <li><strong>खाद्य सुरक्षा र आपूर्ति सुलभता:</strong> तराईका प्रदेशबाट खाद्यान्न र पहाडी प्रदेशबाट तरकारी/फलफूलको निर्बाध आपूर्तिले उपभोग्य वस्तुको मूल्य नियन्त्रणमा सहयोग पुगेको छ।</li>
+            <li><strong>स्वास्थ्य र उच्च शिक्षामा पहुँच:</strong> सुदूरपश्चिम र कर्णालीका नागरिकहरू बागमती वा गण्डकी प्रदेशका ठुला अस्पताल र विश्वविद्यालयमा सेवा लिन सहजै आउन सकेका छन्।</li>
+          </ul>
+          <p><strong>३. निष्कर्ष:</strong> अतः प्रदेशहरूबिचको आपसी सद्भाव र खुल्ला व्यापारिक वातावरणले नागरिकको जीवनस्तर उकास्न र राष्ट्रिय एकता कायम राख्न महत्त्वपूर्ण भूमिका खेलेको छ।</p>
+        </div>
+      </div>
+
+      <!-- Activity 4 -->
+      <div class="activity" id="act4">
+        <p class="activity-title"><span class="act-badge">क्रि. ४</span>अन्तरप्रादेशिक व्यापारमा देखा पर्ने सम्भावित अवरोध र समाधानका उपायहरू (५-बुँदे कार्यपत्र)।</p>
+        <div class="answer-block">
+          <p><strong>कार्यपत्र: अन्तरप्रादेशिक व्यापार र समाधानका उपायहरू</strong></p>
+          <p><strong>मुख्य ५ बुँदागत विश्लेषण:</strong></p>
+          <ol>
+            <li><strong>संवैधानिक मर्मको पूर्ण पालना:</strong> संविधानको धारा २३६ अनुसार कुनै पनि प्रदेश वा स्थानीय तहले अन्तरप्रादेशिक मालसामान ओसारपसारमा दोहोरो कर वा गैरकानुनी दोहोरो शुल्क उठाउन पूर्ण रूपमा प्रतिबन्ध लगाउनुपर्छ।</li>
+            <li><strong>अन्तरप्रादेशिक यातायात पूर्वाधार विकास:</strong> पुष्पलाल मध्यपहाडी लोक मार्ग, मदन भण्डारी राजमार्ग र हुलाकी राजमार्ग जस्ता सडक पूर्वाधार द्रुत गतिमा सम्पन्न गरी ढुवानी लागत घटाउनुपर्छ।</li>
+            <li><strong>गुणस्तर मापदण्डमा एकरूपता:</strong> कृषि तथा औद्योगिक उत्पादनको गुणस्तर र क्वारेन्टाइन (Quarantine) परीक्षणका लागि सातै प्रदेशमा समान कानुनी मापदण्ड लागू गरिनुपर्छ।</li>
+            <li><strong>सूचना प्रविधि र बजार सञ्जालको एकीकरण:</strong> कुन प्रदेशमा कुन खाद्यान्न वा उत्पादन बढी छ भन्नेबारे डिजिटल बजार सूचना प्रणाली (Digital Market Information System) सञ्चालन गरी आपूर्ति मिलाउनुपर्छ।</li>
+            <li><strong>अन्तरप्रदेश आर्थिक साझेदारी:</strong> दुई वा सोभन्दा बढी प्रदेशहरू मिलेर साझा औद्योगिक क्षेत्र वा जलविद्युत् आयोजनामा संयुक्त लगानी गर्ने नीति लिनुपर्छ।</li>
+          </ol>
+        </div>
+      </div>
+    </article>
+
+    <!-- ================= SECTION 6: EXERCISES ================= -->
+    <article class="card c1" id="sec6">
+      <div class="card-head">
+        <span class="pill">खण्ड ६</span>
+      </div>
+      <h2>📝 पाठ्यपुस्तकका अभ्यासहरूको समाधान</h2>
+      <p class="lead">पाँच अभ्यास प्रश्नको मॉडल उत्तर — बोर्ड ढाँचामा।</p>
+
+      <!-- क -->
+      <div class="qa" id="ex-k">
+        <p class="qa-q"><span class="qnum">(क)</span>अन्तरप्रदेशको अवधारणा स्पष्ट पार्नुहोस्।</p>
+        <div class="qa-a">
+          <span class="lbl">उत्तर</span>
+          <p>सङ्घीय शासन प्रणालीमा राज्यलाई विभिन्न प्रशासनिक तथा राजनीतिक इकाईका रूपमा विभाजन गरिएका प्रदेशहरूबिच कायम हुने आपसी सम्बन्ध, सहयोग, सहकार्य र अन्तरनिर्भरताको समग्र रूपलाई <strong>अन्तरप्रदेशको अवधारणा</strong> भनिन्छ। कुनै पनि प्रदेश आफ्नो साधन-स्रोत, जनशक्ति र भूगोलका दृष्टिले पूर्ण आत्मनिर्भर हुन सक्दैन। तसर्थ, आफ्ना नागरिकहरूलाई सर्वसुलभ सेवा पुर्‍याउन, आर्थिक समृद्धि हासिल गर्न र भौगोलिक/सांस्कृतिक विविधताको लाभ लिन प्रदेशहरूबिच सामाजिक, आर्थिक, वातावरणीय र कानुनी तहमा परस्पर सम्बन्ध कायम हुनु नै अन्तरप्रदेशको मूल अवधारणा हो।</p>
+        </div>
+      </div>
+
+      <!-- ख -->
+      <div class="long-q" id="ex-kh">
+        <p class="q-title">(ख) नेपालमा अन्तरप्रादेशिक सम्बन्धमा भएको कानुनी व्यवस्थाको औचित्यलाई पुष्टि गर्नुहोस्।</p>
+
+        <p class="lead-block"><strong>📌 १. परिचय:</strong> नेपालको संविधानको भाग ५, भाग २० तथा धारा २३२, २३३, २३४ र २३६ मा अन्तरप्रादेशिक सम्बन्धका स्पष्ट कानुनी व्यवस्थाहरू गरिएका छन्।</p>
+
+        <span class="block-head">📊 २. कानुनी व्यवस्थाको औचित्य</span>
+        <ol class="mini-list">
+          <li><strong>सङ्घीयताको सफल कार्यान्वयन:</strong> सहकारिता, सहअस्तित्व र समन्वय (धारा २३२) को सिद्धान्तले सङ्घ र प्रदेशबिच हुन सक्ने अधिकारको द्वन्द्व रोक्छ।</li>
+          <li><strong>द्वन्द्व र विवादको संवैधानिक समाधान:</strong> धारा २३४ को अन्तरप्रदेश परिषद्ले सीमा, जलस्रोत र बजेट बाँडफाँडमा आउने मतभेदलाई वार्ताद्वारा हल गर्छ।</li>
+          <li><strong>एकल राष्ट्रिय बजार निर्माण:</strong> धारा २३६ ले अन्तरप्रदेश व्यापारमा कर र अवरोध लगाउन निषेध गरी मुलुकभर वस्तु र सेवाको निर्बाध प्रवाह सुनिश्चित गर्छ।</li>
+          <li><strong>कानुनी र न्यायिक एकरूपता:</strong> धारा २३३ ले एक प्रदेशको कानुनी/न्यायिक निर्णय अर्को प्रदेशमा कार्यान्वयन गराई नागरिकलाई जहाँ पनि समान सुरक्षा र सुविधा प्रदान गर्छ।</li>
+        </ol>
+
+        <p class="conclusion"><strong>🎯 ३. निष्कर्ष:</strong> अतः नेपाल जस्तो बहुसांस्कृतिक र विषम भौगोलिक बनावट भएको देशमा राष्ट्रिय अखण्डता, आर्थिक समृद्धि र सामाजिक सद्भाव कायम राख्न अन्तरप्रादेशिक कानुनी व्यवस्था अत्यन्त औचित्यपूर्ण छ।</p>
+      </div>
+
+      <!-- ग -->
+      <div class="long-q" id="ex-g">
+        <p class="q-title">(ग) अन्तरप्रदेश परिषद् किन आवश्यक छ, स्पष्ट पार्नुहोस्।</p>
+
+        <p class="lead-block">नेपालको संविधानको धारा २३४ मा प्रधानमन्त्रीको अध्यक्षतामा गृहमन्त्री, अर्थमन्त्री र सातै प्रदेशका मुख्यमन्त्रीहरू रहने गरी <strong>अन्तरप्रदेश परिषद्</strong>को व्यवस्था गरिएको छ। यसको आवश्यकता निम्नलिखित कारणहरूले गर्दा छ:</p>
+
+        <ol class="mini-list">
+          <li><strong>साधन-स्रोतको विवाद सुल्झाउन:</strong> प्रदेशहरूबिच जलस्रोत (नदी), वनजङ्गल र खानीको उपयोग तथा राजस्व बाँडफाँडमा देखिने विवाद समाधान गर्न।</li>
+          <li><strong>राजनीतिक तथा प्रशासनिक समन्वय कायम गर्न:</strong> सङ्घीय सरकार र प्रदेश सरकारहरूबिच नीतिगत समन्वय र तालमेल मिलाउन।</li>
+          <li><strong>सङ्घीयताका जटिलता हटाउन:</strong> नयाँ कानुन निर्माण, कर्मचारी समायोजन र अधिकार क्षेत्रको अस्पष्टता हटाउन।</li>
+          <li><strong>समान र सन्तुलित विकासका लागि:</strong> पछाडि परेका प्रदेशहरूका माग र समस्यालाई प्रधानमन्त्री र अर्थमन्त्रीसमक्ष सोझै राखी बजेट व्यवस्थापन गर्न।</li>
+        </ol>
+      </div>
+
+      <!-- घ -->
+      <div class="long-q" id="ex-gh">
+        <p class="q-title">(घ) प्राकृतिक साधन स्रोतको संरक्षण, संवर्धन र उपयोग नीतिका मुख्य बुँदा उल्लेख गर्नुहोस्।</p>
+
+        <p class="lead-block">नेपालमा प्रदेशहरूबिच साझा प्राकृतिक स्रोत (जलस्रोत, वनजङ्गल, खनिज, जैविक विविधता) को दिगो संरक्षण र उपयोगका लागि निम्न नीतिगत बुँदाहरू अपनाउनुपर्छ:</p>
+
+        <ol class="mini-list">
+          <li><strong>तल्लो र उपल्लो तटीय सन्तुलन (Payment for Ecosystem Services):</strong> उपल्लो क्षेत्रले वनजङ्गल जोगाएर जलाधार संरक्षण गरेबापत तल्लो क्षेत्र (तराई/उद्योग) ले निश्चित योगदान वा लाभको हिस्सा हस्तान्तरण गर्ने।</li>
+          <li><strong>संयुक्त जलाधार व्यवस्थापन:</strong> दुई वा सोभन्दा बढी प्रदेश भएर बग्ने नदीहरूमा संयुक्त जलाधार संरक्षण र बाढी नियन्त्रण आयोजना सञ्चालन गर्ने।</li>
+          <li><strong>चुरे-तराई संरक्षण रणनीति:</strong> चुरे क्षेत्रको विनाश रोक्न बागमती, मधेश, लुम्बिनी र सुदूरपश्चिम प्रदेशले संयुक्त टोली बनाई ढुङ्गा-गिट्टीको अवैध दोहन पूर्ण रोक्ने।</li>
+          <li><strong>दिगो र वातावरणीय प्रभाव मूल्याङ्कन (EIA):</strong> विकास निर्माणका काम गर्दा जैविक विविधता र वातावरणमा पर्ने असरको वस्तुनिष्ठ अध्ययन गरी क्षति न्यून गर्ने।</li>
+        </ol>
+      </div>
+
+      <!-- ङ -->
+      <div class="long-q" id="ex-ng">
+        <p class="q-title">(ङ) प्रादेशिक अन्तरसम्बन्धलाई सबल र प्रगाढ बनाउन के-के उपायहरू अवलम्बन गर्न सकिन्छ? उल्लेख गर्नुहोस्।</p>
+
+        <p class="lead-block">प्रादेशिक अन्तरसम्बन्धलाई सबल, प्रगाढ र नतिजामुखी बनाउन निम्नलिखित उपायहरू अवलम्बन गर्नुपर्छ:</p>
+
+        <ol class="mini-list">
+          <li><strong>संवैधानिक संयन्त्रहरूको नियमित बैठक:</strong> धारा २३४ को अन्तरप्रदेश परिषद्को बैठक नियमित रूपमा बसी उत्पन्न समस्याहरूको तत्काल निकास निकाल्ने।</li>
+          <li><strong>अन्तरप्रादेशिक सडक र सञ्चार सञ्जालको विस्तार:</strong> मध्यपहाडी, हुलाकी र मदन भण्डारी राजमार्गहरू द्रुत गतिमा निर्माण गरी प्रदेशहरूबिच सडक सम्पर्क सुदृढ गर्ने।</li>
+          <li><strong>साझा लगानी र संयुक्त आयोजना:</strong> दुई वा सोभन्दा बढी प्रदेशहरू मिलेर जलविद्युत्, प्राविधिक विश्वविद्यालय वा अन्तरप्रादेशिक बस सेवा सञ्चालन गर्ने।</li>
+          <li><strong>सांस्कृतिक तथा खेलकुद आदानप्रदान:</strong> अन्तरप्रदेश खेलकुद प्रतियोगिता, पर्यटकीय प्रवर्धन र सांस्कृतिक महोत्सवहरू आयोजना गरी जनस्तरमा भाइचारा बढाउने।</li>
+          <li><strong>कर र व्यापारमा सहजीकरण:</strong> संविधानको धारा २३६ विपरीत कुनै पनि प्रदेश वा स्थानीय तहले गैरकानुनी कर वा दोहोरो महसुल नलगाउने प्रतिबद्धता जनाउने।</li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- ================= SECTION 7: NEB Q&A ================= -->
+    <article class="card c2" id="sec7">
+      <div class="card-head">
+        <span class="pill">खण्ड ७</span>
+      </div>
+      <h2>🎯 बोर्ड परीक्षा विशेष नमुना प्रश्नोत्तर</h2>
+      <p class="lead">१, ५ र ८ अङ्कका प्रश्नहरू — बोर्ड ढाँचामा उत्तरकुञ्जी सहित।</p>
+
+      <!-- 1 mark -->
+      <h3 class="sect" id="neb1">
+        <span>अति संक्षिप्त प्रश्नहरू</span>
+        <span class="marks">१ अङ्क</span>
+      </h3>
+
+      <div class="qa">
+        <p class="qa-q"><span class="qnum">१</span>नेपालको संविधानको कुन धारामा अन्तरप्रदेश परिषद्को व्यवस्था गरिएको छ र यसका अध्यक्ष को हुन्छन्?</p>
+        <div class="qa-a">
+          <span class="lbl">उत्तर</span>
+          <p>नेपालको संविधानको <strong>धारा २३४</strong> मा अन्तरप्रदेश परिषद्को व्यवस्था गरिएको छ र यसको अध्यक्ष <strong>सम्माननीय प्रधानमन्त्री</strong> हुन्छन्।</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <p class="qa-q"><span class="qnum">२</span>संविधानको धारा २३६ को मुख्य मर्म के हो?</p>
+        <div class="qa-a">
+          <span class="lbl">उत्तर</span>
+          <p>धारा २३६ को मुख्य मर्म कुनै पनि प्रदेश वा स्थानीय तहबाट अर्को प्रदेश वा स्थानीय तहमा हुने वस्तु वा सेवाको ढुवानी, व्यापार र विस्तारमा <strong>कुनै कर, शुल्क वा बाधा अवरोध लगाउन नपाइने (अन्तरप्रदेश व्यापार स्वतन्त्रता)</strong> हो।</p>
+        </div>
+      </div>
+
+      <!-- 5 mark -->
+      <h3 class="sect" id="neb5">
+        <span>संक्षिप्त प्रश्न</span>
+        <span class="marks">५ अङ्क</span>
+      </h3>
+
+      <div class="long-q">
+        <p class="q-title">अन्तरप्रादेशिक सम्बन्धका मुख्य चार आयामहरूको सङ्क्षिप्त व्याख्या गर्नुहोस्।</p>
+
+        <p class="lead-block"><strong>📌 १. परिचय:</strong> नेपालका सातवटै प्रदेशहरू भौगोलिक, सामाजिक, सांस्कृतिक र आर्थिक रूपमा एक-अर्कामा अन्तरसम्बन्धित छन्।</p>
+
+        <span class="block-head">📊 २. चार आयामहरूको व्याख्या</span>
+        <ol class="mini-list">
+          <li><strong>सामाजिक-सांस्कृतिक आयाम:</strong> नागरिकहरूको बिना रोकटोक आवतजावत, विवाहवारी, सांस्कृतिक आदानप्रदान र विपद्का बेला मानवीय सहयोग।</li>
+          <li><strong>आर्थिक आयाम:</strong> अन्तरप्रदेश व्यापार, कृषि उत्पादकत्वको आदानप्रदान, जलविद्युत् आपूर्ति, लगानी र रोजगार परिचालन।</li>
+          <li><strong>वातावरणीय आयाम:</strong> उपल्लो तटीय क्षेत्रले वन जोगाउँदा तल्लो क्षेत्रमा बाढी नियन्त्रण हुनु, कार्बन सन्तुलन र साझा जैविक विविधता संरक्षण।</li>
+          <li><strong>कानुनी तथा प्रशासनिक आयाम:</strong> न्यायिक फैसला कार्यान्वयनमा सहयोग, सूचना आदानप्रदान र अन्तरप्रदेश परिषद्मार्फत विवाद समाधान।</li>
+        </ol>
+
+        <p class="conclusion"><strong>🎯 ३. निष्कर्ष:</strong> यसरी यी चारै आयामहरूले नेपालको सङ्घीय ढाँचालाई मजबुत बनाई राष्ट्रिय समृद्धि हासिल गर्न मद्दत पुर्‍याउँछन्।</p>
+      </div>
+
+      <!-- 8 mark -->
+      <h3 class="sect" id="neb8">
+        <span>विस्तृत प्रश्न</span>
+        <span class="marks">८ अङ्क · NEB</span>
+      </h3>
+
+      <div class="long-q">
+        <p class="q-title">"सङ्घीय शासन प्रणालीमा प्रदेशहरूबिचको सहकार्य, समन्वय र स्रोतको न्यायोचित बाँडफाँड नै राष्ट्रिय एकताको आधार हो।" — यस भनाइलाई आधार मानी अन्तरप्रादेशिक सम्बन्धका मुख्य चुनौतीहरू र तिनलाई समाधान गरी सम्बन्ध कसिलो बनाउने रणनीतिहरूको विश्लेषणात्मक समीक्षा गर्नुहोस्।</p>
+
+        <p class="lead-block"><strong>📌 १. परिचय:</strong> नेपालको संविधानको धारा २३२ ले सङ्घ, प्रदेश र स्थानीय तहबिचको सम्बन्ध <strong>सहकारिता, सहअस्तित्व र समन्वय</strong>मा आधारित हुने स्पष्ट पारेको छ। विकेन्द्रीकृत शासन व्यवस्थामा प्रदेशहरू आपसमा प्रतिस्पर्धी नभई परिपूरक बनेर अघि बढ्दा मात्र दिगो विकास र समृद्ध नेपालको सपना साकार हुन्छ।</p>
+
+        <div class="flow-diagram">
+          <div class="flow-title">🌐 अन्तरप्रादेशिक सम्बन्ध र सहकार्य</div>
+          <div class="flow-root">अन्तरप्रादेशिक सम्बन्ध सुधार</div>
+          <div class="flow-branches">
+            <div class="flow-col">
+              <span class="flow-col-head">१. मुख्य चुनौतीहरू</span>
+              <ul>
+                <li>स्रोत-साधन र राजस्व बाँडफाँडमा विवाद</li>
+                <li>दोहोरो कर र गैरकानुनी व्यापारिक अवरोध (धारा २३६ उल्लङ्घन)</li>
+              </ul>
+            </div>
+            <div class="flow-col">
+              <span class="flow-col-head">२. अल्पकालीन रणनीति</span>
+              <ul>
+                <li>अन्तरप्रदेश परिषद्को नियमित बैठक र संवाद</li>
+                <li>अवैध प्रादेशिक कर र गैरकानुनी चुङ्गीकर खारेजी</li>
+              </ul>
+            </div>
+            <div class="flow-col">
+              <span class="flow-col-head">३. दीर्घकालीन रणनीति</span>
+              <ul>
+                <li>अन्तरप्रादेशिक साझा लगानी र करिडोर विकास</li>
+                <li>साझा जलाधार र वातावरणीय सेवा भुक्तानी (PES) नीति</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <span class="block-head">📊 २. विषय प्रवेश तथा मुख्य विश्लेषण</span>
+
+        <p style="font-weight:800; color:var(--violet-deep); margin-top:14px;">(क) अन्तरप्रादेशिक सम्बन्धका मुख्य चुनौतीहरू</p>
+        <ol class="mini-list">
+          <li><strong>साधन-स्रोत उपयोग र सीमा विवाद:</strong> जलस्रोत, वनजङ्गल र नदीजन्य पदार्थ (ढुङ्गा, बालुवा) को दोहन र सीमावर्ती क्षेत्रमा विवाद हुनु।</li>
+          <li><strong>संवैधानिक प्रावधानको उल्लङ्घन:</strong> संविधानको धारा २३६ विपरीत केही प्रदेश वा स्थानीय तहले अन्तरप्रदेश ओसारपसार हुने वस्तुमा गैरकानुनी कर वा शुल्क उठाउनु।</li>
+          <li><strong>सञ्चार र पूर्वाधारको कमी:</strong> एक प्रदेशबाट अर्को प्रदेश जोड्ने द्रुतमार्ग र मध्यपहाडी लोकमार्ग समयमै पूरा नहुँदा ढुवानी लागत बढ्नु।</li>
+          <li><strong>संवैधानिक संयन्त्रको निष्क्रियता:</strong> धारा २३४ को अन्तरप्रदेश परिषद्को बैठक नियमित बस्न नसक्नु र निर्णयहरू ढिलो कार्यान्वयन हुनु।</li>
+        </ol>
+
+        <p style="font-weight:800; color:var(--violet-deep); margin-top:16px;">(ख) सम्बन्ध कसिलो बनाउने रणनीतिहरू</p>
+
+        <p style="font-weight:800; color:var(--teal-deep);">अल्पकालीन रणनीतिहरू:</p>
+        <ol class="mini-list">
+          <li><strong>नियमित संवाद र बैठक:</strong> प्रधानमन्त्रीको अध्यक्षतामा रहने अन्तरप्रदेश परिषद्को बैठक कम्तीमा वर्षको दुई पटक अनिवार्य बसी तत्कालका विवाद सल्टाउने।</li>
+          <li><strong>अवैध कर खारेजी:</strong> धारा २३६ विपरीत लगाइएका सबै प्रकारका दोहोरो कर, चुङ्गीकर वा प्रवेश शुल्क तत्काल खारेज गरी खुल्ला व्यापार सुनिश्चित गर्ने।</li>
+          <li><strong>विपद् व्यवस्थापनमा संयुक्त टोली:</strong> बाढी, पहिरो वा महामारीमा नजिकका प्रदेशहरूले तत्काल उद्धार र राहत टोली खटाउने संयन्त्र बनाउने।</li>
+        </ol>
+
+        <p style="font-weight:800; color:var(--teal-deep); margin-top:12px;">दीर्घकालीन रणनीतिहरू:</p>
+        <ol class="mini-list">
+          <li><strong>साझा पूर्वाधार र आर्थिक कोरिडोर:</strong> दुई वा सोभन्दा बढी प्रदेशहरू मिलेर जलविद्युत् आयोजना, प्राविधिक शिक्षालय वा अन्तरप्रदेश व्यापारिक करिडोर निर्माण गर्ने।</li>
+          <li><strong>वातावरणीय सेवा भुक्तानी (PES):</strong> उपल्लो पहाडी प्रदेश (कर्णाली, गण्डकी) ले वनजङ्गल जोगाएबापत तल्लो तराईका प्रदेश (मधेश, लुम्बिनी) ले निश्चित वातावरणीय योगदान रकम उपलब्ध गराउने कानुनी संरचना बनाउने।</li>
+          <li><strong>अन्तरप्रादेशिक सांस्कृतिक र खेलकुद महोत्सव:</strong> हरेक वर्ष घुमाउरो प्रणालीबाट अन्तरप्रदेश खेलकुद र सांस्कृतिक महोत्सव सञ्चालन गरी राष्ट्रिय भावना मजबुत बनाउने।</li>
+        </ol>
+
+        <p class="conclusion"><strong>🎯 ३. निष्कर्ष:</strong> अतः नेपालका सातवटै प्रदेशहरू एकापसमा प्रतिद्वन्द्वी नभई एउटै समृद्ध नेपालका मजबुत खम्बाहरू हुन्। संवैधानिक मर्म अनुसार सहकारिता र समन्वयको भावनाबाट काम गर्दा मात्र समृद्ध, न्यायपूर्ण र एकताबद्ध नेपाल निर्माण गर्न सकिन्छ।</p>
+      </div>
+
+      <div class="tipbox">
+        <h4>💡 परीक्षा सुझाव</h4>
+        <p>१ अङ्कमा सिधा एक-दुई वाक्य (धारा नम्बर सहित), ५ अङ्कमा परिचय + ४ बुँदा + निष्कर्ष, र ८ अङ्कमा ४-चरण ढाँचा (परिचय → चुनौती → रणनीति → निष्कर्ष) अनिवार्य पालना गर्नुहोस्। धारा २३२, २३३, २३४ र २३६ को सही उल्लेखले अङ्क बढाउँछ।</p>
+      </div>
+    </article>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="big">✨ कक्षा १२ सामाजिक — एकाइ ५ · पाठ ५ ✨</div>
+      <div class="small">अन्तरप्रादेशिक सम्बन्धका आयामहरू · पूर्ण अध्ययन क्याप्सुल</div>
+      <div class="small" style="margin-top:10px; font-size:15px;">
+        धारा कण्ठ गर्नुहोस् → आयाम दोहोर्‍याउनुहोस् → उत्तर लेख्ने अभ्यास गर्नुहोस्। यही तरिकाले अङ्क स्थिर हुन्छ।
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="माथि जानुहोस्">↑</button>
+
+<script>
+(function () {
+  const menuBtn = document.getElementById('menuBtn');
+  const sidenav  = document.getElementById('sidenav');
+  const overlay  = document.getElementById('overlay');
+
+  function openNav() {
+    sidenav.classList.add('open');
+    overlay.classList.add('show');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
+    sidenav.classList.remove('open');
+    overlay.classList.remove('show');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  menuBtn.addEventListener('click', function () {
+    sidenav.classList.contains('open') ? closeNav() : openNav();
+  });
+  overlay.addEventListener('click', closeNav);
+
+  document.querySelectorAll('.sidenav a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (window.innerWidth < 1024) closeNav();
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeNav();
+  });
+
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 420) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  });
+
+  const sections = document.querySelectorAll('article[id]');
+  const navLinks = document.querySelectorAll('.nav-main');
+  window.addEventListener('scroll', function () {
+    let current = '';
+    sections.forEach(function (sec) {
+      if (window.scrollY >= sec.offsetTop - 140) current = sec.id;
+    });
+    navLinks.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>
