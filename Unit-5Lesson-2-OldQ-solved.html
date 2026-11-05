@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>कक्षा १२ सामाजिक — एकाइ ५ पाठ २: प्रदेशहरूको जनसाङ्ख्यिक अवस्था (जनगणना २०७८)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===================== BASE ===================== */
+*,*::before,*::after{box-sizing:border-box;}
+:root{
+  --ink:#0f172a;
+  --soft:#475569;
+  --paper:#ffffff;
+  --line:#e6eef3;
+  --violet:#6d28d9;
+  --violet-deep:#4c1d95;
+  --violet-soft:#f5f3ff;
+  --teal:#0e7490;
+  --teal-deep:#155e75;
+  --teal-soft:#ecfeff;
+  --rose:#be123c;
+  --rose-soft:#fff1f2;
+  --amber:#b45309;
+  --amber-soft:#fffbeb;
+  --green:#15803d;
+  --green-soft:#f0fdf4;
+  --shadow:0 10px 30px rgba(76,29,149,.10);
+  --radius:22px;
+}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:'Mukta','Noto Sans Devanagari',system-ui,sans-serif;
+  font-size:21px;
+  line-height:1.88;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 620px at 6% -10%, #ede9fe 0%, transparent 58%),
+    radial-gradient(1000px 540px at 102% 0%, #cffafe 0%, transparent 55%),
+    linear-gradient(180deg,#faf5ff,#fafaf9 45%,#ecfeff 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  -webkit-text-size-adjust:100%;
+}
+[id]{scroll-margin-top:100px;}
+strong,b{font-weight:800;}
+em{font-style:italic;}
+
+/* ===================== TOP BAR ===================== */
+.topbar{
+  position:sticky; top:0; z-index:60;
+  display:flex; align-items:center; gap:14px;
+  padding:12px 18px;
+  background:linear-gradient(120deg,#4c1d95 0%,#6d28d9 45%,#0e7490 100%);
+  color:#fff;
+  box-shadow:0 6px 24px rgba(76,29,149,.32);
+}
+.brand{display:flex; flex-direction:column; line-height:1.2; flex:1 1 auto; min-width:0;}
+.brand h1{
+  margin:0;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:22px; font-weight:800; letter-spacing:.2px;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.brand-sub{font-size:14px; font-weight:600; opacity:.92;}
+.hamburger{
+  display:none; align-items:center; justify-content:center;
+  width:46px; height:46px; flex:0 0 auto;
+  border-radius:13px; border:1px solid rgba(255,255,255,.38);
+  background:rgba(255,255,255,.16); color:#fff;
+  font-size:22px; cursor:pointer; transition:.2s;
+}
+.hamburger:hover{background:rgba(255,255,255,.28);}
+.top-link{
+  flex:0 0 auto; text-decoration:none; color:#fff;
+  font-size:16px; font-weight:700;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.38);
+  padding:8px 14px; border-radius:999px; transition:.2s;
+}
+.top-link:hover{background:rgba(255,255,255,.32);}
+
+/* ===================== LAYOUT ===================== */
+.layout{
+  display:flex; align-items:flex-start; gap:26px;
+  max-width:1440px; margin:0 auto;
+  padding:26px 20px 70px;
+}
+.content{flex:1 1 auto; min-width:0;}
+
+/* ===================== SIDE NAV ===================== */
+.sidenav{
+  width:320px; flex:0 0 320px;
+  position:sticky; top:88px;
+  max-height:calc(100vh - 110px);
+  overflow-y:auto;
+  background:rgba(255,255,255,.96);
+  border:1px solid #ede9fe;
+  border-radius:var(--radius);
+  padding:18px 14px 22px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(10px);
+}
+.sidenav-head{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:18px; font-weight:800; color:var(--violet-deep);
+  display:flex; align-items:center; gap:8px;
+  padding-bottom:12px; margin-bottom:8px;
+  border-bottom:3px solid #fde68a;
+}
+.nav-main{
+  display:block; text-decoration:none;
+  font-size:18px; font-weight:800; line-height:1.5;
+  color:var(--ink);
+  padding:11px 13px; border-radius:12px;
+  border-left:5px solid transparent; transition:.22s;
+}
+.nav-main:hover,.nav-main.active{
+  background:linear-gradient(90deg,#ede9fe,#cffafe);
+  border-left-color:var(--violet);
+  color:var(--violet-deep);
+  transform:translateX(3px);
+}
+.nav-group{
+  margin-top:6px;
+  padding:8px 12px;
+  background:#f8f6ff;
+  border:1px dashed #ddd6fe;
+  border-radius:12px;
+}
+.nav-group-title{
+  display:block;
+  font-size:14px; font-weight:800; letter-spacing:.05em;
+  text-transform:uppercase; color:var(--violet-deep);
+  margin-bottom:6px;
+}
+.nav-sub{display:flex; flex-direction:column; gap:3px;}
+.nav-sub a{
+  display:flex; align-items:flex-start; gap:8px;
+  text-decoration:none; font-size:16px; font-weight:700;
+  color:var(--soft); padding:7px 10px;
+  border-radius:9px; transition:.18s;
+  line-height:1.45;
+}
+.nav-sub a:hover{
+  background:#ede9fe; color:var(--violet-deep);
+  transform:translateX(2px);
+}
+.nav-sub a .num{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex:0 0 auto;
+  min-width:26px; height:26px; padding:0 6px;
+  background:var(--violet); color:#fff;
+  border-radius:7px;
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800;
+  margin-top:1px;
+}
+.nav-sub.teal a:hover{background:#cffafe; color:var(--teal-deep);}
+.nav-sub.teal a .num{background:var(--teal);}
+.nav-note{
+  margin-top:18px; padding:13px 15px;
+  font-size:15px; font-weight:700; line-height:1.65;
+  color:#4c1d95;
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  border-radius:14px;
+}
+.overlay{
+  position:fixed; inset:0; z-index:70;
+  background:rgba(15,23,42,.48);
+  opacity:0; visibility:hidden; transition:.3s;
+}
+.overlay.show{opacity:1; visibility:visible;}
+
+/* ===================== CARD ===================== */
+.card{
+  --acc:#6d28d9;
+  --acc-soft:#f5f3ff;
+  background:var(--paper);
+  border:1px solid #eef3f6;
+  border-top:9px solid var(--acc);
+  border-radius:var(--radius);
+  padding:26px 26px 32px;
+  margin-bottom:30px;
+  box-shadow:var(--shadow);
+}
+.card.intro{--acc:#4c1d95; --acc-soft:#f5f3ff;}
+.card.c1{--acc:#0e7490; --acc-soft:#ecfeff;}
+.card.c2{--acc:#b45309; --acc-soft:#fffbeb;}
+
+.card-head{display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:6px;}
+.pill{
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:#fff; background:var(--acc);
+  padding:6px 15px; border-radius:999px;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+h2{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:27px; font-weight:800; line-height:1.4;
+  margin:0; color:var(--ink);
+}
+.lead{
+  margin:10px 0 0; font-size:20px; font-weight:600; color:var(--soft);
+  line-height:1.8;
+}
+
+/* ===================== INFO BANNER ===================== */
+.info-banner{
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  border:1.5px dashed #a78bfa;
+  border-radius:16px;
+  padding:16px 20px;
+  margin:14px 0 4px;
+  font-size:19px; font-weight:600; color:#4c1d95;
+  line-height:1.85;
+}
+.info-banner strong{color:var(--violet-deep);}
+
+/* ===================== SECTION TITLES ===================== */
+.sect{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:22px; font-weight:800; line-height:1.55;
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:10px;
+  justify-content:space-between;
+  margin:34px 0 18px;
+  padding:14px 18px;
+  background:linear-gradient(90deg,var(--acc-soft),#ffffff);
+  border:1px solid var(--line);
+  border-left:7px solid var(--acc);
+  border-radius:0 14px 14px 0;
+  color:var(--ink);
+}
+.sect:first-of-type{margin-top:22px;}
+.marks{
+  flex:0 0 auto; font-size:14px; font-weight:800;
+  color:#fff; background:var(--acc);
+  padding:3px 13px; border-radius:999px; white-space:nowrap;
+}
+
+/* ===================== QUESTION CARD ===================== */
+.q-card{
+  background:#ffffff;
+  border:1px solid #e5eef2;
+  border-left:7px solid var(--acc);
+  border-radius:16px;
+  padding:18px 22px 22px;
+  margin:20px 0;
+  box-shadow:0 4px 18px rgba(109,40,217,.06);
+  transition:.22s;
+}
+.q-card:hover{box-shadow:0 10px 26px rgba(109,40,217,.10);}
+
+.q-head{
+  display:flex; align-items:flex-start; gap:13px;
+  margin-bottom:14px;
+  padding-bottom:14px;
+  border-bottom:2px dashed #ede9fe;
+}
+.q-badge{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex:0 0 auto;
+  min-width:56px; height:52px; padding:0 10px;
+  background:linear-gradient(135deg,var(--violet-deep),var(--violet));
+  color:#fff; font-family:'Poppins',sans-serif;
+  font-size:15px; font-weight:800;
+  border-radius:13px;
+  box-shadow:0 5px 14px rgba(109,40,217,.28);
+  text-align:center; line-height:1.15;
+}
+.q-badge small{
+  display:block; font-size:10px; font-weight:700;
+  opacity:.9; letter-spacing:.03em;
+}
+.q-title{
+  margin:0; font-size:21px; font-weight:800;
+  line-height:1.6; color:#0f172a;
+  flex:1;
+}
+
+/* ===================== ANSWER ===================== */
+.answer{
+  margin-top:6px;
+  padding:16px 20px;
+  background:linear-gradient(135deg,#faf8ff,#ffffff);
+  border-left:5px solid var(--violet);
+  border-radius:0 12px 12px 0;
+  font-size:21px; line-height:1.9; color:#1e293b;
+}
+.answer .lbl{
+  display:inline-block;
+  font-family:'Poppins',sans-serif;
+  font-size:13px; font-weight:800; letter-spacing:.08em;
+  text-transform:uppercase; color:#fff;
+  background:var(--violet);
+  padding:3px 12px; border-radius:8px;
+  margin-bottom:10px;
+}
+.answer p{margin:0 0 10px;}
+.answer p:last-child{margin-bottom:0;}
+
+/* ===================== BLOCK ===================== */
+.block{margin:18px 0;}
+.block-head{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:17px; font-weight:800;
+  color:#fff; background:var(--acc);
+  padding:6px 16px; border-radius:22px;
+  margin:0 0 10px;
+  box-shadow:0 4px 12px rgba(0,0,0,.16);
+}
+.block-head.violet{background:var(--violet);}
+.block-head.teal{background:var(--teal);}
+.block-head.amber{background:var(--amber);}
+.block-head.rose{background:var(--rose);}
+.block-head.green{background:var(--green);}
+.block-content{
+  background:linear-gradient(135deg,#faf8ff,#ffffff);
+  border-left:5px solid var(--acc);
+  border-radius:0 13px 13px 0;
+  padding:14px 18px;
+  font-size:20px; line-height:1.88;
+  color:#334155;
+}
+.block-content p{margin:0 0 10px;}
+.block-content p:last-child{margin-bottom:0;}
+
+/* ===================== FLOW DIAGRAM ===================== */
+.flow-diagram{
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  border:1.5px dashed #a78bfa;
+  border-radius:18px;
+  padding:22px 20px;
+  margin:18px 0;
+}
+.flow-title{
+  text-align:center;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:18px; font-weight:800; color:var(--violet-deep);
+  margin-bottom:16px;
+}
+.flow-root{
+  background:#fff;
+  border:2px solid var(--violet);
+  border-radius:14px;
+  padding:14px 18px;
+  text-align:center;
+  font-weight:800; font-size:18px;
+  color:var(--violet-deep);
+  max-width:380px; margin:0 auto 16px;
+  box-shadow:0 4px 14px rgba(109,40,217,.15);
+}
+.flow-branches{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.flow-col{
+  background:#fff;
+  border:1.5px solid #ddd6fe;
+  border-top:5px solid var(--violet);
+  border-radius:13px;
+  padding:12px 14px;
+}
+.flow-col:nth-child(2){border-top-color:var(--teal);}
+.flow-col:nth-child(3){border-top-color:var(--rose);}
+.flow-col-head{
+  display:block;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:16px; font-weight:800;
+  color:var(--violet-deep);
+  margin-bottom:8px;
+  padding-bottom:6px;
+  border-bottom:1px dashed #ddd6fe;
+  line-height:1.4;
+}
+.flow-col:nth-child(2) .flow-col-head{color:var(--teal-deep);}
+.flow-col:nth-child(3) .flow-col-head{color:var(--rose);}
+.flow-col ul{
+  margin:0; padding-left:0; list-style:none;
+}
+.flow-col li{
+  position:relative;
+  font-size:15px; font-weight:600;
+  color:#334155; line-height:1.55;
+  padding:5px 0 5px 18px;
+  border-bottom:1px dotted #f1f5f9;
+}
+.flow-col li:last-child{border-bottom:none;}
+.flow-col li::before{
+  content:"▸";
+  position:absolute; left:0; top:5px;
+  color:var(--violet); font-weight:800;
+}
+.flow-col:nth-child(2) li::before{color:var(--teal);}
+.flow-col:nth-child(3) li::before{color:var(--rose);}
+
+/* ===================== LISTS ===================== */
+.list-arrow{
+  list-style:none; padding:0; margin:10px 0;
+  counter-reset:mycounter;
+}
+.list-arrow li{
+  counter-increment:mycounter;
+  position:relative;
+  padding:11px 14px 11px 46px;
+  margin:8px 0;
+  background:#faf8ff;
+  border:1px solid #ede9fe;
+  border-radius:12px;
+  font-size:20px; font-weight:600; line-height:1.78;
+  color:#334155;
+  transition:.18s;
+}
+.list-arrow li:hover{background:#f5f3ff; border-color:#c4b5fd;}
+.list-arrow li::before{
+  content:counter(mycounter) ".";
+  position:absolute; left:14px; top:11px;
+  width:24px; height:24px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--violet); color:#fff;
+  border-radius:7px;
+  font-family:'Poppins',sans-serif;
+  font-size:12px; font-weight:800;
+}
+.list-arrow li strong{color:var(--violet-deep);}
+.list-arrow.bullet li::before{
+  content:"▸"; background:transparent;
+  color:var(--violet); font-size:20px;
+  width:auto; height:auto; top:9px;
+}
+
+/* ===================== MINI BLOCKS (Positive/Negative) ===================== */
+.impact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin:14px 0;
+}
+.impact-card{
+  background:#ffffff;
+  border:1px solid #e5eef2;
+  border-radius:14px;
+  padding:14px 16px;
+}
+.impact-card.pos{border-left:6px solid var(--green); background:#f0fdf4;}
+.impact-card.neg{border-left:6px solid var(--rose); background:#fff1f2;}
+.impact-card h5{
+  margin:0 0 8px;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:16px; font-weight:800;
+  display:flex; align-items:center; gap:6px;
+  line-height:1.4;
+}
+.impact-card.pos h5{color:var(--green);}
+.impact-card.neg h5{color:var(--rose);}
+.impact-card ol, .impact-card ul{
+  margin:0; padding-left:20px;
+}
+.impact-card li{
+  font-size:17px; font-weight:600;
+  line-height:1.7; color:#334155;
+  margin:7px 0;
+}
+.impact-card li strong{color:#0f172a;}
+
+/* ===================== TABLES ===================== */
+.table-wrap{
+  overflow-x:auto; -webkit-overflow-scrolling:touch;
+  border:1px solid var(--line); border-radius:15px;
+  margin:16px 0; box-shadow:0 4px 16px rgba(15,23,42,.05);
+}
+table{width:100%; border-collapse:collapse; min-width:640px; font-size:18px;}
+th{
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:16px; font-weight:800; text-align:left;
+  color:#fff; background:var(--acc);
+  padding:12px 13px; letter-spacing:.02em;
+  line-height:1.5; vertical-align:middle;
+}
+th:not(:first-child){text-align:center;}
+td{padding:11px 13px; border-top:1px solid #eef1f7; font-weight:600; vertical-align:middle; line-height:1.7;}
+td:not(:first-child){text-align:center;}
+tbody tr:nth-child(even){background:#faf8ff;}
+tbody tr:hover{background:#f5f3ff;}
+tbody tr.total-row{background:#ede9fe !important;}
+tbody tr.total-row td{color:var(--violet-deep); font-weight:800; border-top:2.5px solid #c4b5fd;}
+td.prov{font-weight:800; color:var(--violet-deep); text-align:left;}
+td.highlight{background:#fef3c7 !important; font-weight:800; color:var(--amber);}
+
+/* ===================== CONCLUSION ===================== */
+.conclusion{
+  background:linear-gradient(90deg,#fef3c7,#fffbeb);
+  border-left:6px solid #d97706;
+  border-radius:0 12px 12px 0;
+  padding:14px 18px;
+  margin:18px 0 6px;
+  font-size:20px; font-weight:700; line-height:1.85;
+  color:#3f2d08;
+}
+.conclusion strong{color:#b45309;}
+
+/* ===================== TIP BOX ===================== */
+.tipbox{
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  border:1px solid #a78bfa;
+  border-radius:15px;
+  padding:16px 18px;
+  margin-top:20px;
+}
+.tipbox h4{
+  margin:0 0 8px;
+  font-family:'Mukta','Poppins',sans-serif;
+  font-size:17px; font-weight:800; color:var(--violet-deep);
+  letter-spacing:.04em;
+}
+.tipbox p{margin:0; font-size:19px; font-weight:600; color:#334155; line-height:1.8;}
+
+/* ===================== FOOTER ===================== */
+.footer{
+  margin-top:10px;
+  background:linear-gradient(135deg,#4c1d95,#1e293b);
+  color:#fff; text-align:center;
+  padding:30px 20px;
+  border-radius:22px 22px 0 0;
+}
+.footer .big{font-family:'Mukta','Poppins',sans-serif; font-size:21px; font-weight:800; color:#fcd34d;}
+.footer .small{font-size:16px; opacity:.88; margin-top:6px;}
+
+/* ===================== BACK TO TOP ===================== */
+#toTop{
+  position:fixed; right:20px; bottom:24px; z-index:90;
+  width:56px; height:56px; border-radius:50%;
+  border:none; cursor:pointer;
+  font-size:24px; font-weight:800; color:#fff;
+  background:linear-gradient(135deg,#6d28d9,#0e7490);
+  box-shadow:0 10px 26px rgba(109,40,217,.42);
+  display:none; align-items:center; justify-content:center;
+  transition:transform .25s, box-shadow .25s;
+}
+#toTop:hover{transform:translateY(-4px) scale(1.06);}
+#toTop.show{display:flex;}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:1023px){
+  .hamburger{display:inline-flex;}
+  .layout{padding:18px 14px 80px; gap:0;}
+  .sidenav{
+    position:fixed; top:0; left:0; z-index:80;
+    width:318px; flex:none; height:100%;
+    max-height:none; border-radius:0 18px 18px 0;
+    padding:78px 14px 40px;
+    transform:translateX(-108%);
+    transition:transform .32s ease;
+    border:none;
+  }
+  .sidenav.open{transform:translateX(0);}
+}
+@media (max-width:700px){
+  .impact-grid{grid-template-columns:1fr;}
+}
+@media (max-width:640px){
+  body{font-size:20px;}
+  .brand h1{font-size:18px;}
+  .brand-sub{display:none;}
+  .top-link{display:none;}
+  .card{padding:20px 16px 26px; border-top-width:7px;}
+  h2{font-size:22px;}
+  .lead{font-size:18px;}
+  .sect{font-size:18px; padding:11px 13px;}
+  .q-card{padding:14px 14px 18px;}
+  .q-badge{min-width:48px; height:46px; font-size:13px; border-radius:11px;}
+  .q-title{font-size:18px; line-height:1.55;}
+  .answer{font-size:19px; padding:13px 15px;}
+  .block-content{font-size:18px; padding:12px 14px;}
+  .list-arrow li{font-size:18px; padding:10px 13px 10px 42px;}
+  .list-arrow li::before{left:12px; top:11px; width:22px; height:22px; font-size:11px;}
+  .list-arrow.bullet li::before{font-size:18px; top:9px; left:10px;}
+  .impact-card h5{font-size:15px;}
+  .impact-card li{font-size:16px;}
+  .flow-col li{font-size:14px;}
+  .flow-col-head{font-size:15px;}
+  .pill{font-size:12px;}
+}
+@media (max-width:400px){
+  body{font-size:19px;}
+  .q-title,.list-arrow li{font-size:17px;}
+  .answer{font-size:17px;}
+}
+
+/* ===================== PRINT ===================== */
+@media print{
+  .topbar,.sidenav,.overlay,#toTop{display:none !important;}
+  .layout{padding:0;}
+  .card{box-shadow:none; border:1px solid #ddd; page-break-inside:avoid;}
+  body{background:#fff; font-size:12pt;}
+  .q-card,.flow-diagram{break-inside:avoid; box-shadow:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar" id="top">
+  <button class="hamburger" id="menuBtn" aria-label="खोल्नुहोस्" aria-controls="sidenav" aria-expanded="false">☰</button>
+  <div class="brand">
+    <h1>कक्षा १२ सामाजिक — एकाइ ५ · पाठ २</h1>
+    <span class="brand-sub">प्रदेशहरूको जनसाङ्ख्यिक अवस्था · जनगणना २०७८</span>
+  </div>
+  <a class="top-link" href="#top">↑ माथि</a>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="layout">
+
+  <!-- ================= SIDE NAVIGATION ================= -->
+  <nav class="sidenav" id="sidenav" aria-label="विषयसूची">
+    <div class="sidenav-head">📑 विषयसूची</div>
+
+    <a class="nav-main" href="#intro">🇳🇵 परिचय</a>
+
+    <a class="nav-main" href="#sec1">🎯 खण्ड १ — अति संक्षिप्त (१ अङ्क)</a>
+    <div class="nav-group">
+      <span class="nav-group-title">प्रश्नहरू</span>
+      <div class="nav-sub">
+        <a href="#q1"><span class="num">१</span>बढी/कम जनसङ्ख्या प्रदेश</a>
+        <a href="#q2"><span class="num">२</span>बढी/कम जनसङ्ख्या जिल्ला</a>
+      </div>
+    </div>
+
+    <a class="nav-main" href="#sec2">🏆 खण्ड २ — विस्तृत (८ अङ्क)</a>
+    <div class="nav-group">
+      <span class="nav-group-title">प्रश्नहरू</span>
+      <div class="nav-sub teal">
+        <a href="#q3"><span class="num">३</span>बागमती प्रदेश</a>
+        <a href="#q4"><span class="num">४</span>मधेश vs कर्णाली</a>
+        <a href="#q5"><span class="num">५</span>प्रदेशगत वितरण</a>
+      </div>
+    </div>
+
+    <a class="nav-main" href="#data-table">📊 मुख्य तथ्याङ्क तालिका</a>
+
+    <div class="nav-note">
+      💡 जुनसुकै प्रश्नमा क्लिक गर्नुहोस् — सिधै त्यही प्रश्नमा पुग्नुहुनेछ।
+    </div>
+  </nav>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="content">
+
+    <!-- ================= INTRO ================= -->
+    <article class="card intro" id="intro">
+      <div class="card-head">
+        <span class="pill">Solved Questions</span>
+      </div>
+      <h2>📌 एकाइ ५: भूगोल र सामाजिक जीवन — पाठ २</h2>
+      <p class="lead" style="font-size:22px; color:#4c1d95; font-weight:800;">प्रदेशहरूको जनसाङ्ख्यिक अवस्था र विशेषता</p>
+
+      <div class="info-banner">
+        <strong>अध्ययन निर्देशिका:</strong> यो सामग्री राष्ट्रिय तथ्याङ्क कार्यालय (NSO) द्वारा जारी <strong>बाह्रौँ राष्ट्रिय जनगणना २०७८ (NPHC 2021)</strong> का आधिकारिक तथ्याङ्कहरूमा आधारित भई कक्षा १२ सामाजिक अध्ययनको <strong>एकाइ ५ पाठ २</strong> सँग सम्बन्धित परीक्षा-उपयोगी अति संक्षिप्त तथा ८ अङ्कका विस्तृत उत्तरहरू समेटेर तयार पारिएको नमुना उत्तरपुस्तिका हो।
+      </div>
+    </article>
+
+    <!-- ================= SECTION 1 ================= -->
+    <article class="card c1" id="sec1">
+      <div class="card-head">
+        <span class="pill">खण्ड १</span>
+      </div>
+      <h2>🎯 अति संक्षिप्त उत्तरात्मक प्रश्नहरू</h2>
+      <p class="lead">प्रत्येक प्रश्न १ अङ्कको — छोटो र स्पष्ट उत्तर।</p>
+
+      <h3 class="sect">
+        <span>Very Short Answer Questions</span>
+        <span class="marks">१ × २ = २</span>
+      </h3>
+
+      <!-- Q1 -->
+      <div class="q-card" id="q1">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>१</small></span>
+          <p class="q-title">नेपालमा सबैभन्दा बढी र कम जनसङ्ख्या भएका प्रदेशहरू कुन कुन हुन्?</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+          <p>राष्ट्रिय जनगणना २०७८ अनुसार नेपालमा सबैभन्दा बढी जनसङ्ख्या भएको प्रदेश <strong>बागमती प्रदेश (६१,१६,८६६ जना — २०.९७%)</strong> र <strong>मधेश प्रदेश (६१,१४,६०० जना — २०.९७%)</strong> हुन् भने सबैभन्दा कम जनसङ्ख्या भएको प्रदेश <strong>कर्णाली प्रदेश (१६,८८,४१२ जना — ५.७९%)</strong> हो।</p>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="q-card" id="q2">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>२</small></span>
+          <p class="q-title">जनसङ्ख्याका आधारमा नेपालको सबैभन्दा धेरै र कम जनसङ्ख्या भएका जिल्लाहरू कुन कुन हुन्?</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+          <p>राष्ट्रिय जनगणना २०७८ अनुसार जनसङ्ख्याका आधारमा नेपालको सबैभन्दा धेरै जनसङ्ख्या भएको जिल्ला <strong>काठमाडौँ (२०,४१,५८७ जना)</strong> र सबैभन्दा कम जनसङ्ख्या भएको जिल्ला <strong>मनाङ (५,६५८ जना)</strong> हो।</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ================= SECTION 2 ================= -->
+    <article class="card c2" id="sec2">
+      <div class="card-head">
+        <span class="pill">खण्ड २</span>
+      </div>
+      <h2>🏆 विस्तृत उत्तरात्मक प्रश्नहरू</h2>
+      <p class="lead">प्रत्येक प्रश्न ८ अङ्कको — परिचय, विश्लेषण र निष्कर्षसहित।</p>
+
+      <h3 class="sect">
+        <span>Long Answer Questions</span>
+        <span class="marks">८ × ३ = २४</span>
+      </h3>
+
+      <!-- Q3 — Bagmati -->
+      <div class="q-card" id="q3">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>३</small></span>
+          <p class="q-title">तपाईँ बस्ने प्रदेशको जनसाङ्ख्यिक वितरणको अवस्था र त्यसले आर्थिक-सामाजिक पक्षमा पारेको प्रभाव स्पष्ट गर्नुहोस्।</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+
+          <div class="block">
+            <span class="block-head violet">📌 १. परिचय</span>
+            <div class="block-content">
+              <p>नेपालको सङ्घीय प्रशासनिक संरचना अनुसार बागमती प्रदेश देशको राजधानी समेत रहेको एक प्रमुख र केन्द्रीय प्रदेश हो। बाह्रौँ राष्ट्रिय जनगणना २०७८ (NPHC 2021) अनुसार बागमती प्रदेशको कुल जनसङ्ख्या <strong>६१,१६,८६६ जना</strong> रहेको छ, जसले देशको कुल जनसङ्ख्याको <strong>२०.९७%</strong> हिस्सा ओगटेको छ। शैक्षिक, प्रशासनिक, औद्योगिक तथा स्वास्थ्य सुविधाहरूको केन्द्र भएकाले यहाँ तीव्र गतिमा जनसङ्ख्याको चाप र आन्तरिक बसाइँसराइ भइरहेको पाइन्छ।</p>
+            </div>
+          </div>
+
+          <div class="flow-diagram">
+            <div class="flow-title">🌐 बागमती प्रदेशको जनसाङ्ख्यिक अवस्था</div>
+            <div class="flow-root">बागमती प्रदेश</div>
+            <div class="flow-branches">
+              <div class="flow-col">
+                <span class="flow-col-head">१. जनसाङ्ख्यिक स्थिति</span>
+                <ul>
+                  <li>कुल जनसङ्ख्या: ६१,१६,८६६ (२०.९७%)</li>
+                  <li>जनघनत्व: ३०१ / किमी²</li>
+                  <li>सहरी: ७९.६%</li>
+                  <li>सक्रिय जनसङ्ख्या: ६४.१%</li>
+                </ul>
+              </div>
+              <div class="flow-col">
+                <span class="flow-col-head">२. सामाजिक प्रभाव</span>
+                <ul>
+                  <li><b>सबल:</b> साक्षरता ८२.१%</li>
+                  <li><b>सबल:</b> गुणस्तरीय स्वास्थ्य सेवा</li>
+                  <li><b>दुर्बल:</b> अव्यवस्थित सहरीकरण</li>
+                  <li><b>दुर्बल:</b> वातावरणीय प्रदूषण</li>
+                </ul>
+              </div>
+              <div class="flow-col">
+                <span class="flow-col-head">३. आर्थिक प्रभाव</span>
+                <ul>
+                  <li><b>सबल:</b> प्रचुर श्रमशक्ति</li>
+                  <li><b>सबल:</b> ठुलो उपभोक्ता बजार</li>
+                  <li><b>दुर्बल:</b> घरजग्गाको उच्च मूल्य</li>
+                  <li><b>दुर्बल:</b> पूर्वाधारमा चाप</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head teal">📊 २. विषय प्रवेश तथा मुख्य विश्लेषण</span>
+            <div class="block-content">
+
+              <p style="font-weight:800; color:var(--violet-deep); margin-top:8px;">(क) जनसाङ्ख्यिक वितरणको अवस्था</p>
+              <p>राष्ट्रिय जनगणना २०७८ अनुसार बागमती प्रदेशको जनसाङ्ख्यिक स्थिति निम्न अनुसार छ:</p>
+              <ul class="list-arrow bullet">
+                <li><strong>कुल जनसङ्ख्या र हिस्सा:</strong> ६१,१६,८६६ जना (नेपालका ७ प्रदेशहरूमध्ये सबैभन्दा बढी जनसङ्ख्या भएको प्रदेश)।</li>
+                <li><strong>जनघनत्व:</strong> प्रति वर्ग किलोमिटर <strong>३०१ जना</strong> (राष्ट्रिय औसत १९८ भन्दा निकै बढी)।</li>
+                <li><strong>उमेरगत संरचना:</strong> १५ देखि ५९ वर्ष उमेर समूहको सक्रिय/कार्यशील जनसङ्ख्या <strong>६४.१%</strong> (नेपालमै सबैभन्दा बढी), १४ वर्ष मुनिका बालबालिका २५.२% र ६० वर्ष माथिका ज्येष्ठ नागरिक १०.७% रहेका छन्।</li>
+                <li><strong>सहरी जनसङ्ख्या:</strong> <strong>७९.६%</strong> मानिसहरू सहरी क्षेत्रमा बसोबास गर्छन्।</li>
+                <li><strong>आन्तरिक बसाइँसराइ र ऋणात्मक जिल्ला:</strong> काठमाडौँ उपत्यका र सहरी क्षेत्रमा उच्च जनघनत्व छ भने रामेछाप (-१.६७%), सिन्धुली, धादिङ, दोलखा, सिन्धुपाल्चोक, नुवाकोट र रसुवा गरी <strong>७ वटा पहाडी/हिमाली जिल्लाहरूमा ऋणात्मक जनसङ्ख्या वृद्धिदर</strong> रहेको छ।</li>
+              </ul>
+
+              <p style="font-weight:800; color:var(--violet-deep); margin-top:16px;">(ख) सामाजिक पक्षमा परेका प्रभावहरू</p>
+
+              <div class="impact-grid">
+                <div class="impact-card pos">
+                  <h5>✅ सकारात्मक प्रभाव</h5>
+                  <ol>
+                    <li><strong>गुणस्तरीय शिक्षा र स्वास्थ्यको सहज पहुँच:</strong> देशकै प्रतिष्ठित विश्वविद्यालय, मेडिकल कलेज र अस्पतालहरू रहेकाले साक्षरता दर <strong>८२.१%</strong> र मानव विकास सूचकाङ्क <strong>०.६५२</strong> नेपालमै सबैभन्दा उच्च छ।</li>
+                    <li><strong>सहरी सुविधायुक्त जीवनशैली:</strong> ७९.६% जनसङ्ख्या सहरी क्षेत्रमा बसोबास गर्ने भएकाले खानेपानी, बिजुली, सञ्चार र यातायातमा सहज पहुँच पुगेको छ।</li>
+                    <li><strong>बहुसांस्कृतिक घुलमिल:</strong> देशका विभिन्न भागबाट आएका मानिसहरूको बसोबासले अन्तरसांस्कृतिक सद्भाव र सामाजिक चेतनाको विकास भएको छ।</li>
+                  </ol>
+                </div>
+
+                <div class="impact-card neg">
+                  <h5>⚠️ नकारात्मक प्रभाव</h5>
+                  <ol>
+                    <li><strong>अव्यवस्थित सहरीकरण:</strong> काठमाडौँ, ललितपुर, भक्तपुर र चितवनमा अनियन्त्रित घरजग्गा प्लटिङ र सुकुम्बासी समस्या बढेको छ।</li>
+                    <li><strong>वातावरणीय प्रदूषण:</strong> जनसङ्ख्याको तीव्र चापले वायु, जल र ध्वनि प्रदूषणका साथै फोहोरमैला व्यवस्थापन गम्भीर चुनौती बनेको छ।</li>
+                    <li><strong>ग्रामीण गाउँघर रित्तिनु:</strong> पहाडी/हिमाली ७ जिल्लामा बसाइँसराइले गर्दा गाउँमा वृद्धवृद्धा मात्र बाँकी रहने र सामाजिक संरचना कमजोर बन्ने समस्या देखिएको छ।</li>
+                  </ol>
+                </div>
+              </div>
+
+              <p style="font-weight:800; color:var(--violet-deep); margin-top:16px;">(ग) आर्थिक पक्षमा परेका प्रभावहरू</p>
+
+              <div class="impact-grid">
+                <div class="impact-card pos">
+                  <h5>✅ सकारात्मक प्रभाव</h5>
+                  <ol>
+                    <li><strong>प्रचुर युवा तथा सक्रिय श्रमशक्ति:</strong> १५–५९ वर्षको सक्रिय जनसङ्ख्या ६४.१% रहेकाले उद्योग, व्यापार, निर्माण र सेवा क्षेत्रका लागि आवश्यक दक्ष एवं अदक्ष जनशक्ति सहजै उपलब्ध छ।</li>
+                    <li><strong>ठुलो उपभोक्ता बजार:</strong> उच्च जनसङ्ख्या र क्रयशक्ति भएका कारण यहाँ ठुला सपिङ मल, वित्तीय संस्था र व्यापारिक प्रतिष्ठानहरू फस्टाएका छन् (कुल GDP मा ३५.८% योगदान)।</li>
+                    <li><strong>औद्योगिकीकरण र लगानी आकर्षण:</strong> काठमाडौँ, हेटौँडा र चितवनजस्ता औद्योगिक क्षेत्रमा लगानी प्रवर्धन भई रोजगारीका अवसरहरू सिर्जना भएका छन्।</li>
+                  </ol>
+                </div>
+
+                <div class="impact-card neg">
+                  <h5>⚠️ नकारात्मक प्रभाव</h5>
+                  <ol>
+                    <li><strong>सार्वजनिक पूर्वाधारमा अत्यधिक भार:</strong> सडक, सवारी साधन, खानेपानी, बिजुली र ढल निकासजस्ता पूर्वाधारमा क्षमताभन्दा बढी चाप परेको छ।</li>
+                    <li><strong>कृषि योग्य जमिनको विनाश:</strong> काठमाडौँ उपत्यका र चितवनका उब्जाउ कृषि भूमिलाई आवासीय क्षेत्रमा परिणत गर्दा कृषि उत्पादनमा ह्रास आएको छ।</li>
+                    <li><strong>जीवनयापनको उच्च लागत:</strong> घरभाडा, खाद्यवस्तु र सेवाको मूल्य अत्यधिक वृद्धि भई न्यून आय भएका वर्गलाई जीवन धान्न कठिन भएको छ।</li>
+                  </ol>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <p class="conclusion"><strong>🎯 ३. निष्कर्ष:</strong> नेपालको बागमती प्रदेशमा रहेको जनसाङ्ख्यिक एकाग्रताले एकातिर आर्थिक समृद्धिको ठुलो अवसर र उच्च मानव विकास दिएको छ भने अर्कातिर अव्यवस्थित सहरीकरण र वातावरणीय चाप सिर्जना गरेको छ। तसर्थ, प्रदेश सरकार र स्थानीय तहहरूले काठमाडौँ उपत्यका बाहिरका हेटौँडा, चितवन, सिन्धुली र नुवाकोटजस्ता क्षेत्रमा एकीकृत नयाँ सहरहरू (Smart Cities) को विकास गरी जनसङ्ख्याको सन्तुलित पुनर्स्थापना गर्नु अपरिहार्य देखिन्छ।</p>
+        </div>
+      </div>
+
+      <!-- Q4 — Madhesh vs Karnali -->
+      <div class="q-card" id="q4">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>४</small></span>
+          <p class="q-title">नेपालका कुनै दुई प्रदेशहरूको भौगोलिक अवस्था र जनसङ्ख्या वितरणबिचको सम्बन्ध स्पष्ट पार्नुहोस्।</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+
+          <div class="block">
+            <span class="block-head violet">📌 १. परिचय</span>
+            <div class="block-content">
+              <p>कुनै पनि देश वा प्रदेशको जनसङ्ख्या वितरण त्यहाँको भौगोलिक बनोट, धरातलीय स्वरूप, जलवायु, माटोको उर्वराशक्ति र यातायात तथा पूर्वाधारको पहुँचसँग प्रत्यक्ष रूपमा जोडिएको हुन्छ। नेपालका सात प्रदेशहरूमध्ये <strong>तराईको समतल भूभागमा रहेको मधेश प्रदेश</strong> र <strong>विकट पहाडी तथा हिमाली भूभागमा फैलिएको कर्णाली प्रदेश</strong> बिचको भौगोलिक अवस्था र जनसङ्ख्या वितरणको सम्बन्ध निकै विरोधाभासपूर्ण र अध्ययनयोग्य रहेको छ।</p>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head teal">📊 २. विषय प्रवेश तथा मुख्य विश्लेषण</span>
+            <div class="block-content">
+
+              <p style="font-weight:800; color:var(--violet-deep);">(क) मधेश प्रदेशको भौगोलिक अवस्था र जनसङ्ख्या वितरणको सम्बन्ध</p>
+              <ul class="list-arrow bullet">
+                <li><strong>भौगोलिक अवस्था:</strong> मधेश प्रदेश नेपालको दक्षिण-पूर्वी समतल तराईमा अवस्थित छ। यसको कुल क्षेत्रफल <strong>९,६६१ वर्ग कि.मी. (देशको कुल क्षेत्रफलको ६.५६%)</strong> मात्र रहेको छ। यहाँ समतल उर्वर भूभाग, न्यानो समशीतोष्ण जलवायु र यातायातका सञ्जालहरूको सुगम पहुँच रहेको छ।</li>
+                <li><strong>जनसङ्ख्या वितरणको स्थिति:</strong> राष्ट्रिय जनगणना २०७८ अनुसार मधेश प्रदेशको कुल जनसङ्ख्या <strong>६१,१४,६०० जना (२०.९७%)</strong> रहेको छ।</li>
+                <li><strong>उच्च जनघनत्व:</strong> ६.५६% मात्र भूभाग ओगटेको मधेश प्रदेशमा २०.९७% मानिस बसोबास गर्दा यहाँको जनघनत्व प्रति वर्ग किमी <strong>६३३ जना</strong> पुगेको छ, जुन नेपालकै सर्वोच्च जनघनत्व हो।</li>
+                <li><strong>कृषि र व्यापारको आकर्षण:</strong> समतल भूमि र सिँचाइको सुविधाका कारण कृषि उत्पादन उच्च हुने भएकाले परापूर्वकालदेखि नै यहाँ जनसङ्ख्याको उच्च घनत्व रहँदै आएको छ।</li>
+                <li><strong>सघन बस्ती र बसाइँसराइ:</strong> भारतसँगको खुला सीमा, व्यापारिक नाकाहरू (वीरगञ्ज, जनकपुर) र सडक सञ्जालको सुगमताका कारण यहाँ सघन बस्ती (Dense Settlements) निर्माण भएका छन्।</li>
+              </ul>
+
+              <p style="font-weight:800; color:var(--violet-deep); margin-top:16px;">(ख) कर्णाली प्रदेशको भौगोलिक अवस्था र जनसङ्ख्या वितरणको सम्बन्ध</p>
+              <ul class="list-arrow bullet">
+                <li><strong>भौगोलिक अवस्था:</strong> कर्णाली प्रदेश नेपालको उत्तर-पश्चिम विकट पहाडी तथा हिमाली क्षेत्रमा अवस्थित छ। यसको कुल क्षेत्रफल <strong>२७,९८४ वर्ग कि.मी. (देशको कुल क्षेत्रफलको १९.१३%)</strong> रहेको छ। यो नेपालको भौगोलिक रूपमा सबैभन्दा ठुलो प्रदेश हो, जहाँ अग्ला हिमाल, भिरालो पहाड र अत्यधिक ठन्डा जलवायु पाइन्छ।</li>
+                <li><strong>जनसङ्ख्या वितरणको स्थिति:</strong> राष्ट्रिय जनगणना २०७८ अनुसार कर्णाली प्रदेशको कुल जनसङ्ख्या <strong>१६,८८,४१२ जना (५.७९%)</strong> मात्र रहेको छ।</li>
+                <li><strong>अत्यधिक पातलो जनघनत्व:</strong> १९.१३% भूभाग ओगटेको ठुलो प्रदेशमा जम्मा ५.७९% मानिस बसोबास गर्दा यहाँको जनघनत्व प्रति वर्ग किमी जम्मा <strong>६० जना</strong> मात्र रहेको छ, जुन नेपालकै सबैभन्दा कम जनघनत्व हो।</li>
+                <li><strong>भौगोलिक विकटता र पातलो बस्ती:</strong> भिरालो जमिन, कृषि योग्य भूमिको कमी र बाटोघाटो तथा पुलको अभावले गर्दा मानिसहरू छरिएर पातलो बस्तीमा (Sparse Settlements) बस्न बाध्य छन्।</li>
+                <li><strong>कठिन जीवनशैली र आन्तरिक उत्प्रवास:</strong> चिसो हावापानी, उद्योग र रोजगारीका अवसरहरूको कमी तथा पूर्वाधारको अभावका कारण यहाँका मानिसहरू सुविधायुक्त तराई (लुम्बिनी र सुदूरपश्चिम) तर्फ बसाइँ सर्ने गर्दछन्।</li>
+              </ul>
+
+              <p style="font-weight:800; color:var(--violet-deep); margin-top:16px;">(ग) तुलनात्मक विश्लेषण तालिका</p>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:28%;">तुलनाको आधार</th>
+                  <th>मधेश प्रदेश<br><small style="font-weight:600; font-size:13px; opacity:.9;">(तराई सुगम प्रदेश)</small></th>
+                  <th>कर्णाली प्रदेश<br><small style="font-weight:600; font-size:13px; opacity:.9;">(हिमाली/पहाडी विकट प्रदेश)</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="prov">१. भौगोलिक क्षेत्रफल (%)</td>
+                  <td><strong>९,६६१ किमी² (६.५६%)</strong> — सबैभन्दा सानो प्रदेश</td>
+                  <td><strong>२७,९८४ किमी² (१९.१३%)</strong> — सबैभन्दा ठुलो प्रदेश</td>
+                </tr>
+                <tr>
+                  <td class="prov">२. धरातलीय स्वरूप र हावापानी</td>
+                  <td>समतल तराई, उर्वर भूमि, उष्ण/समशीतोष्ण हावापानी</td>
+                  <td>भिरालो पहाड, हिमाल, ठन्डा र शुष्क हावापानी</td>
+                </tr>
+                <tr>
+                  <td class="prov">३. कुल जनसङ्ख्या र हिस्सा (%)</td>
+                  <td><strong>६१,१४,६०० जना (२०.९७%)</strong></td>
+                  <td><strong>१६,८८,४१२ जना (५.७९%)</strong> — सबैभन्दा कम</td>
+                </tr>
+                <tr>
+                  <td class="prov">४. जनघनत्व (प्रति किमी²)</td>
+                  <td class="highlight"><strong>६३३ जना/किमी²</strong> — नेपालमै सर्वोच्च</td>
+                  <td class="highlight"><strong>६० जना/किमी²</strong> — नेपालमै न्यूनतम</td>
+                </tr>
+                <tr>
+                  <td class="prov">५. औसत परिवार आकार</td>
+                  <td><strong>५.३१ जना</strong> (सबैभन्दा ठुलो परिवार आकार)</td>
+                  <td><strong>४.७४ जना</strong></td>
+                </tr>
+                <tr>
+                  <td class="prov">६. सहरी जनसङ्ख्या (%)</td>
+                  <td><strong>६३.४%</strong></td>
+                  <td><strong>३५.५%</strong></td>
+                </tr>
+                <tr>
+                  <td class="prov">७. बस्तीको स्वरूप</td>
+                  <td>सघन र बाक्लो बस्ती (Dense Settlement)</td>
+                  <td>छरिएको र पातलो बस्ती (Sparse Settlement)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="conclusion"><strong>🎯 ३. निष्कर्ष:</strong> उपर्युक्त तुलनात्मक विश्लेषणबाट नेपालमा भौगोलिक सुगमता, उर्वर जमिन र पूर्वाधारको विकास भएका तराईका प्रदेशहरूमा जनसङ्ख्याको चाप अत्यधिक (६३३ जना/किमी²) रहेको र भौगोलिक विकटता, भिरालो जमिन र पूर्वाधारको कमी भएका कर्णालीजस्ता हिमाली/पहाडी प्रदेशहरूमा जनसङ्ख्याको वितरण अत्यन्त पातलो (६० जना/किमी²) रहेको स्पष्ट हुन्छ। तसर्थ, राज्यले भौगोलिक विकटता भएका प्रदेशहरूमा यातायात, शिक्षा र स्वास्थ्यका एकीकृत पूर्वाधार पुर्‍याएर जनसङ्ख्यालाई गाउँमै अड्याउने र सुगम प्रदेशहरूमा जनसङ्ख्याको अव्यवस्थित चापलाई नियन्त्रण गर्ने सन्तुलित विकास नीति लिनुपर्दछ।</p>
+        </div>
+      </div>
+
+      <!-- Q5 — Province Distribution -->
+      <div class="q-card" id="q5">
+        <div class="q-head">
+          <span class="q-badge">प्र.नं.<small>५</small></span>
+          <p class="q-title">नेपालको प्रदेशगत जनसङ्ख्या वितरणको अवस्थालाई विश्लेषण गर्नुहोस्।</p>
+        </div>
+        <div class="answer">
+          <span class="lbl">उत्तर</span>
+
+          <div class="block">
+            <span class="block-head violet">📌 १. परिचय</span>
+            <div class="block-content">
+              <p>कुनै पनि देशको सामाजिक, आर्थिक र राजनीतिक योजना निर्माणका लागि जनसङ्ख्याको प्रादेशिक वितरणसम्बन्धी तथ्याङ्क आधारभूत मानिन्छ। राष्ट्रिय तथ्याङ्क कार्यालय (NSO) द्वारा सार्वजनिक गरिएको <strong>बाह्रौँ राष्ट्रिय जनगणना २०७८ (NPHC 2021)</strong> अनुसार नेपालको कुल जनसङ्ख्या <strong>२,९१,६४,५७८</strong> (पुरुष: ४८.८७%, महिला: ५१.१३%) र राष्ट्रिय जनघनत्व <strong>१९८ जना प्रति वर्ग किलोमिटर</strong> पुगेको छ। नेपालका सातवटै प्रदेशहरूमा धरातलीय विविधता, सुविधाको पहुँच र आन्तरिक बसाइँसराइका कारण जनसङ्ख्याको वितरण अत्यधिक असन्तुलित रहेको छ।</p>
+            </div>
+          </div>
+
+          <div class="flow-diagram">
+            <div class="flow-title">🌐 नेपालको प्रदेशगत जनसङ्ख्या वितरण (२०७८)</div>
+            <div class="flow-root">नेपालको प्रदेशगत जनसङ्ख्या वितरण</div>
+            <div class="flow-branches">
+              <div class="flow-col">
+                <span class="flow-col-head">१. जनसङ्ख्याको आकार र हिस्सा</span>
+                <ul>
+                  <li>बागमती (२०.९७%) र मधेश (२०.९७%)</li>
+                  <li>दुई प्रदेशमा ४१.९४% जनसङ्ख्या</li>
+                  <li>कर्णालीमा सबैभन्दा कम (५.७९%)</li>
+                </ul>
+              </div>
+              <div class="flow-col">
+                <span class="flow-col-head">२. जनघनत्वको असन्तुलन</span>
+                <ul>
+                  <li>मधेश: ६३३ / किमी² (उच्चतम)</li>
+                  <li>बागमती: ३०१ / किमी²</li>
+                  <li>कर्णाली: ६० / किमी² (न्यूनतम)</li>
+                </ul>
+              </div>
+              <div class="flow-col">
+                <span class="flow-col-head">३. बसाइँसराइ र वृद्धि</span>
+                <ul>
+                  <li>पहाडी/हिमाली ३२ जिल्लामा ऋणात्मक वृद्धि</li>
+                  <li>भक्तपुरमा +३.३५% (सर्वाधिक)</li>
+                  <li>सहरी जनसङ्ख्या ६६.१७%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head teal">📊 २. विषय प्रवेश तथा मुख्य विश्लेषण</span>
+            <div class="block-content">
+              <p>राष्ट्रिय जनगणना २०७८ को तथ्याङ्कका आधारमा नेपालको प्रदेशगत जनसङ्ख्या वितरणका मुख्य विशेषताहरूलाई निम्नानुसार विश्लेषण गर्न सकिन्छ:</p>
+
+              <p style="font-weight:800; color:var(--violet-deep); margin-top:14px;">(क) प्रदेशगत जनसङ्ख्याको आकार र प्रादेशिक हिस्सा</p>
+              <p>नेपालका सात प्रदेशहरूमा जनसङ्ख्याको वितरण निकै असमान छ:</p>
+              <ol class="list-arrow">
+                <li><strong>बागमती प्रदेश (२०.९७%):</strong> कुल ६१,१६,८६६ जनसङ्ख्याका साथ देशकै सबैभन्दा धेरै जनसङ्ख्या भएको प्रदेश।</li>
+                <li><strong>मधेश प्रदेश (२०.९७%):</strong> कुल ६१,१४,६०० जनसङ्ख्याका साथ दोस्रो ठुलो (लगभग बागमती बराबर) जनसङ्ख्या भएको प्रदेश। (यी दुई प्रदेशमा मात्र देशको <strong>४१.९४% जनसङ्ख्या</strong> बसोबास गर्दछ)।</li>
+                <li><strong>लुम्बिनी प्रदेश (१७.५६%):</strong> ५१,२२,०७८ जनसङ्ख्याका साथ तेस्रो स्थानमा।</li>
+                <li><strong>कोशी प्रदेश (१७.०१%):</strong> ४९,६१,४१२ जनसङ्ख्याका साथ चौथो स्थानमा।</li>
+                <li><strong>सुदूरपश्चिम प्रदेश (९.२४%):</strong> २६,९४,७८३ जनसङ्ख्या।</li>
+                <li><strong>गण्डकी प्रदेश (८.४६%):</strong> २४,६६,४२७ जनसङ्ख्या।</li>
+                <li><strong>कर्णाली प्रदेश (५.७९%):</strong> १६,८८,४१२ जनसङ्ख्याका साथ सबैभन्दा कम जनसङ्ख्या भएको प्रदेश।</li>
+              </ol>
+
+              <p style="font-weight:800; color:var(--violet-deep); margin-top:16px;">(ख) जनघनत्वको तीव्र असन्तुलन</p>
+              <p>नेपालको राष्ट्रिय औसत जनघनत्व <strong>१९८ जना/किमी²</strong> रहेको छ। तर प्रदेशगत रूपमा यसमा व्यापक अन्तर देखिन्छ:</p>
+              <ul class="list-arrow bullet">
+                <li><strong>मधेश प्रदेश:</strong> सीमित क्षेत्रफल (६.५६%) मा उच्च जनसङ्ख्या भएकाले यहाँको जनघनत्व नेपालमै सर्वोच्च <strong>६३३ जना/किमी²</strong> छ।</li>
+                <li><strong>बागमती प्रदेश:</strong> प्रति वर्ग किमी <strong>३०१ जना</strong> बसोबास गर्छन्।</li>
+                <li><strong>कर्णाली प्रदेश:</strong> भौगोलिक रूपमा ठुलो भए तापनि विकटताका कारण यहाँको जनघनत्व नेपालमै सबैभन्दा कम <strong>६० जना/किमी²</strong> मात्र रहेको छ।</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head amber">(ग) प्रदेशगत आधिकारिक जनसङ्ख्या तालिका (Census 2078)</span>
+            <div class="block-content" style="padding:0; background:transparent; border:none;">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>क्र.सं.</th>
+                      <th>प्रदेशको नाम</th>
+                      <th>कुल जनसङ्ख्या</th>
+                      <th>जनसङ्ख्या %</th>
+                      <th>जनघनत्व<br><small style="font-size:12px;">(प्रति किमी²)</small></th>
+                      <th>सहरी<br><small style="font-size:12px;">जनसङ्ख्या %</small></th>
+                      <th>सक्रिय जनसङ्ख्या<br><small style="font-size:12px;">(१५–५९)</small></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>१</td><td class="prov">बागमती प्रदेश</td><td>६१,१६,८६६</td><td><strong>२०.९७%</strong></td><td>३०१</td><td><strong>७९.६%</strong></td><td class="highlight">६४.१%</td></tr>
+                    <tr><td>२</td><td class="prov">मधेश प्रदेश</td><td>६१,१४,६००</td><td><strong>२०.९७%</strong></td><td class="highlight">६३३</td><td>६३.४%</td><td>५७.८%</td></tr>
+                    <tr><td>३</td><td class="prov">लुम्बिनी प्रदेश</td><td>५१,२२,०७८</td><td><strong>१७.५६%</strong></td><td>२३०</td><td>६३.२%</td><td>५९.१%</td></tr>
+                    <tr><td>४</td><td class="prov">कोशी प्रदेश</td><td>४९,६१,४१२</td><td><strong>१७.०१%</strong></td><td>१९२</td><td>६१.४%</td><td>६१.५%</td></tr>
+                    <tr><td>५</td><td class="prov">सुदूरपश्चिम प्रदेश</td><td>२६,९४,७८३</td><td><strong>९.२४%</strong></td><td>१३८</td><td>३४.६%</td><td>५६.९%</td></tr>
+                    <tr><td>६</td><td class="prov">गण्डकी प्रदेश</td><td>२४,६६,४२७</td><td><strong>८.४६%</strong></td><td>११५</td><td>५७.८%</td><td>६२.८%</td></tr>
+                    <tr><td>७</td><td class="prov">कर्णाली प्रदेश</td><td>१६,८८,४१२</td><td><strong>५.७९%</strong></td><td class="highlight">६०</td><td>३५.५%</td><td>५७.०%</td></tr>
+                    <tr class="total-row"><td>—</td><td>नेपाल (कुल/औसत)</td><td>२,९१,६४,५७८</td><td>१००%</td><td>१९८</td><td>६६.१७%</td><td>६१.९६%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head rose">(घ) आन्तरिक बसाइँसराइ र ऋणात्मक वृद्धि</span>
+            <div class="block-content">
+              <ul class="list-arrow bullet">
+                <li><strong>३२ जिल्लामा ऋणात्मक वृद्धि:</strong> पहाडी तथा हिमाली दुर्गम क्षेत्रबाट सुविधायुक्त तराई र सहरतर्फ तीव्र बसाइँसराइ भएकाले नेपालका <strong>३२ वटा जिल्लाहरूमा जनसङ्ख्या वृद्धिदर ऋणात्मक (-)</strong> देखिएको छ। (जस्तै: रामेछापमा -१.६७%)।</li>
+                <li><strong>भक्तपुरमा तीव्र वृद्धि:</strong> सहरी सुविधा र काठमाडौँ उपत्यकाको सामीप्यले भक्तपुर जिल्लाको वार्षिक जनसङ्ख्या वृद्धिदर नेपालमै सर्वाधिक <strong>३.३५%</strong> पुगेको छ।</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="block-head green">(ङ) उमेरगत संरचना र सहरीकरणको स्थिति</span>
+            <div class="block-content">
+              <ul class="list-arrow bullet">
+                <li><strong>सक्रिय जनसङ्ख्या:</strong> नेपालमा कुल जनसङ्ख्याको <strong>६१.९६% सक्रिय जनसङ्ख्या (१५–५९ वर्ष)</strong> छ, जुन बागमती प्रदेशमा सर्वाधिक (६४.१%) छ।</li>
+                <li><strong>सहरी जनसङ्ख्या:</strong> नेपालको <strong>६६.१७% जनसङ्ख्या</strong> नगरपालिका तथा सहरी क्षेत्रमा बसोबास गर्छ। बागमतीमा ७९.६% सहरी जनसङ्ख्या छ भने कर्णाली (३५.५%) र सुदूरपश्चिममा (३४.६%) ग्रामीण जनसङ्ख्याको वर्चस्व छ।</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="conclusion"><strong>🎯 ३. निष्कर्ष:</strong> समग्रमा, नेपालको प्रदेशगत जनसङ्ख्या वितरणले तराई र उपत्यकाका सुविधायुक्त प्रदेशहरूमा (बागमती, मधेश, लुम्बिनी) जनसङ्ख्याको अत्यधिक केन्द्रीकरण भएको र हिमाली/पहाडी विकट प्रदेशहरू (कर्णाली, गण्डकीका पहाडी भाग) जनशक्तिविहीन बन्दै गएको स्पष्ट चित्र प्रस्तुत गर्दछ। यो असन्तुलन रोक्न तीनै तहका सरकारहरूले ग्रामीण तथा विकट क्षेत्रहरूमा सडक, शिक्षा, स्वास्थ्य, बिजुली र स्वरोजगारका एकीकृत पूर्वाधार निर्माण गरी सन्तुलित प्रादेशिक विकास र एकीकृत बस्ती व्यवस्थापन नीति लागू गर्नु अति आवश्यक छ।</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ================= SUMMARY TABLE CARD ================= -->
+    <article class="card c1" id="data-table">
+      <div class="card-head">
+        <span class="pill">Quick Revision</span>
+      </div>
+      <h2>📊 मुख्य तथ्याङ्क — एकै नजरमा</h2>
+      <p class="lead">परीक्षाअघि छिटो दोहोर्‍याउन यी तथ्याङ्क कण्ठ गर्नुहोस्।</p>
+
+      <div class="block">
+        <span class="block-head teal">📌 समग्र राष्ट्रिय तथ्याङ्क (२०७८)</span>
+        <div class="block-content">
+          <ul class="list-arrow bullet">
+            <li><strong>कुल जनसङ्ख्या:</strong> २,९१,६४,५७८ (पुरुष ४८.८७%, महिला ५१.१३%)</li>
+            <li><strong>राष्ट्रिय जनघनत्व:</strong> १९८ जना/किमी²</li>
+            <li><strong>सहरी जनसङ्ख्या:</strong> ६६.१७%</li>
+            <li><strong>सक्रिय जनसङ्ख्या (१५–५९):</strong> ६१.९६%</li>
+            <li><strong>सबैभन्दा बढी जनसङ्ख्या भएको जिल्ला:</strong> काठमाडौँ (२०,४१,५८७)</li>
+            <li><strong>सबैभन्दा कम जनसङ्ख्या भएको जिल्ला:</strong> मनाङ (५,६५८)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block">
+        <span class="block-head amber">📌 प्रदेशगत रेकर्डहरू</span>
+        <div class="block-content">
+          <ul class="list-arrow bullet">
+            <li><strong>सबैभन्दा बढी जनसङ्ख्या:</strong> बागमती प्रदेश (६१,१६,८६६ / २०.९७%)</li>
+            <li><strong>सबैभन्दा कम जनसङ्ख्या:</strong> कर्णाली प्रदेश (१६,८८,४१२ / ५.७९%)</li>
+            <li><strong>सबैभन्दा बढी जनघनत्व:</strong> मधेश प्रदेश (६३३ जना/किमी²)</li>
+            <li><strong>सबैभन्दा कम जनघनत्व:</strong> कर्णाली प्रदेश (६० जना/किमी²)</li>
+            <li><strong>सबैभन्दा बढी सहरी जनसङ्ख्या:</strong> बागमती प्रदेश (७९.६%)</li>
+            <li><strong>सबैभन्दा बढी सक्रिय जनसङ्ख्या:</strong> बागमती प्रदेश (६४.१%)</li>
+            <li><strong>सबैभन्दा ठुलो परिवार आकार:</strong> मधेश प्रदेश (५.३१ जना)</li>
+            <li><strong>सबैभन्दा तीव्र वार्षिक वृद्धिदर:</strong> भक्तपुर जिल्ला (+३.३५%)</li>
+            <li><strong>सबैभन्दा ऋणात्मक वृद्धिदर:</strong> रामेछाप जिल्ला (-१.६७%)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tipbox">
+        <h4>💡 परीक्षा सुझाव</h4>
+        <p>१ अङ्कमा सिधा एक-दुई वाक्य (सङ्ख्या सहित), र ८ अङ्कमा ४-चरण ढाँचा — <strong>परिचय → जनसाङ्ख्यिक स्थिति → सामाजिक र आर्थिक प्रभाव → निष्कर्ष</strong> अनिवार्य पालना गर्नुहोस्। तालिका र जनघनत्वका सङ्ख्या (६३३, ३०१, ६०) उल्लेख गर्दा अङ्क बढी पाइन्छ।</p>
+      </div>
+    </article>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="big">✨ कक्षा १२ सामाजिक — एकाइ ५ · पाठ २ ✨</div>
+      <div class="small">प्रदेशहरूको जनसाङ्ख्यिक अवस्था · जनगणना २०७८</div>
+      <div class="small" style="margin-top:10px; font-size:15px;">
+        तथ्याङ्क कण्ठ गर्नुहोस् → तालिका दोहोर्‍याउनुहोस् → उत्तर लेख्ने अभ्यास गर्नुहोस्। यही तरिकाले अङ्क स्थिर हुन्छ।
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="माथि जानुहोस्">↑</button>
+
+<script>
+(function () {
+  const menuBtn = document.getElementById('menuBtn');
+  const sidenav  = document.getElementById('sidenav');
+  const overlay  = document.getElementById('overlay');
+
+  function openNav() {
+    sidenav.classList.add('open');
+    overlay.classList.add('show');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
+    sidenav.classList.remove('open');
+    overlay.classList.remove('show');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  menuBtn.addEventListener('click', function () {
+    sidenav.classList.contains('open') ? closeNav() : openNav();
+  });
+  overlay.addEventListener('click', closeNav);
+
+  document.querySelectorAll('.sidenav a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (window.innerWidth < 1024) closeNav();
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeNav();
+  });
+
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 420) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  });
+
+  const sections = document.querySelectorAll('article[id]');
+  const navLinks = document.querySelectorAll('.nav-main');
+  window.addEventListener('scroll', function () {
+    let current = '';
+    sections.forEach(function (sec) {
+      if (window.scrollY >= sec.offsetTop - 140) current = sec.id;
+    });
+    navLinks.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>
