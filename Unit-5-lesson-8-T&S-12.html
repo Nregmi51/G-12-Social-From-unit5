@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ ८ – विपत् व्यवस्थापन संयन्त्र र योजना निर्माण (कक्षा १२)</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #eef0fa;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fefcf7;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #c3c7e0;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #283593;
+            line-height: 1.2;
+        }
+
+        .main-header h1 i {
+            color: #3949AB;
+            margin-right: 10px;
+        }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #283593;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .credit-bar {
+            background: #e6e8f6;
+            border-radius: 60px;
+            padding: 14px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #c3c7e0;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .credit-bar .name {
+            color: #0b2b4a;
+            font-weight: 800;
+            font-size: 1.15rem;
+        }
+
+        .credit-bar .email {
+            color: #283593;
+            font-weight: 700;
+        }
+
+        .credit-bar i {
+            color: #283593;
+            margin-right: 6px;
+        }
+
+        /* ----- TABLE OF CONTENTS ----- */
+        .toc-section {
+            background: #283593;
+            border-radius: 20px;
+            padding: 18px 24px;
+            margin: 6px 0 28px;
+            border: 2px solid #3949AB;
+        }
+
+        .toc-section h3 {
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.36rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toc-section h3 i {
+            color: #f5d742;
+            font-size: 1.3rem;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4px 16px;
+        }
+
+        .toc-grid a {
+            color: #dde0f5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16.5px;
+            padding: 4px 0 4px 6px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toc-grid a:hover {
+            color: #f5d742;
+            border-bottom-color: #f5d742;
+            transform: translateX(4px);
+        }
+
+        .toc-grid a i {
+            color: #f5d742;
+            font-size: 0.6rem;
+            min-width: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .toc-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .toc-grid a {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+            .toc-grid a {
+                font-size: 14px;
+            }
+        }
+
+        /* ----- SECTION HEADERS ----- */
+        .section-head {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #283593;
+            margin: 42px 0 16px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            scroll-margin-top: 80px;
+            box-shadow: 0 3px 12px rgba(40, 53, 147, 0.35);
+        }
+
+        .section-head i {
+            font-size: 1.5rem;
+            color: #f5d742;
+        }
+
+        .section-head .mark-badge {
+            color: #283593;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: 4px;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #f5d742; color: #0b2b4a; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.pink { background: #f48fb1; color: #0b2b4a; }
+
+        .sub-head {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #283593;
+            margin: 28px 0 12px;
+            padding-left: 14px;
+            border-left: 6px solid #283593;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            scroll-margin-top: 80px;
+        }
+
+        .sub-head i {
+            color: #283593;
+            font-size: 1.1rem;
+        }
+
+        .sub-head-sm {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #283593;
+            margin: 18px 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sub-head-sm i {
+            color: #283593;
+        }
+
+        /* ----- CONTENT BOXES ----- */
+        .content-box {
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #283593;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .content-box p,
+        .content-box ul,
+        .content-box ol,
+        .content-box li {
+            font-size: 1.19rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .content-box ul,
+        .content-box ol {
+            padding-left: 28px;
+            margin: 8px 0 8px;
+        }
+
+        .content-box li {
+            margin-bottom: 6px;
+        }
+
+        .content-box strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .content-box.indigo-light {
+            border-left-color: #283593;
+            background: #eef0fa;
+        }
+
+        .content-box.blue-light {
+            border-left-color: #1a3a5c;
+            background: #e8f0f8;
+        }
+
+        .content-box.gold-light {
+            border-left-color: #b45309;
+            background: #fef8ee;
+        }
+
+        .content-box.green-light {
+            border-left-color: #1f7a4a;
+            background: #eef8f2;
+        }
+
+        .content-box.purple-light {
+            border-left-color: #6A1B9A;
+            background: #f4eef8;
+        }
+
+        .content-box.teal-light {
+            border-left-color: #0f7a7a;
+            background: #eef8f8;
+        }
+
+        .content-box.pink-light {
+            border-left-color: #a03a5a;
+            background: #fcf0f4;
+        }
+
+        .content-box.orange-light {
+            border-left-color: #d97706;
+            background: #fef6ed;
+        }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0 14px;
+            border-radius: 14px;
+            border: 2px solid #c3c7e0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.05rem;
+            min-width: 320px;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            border: 1px solid #c3c7e0;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #283593;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.08rem;
+        }
+
+        td {
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .table-caption {
+            background: #e6e8f6;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.08rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #c3c7e0;
+        }
+
+        /* ----- Q&A BLOCKS ----- */
+        .qa-block {
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #283593;
+        }
+
+        .qa-block.color1 { border-left-color: #283593; background: #eef0fa; }
+        .qa-block.color2 { border-left-color: #1a3a5c; background: #f0f5fa; }
+        .qa-block.color3 { border-left-color: #1f7a4a; background: #f2f8f5; }
+        .qa-block.color4 { border-left-color: #6b3fa0; background: #f6f2f8; }
+        .qa-block.color5 { border-left-color: #b45309; background: #fcf9f4; }
+        .qa-block.color6 { border-left-color: #0f7a7a; background: #eef8f8; }
+        .qa-block.color7 { border-left-color: #a03a5a; background: #fcf5f8; }
+        .qa-block.color8 { border-left-color: #d97706; background: #fef8ef; }
+
+        .qa-block .q {
+            font-weight: 900;
+            color: #283593;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 1.22rem;
+        }
+
+        .qa-block .q .qnum {
+            color: #3949AB;
+            font-weight: 900;
+            min-width: 30px;
+        }
+
+        .qa-block .a {
+            margin-top: 6px;
+            padding-left: 46px;
+            color: #1e2a3a;
+            font-weight: 500;
+            font-size: 1.19rem;
+        }
+
+        .qa-block .a ul,
+        .qa-block .a ol {
+            padding-left: 24px;
+            margin: 6px 0 6px;
+        }
+
+        .qa-block .a li {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .qa-block .a strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-icon {
+            display: inline-block;
+            margin-right: 6px;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-title {
+            font-weight: 700;
+            color: #283593;
+            font-size: 1.1rem;
+        }
+
+        /* ----- GLOSSARY GRID ----- */
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 16px 0 8px;
+        }
+
+        .glossary-item {
+            background: #faf8f5;
+            border-radius: 12px;
+            padding: 14px 18px;
+            border-left: 5px solid #283593;
+        }
+
+        .glossary-item strong {
+            color: #283593;
+            font-size: 1.15rem;
+            font-weight: 900;
+        }
+
+        .glossary-item p {
+            margin-top: 3px;
+            font-size: 1.125rem;
+            color: #2d3a4a;
+            font-weight: 500;
+        }
+
+        /* ----- FLOW CHART (CSS) ----- */
+        .mermaid-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin: 16px 0;
+            padding: 14px 10px;
+            background: #eef0fa;
+            border-radius: 20px;
+            border: 2px dashed #3949AB;
+        }
+
+        .mermaid-step {
+            background: #ffffff;
+            padding: 8px 22px;
+            border-radius: 40px;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #0b2b4a;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            border: 2px solid #283593;
+            text-align: center;
+            min-width: 160px;
+        }
+
+        .mermaid-arrow {
+            font-size: 1.6rem;
+            color: #7f8fa6;
+            line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+            .mermaid-step {
+                font-size: 0.85rem;
+                padding: 6px 14px;
+                min-width: 120px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mermaid-flow {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4px 14px;
+            }
+            .mermaid-arrow {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* ----- MNEMONIC CARD ----- */
+        .mnemonic-card {
+            background: #faf8f5;
+            border-radius: 14px;
+            padding: 16px 22px;
+            border: 2px solid #c3c7e0;
+            border-left: 6px solid #283593;
+            margin: 12px 0;
+        }
+
+        .mnemonic-card .mn-title {
+            font-weight: 900;
+            color: #283593;
+            font-size: 1.12rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+        }
+
+        .mnemonic-card .mn-title i {
+            color: #3949AB;
+        }
+
+        .mnemonic-card .mn-code {
+            display: inline-block;
+            background: #283593;
+            color: #ffffff;
+            font-weight: 900;
+            padding: 2px 14px;
+            border-radius: 30px;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .mnemonic-card p,
+        .mnemonic-card li {
+            font-weight: 500;
+            font-size: 1.08rem;
+            margin-bottom: 4px;
+        }
+
+        .mnemonic-card ul {
+            padding-left: 24px;
+        }
+
+        .mnemonic-card strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        /* ----- ACTIVITY BOX ----- */
+        .activity-box {
+            background: #f5f0e8;
+            border-radius: 16px;
+            padding: 18px 22px;
+            border: 2px solid #c3c7e0;
+            margin: 12px 0;
+        }
+
+        .activity-box .act-title {
+            font-weight: 900;
+            color: #283593;
+            font-size: 1.1rem;
+        }
+
+        .activity-box p,
+        .activity-box li {
+            font-weight: 500;
+            font-size: 1.12rem;
+        }
+
+        .activity-box ul,
+        .activity-box ol {
+            padding-left: 24px;
+        }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #283593;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(40, 53, 147, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #scrollUpBtn:hover {
+            background: #3949AB;
+            transform: scale(1.08);
+            box-shadow: 0 6px 28px rgba(40, 53, 147, 0.5);
+        }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 3px solid #c3c7e0;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 28px;
+            font-weight: 600;
+        }
+
+        .footer-copy i {
+            color: #283593;
+            margin-right: 6px;
+        }
+
+        .footer-copy .highlight {
+            font-weight: 800;
+            color: #0b2b4a;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px dotted #c3c7e0;
+            margin: 28px 0 10px;
+        }
+
+        .tip-box {
+            background: #283593;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .tip-box i {
+            margin-right: 8px;
+        }
+
+        .tip-box strong {
+            color: #f5d742;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 12px 24px;
+                border-radius: 20px;
+            }
+
+            .main-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-head {
+                font-size: 1.35rem;
+                padding: 10px 16px;
+            }
+
+            .sub-head {
+                font-size: 1.15rem;
+            }
+
+            .qa-block .a {
+                padding-left: 12px;
+            }
+
+            .qa-block .q {
+                font-size: 1.05rem;
+                flex-wrap: wrap;
+            }
+
+            .credit-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                font-size: 0.9rem;
+                padding: 10px 16px;
+            }
+
+            .glossary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #scrollUpBtn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                bottom: 18px;
+                right: 18px;
+            }
+
+            .toc-section {
+                padding: 14px 16px;
+            }
+
+            .content-box {
+                padding: 14px 16px;
+            }
+            .content-box p,
+            .content-box ul,
+            .content-box ol,
+            .content-box li {
+                font-size: 1.02rem;
+            }
+            .qa-block .a {
+                font-size: 1.02rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+            th,
+            td {
+                font-size: 0.9rem;
+                padding: 6px 8px;
+            }
+            .glossary-item strong {
+                font-size: 1.05rem;
+            }
+            .glossary-item p {
+                font-size: 0.98rem;
+            }
+            .activity-box p,
+            .activity-box li {
+                font-size: 1.02rem;
+            }
+            .mnemonic-card p,
+            .mnemonic-card li {
+                font-size: 1.0rem;
+            }
+            .mermaid-step {
+                font-size: 0.8rem;
+                padding: 4px 12px;
+                min-width: 100px;
+            }
+            .toc-grid a {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 36px 46px 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <div>
+                <h1>
+                    <i class="fas fa-shield-halved"></i>
+                    एकाइ ५, पाठ ८: विपत् व्यवस्थापन संयन्त्र र योजना निर्माण
+                </h1>
+                <div class="subtitle">
+                    कक्षा १२ · भूगोल र सामाजिक जीवन
+                    <span class="badge-class"><i class="fas fa-check-circle"></i> परीक्षा विशेष क्याप्सुल</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CREDIT BAR ===== -->
+        <div class="credit-bar">
+            <span>
+                <i class="fas fa-user-edit"></i>
+                <span class="name">Prepared by: Narayan Sir</span>
+            </span>
+            <span>
+                <i class="fas fa-envelope"></i>
+                <span class="email">nregmi511@gmail.com</span>
+            </span>
+            <span>
+                <i class="fas fa-copyright"></i>
+                कक्षा १२ – एकाइ ५, पाठ ८
+            </span>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <!-- ========================================================== -->
+
+        <div class="toc-section" id="toc">
+            <h3><i class="fas fa-list-ul"></i> विषयसूची</h3>
+            <div class="toc-grid">
+                <a href="#section1"><i class="fas fa-chevron-right"></i> पारिभाषिक शब्दावली</a>
+                <a href="#section2"><i class="fas fa-chevron-right"></i> कानुनी र संस्थागत व्यवस्था</a>
+                <a href="#section3"><i class="fas fa-chevron-right"></i> विपत् व्यवस्थापन चक्र</a>
+                <a href="#section4"><i class="fas fa-chevron-right"></i> सुत्रत्मक घोक्ने बुँदा</a>
+                <a href="#section5"><i class="fas fa-chevron-right"></i> क्रियाकलाप समाधान</a>
+                <a href="#section6"><i class="fas fa-chevron-right"></i> परीक्षा उपयोगी Q&amp;A</a>
+            </div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== १. पारिभाषिक शब्दावली ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section1">
+            <i class="fas fa-book-open"></i>
+            १. विषयगत पारिभाषिक शब्दहरू
+            <span class="mark-badge blue">Glossary</span>
+        </div>
+
+        <div class="glossary-grid">
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#283593; margin-right:4px;"></i> विपत् व्यवस्थापन (Disaster Management)</strong>
+                <p>विपत् जोखिम न्यूनीकरण, विपत् पूर्वतयारी, विपत् प्रतिकार्य (उद्धार तथा राहत) र विपत् पश्चातको पुनर्लाभ (पुनर्स्थापना र पुनर्निर्माण) सँग सम्बन्धित सम्पूर्ण एकीकृत क्रियाकलापलाई <strong>विपत् व्यवस्थापन</strong> भनिन्छ।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#283593; margin-right:4px;"></i> सेन्डाई फ्रेमवर्क (Sendai Framework 2015–2030)</strong>
+                <p>सन् २०१५ मार्चमा जापानको सेन्डाई सहरमा सम्पन्न तेस्रो संयुक्त राष्ट्रसङ्घीय विश्व सम्मेलनद्वारा पारित विपत् जोखिम न्यूनीकरणसम्बन्धी अन्तर्राष्ट्रिय खाका/रणनीति। यो ह्योगो फ्रेमवर्क (Hyogo Framework 2005–2015) को निरन्तरता हो।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#283593; margin-right:4px;"></i> विपत् जोखिम न्यूनीकरण तथा व्यवस्थापन प्राधिकरण (NDRRMA)</strong>
+                <p>विपत् जोखिम न्यूनीकरण तथा व्यवस्थापन ऐन, २०७४ बमोजिम नेपालमा विपत् जोखिम न्यूनीकरण र व्यवस्थापनसम्बन्धी सम्पूर्ण कार्यहरूको कार्यकारी सञ्चालन, समन्वय र अनुगमन गर्न गठित विषयगत राष्ट्रिय निकाय।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#283593; margin-right:4px;"></i> जिल्ला विपत् व्यवस्थापन समिति (DDMC)</strong>
+                <p>जिल्ला स्तरमा विपत् व्यवस्थापन, पूर्वतयारी, उद्धार, राहत तथा समन्वयका लागि <strong>प्रमुख जिल्ला अधिकारी (CDO)</strong> को संयोजकत्वमा नेपालका सबै ७७ वटा जिल्लाहरूमा क्रियाशील रहेको कानुनी समिति।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#283593; margin-right:4px;"></i> विपत् व्यवस्थापन चक्र (Disaster Management Cycle)</strong>
+                <p>विपत् हुनुभन्दा अगाडि, विपत्का समयमा र विपत् पछाडि क्रमशः सञ्चालन गरिने ४ वटा चरणहरू: <strong>अल्पीकरण (Mitigation), तयारी (Preparation), प्रतिकार्य (Response), र पुनर्लाभ (Recovery)</strong> को निरन्तर घुम्ने प्रक्रिया।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#283593; margin-right:4px;"></i> पूर्वसूचना प्रणाली (Early Warning System)</strong>
+                <p>प्राकृतिक वा गैरप्राकृतिक प्रकोप आउनु अगावै सम्भावित जोखिमबारे लक्षित समुदायलाई आधुनिक प्रविधि (SMS, साइरन, रेडियो, सञ्चार माध्यम) मार्फत समयमै सुसूचित गराई जनधनको क्षति कम गर्ने प्रविधि/प्रणाली।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#283593; margin-right:4px;"></i> स्थानीय ज्ञान (Local/Indigenous Knowledge)</strong>
+                <p>कुनै निश्चित समुदायले आफ्नो भूगोल, वातावरण र प्राकृतिक प्रकोपसँग जुध्ने क्रममा परापूर्वकालदेखि अनुभव र अभ्यासका आधारमा आर्जन गरेको परम्परागत ज्ञान, सिप र प्रविधि।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#283593; margin-right:4px;"></i> पुनर्लाभ र अझ राम्रो पुनर्निर्माण (Recovery &amp; Build Back Better)</strong>
+                <p>विपत् पश्चात प्रभावित समुदायको भौतिक तथा सामाजिक पूर्वाधारहरूलाई पूर्ववत् अवस्थामा फर्काउनुका साथै भविष्यका सम्भावित जोखिमहरू खप्न सक्ने गरी अझ बलियो र सुरक्षित बनाउने अवधारणा।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== २. कानुनी र संस्थागत व्यवस्था ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section2">
+            <i class="fas fa-scale-balanced"></i>
+            २. कानुनी, नीतिगत तथा संस्थागत व्यवस्था
+            <span class="mark-badge gold">Core Notes</span>
+        </div>
+
+        <!-- १. कानुनी व्यवस्था -->
+        <div class="sub-head"><i class="fas fa-gavel"></i> १. संवैधानिक, कानुनी र नीतिगत व्यवस्थाहरू</div>
+
+        <div class="content-box indigo-light">
+            <div class="table-wrap">
+                <div class="table-caption">तालिका १: नेपालको संविधान तथा कानुनी/नीतिगत व्यवस्था</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:24%;">कानुनी / नीतिगत व्यवस्था</th>
+                            <th style="width:22%;">लागू मिति / धारा</th>
+                            <th style="width:54%;">मुख्य विषयवस्तु तथा संवैधानिक मर्म</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>नेपालको संविधान</strong></td>
+                            <td>अनुसूची ५, ७, ९</td>
+                            <td>सङ्घको अधिकार (अनुसूची ५), सङ्घ र प्रदेशको साझा अधिकार (अनुसूची ७) र सङ्घ, प्रदेश तथा स्थानीय तहको साझा अधिकार (अनुसूची ९) मा विपत् व्यवस्थापन समावेश।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>दैवी प्रकोप (उद्धार) ऐन</strong></td>
+                            <td>वि.सं. २०३९</td>
+                            <td>विपत्मा उद्धार र राहत कार्यमा जोड दिने नेपालको पहिलो परम्परागत कानुनी व्यवस्था।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>विपत् जोखिम न्यूनीकरण ऐन</strong></td>
+                            <td>वि.सं. २०७४ (नियमावली २०७५)</td>
+                            <td>उद्धार र राहतमा मात्र सीमित नभई पूर्वतयारी, जोखिम न्यूनीकरण र पुनर्निर्माणलाई समेट्ने आधुनिक कानुन।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>विपत् जोखिम न्यूनीकरण नीति</strong></td>
+                            <td>वि.सं. २०७५</td>
+                            <td>नेपालमा सुरक्षित, उत्थानशील र जोखिममुक्त समाज निर्माण गर्ने राष्ट्रिय नीतिगत लक्ष्य।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>रणनीतिक कार्ययोजना</strong></td>
+                            <td>वि.सं. २०१८–२०३०</td>
+                            <td>सेन्डाई फ्रेमवर्क अनुरूप नेपालले पारित गरेको १२ वर्षे राष्ट्रिय रणनीतिक कार्ययोजना।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>स्थानीय सरकार सञ्चालन ऐन</strong></td>
+                            <td>वि.सं. २०७४</td>
+                            <td>विपत् व्यवस्थापनमा स्थानीय सरकार (गाउँपालिका/नगरपालिका) लाई प्रमुख जिम्मेवार निकाय बनाउने व्यवस्था।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- २. संस्थागत संरचना -->
+        <div class="sub-head"><i class="fas fa-sitemap"></i> २. संस्थागत संरचनाहरू र तिनको भूमिका</div>
+
+        <div class="content-box blue-light">
+            <div class="table-wrap">
+                <div class="table-caption">तालिका २: विपत् व्यवस्थापनका संस्थागत निकायहरू</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:24%;">संस्थागत निकाय / मन्त्रालय</th>
+                            <th style="width:22%;">प्रमुख नेतृत्व / संरचना</th>
+                            <th style="width:54%;">मुख्य कार्य र जिम्मेवारी</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>गृह मन्त्रालय</strong></td>
+                            <td>गृह मन्त्रालय (केन्द्र)</td>
+                            <td>राष्ट्रिय विपत् प्रतिकार्य कार्यढाँचा २०६९, DRR Portal (आपतकालीन सूचना प्रणाली) र सञ्चालन प्रक्रियाको नेतृत्व।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>विपत् व्यवस्थापन प्राधिकरण (NDRRMA)</strong></td>
+                            <td>कार्यकारी प्रमुख</td>
+                            <td>राष्ट्रिय स्तरमा विपत् जोखिम न्यूनीकरण, पूर्वतयारी, खोज, उद्धार तथा पुनर्निर्माण कार्यक्रमको प्रत्यक्ष कार्यान्वयन।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>सङ्घीय मामिला मन्त्रालय</strong></td>
+                            <td>सङ्घीय मामिला तथा सामान्य प्रशासन</td>
+                            <td>स्थानीय तहको क्षमता अभिवृद्धि र स्थानीय विपत् पूर्वतयारी तथा प्रतिकार्य योजना (LDPRP) निर्माणमा सहयोग।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>सहरी विकास मन्त्रालय</strong></td>
+                            <td>सहरी विकास मन्त्रालय</td>
+                            <td>राष्ट्रिय भवन संहिता (NBC) कार्यान्वयन गराई भवन तथा भौतिक संरचनाहरू सुरक्षित र भूकम्पप्रतिरोधी बनाउने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>जिल्ला विपत् व्यवस्थापन समिति (DDMC)</strong></td>
+                            <td>प्रमुख जिल्ला अधिकारी (CDO)</td>
+                            <td>जिल्लाभर उद्धार, राहत, सुरक्षा र खानेपानी, स्वास्थ्य तथा शिक्षा समन्वय (नेपालका ७७ वटै जिल्लामा क्रियाशील)।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>स्थानीय विपत् व्यवस्थापन समिति</strong></td>
+                            <td>पालिका प्रमुख / अध्यक्ष</td>
+                            <td>स्थानीय स्तरमा खोज, उद्धार, आपतकालीन आश्रयस्थल व्यवस्थापन र राहत वितरणको प्रत्यक्ष जिम्मेवारी।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ३. विपत् व्यवस्थापन चक्र ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section3">
+            <i class="fas fa-arrows-spin"></i>
+            ३. विपत् व्यवस्थापन चक्र र स्थानीय ज्ञान
+            <span class="mark-badge green">DRM Cycle</span>
+        </div>
+
+        <!-- १. चक्रका चरणहरू -->
+        <div class="sub-head"><i class="fas fa-rotate"></i> १. विपत् व्यवस्थापन चक्रका ४ मुख्य चरणहरू</div>
+
+        <div class="content-box green-light">
+            <div class="mermaid-flow">
+                <div class="mermaid-step">१. अल्पीकरण<br><span style="font-weight:400;">(Mitigation)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">२. पूर्वतयारी<br><span style="font-weight:400;">(Preparation)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">३. प्रतिकार्य<br><span style="font-weight:400;">(Response)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">४. पुनर्लाभ<br><span style="font-weight:400;">(Recovery)</span></div>
+            </div>
+
+            <ul>
+                <li><strong>(क) अल्पीकरण वा शमन (Mitigation):</strong> विपत् र प्रकोपको प्रभावलाई न्यून गर्ने दीर्घकालीन गतिविधिहरू; जस्तै: भवन निर्माण आचारसंहिता पालना, नदी किनारमा तटबन्ध निर्माण, वृक्षारोपण, सार्वजनिक शिक्षा।</li>
+                <li><strong>(ख) पूर्वतयारी (Preparation):</strong> विपत् आउनु अगावै जुध्नका लागि गरिने तयारी; जस्तै: पूर्वसूचना प्रणाली जडान, आपतकालीन खाद्यान्न र औषधिको जोहो, झटपट झोला (Go-bag) तयार राख्नु, आपतकालीन नक्कली अभ्यास (Drill)।</li>
+                <li><strong>(ग) प्रतिकार्य (Response):</strong> विपत् घट्नासाथ तत्काल गरिने आपतकालीन कार्यहरू; जस्तै: खोज तथा उद्धार (Search &amp; Rescue), घाइतेको उपचार, तत्काल राहत सामग्री (खाद्य, पाल, औषधी) वितरण र सुरक्षित आश्रयस्थल स्थानान्तरण।</li>
+                <li><strong>(घ) पुनर्लाभ (Recovery):</strong> विपत् पश्चात समुदायलाई सामान्य जीवनयापनमा फर्काउने कार्य; जस्तै: भत्किएका सडक र घरहरूको पुनर्निर्माण, पूर्वाधार मर्मत, आर्थिक तथा सामाजिक पुनरुत्थान।</li>
+            </ul>
+        </div>
+
+        <!-- २. स्थानीय ज्ञान -->
+        <div class="sub-head"><i class="fas fa-hands-holding-circle"></i> २. विपत् व्यवस्थापनमा स्थानीय ज्ञानको महत्त्व</div>
+
+        <div class="content-box gold-light">
+            <ul>
+                <li><strong>आन्तरिक सचेतना र सङ्केत बुझ्ने क्षमता:</strong> स्थानीय मानिसहरूले कमलो माटो, खोलाको धमिलो पानी, जीवजन्तुको अस्वाभाविक व्यवहार वा आकाशको बादल हेरेर बाढी र पहिरोको पूर्वअनुमान लगाउँछन्।</li>
+                <li><strong>तत्काल परिचालन र आत्मनिर्भरता:</strong> बाह्य वा सरकारी सहयोग पुग्नुअघि नै स्थानीयबासीले बाँस, डोरी, ढिकी, जाँतो, डुङ्गा र परम्परागत औजार प्रयोग गरी उद्धार कार्य सुरु गर्छन्।</li>
+                <li><strong>वातावरणमैत्री परम्परागत निर्माण:</strong> स्थानीय ढुङ्गा, माटो, काठ र बाँसको प्रयोग गरी लचकदार र भूकम्प प्रतिरोधी परम्परागत शैलीका घरहरू निर्माण गर्ने प्रविधि।</li>
+                <li><strong>पुस्तान्तरण र अपनत्व:</strong> स्थानीय ज्ञान समुदायको आफ्नै अनुभवमा आधारित हुने भएकाले यसमा स्थानीयबासीको पूर्ण स्वामित्व र विश्वास हुन्छ।</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ४. सुत्रत्मक घोक्ने बुँदाहरू ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section4">
+            <i class="fas fa-key"></i>
+            ४. सुत्रत्मक घोक्ने बुँदाहरू
+            <span class="mark-badge purple">Mnemonics</span>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र १: <span class="mn-code">अ-त-प्र-पु</span> (विपत् व्यवस्थापन चक्रका ४ चरणहरू)</div>
+            <ul>
+                <li><strong>अ (अल्पीकरण/Mitigation):</strong> जोखिम घटाउने दीर्घकालीन उपाय</li>
+                <li><strong>त (तयारी/Preparation):</strong> विपत् पूर्वको तयारी र अभ्यास</li>
+                <li><strong>प्र (प्रतिकार्य/Response):</strong> घटनालगत्तै गरिने खोज र उद्धार</li>
+                <li><strong>पु (पुनर्लाभ/Recovery):</strong> पुनर्निर्माण र पुनर्स्थापना</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र २: <span class="mn-code">गृह-सहरी-स्थानीय-CDO</span> (संस्थागत जिम्मेवारी)</div>
+            <ul>
+                <li><strong>गृह मन्त्रालय:</strong> राष्ट्रिय नीति र DRR Portal को सञ्चालक</li>
+                <li><strong>सहरी विकास मन्त्रालय:</strong> भवन संहिता (NBC) कार्यान्वयन</li>
+                <li><strong>स्थानीय तह:</strong> प्रत्यक्ष उद्धार, राहत र सञ्चालन</li>
+                <li><strong>CDO (प्रमुख जिल्ला अधिकारी):</strong> जिल्ला विपत् व्यवस्थापन समिति (DDMC) को अध्यक्ष</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र ३: <span class="mn-code">से-ह्यु-२०७४</span> (अन्तर्राष्ट्रिय तथा राष्ट्रिय कानुनी आधार)</div>
+            <ul>
+                <li><strong>सेन्डाई फ्रेमवर्क:</strong> २०१५–२०३० अन्तर्राष्ट्रिय खाका</li>
+                <li><strong>ह्योगो फ्रेमवर्क:</strong> २००५–२०१५ (अघिल्लो खाका)</li>
+                <li><strong>ऐन २०७४:</strong> नेपालको आधुनिक विपत् ऐन र NDRRMA को स्थापना</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ५. क्रियाकलाप समाधान ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section5">
+            <i class="fas fa-hands"></i>
+            ५. पाठ्यपुस्तकका क्रियाकलापहरूको समाधान
+            <span class="mark-badge pink">Activities</span>
+        </div>
+
+        <!-- क्रियाकलाप १ -->
+        <div class="sub-head"><i class="fas fa-clipboard-list"></i> क्रियाकलाप १: सम्भावित विपत् र उद्धार/प्रतिकार्य योजना</div>
+
+        <div class="activity-box">
+            <p class="act-title"><i class="fas fa-question-circle" style="color:#283593; margin-right:8px;"></i> प्रश्न:</p>
+            <p>तपाईं बसेको क्षेत्रमा घट्न सक्ने विपत्का मुख्य घटनाहरूको प्रभाव र तत्काल गर्न सकिने उद्धार तथा प्रतिकार्य योजना तालिका तयार पार्नुहोस्।</p>
+        </div>
+
+        <div class="content-box indigo-light">
+            <div class="table-wrap">
+                <div class="table-caption">क्रियाकलाप १ को उत्तर: विपत्, क्षति र तत्काल प्रतिकार्य योजना</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:18%;">विपत्को प्रकार</th>
+                            <th style="width:34%;">क्षति विवरण (सम्भावित असर)</th>
+                            <th style="width:48%;">तत्काल गर्न सकिने उद्धार तथा प्रतिकार्य योजना</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>बाढी (Flood)</strong></td>
+                            <td>घरखेत डुबान, कटान, जनधनको क्षति, पिउने पानी दूषित हुनु।</td>
+                            <td>
+                                १. पूर्वसूचना पाउनासाथ उच्च/सुरक्षित डाँडामा स्थानान्तरण हुने।<br>
+                                २. डोरी, ट्युब र डुङ्गाको प्रयोग गरी फसेका मानिसको उद्धार गर्ने।<br>
+                                ३. सफा पिउने पानी र सुक्का खाना (चिउरा/दालमोठ) को व्यवस्था गर्ने।
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>पहिरो (Landslide)</strong></td>
+                            <td>घर तथा सडक पुरिनु, यातायात ठप्प हुनु, धनजनको क्षति।</td>
+                            <td>
+                                १. जोखिमयुक्त ढलान छाडी सुरक्षित खुला ठाउँमा जाने।<br>
+                                २. स्थानीयबासी र प्रहरीको सहयोगमा खनजोत गरी पुरिएकाको खोजी गर्ने।<br>
+                                ३. पहिरो पन्छाएर आपतकालीन बाटो खुलाउने प्रयास गर्ने।
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>भूकम्प (Earthquake)</strong></td>
+                            <td>भौतिक संरचना र घर भत्किनु, मानिस च्यापिनु, आगो लाग्नु।</td>
+                            <td>
+                                १. 'लड्नुहोस्, ढाकिनुहोस्, समात्नुहोस्' (Drop, Cover, Hold) अपनाउने।<br>
+                                २. खुला मैदानमा भेला हुने र घाइतेलाई प्राथमिक उपचार दिने।<br>
+                                ३. भत्किएका भग्नावशेषबाट खोज तथा उद्धार टोली परिचालन गर्ने।
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>आगलागी (Fire)</strong></td>
+                            <td>घरगोठ जल्नु, धनमाल र पशुचौपायाको क्षति, मानिस डढ्नु।</td>
+                            <td>
+                                १. दमकल (Fire Brigade), बालुवा, माटो र पानीको प्रयोग गरी आगो निभाउने।<br>
+                                २. ग्यास सिलिन्डर र प्रज्वलनशील पदार्थ तत्काल टाढा सार्ने।<br>
+                                ३. पोलेका बिरामीलाई तत्काल अस्पताल पुर्‍याउने।
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- क्रियाकलाप २ -->
+        <div class="sub-head"><i class="fas fa-users"></i> क्रियाकलाप २: विपत् व्यवस्थापनमा विद्यार्थीको भूमिका</div>
+
+        <div class="activity-box">
+            <p class="act-title"><i class="fas fa-question-circle" style="color:#283593; margin-right:8px;"></i> प्रश्न:</p>
+            <p>विपत् व्यवस्थापनमा विद्यार्थीले निर्वाह गर्न सक्ने भूमिकाका बारेमा कक्षामा छलफल गर्नुहोस्।</p>
+        </div>
+
+        <div class="content-box teal-light">
+            <p>विपत् व्यवस्थापनमा युवा विद्यार्थीहरूको भूमिका अत्यन्त महत्त्वपूर्ण हुन्छ। विद्यार्थीहरूले निर्वाह गर्न सक्ने मुख्य भूमिकाहरू निम्न बुँदामा प्रस्तुत गरिएको छ:</p>
+            <ol>
+                <li><strong>जनचेतना फैलाउने:</strong> विद्यालय र समुदायमा विपत् पूर्वतयारी, झटपट झोला निर्माण र सुरक्षित व्यवहारबारे चेतना जगाउने।</li>
+                <li><strong>पूर्वसूचना प्रवाह:</strong> सञ्चार माध्यम वा प्रविधिमार्फत आएका पूर्वसूचनाबारे परिवार र छिमेकीलाई समयमै जानकारी गराउने।</li>
+                <li><strong>आपतकालीन प्राथमिक उपचार र स्वयंसेवा:</strong> प्राथमिक उपचार (First Aid) को तालिम लिई विपत्का समयमा घाइतेहरूको उपचार र उद्धारमा सघाउने।</li>
+                <li><strong>राहत सङ्कलन र व्यवस्थापन:</strong> पीडितहरूका लागि लत्ताकपडा, खाद्यान्न र आर्थिक सहयोग सङ्कलनमा स्वयंसेवक भई खटिने।</li>
+                <li><strong>सकारात्मक मनोविज्ञान र अफवाह नियन्त्रण:</strong> विपत्का समयमा फैलिन सक्ने भ्रामक हल्ला/अफवाह नियन्त्रण गर्दै पीडितलाई ढाडस र मानसिक सांत्वना दिने।</li>
+            </ol>
+        </div>
+
+        <!-- क्रियाकलाप ३ -->
+        <div class="sub-head"><i class="fas fa-globe"></i> क्रियाकलाप ३: सेन्डाई फ्रेमवर्कका मुख्य बुँदाहरू</div>
+
+        <div class="activity-box">
+            <p class="act-title"><i class="fas fa-question-circle" style="color:#283593; margin-right:8px;"></i> प्रश्न:</p>
+            <p>नेपालले विपत् व्यवस्थापनका लागि तयार गरेको सेन्डाई फ्रेमवर्क रणनीतिको मुख्य बुँदाहरू टिपोट गर्नुहोस्।</p>
+        </div>
+
+        <div class="content-box purple-light">
+            <p>नेपालले स्वीकार गरेको <strong>सेन्डाई फ्रेमवर्क (Sendai Framework 2015–2030)</strong> अनुसार विपत् जोखिम न्यूनीकरणका मुख्य चार प्राथमिकताहरू निम्न अनुसार छन्:</p>
+            <ol>
+                <li><strong>विपत् जोखिमको बोध र समझ (Understanding Disaster Risk):</strong> जोखिमको वैज्ञानिक अध्ययन, तथ्याङ्क सङ्कलन र नक्साङ्कन गर्ने।</li>
+                <li><strong>विपत् जोखिम सुशासनको सुदृढीकरण (Strengthening Disaster Risk Governance):</strong> कानुनी, नीतिगत र संस्थागत ढाँचा मजबुत बनाई सङ्घ, प्रदेश र स्थानीय तहबिच समन्वय गर्ने।</li>
+                <li><strong>विपत् जोखिम न्यूनीकरणमा लगानी (Investing in Disaster Risk Reduction):</strong> उत्थानशील समाज निर्माणका लागि भौतिक, सामाजिक, स्वास्थ्य र आर्थिक क्षेत्रमा लगानी बढाउने।</li>
+                <li><strong>प्रभावी प्रतिकार्य र 'अझ राम्रो पुनर्निर्माण' (Enhancing Disaster Preparedness &amp; Build Back Better):</strong> विपत् पूर्वतयारी सुदृढ गर्ने र पुनर्निर्माण गर्दा भविष्यका जोखिम सहन सक्ने गरी संरचनाहरू बनाउने।</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ६. परीक्षा उपयोगी Q&A ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section6">
+            <i class="fas fa-bullseye"></i>
+            ६. पाठ्यपुस्तक अभ्यास तथा बोर्ड परीक्षा विशेष Q&amp;A
+            <span class="mark-badge pink">High-Yield</span>
+        </div>
+
+        <!-- अति संक्षिप्त -->
+        <div class="sub-head"><i class="fas fa-star"></i> अति संक्षिप्त प्रश्नोत्तर (१ अङ्क)</div>
+
+        <div class="qa-block color1">
+            <div class="q"><span class="qnum">प्र.न. १:</span> नेपालमा विपत् व्यवस्थापनमा संलग्न मुख्य दुईवटा निकायहरूको नाम लेख्नुहोस्।</div>
+            <div class="a">
+                <strong>उत्तर:</strong> नेपालमा विपत् व्यवस्थापनमा संलग्न मुख्य दुई निकायहरू <strong>विपत् जोखिम न्यूनीकरण तथा व्यवस्थापन प्राधिकरण (NDRRMA)</strong> र <strong>गृह मन्त्रालय (आपतकालीन कार्यसञ्चालन केन्द्र)</strong> हुन्।
+            </div>
+        </div>
+
+        <!-- संक्षिप्त -->
+        <div class="sub-head"><i class="fas fa-star"></i> संक्षिप्त प्रश्नोत्तर (५ अङ्क)</div>
+
+        <div class="qa-block color3">
+            <div class="q"><span class="qnum">प्र.न. २:</span> स्थानीय ज्ञान भनेको के हो? विपत् व्यवस्थापनमा स्थानीय ज्ञानले पुर्‍याउने योगदान माथि चर्चा गर्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> कुनै निश्चित समुदायले आफ्नो वातावरण, भूगोल र प्राकृतिक परिस्थिति अनुसार परापूर्वकालदेखि अनुभव र अभ्यासका आधारमा विकास गरेको परम्परागत ज्ञान, सिप र प्रविधिलाई <strong>स्थानीय ज्ञान (Local Knowledge)</strong> भनिन्छ।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. विपत् व्यवस्थापनमा स्थानीय ज्ञानको योगदान:</span></p>
+                <ul>
+                    <li><strong>पूर्वअनुमान र पूर्वसूचना:</strong> आकाशको बादल, खोलाको धमिलोपना, हावाको दिशा र कमिला वा भ्यागुताको अस्वाभाविक गतिविधि हेरेर मौसम र बाढी-पहिरोको पूर्वअनुमान लगाउन सकिन्छ।</li>
+                    <li><strong>तत्काल स्थानीय उद्धार:</strong> बाह्य उद्धार टोली नपुग्दै स्थानीयस्तरमा उपलब्ध बाँस, डोरी, काठ, ढिकी र डुङ्गाको प्रयोग गरी उद्धार कार्य गर्न सकिन्छ।</li>
+                    <li><strong>परम्परागत भूकम्प प्रतिरोधी निर्माण:</strong> परम्परागत 'काठ र ढुङ्गा' को जग भएका लचकदार संरचनाहरूले भूकम्पीय धक्का सहन सक्ने क्षमता राख्छन्।</li>
+                    <li><strong>सुरक्षित बसाइँ र स्रोत संरक्षण:</strong> स्थानीय अनुभवका आधारमा पहिरो नजाने सुरक्षित डाँडा वा भित्तामा घर बनाउने र जलाधार क्षेत्रको संरक्षण गर्ने अभ्यास।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> तसर्थ, आधुनिक प्रविधिसँगै स्थानीय ज्ञान र सिपको सम्मिश्रण गर्न सकिएमा विपत् व्यवस्थापन अझ बढी प्रभावकारी, सस्तो र दिगो हुन्छ।</p>
+            </div>
+        </div>
+
+        <!-- विस्तृत -->
+        <div class="sub-head"><i class="fas fa-gem"></i> विस्तृत प्रश्नोत्तर (८ अङ्क)</div>
+
+        <div class="qa-block color4">
+            <div class="q"><span class="qnum">प्र.न. ३:</span> "यदि तपाईं स्थानीय तहको प्रमुख (अध्यक्ष/महापौर) हुनुभयो भने आफ्नो पालिकामा विपत्को व्यवस्थापन कसरी गर्नुहुन्छ?" विपत् व्यवस्थापन चक्रका आधारमा आफ्ना विचारहरू प्रस्तुत गर्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपालको संविधान र स्थानीय सरकार सञ्चालन ऐन, २०७४ ले स्थानीय तहलाई विपत् व्यवस्थापनको प्रथम र मुख्य जिम्मेवार निकायका रूपमा अङ्गीकार गरेको छ। म पालिकाको प्रमुख भएको खण्डमा विपत् व्यवस्थापन चक्रका चारवटै चरणहरूलाई टेकेर देहाय बमोजिम विपत् व्यवस्थापन सञ्चालन गर्नेछु:</p>
+
+                <div class="mermaid-flow">
+                    <div class="mermaid-step">१. अल्पीकरण<br><span style="font-weight:400;">(Mitigation)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">२. पूर्वतयारी<br><span style="font-weight:400;">(Preparation)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">३. प्रतिकार्य<br><span style="font-weight:400;">(Response)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">४. पुनर्लाभ<br><span style="font-weight:400;">(Recovery)</span></div>
+                </div>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. मुख्य विश्लेषणात्मक खाका (विपत् व्यवस्थापन चक्र अनुसार):</span></p>
+
+                <p><strong>(क) विपत् अल्पीकरण वा शमन (Mitigation):</strong></p>
+                <ul>
+                    <li><strong>भवन निर्माण आचारसंहिता (NBC) को कडा पालना:</strong> पालिकाभित्र बन्ने जुनसुकै घर वा भवनलाई भूकम्प प्रतिरोधी बनाउन अनिवार्य पास गराउने।</li>
+                    <li><strong>जोखिम नक्साङ्कन र तटबन्ध निर्माण:</strong> पहिरो जाने भीर र बाढी आउने नदी किनारमा ग्याबिन जाली र तटबन्ध निर्माण गर्ने तथा रुख रोप्ने।</li>
+                </ul>
+
+                <p><strong>(ख) विपत् पूर्वतयारी (Preparation):</strong></p>
+                <ul>
+                    <li><strong>पूर्वसूचना प्रणाली र सञ्चार जडान:</strong> जल तथा मौसम विज्ञान विभागसँग समन्वय गरी बाढी र पहिरोको सूचना पालिकाबासीको मोबाइलमा SMS र साइरन मार्फत पठाउने व्यवस्था गर्ने।</li>
+                    <li><strong>आपतकालीन कोष र सामग्री भण्डारण:</strong> पालिकामा 'विपत् व्यवस्थापन कोष' खडा गरी खोज-उद्धारका औजार (डोरी, स्ट्रिचर, बन्चरो, बोट) र खाद्यान्न मौज्दात राख्ने।</li>
+                    <li><strong>स्वयंसेवक र नक्कली अभ्यास (Drill):</strong> प्रत्येक वडामा युवा स्वयंसेवक टोली गठन गरी प्राथमिक उपचार र उद्धारको तालिम दिने।</li>
+                </ul>
+
+                <p><strong>(ग) विपत् प्रतिकार्य (Response - खोज, उद्धार र राहत):</strong></p>
+                <ul>
+                    <li><strong>तत्काल उद्धार टोली परिचालन:</strong> विपत् घट्नासाथ स्थानीय प्रहरी, नगर प्रहरी र स्वयंसेवक खटाई घाइतेको उद्धार र आपतकालीन उपचार गर्ने।</li>
+                    <li><strong>अस्थायी आश्रय र राहत वितरण:</strong> घरबारविहीन भएकाहरूका लागि विद्यालय वा सार्वजनिक भवनमा अस्थायी शिविर खडा गरी सफा पानी, खाना र औषधिको निःशुल्क प्रबन्ध गर्ने।</li>
+                </ul>
+
+                <p><strong>(घ) पुनर्लाभ र अझ राम्रो पुनर्निर्माण (Recovery &amp; Build Back Better):</strong></p>
+                <ul>
+                    <li><strong>स्थायी पुनर्वास र संरचना निर्माण:</strong> भत्किएका घर, सडक र खानेपानीका आयोजनाहरूलाई भविष्यका जोखिम सहन सक्ने गरी अझ बलियो बनाएर पुनर्निर्माण गर्ने।</li>
+                    <li><strong>मनोसामाजिक परामर्श र जीविकोपार्जन:</strong> सर्वस्व गुमाएका पीडितहरूलाई मानसिक ढाडस दिन परामर्श सेवा र स्वरोजगारका लागि साना कर्जा वा बिउपुँजी उपलब्ध गराउने।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> अतः विपत् आइसकेपछि उद्धार गर्नुभन्दा विपत् आउनुअघि नै पूर्वतयारी गर्नु उत्तम हुन्छ। एक जिम्मेवार पालिका प्रमुखका रूपमा म आधुनिक प्रविधि, कानुनी शासन र स्थानीय समुदायको सहभागितालाई एकीकृत गर्दै मेरो पालिकालाई <strong>'विपत्-उत्थानशील पालिका' (Disaster Resilient Municipality)</strong> को रूपमा रूपान्तरण गर्नेछु।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ===== FINAL TIP ===== -->
+        <div class="tip-box" style="background:#283593; margin-top:20px;">
+            <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+            <strong>अन्तिम सल्लाह:</strong> विपत् व्यवस्थापन केवल सरकारको काम मात्र होइन, यो सबैको साझा जिम्मेवारी हो। अल्पीकरण, पूर्वतयारी, प्रतिकार्य र पुनर्लाभ — यी चार चरणलाई एकीकृत रूपमा अपनाएमा मात्र विपत्-उत्थानशील समाज निर्माण सम्भव छ।
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ८</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('scrollUpBtn');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            });
+
+            btn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>
