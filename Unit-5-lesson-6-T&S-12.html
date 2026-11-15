@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ ६ – नेपालमा विपत् (कक्षा १२)</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #fdf6ef;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fefcf7;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #e0cdb8;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #BF360C;
+            line-height: 1.2;
+        }
+
+        .main-header h1 i {
+            color: #E64A19;
+            margin-right: 10px;
+        }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #BF360C;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .credit-bar {
+            background: #f7ead9;
+            border-radius: 60px;
+            padding: 14px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #e0cdb8;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .credit-bar .name {
+            color: #0b2b4a;
+            font-weight: 800;
+            font-size: 1.15rem;
+        }
+
+        .credit-bar .email {
+            color: #BF360C;
+            font-weight: 700;
+        }
+
+        .credit-bar i {
+            color: #BF360C;
+            margin-right: 6px;
+        }
+
+        /* ----- TABLE OF CONTENTS ----- */
+        .toc-section {
+            background: #BF360C;
+            border-radius: 20px;
+            padding: 18px 24px;
+            margin: 6px 0 28px;
+            border: 2px solid #E64A19;
+        }
+
+        .toc-section h3 {
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.36rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toc-section h3 i {
+            color: #f5d742;
+            font-size: 1.3rem;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4px 16px;
+        }
+
+        .toc-grid a {
+            color: #f0e5df;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16.5px;
+            padding: 4px 0 4px 6px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toc-grid a:hover {
+            color: #f5d742;
+            border-bottom-color: #f5d742;
+            transform: translateX(4px);
+        }
+
+        .toc-grid a i {
+            color: #f5d742;
+            font-size: 0.6rem;
+            min-width: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .toc-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .toc-grid a {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+            .toc-grid a {
+                font-size: 14px;
+            }
+        }
+
+        /* ----- SECTION HEADERS ----- */
+        .section-head {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #BF360C;
+            margin: 42px 0 16px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            scroll-margin-top: 80px;
+            box-shadow: 0 3px 12px rgba(191, 54, 12, 0.35);
+        }
+
+        .section-head i {
+            font-size: 1.5rem;
+            color: #f5d742;
+        }
+
+        .section-head .mark-badge {
+            color: #BF360C;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: 4px;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #f5d742; color: #0b2b4a; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.pink { background: #f48fb1; color: #0b2b4a; }
+
+        .sub-head {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #BF360C;
+            margin: 28px 0 12px;
+            padding-left: 14px;
+            border-left: 6px solid #BF360C;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            scroll-margin-top: 80px;
+        }
+
+        .sub-head i {
+            color: #BF360C;
+            font-size: 1.1rem;
+        }
+
+        .sub-head-sm {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #BF360C;
+            margin: 18px 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sub-head-sm i {
+            color: #BF360C;
+        }
+
+        /* ----- CONTENT BOXES ----- */
+        .content-box {
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #BF360C;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .content-box p,
+        .content-box ul,
+        .content-box ol,
+        .content-box li {
+            font-size: 1.19rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .content-box ul,
+        .content-box ol {
+            padding-left: 28px;
+            margin: 8px 0 8px;
+        }
+
+        .content-box li {
+            margin-bottom: 6px;
+        }
+
+        .content-box strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .content-box.orange-light {
+            border-left-color: #BF360C;
+            background: #fdf1ea;
+        }
+
+        .content-box.blue-light {
+            border-left-color: #1a3a5c;
+            background: #e8f0f8;
+        }
+
+        .content-box.gold-light {
+            border-left-color: #b45309;
+            background: #fef8ee;
+        }
+
+        .content-box.green-light {
+            border-left-color: #1f7a4a;
+            background: #eef8f2;
+        }
+
+        .content-box.purple-light {
+            border-left-color: #6A1B9A;
+            background: #f4eef8;
+        }
+
+        .content-box.teal-light {
+            border-left-color: #0f7a7a;
+            background: #eef8f8;
+        }
+
+        .content-box.pink-light {
+            border-left-color: #a03a5a;
+            background: #fcf0f4;
+        }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0 14px;
+            border-radius: 14px;
+            border: 2px solid #e0cdb8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.05rem;
+            min-width: 320px;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            border: 1px solid #e0cdb8;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #BF360C;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.08rem;
+        }
+
+        td {
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .table-caption {
+            background: #f7ead9;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.08rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #e0cdb8;
+        }
+
+        /* ----- Q&A BLOCKS ----- */
+        .qa-block {
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #BF360C;
+        }
+
+        .qa-block.color1 { border-left-color: #BF360C; background: #fdf1ea; }
+        .qa-block.color2 { border-left-color: #1a3a5c; background: #f0f5fa; }
+        .qa-block.color3 { border-left-color: #1f7a4a; background: #f2f8f5; }
+        .qa-block.color4 { border-left-color: #6b3fa0; background: #f6f2f8; }
+        .qa-block.color5 { border-left-color: #b45309; background: #fcf9f4; }
+        .qa-block.color6 { border-left-color: #0f7a7a; background: #eef8f8; }
+        .qa-block.color7 { border-left-color: #a03a5a; background: #fcf5f8; }
+        .qa-block.color8 { border-left-color: #d97706; background: #fef8ef; }
+
+        .qa-block .q {
+            font-weight: 900;
+            color: #BF360C;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 1.22rem;
+        }
+
+        .qa-block .q .qnum {
+            color: #E64A19;
+            font-weight: 900;
+            min-width: 30px;
+        }
+
+        .qa-block .a {
+            margin-top: 6px;
+            padding-left: 46px;
+            color: #1e2a3a;
+            font-weight: 500;
+            font-size: 1.19rem;
+        }
+
+        .qa-block .a ul,
+        .qa-block .a ol {
+            padding-left: 24px;
+            margin: 6px 0 6px;
+        }
+
+        .qa-block .a li {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .qa-block .a strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-icon {
+            display: inline-block;
+            margin-right: 6px;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-title {
+            font-weight: 700;
+            color: #BF360C;
+            font-size: 1.1rem;
+        }
+
+        /* ----- GLOSSARY GRID ----- */
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 16px 0 8px;
+        }
+
+        .glossary-item {
+            background: #faf8f5;
+            border-radius: 12px;
+            padding: 14px 18px;
+            border-left: 5px solid #BF360C;
+        }
+
+        .glossary-item strong {
+            color: #BF360C;
+            font-size: 1.15rem;
+            font-weight: 900;
+        }
+
+        .glossary-item p {
+            margin-top: 3px;
+            font-size: 1.125rem;
+            color: #2d3a4a;
+            font-weight: 500;
+        }
+
+        /* ----- FLOW CHART (CSS) ----- */
+        .mermaid-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin: 16px 0;
+            padding: 14px 10px;
+            background: #fdf1ea;
+            border-radius: 20px;
+            border: 2px dashed #E64A19;
+        }
+
+        .mermaid-step {
+            background: #ffffff;
+            padding: 8px 22px;
+            border-radius: 40px;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #0b2b4a;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            border: 2px solid #BF360C;
+            text-align: center;
+            min-width: 160px;
+        }
+
+        .mermaid-arrow {
+            font-size: 1.6rem;
+            color: #7f8fa6;
+            line-height: 1;
+        }
+
+        /* Sub-flow (vertical card group used for the 3-phase flow) */
+        .phase-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            margin: 16px 0;
+            padding: 16px 12px;
+            background: #fdf1ea;
+            border-radius: 20px;
+            border: 2px dashed #E64A19;
+        }
+
+        .phase-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 12px 20px;
+            border: 2px solid #BF360C;
+            width: 100%;
+            max-width: 640px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+
+        .phase-card .phase-title {
+            font-weight: 800;
+            color: #BF360C;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .phase-card ul {
+            margin: 0;
+            padding-left: 22px;
+        }
+
+        .phase-card li {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 3px;
+            line-height: 1.8;
+        }
+
+        .phase-arrow {
+            font-size: 1.5rem;
+            color: #E64A19;
+            line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+            .mermaid-step {
+                font-size: 0.85rem;
+                padding: 6px 14px;
+                min-width: 120px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mermaid-flow {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4px 14px;
+            }
+            .mermaid-arrow {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* ----- MNEMONIC CARD ----- */
+        .mnemonic-card {
+            background: #faf8f5;
+            border-radius: 14px;
+            padding: 16px 22px;
+            border: 2px solid #e0cdb8;
+            border-left: 6px solid #BF360C;
+            margin: 12px 0;
+        }
+
+        .mnemonic-card .mn-title {
+            font-weight: 900;
+            color: #BF360C;
+            font-size: 1.12rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .mnemonic-card .mn-title i {
+            color: #E64A19;
+        }
+
+        .mnemonic-card .mn-code {
+            display: inline-block;
+            background: #BF360C;
+            color: #ffffff;
+            font-weight: 900;
+            padding: 2px 14px;
+            border-radius: 30px;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .mnemonic-card p,
+        .mnemonic-card li {
+            font-weight: 500;
+            font-size: 1.08rem;
+            margin-bottom: 4px;
+        }
+
+        .mnemonic-card ul {
+            padding-left: 24px;
+        }
+
+        .mnemonic-card strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        /* ----- ACTIVITY BOX ----- */
+        .activity-box {
+            background: #f5f0e8;
+            border-radius: 16px;
+            padding: 18px 22px;
+            border: 2px solid #e0cdb8;
+            margin: 12px 0;
+        }
+
+        .activity-box .act-title {
+            font-weight: 900;
+            color: #BF360C;
+            font-size: 1.1rem;
+        }
+
+        .activity-box p,
+        .activity-box li {
+            font-weight: 500;
+            font-size: 1.12rem;
+        }
+
+        .activity-box ul,
+        .activity-box ol {
+            padding-left: 24px;
+        }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #BF360C;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(191, 54, 12, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #scrollUpBtn:hover {
+            background: #E64A19;
+            transform: scale(1.08);
+            box-shadow: 0 6px 28px rgba(191, 54, 12, 0.5);
+        }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 3px solid #e0cdb8;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 28px;
+            font-weight: 600;
+        }
+
+        .footer-copy i {
+            color: #BF360C;
+            margin-right: 6px;
+        }
+
+        .footer-copy .highlight {
+            font-weight: 800;
+            color: #0b2b4a;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px dotted #e0cdb8;
+            margin: 28px 0 10px;
+        }
+
+        .tip-box {
+            background: #BF360C;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .tip-box i {
+            margin-right: 8px;
+        }
+
+        .tip-box strong {
+            color: #f5d742;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 12px 24px;
+                border-radius: 20px;
+            }
+
+            .main-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-head {
+                font-size: 1.35rem;
+                padding: 10px 16px;
+            }
+
+            .sub-head {
+                font-size: 1.15rem;
+            }
+
+            .qa-block .a {
+                padding-left: 12px;
+            }
+
+            .qa-block .q {
+                font-size: 1.05rem;
+                flex-wrap: wrap;
+            }
+
+            .credit-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                font-size: 0.9rem;
+                padding: 10px 16px;
+            }
+
+            .glossary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #scrollUpBtn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                bottom: 18px;
+                right: 18px;
+            }
+
+            .toc-section {
+                padding: 14px 16px;
+            }
+
+            .content-box {
+                padding: 14px 16px;
+            }
+            .content-box p,
+            .content-box ul,
+            .content-box ol,
+            .content-box li {
+                font-size: 1.02rem;
+            }
+            .qa-block .a {
+                font-size: 1.02rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+            th,
+            td {
+                font-size: 0.9rem;
+                padding: 6px 8px;
+            }
+            .glossary-item strong {
+                font-size: 1.05rem;
+            }
+            .glossary-item p {
+                font-size: 0.98rem;
+            }
+            .activity-box p,
+            .activity-box li {
+                font-size: 1.02rem;
+            }
+            .mnemonic-card p,
+            .mnemonic-card li {
+                font-size: 1.0rem;
+            }
+            .mermaid-step {
+                font-size: 0.8rem;
+                padding: 4px 12px;
+                min-width: 100px;
+            }
+            .toc-grid a {
+                font-size: 15px;
+            }
+            .phase-card {
+                padding: 10px 14px;
+            }
+            .phase-card .phase-title {
+                font-size: 0.98rem;
+            }
+            .phase-card li {
+                font-size: 0.94rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 36px 46px 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <div>
+                <h1>
+                    <i class="fas fa-house-crack"></i>
+                    एकाइ ५, पाठ ६: नेपालमा विपत् (Disasters in Nepal)
+                </h1>
+                <div class="subtitle">
+                    कक्षा १२ · भूगोल र सामाजिक जीवन
+                    <span class="badge-class"><i class="fas fa-check-circle"></i> परीक्षा विशेष क्याप्सुल</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CREDIT BAR ===== -->
+        <div class="credit-bar">
+            <span>
+                <i class="fas fa-user-edit"></i>
+                <span class="name">Prepared by: Narayan Sir</span>
+            </span>
+            <span>
+                <i class="fas fa-envelope"></i>
+                <span class="email">nregmi511@gmail.com</span>
+            </span>
+            <span>
+                <i class="fas fa-copyright"></i>
+                कक्षा १२ – एकाइ ५, पाठ ६
+            </span>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <!-- ========================================================== -->
+
+        <div class="toc-section" id="toc">
+            <h3><i class="fas fa-list-ul"></i> विषयसूची</h3>
+            <div class="toc-grid">
+                <a href="#section1"><i class="fas fa-chevron-right"></i> पारिभाषिक शब्दावली</a>
+                <a href="#section2"><i class="fas fa-chevron-right"></i> मुख्य अवधारणा र तालिका</a>
+                <a href="#section3"><i class="fas fa-chevron-right"></i> सुत्रत्मक घोक्ने बुँदा</a>
+                <a href="#section4"><i class="fas fa-chevron-right"></i> विपत्का चरणहरू</a>
+                <a href="#section5"><i class="fas fa-chevron-right"></i> क्रियाकलाप समाधान</a>
+                <a href="#section6"><i class="fas fa-chevron-right"></i> परीक्षा उपयोगी Q&amp;A</a>
+            </div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== १. पारिभाषिक शब्दावली ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section1">
+            <i class="fas fa-book-open"></i>
+            १. विषयगत पारिभाषिक शब्दहरू
+            <span class="mark-badge blue">Glossary</span>
+        </div>
+
+        <div class="glossary-grid">
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#BF360C; margin-right:4px;"></i> विपत् (Disaster)</strong>
+                <p>नेपाल जोखिम न्यूनीकरण तथा व्यवस्थापन ऐन, २०७४ अनुसार कुनै स्थानमा आपत्कालीन अवस्था सिर्जना भई जनधनको क्षतिका साथै जीवनयापन र वातावरणमा प्रतिकूल असर पार्ने प्राकृतिक वा गैरप्राकृतिक घटनाहरूलाई <strong>विपत्</strong> भनिन्छ।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#BF360C; margin-right:4px;"></i> प्रकोप (Hazard)</strong>
+                <p>कुनै यस्तो घटना वा परिस्थिति जसले विनाश वा भौतिक/जैविक क्षति गराउने सम्भावना वा क्षमता राख्दछ, त्यसलाई <strong>प्रकोप</strong> भनिन्छ। (जस्तै: भारी वर्षा, भूकम्पीय तरङ्ग, तीव्र भिरालो धरातल, आगलागी आदि)।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#BF360C; margin-right:4px;"></i> जोखिम (Risk)</strong>
+                <p>प्रकोपको घटनाबाट जनधन, भौतिक पूर्वाधार वा वातावरणमा हुन सक्ने सम्भावित क्षति वा नोक्सानीको मात्रालाई <strong>जोखिम</strong> भनिन्छ।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#BF360C; margin-right:4px;"></i> प्राकृतिक विपत् (Natural Disaster)</strong>
+                <p>प्राकृतिक प्रक्रिया, भूगर्पीय हलचल वा जलवायुगत उतारचढावका कारण उत्पन्न हुने विपत्‌हरू जस्तै: भूकम्प, बाढी, पहिरो, भूस्कलन, हिमपहिरो, हिमताल विस्फोटन, अतिवृष्टि, अनावृष्टि, शीतलहर, चट्याङ, डडेलो आदि।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#BF360C; margin-right:4px;"></i> गैरप्राकृतिक/मानवसिर्जित विपत् (Man-Made Disaster)</strong>
+                <p>मानवीय क्रियाकलाप, असावधानी, वातावरणीय अतिक्रमण वा प्राविधिक त्रुटिका कारण सिर्जना हुने आपत्कालीन अवस्था जस्तै: औद्योगिक दुर्घटना, विषाक्त ग्यास चुहावट, आगलागी, सडक तथा वायु दुर्घटना, अनिकाल, महामारी, युद्ध तथा साम्प्रदायिक दङ्गा आदि।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#BF360C; margin-right:4px;"></i> पूर्वतयारी (Pre-Disaster Preparedness)</strong>
+                <p>विपत्‌को पूर्वअनुमान गरी हुनसक्ने जनधनको क्षति न्यूनीकरण गर्न, खोज तथा उद्धारका लागि पूर्वसूचना प्रणाली, जनचेतना र स्रोत-साधन तयार राख्ने प्रक्रिया।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== २. मुख्य अवधारणा र तालिका ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section2">
+            <i class="fas fa-diagram-project"></i>
+            २. मुख्य अवधारणा, कानुनी व्यवस्था र वर्गीकरण
+            <span class="mark-badge gold">Core Notes</span>
+        </div>
+
+        <!-- १. विपत्को वर्गीकरण -->
+        <div class="sub-head"><i class="fas fa-layer-group"></i> १. नेपाल जोखिम न्यूनीकरण तथा व्यवस्थापन ऐन, २०७४ अनुसार विपत्को वर्गीकरण</div>
+
+        <div class="content-box orange-light">
+            <div class="table-wrap">
+                <div class="table-caption">तालिका १: विपत्को प्रकार, परिभाषा र उदाहरण</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:24%;">विपत्को प्रकार</th>
+                            <th style="width:40%;">परिभाषा र अवधारणा</th>
+                            <th style="width:36%;">मुख्य उदाहरणहरू (नेपालको सन्दर्भ)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>प्राकृतिक विपत् (Natural Disaster)</strong></td>
+                            <td>प्राकृतिक घटना वा वातावरणीय प्रक्रियाबाट उत्पन्न भई व्यापक जनधन र भौतिक पूर्वाधारमा नोक्सानी पुर्‍याउने घटना।</td>
+                            <td>भूकम्प, बाढी, पहिरो, भूस्कलन, हिमपहिरो, हिमताल विस्फोटन, अतिवृष्टि, अनावृष्टि, खडेरी, शीतलहर, चट्याङ, आँधीबेहरी, डडेलो।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>गैरप्राकृतिक/मानवसिर्जित विपत् (Non-Natural Disaster)</strong></td>
+                            <td>मानिसको लापरबाही, वातावरणीय दोहन, अव्यवस्थित सहरीकरण वा प्राविधिक कमजोरीबाट सिर्जना हुने आपत्कालीन संकट।</td>
+                            <td>आगलागी, महामारी (भाइरस/जीवाणु), विषाक्त ग्यास चुहावट, जैविक/रासायनिक दुर्घटना, अनिकाल, औद्योगिक दुर्घटना, यातायात दुर्घटना।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- २. प्रकोप, जोखिम र विपत् -->
+        <div class="sub-head"><i class="fas fa-scale-balanced"></i> २. प्रकोप, जोखिम र विपत् बिचको तुलनात्मक सम्बन्ध</div>
+
+        <div class="content-box blue-light">
+            <div class="table-wrap">
+                <div class="table-caption">तालिका २: प्रकोप → जोखिम → विपत्</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:22%;">तत्त्व</th>
+                            <th style="width:44%;">मुख्य अवधारणा</th>
+                            <th style="width:34%;">उदाहरण</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>प्रकोप (Hazard)</strong></td>
+                            <td>क्षति पुर्‍याउन सक्ने सम्भावित प्राकृतिक वा मानवसिर्जित अवस्था वा घटना।</td>
+                            <td>खोलामा आउने भीषण बाढी वा पहाडको भिरालो जमिन।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>जोखिम (Risk)</strong></td>
+                            <td>प्रकोपयुक्त स्थानमा बस्ती वा संरचना रहँदा क्षति हुन सक्ने सम्भावना।</td>
+                            <td>नदी किनार वा पहिरोग्रस्त क्षेत्रमा बनेका घर तथा बस्तीहरू।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>विपत् (Disaster)</strong></td>
+                            <td>प्रकोप र जोखिम मिलेर जनधन, जीवनयापन र वातावरणमा वास्तविक क्षति भएको आपत्कालीन अवस्था।</td>
+                            <td>बाढीले बस्ती बगाएर मानिसको ज्यान जानु र भौतिक क्षति हुनु।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ३. सुत्रत्मक घोक्ने बुँदाहरू ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section3">
+            <i class="fas fa-key"></i>
+            ३. सुत्रत्मक घोक्ने बुँदाहरू
+            <span class="mark-badge purple">Mnemonics</span>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र १: <span class="mn-code">प्र-जो-वि</span> (विपत् सिर्जना चक्र)</div>
+            <ul>
+                <li><strong>प्र (प्रकोप / Hazard):</strong> क्षति पुर्‍याउने सम्भावित घटना।</li>
+                <li><strong>जो (जोखिम / Risk):</strong> क्षति हुन सक्ने सम्भावित अवस्था।</li>
+                <li><strong>वि (विपत् / Disaster):</strong> वास्तविक रूपमा जनधनको क्षति भएको आपत्कालीन स्थिति।</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र २: <span class="mn-code">पू-स-प</span> (विपत्का तीन मुख्य चरणहरू)</div>
+            <ul>
+                <li><strong>पू (विपत् पूर्वको चरण):</strong> पूर्वतयारी, जनचेतना, जोखिम नक्साङ्कन र पूर्वसूचना।</li>
+                <li><strong>स (विपत्को समयको चरण):</strong> खोज, उद्धार, तत्काल प्राथमिक उपचार र सुरक्षा।</li>
+                <li><strong>प (विपत् पछिको चरण):</strong> राहत वितरण, पुनःस्थापना, पुनर्निर्माण र दिगो पुनर्लाभ।</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र ३: <span class="mn-code">प्रा-मा</span> (विपत्को उत्पत्तिगत प्रकार)</div>
+            <ul>
+                <li><strong>प्राकृतिक:</strong> भूकम्प, बाढी, पहिरो, हिमपहिरो, चट्याङ।</li>
+                <li><strong>मानवसिर्जित (गैरप्राकृतिक):</strong> आगलागी, महामारी, औद्योगिक दुर्घटना, प्रदूषण।</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ४. विपत्का चरणहरू ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section4">
+            <i class="fas fa-arrows-spin"></i>
+            ४. विपत्का चरणहरू र व्यवस्थापन चक्र
+            <span class="mark-badge green">Phases</span>
+        </div>
+
+        <div class="content-box green-light">
+            <p>विपत् व्यवस्थापन प्रक्रियालाई मुख्य रूपमा <strong>तीन चरणहरू (Phases)</strong> मा विभाजन गरिन्छ:</p>
+
+            <div class="mermaid-flow">
+                <div class="mermaid-step">१. विपत् पूर्वको अवस्था<br><span style="font-weight:400;">(Pre-impact)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">२. विपत्को समय<br><span style="font-weight:400;">(Impact)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="mermaid-step">३. विपत् पछिको अवस्था<br><span style="font-weight:400;">(Post-impact)</span></div>
+            </div>
+
+            <div class="phase-flow">
+                <div class="phase-card">
+                    <div class="phase-title"><i class="fas fa-shield-halved"></i> (क) विपत् पूर्वको अवस्था (Pre-impact Phase)</div>
+                    <ul>
+                        <li>जोखिम पहिचान, नक्साङ्कन र पूर्वसूचना प्रणाली (Early Warning System) स्थापना गर्ने।</li>
+                        <li>समुदाय स्तरमा विपत् व्यवस्थापन तालिम, अभ्यास र जनचेतना अभिवृद्धि गर्ने।</li>
+                        <li>खाद्यान्न, औषधि र उद्धारका सामग्री भण्डारण गर्ने।</li>
+                    </ul>
+                </div>
+                <div class="phase-arrow"><i class="fas fa-arrow-down"></i></div>
+                <div class="phase-card">
+                    <div class="phase-title"><i class="fas fa-truck-medical"></i> (ख) विपत्को समय (Impact Phase)</div>
+                    <ul>
+                        <li>जोखिममा परेका मानिसहरूको तत्काल <strong>खोज तथा उद्धार (Search and Rescue)</strong> गर्ने।</li>
+                        <li>घाइतेहरूको तत्काल प्राथमिक उपचार र अस्पताल पुर्‍याउने।</li>
+                        <li>सुरक्षित स्थान (Temporary Shelter) मा मानिसहरूलाई स्थानान्तरण गर्ने।</li>
+                    </ul>
+                </div>
+                <div class="phase-arrow"><i class="fas fa-arrow-down"></i></div>
+                <div class="phase-card">
+                    <div class="phase-title"><i class="fas fa-hammer"></i> (ग) विपत् पछिको अवस्था (Post-impact Phase)</div>
+                    <ul>
+                        <li>पीडित परिवारलाई राहत सामग्री (खाद्यान्न, पाल, लत्ताकपडा) निष्पक्ष रूपमा वितरण गर्ने।</li>
+                        <li>क्षति भएका घर, सडक, पुल, खानेपानी र विद्यालयको <strong>पुनर्निर्माण (Reconstruction)</strong> गर्ने।</li>
+                        <li>'राम्रो पुनर्निर्माण' (Build Back Better) को सिद्धान्त अपनाई भविष्यका लागि सुरक्षित पूर्वाधार बनाउने।</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ५. क्रियाकलाप समाधान ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section5">
+            <i class="fas fa-hands"></i>
+            ५. पाठ्यपुस्तकका क्रियाकलापहरूको समाधान
+            <span class="mark-badge pink">Activities</span>
+        </div>
+
+        <div class="activity-box">
+            <p class="act-title"><i class="fas fa-question-circle" style="color:#BF360C; margin-right:8px;"></i> क्रियाकलाप १:</p>
+            <p>प्राकृतिक र मानवसिर्जित विपत्का उदाहरण, प्रभाव र समुदायको पहिलो प्रतिक्रिया तालिका तयार पार्नुहोस्।</p>
+        </div>
+
+        <div class="content-box gold-light">
+            <div class="table-wrap">
+                <div class="table-caption">क्रियाकलाप १ को उत्तर: प्राकृतिक र मानवसिर्जित विपत् तुलना</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:16%;">विपत्को प्रकार</th>
+                            <th style="width:18%;">उदाहरणहरू</th>
+                            <th style="width:33%;">परेका असर/प्रभावहरू</th>
+                            <th style="width:33%;">समुदायले गर्नुपर्ने पहिलो प्रतिक्रिया</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>प्राकृतिक विपत्</strong></td>
+                            <td>बाढी र पहिरो</td>
+                            <td>घरपालुवा पशु र बालीनाली नष्ट हुनु, खेतबाँझो हुनु, घर भत्किनु, ज्यान जानु।</td>
+                            <td>सुरक्षित अग्लो स्थानमा सर्ने, बगेका वा पुरिएका मानिसको उद्धार गर्ने, स्थानीय सरकारलाई खबर गर्ने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>प्राकृतिक विपत्</strong></td>
+                            <td>भूकम्प</td>
+                            <td>भौतिक पूर्वाधार नष्ट हुनु, मानवीय क्षति हुनु, घाइते हुनु, त्रास सिर्जना हुनु।</td>
+                            <td>'झुक, लुक र समात' (Drop, Cover, Hold) नियम अपनाउने, खुल्ला ठाउँमा जाने, प्राथमिक उपचार गर्ने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>मानवसिर्जित विपत्</strong></td>
+                            <td>आगलागी</td>
+                            <td>धनमाल जल्नु, घर तथा पसल नष्ट हुनु, जलेर अङ्गभङ्ग वा मृत्यु हुनु।</td>
+                            <td>आगो निभाउन दमकल र पानी/माटोको प्रयोग गर्ने, सलाई/ग्यासको प्रयोगमा सावधानी अपनाउने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>मानवसिर्जित विपत्</strong></td>
+                            <td>महामारी (जस्तै: कोभिड/डेंगु)</td>
+                            <td>ठुलो सङ्ख्यामा मानिस बिरामी पर्नु, ज्यान जानु, आर्थिक क्रियाकलाप ठप्प हुनु।</td>
+                            <td>सरसफाइमा ध्यान दिने, मास्क/स्यानिटाइजर प्रयोग गर्ने, बिरामीलाई आइसोलेसनमा राख्ने।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ६. परीक्षा उपयोगी Q&A ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section6">
+            <i class="fas fa-bullseye"></i>
+            ६. बोर्ड परीक्षा विशेष नमुना प्रश्नोत्तर
+            <span class="mark-badge pink">High-Yield</span>
+        </div>
+
+        <!-- अति संक्षिप्त -->
+        <div class="sub-head"><i class="fas fa-star"></i> अति संक्षिप्त प्रश्नोत्तर (१ अङ्क)</div>
+
+        <div class="qa-block color1">
+            <div class="q"><span class="qnum">प्र.न. १:</span> नेपाल जोखिम न्यूनीकरण तथा व्यवस्थापन ऐन, २०७४ अनुसार विपत्को परिभाषा लेख्नुहोस्।</div>
+            <div class="a">
+                <strong>उत्तर:</strong> नेपाल जोखिम न्यूनीकरण तथा व्यवस्थापन ऐन, २०७४ अनुसार कुनै स्थानमा आपत्कालीन अवस्था सिर्जना भई जनधनको क्षतिका साथै जीवनयापन र वातावरणमा प्रतिकूल असर पार्ने प्राकृतिक वा गैरप्राकृतिक घटनाहरू नै <strong>विपत्</strong> हुन्।
+            </div>
+        </div>
+
+        <div class="qa-block color2">
+            <div class="q"><span class="qnum">प्र.न. २:</span> प्रकोप (Hazard) र विपत् (Disaster) बिचको मुख्य एक भिन्नता लेख्नुहोस्।</div>
+            <div class="a">
+                <strong>उत्तर:</strong> <strong>प्रकोप</strong> क्षति पुर्‍याउन सक्ने सम्भावित प्राकृतिक वा मानवसिर्जित अवस्था हो भने <strong>विपत्</strong> त्यस प्रकोपका कारण जनधन र वातावरणमा वास्तविक क्षति भइसकेको आपत्कालीन अवस्था हो।
+            </div>
+        </div>
+
+        <!-- संक्षिप्त -->
+        <div class="sub-head"><i class="fas fa-star"></i> संक्षिप्त प्रश्नोत्तर (५ अङ्क)</div>
+
+        <div class="qa-block color3">
+            <div class="q"><span class="qnum">प्र.न. ३:</span> प्राकृतिक विपत् र गैरप्राकृतिक (मानवसिर्जित) विपत् बिच पाँचवटा भिन्नताहरू तुलनात्मक तालिकामा प्रस्तुत गर्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> उत्पत्तिका स्रोत र कारणका आधारमा विपत्लाई प्राकृतिक र गैरप्राकृतिक गरी दुई भागमा वर्गीकरण गरिन्छ।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. तुलनात्मक तालिका:</span></p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:22%;">तुलनाका आधारहरू</th>
+                                <th style="width:39%;">प्राकृतिक विपत् (Natural Disaster)</th>
+                                <th style="width:39%;">गैरप्राकृतिक/मानवसिर्जित विपत् (Man-Made Disaster)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>१. उत्पत्ति र कारण</strong></td>
+                                <td>प्राकृतिक प्रक्रिया र भूगर्पीय हलचलबाट उत्पन्न हुन्छ।</td>
+                                <td>मानवीय त्रुटि, लापरबाही र असन्तुलित विकासबाट उत्पन्न हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>२. नियन्त्रणको सम्भावना</strong></td>
+                                <td>यसलाई पूर्ण रूपमा रोक्न सकिँदैन, न्यूनीकरण मात्र गर्न सकिन्छ।</td>
+                                <td>मानवीय सतर्कता र अनुशासनबाट धेरै हदसम्म रोक्न सकिन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>३. उदाहरणहरू</strong></td>
+                                <td>भूकम्प, बाढी, पहिरो, हिमपहिरो, चट्याङ।</td>
+                                <td>आगलागी, महामारी, विषाक्त ग्यास चुहावट, सडक दुर्घटना।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>४. पूर्वानुमान</strong></td>
+                                <td>केही विपत्को पूर्वसूचना सम्भव भए पनि भूकम्पको पूर्वानुमान हुँदैन।</td>
+                                <td>चेतना र पूर्वसावधानी अपनाएमा प्रायः रोक्न सकिन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>५. प्रभावको दायरा</strong></td>
+                                <td>व्यापक भौगोलिक क्षेत्र र वातावरणीय सन्तुलनमा असर पार्छ।</td>
+                                <td>निश्चित बस्ती, उद्योग वा सडक क्षेत्रमा तात्कालिक क्षति पुर्‍याउँछ।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> तसर्थ, दुवै प्रकारका विपत्ले जनधनको क्षति गराउने भएकाले पूर्वतयारी र समुदाय स्तरको सचेतना आवश्यक पर्दछ।</p>
+            </div>
+        </div>
+
+        <!-- विस्तृत -->
+        <div class="sub-head"><i class="fas fa-gem"></i> विस्तृत प्रश्नोत्तर (८ अङ्क)</div>
+
+        <div class="qa-block color4">
+            <div class="q"><span class="qnum">प्र.न. ४:</span> "नेपाल उच्च विपत् जोखिमयुक्त देश हो।" यस भनाइको पुष्टि गर्दै विपत् व्यवस्थापनका तीनै चरणमा अपनाउनुपर्ने रणनीतिहरू विस्तृत रूपमा लेख्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपाल भौगोलिक दृष्टिले भिरालो र काँचो भूवनोट भएको देश हो। भारत र तिब्बती प्लेटबिचको भूगर्पीय चाप, अव्यवस्थित सहरीकरण र जलवायु परिवर्तनका कारण नेपाल भूकम्प, बाढी, पहिरो र डडेलो जस्ता प्राकृतिक तथा मानवसिर्जित विपत्को उच्च जोखिममा रहेको छ।</p>
+
+                <div class="mermaid-flow">
+                    <div class="mermaid-step">१. विपत् पूर्वका उपाय<br><span style="font-weight:400;">(Pre-Disaster)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">२. विपत्को समयका उपाय<br><span style="font-weight:400;">(During Disaster)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">३. विपत् पछिका उपाय<br><span style="font-weight:400;">(Post-Disaster)</span></div>
+                </div>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. विषय प्रवेश तथा मुख्य विश्लेषण:</span></p>
+
+                <p><strong>(क) नेपाल विपत् जोखिममा हुनुका मुख्य कारणहरू:</strong></p>
+                <ul>
+                    <li><strong>भौगोलिक तथा भूगर्पीय अवस्था:</strong> नेपाल दुई ठुला भूगर्पीय प्लेटहरूको सङ्गमस्थलमा रहेकाले भूकम्पको उच्च जोखिममा छ।</li>
+                    <li><strong>जलवायु परिवर्तन र अस्वाभाविक वर्षा:</strong> मनसुनी वायुका कारण हुने अतिवृष्टिले तराईमा बाढी र पहाडमा पहिरो ल्याउँछ।</li>
+                    <li><strong>अव्यवस्थित सहरीकरण र मानवीय दोहन:</strong> मापदण्डविपरीत भवन निर्माण, नदीनाला अतिक्रमण र जथाभावी सडक खन्ने प्रवृत्ति।</li>
+                </ul>
+
+                <p><strong>(ख) विपत् व्यवस्थापनका तीन चरणका रणनीतिहरू:</strong></p>
+
+                <p><strong>१. विपत् पूर्वको चरणमा अपनाइने रणनीतिहरू (Pre-Disaster Strategies):</strong></p>
+                <ul>
+                    <li><strong>जोखिम नक्साङ्कन (Risk Mapping):</strong> बाढी, पहिरो र भूकम्पीय जोखिम क्षेत्र पहिचान गरी जोखिमयुक्त क्षेत्रमा बस्ती बसाउन रोक लगाउने।</li>
+                    <li><strong>भवन निर्माण आचारसंहिता (Building Code):</strong> भूकम्पप्रतिरोधी घर र पूर्वाधार निर्माण अनिवार्य गर्ने।</li>
+                    <li><strong>पूर्वसूचना प्रणाली र जनचेतना:</strong> नदीमा जलस्तर बढेमा साइरन बजाउने र समुदायमा विपत् तालिम दिने।</li>
+                </ul>
+
+                <p><strong>२. विपत्को समयमा अपनाइने रणनीतिहरू (During-Disaster Strategies):</strong></p>
+                <ul>
+                    <li><strong>शीघ्र खोज तथा उद्धार (Rapid Search & Rescue):</strong> सुरक्षा निकाय र तालिमप्राप्त स्वयम्सेवक टोलीलाई तत्काल परिचालन गर्ने।</li>
+                    <li><strong>प्राथमिक उपचार र आपत्कालीन सेवा:</strong> घाइतेको तत्काल उपचार र सुरक्षित आश्रयस्थलमा स्थानान्तरण।</li>
+                    <li><strong>सञ्चार र समन्वय:</strong> आपत्कालीन सम्पर्क नम्बर र सूचना प्रणाली सुचारु राख्ने।</li>
+                </ul>
+
+                <p><strong>३. विपत् पछिको चरणमा अपनाइने रणनीतिहरू (Post-Disaster Strategies):</strong></p>
+                <ul>
+                    <li><strong>राहत र पुनःस्थापना:</strong> पीडित परिवारलाई पारदर्शी रूपमा खाद्यान्न, त्रिपाल, औषधि र आर्थिक सहायता पुर्‍याउने।</li>
+                    <li><strong>दिगो पुनर्निर्माण (Build Back Better):</strong> पुनः विपत् नदोहोरिने गरी सुरक्षित स्थानमा बस्ती र पूर्वाधार पुनर्निर्माण गर्ने।</li>
+                    <li><strong>मनोसामाजिक परामर्श:</strong> विपत्को त्रासबाट मुक्त गराउन प्रभावित नागरिकलाई परामर्श सेवा दिने।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> अतः नेपाल जस्तो भूगर्पीय र जलवायुगत दृष्टिले संवेदनशील देशमा विपत्लाई पूर्ण रूपमा रोक्न नसकिए तापनि तीनै चरणमा पूर्वतयारी, खोज-उद्धार र पुनर्निर्माणका कार्यहरू प्रभावकारी ढङ्गले सञ्चालन गरेमा जनधनको क्षति न्यूनीकरण गरी सुरक्षित समाज निर्माण गर्न सकिन्छ।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ===== FINAL TIP ===== -->
+        <div class="tip-box" style="background:#BF360C; margin-top:20px;">
+            <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+            <strong>अन्तिम सल्लाह:</strong> विपत् रोक्न सकिँदैन, तर जोखिम न्यूनीकरण गर्न सकिन्छ। पूर्वतयारी, सचेतना र सही योजनाले मात्र जनधनको क्षति घटाउन सकिन्छ – यही नै विपत् व्यवस्थापनको मूल मन्त्र हो।
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ६</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('scrollUpBtn');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            });
+
+            btn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>
