@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ ७ – विपत्का कारण र प्रभाव (कक्षा १२)</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #eef6f4;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fefcf7;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #b8d8d2;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #00695C;
+            line-height: 1.2;
+        }
+
+        .main-header h1 i {
+            color: #00897B;
+            margin-right: 10px;
+        }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #00695C;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .credit-bar {
+            background: #e0efec;
+            border-radius: 60px;
+            padding: 14px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #b8d8d2;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .credit-bar .name {
+            color: #0b2b4a;
+            font-weight: 800;
+            font-size: 1.15rem;
+        }
+
+        .credit-bar .email {
+            color: #00695C;
+            font-weight: 700;
+        }
+
+        .credit-bar i {
+            color: #00695C;
+            margin-right: 6px;
+        }
+
+        /* ----- TABLE OF CONTENTS ----- */
+        .toc-section {
+            background: #00695C;
+            border-radius: 20px;
+            padding: 18px 24px;
+            margin: 6px 0 28px;
+            border: 2px solid #00897B;
+        }
+
+        .toc-section h3 {
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.36rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toc-section h3 i {
+            color: #f5d742;
+            font-size: 1.3rem;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4px 16px;
+        }
+
+        .toc-grid a {
+            color: #dceeea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16.5px;
+            padding: 4px 0 4px 6px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toc-grid a:hover {
+            color: #f5d742;
+            border-bottom-color: #f5d742;
+            transform: translateX(4px);
+        }
+
+        .toc-grid a i {
+            color: #f5d742;
+            font-size: 0.6rem;
+            min-width: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .toc-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .toc-grid a {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+            .toc-grid a {
+                font-size: 14px;
+            }
+        }
+
+        /* ----- SECTION HEADERS ----- */
+        .section-head {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #00695C;
+            margin: 42px 0 16px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            scroll-margin-top: 80px;
+            box-shadow: 0 3px 12px rgba(0, 105, 92, 0.35);
+        }
+
+        .section-head i {
+            font-size: 1.5rem;
+            color: #f5d742;
+        }
+
+        .section-head .mark-badge {
+            color: #00695C;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: 4px;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #f5d742; color: #0b2b4a; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.pink { background: #f48fb1; color: #0b2b4a; }
+
+        .sub-head {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #00695C;
+            margin: 28px 0 12px;
+            padding-left: 14px;
+            border-left: 6px solid #00695C;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            scroll-margin-top: 80px;
+        }
+
+        .sub-head i {
+            color: #00695C;
+            font-size: 1.1rem;
+        }
+
+        .sub-head-sm {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #00695C;
+            margin: 18px 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sub-head-sm i {
+            color: #00695C;
+        }
+
+        /* ----- CONTENT BOXES ----- */
+        .content-box {
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #00695C;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .content-box p,
+        .content-box ul,
+        .content-box ol,
+        .content-box li {
+            font-size: 1.19rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .content-box ul,
+        .content-box ol {
+            padding-left: 28px;
+            margin: 8px 0 8px;
+        }
+
+        .content-box li {
+            margin-bottom: 6px;
+        }
+
+        .content-box strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .content-box.teal-light {
+            border-left-color: #00695C;
+            background: #eef7f5;
+        }
+
+        .content-box.blue-light {
+            border-left-color: #1a3a5c;
+            background: #e8f0f8;
+        }
+
+        .content-box.gold-light {
+            border-left-color: #b45309;
+            background: #fef8ee;
+        }
+
+        .content-box.green-light {
+            border-left-color: #1f7a4a;
+            background: #eef8f2;
+        }
+
+        .content-box.purple-light {
+            border-left-color: #6A1B9A;
+            background: #f4eef8;
+        }
+
+        .content-box.pink-light {
+            border-left-color: #a03a5a;
+            background: #fcf0f4;
+        }
+
+        .content-box.orange-light {
+            border-left-color: #d97706;
+            background: #fef6ed;
+        }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0 14px;
+            border-radius: 14px;
+            border: 2px solid #b8d8d2;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.05rem;
+            min-width: 320px;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            border: 1px solid #b8d8d2;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #00695C;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.08rem;
+        }
+
+        td {
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .table-caption {
+            background: #e0efec;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.08rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #b8d8d2;
+        }
+
+        .table-total-row td {
+            background: #dceeea;
+            font-weight: 800;
+            color: #0b2b4a;
+        }
+
+        /* ----- Q&A BLOCKS ----- */
+        .qa-block {
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #00695C;
+        }
+
+        .qa-block.color1 { border-left-color: #00695C; background: #eef7f5; }
+        .qa-block.color2 { border-left-color: #1a3a5c; background: #f0f5fa; }
+        .qa-block.color3 { border-left-color: #1f7a4a; background: #f2f8f5; }
+        .qa-block.color4 { border-left-color: #6b3fa0; background: #f6f2f8; }
+        .qa-block.color5 { border-left-color: #b45309; background: #fcf9f4; }
+        .qa-block.color6 { border-left-color: #0f7a7a; background: #eef8f8; }
+        .qa-block.color7 { border-left-color: #a03a5a; background: #fcf5f8; }
+        .qa-block.color8 { border-left-color: #d97706; background: #fef8ef; }
+
+        .qa-block .q {
+            font-weight: 900;
+            color: #00695C;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 1.22rem;
+        }
+
+        .qa-block .q .qnum {
+            color: #00897B;
+            font-weight: 900;
+            min-width: 30px;
+        }
+
+        .qa-block .a {
+            margin-top: 6px;
+            padding-left: 46px;
+            color: #1e2a3a;
+            font-weight: 500;
+            font-size: 1.19rem;
+        }
+
+        .qa-block .a ul,
+        .qa-block .a ol {
+            padding-left: 24px;
+            margin: 6px 0 6px;
+        }
+
+        .qa-block .a li {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .qa-block .a strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-icon {
+            display: inline-block;
+            margin-right: 6px;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-title {
+            font-weight: 700;
+            color: #00695C;
+            font-size: 1.1rem;
+        }
+
+        /* ----- GLOSSARY GRID ----- */
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 16px 0 8px;
+        }
+
+        .glossary-item {
+            background: #faf8f5;
+            border-radius: 12px;
+            padding: 14px 18px;
+            border-left: 5px solid #00695C;
+        }
+
+        .glossary-item strong {
+            color: #00695C;
+            font-size: 1.15rem;
+            font-weight: 900;
+        }
+
+        .glossary-item p {
+            margin-top: 3px;
+            font-size: 1.125rem;
+            color: #2d3a4a;
+            font-weight: 500;
+        }
+
+        /* ----- FLOW CHART (CSS) ----- */
+        .mermaid-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin: 16px 0;
+            padding: 14px 10px;
+            background: #eef7f5;
+            border-radius: 20px;
+            border: 2px dashed #00897B;
+        }
+
+        .mermaid-step {
+            background: #ffffff;
+            padding: 8px 22px;
+            border-radius: 40px;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #0b2b4a;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            border: 2px solid #00695C;
+            text-align: center;
+            min-width: 160px;
+        }
+
+        .mermaid-arrow {
+            font-size: 1.6rem;
+            color: #7f8fa6;
+            line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+            .mermaid-step {
+                font-size: 0.85rem;
+                padding: 6px 14px;
+                min-width: 120px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mermaid-flow {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4px 14px;
+            }
+            .mermaid-arrow {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* ----- MNEMONIC CARD ----- */
+        .mnemonic-card {
+            background: #faf8f5;
+            border-radius: 14px;
+            padding: 16px 22px;
+            border: 2px solid #b8d8d2;
+            border-left: 6px solid #00695C;
+            margin: 12px 0;
+        }
+
+        .mnemonic-card .mn-title {
+            font-weight: 900;
+            color: #00695C;
+            font-size: 1.12rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .mnemonic-card .mn-title i {
+            color: #00897B;
+        }
+
+        .mnemonic-card .mn-code {
+            display: inline-block;
+            background: #00695C;
+            color: #ffffff;
+            font-weight: 900;
+            padding: 2px 14px;
+            border-radius: 30px;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .mnemonic-card p,
+        .mnemonic-card li {
+            font-weight: 500;
+            font-size: 1.08rem;
+            margin-bottom: 4px;
+        }
+
+        .mnemonic-card ul {
+            padding-left: 24px;
+        }
+
+        .mnemonic-card strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        /* ----- ACTIVITY BOX ----- */
+        .activity-box {
+            background: #f5f0e8;
+            border-radius: 16px;
+            padding: 18px 22px;
+            border: 2px solid #b8d8d2;
+            margin: 12px 0;
+        }
+
+        .activity-box .act-title {
+            font-weight: 900;
+            color: #00695C;
+            font-size: 1.1rem;
+        }
+
+        .activity-box p,
+        .activity-box li {
+            font-weight: 500;
+            font-size: 1.12rem;
+        }
+
+        .activity-box ul,
+        .activity-box ol {
+            padding-left: 24px;
+        }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #00695C;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #scrollUpBtn:hover {
+            background: #00897B;
+            transform: scale(1.08);
+            box-shadow: 0 6px 28px rgba(0, 105, 92, 0.5);
+        }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 3px solid #b8d8d2;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 28px;
+            font-weight: 600;
+        }
+
+        .footer-copy i {
+            color: #00695C;
+            margin-right: 6px;
+        }
+
+        .footer-copy .highlight {
+            font-weight: 800;
+            color: #0b2b4a;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px dotted #b8d8d2;
+            margin: 28px 0 10px;
+        }
+
+        .tip-box {
+            background: #00695C;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .tip-box i {
+            margin-right: 8px;
+        }
+
+        .tip-box strong {
+            color: #f5d742;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 12px 24px;
+                border-radius: 20px;
+            }
+
+            .main-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-head {
+                font-size: 1.35rem;
+                padding: 10px 16px;
+            }
+
+            .sub-head {
+                font-size: 1.15rem;
+            }
+
+            .qa-block .a {
+                padding-left: 12px;
+            }
+
+            .qa-block .q {
+                font-size: 1.05rem;
+                flex-wrap: wrap;
+            }
+
+            .credit-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                font-size: 0.9rem;
+                padding: 10px 16px;
+            }
+
+            .glossary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #scrollUpBtn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                bottom: 18px;
+                right: 18px;
+            }
+
+            .toc-section {
+                padding: 14px 16px;
+            }
+
+            .content-box {
+                padding: 14px 16px;
+            }
+            .content-box p,
+            .content-box ul,
+            .content-box ol,
+            .content-box li {
+                font-size: 1.02rem;
+            }
+            .qa-block .a {
+                font-size: 1.02rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+            th,
+            td {
+                font-size: 0.9rem;
+                padding: 6px 8px;
+            }
+            .glossary-item strong {
+                font-size: 1.05rem;
+            }
+            .glossary-item p {
+                font-size: 0.98rem;
+            }
+            .activity-box p,
+            .activity-box li {
+                font-size: 1.02rem;
+            }
+            .mnemonic-card p,
+            .mnemonic-card li {
+                font-size: 1.0rem;
+            }
+            .mermaid-step {
+                font-size: 0.8rem;
+                padding: 4px 12px;
+                min-width: 100px;
+            }
+            .toc-grid a {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 36px 46px 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <div>
+                <h1>
+                    <i class="fas fa-mountain-sun"></i>
+                    एकाइ ५, पाठ ७: विपत्का कारण र प्रभाव
+                </h1>
+                <div class="subtitle">
+                    कक्षा १२ · भूगोल र सामाजिक जीवन
+                    <span class="badge-class"><i class="fas fa-check-circle"></i> परीक्षा विशेष क्याप्सुल</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CREDIT BAR ===== -->
+        <div class="credit-bar">
+            <span>
+                <i class="fas fa-user-edit"></i>
+                <span class="name">Prepared by: Narayan Sir</span>
+            </span>
+            <span>
+                <i class="fas fa-envelope"></i>
+                <span class="email">nregmi511@gmail.com</span>
+            </span>
+            <span>
+                <i class="fas fa-copyright"></i>
+                कक्षा १२ – एकाइ ५, पाठ ७
+            </span>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <!-- ========================================================== -->
+
+        <div class="toc-section" id="toc">
+            <h3><i class="fas fa-list-ul"></i> विषयसूची</h3>
+            <div class="toc-grid">
+                <a href="#section1"><i class="fas fa-chevron-right"></i> पारिभाषिक शब्दावली</a>
+                <a href="#section2"><i class="fas fa-chevron-right"></i> कारण, प्रकार र तथ्याङ्क</a>
+                <a href="#section3"><i class="fas fa-chevron-right"></i> सुत्रत्मक घोक्ने बुँदा</a>
+                <a href="#section4"><i class="fas fa-chevron-right"></i> विस्तृत विश्लेषण</a>
+                <a href="#section5"><i class="fas fa-chevron-right"></i> क्रियाकलाप समाधान</a>
+                <a href="#section6"><i class="fas fa-chevron-right"></i> परीक्षा उपयोगी Q&amp;A</a>
+            </div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== १. पारिभाषिक शब्दावली ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section1">
+            <i class="fas fa-book-open"></i>
+            १. विषयगत पारिभाषिक शब्दहरू
+            <span class="mark-badge blue">Glossary</span>
+        </div>
+
+        <div class="glossary-grid">
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#00695C; margin-right:4px;"></i> विपत्का कारणहरू (Causes of Disaster)</strong>
+                <p>प्राकृतिक वा मानवीय कारणले आपत्कालीन अवस्था सिर्जना भई धनजन र वातावरणमा क्षति पुग्ने कारकहरू (जस्तै: भूपरिस्थिति, अनियमित वर्षा, जलवायु परिवर्तन, सचेतना र जनसहभागिताको अभाव)।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#00695C; margin-right:4px;"></i> भूपरिस्थिति (Geographical Vulnerability)</strong>
+                <p>नेपाल भारतीय र तिब्बती टेक्टोनिक प्लेटको जोडमा रहनु र धरातल अत्यधिक ठाडो तथा भिरालो हुनाले भूकम्प, पहिरो र भूस्खलनको उच्च जोखिममा रहने अवस्था।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#00695C; margin-right:4px;"></i> अनियमित वर्षा (Irregular Rainfall)</strong>
+                <p>जलवायु परिवर्तन वा मौसमी प्रतिकूलताका कारण समयमा वर्षा नहुने, अत्यधिक वर्षा (अतिवृष्टि), अनावृष्टि र खण्डवृष्टि भई बाढी, पहिरो तथा सुखा खडेरी निम्तने स्थिति।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#00695C; margin-right:4px;"></i> हिमताल विस्फोटन (GLOF)</strong>
+                <p>वैश्विक तापक्रम वृद्धिका कारण हिउँ पग्लिएर हिमतालमा पानीको भार बढी ताल फुटी तल्लो तटीय क्षेत्रमा आउने विनाशाकारी बाढी।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#00695C; margin-right:4px;"></i> सापेक्षिक सङ्कटापन्नता (Relative Vulnerability)</strong>
+                <p>UNDP र विश्व बैंकका अनुसार नेपाल भूकम्पका दृष्टिले विश्वमा ११ औँ र बाढी-जलउत्पन्न विपत्का दृष्टिले ३ औँ उच्च जोखिमपूर्ण स्थानमा रहने अवस्था।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#00695C; margin-right:4px;"></i> मानवसिर्जित विपत् (Anthropogenic Disasters)</strong>
+                <p>प्राकृतिक स्रोतको अत्यधिक दोहन, अव्यवस्थित सहरीकरण, वन विनाश, हरितगृह ग्यास उत्सर्जन, प्रविधि र सामग्रीको गुणस्तरहीन प्रयोगका कारण सिर्जना हुने आपत्कालीन घटना।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== २. कारण, प्रकार र तथ्याङ्क ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section2">
+            <i class="fas fa-chart-simple"></i>
+            २. विपत्का कारण, प्रकार र क्षतिको तथ्याङ्क
+            <span class="mark-badge gold">Data Matrix</span>
+        </div>
+
+        <!-- १. कारण वर्गीकरण -->
+        <div class="sub-head"><i class="fas fa-list-check"></i> १. विपत्का प्राकृतिक र मानवीय कारणहरूको वर्गीकरण</div>
+
+        <div class="content-box teal-light">
+            <div class="table-wrap">
+                <div class="table-caption">तालिका १: कारणको प्रकार, कारक तत्त्व र उत्पन्न हुने विपत्</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:20%;">कारणको प्रकार</th>
+                            <th style="width:48%;">मुख्य कारक तत्त्वहरू</th>
+                            <th style="width:32%;">उत्पन्न हुने प्रमुख विपत्हरू</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>प्राकृतिक कारण (Natural Causes)</strong></td>
+                            <td>
+                                १. भूपरिस्थिति (टेक्टोनिक प्लेट जोड, भिरालो धरातल)<br>
+                                २. अनियमित वर्षा (अतिवृष्टि, अनावृष्टि, खण्डवृष्टि)<br>
+                                ३. जलवायु परिवर्तन र वैश्विक तापक्रम वृद्धि<br>
+                                ४. हिमताल फुट्ने (GLOF)
+                            </td>
+                            <td>भूकम्प, पहिरो, भूस्खलन, बाढी, सुखा खडेरी, असिना, हिमपहिरो, आँधीवेरी।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>मानवीय कारण (Human Causes)</strong></td>
+                            <td>
+                                १. प्राकृतिक स्रोतको अत्यधिक दोहन र वन विनाश<br>
+                                २. अव्यवस्थित सहरीकरण र योजनाविहीन विकास<br>
+                                ३. कमजोर प्रविधि र गुणस्तरहीन निर्माण सामग्री<br>
+                                ४. सचेतना र जनसहभागिताको अभाव
+                            </td>
+                            <td>आगलागी, सडक/औद्योगिक दुर्घटना, भूस्खलनको तीव्रता, महामारी, प्रदूषण, हरितगृह प्रभाव।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- २. तथ्याङ्क तालिका -->
+        <div class="sub-head"><i class="fas fa-database"></i> २. गृह मन्त्रालयको विपत् र क्षतिसम्बन्धी तथ्याङ्क (सन् १९७१–२०१६)</div>
+
+        <div class="content-box blue-light">
+            <div class="table-wrap">
+                <div class="table-caption">तालिका २: विपत् अनुसार मानवीय तथा भौतिक क्षतिको विवरण</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:18%;">विपत्को प्रकार</th>
+                            <th style="width:12%;">मृतक</th>
+                            <th style="width:10%;">बेपत्ता</th>
+                            <th style="width:11%;">घाइते</th>
+                            <th style="width:15%;">क्षति भएको घर</th>
+                            <th style="width:15%;">प्रभावित परिवार</th>
+                            <th style="width:12%;">घटना</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>महामारी</strong></td>
+                            <td>१६,५८३</td>
+                            <td>—</td>
+                            <td>४३,१११</td>
+                            <td>—</td>
+                            <td>५,१२,९८९</td>
+                            <td>४,५५२</td>
+                        </tr>
+                        <tr>
+                            <td><strong>भूकम्प</strong></td>
+                            <td>९,७३१</td>
+                            <td>—</td>
+                            <td>२९,१४२</td>
+                            <td>९,८२,८५५</td>
+                            <td>८,९०,९९५</td>
+                            <td>९७५</td>
+                        </tr>
+                        <tr>
+                            <td><strong>पहिरो</strong></td>
+                            <td>४,९८०</td>
+                            <td>१७४</td>
+                            <td>१,८७९</td>
+                            <td>३३,६१७</td>
+                            <td>५,५८,२६४</td>
+                            <td>३,२४६</td>
+                        </tr>
+                        <tr>
+                            <td><strong>बाढी</strong></td>
+                            <td>४,४४५</td>
+                            <td>४२</td>
+                            <td>५,५४४</td>
+                            <td>२,९६,९९०</td>
+                            <td>३९,००,६५४</td>
+                            <td>३,९५०</td>
+                        </tr>
+                        <tr>
+                            <td><strong>आगलागी</strong></td>
+                            <td>१,६०५</td>
+                            <td>—</td>
+                            <td>१,६१९</td>
+                            <td>८६,२६१</td>
+                            <td>२,५९,९३५</td>
+                            <td>८,७२९</td>
+                        </tr>
+                        <tr>
+                            <td><strong>चट्याङ</strong></td>
+                            <td>१,६२०</td>
+                            <td>१२९</td>
+                            <td>२,६८४</td>
+                            <td>९६३</td>
+                            <td>७,१४०</td>
+                            <td>१,७११</td>
+                        </tr>
+                        <tr>
+                            <td><strong>शीत लहर</strong></td>
+                            <td>५१५</td>
+                            <td>—</td>
+                            <td>८३</td>
+                            <td>—</td>
+                            <td>३,९९३</td>
+                            <td>३९०</td>
+                        </tr>
+                        <tr>
+                            <td><strong>हिमआँधी</strong></td>
+                            <td>८७</td>
+                            <td>७</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>५</td>
+                        </tr>
+                        <tr>
+                            <td><strong>हिमपहिरो</strong></td>
+                            <td>१६</td>
+                            <td>३</td>
+                            <td>७</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>२</td>
+                        </tr>
+                        <tr>
+                            <td><strong>आँधीवेरी</strong></td>
+                            <td>२</td>
+                            <td>—</td>
+                            <td>११</td>
+                            <td>२९५</td>
+                            <td>१९१</td>
+                            <td>४४</td>
+                        </tr>
+                        <tr>
+                            <td><strong>असिना/अतिवृष्टि</strong></td>
+                            <td>९</td>
+                            <td>—</td>
+                            <td>२४</td>
+                            <td>१५५</td>
+                            <td>३,२८०</td>
+                            <td>१३१</td>
+                        </tr>
+                        <tr>
+                            <td><strong>अन्य विपत्</strong></td>
+                            <td>२६</td>
+                            <td>२</td>
+                            <td>५१</td>
+                            <td>९</td>
+                            <td>३६</td>
+                            <td>२९</td>
+                        </tr>
+                        <tr class="table-total-row">
+                            <td><strong>कुल योग</strong></td>
+                            <td><strong>३९,६४९</strong></td>
+                            <td><strong>३५५</strong></td>
+                            <td><strong>८४,१४७</strong></td>
+                            <td><strong>१४,२०,५२७</strong></td>
+                            <td><strong>५९,४४,२८८</strong></td>
+                            <td><strong>२३,८५६</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ३. सुत्रत्मक घोक्ने बुँदाहरू ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section3">
+            <i class="fas fa-key"></i>
+            ३. सुत्रत्मक घोक्ने बुँदाहरू
+            <span class="mark-badge purple">Mnemonics</span>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र १: <span class="mn-code">भू-अ-ज-हि-स-ज</span> (विपत्का ६ मुख्य कारणहरू)</div>
+            <ul>
+                <li><strong>भू (भूपरिस्थिति):</strong> टेक्टोनिक प्लेट जोड र भिरालो भूगोल</li>
+                <li><strong>अ (अनियमित वर्षा):</strong> अतिवृष्टि, अनावृष्टि र खण्डवृष्टि</li>
+                <li><strong>ज (जलवायु परिवर्तन):</strong> तापक्रम वृद्धि र मौसमी असन्तुलन</li>
+                <li><strong>हि (हिमताल फुट्ने):</strong> GLOF बाढीको जोखिम</li>
+                <li><strong>स (सचेतनाको अभाव):</strong> विपत् चेतना र तयारी कमी</li>
+                <li><strong>ज (जनसहभागिताको अभाव):</strong> योजना निर्माण र कार्यान्वयनमा सहभागिता कमी</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र २: <span class="mn-code">म-भ-प-बा-आ</span> (मानवीय क्षति धेरै गराउने शीर्ष ५ विपत्)</div>
+            <ul>
+                <li><strong>म (महामारी):</strong> १६,५८३ मृतक (सर्वोच्च)</li>
+                <li><strong>भ (भूकम्प):</strong> ९,७३१ मृतक</li>
+                <li><strong>प (पहिरो):</strong> ४,९८० मृतक</li>
+                <li><strong>बा (बाढी):</strong> ४,४४५ मृतक (३९ लाखभन्दा बढी प्रभावित परिवार)</li>
+                <li><strong>आ (आगलागी):</strong> १,६०५ मृतक (८,७२९ घटनाहरू)</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र ३: <span class="mn-code">मा-भौ-आ-वा</span> (विपत्का ४ मुख्य प्रभाव क्षेत्रहरू)</div>
+            <ul>
+                <li><strong>मा (मानवीय प्रभाव):</strong> ज्यान जाने, घाइते हुने, विस्थापित हुने</li>
+                <li><strong>भौ (भौतिक प्रभाव):</strong> घर, सडक, पुल, खानेपानी र पूर्वाधार नष्ट</li>
+                <li><strong>आ (आर्थिक प्रभाव):</strong> कृषि उत्पादन ह्रास, गरिबी वृद्धि, पुनर्निर्माण खर्च</li>
+                <li><strong>वा (वातावरणीय प्रभाव):</strong> जैविक विविधता ह्रास, जलस्रोत प्रदूषण, पारिस्थितिक असन्तुलन</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ४. विस्तृत विश्लेषण ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section4">
+            <i class="fas fa-magnifying-glass-chart"></i>
+            ४. विपत्का कारण र प्रभावको विस्तृत विवरण
+            <span class="mark-badge green">Detailed Analysis</span>
+        </div>
+
+        <!-- १. कारणहरू -->
+        <div class="sub-head"><i class="fas fa-triangle-exclamation"></i> १. विपत्का प्राकृतिक तथा मानवीय कारणहरू</div>
+
+        <div class="content-box teal-light">
+            <ul>
+                <li><strong>(क) भूपरिस्थिति:</strong> नेपाल भारतीय र तिब्बती प्लेट जोडिने भौगर्भिक क्षेत्रमा रहेकाले भूकम्पको निरन्तर जोखिममा छ। भिरालो पहाडी धरातलले गर्दा थोरै वर्षा हुँदा पनि पहिरो र भूस्खलन हुन्छ।</li>
+                <li><strong>(ख) अनियमित वर्षा:</strong> समयमा वर्षा नहुने, थोरै समयमा धेरै वर्षा (अतिवृष्टि) हुने वा खण्डवृष्टि हुनाले बाढी-पहिरो जाने र वर्षा नहुँदा सुखा खडेरी पर्छ।</li>
+                <li><strong>(ग) जलवायु परिवर्तन:</strong> वायुमण्डलको तापक्रम वृद्धिले सुखा खडेरी, बेमौसमी वर्षा, अतिवृष्टि र नयाँ महामारीको सम्भावना बढाएको छ।</li>
+                <li><strong>(घ) हिमताल फुट्ने (GLOF):</strong> हिमाली क्षेत्रमा तापक्रम वृद्धिका कारण हिमतालहरू फुट्दा तल्लो तटीय क्षेत्र र पहाडी/तराई भूभागमा भीषण बाढी आई व्यापक क्षति पुग्छ।</li>
+                <li><strong>(ङ) सचेतना र जनसहभागिताको अभाव:</strong> सम्भावित विपत्को पूर्वजानकारी नहुनु, सुरक्षित घर निर्माण नगर्नु र योजना निर्माणमा समुदायको सहभागिता नहुनुले क्षतिको मात्रा बढाउँछ।</li>
+            </ul>
+        </div>
+
+        <!-- २. प्रभावहरू -->
+        <div class="sub-head"><i class="fas fa-wave-square"></i> २. विपत्का बहुआयामिक प्रभावहरू</div>
+
+        <div class="content-box pink-light">
+            <ul>
+                <li><strong>मानवीय क्षति:</strong> सन् १९७१ देखि २०१६ सम्म नेपालमा विपत्बाट ३९,६४९ भन्दा बढी मानिसको मृत्यु र ५९ लाखभन्दा बढी परिवार प्रभावित भएका छन्।</li>
+                <li><strong>भौतिक पूर्वाधारको विनाश:</strong> घर, विद्यालय, अस्पताल, सडक, पुल र सिँचाइ प्रणाली नष्ट भई जीवनयापन र सार्वजनिक सेवा अवरुद्ध हुन्छ।</li>
+                <li><strong>आर्थिक मन्दी र गरिबी:</strong> कृषि बाली नष्ट हुनु, पशुचौपाया मर्नु र पुनर्निर्माणमा खर्बौँ बजेट खर्च हुनाले देशमा गरिबी र उत्पादन ह्रास हुन्छ।</li>
+                <li><strong>पारिस्थितिक तथा वातावरणीय असन्तुलन:</strong> जलस्रोत प्रदूषण, भूक्षय, वन विनाश र जैविक विविधतामा गम्भीर असर पर्छ।</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ५. क्रियाकलाप समाधान ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section5">
+            <i class="fas fa-hands"></i>
+            ५. पाठ्यपुस्तकका क्रियाकलापहरूको समाधान
+            <span class="mark-badge pink">Activities</span>
+        </div>
+
+        <div class="activity-box">
+            <p class="act-title"><i class="fas fa-question-circle" style="color:#00695C; margin-right:8px;"></i> क्रियाकलाप १:</p>
+            <p>विभिन्न विपत्का प्रभाव र विपत् न्यूनीकरणमा समुदायले गर्न सक्ने पहिलो प्रतिक्रिया तालिका बनाउनुहोस्।</p>
+        </div>
+
+        <div class="content-box gold-light">
+            <div class="table-wrap">
+                <div class="table-caption">क्रियाकलाप १ को उत्तर: विपत्, प्रभाव र समुदायको पहिलो प्रतिक्रिया</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:14%;">विपत्को प्रकार</th>
+                            <th style="width:12%;">उदाहरण</th>
+                            <th style="width:38%;">प्रभाव</th>
+                            <th style="width:36%;">पहिलो प्रतिक्रिया (Community Response)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>प्राकृतिक</strong></td>
+                            <td><strong>बाढी</strong></td>
+                            <td>अस्वाभाविक रूपमा वर्षा भई बस्ती डुब्नु, खेतबाली बगाउनु, धनजनको क्षति हुनु।</td>
+                            <td>जोखिममा परेका मानिसलाई सुरक्षित अग्लो ठाउँमा सार्ने, थप जोखिम नियन्त्रण गर्ने, खोज तथा उद्धार गर्ने, खाद्यान्न र प्राथमिक उपचार उपलब्ध गराउने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>प्राकृतिक</strong></td>
+                            <td><strong>पहिरो</strong></td>
+                            <td>पहाडी भिरालो जमिन भासिनु, घर र सडक पुरिनु, जनधनको क्षति।</td>
+                            <td>प्रभावित क्षेत्रबाट मानिस र वस्तु सार्ने, पहिरो प्रभावित ठाउँ बन्द गर्ने, घाइतेको तत्काल उद्धार र प्राथमिक उपचार गर्ने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>प्राकृतिक</strong></td>
+                            <td><strong>भूकम्प</strong></td>
+                            <td>संरचनाहरू भत्किनु, मानिसहरू पुरिनु, पूर्वाधार नष्ट हुनु।</td>
+                            <td>'ओत लागौँ, समातौँ' (Drop, Cover, Hold) अपनाउने, खुला सुरक्षित स्थानमा जाने, उद्धार टोलीलाई खबर गरी खोज तथा उद्धारमा सघाउने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>प्राकृतिक</strong></td>
+                            <td><strong>चट्याङ</strong></td>
+                            <td>विद्युतीय झट्का लाग्नु, मानिस र पशुचौपायाको मृत्यु, विद्युतीय सामग्री नष्ट हुनु।</td>
+                            <td>चट्याङ परेका व्यक्तिलाई प्राथमिक उपचार (CPR) दिने, अस्पताल पुर्‍याउने, चट्याङ पर्दा धातुका वस्तु र रुखमुनि नबस्ने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>मानवसिर्जित</strong></td>
+                            <td><strong>आगलागी</strong></td>
+                            <td>घर र उद्योग डढ्नु, मानिस पोल्नु/मर्नु, व्यापक आर्थिक क्षति।</td>
+                            <td>दमकल र स्थानीय साधन (पानी, बालुवा) ले आगो निभाउने, पोलिएका घाइतेलाई तुरुन्त अस्पताल लैजाने, ग्यास र बिजुली बन्द गर्ने।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ६. परीक्षा उपयोगी Q&A ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section6">
+            <i class="fas fa-bullseye"></i>
+            ६. पाठ्यपुस्तक अभ्यास तथा बोर्ड परीक्षा विशेष Q&amp;A
+            <span class="mark-badge pink">High-Yield</span>
+        </div>
+
+        <!-- क, ख, ग -->
+        <div class="sub-head"><i class="fas fa-star"></i> पाठ्यपुस्तक अभ्यास प्रश्नोत्तर</div>
+
+        <div class="qa-block color1">
+            <div class="q"><span class="qnum">प्र.न. १ (क):</span> प्राकृतिक विपत्का कारणहरू उल्लेख गर्नुहोस्।</div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> नेपालमा प्राकृतिक विपत् निम्त्याउने मुख्य कारणहरू निम्न अनुसार छन्:</p>
+                <ol>
+                    <li><strong>भूपरिस्थिति:</strong> नेपाल भारतीय र तिब्बती टेक्टोनिक प्लेटको सङ्गमस्थलमा रहनु र पहाडी क्षेत्र भिरालो हुनु।</li>
+                    <li><strong>अनियमित वर्षा:</strong> अतिवृष्टि, अनावृष्टि र खण्डवृष्टिका कारण बाढी र सुखा खडेरी पर्नु।</li>
+                    <li><strong>जलवायु परिवर्तन:</strong> वायुमण्डलीय तापक्रम वृद्धि भई बेमौसमी विपत्हरू बढ्नु।</li>
+                    <li><strong>हिमताल फुट्नु:</strong> तापक्रम वृद्धिका कारण हिमाली क्षेत्रका हिमतालहरू फुट्नु (GLOF)।</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="qa-block color2">
+            <div class="q"><span class="qnum">प्र.न. १ (ख):</span> विपत्ले मानवीय जीवनमा पार्ने प्रभावहरूको सूची तयार पार्नुहोस्।</div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> विपत्ले मानवीय जीवनमा पार्ने मुख्य प्रभावहरू निम्न बमोजिम छन्:</p>
+                <ol>
+                    <li><strong>मानवीय क्षति:</strong> ज्यान जानु, अङ्गभङ्ग हुनु, घाइते हुनु र मानसिक आघात (Trauma) पर्नु।</li>
+                    <li><strong>विस्थापन र घरबारविहीनता:</strong> घर भत्किनाले मानिसहरू सुकुम्बासी र विस्थापित हुनु।</li>
+                    <li><strong>खानेपानी र स्वास्थ्य सङ्कट:</strong> महामारी फैलिनु, शुद्ध खानेपानी र औषधि उपचारको अभाव हुनु।</li>
+                    <li><strong>आर्थिक गरिबी:</strong> रोजगारी गुम्नु, कृषि बाली नष्ट हुनु र उत्पादन साधन घट्नु।</li>
+                    <li><strong>शिक्षा र सामाजिक सेवामा बाधा:</strong> विद्यालय र पूर्वाधार नष्ट भई बालबालिकाको पठनपाठन अवरुद्ध हुनु।</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="qa-block color3">
+            <div class="q"><span class="qnum">प्र.न. १ (ग):</span> कोभिड-१९ ले तपाईंको पठनपाठनमा पारेको प्रभावको अनुभवलाई १० बुँदामा लेख्नुहोस्।</div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> कोभिड-१९ महामारीले मेरो पठनपाठनमा पारेका १० मुख्य प्रभावहरू निम्न अनुसार छन्:</p>
+                <ol>
+                    <li><strong>भौतिक विद्यालय बन्द:</strong> लामो समयसम्म विद्यालय प्रत्यक्ष रूपमा बन्द भई घरमै सीमित हुनुपरेको।</li>
+                    <li><strong>अनलाइन कक्षामा निर्भरता:</strong> भौतिक कक्षाको सट्टा Zoom र Microsoft Teams मार्फत पढाइ सुरु भएको।</li>
+                    <li><strong>डिजिटल पहुँचको असमानता:</strong> इन्टरनेट र कम्प्युटर/स्मार्टफोनको अभावले कतिपय साथीहरू पढाइबाट वञ्चित हुनुपरेको।</li>
+                    <li><strong>प्रयोगात्मक सिकाइमा बाधा:</strong> विज्ञान तथा सामाजिक अध्ययनका परियोजना र प्रयोगात्मक कार्यहरू ठप्प भएको।</li>
+                    <li><strong>परीक्षा तालिका अनिश्चितता:</strong> परीक्षा सञ्चय र नतिजा प्रकाशनमा ढिलाइ भई शैक्षिक सत्र सरेको।</li>
+                    <li><strong>मानसिक तनाव र एकाग्रतामा कमी:</strong> घरभित्रै थुनिनु पर्दा मानसिक तनाव बढेको र पढाइमा ध्यान केन्द्रित गर्न कठिन भएको।</li>
+                    <li><strong>स्व-अध्ययन (Self-Study) को बानी:</strong> इन्टरनेट र डिजिटल सामग्री प्रयोग गरी आफैँ पढ्ने क्षमता अभिवृद्धि भएको।</li>
+                    <li><strong>सहपाठीहरूसँगको अन्तरक्रिया कमी:</strong> साथीभाइसँग प्रत्यक्ष छलफल र सामूहिक सिकाइको अवसर गुमेको।</li>
+                    <li><strong>आँखा र स्वास्थ्यमा असर:</strong> घण्टौँसम्म स्क्रिन (Screen Time) हेर्नुपर्दा आँखा दुख्ने र टाउको दुख्ने समस्या देखिएको।</li>
+                    <li><strong>जीवनोपयोगी प्रविधि सिपको विकास:</strong> इमेल, एमएस वर्ड, डिजिटल नोट र अनलाइन खोज गर्ने सिप हासिल भएको।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- विस्तृत -->
+        <div class="sub-head"><i class="fas fa-gem"></i> विस्तृत प्रश्नोत्तर (८ अङ्क)</div>
+
+        <div class="qa-block color4">
+            <div class="q"><span class="qnum">प्र.न. २:</span> "नेपाल विपत्को उच्च जोखिममा रहेको मुलुक हो।" यस भनाइलाई आधार मानी नेपालमा विपत्का मुख्य कारण र यसले सामाजिक-आर्थिक क्षेत्रमा पार्ने प्रभावहरूको विस्तृत विश्लेषण गर्दै जोखिम न्यूनीकरणका उपायहरू लेख्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपाल भूपरिवेष्ठित र विषम धरातलीय बनोट भएको राष्ट्र हो। UNDP र विश्व बैंकको प्रतिवेदन अनुसार नेपाल भूकम्पको जोखिमका दृष्टिले ११ औँ र बाढी-जलउत्पन्न विपत्का दृष्टिले ३ औँ उच्च जोखिमपूर्ण राष्ट्र मानिन्छ। नेपालमा भूपरिस्थिति, अनियमित वर्षा र मानवीय असावधानीका कारण बर्सेनि ठुलो धनजनको क्षति हुने गरेको छ।</p>
+
+                <div class="mermaid-flow">
+                    <div class="mermaid-step">१. मुख्य कारणहरू<br><span style="font-weight:400;">(प्राकृतिक + मानवीय)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">२. सामाजिक-आर्थिक प्रभाव<br><span style="font-weight:400;">(क्षति, गरिबी, पूर्वाधार)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">३. न्यूनीकरणका उपाय<br><span style="font-weight:400;">(पूर्वतयारी र सचेतना)</span></div>
+                </div>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. मुख्य विश्लेषण:</span></p>
+
+                <p><strong>(क) विपत्का मुख्य कारणहरू:</strong></p>
+                <ul>
+                    <li><strong>भौगोलिक तथा प्राकृतिक कारण:</strong> नेपाल भारतीय र तिब्बती प्लेटको जोडमा रहेकाले भूकम्पको जोखिम छ। भिरालो धरातल, अतिवृष्टि र जलवायु परिवर्तनका कारण हिमताल फुट्ने (GLOF) जस्ता विपत् आउँछन्।</li>
+                    <li><strong>मानवीय कारण:</strong> प्राकृतिक स्रोतको अत्यधिक दोहन, वन विनाश, मापदण्डविहीन सडक र भवन निर्माण, र अव्यवस्थित सहरीकरणले विपत्को जोखिम बढाएका छन्।</li>
+                </ul>
+
+                <p><strong>(ख) सामाजिक-आर्थिक प्रभावहरू:</strong></p>
+                <ul>
+                    <li><strong>व्यापक मानवीय र भौतिक क्षति:</strong> गृह मन्त्रालयको १९७१-२०१६ को तथ्याङ्क अनुसार ३९ हजारभन्दा बढीको मृत्यु र १४ लाखभन्दा बढी घरहरू पूर्ण वा आंशिक नष्ट भएका छन्।</li>
+                    <li><strong>आर्थिक मन्दी र पूर्वाधार विनाश:</strong> कृषि बाली र सडक/पुल नष्ट भई राष्ट्रिय आय घट्नुका साथै पुनर्निर्माणमा खर्बौँ रुपैयाँ खर्च हुने गरेको छ।</li>
+                    <li><strong>सामाजिक र स्वास्थ्य सङ्कट:</strong> मानिसहरू घरबारविहीन भई सुकुम्बासी बन्नु र शुद्ध पानी तथा औषधिको अभावमा महामारी फैलिनु।</li>
+                </ul>
+
+                <p><strong>(ग) जोखिम न्यूनीकरणका उपायहरू:</strong></p>
+                <ul>
+                    <li><strong>१. भवन निर्माण संहिताको कडा पालना:</strong> भूकम्प प्रतिरोधी भौतिक संरचना निर्माण गर्ने।</li>
+                    <li><strong>२. पूर्वसूचना प्रणाली (Early Warning System):</strong> बाढी र पहिरोको पूर्वजानकारी दिने आधुनिक प्रविधि जडान गर्ने।</li>
+                    <li><strong>३. वृक्षरोपण र नदी नियन्त्रण:</strong> भिरालो जमिनमा वृक्षरोपण गर्ने र नदी किनारमा तटबन्ध निर्माण गर्ने।</li>
+                    <li><strong>४. सामुदायिक चेतना र तालिम:</strong> विपत् पूर्वतयारी, खोज, उद्धार र प्राथमिक उपचारको स्थानीय स्तरमा तालिम दिने।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> अतः प्राकृतिक विपत्लाई पूर्ण रूपमा रोक्न नसकिए तापनि सजगता, सुदृढ पूर्वतयारी, योजनाबद्ध विकास र भू-उपयोग नीतिको सही कार्यान्वयनबाट विपत्बाट हुने क्षतिलाई उल्लेख्य रूपमा न्यूनीकरण गर्न सकिन्छ।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ===== FINAL TIP ===== -->
+        <div class="tip-box" style="background:#00695C; margin-top:20px;">
+            <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+            <strong>अन्तिम सल्लाह:</strong> विपत्का कारण प्राकृतिक मात्र नभई मानवीय असावधानी पनि हुन्। सुरक्षित निर्माण, वातावरण संरक्षण र सामुदायिक सचेतना नै विपत् जोखिम न्यूनीकरणको दिगो बाटो हो।
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ७</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('scrollUpBtn');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            });
+
+            btn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>
