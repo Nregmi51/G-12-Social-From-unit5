@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ७ – सामाजिक पहिचान र विविधता (कक्षा १२)</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #e0f7fa;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fefcf7;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #b2dfdb;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #006064;
+            line-height: 1.2;
+        }
+
+        .main-header h1 i {
+            color: #00838F;
+            margin-right: 10px;
+        }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #00838F;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .credit-bar {
+            background: #d7f0f3;
+            border-radius: 60px;
+            padding: 14px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #b2dfdb;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .credit-bar .name {
+            color: #0b2b4a;
+            font-weight: 800;
+            font-size: 1.15rem;
+        }
+
+        .credit-bar .email {
+            color: #00838F;
+            font-weight: 700;
+        }
+
+        .credit-bar i {
+            color: #00838F;
+            margin-right: 6px;
+        }
+
+        /* ----- INTRO BOX ----- */
+        .intro-box {
+            background: #e0f2f1;
+            border-radius: 16px;
+            padding: 14px 22px;
+            border-left: 6px solid #00838F;
+            margin: 6px 0 20px;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .intro-box strong {
+            color: #006064;
+            font-weight: 900;
+        }
+
+        /* ----- SECTION HEADERS ----- */
+        .section-head {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #00838F;
+            margin: 42px 0 16px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            scroll-margin-top: 80px;
+            box-shadow: 0 3px 12px rgba(0, 131, 143, 0.35);
+        }
+
+        .section-head i {
+            font-size: 1.5rem;
+            color: #FFEB3B;
+        }
+
+        .section-head .mark-badge {
+            color: #00838F;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: 4px;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #FFEB3B; color: #006064; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.pink { background: #f48fb1; color: #0b2b4a; }
+
+        .sub-head {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #006064;
+            margin: 28px 0 12px;
+            padding-left: 14px;
+            border-left: 6px solid #00838F;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            scroll-margin-top: 80px;
+        }
+
+        .sub-head i {
+            color: #00838F;
+            font-size: 1.1rem;
+        }
+
+        .sub-head-sm {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #006064;
+            margin: 18px 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sub-head-sm i {
+            color: #00838F;
+        }
+
+        /* ----- CONTENT BOXES ----- */
+        .content-box {
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #00838F;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .content-box p,
+        .content-box ul,
+        .content-box ol,
+        .content-box li {
+            font-size: 1.19rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .content-box ul,
+        .content-box ol {
+            padding-left: 28px;
+            margin: 8px 0 8px;
+        }
+
+        .content-box li {
+            margin-bottom: 6px;
+        }
+
+        .content-box strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .content-box.cyan-light {
+            border-left-color: #00838F;
+            background: #e0f7fa;
+        }
+
+        .content-box.blue-light {
+            border-left-color: #1a3a5c;
+            background: #e8f0f8;
+        }
+
+        .content-box.gold-light {
+            border-left-color: #b45309;
+            background: #fef8ee;
+        }
+
+        .content-box.green-light {
+            border-left-color: #1f7a4a;
+            background: #eef8f2;
+        }
+
+        .content-box.purple-light {
+            border-left-color: #6A1B9A;
+            background: #f4eef8;
+        }
+
+        .content-box.pink-light {
+            border-left-color: #a03a5a;
+            background: #fcf0f4;
+        }
+
+        .content-box.orange-light {
+            border-left-color: #d97706;
+            background: #fef6ed;
+        }
+
+        .content-box.teal-light {
+            border-left-color: #0f7a7a;
+            background: #eef8f8;
+        }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0 14px;
+            border-radius: 14px;
+            border: 2px solid #b2dfdb;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.05rem;
+            min-width: 320px;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            border: 1px solid #b2dfdb;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #00838F;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.08rem;
+        }
+
+        td {
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .table-caption {
+            background: #d7f0f3;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.08rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #b2dfdb;
+        }
+
+        /* ----- Q&A BLOCKS ----- */
+        .qa-block {
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #00838F;
+        }
+
+        .qa-block.color1 { border-left-color: #00838F; background: #e0f7fa; }
+        .qa-block.color2 { border-left-color: #1a3a5c; background: #f0f5fa; }
+        .qa-block.color3 { border-left-color: #1f7a4a; background: #f2f8f5; }
+        .qa-block.color4 { border-left-color: #6b3fa0; background: #f6f2f8; }
+        .qa-block.color5 { border-left-color: #b45309; background: #fcf9f4; }
+        .qa-block.color6 { border-left-color: #0f7a7a; background: #eef8f8; }
+        .qa-block.color7 { border-left-color: #a03a5a; background: #fcf5f8; }
+        .qa-block.color8 { border-left-color: #d97706; background: #fef8ef; }
+
+        .qa-block .q {
+            font-weight: 900;
+            color: #006064;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 1.22rem;
+            flex-wrap: wrap;
+        }
+
+        .qa-block .q .qnum {
+            color: #00838F;
+            font-weight: 900;
+            min-width: 30px;
+        }
+
+        .qa-block .a {
+            margin-top: 6px;
+            padding-left: 46px;
+            color: #1e2a3a;
+            font-weight: 500;
+            font-size: 1.19rem;
+        }
+
+        .qa-block .a ul,
+        .qa-block .a ol {
+            padding-left: 24px;
+            margin: 6px 0 6px;
+        }
+
+        .qa-block .a li {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .qa-block .a strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        /* ----- MNEMONIC / TIP CARD ----- */
+        .tip-card {
+            background: #faf8f5;
+            border-radius: 14px;
+            padding: 16px 22px;
+            border: 2px solid #b2dfdb;
+            border-left: 6px solid #00838F;
+            margin: 12px 0;
+        }
+
+        .tip-card .tip-title {
+            font-weight: 900;
+            color: #006064;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .tip-card .tip-title i {
+            color: #00838F;
+        }
+
+        .tip-card p,
+        .tip-card li {
+            font-weight: 500;
+            font-size: 1.08rem;
+            margin-bottom: 4px;
+        }
+
+        .tip-card ul {
+            padding-left: 24px;
+        }
+
+        .tip-card strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        /* ----- CHECKLIST ----- */
+        .checklist-box {
+            background: #f5f0e8;
+            border-radius: 16px;
+            padding: 18px 24px;
+            border: 2px solid #b2dfdb;
+            margin: 12px 0;
+        }
+
+        .checklist-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist-box li {
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist-box li::before {
+            content: "\f0c8";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 400;
+            color: #00838F;
+            position: absolute;
+            left: 4px;
+            top: 2px;
+            font-size: 1rem;
+        }
+
+        /* ----- FLOATING TOC BUTTON + PANEL (top-left) ----- */
+        #tocToggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: #00838F;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            padding: 10px 18px;
+            font-family: inherit;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 16px rgba(0, 131, 143, 0.45);
+            transition: all 0.25s ease;
+        }
+
+        #tocToggle:hover {
+            background: #006064;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(0, 131, 143, 0.55);
+        }
+
+        #tocToggle i {
+            color: #FFEB3B;
+        }
+
+        #tocPanel {
+            position: fixed;
+            top: 76px;
+            left: 20px;
+            width: 340px;
+            max-width: calc(100vw - 40px);
+            max-height: 75vh;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+            border: 2px solid #00838F;
+            z-index: 1001;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px) scale(0.98);
+            transition: all 0.25s ease;
+        }
+
+        #tocPanel.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+
+        .toc-panel-head {
+            background: #00838F;
+            color: #fff;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 800;
+            font-size: 1.05rem;
+        }
+
+        .toc-panel-head span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-panel-head i.fa-list-ul {
+            color: #FFEB3B;
+        }
+
+        #tocClose {
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        #tocClose:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .toc-panel-body {
+            padding: 10px 8px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .toc-panel-body a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 14px;
+            text-decoration: none;
+            color: #1a1a2e;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 10px;
+            border-bottom: 1px solid #e0f2f1;
+            transition: all 0.2s ease;
+        }
+
+        .toc-panel-body a:hover {
+            background: #e0f7fa;
+            color: #006064;
+            padding-left: 20px;
+        }
+
+        .toc-panel-body a i {
+            color: #00838F;
+            font-size: 0.75rem;
+            min-width: 14px;
+        }
+
+        .toc-panel-body a .toc-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 26px;
+            height: 26px;
+            background: #e0f7fa;
+            color: #006064;
+            border-radius: 50%;
+            font-weight: 900;
+            font-size: 0.8rem;
+        }
+
+        .toc-panel-body a:hover .toc-num {
+            background: #00838F;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            #tocToggle {
+                top: 12px;
+                left: 12px;
+                padding: 8px 14px;
+                font-size: 0.9rem;
+            }
+            #tocPanel {
+                top: 62px;
+                left: 12px;
+                width: calc(100vw - 24px);
+                max-height: 70vh;
+            }
+        }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #00838F;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 131, 143, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #scrollUpBtn:hover {
+            background: #006064;
+            transform: scale(1.08);
+        }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 3px solid #b2dfdb;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 28px;
+            font-weight: 600;
+        }
+
+        .footer-copy i {
+            color: #00838F;
+            margin-right: 6px;
+        }
+
+        .footer-copy .highlight {
+            font-weight: 800;
+            color: #0b2b4a;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px dotted #b2dfdb;
+            margin: 28px 0 10px;
+        }
+
+        .tip-box {
+            background: #00838F;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .tip-box i {
+            margin-right: 8px;
+        }
+
+        .tip-box strong {
+            color: #FFEB3B;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 12px 24px;
+                border-radius: 20px;
+            }
+
+            .main-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-head {
+                font-size: 1.35rem;
+                padding: 10px 16px;
+            }
+
+            .sub-head {
+                font-size: 1.15rem;
+            }
+
+            .qa-block .a {
+                padding-left: 12px;
+            }
+
+            .qa-block .q {
+                font-size: 1.05rem;
+            }
+
+            .credit-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                font-size: 0.9rem;
+                padding: 10px 16px;
+            }
+
+            #scrollUpBtn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                bottom: 18px;
+                right: 18px;
+            }
+
+            .content-box {
+                padding: 14px 16px;
+            }
+            .content-box p,
+            .content-box ul,
+            .content-box ol,
+            .content-box li {
+                font-size: 1.02rem;
+            }
+            .qa-block .a {
+                font-size: 1.02rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+            th,
+            td {
+                font-size: 0.9rem;
+                padding: 6px 8px;
+            }
+            .tip-card p,
+            .tip-card li {
+                font-size: 1rem;
+            }
+            .checklist-box li {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 36px 46px 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== FLOATING TOC TOGGLE (TOP-LEFT) ===== -->
+    <button id="tocToggle" aria-label="विषयसूची खोल्नुहोस्">
+        <i class="fas fa-bars"></i>
+        <span>विषयसूची</span>
+    </button>
+
+    <div id="tocPanel" role="dialog" aria-label="विषयसूची प्यानल">
+        <div class="toc-panel-head">
+            <span><i class="fas fa-list-ul"></i> विषयसूची</span>
+            <button id="tocClose" aria-label="बन्द गर्नुहोस्"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="toc-panel-body">
+            <a href="#section0"><span class="toc-num">०</span> कसरी प्रयोग गर्ने</a>
+            <a href="#section1"><span class="toc-num">१</span> द्रुत पुनरावलोकन (संख्या/साल/तथ्याङ्क)</a>
+            <a href="#section2"><span class="toc-num">२</span> पाठ १: वर्ग र सामाजिक रूपान्तरण</a>
+            <a href="#section3"><span class="toc-num">३</span> पाठ २: लैङ्गिक सवाल</a>
+            <a href="#section4"><span class="toc-num">४</span> पाठ ३: लैङ्गिक समावेशिता</a>
+            <a href="#section5"><span class="toc-num">५</span> पाठ ४: अपाङ्गता र समावेशीकरण</a>
+            <a href="#section6"><span class="toc-num">६</span> पाठ ५: धार्मिक तथा क्षेत्रीय पहिचान</a>
+            <a href="#section7"><span class="toc-num">७</span> पाठ ६: समतामूलक समाज</a>
+            <a href="#section8"><span class="toc-num">८</span> सम्भावित प्रश्न र नमुना उत्तर</a>
+            <a href="#section9"><span class="toc-num">९</span> अन्तिम पुनरावलोकन चेकलिस्ट</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <div>
+                <h1>
+                    <i class="fas fa-users-rays"></i>
+                    एकाइ ७: सामाजिक पहिचान र विविधता
+                </h1>
+                <div class="subtitle">
+                    कक्षा १२ · सामाजिक अध्ययन तथा जीवनोपयोगी शिक्षा
+                    <span class="badge-class"><i class="fas fa-check-circle"></i> परीक्षा विशेष क्याप्सुल</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CREDIT BAR ===== -->
+        <div class="credit-bar">
+            <span>
+                <i class="fas fa-user-edit"></i>
+                <span class="name">Prepared by: Narayan Sir</span>
+            </span>
+            <span>
+                <i class="fas fa-envelope"></i>
+                <span class="email">nregmi511@gmail.com</span>
+            </span>
+            <span>
+                <i class="fas fa-copyright"></i>
+                कक्षा १२ – एकाइ ७
+            </span>
+        </div>
+
+        <!-- ===== INTRO ===== -->
+        <div class="intro-box" id="section0">
+            <i class="fas fa-lightbulb" style="color:#00838F; margin-right:6px;"></i>
+            <strong>कसरी प्रयोग गर्ने:</strong> पहिले "द्रुत पुनरावलोकन" पढ्नुहोस्, त्यसपछि पाठगत नोट्स, अनि अन्त्यमा सम्भावित प्रश्न र नमुना उत्तर अभ्यास गर्नुहोस्। मूल पाठ्यपुस्तकसँग एकपटक भिडाउनुहोला।
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== १. द्रुत पुनरावलोकन ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section1">
+            <i class="fas fa-bolt"></i>
+            १. द्रुत पुनरावलोकन: संख्या, साल र तथ्याङ्क
+            <span class="mark-badge gold">Quick Facts</span>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-layer-group"></i> पाठ १ – वर्ग</div>
+        <div class="content-box cyan-light">
+            <div class="table-wrap">
+                <table>
+                    <tbody>
+                        <tr><th style="width:45%;">विषय</th><th>तथ्य</th></tr>
+                        <tr><td>"Class" शब्दको उत्पत्ति</td><td>ल्याटिन भाषाको <em>Classis</em> (अर्थ : मानिसहरूको समूह)</td></tr>
+                        <tr><td>आधुनिक समाजका वर्ग</td><td>३ (उच्च, मध्यम, निम्न)</td></tr>
+                        <tr><td>वर्ग निर्माणका आधार</td><td>४ (आर्थिक, सांस्कृतिक, सामाजिक, पदीय)</td></tr>
+                        <tr><td>निरपेक्ष गरिबीमुनि नेपाली जनता</td><td>भन्डै १९ प्रतिशत</td></tr>
+                        <tr><td>सामाजिक प्रगति सूचकाङ्क (SPI) २०२०</td><td>१६३ देशमध्ये नेपाल <strong>११४ औँ</strong></td></tr>
+                        <tr><td>मानव विकास सूचकाङ्क (HDI) २०२०</td><td>१८९ देशमध्ये नेपाल <strong>१४२ औँ</strong></td></tr>
+                        <tr><td>योजना</td><td><strong>पन्धौँ योजना</strong> – "समृद्ध नेपाल, सुखी नेपाली"</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-venus-mars"></i> पाठ २ – लैङ्गिक सवाल</div>
+        <div class="content-box cyan-light">
+            <div class="table-wrap">
+                <table>
+                    <tbody>
+                        <tr><th style="width:45%;">विषय</th><th>तथ्य</th></tr>
+                        <tr><td>Sex / Gender</td><td>प्राकृतिक लिङ्ग / सामाजिक लिङ्ग (लैङ्गिकता)</td></tr>
+                        <tr><td>क्रोमोजोम</td><td>पुरुष <strong>XY</strong>, महिला <strong>XX</strong></td></tr>
+                        <tr><td>LGBTIQ</td><td>lesbian, gay, bisexual, transgender/transsexual, intersexual, queer/questioning</td></tr>
+                        <tr><td>सर्वोच्च अदालतको फैसला</td><td>वि.सं. <strong>२०६४ पुस ६</strong> – आफ्नो लिङ्ग आफैँ निर्धारण गर्न सक्ने</td></tr>
+                        <tr><td>गृह मन्त्रालयको निर्देशन</td><td>वि.सं. <strong>२०६९ पौष</strong> (सबै जिल्ला प्रशासन कार्यालयलाई)</td></tr>
+                        <tr><td>नागरिकता पाएका अल्पसङ्ख्यक</td><td>सन् २०१९ सम्म <strong>१५००</strong> जना</td></tr>
+                        <tr><td>बेइजिङ घोषणापत्र</td><td>महिला सरोकारका <strong>१२</strong> क्षेत्र</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-timeline"></i> पाठ ३ – लैङ्गिक समावेशिता</div>
+        <div class="content-box cyan-light">
+            <div class="table-wrap">
+                <table>
+                    <tbody>
+                        <tr><th style="width:22%;">साल</th><th>घटना</th></tr>
+                        <tr><td>सन् १७९२</td><td>मेरी वोल्स्टोनक्राफ्टको <em>A Vindication of the Rights of Woman</em></td></tr>
+                        <tr><td>सन् १८४८</td><td>न्युयोर्कमा संसारकै पहिलो महिला अधिकार सभा</td></tr>
+                        <tr><td>सन् १९४८</td><td>मानव अधिकारको विश्वव्यापी घोषणा (धारा २ – लिङ्गका आधारमा भेदभाव नहुने)</td></tr>
+                        <tr><td>सन् १९७५</td><td>अन्तर्राष्ट्रिय नारी वर्ष; पहिलो विश्व महिला सम्मेलन (<strong>मेक्सिको</strong>)</td></tr>
+                        <tr><td>सन् १९७९</td><td><strong>CEDAW</strong> महासन्धि (नेपालले हस्ताक्षर गरेको)</td></tr>
+                        <tr><td>सन् १९८०</td><td>दोस्रो विश्व महिला सम्मेलन (<strong>कोपेनहेगन</strong>, डेनमार्क)</td></tr>
+                        <tr><td>सन् १९८५</td><td>तेस्रो सम्मेलन (<strong>नैरोबी</strong>, केन्या)</td></tr>
+                        <tr><td>सन् १९९५</td><td>चौथो सम्मेलन (<strong>बेइजिङ</strong>, चीन)</td></tr>
+                        <tr><td>सन् २०१०</td><td>UN Women (संयुक्त राष्ट्रसङ्घीय निकाय) को स्थापना</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <tbody>
+                        <tr><th style="width:45%;">नेपालका प्रयास</th><th>साल / तथ्य</th></tr>
+                        <tr><td>छैटौँ योजना</td><td>महिला सहभागिताका लागि पहिलोपल्ट छुट्टै नीति</td></tr>
+                        <tr><td>महिला विकास शाखा</td><td>वि.सं. २०३८</td></tr>
+                        <tr><td>महिला तथा समाजकल्याण मन्त्रालय</td><td>वि.सं. २०५२</td></tr>
+                        <tr><td>महिला विकास विभाग</td><td>वि.सं. २०५७</td></tr>
+                        <tr><td>७५ जिल्लामा महिला विकास कार्यालय</td><td>आ.व. २०५७/५८</td></tr>
+                        <tr><td>निजामती/शिक्षक/सुरक्षा सेवामा महिला आरक्षण</td><td>३३ प्रतिशत</td></tr>
+                        <tr><td>प्रतिस्पर्धाको उमेर हद</td><td>पुरुष ३५ वर्ष, महिला ४० वर्ष</td></tr>
+                        <tr><td>बन्दसूची (प्रतिनिधि सभा/प्रदेश सभा समानुपातिक)</td><td>५० प्रतिशत महिला</td></tr>
+                        <tr><td>राष्ट्रिय सभा</td><td>प्रत्येक प्रदेशबाट ८ मध्ये ३ महिला; राष्ट्रपतिले मनोनीत ३ मध्ये १ महिला</td></tr>
+                        <tr><td>स्थानीय तह</td><td>वडामा २, गाउँ कार्यपालिकामा ४, नगर कार्यपालिकामा ५ महिला</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-wheelchair"></i> पाठ ४ – अपाङ्गता</div>
+        <div class="content-box cyan-light">
+            <div class="table-wrap">
+                <table>
+                    <tbody>
+                        <tr><th style="width:45%;">विषय</th><th>तथ्य</th></tr>
+                        <tr><td>अपाङ्गताका प्रकार</td><td><strong>१०</strong></td></tr>
+                        <tr><td>गम्भीरताका आधारमा वर्ग</td><td><strong>४</strong> (क, ख, ग, घ)</td></tr>
+                        <tr><td>परिचयपत्रको रङ</td><td>क – <strong>रातो</strong>, ख – <strong>निलो</strong>, ग – <strong>पहेँलो</strong>, घ – <strong>सेतो</strong></td></tr>
+                        <tr><td>दृष्टिविहीनता</td><td>१० फिटबाट औँला छुट्याउन नसक्ने; न्यून दृष्टि – चस्माले पनि २० फिटबाट नसक्ने</td></tr>
+                        <tr><td>बहिरोपन</td><td>८० डेसिबलभन्दा माथिको ध्वनि सुन्न नसक्ने</td></tr>
+                        <tr><td>सुस्त श्रवण</td><td>६५–८० डेसिबलसम्म सुन्न सक्ने / श्रवण यन्त्र आवश्यक</td></tr>
+                        <tr><td>निःशुल्क औषधि</td><td>सरकारी अस्पतालबाट <strong>४१</strong> प्रकारका औषधि</td></tr>
+                        <tr><td>सर्वोच्च अदालतको आदेश</td><td>२०६० साल कात्तिक २८ (निःशुल्क भर्ना)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-om"></i> पाठ ५ – धार्मिक तथा क्षेत्रीय पहिचान (जनगणना २०६८)</div>
+        <div class="content-box cyan-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>धर्म</th><th>जनसङ्ख्या</th><th>धर्म</th><th>जनसङ्ख्या</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>हिन्दु</td><td>८१.३४%</td><td>बोन</td><td>१३००६</td></tr>
+                        <tr><td>बौद्ध</td><td>९.०४%</td><td>जैन</td><td>३२१४</td></tr>
+                        <tr><td>इस्लाम</td><td>४.३९%</td><td>बहाई</td><td>१२८३</td></tr>
+                        <tr><td>किरात</td><td>३.०५%</td><td>शिख</td><td>६०९</td></tr>
+                        <tr><td>इसाई</td><td>१.४२%</td><td></td><td></td></tr>
+                        <tr><td>प्रकृति</td><td>०.५%</td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul>
+                <li>नेपालमा <strong>मुख्य १०</strong> धार्मिक समुदाय; धार्मिक स्वतन्त्रता – संविधानको <strong>धारा २६</strong>; नेपाल <strong>धर्मनिरपेक्ष</strong> राष्ट्र।</li>
+                <li>नेपालमा <strong>७</strong> प्रदेश; भौगोलिक क्षेत्र <strong>३</strong> (हिमाल, पहाड, तराई)।</li>
+            </ul>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-balance-scale"></i> पाठ ६ – समतामूलक समाज</div>
+        <div class="content-box cyan-light">
+            <div class="table-wrap">
+                <table>
+                    <tbody>
+                        <tr><th style="width:45%;">विषय</th><th>तथ्य</th></tr>
+                        <tr><td>राज्यले अपनाउनुपर्ने उपाय</td><td><strong>७</strong> (सशक्तीकरण, मूलप्रवाहीकरण, हस्तक्षेपकारी नीति, रोजगारमूलक लक्षित कार्यक्रम, सहज र न्यायोचित पहुँच, सुशासन, समावेशीकरण)</td></tr>
+                        <tr><td>निजामती सेवामा समावेशी पद</td><td>खुला प्रतियोगिताका पदमध्ये <strong>४५%</strong></td></tr>
+                        <tr><td>पिछडिएको क्षेत्रका जिल्ला</td><td>अछाम, कालिकोट, जाजरकोट, जुम्ला, डोल्पा, बझाङ, बाजुरा, मुगु, हुम्ला</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>आरक्षण तालिका (%)</strong></p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>समूह</th><th>निजामती / न्याय / शिक्षक</th><th>सैनिक / प्रहरी</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>महिला</td><td>३३</td><td>२०</td></tr>
+                        <tr><td>आदिवासी / जनजाति</td><td>२७</td><td>३२</td></tr>
+                        <tr><td>मधेसी</td><td>२२</td><td>२८</td></tr>
+                        <tr><td>दलित</td><td>९</td><td>१५</td></tr>
+                        <tr><td>अपाङ्ग</td><td>५</td><td>–</td></tr>
+                        <tr><td>पिछडिएको क्षेत्र</td><td>४</td><td>५</td></tr>
+                        <tr><td><strong>जम्मा</strong></td><td><strong>१००</strong></td><td><strong>१००</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tip-card">
+                <div class="tip-title"><i class="fas fa-lightbulb"></i> सम्झने तरिका</div>
+                <p>निजामतीमा "महिला सबैभन्दा बढी (३३)", सैनिक/प्रहरीमा "आदिवासी/जनजाति सबैभन्दा बढी (३२)" र अपाङ्गको सैनिक/प्रहरीमा आरक्षण छैन।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== २. पाठ १: वर्ग र सामाजिक रूपान्तरण ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section2">
+            <i class="fas fa-people-group"></i>
+            २. पाठ १: वर्ग र सामाजिक रूपान्तरण
+            <span class="mark-badge green">Lesson 1</span>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-book"></i> २.१ मुख्य परिभाषाहरू</div>
+        <div class="content-box cyan-light">
+            <ul>
+                <li><strong>समाज:</strong> एकभन्दा धेरै मानिसको समुदाय र त्यसअन्तर्गत मानवीय सम्बन्धहरूको सञ्जाल।</li>
+                <li><strong>वर्ग:</strong> पेसा, सामाजिक स्थिति, लिङ्ग, जाति, धर्म, संस्कृति, भाषा, पद, रुचि, आर्थिक अवस्था आदिका आधारमा बनेका समूहमध्ये मूलतः <strong>आर्थिक आधारसँग जोडिएको समूह</strong>।</li>
+                <li><strong>सामाजिक रूपान्तरण:</strong> पछाडि परेका वा पारिएका वर्ग/निम्न वर्गको उत्थान गरी समाजमा अरूसरह ससम्मान सामान्य जीवनयापन गर्न सक्ने अवस्थामा पुर्‍याउनु।</li>
+            </ul>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-sitemap"></i> २.२ वर्ग विभाजन</div>
+        <div class="content-box blue-light">
+            <p><strong>कार्ल मार्क्सको विचार:</strong> शक्ति र स्रोतसाधनमा पहुँच हुने र नहुने गरी <strong>दुई वर्ग</strong>।</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:35%;">समाज</th><th>वर्ग</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>आदिम समाज</td><td>वर्ग थिएन (उत्पादनका साधनमा सामूहिक मालिकत्व)</td></tr>
+                        <tr><td>दास समाज</td><td>मालिक र दास</td></tr>
+                        <tr><td>सामन्ती समाज</td><td>सामन्त र मोही किसान/अर्धदास</td></tr>
+                        <tr><td>पुँजीवादी समाज</td><td>पुँजीपति र सर्वहारा</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>→ यी वर्गबिच <strong>वर्गसङ्घर्ष</strong> चलिरहन्छ भन्ने मार्क्सको धारणा।</p>
+
+            <p><strong>आधुनिक समाजका तीन वर्ग</strong></p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:16%;">वर्ग</th><th style="width:44%;">विशेषता</th><th style="width:40%;">उदाहरण</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>उच्च वर्ग</strong></td>
+                            <td>उच्च आय, उत्पादनका साधनमाथि नियन्त्रण, उच्च प्रतिष्ठा/शक्ति, राजनीतिमा नियन्त्रण</td>
+                            <td>उच्च पदका वेतनधारी, व्यापारी, उद्योगी, जमिनदार, उच्च राजनीतिज्ञ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>मध्यम वर्ग</strong></td>
+                            <td>मध्यम आम्दानी; सिप, कला, बौद्धिकतामा आधारित जीविका; सेवा क्षेत्रमा धेरै; सहरीकरणसँगै बढ्दै; माथि उक्लन वा तल झर्न सक्ने</td>
+                            <td>जागिरे, मध्यम उद्योग/व्यापार, किसान, स्वरोजगार</td>
+                        </tr>
+                        <tr>
+                            <td><strong>निम्न वर्ग</strong></td>
+                            <td>न्यून आय, हातमुख जोड्न धौ-धौ, श्रममा आधारित, जमिन नहुने/ज्यादै कम, शोषणको सिकार, क्रय क्षमता कम</td>
+                            <td>मजदुर, घरेलु कामदार</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-cubes"></i> २.३ वर्ग निर्माणका चार आधार</div>
+        <div class="content-box gold-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:20%;">आधार</th><th>मुख्य कुरा</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>आर्थिक</strong></td>
+                            <td>आम्दानी र उत्पादन प्रक्रियामा पहुँच। मजदुर बनाम मालिक; किसान बनाम भूमिपति। श्रम बेच्ने बनाम पुँजी/भूमि/बुद्धि लगानी गर्ने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>सांस्कृतिक</strong></td>
+                            <td>परम्परा र संस्कृति। हिन्दु समाजको <strong>वर्ण व्यवस्था</strong> – दलित वर्ग भूमिको स्वामित्व र पुँजीको नियन्त्रणबाट वञ्चित।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>सामाजिक</strong></td>
+                            <td>समान जाति, धर्म, संस्कृति, पद, स्तर। आर्थिक वर्गभन्दा <strong>सामाजिक वर्ग बढी स्थायी</strong>।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>पदीय</strong></td>
+                            <td>राजनीतिक/प्रशासनिक पद र ओहदा। उच्च/मध्यम/तल्लो पदका वर्ग; मिहिनेत र अवसरले पदोन्नति सम्भव।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-arrows-spin"></i> २.४ सामाजिक रूपान्तरणको प्रकृति (५ बुँदा)</div>
+        <div class="content-box green-light">
+            <ol>
+                <li><strong>विश्वव्यापी प्रक्रिया</strong> – सबै समाज परिवर्तनशील।</li>
+                <li><strong>स्वरूप एकै प्रकारका हुँदैनन्</strong> – सङ्घर्ष, सहयोग, समायोजन वा सुधारात्मक उपायबाट।</li>
+                <li><strong>निश्चित भविष्यवाणी हुँदैन</strong> – आकस्मिक कारक आउन सक्छन्।</li>
+                <li><strong>निरन्तर प्रक्रिया</strong> – पछाडि परेकाहरूले रूपान्तरणको अनुभूति नगरेसम्म चल्छ।</li>
+                <li><strong>गति एकनास हुँदैन</strong> – कहिले तीव्र, कहिले सुस्त।</li>
+            </ol>
+            <p><strong>मूल अवधारणा:</strong> न्यून वर्ग र वञ्चितीकरणमा परेकाको उत्थान नगरेसम्म समाज विकास हुँदैन। (सांस्कृतिक रूपान्तरणसँग पनि जोडिन्छ)</p>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-chart-line"></i> २.५ नेपालमा सामाजिक रूपान्तरणका प्रयास (६ बुँदा)</div>
+        <div class="content-box purple-light">
+            <ol>
+                <li><strong>संविधान</strong> – आर्थिक, सामाजिक, सांस्कृतिक रूपान्तरणबाट जनताको सर्वोत्तम हित प्रत्याभूत।</li>
+                <li><strong>पन्धौँ योजना</strong> – गरिबी निवारण र आर्थिक-सामाजिक समानतासहितको न्यायपूर्ण समाज।</li>
+                <li><strong>समावेशी सिद्धान्त</strong> – महिला, दलित, अपाङ्ग, मधेसी, अल्पसङ्ख्यक जाति/जनजातिलाई विशेष सुविधा र आरक्षण।</li>
+                <li><strong>कुप्रथा अन्त्य</strong> – कमैया, छाउपडी, हलिया, छुवाछुत, जातीय विभेद; पीडितको पुनर्स्थापना।</li>
+                <li>लक्षित वर्गका लागि जनचेतनामूलक र आर्थिक उत्थान कार्यक्रम।</li>
+                <li>जेष्ठ नागरिक, एकल महिला, अपाङ्ग, लोपोन्मुख जातजातिका लागि कार्यक्रम।</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ३. पाठ २: लैङ्गिक सवाल ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section3">
+            <i class="fas fa-venus-mars"></i>
+            ३. पाठ २: लैङ्गिक सवाल
+            <span class="mark-badge pink">Lesson 2</span>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-scale-unbalanced"></i> ३.१ लिङ्ग बनाम लैङ्गिकता</div>
+        <div class="content-box pink-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:24%;">आधार</th><th style="width:38%;">लिङ्ग (Sex)</th><th style="width:38%;">लैङ्गिकता (Gender)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>प्रकृति</td><td>प्राकृतिक</td><td>सामाजिक</td></tr>
+                        <tr><td>परिवर्तन</td><td>अपरिवर्तनीय</td><td>परिवर्तनीय</td></tr>
+                        <tr><td>समुदायसँग सम्बन्ध</td><td>समुदायनिरपेक्ष (जुनसुकै समुदायमा उही)</td><td>समुदायसापेक्ष (समुदायअनुसार फरक भूमिका)</td></tr>
+                        <tr><td>आधार</td><td>जैविक/शारीरिक बनावट</td><td>सामाजिक व्यवहार र परम्परा</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tip-card">
+                <div class="tip-title"><i class="fas fa-quote-left"></i> सार</div>
+                <p>"लिङ्ग प्रकृतिले दिएको भेद, लैङ्गिकता समाजले बनाएको भेद।" लैङ्गिक भूमिका खासमा <strong>बनावटी कार्यविभाजन</strong> हो।</p>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-dna"></i> ३.२ प्राकृतिक लिङ्गका जैविक विशेषता</div>
+        <div class="content-box blue-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:33%;">पुरुष</th><th style="width:33%;">महिला</th><th style="width:34%;">यौनिक/लैङ्गिक अल्पसङ्ख्यक</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>पाठेघर छैन → गर्भधारण/बच्चा जन्माउन नसक्ने</td>
+                            <td>पाठेघर छ → गर्भधारण गर्न, बच्चा जन्माउन सक्ने</td>
+                            <td>केहीको लिङ्ग नै छुट्टिएको हुँदैन</td>
+                        </tr>
+                        <tr>
+                            <td>दाढी-जुँगा, छातीमा रौँ</td>
+                            <td>दाढी-जुँगा, छातीमा रौँ हुँदैन</td>
+                            <td>केहीमा महिला र पुरुष दुवै जननेन्द्रिय</td>
+                        </tr>
+                        <tr>
+                            <td>स्तनपान गराउन नसक्ने</td>
+                            <td>स्तनपान गराउन सक्ने</td>
+                            <td>शारीरिक रूपमा महिला तर मानसिक रूपमा पुरुष अनुभूति (वा उल्टो)</td>
+                        </tr>
+                        <tr>
+                            <td>प्रोस्टेट ग्रन्थि, रुद्रघण्टी, शुक्रकीट, XY, घोद्रो स्वर</td>
+                            <td>योनी, पाठेघर, अन्डा उत्पादन, XX, मसिनो स्वर</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-list-check"></i> ३.३ लैङ्गिक सवालहरू (७ वटा बहस)</div>
+        <div class="content-box green-light">
+            <p>(अ) महिला अधिकार · (आ) सम्पत्तिमा समान अधिकार · (इ) यौनिक तथा लैङ्गिक अल्पसङ्ख्यक र तिनको पहिचान · (ई) महिला हिंसा र शोषणविरुद्ध · (उ) दाइजोविरुद्ध · (ऊ) समावेशिता · (ऋ) सहभागिता</p>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-globe"></i> ३.४ बेइजिङ घोषणापत्रका १२ सरोकार क्षेत्र</div>
+        <div class="content-box gold-light">
+            <ol>
+                <li>महिला र गरिबी</li>
+                <li>महिलाको शिक्षादीक्षा</li>
+                <li>महिला र स्वास्थ्य</li>
+                <li>महिलामाथिको हिंसा</li>
+                <li>महिला र सशस्त्र सङ्घर्ष</li>
+                <li>महिला र अर्थतन्त्र</li>
+                <li>शक्ति र निर्णय कार्यमा महिला</li>
+                <li>महिलाको उन्नतिका लागि संस्थागत संयन्त्र</li>
+                <li>महिलाका मानवीय अधिकार</li>
+                <li>महिला र सञ्चारका माध्यम</li>
+                <li>महिला र वातावरण</li>
+                <li>बालिका</li>
+            </ol>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-rainbow"></i> ३.५ यौनिक तथा लैङ्गिक अल्पसङ्ख्यक (LGBTIQ)</div>
+        <div class="content-box purple-light">
+            <p><strong>परिभाषा:</strong> पुरुष वा महिलाको पहिचानभन्दा फरक पहिचान भएका व्यक्ति।</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:30%;">समूह</th><th>परिचय</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>इन्टरसेक्सुअल</strong></td><td>जैविक रूपले तेस्रो लिङ्गी; केहीमा लिङ्ग छुट्टिएको हुँदैन, केहीमा दुवै जननेन्द्रिय</td></tr>
+                        <tr><td><strong>ट्रान्सजेन्डर/ट्रान्ससेक्सुअल</strong></td><td>शारीरिक रूपमा एक, मानसिक रूपमा अर्को लिङ्गको अनुभूति; कतिपयले सर्जरी/हर्मोनबाट लिङ्ग परिवर्तन</td></tr>
+                        <tr><td><strong>गे</strong></td><td>शारीरिक रूपमा पुरुष, पुरुषप्रति आकर्षित</td></tr>
+                        <tr><td><strong>लेस्बियन</strong></td><td>शारीरिक रूपमा महिला, महिलाप्रति आकर्षित</td></tr>
+                        <tr><td><strong>बाइसेक्सुअल</strong></td><td>दुवै लिङ्गप्रति आकर्षित</td></tr>
+                        <tr><td><strong>क्वेर/क्वेसनिङ</strong></td><td>आफू के हो भन्ने अन्योलमा</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>समस्या र समाधान:</strong></p>
+            <ul>
+                <li><strong>पहिचान/नागरिकताको समस्या</strong> → सर्वोच्च अदालतको वि.सं. २०६४ पुस ६ को फैसला (आफ्नो लिङ्ग आफ्नो अनुभूतिअनुसार आफैँ निर्धारण) → धेरैले नागरिकता पाए (२०१९ सम्म १५००)।</li>
+                <li><strong>सार्वजनिक शौचालयमा विशेष सुविधा नहुनु</strong> → छुट्टै कोठाको व्यवस्था गर्नुपर्ने।</li>
+                <li><strong>विद्यालय/कलेजमा घुलमिल हुन नसक्ने, गिज्याइने, परिवार-समाजबाट अपहेलित</strong> → तनाव, पढाइ छाड्ने अवस्था।</li>
+                <li><strong>समाधान:</strong> सङ्घीय, प्रदेश, स्थानीय सरकार र नागरिक तहबाट विशेष कार्यक्रम; समान व्यवहार; सम्मानित जीवनको हक।</li>
+            </ul>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-arrow-up-right-dots"></i> ३.६ महिला सशक्तीकरणका न्यूनतम आधार</div>
+        <div class="content-box orange-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:28%;">आधार</th><th>अर्थ</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>लैङ्गिक समता</strong></td><td>छेकबारजन्य चलनको अवज्ञा, व्यावहारिक लैङ्गिक आवश्यकताको सम्बोधन, सकारात्मक कार्य</td></tr>
+                        <tr><td><strong>प्रजनन स्वस्थता</strong></td><td>प्रजनन स्वास्थ्यको प्राथमिक ज्ञान, समस्या बताउने र उपचार गराउने तत्परता</td></tr>
+                        <tr><td><strong>जीवनोपयोगी शिक्षा</strong></td><td>आफूलाई व्यक्त गर्ने, ठिक-बेठिक छुट्याउने र निर्णय लिने आत्मविश्वास</td></tr>
+                        <tr><td><strong>पुगिसरी सम्पन्नता</strong></td><td>वर्षभरि खान पुग्ने आयस्रोत, २ महिनाको निर्वाह खर्च धान्ने बचत, शिक्षा/उपचार खर्च बेहोर्ने हैसियत</td></tr>
+                        <tr><td><strong>संस्थागत सहभागिता</strong></td><td>बाहिरी सञ्चार, नेतृत्व वा अनुयायित्व वहन, सामुदायिक सङ्गठनको सदस्यता</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ४. पाठ ३: लैङ्गिक समावेशिता ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section4">
+            <i class="fas fa-people-arrows"></i>
+            ४. पाठ ३: लैङ्गिक समावेशिता
+            <span class="mark-badge blue">Lesson 3</span>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-circle-info"></i> ४.१ परिचय र पृष्ठभूमि</div>
+        <div class="content-box cyan-light">
+            <ul>
+                <li>"महिला र पुरुष <strong>एक रथका दुई पाङ्ग्रा</strong>" – कुनै एक कमजोर भए जीवनरथ चल्दैन।</li>
+                <li><strong>पौराणिक युग:</strong> विभेद खासै थिएन; नारीलाई शक्तिको स्रोत मानिन्थ्यो; गार्गी, मैत्रेयी जस्ता विदुषीले शास्त्रार्थ गर्थे।</li>
+                <li><strong>पितृसत्तात्मक समाज</strong> बनेपछि: महिला घरभित्र सीमित, पुरुषको अधीनमा, यातना, शोषण, घरेलु हिंसा, शासकीय अधिकारबाट वञ्चित।</li>
+                <li><strong>लैङ्गिक समावेशिता:</strong> लैङ्गिक रूपमा पछाडि परेका वा पारिएका महिला, पुरुष वा यौनिक अल्पसङ्ख्यक सबैलाई समेट्ने।</li>
+            </ul>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-forward-step"></i> ४.२ लैङ्गिक समावेशीकरणका ४ चरण</div>
+        <div class="content-box blue-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:16%;">चरण</th><th style="width:18%;">समय</th><th style="width:24%;">रणनीति</th><th style="width:42%;">मुख्य कुरा</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>कल्याणकारी अवधारणा</strong></td>
+                            <td>१९५०–६० को दशक</td>
+                            <td>महिलाको हित हुने कार्यक्रम</td>
+                            <td>महिलामा घरबाहिर निस्कने वातावरण</td>
+                        </tr>
+                        <tr>
+                            <td><strong>विकासमा महिला (WID)</strong></td>
+                            <td>१९७० को दशक</td>
+                            <td>महिलालाई विकासमा समावेश</td>
+                            <td>महिला सहभागिता बढे असमानता स्वतः अन्त्य हुन्छ भन्ने मान्यता; साक्षरता, परिवार स्वास्थ्य, घरायसी कार्यबोझ घटाउने, आयआर्जन</td>
+                        </tr>
+                        <tr>
+                            <td><strong>महिला र विकास (WAD)</strong></td>
+                            <td>१९८० को दशक</td>
+                            <td>WID को परिमार्जित रूप</td>
+                            <td>विकासमा महिला साझेदारी वृद्धि, विकासलाई <strong>महिलामुखी</strong> बनाउने</td>
+                        </tr>
+                        <tr>
+                            <td><strong>लैङ्गिकता र विकास (GAD)</strong></td>
+                            <td>१९९० को दशक</td>
+                            <td>महिला-पुरुषबिचको सम्बन्धमा जोड</td>
+                            <td>संयुक्त प्रयासबाट मात्र सशक्तीकरण सम्भव; यौनिक अल्पसङ्ख्यकलाई पनि सम्बोधन; सबै लिङ्गको विकास</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tip-card">
+                <div class="tip-title"><i class="fas fa-lightbulb"></i> क्रम सम्झने</div>
+                <p>कल्याण → WID → WAD → GAD (५०–६० → ७० → ८० → ९० को दशक)</p>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-scale-balanced"></i> ४.३ तीन मूलभूत विषय</div>
+        <div class="content-box gold-light">
+            <p><strong>(क) लैङ्गिक समानता बनाम समता</strong></p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:50%;">लैङ्गिक समानता (Equality)</th><th style="width:50%;">लैङ्गिक समता (Equity)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>समान अवसर, स्तर, अधिकार, जिम्मेवारी</td><td>विशेष अवसर, प्राथमिकता, अग्राधिकार</td></tr>
+                        <tr><td>स्रोत र प्रतिफलमा समान पहुँच</td><td>आरक्षण, विशेष सुविधा</td></tr>
+                        <tr><td>विकासमा समान सहभागिता</td><td>क्षमता वृद्धिका लागि प्रेरित गरी स्तर उठाउने प्रयास</td></tr>
+                        <tr><td>निर्णयमा समान मत</td><td>निर्णयमा अर्थपूर्ण सहभागिता</td></tr>
+                        <tr><td>समान ज्यालादर</td><td>सकारात्मक कदम (Affirmative action)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tip-card">
+                <div class="tip-title"><i class="fas fa-quote-left"></i> सूत्र</div>
+                <p><strong>समानता = गन्तव्य, समता = गन्तव्यमा पुग्ने मार्ग।</strong> समताले सामाजिक न्यायको सिद्धान्तअनुसार समानतामा नपुगेसम्म विशेष सुविधा/आरक्षण दिन्छ।</p>
+            </div>
+
+            <p><strong>(ख) महिला सशक्तीकरणका ५ स्तर</strong> (तलबाट माथि):</p>
+            <ol>
+                <li><strong>कल्याणकारी</strong> – महिलाको हित हुने कार्यक्रम</li>
+                <li><strong>पहुँच</strong> – नीतिगत/कानुनी सुधारबाट आर्थिक-सामाजिक पहुँच</li>
+                <li><strong>सचेतना</strong> – अधिकार, अन्याय, हिंसाबारे सचेतीकरण</li>
+                <li><strong>सहभागिता</strong> – हरेक क्षेत्रमा अर्थपूर्ण सहभागी</li>
+                <li><strong>नियन्त्रण</strong> – पुरुषसरह आर्थिक/सामाजिक/सांस्कृतिक पक्षमा नियन्त्रण</li>
+            </ol>
+
+            <p><strong>(ग) लैङ्गिक मूलप्रवाहीकरण:</strong> सशक्तीकरणबाट महिलालाई मूलप्रवाहमा ल्याउनु = लैङ्गिक समावेशिताको <strong>गन्तव्य</strong>। यसलाई <strong>लैङ्गिकमैत्री शासन</strong> पनि भनिन्छ।</p>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-flag"></i> ४.४ नेपालका प्रयास (वर्गीकृत)</div>
+        <div class="content-box green-light">
+            <ul>
+                <li><strong>संस्थागत:</strong> महिला विकास शाखा (२०३८) → महिला तथा समाजकल्याण मन्त्रालय (२०५२) → महिला विकास विभाग (२०५७) → ७५ जिल्लामा कार्यालय (२०५७/५८)।</li>
+                <li><strong>नीति:</strong> छैटौँ योजनामा पहिलो छुट्टै नीति; सेवामा ३३% आरक्षण; उमेर हदमा सहुलियत (महिला ४०, पुरुष ३५)।</li>
+                <li><strong>सम्पत्ति:</strong> पैतृक सम्पत्तिमा छोरा र छोरीको समान हक।</li>
+                <li><strong>राजनीतिक:</strong> राष्ट्रपति/उपराष्ट्रपति फरक समुदाय/लिङ्ग; सभामुख/उपसभामुखमध्ये १ महिला; राष्ट्रिय सभामा ३ (+१ मनोनीत); समानुपातिक बन्दसूचीमा ५०%; स्थानीय तहमा प्रमुख/उपप्रमुख फरक लिङ्ग; वडा २, गाउँ ४, नगर ५ महिला सदस्य।</li>
+                <li><strong>अन्य:</strong> प्रहरीमा महिला सेल; छात्रा छात्रवृत्ति।</li>
+            </ul>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-bullseye"></i> ४.५ दिगो विकास लक्ष्य ५ (लैङ्गिक समानता) का लक्ष्य</div>
+        <div class="content-box purple-light">
+            <ol>
+                <li>ओसारपसार/यौनशोषणलगायत सबै प्रकारका हिंसाको उन्मूलन।</li>
+                <li>निर्णायक तहमा नेतृत्वका लागि महिलाको प्रभावकारी सहभागिता र समान अवसर।</li>
+                <li>लैङ्गिक समानता र सशक्तीकरणका लागि नीति तथा कानुनको अवलम्बन र सबलीकरण।</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ५. पाठ ४: अपाङ्गता र समावेशीकरण ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section5">
+            <i class="fas fa-wheelchair"></i>
+            ५. पाठ ४: अपाङ्गता र समावेशीकरण
+            <span class="mark-badge purple">Lesson 4</span>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-circle-info"></i> ५.१ पृष्ठभूमि</div>
+        <div class="content-box cyan-light">
+            <ul>
+                <li>अपाङ्गता भएका व्यक्ति <strong>समान अधिकार प्राप्त नागरिक</strong> हुन्, तर साङ्ग व्यक्तिसरह सबै कुरामा प्रतिस्पर्धा गर्न सक्दैनन् → समावेशीकरणको सिद्धान्तअनुसार <strong>थप सुविधा</strong> आवश्यक।</li>
+                <li><strong>संविधानको व्यवस्था:</strong> अपाङ्ग र आर्थिक रूपले विपन्न नागरिकलाई निःशुल्क उच्च शिक्षा; दृष्टिविहीनलाई ब्रेललिपि र बहिरा/स्वर-बोलाइ अपाङ्गलाई साङ्केतिक भाषामार्फत निःशुल्क शिक्षा; मर्यादा र आत्मसम्मानपूर्वक जीवनयापन र सार्वजनिक सेवामा समान पहुँच।</li>
+            </ul>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-list-ol"></i> ५.२ अपाङ्गताका १० प्रकार</div>
+        <div class="content-box blue-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:8%;">#</th><th style="width:22%;">प्रकार</th><th>मुख्य परिभाषा</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>क</td><td><strong>शारीरिक</strong></td><td>स्नायु, मांसपेशी, जोर्नी, हाडको बनावट/सञ्चालनमा समस्या; अङ्गविहीनता, कुष्ठ प्रभाव, muscular dystrophy</td></tr>
+                        <tr><td>ख</td><td><strong>दृष्टिसम्बन्धी</strong></td><td>३ किसिम – दृष्टिविहीनता (१० फिटबाट औँला छुट्याउन नसक्ने), न्यून दृष्टि, पूर्ण दृष्टिविहीनता</td></tr>
+                        <tr><td>ग</td><td><strong>सुनाइसम्बन्धी</strong></td><td>२ वर्ग – बहिरा (८० dB भन्दा माथि नसुन्ने) र सुस्त श्रवण (६५–८० dB)</td></tr>
+                        <tr><td>घ</td><td><strong>श्रवण दृष्टिविहीन</strong></td><td>सुनाइ र दृष्टि दुवै अपाङ्गता</td></tr>
+                        <tr><td>ङ</td><td><strong>स्वर र बोलाइ</strong></td><td>बोली स्पष्ट नहुने, शब्द/अक्षर दोहोर्‍याउने, स्वरको उतारचढावमा कठिनाइ</td></tr>
+                        <tr><td>च</td><td><strong>मानसिक/मनोसामाजिक</strong></td><td>मस्तिष्क/मानसिक अङ्गको समस्या; स्मरणशक्ति, भाषा, गणना जस्ता कार्यमा कठिनाइ</td></tr>
+                        <tr><td>छ</td><td><strong>बौद्धिक</strong></td><td>उमेरसँगै बौद्धिक सचेतनाको विकास नहुने</td></tr>
+                        <tr><td>ज</td><td><strong>अनुवंशीय रक्तस्राव</strong></td><td>अनुवंशीय कारणले रगत जम्ने कार्यमा समस्या (Hemophilia)</td></tr>
+                        <tr><td>झ</td><td><strong>अटिज्म</strong></td><td>जन्मजात नसा/तन्तुको विकासमा समस्या; सञ्चार र सामाजिक नियम बुझ्न कठिनाइ, एउटै क्रिया दोहोर्‍याउने</td></tr>
+                        <tr><td>ञ</td><td><strong>बहुअपाङ्गता</strong></td><td>दुई वा बढी प्रकारका अपाङ्गता</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-id-card"></i> ५.३ गम्भीरताका आधारमा ४ वर्ग (परिचयपत्र)</div>
+        <div class="content-box gold-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:10%;">वर्ग</th><th style="width:18%;">नाम</th><th style="width:54%;">अवस्था</th><th style="width:18%;">रङ</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>क</strong></td><td>पूर्ण अशक्त</td><td>निरन्तर सहयोग लिँदा पनि दैनिक क्रियाकलापमा कठिनाइ</td><td><strong>रातो</strong></td></tr>
+                        <tr><td><strong>ख</strong></td><td>अति अशक्त</td><td>वैयक्तिक र सामाजिक क्रियाकलापमा निरन्तर सहयोग आवश्यक</td><td><strong>निलो</strong></td></tr>
+                        <tr><td><strong>ग</strong></td><td>मध्यम</td><td>सहयोग लिई/नलिई नियमित दिनचर्या र सामाजिक क्रियाकलापमा सहभागी हुन सक्ने</td><td><strong>पहेँलो</strong></td></tr>
+                        <tr><td><strong>घ</strong></td><td>सामान्य</td><td>नियमित रूपमा दिनचर्या र सामाजिक क्रियाकलापमा सहभागी हुन सक्ने</td><td><strong>सेतो</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-circle-exclamation"></i> ५.४ अपाङ्गताका कारण</div>
+        <div class="content-box pink-light">
+            <ul>
+                <li><strong>जन्मजात</strong> अपाङ्गता।</li>
+                <li>जन्मँदा साङ्ग तर हुर्कँदै जाँदा शारीरिक/मानसिक विकास नहुँदा।</li>
+                <li><strong>रोगका कारण:</strong> धनुष्टङ्कार, कुष्ठरोग, मस्कुलर डिस्ट्रोफी, हाड-जोर्नीका रोग, क्यान्सर, जलबिन्दु, मोतियाबिन्दु, मधुमेह।</li>
+                <li><strong>शल्यक्रिया, दुर्घटना वा युद्ध।</strong></li>
+                <li>👉 <em>आज साङ्ग भएको व्यक्ति भोलि अपाङ्गता भएको हुन सक्छ</em> → सधैँ सहयोग र अधिकारको रक्षामा सचेत।</li>
+            </ul>
+            <div class="tip-card">
+                <div class="tip-title"><i class="fas fa-star"></i> प्रेरणादायी उदाहरण</div>
+                <p><strong>स्टिफन हकिङ</strong> (दिमाग र एउटा औँला मात्र चल्ने, तर विश्वप्रसिद्ध वैज्ञानिक); <strong>झमक कुमारी</strong> (खुट्टाले लेख्ने साहित्यकार); <strong>खगेन्द्रबहादुर बस्नेत</strong> (खगेन्द्र नवजीवन केन्द्रका संस्थापक)।</p>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-hand-holding-heart"></i> ५.५ नेपालमा समावेशीकरणका प्रयास</div>
+        <div class="content-box green-light">
+            <ol>
+                <li>राष्ट्रिय सभा, प्रतिनिधि सभा र प्रदेश सभाको समानुपातिक सदस्यमा समावेश (संवैधानिक)।</li>
+                <li>संवैधानिक आयोगका रूपमा <strong>समावेशी आयोग</strong>।</li>
+                <li>परिचयपत्र वितरण र त्यसका आधारमा <strong>भत्ता</strong>।</li>
+                <li>यातायातमा आरक्षण सिट र भाडामा छुट।</li>
+                <li>स्वास्थ्य उपचारमा छुट; सरकारी अस्पतालमा निःशुल्क परीक्षण/उपचार; <strong>४१ प्रकारका औषधि निःशुल्क</strong>।</li>
+                <li>निजामती, शिक्षक सेवा आदिमा आरक्षण कोटा (५%)।</li>
+                <li>विद्यालय, सार्वजनिक स्थल, शौचालय, भवनमा <strong>अपाङ्गमैत्री संरचना</strong>।</li>
+                <li>अपाङ्ग छात्रवृत्ति।</li>
+                <li>पाठ्यक्रम, पाठ्यपुस्तक र मूल्याङ्कन पद्धति अपाङ्गतामैत्री।</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ६. पाठ ५: धार्मिक तथा क्षेत्रीय पहिचान ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section6">
+            <i class="fas fa-place-of-worship"></i>
+            ६. पाठ ५: धार्मिक तथा क्षेत्रीय पहिचान
+            <span class="mark-badge gold">Lesson 5</span>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-om"></i> ६.१ धार्मिक पहिचान – मुख्य कुरा</div>
+        <div class="content-box cyan-light">
+            <ul>
+                <li>धर्मले अनुशासन, सद्भाव र सहकार्य सिकाउँछ।</li>
+                <li>नेपाल <strong>बहुधार्मिक, बहुसांस्कृतिक, धर्मनिरपेक्ष</strong> राष्ट्र; धार्मिक सहिष्णुता कायम।</li>
+                <li><strong>धारा २६ (मौलिक हक)</strong> – आफ्नो आस्थाअनुसार धर्म अवलम्बन, अभ्यास र संरक्षण गर्ने स्वतन्त्रता; धर्म परिवर्तन गराउन वा अर्काको धर्ममा खलल पुर्‍याउन नहुने – कानुनबमोजिम दण्डनीय।</li>
+                <li>जनगणना २०६८ अनुसार <strong>१० धार्मिक समुदाय</strong>।</li>
+            </ul>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-table-cells-large"></i> ६.२ १० धर्मको तुलनात्मक तालिका</div>
+        <div class="content-box blue-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:12%;">धर्म</th>
+                            <th style="width:16%;">प्रवर्तक</th>
+                            <th style="width:16%;">ग्रन्थ</th>
+                            <th style="width:18%;">स्थल</th>
+                            <th style="width:20%;">आदर्श</th>
+                            <th style="width:18%;">चाडपर्व/अन्य</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>हिन्दु</strong></td>
+                            <td>–</td>
+                            <td>वेद, गीता, पुराण, उपनिषद्, रामायण</td>
+                            <td>मन्दिर (पशुपतिनाथ, मुक्तिनाथ)</td>
+                            <td>अर्काको उपकार धर्म, दुःख दिनु पाप</td>
+                            <td>जनैपूर्णिमा, दसैँ, तिहार, शिवरात्रि; ३३ कोटी देवीदेवता</td>
+                        </tr>
+                        <tr>
+                            <td><strong>बौद्ध</strong></td>
+                            <td>सिद्धार्थ गौतम (लुम्बिनी)</td>
+                            <td>त्रिपिटक</td>
+                            <td>विहार, स्तूप, गुम्बा; स्वयम्भू, बौद्धनाथ</td>
+                            <td>ज्ञान, सत्कर्म, अहिंसा, शान्ति; पञ्चशील</td>
+                            <td>बुद्ध जयन्ती, ल्होसार</td>
+                        </tr>
+                        <tr>
+                            <td><strong>इसाई</strong></td>
+                            <td>जिसस क्राइस्ट</td>
+                            <td>बाइबल</td>
+                            <td>चर्च</td>
+                            <td>लोभ नगर्नु, क्षमा गर्नु</td>
+                            <td>क्रिसमस; चिह्न – क्रस</td>
+                        </tr>
+                        <tr>
+                            <td><strong>इस्लाम</strong></td>
+                            <td>पैगम्बर मोहम्मद</td>
+                            <td>कुरआन</td>
+                            <td>मस्जिद</td>
+                            <td>एक ईश्वर 'अल्लाह'; गरिबलाई अनिवार्य दान</td>
+                            <td>ईद, बकरईद, रमजान; तीर्थ – मक्का-मदिना</td>
+                        </tr>
+                        <tr>
+                            <td><strong>जैन</strong></td>
+                            <td>महावीर जैन</td>
+                            <td>वचनामृत</td>
+                            <td>जैन मन्दिर</td>
+                            <td>पवित्रता, सच्चरित्रता, अहिंसा</td>
+                            <td>महावीर जयन्ती, दिवाली</td>
+                        </tr>
+                        <tr>
+                            <td><strong>शिख</strong></td>
+                            <td>गुरु नानक</td>
+                            <td>गुरु ग्रन्थ साहिब</td>
+                            <td>गुरुद्वारा</td>
+                            <td>अहिंसा, सत्कार्य, परोपकार</td>
+                            <td>गुरुनानक जयन्ती; तीर्थ – स्वर्ण मन्दिर</td>
+                        </tr>
+                        <tr>
+                            <td><strong>किरात</strong></td>
+                            <td>–</td>
+                            <td>मुन्धुम</td>
+                            <td>मान्खिम (इलामको माङसेबुङ)</td>
+                            <td>सन्मार्ग, शारीरिक शुद्धता, शान्ति</td>
+                            <td>उधौली, उभौली; प्रकृति पूजा</td>
+                        </tr>
+                        <tr>
+                            <td><strong>बोन</strong></td>
+                            <td>सेन राब मिवो</td>
+                            <td>–</td>
+                            <td>बोन पो</td>
+                            <td>शान्ति, अहिंसा, परलोकको सुख</td>
+                            <td>हिमाली क्षेत्र, खासगरी डोल्पा</td>
+                        </tr>
+                        <tr>
+                            <td><strong>बहाई</strong></td>
+                            <td>बहाउल्ला</td>
+                            <td>किताब अक्दस</td>
+                            <td>–</td>
+                            <td>प्रेम र एकता; सबै धर्मको एकता</td>
+                            <td>बहाउल्लाको जन्म/मृत्यु दिन; पुजारी हुँदैनन्</td>
+                        </tr>
+                        <tr>
+                            <td><strong>प्रकृति</strong></td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>०.५%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-map-location-dot"></i> ६.३ क्षेत्रीय पहिचान</div>
+        <div class="content-box green-light">
+            <p><strong>दुई किसिम:</strong> (क) भौगोलिक (ख) प्रशासनिक</p>
+
+            <p><strong>भौगोलिक – ३ क्षेत्र</strong></p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:30%;">क्षेत्र</th><th>बाहुल्य रहेका जातजाति</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>हिमाली</strong></td><td>शेर्पा, थकाली, मुगाली, डोल्पो</td></tr>
+                        <tr><td><strong>पहाडी</strong></td><td>ब्राह्मण, क्षेत्री, गुरुङ, नेवार, मगर, राई, लिम्बु, तामाङ</td></tr>
+                        <tr><td><strong>तराई</strong></td><td>मधेसी मूल (राजवंशी, यादव, थारु, घिमाल), तराई ब्राह्मण, क्षेत्री</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>प्रशासनिक – ७ प्रदेश</strong></p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:26%;">प्रदेश</th><th>पहिचानका आधार</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>प्रदेश नं. १</strong></td><td>सगरमाथा, कञ्चनजङ्घा, चिया बगान, अरुण नदी, किरात भाषा-संस्कृति</td></tr>
+                        <tr><td><strong>प्रदेश नं. २</strong></td><td>जनकपुर धाम, अन्नको भण्डार, मैथिली र भोजपुरी भाषा-संस्कृति</td></tr>
+                        <tr><td><strong>बागमती</strong></td><td>सङ्घीय राजधानी, पशुपतिनाथ, तामाङ भाषा-संस्कृति, नेवार सभ्यता</td></tr>
+                        <tr><td><strong>गण्डकी</strong></td><td>पर्यटकीय नगरी पोखरा, मुक्तिनाथ, गुरुङ र थकाली संस्कृति</td></tr>
+                        <tr><td><strong>लुम्बिनी</strong></td><td>गौतम बुद्धको जन्मस्थल, तराईको अन्नको भण्डार, अवधी, मगर, थारु</td></tr>
+                        <tr><td><strong>कर्णाली</strong></td><td>जुम्लाको मार्सीधान, जडीबुटी, सिँजा सभ्यता</td></tr>
+                        <tr><td><strong>सुदूरपश्चिम</strong></td><td>थारु सभ्यता, महाकाली नदी, देउडा संस्कृति</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ७. पाठ ६: समतामूलक समाज ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section7">
+            <i class="fas fa-scale-balanced"></i>
+            ७. पाठ ६: समतामूलक समाज
+            <span class="mark-badge green">Lesson 6</span>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-circle-info"></i> ७.१ परिचय</div>
+        <div class="content-box cyan-light">
+            <ul>
+                <li><strong>समतामूलक समाज:</strong> समावेशी समाजभन्दा <strong>एक स्तर माथिको</strong> समाज; सबै नागरिकलाई समान पहुँच; जात, जाति, लिङ्ग, वर्ण, आर्थिक/शारीरिक/सामाजिक/सांस्कृतिक अवस्थाका आधारमा भेदभाव नगरिने।</li>
+                <li>यो <strong>अन्तिम गन्तव्य</strong> हो; <strong>समावेशीकरण यसको मार्ग</strong>।</li>
+                <li><strong>संविधान (समानताको हक):</strong> राज्यले उत्पत्ति, धर्म, वर्ण, जात, जाति, लिङ्ग, आर्थिक अवस्था, भाषा, क्षेत्र, वैचारिक आस्था वा अन्य कुनै आधारमा नागरिकबिच भेदभाव गर्ने छैन।</li>
+            </ul>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-list-check"></i> ७.२ राज्यले अपनाउनुपर्ने ७ उपाय</div>
+        <div class="content-box gold-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:8%;">#</th><th style="width:24%;">उपाय</th><th>सार</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>१</td><td><strong>सशक्तीकरण</strong></td><td>सर्वसुलभ शिक्षा, साक्षरता, सिपमूलक तालिम, सहुलियतपूर्ण/निर्ब्याजी पुँजी</td></tr>
+                        <tr><td>२</td><td><strong>मूलप्रवाहीकरण</strong></td><td>पछाडि परेकालाई मूलधारमा समाहित नगरेसम्म समतामूलक समाज सम्भव छैन → सकारात्मक विभेद, आरक्षण</td></tr>
+                        <tr><td>३</td><td><strong>हस्तक्षेपकारी नीति</strong></td><td>संविधान/कानुनमा व्यवस्था; लक्षित वर्गलाई तालिम, पुँजी, रोजगारी</td></tr>
+                        <tr><td>४</td><td><strong>रोजगारमूलक लक्षित कार्यक्रम</strong></td><td>पिछडिएका क्षेत्र, जाति, लिङ्ग र आर्थिक रूपले पछाडि परेकाका लागि</td></tr>
+                        <tr><td>५</td><td><strong>सहज र न्यायोचित पहुँच</strong></td><td>अपर्याप्त/अर्थहीन सहभागिताले न्याय गर्दैन; पर्याप्त, सारभूत पहुँच चाहिन्छ</td></tr>
+                        <tr><td>६</td><td><strong>सुशासन</strong></td><td>अनिवार्य सर्त; अपनत्व वृद्धि, भ्रष्टाचार नियन्त्रण, विधिको शासन</td></tr>
+                        <tr><td>७</td><td><strong>समावेशीकरण</strong></td><td>पछाडि परेका व्यक्ति/समूहलाई आर्थिक, सामाजिक, राजनीतिक, सांस्कृतिक अधिकारबाट सुसम्पन्न गराउने</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tip-card">
+                <div class="tip-title"><i class="fas fa-lightbulb"></i> सम्झने सूत्र</div>
+                <p>सश – मूल – हस्त – रोज – पहुँच – सुशा – समावे (सशक्तीकरण, मूलप्रवाहीकरण, हस्तक्षेपकारी, रोजगारमूलक, पहुँच, सुशासन, समावेशीकरण)</p>
+            </div>
+        </div>
+
+        <div class="sub-head"><i class="fas fa-flag-checkered"></i> ७.३ नेपालमा समावेशीकरण र समतामूलक समाजका प्रयास</div>
+        <div class="content-box blue-light">
+            <p><strong>(क) शासकीय प्रणालीमा सुधार</strong></p>
+            <ul>
+                <li>राष्ट्रपति र उपराष्ट्रपति फरक लिङ्ग/समुदायको; सभामुख/उपसभामुखमा १ महिला।</li>
+                <li>राष्ट्रिय सभामा समानुपातिक महिला, आदिवासी जनजाति, दलित, अपाङ्गलगायतको प्रतिनिधित्व।</li>
+                <li>प्रतिनिधि सभा/प्रदेश सभा समानुपातिक बन्दसूचीमा ५०% महिला र बाँकी ५०% मा पनि आदिवासी जनजाति, दलित, अपाङ्ग, मधेसी, अल्पसङ्ख्यक।</li>
+                <li>सङ्घीय र प्रदेश कार्यपालिकामा समावेशी मन्त्रिपरिषद्।</li>
+                <li><strong>स्थानीय कार्यपालिका:</strong> गाउँ – दलित/अल्पसङ्ख्यकबाट २ + महिला ४ = ६ थप; नगर – ३ + ५ = ८ थप; जिल्ला समन्वय समिति – बढीमा ९ सदस्य (कम्तीमा ३ महिला, कम्तीमा १ दलित/अल्पसङ्ख्यक)।</li>
+            </ul>
+
+            <p><strong>(ख) राज्यका संयन्त्रमा सुधार</strong></p>
+            <ul>
+                <li>निजामती सेवामा खुला प्रतियोगिताका पदमध्ये <strong>४५%</strong> छुट्याई ६ समूहमा बाँडिन्छ (माथिको आरक्षण तालिका)।</li>
+                <li>प्रहरी/सेनामा ४५% लाई १००% मानी <strong>५ समूह</strong> (अपाङ्ग बाहेक); पिछडिएका ९ जिल्लालाई पनि आरक्षण।</li>
+            </ul>
+
+            <p><strong>(ग) सामाजिक न्यायका क्षेत्रमा सुधार</strong></p>
+            <ul>
+                <li>सामाजिक सुरक्षा भत्ता</li>
+                <li>संवैधानिक अङ्ग: समावेशी, दलित, मधेसी, महिला, थारु र मुस्लिम आयोग</li>
+                <li>पारिश्रमिकमा समानता; न्यूनतम ज्यालाको निर्धारण</li>
+                <li>तालिम तथा स्वरोजगार कार्यक्रम; छात्रवृत्ति</li>
+                <li>छुवाछुत, कमैया, हलिया, कमलरी, देउकी, झुमा, छाउपडीजस्ता कुप्रथा अन्त्यका लागि कानुनी व्यवस्था र विशेष कार्यक्रम</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ८. सम्भावित प्रश्न र नमुना उत्तर ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section8">
+            <i class="fas fa-bullseye"></i>
+            ८. सम्भावित प्रश्न र नमुना उत्तर
+            <span class="mark-badge pink">Q&amp;A</span>
+        </div>
+
+        <!-- अति छोटो -->
+        <div class="sub-head"><i class="fas fa-star"></i> अति छोटो प्रश्न (१–२ अङ्क)</div>
+
+        <div class="content-box cyan-light">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th style="width:42%;">प्रश्न</th><th>उत्तर</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>वर्ग भनेको के हो?</td><td>मूलतः आर्थिक आधार वा आर्थिक पक्षसँग जोडिएका सामाजिक समूहलाई वर्ग भनिन्छ।</td></tr>
+                        <tr><td>आधुनिक समाजका वर्ग कति र कुन कुन?</td><td>तीन – उच्च, मध्यम र निम्न वर्ग।</td></tr>
+                        <tr><td>वर्ग निर्माणका आधार लेख्नुहोस्।</td><td>आर्थिक, सांस्कृतिक, सामाजिक र पदीय।</td></tr>
+                        <tr><td>सामाजिक रूपान्तरण भनेको के हो?</td><td>पछाडि परेका/निम्न वर्गको उत्थान गरी अरूसरह ससम्मान जीवनयापन गर्न सक्ने बनाउनु।</td></tr>
+                        <tr><td>लिङ्ग भनेको के हो?</td><td>महिला र पुरुषबिच प्रकृतिले गरेको भेद।</td></tr>
+                        <tr><td>लैङ्गिकता भनेको के हो?</td><td>सामाजिक व्यवहार र परम्पराले महिला-पुरुषबिच गरेको भेद।</td></tr>
+                        <tr><td>LGBTIQ को पूरा रूप लेख्नुहोस्।</td><td>Lesbian, Gay, Bisexual, Transgender/Transsexual, Intersexual, Queer/Questioning</td></tr>
+                        <tr><td>बेइजिङ सम्मेलन कहिले भयो?</td><td>सन् १९९५ मा चीनको बेइजिङमा (चौथो विश्व महिला सम्मेलन)।</td></tr>
+                        <tr><td>CEDAW को पूरा नाम?</td><td>महिलाविरुद्धका सबै प्रकारका भेदभाव उन्मूलन गर्ने महासन्धि १९७९</td></tr>
+                        <tr><td>लैङ्गिक मूलप्रवाहीकरणलाई अर्को के भनिन्छ?</td><td>लैङ्गिकमैत्री शासन (Gender-friendly governance)</td></tr>
+                        <tr><td>नेपालमा अपाङ्गता कति प्रकारको छ?</td><td>दश प्रकारको (गम्भीरताका आधारमा चार वर्ग)।</td></tr>
+                        <tr><td>'क' वर्गको अपाङ्ग परिचयपत्र कुन रङको हुन्छ?</td><td>रातो</td></tr>
+                        <tr><td>नेपाल कस्तो राष्ट्र हो (धर्मका सन्दर्भमा)?</td><td>धर्मनिरपेक्ष राष्ट्र</td></tr>
+                        <tr><td>बौद्ध धर्मको ग्रन्थ के हो?</td><td>त्रिपिटक</td></tr>
+                        <tr><td>किरात धर्मको धार्मिक ग्रन्थ र स्थल?</td><td>ग्रन्थ – मुन्धुम; स्थल – मान्खिम</td></tr>
+                        <tr><td>समतामूलक समाज भनेको के हो?</td><td>समावेशी समाजभन्दा एक स्तरमाथिको, सबैलाई समान पहुँच भएको र कसैप्रति भेदभाव नगरिने समाज।</td></tr>
+                        <tr><td>निजामती सेवामा समावेशी आरक्षणका लागि छुट्याइएको प्रतिशत कति हो?</td><td>४५ प्रतिशत</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- छोटो -->
+        <div class="sub-head"><i class="fas fa-star"></i> छोटो प्रश्न (३–५ अङ्क) – नमुना उत्तर</div>
+
+        <div class="qa-block color1">
+            <div class="q"><span class="qnum">१.</span> समाजमा वर्ग निर्माण किन हुन्छ?</div>
+            <div class="a">
+                समाजमा आर्थिक, सांस्कृतिक, जातीय र धार्मिक विविधता हुन्छ। यही विविधताका बिच पेसा, सामाजिक स्थिति, लिङ्ग, जाति, धर्म, संस्कृति, भाषा, पदीय स्थिति र आर्थिक अवस्थाका आधारमा मानिसका समूह बन्छन्। मूलतः आम्दानी र उत्पादनका साधनमा पहुँचका आधारमा वर्ग निर्माण हुन्छ। यसैले समाजमा उच्च, मध्यम र निम्न वर्ग देखिन्छन्।
+            </div>
+        </div>
+
+        <div class="qa-block color2">
+            <div class="q"><span class="qnum">२.</span> वर्गीय विभाजनले निम्त्याउने समस्याहरू औँल्याउनुहोस्।</div>
+            <div class="a">
+                <ul>
+                    <li>आर्थिक वितरणमा असमानता</li>
+                    <li>विभेद, शोषण र दमन</li>
+                    <li>उच्च वर्गले निम्न वर्गलाई हेप्ने, तल्लो र माथिल्लो वर्गबिच द्वन्द्व</li>
+                    <li>निम्न वर्ग गरिबीको कुचक्रमा फस्ने, क्रय क्षमता कमजोर हुने</li>
+                    <li>सामाजिक वर्ग स्थायी हुँदा परिवर्तन कठिन हुने</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block color3">
+            <div class="q"><span class="qnum">३.</span> सामाजिक रूपान्तरणका उपायहरू बुँदागत रूपमा लेख्नुहोस्।</div>
+            <div class="a">
+                <ul>
+                    <li>आर्थिक, सामाजिक र सांस्कृतिक पक्षलाई एकसाथ सम्बोधन गर्ने</li>
+                    <li>पछाडि परेका वर्गको पहिचान गरी सकारात्मक विभेद अपनाउने</li>
+                    <li>रोजगारीको सिर्जना</li>
+                    <li>शिक्षा र व्यावसायिक सिप प्रदान</li>
+                    <li>पुँजी र अवसरको सहज उपलब्धता</li>
+                    <li>आरक्षण, कानुनी व्यवस्था र जनचेतनामूलक कार्यक्रम</li>
+                    <li>कुप्रथाको अन्त्य र पीडितको पुनर्स्थापना</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block color4">
+            <div class="q"><span class="qnum">४.</span> किन सामाजिक आधारलाई वर्ग विभाजनको मुख्य आधार मानिन्छ?</div>
+            <div class="a">
+                समान जाति, धर्म, संस्कृति, पद र सामाजिक स्तर भएकाहरूको एउटै वर्ग बन्छ। कुनै जाति वा संस्कृतिको व्यक्ति भएकै कारण मानिस आर्थिक रूपमा पछाडि पर्न सक्छ। आर्थिक वर्ग परिवर्तन हुन सक्ने भए पनि सामाजिक वर्ग बढी स्थायी हुन्छ र समाजले सहर्ष स्वीकार नगरेसम्म परिवर्तन कठिन हुन्छ। त्यसैले यसलाई मुख्य आधार मानिन्छ।
+            </div>
+        </div>
+
+        <div class="qa-block color5">
+            <div class="q"><span class="qnum">५.</span> प्राकृतिक लिङ्ग र सामाजिक लिङ्गबिचको भिन्नता लेख्नुहोस्।</div>
+            <div class="a">
+                <ul>
+                    <li><strong>लिङ्ग (Sex):</strong> प्राकृतिक, अपरिवर्तनीय, समुदायनिरपेक्ष, जैविक/शारीरिक बनावटमा आधारित।</li>
+                    <li><strong>लैङ्गिकता (Gender):</strong> सामाजिक, परिवर्तनीय, समुदायसापेक्ष, सामाजिक व्यवहार र परम्परामा आधारित।</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block color6">
+            <div class="q"><span class="qnum">६.</span> लैङ्गिक समावेशीकरणको अवधारणा किन आवश्यक परेको हो?</div>
+            <div class="a">
+                समयसँगै पितृसत्तात्मक समाज बन्दा महिलालाई कमजोर ठानी घरभित्र सीमित गरियो, पुरुषको अधीनमा राखी शोषण, अन्याय, अत्याचार, घरेलु हिंसा गरियो र शासकीय अधिकारबाट समेत वञ्चित गरियो। विश्वको आधा जनसङ्ख्या भएका महिलाप्रति यस्तो अन्याय अनुचित भएकाले महिलाले आवाज उठाए। यसपछि लैङ्गिक रूपमा पछाडि परेका महिला, पुरुष र यौनिक अल्पसङ्ख्यक सबैलाई विकासको मूलधारमा ल्याउन लैङ्गिक समावेशीकरणको अवधारणा आवश्यक परेको हो।
+            </div>
+        </div>
+
+        <div class="qa-block color7">
+            <div class="q"><span class="qnum">७.</span> लैङ्गिक समानता र समतालाई फरक पार्नुहोस्।</div>
+            <div class="a">
+                <ul>
+                    <li><strong>समानता (Equality):</strong> समान अवसर, स्तर, अधिकार, जिम्मेवारी; स्रोत र प्रतिफलमा समान पहुँच; विकासमा समान सहभागिता; समान ज्यालादर।</li>
+                    <li><strong>समता (Equity):</strong> विशेष अवसर, प्राथमिकता, अग्राधिकार; आरक्षण, विशेष सुविधा; क्षमता वृद्धिका लागि प्रेरित गरी स्तर उठाउने प्रयास; सकारात्मक कदम।</li>
+                    <li>सूत्र: "समानता गन्तव्य, समता मार्ग।"</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block color8">
+            <div class="q"><span class="qnum">८.</span> अपाङ्गता भएका व्यक्तिले पाउने सुविधा/नेपालका प्रयास लेख्नुहोस्।</div>
+            <div class="a">
+                <ul>
+                    <li>परिचयपत्र वितरण र भत्ता</li>
+                    <li>यातायातमा आरक्षण सिट र भाडामा छुट</li>
+                    <li>सरकारी अस्पतालमा ४१ प्रकारका औषधि निःशुल्क</li>
+                    <li>निजामती सेवामा ५% आरक्षण कोटा</li>
+                    <li>अपाङ्गमैत्री संरचना</li>
+                    <li>अपाङ्ग छात्रवृत्ति र पाठ्यक्रम/मूल्याङ्कनमा सहुलियत</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- लामो -->
+        <div class="sub-head"><i class="fas fa-gem"></i> लामो प्रश्न (६–८ अङ्क) – रूपरेखा</div>
+
+        <div class="content-box purple-light">
+            <ol>
+                <li><strong>वर्ग भनेको के हो? आधुनिक समाजका वर्गहरू वर्णन गर्नुहोस्।</strong> → परिभाषा (Classis बाट) → मार्क्सको दुई वर्ग/समाजका चरण → तीन वर्गको वर्णन (विशेषता + उदाहरण) → निष्कर्ष।</li>
+                <li><strong>वर्ग निर्माणका आधारहरू वर्णन गर्नुहोस्।</strong> → चारै आधार (आर्थिक, सांस्कृतिक, सामाजिक, पदीय) – प्रत्येकको २–३ वाक्य र उदाहरण।</li>
+                <li><strong>सामाजिक रूपान्तरणको प्रकृति र नेपालमा भएका प्रयास वर्णन गर्नुहोस्।</strong> → ५ प्रकृति → नेपालको अवस्था (SPI ११४, HDI १४२) → ६ प्रयास → निष्कर्ष।</li>
+                <li><strong>यौनिक तथा लैङ्गिक अल्पसङ्ख्यकको पहिचानका सवालहरूको चर्चा गर्नुहोस्।</strong> → LGBTIQ विवरण → समस्या → सर्वोच्चको २०६४ पुस ६ को फैसला → सुझाव।</li>
+                <li><strong>लैङ्गिक समावेशीकरणका चरणहरू उल्लेख गर्दै महिला सशक्तीकरणका उपाय लेख्नुहोस्।</strong> → चार चरण (कल्याण, WID, WAD, GAD) → सशक्तीकरणका ५ स्तर → नीतिगत/कानुनी सुधार।</li>
+                <li><strong>नेपालमा लैङ्गिक समावेशीकरणमा भएका प्रयासहरूको समीक्षा गर्नुहोस्।</strong> → संस्थागत (२०३८, २०५२, २०५७) → आरक्षण र उमेर हद → राजनीतिक व्यवस्था → सम्पत्तिको हक → मूल्याङ्कन।</li>
+                <li><strong>अपाङ्गताका प्रकार र कारण वर्णन गर्नुहोस्।</strong> → १० प्रकार + ४ वर्ग (रङ) → कारण → समावेशी प्रयास।</li>
+                <li><strong>नेपालमा प्रचलित कुनै पाँच धर्मको परिचय दिनुहोस्।</strong> → ६.२ को तालिकाबाट प्रवर्तक, ग्रन्थ, स्थल, आदर्श, चाडपर्व उल्लेख गर्नुहोस्।</li>
+                <li><strong>नेपालको क्षेत्रीय/प्रदेशगत पहिचान वर्णन गर्नुहोस्।</strong> → भौगोलिक (३ क्षेत्र) → प्रशासनिक (७ प्रदेश) → निष्कर्ष (विविधतामा एकता)।</li>
+                <li><strong>समतामूलक समाज निर्माणका उपायहरू प्रस्तुत गर्नुहोस्।</strong> → परिचय → ७ उपाय → निष्कर्ष (सुशासन अनिवार्य सर्त)।</li>
+                <li><strong>नेपालमा समावेशीकरणका लागि भएका प्रयासहरूको समीक्षा गर्नुहोस्।</strong> → शासकीय प्रणाली → राज्यका संयन्त्र (४५% र आरक्षण तालिका) → सामाजिक न्याय → मूल्याङ्कन।</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ९. अन्तिम पुनरावलोकन चेकलिस्ट ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section9">
+            <i class="fas fa-clipboard-check"></i>
+            ९. अन्तिम पुनरावलोकन चेकलिस्ट
+            <span class="mark-badge gold">Checklist</span>
+        </div>
+
+        <div class="checklist-box">
+            <p style="font-weight:800; color:#006064; margin-bottom:10px;">
+                <i class="fas fa-question-circle" style="color:#00838F;"></i>
+                मैले यी कुरा सम्झन सक्छु? (हो/होइन चिन्ह लगाउनुहोस्)
+            </p>
+            <ul>
+                <li>वर्गको परिभाषा, ३ वर्ग र ४ आधार</li>
+                <li>मार्क्सका अनुसार समाजका वर्ग (दास, सामन्ती, पुँजीवादी)</li>
+                <li>सामाजिक रूपान्तरणका ५ प्रकृति र नेपालका ६ प्रयास</li>
+                <li>SPI (११४/१६३) र HDI (१४२/१८९)</li>
+                <li>लिङ्ग र लैङ्गिकताको तालिका</li>
+                <li>LGBTIQ का समूह र सर्वोच्च अदालतको फैसला (२०६४ पुस ६)</li>
+                <li>बेइजिङ घोषणापत्रका १२ क्षेत्र</li>
+                <li>विश्व महिला सम्मेलनका ४ स्थान (मेक्सिको, कोपेनहेगन, नैरोबी, बेइजिङ) र साल</li>
+                <li>लैङ्गिक समावेशीकरणका ४ चरण (कल्याण, WID, WAD, GAD)</li>
+                <li>समानता बनाम समता</li>
+                <li>सशक्तीकरणका ५ स्तर र लैङ्गिक मूलप्रवाहीकरण</li>
+                <li>नेपालका महिलासम्बन्धी संस्थागत साल (२०३८, २०५२, २०५७) र ३३% / ५०% / उमेर ३५-४०</li>
+                <li>अपाङ्गताका १० प्रकार र ४ वर्ग (रातो, निलो, पहेँलो, सेतो)</li>
+                <li>१० धर्मका प्रवर्तक, ग्रन्थ, स्थल र चाडपर्व</li>
+                <li>धारा २६ (धार्मिक स्वतन्त्रता)</li>
+                <li>७ प्रदेशका पहिचान र ३ भौगोलिक क्षेत्रका जातजाति</li>
+                <li>समतामूलक समाजका ७ उपाय</li>
+                <li>आरक्षण तालिका (४५%; ३३/२७/२२/९/५/४)</li>
+                <li>आयोगहरू (समावेशी, दलित, मधेसी, महिला, थारु, मुस्लिम)</li>
+            </ul>
+        </div>
+
+        <div class="tip-box" style="background:#00838F; margin-top:20px;">
+            <i class="fas fa-lightbulb" style="color:#FFEB3B;"></i>
+            <strong>परीक्षा हलका लागि सुझाव:</strong>
+            <ol style="padding-left:22px; margin-top:6px;">
+                <li>प्रश्नको अङ्कअनुसार बुँदा सङ्ख्या मिलाउनुहोस् (२ अङ्क → २ बुँदा, ५ अङ्क → ५ बुँदा)।</li>
+                <li>परिभाषा लेखेपछि वर्गीकरण/बुँदा र अन्तमा <strong>नेपालको सन्दर्भ</strong> जोड्नुहोस्।</li>
+                <li>तालिका, साल र प्रतिशत सही लेख्नुहोस् – यिनमा सजिलै अङ्क पाइन्छ।</li>
+                <li>"आफ्ना विचार/भूमिका" सोधिएका प्रश्नमा पाठका अवधारणा (समावेशीकरण, समता, सुशासन) जोडेर उदाहरणसहित लेख्नुहोस्।</li>
+            </ol>
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ७</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            /* ----- Floating TOC (top-left) ----- */
+            const tocToggle = document.getElementById('tocToggle');
+            const tocPanel = document.getElementById('tocPanel');
+            const tocClose = document.getElementById('tocClose');
+
+            function openToc() {
+                tocPanel.classList.add('open');
+            }
+            function closeToc() {
+                tocPanel.classList.remove('open');
+            }
+
+            tocToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (tocPanel.classList.contains('open')) {
+                    closeToc();
+                } else {
+                    openToc();
+                }
+            });
+
+            tocClose.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeToc();
+            });
+
+            // close TOC when clicking a link inside panel
+            tocPanel.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+
+            // close TOC when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
+                    closeToc();
+                }
+            });
+
+            // Escape closes TOC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeToc();
+                }
+            });
+
+            /* ----- Scroll-up button ----- */
+            const btn = document.getElementById('scrollUpBtn');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+
+</body>
+</html>
