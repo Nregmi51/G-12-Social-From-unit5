@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ ९ – भूगोल र सामाजिक जीवनमा सूचना प्रविधि (कक्षा १२)</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #fdf0f0;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fefcf7;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #e0b8b8;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #B71C1C;
+            line-height: 1.2;
+        }
+
+        .main-header h1 i {
+            color: #D32F2F;
+            margin-right: 10px;
+        }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #B71C1C;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+
+        .credit-bar {
+            background: #f8e3e3;
+            border-radius: 60px;
+            padding: 14px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #e0b8b8;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .credit-bar .name {
+            color: #0b2b4a;
+            font-weight: 800;
+            font-size: 1.15rem;
+        }
+
+        .credit-bar .email {
+            color: #B71C1C;
+            font-weight: 700;
+        }
+
+        .credit-bar i {
+            color: #B71C1C;
+            margin-right: 6px;
+        }
+
+        /* ----- TABLE OF CONTENTS ----- */
+        .toc-section {
+            background: #B71C1C;
+            border-radius: 20px;
+            padding: 18px 24px;
+            margin: 6px 0 28px;
+            border: 2px solid #D32F2F;
+        }
+
+        .toc-section h3 {
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.36rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toc-section h3 i {
+            color: #f5d742;
+            font-size: 1.3rem;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4px 16px;
+        }
+
+        .toc-grid a {
+            color: #f5dede;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16.5px;
+            padding: 4px 0 4px 6px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toc-grid a:hover {
+            color: #f5d742;
+            border-bottom-color: #f5d742;
+            transform: translateX(4px);
+        }
+
+        .toc-grid a i {
+            color: #f5d742;
+            font-size: 0.6rem;
+            min-width: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .toc-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .toc-grid a {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+            .toc-grid a {
+                font-size: 14px;
+            }
+        }
+
+        /* ----- SECTION HEADERS ----- */
+        .section-head {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #B71C1C;
+            margin: 42px 0 16px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            scroll-margin-top: 80px;
+            box-shadow: 0 3px 12px rgba(183, 28, 28, 0.35);
+        }
+
+        .section-head i {
+            font-size: 1.5rem;
+            color: #f5d742;
+        }
+
+        .section-head .mark-badge {
+            color: #B71C1C;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: 4px;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #f5d742; color: #0b2b4a; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.pink { background: #f48fb1; color: #0b2b4a; }
+
+        .sub-head {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #B71C1C;
+            margin: 28px 0 12px;
+            padding-left: 14px;
+            border-left: 6px solid #B71C1C;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            scroll-margin-top: 80px;
+        }
+
+        .sub-head i {
+            color: #B71C1C;
+            font-size: 1.1rem;
+        }
+
+        .sub-head-sm {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #B71C1C;
+            margin: 18px 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sub-head-sm i {
+            color: #B71C1C;
+        }
+
+        /* ----- CONTENT BOXES ----- */
+        .content-box {
+            border-radius: 16px;
+            padding: 20px 26px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #B71C1C;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .content-box p,
+        .content-box ul,
+        .content-box ol,
+        .content-box li {
+            font-size: 1.19rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .content-box ul,
+        .content-box ol {
+            padding-left: 28px;
+            margin: 8px 0 8px;
+        }
+
+        .content-box li {
+            margin-bottom: 6px;
+        }
+
+        .content-box strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .content-box.red-light {
+            border-left-color: #B71C1C;
+            background: #fdf0f0;
+        }
+
+        .content-box.blue-light {
+            border-left-color: #1a3a5c;
+            background: #e8f0f8;
+        }
+
+        .content-box.gold-light {
+            border-left-color: #b45309;
+            background: #fef8ee;
+        }
+
+        .content-box.green-light {
+            border-left-color: #1f7a4a;
+            background: #eef8f2;
+        }
+
+        .content-box.purple-light {
+            border-left-color: #6A1B9A;
+            background: #f4eef8;
+        }
+
+        .content-box.teal-light {
+            border-left-color: #0f7a7a;
+            background: #eef8f8;
+        }
+
+        .content-box.pink-light {
+            border-left-color: #a03a5a;
+            background: #fcf0f4;
+        }
+
+        .content-box.orange-light {
+            border-left-color: #d97706;
+            background: #fef6ed;
+        }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0 14px;
+            border-radius: 14px;
+            border: 2px solid #e0b8b8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.05rem;
+            min-width: 320px;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            border: 1px solid #e0b8b8;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #B71C1C;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.08rem;
+        }
+
+        td {
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .table-caption {
+            background: #f8e3e3;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.08rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #e0b8b8;
+        }
+
+        /* ----- Q&A BLOCKS ----- */
+        .qa-block {
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #B71C1C;
+        }
+
+        .qa-block.color1 { border-left-color: #B71C1C; background: #fdf0f0; }
+        .qa-block.color2 { border-left-color: #1a3a5c; background: #f0f5fa; }
+        .qa-block.color3 { border-left-color: #1f7a4a; background: #f2f8f5; }
+        .qa-block.color4 { border-left-color: #6b3fa0; background: #f6f2f8; }
+        .qa-block.color5 { border-left-color: #b45309; background: #fcf9f4; }
+        .qa-block.color6 { border-left-color: #0f7a7a; background: #eef8f8; }
+        .qa-block.color7 { border-left-color: #a03a5a; background: #fcf5f8; }
+        .qa-block.color8 { border-left-color: #d97706; background: #fef8ef; }
+
+        .qa-block .q {
+            font-weight: 900;
+            color: #B71C1C;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 1.22rem;
+        }
+
+        .qa-block .q .qnum {
+            color: #D32F2F;
+            font-weight: 900;
+            min-width: 30px;
+        }
+
+        .qa-block .a {
+            margin-top: 6px;
+            padding-left: 46px;
+            color: #1e2a3a;
+            font-weight: 500;
+            font-size: 1.19rem;
+        }
+
+        .qa-block .a ul,
+        .qa-block .a ol {
+            padding-left: 24px;
+            margin: 6px 0 6px;
+        }
+
+        .qa-block .a li {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .qa-block .a strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-icon {
+            display: inline-block;
+            margin-right: 6px;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-title {
+            font-weight: 700;
+            color: #B71C1C;
+            font-size: 1.1rem;
+        }
+
+        /* ----- GLOSSARY GRID ----- */
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 16px 0 8px;
+        }
+
+        .glossary-item {
+            background: #faf8f5;
+            border-radius: 12px;
+            padding: 14px 18px;
+            border-left: 5px solid #B71C1C;
+        }
+
+        .glossary-item strong {
+            color: #B71C1C;
+            font-size: 1.15rem;
+            font-weight: 900;
+        }
+
+        .glossary-item p {
+            margin-top: 3px;
+            font-size: 1.125rem;
+            color: #2d3a4a;
+            font-weight: 500;
+        }
+
+        /* ----- FLOW CHART (CSS) ----- */
+        .mermaid-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin: 16px 0;
+            padding: 14px 10px;
+            background: #fdf0f0;
+            border-radius: 20px;
+            border: 2px dashed #D32F2F;
+        }
+
+        .mermaid-step {
+            background: #ffffff;
+            padding: 8px 22px;
+            border-radius: 40px;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #0b2b4a;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            border: 2px solid #B71C1C;
+            text-align: center;
+            min-width: 160px;
+        }
+
+        .mermaid-arrow {
+            font-size: 1.6rem;
+            color: #7f8fa6;
+            line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+            .mermaid-step {
+                font-size: 0.85rem;
+                padding: 6px 14px;
+                min-width: 120px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mermaid-flow {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4px 14px;
+            }
+            .mermaid-arrow {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* ----- MNEMONIC CARD ----- */
+        .mnemonic-card {
+            background: #faf8f5;
+            border-radius: 14px;
+            padding: 16px 22px;
+            border: 2px solid #e0b8b8;
+            border-left: 6px solid #B71C1C;
+            margin: 12px 0;
+        }
+
+        .mnemonic-card .mn-title {
+            font-weight: 900;
+            color: #B71C1C;
+            font-size: 1.12rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+        }
+
+        .mnemonic-card .mn-title i {
+            color: #D32F2F;
+        }
+
+        .mnemonic-card .mn-code {
+            display: inline-block;
+            background: #B71C1C;
+            color: #ffffff;
+            font-weight: 900;
+            padding: 2px 14px;
+            border-radius: 30px;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .mnemonic-card p,
+        .mnemonic-card li {
+            font-weight: 500;
+            font-size: 1.08rem;
+            margin-bottom: 4px;
+        }
+
+        .mnemonic-card ul {
+            padding-left: 24px;
+        }
+
+        .mnemonic-card strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        /* ----- ACTIVITY BOX ----- */
+        .activity-box {
+            background: #f5f0e8;
+            border-radius: 16px;
+            padding: 18px 22px;
+            border: 2px solid #e0b8b8;
+            margin: 12px 0;
+        }
+
+        .activity-box .act-title {
+            font-weight: 900;
+            color: #B71C1C;
+            font-size: 1.1rem;
+        }
+
+        .activity-box p,
+        .activity-box li {
+            font-weight: 500;
+            font-size: 1.12rem;
+        }
+
+        .activity-box ul,
+        .activity-box ol {
+            padding-left: 24px;
+        }
+
+        /* ----- REPORT BOX ----- */
+        .report-box {
+            background: #faf8f5;
+            border-radius: 16px;
+            padding: 20px 26px;
+            border: 2px solid #e0b8b8;
+            margin: 12px 0;
+        }
+
+        .report-box .report-title {
+            font-weight: 900;
+            color: #B71C1C;
+            font-size: 1.15rem;
+            text-align: center;
+        }
+
+        .report-box p {
+            font-weight: 500;
+            font-size: 1.12rem;
+            margin-bottom: 8px;
+            line-height: 2;
+        }
+
+        .report-box .report-meta {
+            font-weight: 700;
+            color: #0b2b4a;
+        }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #B71C1C;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(183, 28, 28, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #scrollUpBtn:hover {
+            background: #D32F2F;
+            transform: scale(1.08);
+            box-shadow: 0 6px 28px rgba(183, 28, 28, 0.5);
+        }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 3px solid #e0b8b8;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 28px;
+            font-weight: 600;
+        }
+
+        .footer-copy i {
+            color: #B71C1C;
+            margin-right: 6px;
+        }
+
+        .footer-copy .highlight {
+            font-weight: 800;
+            color: #0b2b4a;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px dotted #e0b8b8;
+            margin: 28px 0 10px;
+        }
+
+        .tip-box {
+            background: #B71C1C;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .tip-box i {
+            margin-right: 8px;
+        }
+
+        .tip-box strong {
+            color: #f5d742;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 12px 24px;
+                border-radius: 20px;
+            }
+
+            .main-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-head {
+                font-size: 1.35rem;
+                padding: 10px 16px;
+            }
+
+            .sub-head {
+                font-size: 1.15rem;
+            }
+
+            .qa-block .a {
+                padding-left: 12px;
+            }
+
+            .qa-block .q {
+                font-size: 1.05rem;
+                flex-wrap: wrap;
+            }
+
+            .credit-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                font-size: 0.9rem;
+                padding: 10px 16px;
+            }
+
+            .glossary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #scrollUpBtn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                bottom: 18px;
+                right: 18px;
+            }
+
+            .toc-section {
+                padding: 14px 16px;
+            }
+
+            .content-box {
+                padding: 14px 16px;
+            }
+            .content-box p,
+            .content-box ul,
+            .content-box ol,
+            .content-box li {
+                font-size: 1.02rem;
+            }
+            .qa-block .a {
+                font-size: 1.02rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+            th,
+            td {
+                font-size: 0.9rem;
+                padding: 6px 8px;
+            }
+            .glossary-item strong {
+                font-size: 1.05rem;
+            }
+            .glossary-item p {
+                font-size: 0.98rem;
+            }
+            .activity-box p,
+            .activity-box li {
+                font-size: 1.02rem;
+            }
+            .report-box p {
+                font-size: 1.02rem;
+            }
+            .mnemonic-card p,
+            .mnemonic-card li {
+                font-size: 1.0rem;
+            }
+            .mermaid-step {
+                font-size: 0.8rem;
+                padding: 4px 12px;
+                min-width: 100px;
+            }
+            .toc-grid a {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 36px 46px 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <div>
+                <h1>
+                    <i class="fas fa-satellite-dish"></i>
+                    एकाइ ५, पाठ ९: भूगोल र सामाजिक जीवनमा सूचना प्रविधि
+                </h1>
+                <div class="subtitle">
+                    कक्षा १२ · भूगोल र सामाजिक जीवन
+                    <span class="badge-class"><i class="fas fa-check-circle"></i> परीक्षा विशेष क्याप्सुल</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CREDIT BAR ===== -->
+        <div class="credit-bar">
+            <span>
+                <i class="fas fa-user-edit"></i>
+                <span class="name">Prepared by: Narayan Sir</span>
+            </span>
+            <span>
+                <i class="fas fa-envelope"></i>
+                <span class="email">nregmi511@gmail.com</span>
+            </span>
+            <span>
+                <i class="fas fa-copyright"></i>
+                कक्षा १२ – एकाइ ५, पाठ ९
+            </span>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <!-- ========================================================== -->
+
+        <div class="toc-section" id="toc">
+            <h3><i class="fas fa-list-ul"></i> विषयसूची</h3>
+            <div class="toc-grid">
+                <a href="#section1"><i class="fas fa-chevron-right"></i> पारिभाषिक शब्दावली</a>
+                <a href="#section2"><i class="fas fa-chevron-right"></i> प्रविधि र तुलनात्मक तालिका</a>
+                <a href="#section3"><i class="fas fa-chevron-right"></i> सुत्रत्मक घोक्ने बुँदा</a>
+                <a href="#section4"><i class="fas fa-chevron-right"></i> क्रियाकलाप समाधान</a>
+                <a href="#section5"><i class="fas fa-chevron-right"></i> परीक्षा उपयोगी Q&amp;A</a>
+            </div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== १. पारिभाषिक शब्दावली ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section1">
+            <i class="fas fa-book-open"></i>
+            १. विषयगत पारिभाषिक शब्दहरू
+            <span class="mark-badge blue">Glossary</span>
+        </div>
+
+        <div class="glossary-grid">
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#B71C1C; margin-right:4px;"></i> भौगोलिक सूचना प्रणाली (GIS)</strong>
+                <p>भौगोलिक/स्थानिक तथ्याङ्क (Spatial Data) सङ्कलन, भण्डारण, प्रशोधन, विश्लेषण र नक्साङ्कन गरी निर्णय प्रक्रियामा सघाउ पुर्‍याउने कम्प्युटरमा आधारित आधुनिक प्रविधिलाई <strong>भौगोलिक सूचना प्रणाली (GIS)</strong> भनिन्छ।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#B71C1C; margin-right:4px;"></i> सुदूर संवेदन (Remote Sensing – RS)</strong>
+                <p>कुनै वस्तु, क्षेत्र वा घटनाको प्रत्यक्ष भौतिक सम्पर्कमा नगई भू-उपग्रह (Satellite) वा हवाई जहाज (Aerial Drone/Aircraft) मा राखिएका सेन्सरहरूका माध्यमबाट टाढैबाट सूचना सङ्कलन गर्ने प्रविधिलाई <strong>सुदूर संवेदन (Remote Sensing)</strong> भनिन्छ।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#B71C1C; margin-right:4px;"></i> विश्वव्यापी अवस्थिति प्रणाली (GPS)</strong>
+                <p>अन्तरिक्षमा रहेका कम्तीमा २४ वटा भू-उपग्रहहरूको सञ्जाल प्रयोग गरी पृथ्वीको कुनै पनि स्थानको अक्षांश (Latitude), देशान्तर (Longitude) र उचाइ (Elevation/Altitude) को सटीक लोकेसन निर्धारण गर्ने प्रविधिलाई <strong>GPS</strong> भनिन्छ।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#B71C1C; margin-right:4px;"></i> स्थानिक तथ्याङ्क (Spatial Data)</strong>
+                <p>पृथ्वीको सतहमा कुनै वस्तु वा स्थान कहाँ अवस्थित छ भन्ने कुरा दर्शाउने भौगोलिक अवस्थिति (Coordinates/Location) सम्बन्धी तथ्याङ्क।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#B71C1C; margin-right:4px;"></i> गैर-स्थानिक तथ्याङ्क (Attribute/Non-Spatial Data)</strong>
+                <p>भौगोलिक अवस्थितिको थप विशेषता वा गुण बुझाउने तथ्याङ्क (जस्तै: कुनै स्थानको जनसङ्ख्या, तापक्रम, क्षेत्रफल वा नाम)।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#B71C1C; margin-right:4px;"></i> डिजिटल एलिभेसन मोडल (DEM)</strong>
+                <p>धरातलीय उचाइ र भौगोलिक बनावटलाई कम्प्युटरमा त्रि-आयामी (3D) रूपमा प्रस्तुत गर्ने डिजिटल नक्साङ्कन प्रणाली।</p>
+            </div>
+            <div class="glossary-item">
+                <strong><i class="fas fa-arrow-right" style="color:#B71C1C; margin-right:4px;"></i> खुल्ला नक्साङ्कन (OpenStreetMap – OSM)</strong>
+                <p>इन्टरनेटमा आधारित निःशुल्क र खुला स्रोत नक्सा प्रणाली, जहाँ सर्वसाधारणले स्थानीय बाटो, घर र सार्वजनिक स्थलहरूको नक्साङ्कन र अद्यावधिक गर्न सक्छन्।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== २. प्रविधि र तुलनात्मक तालिका ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section2">
+            <i class="fas fa-diagram-project"></i>
+            २. मुख्य प्रविधिहरू, अङ्गहरू र तुलनात्मक तालिका
+            <span class="mark-badge gold">Core Notes</span>
+        </div>
+
+        <!-- १. तुलनात्मक तालिका -->
+        <div class="sub-head"><i class="fas fa-scale-balanced"></i> १. GIS, Remote Sensing र GPS बिचको तुलना</div>
+
+        <div class="content-box red-light">
+            <div class="table-wrap">
+                <div class="table-caption">तालिका १: तीन प्रमुख सूचना प्रविधिहरूको तुलनात्मक विश्लेषण</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:16%;">मुख्य आधार</th>
+                            <th style="width:28%;">भौगोलिक सूचना प्रणाली (GIS)</th>
+                            <th style="width:28%;">सुदूर संवेदन (Remote Sensing)</th>
+                            <th style="width:28%;">विश्वव्यापी अवस्थिति प्रणाली (GPS)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>मूल अवधारणा</strong></td>
+                            <td>स्थानिक तथ्याङ्कको कम्प्युटरमा आधारित विश्लेषण र नक्साङ्कन गर्ने सफ्टवेयर प्रणाली।</td>
+                            <td>प्रत्यक्ष सम्पर्कबिना उपग्रह वा हवाई सेन्सरबाट पृथ्वीको सतहको तस्बिर र सूचना लिने प्रविधि।</td>
+                            <td>भू-उपग्रह सञ्जालमार्फत पृथ्वीको कुनै पनि स्थानको सटीक अक्षांश, देशान्तर र उचाइ पत्ता लगाउने प्रविधि।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>मुख्य स्रोत/माध्यम</strong></td>
+                            <td>कम्प्युटर, GIS सफ्टवेयर (QGIS/ArcGIS), Spatial &amp; Attribute Data।</td>
+                            <td>उपग्रह सेन्सर (Satellite Sensors), ड्रोन (Drone), हवाई तस्बिर (Aerial Imagery)।</td>
+                            <td>२४+ वटा भू-उपग्रहहरू (Space Segment), नियन्त्रण केन्द्र र GPS रिसिभर/मोबाइल।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>मुख्य कार्य</strong></td>
+                            <td>तथ्याङ्क प्रशोधन, मोडेलिङ, थुप्रै पत्रहरू (Layers) को ओभरले विश्लेषण र नक्सा निर्माण।</td>
+                            <td>जमिनको प्रयोग (Land Use), वन क्षेत्र, विपत् क्षति र वातावरणीय परिवर्तनको तस्बिर सङ्कलन।</td>
+                            <td>रियल-टाइम लोकेसन ट्र्याकिङ, दिशा निर्देश (Navigation), र नक्सामा बिन्दुहरू चिन्ह लगाउने।</td>
+                        </tr>
+                        <tr>
+                            <td><strong>दैनिक उपयोग</strong></td>
+                            <td>सहरी योजना, रुट प्लानिङ, विपत् जोखिम नक्साङ्कन, भूमि व्यवस्थापन।</td>
+                            <td>बाढी/पहिरोको क्षति मूल्याङ्कन, वन विनाश अध्ययन, मौसम पूर्वानुमान।</td>
+                            <td>गुगल म्याप्स (Google Maps), राइड सेयरिङ (Pathao/InDrive), गाडी ट्र्याकिङ, खोज र उद्धार।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- २. GIS का अङ्गहरू -->
+        <div class="sub-head"><i class="fas fa-cubes"></i> २. भौगोलिक सूचना प्रणाली (GIS) का ५ मुख्य अङ्गहरू</div>
+
+        <div class="content-box blue-light">
+            <div class="mermaid-flow">
+                <div class="mermaid-step">१. हार्डवेयर<br><span style="font-weight:400;">(Hardware)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-plus"></i></div>
+                <div class="mermaid-step">२. सफ्टवेयर<br><span style="font-weight:400;">(Software)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-plus"></i></div>
+                <div class="mermaid-step">३. तथ्याङ्क<br><span style="font-weight:400;">(Data)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-plus"></i></div>
+                <div class="mermaid-step">४. मानिस<br><span style="font-weight:400;">(People)</span></div>
+                <div class="mermaid-arrow"><i class="fas fa-plus"></i></div>
+                <div class="mermaid-step">५. विधि र प्रक्रिया<br><span style="font-weight:400;">(Methods)</span></div>
+            </div>
+
+            <ul>
+                <li><strong>१. हार्डवेयर (Hardware):</strong> कम्प्युटर, सर्भर, GPS रिसिभर, डिजिटाइजर र प्रिन्टर।</li>
+                <li><strong>२. सफ्टवेयर (Software):</strong> QGIS, ArcGIS, ERDAS जस्ता विश्लेषणात्मक प्रोग्रामहरू।</li>
+                <li><strong>३. तथ्याङ्क (Data):</strong> Vector &amp; Raster Data, स्थानिक र गैर-स्थानिक तथ्याङ्क।</li>
+                <li><strong>४. मानिस/प्रयोगकर्ता (People):</strong> GIS विज्ञ, विश्लेषक र सामान्य प्रयोगकर्ता।</li>
+                <li><strong>५. विधि र प्रक्रिया (Methods):</strong> कार्यविधि, विश्लेषण विधि र ढाँचा।</li>
+            </ul>
+        </div>
+
+        <!-- ३. GPS का खण्डहरू -->
+        <div class="sub-head"><i class="fas fa-satellite"></i> ३. GPS का ३ मुख्य खण्डहरू</div>
+
+        <div class="content-box green-light">
+            <ol>
+                <li><strong>अन्तरिक्ष खण्ड (Space Segment):</strong> पृथ्वीभन्दा माथि निश्चित कक्षमा परिक्रमा गरिरहेका २४ वा सोभन्दा बढी अमेरिकी GPS भू-उपग्रहहरू।</li>
+                <li><strong>नियन्त्रण खण्ड (Control Segment):</strong> पृथ्वीको सतहमा रहेका मुख्य नियन्त्रण केन्द्र (Master Control Station) र अनुगमन स्टेसनहरू जसले उपग्रहको गति र समय सच्याउँछन्।</li>
+                <li><strong>प्रयोगकर्ता खण्ड (User Segment):</strong> GPS सिग्नल प्राप्त गर्ने स्मार्टफोन, गाडीका रिसिभर र सर्भेयरका यन्त्रहरू।</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ३. सुत्रत्मक घोक्ने बुँदाहरू ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section3">
+            <i class="fas fa-key"></i>
+            ३. सुत्रत्मक घोक्ने बुँदाहरू
+            <span class="mark-badge purple">Mnemonics</span>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र १: <span class="mn-code">हा-स-त-मा-वि</span> (GIS का ५ मुख्य अङ्गहरू)</div>
+            <ul>
+                <li><strong>हा (हार्डवेयर):</strong> कम्प्युटर, स्क्रिन, सेन्सर, जिपिएस रिसिभर</li>
+                <li><strong>स (सफ्टवेयर):</strong> GIS विश्लेषणात्मक प्रोग्रामहरू</li>
+                <li><strong>त (तथ्याङ्क):</strong> स्थानिक र गैर-स्थानिक डाटा</li>
+                <li><strong>मा (मानिस):</strong> जनशक्ति/GIS प्राविधिक</li>
+                <li><strong>वि (विधि/प्रक्रिया):</strong> विश्लेषण गर्ने वैज्ञानिक विधि</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र २: <span class="mn-code">अ-नि-प्र</span> (GPS का ३ खण्डहरू)</div>
+            <ul>
+                <li><strong>अ (अन्तरिक्ष खण्ड):</strong> उपग्रहहरूको सञ्जाल (Satellites)</li>
+                <li><strong>नि (नियन्त्रण खण्ड):</strong> पृथ्वीका नियन्त्रण स्टेसनहरू (Control Stations)</li>
+                <li><strong>प्र (प्रयोगकर्ता खण्ड):</strong> मोबाइल/रिसिभर यन्त्र (User Receivers)</li>
+            </ul>
+        </div>
+
+        <div class="mnemonic-card">
+            <div class="mn-title"><i class="fas fa-key"></i> सुत्र ३: <span class="mn-code">वि-स-कृ-व-या-भू</span> (सूचना प्रविधिको ६ क्षेत्रगत प्रयोग)</div>
+            <ul>
+                <li><strong>वि (विपत् व्यवस्थापन):</strong> बाढी, पहिरो, भूकम्पको जोखिम नक्साङ्कन र पूर्वसूचना</li>
+                <li><strong>स (सहरी योजना):</strong> पूर्वाधार निर्माण, सडक, खानेपानी र ढल निकास आयोजना</li>
+                <li><strong>कृ (कृषि विकास):</strong> माटोको उर्वरता, बाली क्षेत्र र मौसम अनुगमन</li>
+                <li><strong>व (वन तथा वातावरण):</strong> वन विनाश नियन्त्रण, डढेलो ट्र्याकिङ, वन्यजन्तु निगरानी</li>
+                <li><strong>या (यातायात/न्याभिगेसन):</strong> गाडी लोकेसन, गुगल म्याप्स, अनलाइन डेलिभरी</li>
+                <li><strong>भू (भूमि व्यवस्थापन):</strong> डिजिटल कित्ताकापी, डिजिटल नापी र भू-अभिलेख</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ४. क्रियाकलाप समाधान ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section4">
+            <i class="fas fa-hands"></i>
+            ४. पाठ्यपुस्तकका क्रियाकलापहरूको समाधान
+            <span class="mark-badge pink">Activities</span>
+        </div>
+
+        <!-- क्रियाकलाप १ -->
+        <div class="sub-head"><i class="fas fa-map-location-dot"></i> क्रियाकलाप १: Google Maps/OpenStreetMap मा स्थानीय सार्वजनिक स्थलहरूको अध्ययन प्रतिवेदन</div>
+
+        <div class="activity-box">
+            <p class="act-title"><i class="fas fa-question-circle" style="color:#B71C1C; margin-right:8px;"></i> प्रश्न:</p>
+            <p>आफ्नो क्षेत्रको नक्सा Google Maps वा OpenStreetMap मा हेरी मुख्य सार्वजनिक स्थलहरूको सूची र तिनको उपयोगिता सम्बन्धी प्रतिवेदन तयार पार्नुहोस्।</p>
+        </div>
+
+        <div class="report-box">
+            <p class="report-title"><i class="fas fa-file-lines" style="color:#B71C1C; margin-right:8px;"></i> अध्ययन प्रतिवेदन</p>
+            <p><span class="report-meta">विषय:</span> गूगल म्याप्स (Google Maps) मार्फत स्थानीय क्षेत्रको नक्साङ्कन र सार्वजनिक स्थलहरूको अध्ययन</p>
+            <p><span class="report-meta">प्रस्तुतकर्ता:</span> कक्षा १२, सामाजिक अध्ययन समूह</p>
+
+            <p><strong>१. परिचय:</strong> सूचना प्रविधिको विकाससँगै भूगोल र दैनिक जीवनमा नक्साको प्रयोग अत्यन्त सरल बनेको छ। प्रस्तुत प्रतिवेदनमा हामीले बसोबास गर्ने काठमाडौँ उपत्यकाको एउटा स्थानीय वडा क्षेत्रलाई गूगल म्याप्स र ओपन स्ट्रिट म्याप (OpenStreetMap) मा खोजी गरी त्यहाँका प्रमुख सार्वजनिक स्थलहरू, तिनको अवस्थिति र सामाजिक उपयोगिताको विश्लेषण गरिएको छ।</p>
+
+            <p><strong>२. गूगल म्याप्समा पहिचान गरिएका मुख्य स्थानहरू र तिनको उपयोगिता:</strong></p>
+
+            <div class="table-wrap">
+                <div class="table-caption">तालिका: स्थानीय सार्वजनिक स्थलहरू र तिनको उपयोगिता</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:6%;">क्र.सं.</th>
+                            <th style="width:24%;">स्थानको नाम / प्रकार</th>
+                            <th style="width:24%;">भौगोलिक अवस्थिति (Coordinates)</th>
+                            <th style="width:46%;">सामाजिक तथा आर्थिक उपयोगिता</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>१</td>
+                            <td><strong>स्थानीय स्वास्थ्य चौकी / अस्पताल</strong></td>
+                            <td>२७°४२'१५" उ., ८५°१९'३०" पू.</td>
+                            <td>आपत्कालीन स्वास्थ्य सेवा, खोप कार्यक्रम र प्राथमिक उपचार।</td>
+                        </tr>
+                        <tr>
+                            <td>२</td>
+                            <td><strong>माध्यमिक विद्यालय</strong></td>
+                            <td>२७°४२'२०" उ., ८५°१९'२५" पू.</td>
+                            <td>शिक्षा प्रदान, खुला मैदान (विपत्का बेला सुरक्षित आश्रयस्थल)।</td>
+                        </tr>
+                        <tr>
+                            <td>३</td>
+                            <td><strong>वडा कार्यालय</strong></td>
+                            <td>२७°४२'१०" उ., ८५°१९'३५" पू.</td>
+                            <td>नागरिकता सिफारिस, व्यक्तिगत घटना दर्ता, सामाजिक सुरक्षा भत्ता वितरण।</td>
+                        </tr>
+                        <tr>
+                            <td>४</td>
+                            <td><strong>सामुदायिक पार्क तथा खेलकुद मैदान</strong></td>
+                            <td>२७°४२'२५" उ., ८५°१९'४०" पू.</td>
+                            <td>खेलकुद, शारीरिक व्यायाम, सामुदायिक भेला र भूकम्पीय सुरक्षा स्थल।</td>
+                        </tr>
+                        <tr>
+                            <td>५</td>
+                            <td><strong>प्रहरी चौकी</strong></td>
+                            <td>२७°४२'०५" उ., ८५°१९'२०" पू.</td>
+                            <td>शान्ति सुरक्षा, अपराध नियन्त्रण र ट्राफिक व्यवस्थापन।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>३. निष्कर्ष:</strong> गूगल म्याप्स र खुला नक्सा प्रविधिको प्रयोगले स्थानीय तहमा रहेका सार्वजनिक सेवा केन्द्रहरूको दूरी, पुग्ने बाटो र भौगोलिक लोकेसन सेकेन्डभरमा पत्ता लगाउन सकिन्छ। यसले सर्वसाधारणको दैनिक जीवनलाई सुविधाजनक बनाउनुका साथै आपत्कालीन उद्धार कार्यमा महत्त्वपूर्ण योगदान पुर्‍याउँछ।</p>
+        </div>
+
+        <!-- क्रियाकलाप २ -->
+        <div class="sub-head"><i class="fas fa-file-pen"></i> क्रियाकलाप २: विपत् व्यवस्थापनमा GIS र Remote Sensing को भूमिका (५-बुँदे कार्यपत्र)</div>
+
+        <div class="activity-box">
+            <p class="act-title"><i class="fas fa-question-circle" style="color:#B71C1C; margin-right:8px;"></i> प्रश्न:</p>
+            <p>"विपत् व्यवस्थापनमा GIS र सुदूर संवेदन (Remote Sensing) को भूमिका" शीर्षकमा ५-बुँदे संक्षिप्त कार्यपत्र (Working Paper) तयार पार्नुहोस्।</p>
+        </div>
+
+        <div class="content-box teal-light">
+            <p style="font-weight:800; color:#0b2b4a; font-size:1.18rem; text-align:center;">कार्यपत्र: विपत् व्यवस्थापनमा GIS र सुदूर संवेदन (Remote Sensing) को भूमिका</p>
+
+            <ol>
+                <li><strong>विपत् पूर्व जोखिम नक्साङ्कन (Hazard &amp; Risk Mapping):</strong> GIS प्रविधिको प्रयोग गरी बाढी, पहिरो, भूकम्प वा डढेलोको उच्च जोखिममा रहेका भौगोलिक क्षेत्रहरू पहिचान गरी 'जोखिम नक्सा' (Hazard Map) तयार पारिन्छ, जसले पूर्वतयारीमा सघाउँछ।</li>
+                <li><strong>उपग्रहबाट वास्तविक समयको अनुगमन (Real-time Satellite Monitoring):</strong> सुदूर संवेदन (Remote Sensing) मार्फत बादलको स्थिति, वर्षाको मात्रा, नदीमा पानीको सतह र डढेलोको फैलावटलाई भू-उपग्रह तस्बिरका आधारमा २४ सै घण्टा अनुगमन गरी 'पूर्वसूचना प्रणाली' (Early Warning System) सञ्चालन गर्न सकिन्छ।</li>
+                <li><strong>आपत्कालीन खोज तथा उद्धार (Emergency Search &amp; Rescue):</strong> विपत् आएको तत्कालै पहिरोले थुनिएका बाटा, भत्किएका पुल र डुबानमा परेका बस्तीहरूको सुदूर संवेदन तस्बिर र GPS लोकेसनका आधारमा उद्धार टोली र हेलिकप्टर सोझै प्रभावित स्थानमा पठाउन सकिन्छ।</li>
+                <li><strong>क्षतिको द्रुत मूल्याङ्कन (Rapid Damage Assessment):</strong> विपत् अघि र विपत् पछिका भू-उपग्रह तस्बिरहरू (Before &amp; After Images) तुलना गरी भत्किएका घर, नष्ट भएका खेतीपाती र पूर्वाधारको क्षति छोटो समयमै सटिक रूपमा पत्ता लगाउन सकिन्छ।</li>
+                <li><strong>पुनर्निर्माण र पुनर्वास योजना (Reconstruction Planning):</strong> विपत् पछि सुरक्षित स्थानमा नयाँ बस्ती बसाल्न, भत्किएका संरचनाको पुनर्निर्माण गर्न र राहत सामग्री न्यायोचित रूपमा वितरण गर्न GIS ले तथ्याङ्कमा आधारित निर्णय लिन मद्दत गर्छ।</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== ५. परीक्षा उपयोगी Q&A ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head" id="section5">
+            <i class="fas fa-bullseye"></i>
+            ५. बोर्ड परीक्षा विशेष नमुना प्रश्नोत्तर
+            <span class="mark-badge pink">High-Yield</span>
+        </div>
+
+        <!-- अति संक्षिप्त -->
+        <div class="sub-head"><i class="fas fa-star"></i> अति संक्षिप्त प्रश्नोत्तर (१ अङ्क)</div>
+
+        <div class="qa-block color1">
+            <div class="q"><span class="qnum">प्र.न. १:</span> GIS को पूर्ण रूप (Full Form) के हो र यसको मुख्य काम के हो?</div>
+            <div class="a">
+                <strong>उत्तर:</strong> GIS को पूर्ण रूप <strong>Geographic Information System (भौगोलिक सूचना प्रणाली)</strong> हो। यसको मुख्य काम कम्प्युटरका माध्यमबाट भौगोलिक तथ्याङ्क सङ्कलन, भण्डारण, प्रशोधन, विश्लेषण र नक्साङ्कन गर्नु हो।
+            </div>
+        </div>
+
+        <div class="qa-block color2">
+            <div class="q"><span class="qnum">प्र.न. २:</span> सुदूर संवेदन (Remote Sensing) भनेको के हो?</div>
+            <div class="a">
+                <strong>उत्तर:</strong> कुनै वस्तु वा क्षेत्रको प्रत्यक्ष भौतिक सम्पर्कमा नगई भू-उपग्रह वा हवाई जहाजमा राखिएका सेन्सरमार्फत टाढैबाट सूचना र तस्बिर सङ्कलन गर्ने प्रविधिलाई <strong>सुदूर संवेदन (Remote Sensing)</strong> भनिन्छ।
+            </div>
+        </div>
+
+        <div class="qa-block color5">
+            <div class="q"><span class="qnum">प्र.न. ३:</span> दैनिक जीवनमा GPS को कुनै दुईवटा प्रयोग लेख्नुहोस्।</div>
+            <div class="a">
+                <strong>उत्तर:</strong> दैनिक जीवनमा GPS का दुई प्रयोगहरू: (१) स्मार्टफोनमा गूगल म्याप्समार्फत नयाँ ठाउँको बाटो र लोकेसन पत्ता लगाउन, र (२) पठाओ/इनड्राइभ जस्ता राइड सेयरिङ एपमा यात्रा ट्र्याक गर्न।
+            </div>
+        </div>
+
+        <!-- संक्षिप्त -->
+        <div class="sub-head"><i class="fas fa-star"></i> संक्षिप्त प्रश्नोत्तर (५ अङ्क)</div>
+
+        <div class="qa-block color3">
+            <div class="q"><span class="qnum">प्र.न. ४:</span> भौगोलिक सूचना प्रणाली (GIS) का मुख्य अङ्गहरू र यिनको महत्त्व स्पष्ट पार्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> भौगोलिक सूचना प्रणाली (GIS) हार्डवेयर, सफ्टवेयर र तथ्याङ्कको एउटा यस्तो एकीकृत कम्प्युटर प्रणाली हो जसले स्थानमा आधारित सूचनाहरू प्रशोधन गरी नक्सा र प्रतिवेदनका रूपमा प्रस्तुत गर्छ।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. मुख्य अङ्गहरूको विश्लेषण:</span> GIS सफलतापूर्वक सञ्चालन हुन ५ वटा मुख्य अङ्गहरूको समन्वय आवश्यक हुन्छ:</p>
+                <ul>
+                    <li><strong>हार्डवेयर (Hardware):</strong> GIS सफ्टवेयर चलाउन र तथ्याङ्क प्रशोधन गर्न प्रयोग गरिने कम्प्युटर, सर्भर, जिपिएस रिसिभर, डिजिटाइजर र प्रिन्टर।</li>
+                    <li><strong>सफ्टवेयर (Software):</strong> भौगोलिक तथ्याङ्क प्रविष्टि, भण्डारण र विश्लेषण गर्न प्रयोग गरिने सफ्टवेयरहरू (जस्तै: QGIS, ArcGIS)।</li>
+                    <li><strong>तथ्याङ्क (Data):</strong> GIS को सबैभन्दा महत्त्वपूर्ण अङ्ग, जसमा स्थानिक तथ्याङ्क (नक्सा/लोकेसन) र गैर-स्थानिक तथ्याङ्क (विवरण/गुण) समावेश हुन्छन्।</li>
+                    <li><strong>मानिस/प्राविधिक (People):</strong> प्रणाली सञ्चालन गर्ने, तथ्याङ्क विश्लेषण गर्ने र निर्णय लिने GIS विशेषज्ञ, नक्साकार र प्रयोगकर्ताहरू।</li>
+                    <li><strong>विधि र प्रक्रिया (Methods):</strong> तथ्याङ्क सङ्कलन, विश्लेषण र नतिजा निकाल्न अपनाइने वैज्ञानिक कार्यविधि र मोडेलहरू।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> यी पाँचै वटा अङ्गहरूको सन्तुलित प्रयोगबाट मात्र GIS ले योजना निर्माण, साधन स्रोतको परिचालन र विपत् व्यवस्थापनमा सही नतिजा दिन सक्छ।</p>
+            </div>
+        </div>
+
+        <!-- विस्तृत -->
+        <div class="sub-head"><i class="fas fa-gem"></i> विस्तृत प्रश्नोत्तर (८ अङ्क)</div>
+
+        <div class="qa-block color4">
+            <div class="q"><span class="qnum">प्र.न. ५:</span> "आधुनिक भूगोल र दैनिक सामाजिक जीवनलाई सरल, सुरक्षित र प्रभावकारी बनाउन सूचना प्रविधि (GIS, RS र GPS) को भूमिका अतुलनीय छ।" यस भनाइलाई आधार मानी भूगोल र समाजमा सूचना प्रविधिको बहुआयामिक प्रयोग र महत्त्व विस्तृत रूपमा व्याख्या गर्नुहोस्।</div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> २१ औँ शताब्दीमा सूचना प्रविधि (ICT) को तीव्र विकासले भूगोल अध्ययन र मानवीय सामाजिक जनजीवनमा क्रान्तिकारी परिवर्तन ल्याएको छ। भौगोलिक सूचना प्रणाली (GIS), सुदूर संवेदन (Remote Sensing – RS) र विश्वव्यापी अवस्थिति प्रणाली (Global Positioning System – GPS) ले पृथ्वीको अध्ययनलाई केवल किताबी ज्ञानमा सीमित नराखी डिजिटल, वैज्ञानिक र व्यावहारिक बनाएका छन्।</p>
+
+                <div class="mermaid-flow">
+                    <div class="mermaid-step">१. विपत् व्यवस्थापन<br><span style="font-weight:400;">(जोखिम + पूर्वसूचना)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">२. सहरी योजना<br><span style="font-weight:400;">(पूर्वाधार विकास)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">३. यातायात र पर्यटन<br><span style="font-weight:400;">(लोकेसन सेवा)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">४. वन र कृषि<br><span style="font-weight:400;">(अनुगमन)</span></div>
+                    <div class="mermaid-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="mermaid-step">५. भू-अभिलेख<br><span style="font-weight:400;">(डिजिटल कित्ताकापी)</span></div>
+                </div>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. विषय प्रवेश तथा बहुआयामिक प्रयोगको विश्लेषण:</span></p>
+
+                <p><strong>(क) विपत् व्यवस्थापन र जोखिम अल्पीकरण:</strong></p>
+                <ul>
+                    <li><strong>पूर्वसूचना प्रणाली:</strong> सुदूर संवेदन (RS) मार्फत वर्षा र भू-उपग्रह तस्बिर सङ्कलन गरी बाढी तथा डढेलोको पूर्वसूचना दिइन्छ।</li>
+                    <li><strong>जोखिम नक्साङ्कन:</strong> GIS ले भूकम्प, पहिरो र डुबान क्षेत्रको जोखिम नक्सा (Hazard Map) बनाई मानिसहरूलाई सुरक्षित राख्छ।</li>
+                    <li><strong>उद्धार र राहत:</strong> GPS को मद्दतले आपत्कालीन उद्धार टोली सोझै विपत् प्रभावित स्थानमा पुग्न सक्छन्।</li>
+                </ul>
+
+                <p><strong>(ख) सहरी योजना र पूर्वाधार निर्माण:</strong></p>
+                <ul>
+                    <li>सडक, खानेपानी पाइपलाइन, विद्युत् प्रसारण लाइन र ढल निकासको नक्साङ्कनमा GIS को प्रयोग गरिन्छ।</li>
+                    <li>नयाँ अस्पताल, विद्यालय वा बसपार्क कुन ठाउँमा बनाउँदा धेरै जनतालाई सुविधा हुन्छ भन्ने कुरा स्थानिक विश्लेषण (Spatial Analysis) बाट निर्धारण गरिन्छ।</li>
+                </ul>
+
+                <p><strong>(ग) यातायात, लोकेसन सेवा र दैनिक जनजीवन:</strong></p>
+                <ul>
+                    <li><strong>नेभिगेसन:</strong> गूगल म्याप्स र GPS को प्रयोगले अपरिचित ठाउँमा पनि सजिलै यात्रा गर्न सकिन्छ।</li>
+                    <li><strong>अनलाइन सेवा:</strong> राइड सेयरिङ एप (Pathao, InDrive), अनलाइन डेलिभरी (Daraz, Foodmandu) GPS लोकेसनमै आधारित छन्।</li>
+                    <li><strong>सुरक्षा र ट्र्याकिङ:</strong> सवारी साधन चोरी हुनबाट जोगाउन र सार्वजनिक यातायात ट्र्याक गर्न GPS जडान गरिन्छ।</li>
+                </ul>
+
+                <p><strong>(घ) वन, वातावरण र कृषि क्षेत्रमा प्रयोग:</strong></p>
+                <ul>
+                    <li><strong>वन विनाश नियन्त्रण:</strong> सुदूर संवेदनका तस्बिरबाट वन फँडानी र डढेलो लागेको ठाउँ तत्काल पत्ता लाग्छ।</li>
+                    <li><strong>स्मार्ट कृषि:</strong> माटोको ओसिलोपना, बालीको स्वास्थ्य र मौसमको जानकारी RS र GIS मार्फत लिएर कृषि उत्पादन बढाइन्छ।</li>
+                </ul>
+
+                <p><strong>(ङ) भू-अभिलेख र भूमि व्यवस्थापन:</strong></p>
+                <ul>
+                    <li>नेपालमा अमिनहरूले डिजिटल नापी र कित्ताकापी तयार पार्न GPS र GIS को प्रयोग गरिरहेका छन्।</li>
+                    <li>यसले जग्गा जमिनको सिमाना विवाद समाधान गर्न र पारदर्शी नापी कार्यालय सञ्चालन गर्न मद्दत पुर्‍याएको छ।</li>
+                </ul>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> तसर्थ, GIS, Remote Sensing र GPS केवल प्राविधिक शब्द मात्र नभई आधुनिक समाजको दिगो विकास, विपत् सुरक्षा र सुशासनका आधारस्तम्भ हुन्। नेपाल जस्तो भौगोलिक विविधता र जोखिमयुक्त देशमा यी प्रविधिको पहुँच स्थानीय तहसम्म विस्तार गरी उपयोग गर्नु आजको अपरिहार्य आवश्यकता हो।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ===== FINAL TIP ===== -->
+        <div class="tip-box" style="background:#B71C1C; margin-top:20px;">
+            <i class="fas fa-lightbulb" style="color:#f5d742;"></i>
+            <strong>अन्तिम सल्लाह:</strong> GIS, Remote Sensing र GPS भौगोलिक ज्ञानलाई व्यवहारमा उतार्ने सशक्त साधन हुन्। यिनको सही प्रयोगले मात्र विपत् जोखिमयुक्त नेपाललाई सुरक्षित, योजनाबद्ध र डिजिटल रूपमा सुशासित बनाउन सकिन्छ।
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ९</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('scrollUpBtn');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            });
+
+            btn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>
