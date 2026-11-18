@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>एकाइ ५, पाठ ४ – नेपालका प्रदेशको आर्थिक अवस्था र विशेषता (कक्षा १२)</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: #fff3e0;
+            color: #1a1a2e;
+            padding: 16px 12px 30px;
+            line-height: 2;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #fefcf7;
+            color: #1a1a2e;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+            padding: 28px 22px 40px;
+            position: relative;
+        }
+
+        /* ----- HEADER ----- */
+        .main-header {
+            border-bottom: 4px solid #ffccbc;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+        }
+
+        .main-header h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #E65100;
+            line-height: 1.25;
+        }
+
+        .main-header h1 i {
+            color: #FF9800;
+            margin-right: 10px;
+        }
+
+        .main-header .subtitle {
+            font-size: 1.16rem;
+            color: #4d5f72;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge-class {
+            background: #E65100;
+            color: #fff;
+            font-size: 0.78rem;
+            font-weight: 800;
+            padding: 4px 16px;
+            border-radius: 40px;
+            letter-spacing: 0.4px;
+            display: inline-block;
+            margin-left: 4px;
+            margin-top: 6px;
+        }
+
+        .credit-bar {
+            background: #ffe9d6;
+            border-radius: 60px;
+            padding: 14px 26px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 20px;
+            margin: 6px 0 24px;
+            border: 2px solid #ffccbc;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .credit-bar .name {
+            color: #0b2b4a;
+            font-weight: 800;
+            font-size: 1.08rem;
+        }
+
+        .credit-bar .email {
+            color: #E65100;
+            font-weight: 700;
+        }
+
+        .credit-bar i {
+            color: #FF9800;
+            margin-right: 6px;
+        }
+
+        /* ----- INTRO ----- */
+        .intro-box {
+            background: #ffe9d6;
+            border-radius: 16px;
+            padding: 14px 22px;
+            border-left: 6px solid #E65100;
+            margin: 6px 0 22px;
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .intro-box strong {
+            color: #BF360C;
+            font-weight: 900;
+        }
+
+        /* ----- SECTION HEADS ----- */
+        .section-head {
+            font-size: 1.55rem;
+            font-weight: 900;
+            color: #ffffff;
+            background: #E65100;
+            margin: 36px 0 16px;
+            padding: 12px 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            scroll-margin-top: 90px;
+            box-shadow: 0 3px 12px rgba(230, 81, 0, 0.3);
+        }
+
+        .section-head i {
+            font-size: 1.3rem;
+            color: #FFEB3B;
+        }
+
+        .section-head .mark-badge {
+            color: #E65100;
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 40px;
+            margin-left: auto;
+            background: #ffffff;
+        }
+
+        .section-head .mark-badge.gold { background: #FFEB3B; color: #BF360C; }
+        .section-head .mark-badge.green { background: #7dcea0; color: #0b2b4a; }
+        .section-head .mark-badge.blue { background: #81d4fa; color: #0b2b4a; }
+        .section-head .mark-badge.purple { background: #b39ddb; color: #0b2b4a; }
+
+        /* ----- Q&A BLOCKS ----- */
+        .qa-block {
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin: 14px 0 18px;
+            border-left: 6px solid #E65100;
+            scroll-margin-top: 90px;
+        }
+
+        .qa-block.color1 { border-left-color: #E65100; background: #fff3e0; }
+        .qa-block.color2 { border-left-color: #1a3a5c; background: #f0f5fa; }
+        .qa-block.color3 { border-left-color: #1f7a4a; background: #f2f8f5; }
+        .qa-block.color4 { border-left-color: #6b3fa0; background: #f6f2f8; }
+        .qa-block.color5 { border-left-color: #b45309; background: #fcf9f4; }
+        .qa-block.color6 { border-left-color: #0f7a7a; background: #eef8f8; }
+        .qa-block.color7 { border-left-color: #a03a5a; background: #fcf5f8; }
+        .qa-block.color8 { border-left-color: #d97706; background: #fef8ef; }
+        .qa-block.color9 { border-left-color: #2E7D32; background: #eef7ea; }
+        .qa-block.color10 { border-left-color: #283593; background: #eef0fa; }
+
+        .qa-block .q {
+            font-weight: 900;
+            color: #BF360C;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 1.18rem;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .qa-block .q .qnum {
+            color: #FF9800;
+            font-weight: 900;
+            min-width: 55px;
+            flex-shrink: 0;
+        }
+
+        .qa-block .a {
+            color: #1e2a3a;
+            font-weight: 500;
+            font-size: 1.12rem;
+        }
+
+        .qa-block .a p,
+        .qa-block .a li {
+            font-size: 1.12rem;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .qa-block .a ul,
+        .qa-block .a ol {
+            padding-left: 24px;
+            margin: 6px 0;
+        }
+
+        .qa-block .a li {
+            margin-bottom: 6px;
+        }
+
+        .qa-block .a strong {
+            color: #0b2b4a;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-icon {
+            display: inline-block;
+            margin-right: 6px;
+            font-weight: 900;
+        }
+
+        .qa-block .a .step-title {
+            font-weight: 700;
+            color: #BF360C;
+            font-size: 1.08rem;
+        }
+
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 14px 0;
+            border-radius: 14px;
+            border: 2px solid #ffccbc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.02rem;
+            min-width: 320px;
+        }
+
+        th, td {
+            padding: 11px 14px;
+            border: 1px solid #ffccbc;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #E65100;
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 1.04rem;
+        }
+
+        td {
+            font-weight: 500;
+            font-size: 1.02rem;
+        }
+
+        .table-caption {
+            background: #ffe9d6;
+            padding: 10px 18px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #0b2b4a;
+            border-bottom: 2px solid #ffccbc;
+        }
+
+        /* ----- LETTER BOX ----- */
+        .letter-box {
+            background: #faf8f5;
+            border-radius: 16px;
+            padding: 22px 26px;
+            border: 2px solid #ffccbc;
+            margin: 12px 0;
+            font-size: 1.08rem;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .letter-box .l-title {
+            font-weight: 900;
+            color: #BF360C;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-align: center;
+            padding-bottom: 8px;
+            border-bottom: 2px dashed #ffccbc;
+        }
+
+        .letter-box p {
+            margin-bottom: 8px;
+        }
+
+        .letter-box .salutation {
+            font-weight: 700;
+            color: #BF360C;
+        }
+
+        .letter-box .closing {
+            font-weight: 700;
+            color: #BF360C;
+            margin-top: 12px;
+        }
+
+        /* ----- PLAN BOX ----- */
+        .plan-box {
+            background: #fefcf7;
+            border-radius: 16px;
+            padding: 22px 26px;
+            border: 2px solid #ffccbc;
+            margin: 12px 0;
+        }
+
+        .plan-box .plan-title {
+            font-weight: 900;
+            color: #BF360C;
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            padding: 8px 14px;
+            background: #ffe9d6;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .plan-box h4 {
+            font-weight: 800;
+            color: #E65100;
+            font-size: 1.08rem;
+            margin: 14px 0 6px;
+        }
+
+        .plan-box p,
+        .plan-box li {
+            font-size: 1.06rem;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .plan-box ul,
+        .plan-box ol {
+            padding-left: 24px;
+            margin: 6px 0;
+        }
+
+        /* ----- FLOW CHART ----- */
+        .flow-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin: 16px 0;
+            padding: 16px 10px;
+            background: #fff3e0;
+            border-radius: 20px;
+            border: 2px dashed #FF9800;
+        }
+
+        .flow-step {
+            background: #ffffff;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 800;
+            font-size: 0.98rem;
+            color: #0b2b4a;
+            border: 2px solid #E65100;
+            text-align: center;
+            min-width: 160px;
+        }
+
+        .flow-step.big {
+            background: #E65100;
+            color: #fff;
+            font-size: 1.05rem;
+        }
+
+        .flow-arrow {
+            font-size: 1.4rem;
+            color: #FF9800;
+            line-height: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flow-chart {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px 12px;
+            }
+            .flow-arrow {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* ----- TIP CARD ----- */
+        .tip-card {
+            background: #faf8f5;
+            border-radius: 14px;
+            padding: 14px 20px;
+            border: 2px solid #ffccbc;
+            border-left: 6px solid #FF9800;
+            margin: 12px 0;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        .tip-card i {
+            color: #E65100;
+            margin-right: 6px;
+        }
+
+        .tip-card strong {
+            color: #BF360C;
+            font-weight: 900;
+        }
+
+        /* ----- FLOATING TOC TOGGLE (TOP-LEFT) ----- */
+        #tocToggle {
+            position: fixed;
+            top: 18px;
+            left: 18px;
+            z-index: 1000;
+            background: #E65100;
+            color: #fff;
+            border: none;
+            border-radius: 14px;
+            padding: 11px 18px;
+            font-family: inherit;
+            font-weight: 800;
+            font-size: 0.96rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 18px rgba(230, 81, 0, 0.5);
+            transition: all 0.25s ease;
+        }
+
+        #tocToggle:hover {
+            background: #BF360C;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(230, 81, 0, 0.6);
+        }
+
+        #tocToggle i {
+            color: #FFEB3B;
+        }
+
+        /* ----- TOC PANEL ----- */
+        #tocPanel {
+            position: fixed;
+            top: 74px;
+            left: 18px;
+            width: 390px;
+            max-width: calc(100vw - 36px);
+            max-height: 80vh;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 14px 44px rgba(0, 0, 0, 0.25);
+            border: 2px solid #E65100;
+            z-index: 1001;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-12px) scale(0.97);
+            transition: all 0.28s ease;
+        }
+
+        #tocPanel.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+
+        .toc-panel-head {
+            background: #E65100;
+            color: #fff;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 800;
+            font-size: 1.05rem;
+            flex-shrink: 0;
+        }
+
+        .toc-panel-head span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-panel-head i.fa-list-ul {
+            color: #FFEB3B;
+        }
+
+        #tocClose {
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 4px 10px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        #tocClose:hover {
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        .toc-panel-body {
+            padding: 10px 8px 12px;
+            overflow-y: auto;
+            flex: 1;
+            scrollbar-width: thin;
+        }
+
+        .toc-panel-body::-webkit-scrollbar {
+            width: 8px;
+        }
+        .toc-panel-body::-webkit-scrollbar-thumb {
+            background: #ffccbc;
+            border-radius: 10px;
+        }
+
+        .toc-group-label {
+            font-size: 0.78rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: #E65100;
+            padding: 8px 12px 4px;
+            border-bottom: 1.5px solid #ffe9d6;
+            margin-bottom: 4px;
+        }
+
+        .toc-panel-body a {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 9px 12px;
+            text-decoration: none;
+            color: #1a1a2e;
+            font-weight: 600;
+            font-size: 0.96rem;
+            border-radius: 10px;
+            border-bottom: 1px solid #f5e4d6;
+            transition: all 0.18s ease;
+            line-height: 1.5;
+        }
+
+        .toc-panel-body a:hover {
+            background: #fff3e0;
+            color: #BF360C;
+            padding-left: 18px;
+        }
+
+        .toc-panel-body a .qn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 30px;
+            height: 26px;
+            background: #ffe9d6;
+            color: #BF360C;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 0.78rem;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .toc-panel-body a:hover .qn {
+            background: #E65100;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            #tocToggle {
+                top: 10px;
+                left: 10px;
+                padding: 8px 14px;
+                font-size: 0.86rem;
+                border-radius: 12px;
+            }
+            #tocPanel {
+                top: 60px;
+                left: 10px;
+                width: calc(100vw - 20px);
+                max-height: 74vh;
+            }
+            .toc-panel-body a {
+                font-size: 0.92rem;
+                padding: 8px 10px;
+            }
+        }
+
+        /* ----- SCROLL UP BUTTON ----- */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 26px;
+            right: 26px;
+            background: #E65100;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 58px;
+            height: 58px;
+            font-size: 1.6rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(230, 81, 0, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        #scrollUpBtn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #scrollUpBtn:hover {
+            background: #BF360C;
+            transform: scale(1.08);
+        }
+
+        /* ----- FOOTER ----- */
+        .footer-copy {
+            margin-top: 36px;
+            padding-top: 18px;
+            border-top: 3px solid #ffccbc;
+            text-align: center;
+            font-size: 0.93rem;
+            color: #5f6f80;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 24px;
+            font-weight: 600;
+        }
+
+        .footer-copy i {
+            color: #E65100;
+            margin-right: 6px;
+        }
+
+        .footer-copy .highlight {
+            font-weight: 800;
+            color: #0b2b4a;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px dotted #ffccbc;
+            margin: 26px 0 10px;
+        }
+
+        .tip-box {
+            background: #E65100;
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 1.08rem;
+        }
+
+        .tip-box i {
+            margin-right: 8px;
+        }
+
+        .tip-box strong {
+            color: #FFEB3B;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 12px 24px;
+                border-radius: 20px;
+            }
+
+            .main-header h1 {
+                font-size: 1.35rem;
+            }
+
+            .section-head {
+                font-size: 1.12rem;
+                padding: 10px 14px;
+            }
+
+            .section-head .mark-badge {
+                margin-left: 0;
+            }
+
+            .qa-block {
+                padding: 14px 16px;
+            }
+
+            .qa-block .q {
+                font-size: 1.02rem;
+            }
+
+            .qa-block .q .qnum {
+                min-width: 48px;
+                font-size: 0.95rem;
+            }
+
+            .qa-block .a p,
+            .qa-block .a li {
+                font-size: 0.98rem;
+            }
+
+            .credit-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                font-size: 0.88rem;
+                padding: 10px 16px;
+            }
+
+            table {
+                font-size: 0.86rem;
+            }
+
+            th, td {
+                padding: 7px 9px;
+                font-size: 0.86rem;
+            }
+
+            .letter-box,
+            .plan-box {
+                padding: 16px 16px;
+                font-size: 0.98rem;
+            }
+
+            .flow-step {
+                font-size: 0.82rem;
+                padding: 6px 12px;
+                min-width: 120px;
+            }
+
+            #scrollUpBtn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+                bottom: 16px;
+                right: 16px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 34px 44px 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== FLOATING TOC TOGGLE (TOP-LEFT) ===== -->
+    <button id="tocToggle" aria-label="प्रश्नोत्तर सूची खोल्नुहोस्">
+        <i class="fas fa-bars"></i>
+        <span>विषयसूची</span>
+    </button>
+
+    <div id="tocPanel" role="dialog" aria-label="प्रश्नोत्तर नेभिगेसन">
+        <div class="toc-panel-head">
+            <span><i class="fas fa-list-ul"></i> प्रश्नमा जानुहोस्</span>
+            <button id="tocClose" aria-label="बन्द गर्नुहोस्"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="toc-panel-body">
+
+            <div class="toc-group-label"><i class="fas fa-bolt" style="margin-right:4px;"></i> अति सङ्क्षिप्त (१ अङ्क)</div>
+            <a href="#q1"><span class="qn">१</span> कृषिमा सर्वाधिक/न्यून योगदान प्रदेश</a>
+            <a href="#q2"><span class="qn">२</span> GDP मा सर्वाधिक/न्यून योगदान</a>
+
+            <div class="toc-group-label"><i class="fas fa-pen-to-square" style="margin-right:4px;"></i> सङ्क्षिप्त (५ अङ्क)</div>
+            <a href="#q3"><span class="qn">३</span> रोजगारीसम्बन्धी निवेदन नमुना</a>
+            <a href="#q4"><span class="qn">४</span> कर्णाली कृषि आधुनिकीकरण</a>
+            <a href="#q5"><span class="qn">५</span> आर्थिक विकास योजना नमुना</a>
+            <a href="#q6"><span class="qn">६</span> कोशी vs मधेस तुलना</a>
+            <a href="#q7"><span class="qn">७</span> बागमती औद्योगिक केन्द्र</a>
+            <a href="#q8"><span class="qn">८</span> गण्डकी र पर्यटन</a>
+
+            <div class="toc-group-label"><i class="fas fa-gem" style="margin-right:4px;"></i> विस्तृत (८ अङ्क)</div>
+            <a href="#q9"><span class="qn">९</span> लुम्बिनी – ८ बुँदा आर्थिक सम्भावना</a>
+            <a href="#q10"><span class="qn">१०</span> लुम्बिनी – भौगोलिक प्रभाव र चुनौती</a>
+            <a href="#q11"><span class="qn">११</span> कोशी – भौगोलिक प्रभाव</a>
+            <a href="#q12"><span class="qn">१२</span> लुम्बिनी – भौगोलिक र जनसाङ्ख्यिक</a>
+            <a href="#q13"><span class="qn">१३</span> मधेस vs कर्णाली तुलना</a>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <div class="main-header">
+            <h1>
+                <i class="fas fa-map-location"></i>
+                एकाइ ५, पाठ ४: नेपालका प्रदेशको आर्थिक अवस्था र विशेषता
+            </h1>
+            <div class="subtitle">
+                कक्षा १२ · भूगोल र सामाजिक जीवन
+                <span class="badge-class"><i class="fas fa-check-circle"></i> पूर्ण प्रश्नोत्तर सङ्ग्रह v2</span>
+            </div>
+        </div>
+
+        <!-- ===== CREDIT BAR ===== -->
+        <div class="credit-bar">
+            <span>
+                <i class="fas fa-user-edit"></i>
+                <span class="name">Prepared by: Narayan Sir</span>
+            </span>
+            <span>
+                <i class="fas fa-envelope"></i>
+                <span class="email">nregmi511@gmail.com</span>
+            </span>
+            <span>
+                <i class="fas fa-copyright"></i>
+                कक्षा १२ – एकाइ ५, पाठ ४
+            </span>
+        </div>
+
+        <!-- ===== INTRO ===== -->
+        <div class="intro-box">
+            <i class="fas fa-circle-info" style="color:#E65100; margin-right:6px;"></i>
+            <strong>अध्ययन निर्देशिका:</strong> यो सामग्रीमा पाठ ४ का सम्पूर्ण अति संक्षिप्त (१ अङ्क), संक्षिप्त (५ अङ्क) र विस्तृत (८ अङ्क) उत्तरात्मक प्रश्नहरूको पूर्ण समाधान छ। माथि बायाँतर्फको <strong>“विषयसूची”</strong> बटन थिच्नुहोस् र जुनसुकै प्रश्नमा सिधै जानुहोस्।
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- ===== खण्ड १: अति सङ्क्षिप्त उत्तरात्मक प्रश्नहरू (१ अङ्क) ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head">
+            <i class="fas fa-bolt"></i>
+            खण्ड १: अति सङ्क्षिप्त उत्तरात्मक प्रश्नहरू
+            <span class="mark-badge gold">१ अङ्क</span>
+        </div>
+
+        <!-- प्र.न. १ -->
+        <div class="qa-block color1" id="q1">
+            <div class="q">
+                <span class="qnum">प्र.न. १:</span>
+                नेपालमा कृषि क्षेत्रमा सबैभन्दा बढी र कम योगदान दिने प्रदेशहरू कुन कुन हुन्?
+            </div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> पाठ्यपुस्तक तथा आधिकारिक आर्थिक तथ्याङ्क अनुसार:</p>
+                <ul>
+                    <li><strong>कृषि क्षेत्रमा सबैभन्दा बढी योगदान दिने प्रदेश:</strong> <strong>सुदूरपश्चिम प्रदेश</strong> (यस प्रदेशका लगभग ६०% मानिसहरू कृषि पेसामा संलग्न रहेका छन्)।</li>
+                    <li><strong>कृषि क्षेत्रमा सबैभन्दा कम योगदान दिने प्रदेश:</strong> <strong>बागमती प्रदेश</strong>।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- प्र.न. २ -->
+        <div class="qa-block color2" id="q2">
+            <div class="q">
+                <span class="qnum">प्र.न. २:</span>
+                नेपालमा सन् २०१९/२० मा कुल गार्हस्थ्य उत्पादनमा सबैभन्दा बढी र कम योगदान दिने प्रदेशहरू कुन कुन हुन्?
+            </div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> सन् २०१९/२० को तथ्याङ्क अनुसार:</p>
+                <ul>
+                    <li><strong>कुल गार्हस्थ्य उत्पादन (GDP) मा सबैभन्दा बढी योगदान दिने प्रदेश:</strong> <strong>बागमती प्रदेश</strong> (योगदान: <strong>३५.८%</strong>)।</li>
+                    <li><strong>कुल गार्हस्थ्य उत्पादन (GDP) मा सबैभन्दा कम योगदान दिने प्रदेश:</strong> <strong>कर्णाली प्रदेश</strong> (योगदान: <strong>४.३%</strong>)।</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== खण्ड २: सङ्क्षिप्त उत्तरात्मक प्रश्नहरू (५ अङ्क) ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head">
+            <i class="fas fa-pen-to-square"></i>
+            खण्ड २: सङ्क्षिप्त उत्तरात्मक प्रश्नहरू
+            <span class="mark-badge green">५ अङ्क</span>
+        </div>
+
+        <!-- प्र.न. ३ -->
+        <div class="qa-block color3" id="q3">
+            <div class="q">
+                <span class="qnum">प्र.न. ३:</span>
+                आफू बसोबास गरेको प्रदेशमा रोजगारीका अवसर उपलब्ध गराउन चाल्नुपर्ने कुनै चारओटा उपाय समावेश गर्दै प्रदेश नीति तथा योजना आयोगलाई दिने निवेदनको नमुना तयार पार्नुहोस्।
+            </div>
+            <div class="a">
+                <div class="letter-box">
+                    <div class="l-title"><i class="fas fa-file-lines" style="color:#E65100;"></i> निवेदनको नमुना</div>
+
+                    <p><strong>मिति:</strong> २०८३/०८/०२</p>
+                    <p><strong>श्रीमान् उपाध्यक्षज्यू,</strong><br>
+                    प्रदेश नीति तथा योजना आयोग,<br>
+                    लुम्बिनी प्रदेश, बुटवल, नेपाल।</p>
+
+                    <p><strong>विषय: प्रदेशभित्र रोजगारीका अवसरहरू सिर्जना गर्न चाल्नुपर्ने उपायहरूसम्बन्धी निवेदन।</strong></p>
+
+                    <p class="salutation">महोदय,</p>
+
+                    <p>उपर्युक्त विषयमा हाम्रा प्रदेशका हजारौँ ऊर्जाशील युवाहरू रोजगारीको खोजीमा वैदेशिक रोजगारी तथा अन्यत्र पलायन भइरहेको वर्तमान अवस्थाप्रति आयोगको ध्यान आकर्षण गराउन चाहन्छु। लुम्बिनी प्रदेशमा कृषि, उद्योग, पर्यटन र जलस्रोतको प्रचुर सम्भावना हुँदाहुँदै पनि उचित नीतिको अभावमा बेरोजगारी समस्या कायमै छ। तसर्थ, प्रदेशभित्रै दिगो रोजगारीका अवसरहरू उपलब्ध गराउन निम्नलिखित चारवटा व्यवहारिक उपायहरू समावेश गरी आगामी आवधिक योजना तथा नीतिमा कार्यान्वयन गरिदिनुहुन यो निवेदन पेस गर्दछु:</p>
+
+                    <ol>
+                        <li><strong>कृषिमा आधारित साना तथा मझौला उद्योग (Agro-Industries) को प्रवर्द्धन:</strong> प्रदेशका तराई तथा भित्री मधेसमा उत्पादन हुने धान, गहुँ, तेलहन र फलफूल प्रशोधनका लागि गाउँ-गाउँमा साना तथा प्रविधिमैत्री उद्योग स्थापना गरी युवाहरूलाई स्वरोजगार बनाउने।</li>
+                        <li><strong>सिपमूलक तथा प्रविधिमैत्री तालिम (Skill-based Training):</strong> बजारको माग अनुसार प्लम्बिङ, इलेक्ट्रोनिक्स, डिजिटल मार्केटिङ, कृषि प्रविधि र पर्यटन हस्पिटालिटीसम्बन्धी निःशुल्क प्राविधिक तालिम प्रदान गर्ने।</li>
+                        <li><strong>सहुलियतपूर्ण ऋण र युवा उद्यमी कोषको स्थापना:</strong> वैदेशिक रोजगारीबाट फर्किएका र स्थानीय युवाहरूलाई सहुलियतपूर्ण ब्याजदरमा बिनाधितो/कम धितोमा स्टार्टअप कर्जा उपलब्ध गराई उद्यमशीलता प्रवर्द्धन गर्ने।</li>
+                        <li><strong>धार्मिक तथा सांस्कृतिक पर्यटन सञ्जालको विस्तार:</strong> लुम्बिनी, स्वर्गद्वारी, रिडी र बर्दिया राष्ट्रिय निकुञ्जलाई जोडी होमस्टे (आवास गृह) र पर्यटकीय सेवा सञ्चालनमार्फत स्थानीयस्तरमा रोजगारी सिर्जना गर्ने।</li>
+                    </ol>
+
+                    <p>उल्लिखित उपायहरूलाई प्रदेशको रणनीतिमा समावेश गरी कार्यान्वयन गरिएमा प्रदेशभित्रै समृद्ध रोजगारीको वातावरण बन्ने विश्वास लिएको छु।</p>
+
+                    <p class="closing">निवेदक:<br>
+                    तपाईंको शुभचिन्तक नागरिक,<br>
+                    रुपन्देही, लुम्बिनी प्रदेश</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- प्र.न. ४ -->
+        <div class="qa-block color4" id="q4">
+            <div class="q">
+                <span class="qnum">प्र.न. ४:</span>
+                कर्णाली प्रदेशको आर्थिक सुधारका लागि प्रदेश सरकारले कृषिको आधुनिकीकरण गर्न के कस्ता कार्यक्रमहरू सञ्चालन गर्नुपर्ला? कुनै पाँचओटा सुझावहरू प्रस्तुत गर्नुहोस्।
+            </div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> कर्णाली प्रदेश भौगोलिक रूपमा विकट भए तापनि कृषि, जडीबुटी र पशुपालनका दृष्टिले अत्यधिक सम्भावना बोकेको प्रदेश हो। यस प्रदेशको आर्थिक सुधार र समृद्धिका लागि कृषिको आधुनिकीकरण गर्न प्रदेश सरकारलाई निम्नलिखित पाँचवटा सुझावहरू प्रस्तुत गरिन्छ:</p>
+                <ol>
+                    <li><strong>अर्गानिक कृषि र ब्रान्डिङ कार्यक्रम:</strong> कर्णालीका मौलिक उत्पादनहरू (जस्तै: स्याउ, जुम्ली मार्सी धान, फापर, चिनो, उवा, सिमी र जडीबुटी) लाई ‘अर्गानिक कर्णाली ब्रान्ड’ को रूपमा राष्ट्रिय तथा अन्तर्राष्ट्रिय बजारमा प्रवर्द्धन गर्ने।</li>
+                    <li><strong>व्यावसायिक पशुपालन र चरन क्षेत्र व्यवस्थापन:</strong> परम्परागत पशुपालनलाई आधुनिक र व्यावसायिक बनाई घाँसे मैदान र पाटनहरूको वैज्ञानिक व्यवस्थापन गर्ने तथा चौँरी, भेडा र च्याङ्ग्रा पालनमा अनुदान दिने।</li>
+                    <li><strong>शीतभण्डार (Cold Storage) र प्रशोधन केन्द्रको स्थापना:</strong> जुम्ला, कालिकोट, मुगु र डोल्पा जस्ता फलफूल उत्पादक जिल्लाहरूमा सङ्कलन केन्द्र र शीतभण्डार स्थापना गरी फलफूल खेर जान नदिने व्यवस्था मिलाउने।</li>
+                    <li><strong>कृषि सडक र बजार पहुँच विस्तार:</strong> उत्पादित कृषि उपजहरूलाई बजारसम्म पुर्‍याउन सडक पूर्वाधार (Agricultural Roads) र सहुलियतपूर्ण ढुवानी अनुदानको व्यवस्था गर्ने।</li>
+                    <li><strong>आधुनिक सिँचाइ तथा प्रविधि हस्तान्तरण:</strong> भेरी, कर्णाली र तिला नदीको पानी उपयोग गरी लिफ्ट सिँचाइ र थोपा सिँचाइ प्रविधि विस्तारका साथै किसानलाई आधुनिक औजार र उन्नत बीउबिजन उपलब्ध गराउने।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- प्र.न. ५ -->
+        <div class="qa-block color5" id="q5">
+            <div class="q">
+                <span class="qnum">प्र.न. ५:</span>
+                तपाईं बसेको प्रदेशको आर्थिक विकास गर्नका लागि एउटा योजनाको नमुना तयार पार्नुहोस्।
+            </div>
+            <div class="a">
+                <div class="plan-box">
+                    <div class="plan-title"><i class="fas fa-clipboard-list" style="margin-right:6px;"></i> आर्थिक विकास योजनाको नमुना</div>
+
+                    <h4><i class="fas fa-tag" style="color:#FF9800; margin-right:6px;"></i> १. योजनाको नाम</h4>
+                    <p>“समृद्ध लुम्बिनी: कृषि, पर्यटन र उद्योग रूपान्तरण ५ वर्षे योजना” (आव २०८३–२०८८)</p>
+
+                    <h4><i class="fas fa-circle-info" style="color:#FF9800; margin-right:6px;"></i> २. पृष्ठभूमि र औचित्य</h4>
+                    <p>लुम्बिनी प्रदेश भौगोलिक रूपमा तराई र पहाड मिलेर बनेको छ। यहाँ बुद्ध जन्मस्थल लुम्बिनी जस्ता अन्तर्राष्ट्रिय पर्यटकीय स्थलहरू, उर्वर कृषि भूमि र बुटवल-भैरहवा-नेपालगञ्ज जस्ता ठुला औद्योगिक केन्द्रहरू रहेका छन्। उपलब्ध प्राकृतिक र मानवीय साधनको अधिकतम उपयोग गरी प्रदेशलाई आत्मनिर्भर बनाउन यो योजना तयार पारिएको हो।</p>
+
+                    <h4><i class="fas fa-bullseye" style="color:#FF9800; margin-right:6px;"></i> ३. योजनाका मुख्य उद्देश्यहरू</h4>
+                    <ul>
+                        <li>आगामी ५ वर्षभित्र प्रदेशको आर्थिक वृद्धिदर ८% पुर्‍याउने।</li>
+                        <li>वार्षिक ५० हजार नयाँ आन्तरिक रोजगारी सिर्जना गर्ने।</li>
+                        <li>प्रदेशभित्रका मुख्य कृषि उपजमा शतप्रतिशत आत्मनिर्भर बन्ने।</li>
+                    </ul>
+
+                    <h4><i class="fas fa-sitemap" style="color:#FF9800; margin-right:6px;"></i> ४. प्राथमिकताका मुख्य ४ क्षेत्रहरू र प्रमुख कार्यक्रमहरू</h4>
+
+                    <div class="flow-chart">
+                        <div class="flow-step big">समृद्ध लुम्बिनी योजना</div>
+                        <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="flow-step">१. व्यावसायिक कृषि</div>
+                        <div class="flow-step">२. पर्यटन विकास</div>
+                        <div class="flow-step">३. औद्योगिक पूर्वाधार</div>
+                        <div class="flow-step">४. मानव संसाधन र सिप</div>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width:20%;">प्राथमिकता क्षेत्र</th>
+                                    <th style="width:52%;">प्रमुख सञ्चालन गरिने कार्यक्रमहरू</th>
+                                    <th style="width:28%;">अनुमानित प्रतिफल</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>१. व्यावसायिक कृषि</strong></td>
+                                    <td>तराईमा खाद्यान्न र पहाडमा सुन्तला/अदुवा पकेट क्षेत्र निर्माण; ठेक्का/चकलाबन्दी खेती र थोपा सिँचाइ विस्तार</td>
+                                    <td>कृषि उत्पादनमा ४०% ले वृद्धि हुने।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>२. पर्यटन प्रवर्द्धन</strong></td>
+                                    <td>‘बुद्ध परिपथ’ (Lumbini Circuit) र होमस्टे विकास; गौतम बुद्ध अन्तर्राष्ट्रिय विमानस्थलको पूर्ण सञ्चालन</td>
+                                    <td>वार्षिक १५ लाख पर्यटक आगमन हुने।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>३. औद्योगिक विकास</strong></td>
+                                    <td>भैरहवा SEZ को पूर्ण सञ्चालन र साना उद्योग प्रवर्द्धन; क्रस-बोर्डर व्यापारका लागि भन्सार नाका आधुनिकीकरण</td>
+                                    <td>औद्योगिक उत्पादन र निर्यातमा वृद्धि हुने।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>४. सिप र पूर्वाधार</strong></td>
+                                    <td>युवा उद्यमी कोष र निःशुल्क प्राविधिक शिक्षालय स्थापना; प्रादेशिक सडक र जलविद्युत् आयोजनाको विकास</td>
+                                    <td>बेरोजगारी दरमा उल्लेख्य कमी आउने।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4><i class="fas fa-shield-halved" style="color:#FF9800; margin-right:6px;"></i> ५. कार्यान्वयन र अनुगमन संयन्त्र</h4>
+                    <p>प्रदेश मुख्यमन्त्रीको अध्यक्षतामा निर्देशक समिति रहनेछ र चौमासिक रूपमा प्रगति समीक्षा गरी नतिजामुखी कार्यान्वयन गरिनेछ।</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- प्र.न. ६ -->
+        <div class="qa-block color6" id="q6">
+            <div class="q">
+                <span class="qnum">प्र.न. ६:</span>
+                कोशी प्रदेश र मधेस प्रदेशका आर्थिक विशेषताहरूको तुलना पाँच बुँदामा गर्नुहोस्।
+            </div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> कोशी प्रदेश र मधेस प्रदेश नेपालको पूर्वी भागमा अवस्थित महत्त्वपूर्ण प्रदेशहरू हुन्। यी दुई प्रदेशका आर्थिक विशेषताहरू बिचको तुलनात्मक तालिका निम्न अनुसार छ:</p>
+
+                <div class="table-wrap">
+                    <div class="table-caption">तालिका: कोशी र मधेस प्रदेशको आर्थिक तुलना</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:22%;">तुलनाको आधार</th>
+                                <th style="width:39%;">कोशी प्रदेश</th>
+                                <th style="width:39%;">मधेस प्रदेश</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>१. धरातलीय र कृषि विविधता</strong></td>
+                                <td>यहाँ हिमाली, पहाडी र तराई भूभाग रहेकाले चिया, अलैँची, जुट, फलफूल र खाद्यान्नको विविध उत्पादन हुन्छ।</td>
+                                <td>यहाँ तराईको उर्वर समतल भूमि मात्र भएकाले मुख्यतया धान र गहुँ उत्पादन भई देशकै “अन्नको भण्डार” मानिन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>२. औद्योगिक र व्यापारिक केन्द्र</strong></td>
+                                <td>विराटनगर, इटहरी र धरान मुख्य औद्योगिक क्षेत्र हुन् भने काकडभिट्टा र रानी प्रमुख व्यापारिक नाका हुन्।</td>
+                                <td>वीरगञ्ज-पथलैया करिडोर मुख्य औद्योगिक क्षेत्र हो भने वीरगञ्ज सुखा बन्दरगाह (Dry Port) देशकै ठुलो नाका हो।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>३. पर्यटन र जलविद्युत् सम्भावना</strong></td>
+                                <td>सगरमाथा, ८,००० मि. अग्ला हिमाल, पाथिभरा र अरुण/तमोर नदीबाट प्रचुर जलविद्युत् सम्भावना छ।</td>
+                                <td>जानकी मन्दिर, गढीमाई, पर्सा राष्ट्रिय निकुञ्ज जस्ता धार्मिक तथा जैविक विविधता पर्यटनको सम्भावना छ।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>४. पूर्वाधार र यातायात</strong></td>
+                                <td>मेची, कोशी, सगरमाथा र तमोर करिडोर सडक तथा पहाडी क्षेत्रमा धेरै विमानस्थलहरू रहेका छन्।</td>
+                                <td>महेन्द्र राजमार्ग, हुलाकी मार्ग, वीरगञ्ज-अमलेखगञ्ज आयल पाइपलाइन र कुर्था-जनकपुर रेल सेवा छ।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>५. कृषिमा निर्भरता प्रतिशत</strong></td>
+                                <td>यस प्रदेशका लगभग <strong>८१.९%</strong> मानिसहरू कृषि पेसामा संलग्न रहेका छन्।</td>
+                                <td>यस प्रदेशका लगभग <strong>६६%</strong> मानिसहरू कृषि पेसामा संलग्न रहेका छन्।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- प्र.न. ७ -->
+        <div class="qa-block color7" id="q7">
+            <div class="q">
+                <span class="qnum">प्र.न. ७:</span>
+                बागमती प्रदेश व्यापार र औद्योगिक केन्द्र हुनुका पाँचओटा कारणहरू उल्लेख गर्नुहोस्।
+            </div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> बागमती प्रदेश कुल गार्हस्थ्य उत्पादन (GDP) मा ३५.८% योगदान दिने देशको सबैभन्दा ठुलो आर्थिक, औद्योगिक र व्यापारिक केन्द्र हो। यो प्रदेश व्यापार र औद्योगिक केन्द्र हुनुका पाँचवटा मुख्य कारणहरू निम्न अनुसार छन्:</p>
+                <ol>
+                    <li><strong>सङ्घीय राजधानी र ठुलो उपभोग्य बजार:</strong> देशको राजधानी काठमाडौँ उपत्यका यसै प्रदेशमा पर्ने भएकाले यहाँ उच्च जनघनत्व, उच्च क्रयशक्ति र वस्तु तथा सेवाको विशाल बजार उपलब्ध छ।</li>
+                    <li><strong>स्थापित औद्योगिक क्षेत्रहरूको उपस्थिति:</strong> बालाजु, पाटन, भक्तपुर र हेटौँडा जस्ता सुसञ्चालित औद्योगिक क्षेत्रहरू र चितवन तथा पञ्चखालमा निर्माणाधीन विशेष औद्योगिक क्षेत्रहरू रहेका छन्।</li>
+                    <li><strong>अन्तर्राष्ट्रिय तथा राष्ट्रिय यातायात पूर्वाधार:</strong> देशको मुख्य त्रिभुवन अन्तर्राष्ट्रिय विमानस्थल, तातोपानी र रसुवागढी उत्तरी नाकाहरू, र त्रिभुवन राजपथ, पृथ्वी राजमार्ग, बिपी राजमार्ग जस्ता मुख्य राजमार्गहरूको सञ्जाल रहेको छ।</li>
+                    <li><strong>वित्तीय तथा व्यापारिक पूर्वाधारको प्रचुरता:</strong> देशका सबै प्रमुख बैङ्क, वित्तीय संस्था, बहुराष्ट्रिय कम्पनीका केन्द्रीय कार्यालयहरू र काठमाडौँ, बनेपा, नारायणगढ, हेटौँडा जस्ता ठुला व्यापारिक केन्द्रहरू हुनु।</li>
+                    <li><strong>दक्ष जनशक्ति र सेवा क्षेत्रको बाहुल्य:</strong> देशका विभिन्न भागबाट आएका प्राविधिक, व्यवसायिक र प्रशासनिक जनशक्तिको सहज उपलब्धता हुनुका साथै विद्युत् आपूर्ति (माथिल्लो तामाकोशी, त्रिशूली, कुलेखानी) सहज हुनु।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- प्र.न. ८ -->
+        <div class="qa-block color8" id="q8">
+            <div class="q">
+                <span class="qnum">प्र.न. ८:</span>
+                “पर्यटन व्यवसायका दृष्टिले गण्डकी प्रदेश महत्त्वपूर्ण छ।” यस भनाइलाई उदाहरण दिँदै पुष्टि गर्नुहोस्।
+            </div>
+            <div class="a">
+                <p><strong>उत्तर:</strong> गण्डकी प्रदेश प्राकृतिक सुन्दरता, जैविक विविधता र सांस्कृतिक धनीपनले भरिपूर्ण प्रदेश हो। पर्यटन उद्योग यस प्रदेशको अर्थतन्त्रको मुख्य मेरुदण्ड हो। यो प्रदेश पर्यटन व्यवसायका दृष्टिले अत्यन्तै महत्त्वपूर्ण छ भन्ने कुरालाई निम्नलिखित उदाहरणहरूद्वारा पुष्टि गर्न सकिन्छ:</p>
+                <ol>
+                    <li><strong>विश्वप्रसिद्ध पर्यटकीय गन्तव्यहरू:</strong> अन्तर्राष्ट्रिय रूपमा चर्चित अन्नपूर्ण पदमार्ग (Annapurna Circuit), मुस्ताङ, मनाङ, पोखरा र फेवाताल जस्ता गन्तव्यहरू यसै प्रदेशमा रहेका छन्।</li>
+                    <li><strong>विदेशी पर्यटकको उच्च आगमन:</strong> नेपाल भ्रमणमा आउने कुल विदेशी पर्यटकहरूमध्ये करिब <strong>३३% पर्यटकहरू</strong> गण्डकी प्रदेशमा जाने गर्दछन्, जसले ठुलो मात्रामा वैदेशिक मुद्रा भित्र्याउँछ।</li>
+                    <li><strong>साहसिक तथा जैविक पर्यटन:</strong> अन्नपूर्ण र धौलागिरि हिमशृङ्खला, रुपाताल, बेगनासताल, पदयात्रा (Trekking), प्याराग्लाइडिङ, जिपलाइन र बन्जी जस्ता साहसिक खेलहरूको प्रमुख केन्द्र हुनु।</li>
+                    <li><strong>मौलिक आतिथ्य र सामुदायिक होमस्टे:</strong> घलेगाउँ, सिरुवारी जस्ता प्रसिद्ध ग्रामीण होमस्टे र गुरुङ तथा मगर समुदायका घाटु, कौरा, रोदी र सोरठी जस्ता अद्वितीय सांस्कृतिक धरोहरहरूले पर्यटकलाई आकर्षित गर्छन्।</li>
+                    <li><strong>धार्मिक पर्यटन र पूर्वाधार विकास:</strong> मुक्तिनाथ, मनकामना, विन्ध्यवासिनी, गलेश्वर र बागलुङ कालिका जस्ता धार्मिक स्थलहरू हुनुका साथै पोखरा अन्तर्राष्ट्रिय विमानस्थल र सडक सञ्जालले पर्यटन प्रवर्द्धनमा टेवा पुर्‍याएका छन्।</li>
+                </ol>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ===== खण्ड ३: विस्तृत उत्तरात्मक प्रश्नहरू (८ अङ्क) ===== -->
+        <!-- ========================================================== -->
+
+        <div class="section-head">
+            <i class="fas fa-gem"></i>
+            खण्ड ३: विस्तृत उत्तरात्मक प्रश्नहरू
+            <span class="mark-badge purple">८ अङ्क</span>
+        </div>
+
+        <!-- प्र.न. ९ -->
+        <div class="qa-block color9" id="q9">
+            <div class="q">
+                <span class="qnum">प्र.न. ९:</span>
+                (२०८२ ग्रेड वृद्धि परीक्षा सेट बी प्र.नं. २१) तपाईं बसोबास गर्ने प्रदेशको आर्थिक अवस्था र आर्थिक सम्भावनाका विविध पक्षहरू समेटी कुनै आठ बुँदामा विवरण तयार पार्नुहोस्।
+            </div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपालको सङ्घीय ढाँचा अनुसार १२ वटा जिल्लाहरू (तराईका ६ र पहाडका ६) समेटेर बनेको <strong>लुम्बिनी प्रदेश</strong> देशकै भौगोलिक, धार्मिक र आर्थिक रूपमा अत्यन्तै महत्त्वपूर्ण प्रदेश हो। यस प्रदेशले कुल राष्ट्रिय जनसङ्ख्याको १७.५६% (५१,२२,०७८ जना) हिस्सा ओगटेको छ भने राष्ट्रिय कुल गार्हस्थ्य उत्पादन (GDP) मा करिब १४% देखि १७% सम्म योगदान पुर्‍याउँदै आएको छ। तराईको उर्वर कृषि भूमि, बुटवल-भैरहवा-नेपालगञ्ज जस्ता स्थापित औद्योगिक क्षेत्रहरू, र विश्वशान्तिको प्रतीक बुद्ध जन्मस्थल लुम्बिनी जस्ता पर्यटकीय गन्तव्यहरूले गर्दा यो प्रदेश आर्थिक समृद्धिको उच्च सम्भावना बोकेको क्षेत्र मानिन्छ।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. लुम्बिनी प्रदेशको आर्थिक अवस्था र आर्थिक सम्भावनाका ८ मुख्य पक्षहरू:</span></p>
+
+                <div class="flow-chart">
+                    <div class="flow-step big">लुम्बिनी प्रदेशका आर्थिक आयामहरू</div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="flow-step">१. कृषि तथा पशुपालन</div>
+                    <div class="flow-step">२. औद्योगिक एवं SEZ</div>
+                    <div class="flow-step">३. धार्मिक र जैविक पर्यटन</div>
+                    <div class="flow-step">४. अन्तर्राष्ट्रिय व्यापार नाका</div>
+                    <div class="flow-step">५. यातायात पूर्वाधार</div>
+                    <div class="flow-step">६. जलविद्युत् र ऊर्जा</div>
+                    <div class="flow-step">७. जनशक्ति र विप्रेषण</div>
+                    <div class="flow-step">८. वन र जडीबुटी</div>
+                </div>
+
+                <ol>
+                    <li><strong>खाद्यान्न उत्पादन र कृषि व्यावसायिकता (Agricultural Potentials):</strong> लुम्बिनी प्रदेशका तराईका ६ जिल्लाहरू (रुपन्देही, कपिलवस्तु, नवलपरासी पश्चिम, दाङ, बाँके र बर्दिया) देशकै प्रमुख खाद्यान्न उत्पादक क्षेत्र हुन्। यहाँ धान, गहुँ, तोरी, उखु र तरकारीको ठुलो परिमाणमा उत्पादन हुन्छ। पहाडी जिल्लाहरू (पाल्पा, गुल्मी, अर्घाखाँची, प्यूठान, रोल्पा, रुकुम पूर्व) मा सुन्तला, अदुवा, कफी र तरकारी खेतीको उच्च व्यावसायिक सम्भावना रहेको छ।</li>
+                    <li><strong>औद्योगिक विकास र विशेष आर्थिक क्षेत्र (SEZ):</strong> बुटवल-भैरहवा करिडोर र नेपालगञ्ज-कोहलपुर क्षेत्र प्रदेशका मुख्य औद्योगिक हब हुन्। भैरहवामा देशकै पहिलो <strong>विशेष आर्थिक क्षेत्र (Special Economic Zone - SEZ)</strong> सञ्चालनमा छ। यहाँ सिमेन्ट, छड, चाउचाउ, चिनी र धागो उद्योगहरू स्थापित छन्, जसले हजारौँलाई रोजगारी प्रदान गरेका छन्।</li>
+                    <li><strong>धार्मिक, सांस्कृतिक तथा जैविक पर्यटन सम्भावना:</strong> विश्वसम्पदा सूचीमा सूचीकृत भगवान् बुद्धको जन्मस्थल <strong>लुम्बिनी</strong>, कपिलवस्तुको तिलौराकोट, रामग्राम, प्यूठानको स्वर्गद्वारी, पाल्पाको रानीमहल र रिडी (रुरुक्षेत्र) जस्ता धार्मिक स्थलहरू यहाँ रहेका छन्। साथै, बर्दिया राष्ट्रिय निकुञ्ज र ढोरपाटन शिकार आरक्ष (रुकुम भाग) ले जैविक तथा वन्यजन्तु पर्यटनको विशाल सम्भावना बोकेका छन्।</li>
+                    <li><strong>अन्तर्राष्ट्रिय व्यापार तथा प्रमुख भन्सार नाकाहरू:</strong> भारतसँग सीमा जोडिएका <strong>बेलहिया (भैरहवा)</strong> र <strong>जमुनाहा (नेपालगञ्ज)</strong> नेपालका दोस्रो र तेस्रो ठुला वैदेशिक व्यापारिक नाकाहरू हुन्। यी नाकाहरूबाट हुने आयात-निर्यातले प्रदेशको कर राजस्व र व्यापारिक गतिविधिमा उल्लेख्य योगदान पुर्‍याएको छ।</li>
+                    <li><strong>यातायात पूर्वाधार र अन्तर्राष्ट्रिय विमानस्थल:</strong> यस प्रदेशमा <strong>गौतम बुद्ध अन्तर्राष्ट्रिय विमानस्थल (भैरहवा)</strong>, पूर्व-पश्चिम महेन्द्र राजमार्ग, उत्तर-दक्षिण सिद्धार्थ राजमार्ग र मध्यपहाडी राजमार्गको सहज पहुँच छ। यातायात सुगमताका कारण कच्चा पदार्थ ढुवानी र निर्मित वस्तुको बजारीकरण सहज बनेको छ।</li>
+                    <li><strong>जलस्रोत, जलविद्युत् र सिँचाइ सम्भावना:</strong> कालीगण्डकी, राप्ती, बबई, तिनाउ र रोहिणी नदी प्रणालीहरू यस प्रदेशका मुख्य जलस्रोत हुन्। कालीगण्डकी ‘ए’, झिमरुक जलविद्युत् र नौमुरे बहुउद्देश्यीय आयोजना जस्ता जलविद्युत् सम्भावनाका साथै सिक्टा सिँचाइ र बबई सिँचाइ आयोजनाले कृषि सिँचाइमा ठुलो रूपान्तरण ल्याइरहेका छन्।</li>
+                    <li><strong>मानव संसाधन र विप्रेषण (Remittance) अर्थतन्त्र:</strong> जनगणना २०७८ अनुसार यस प्रदेशमा १५ देखि ५९ वर्ष उमेर समूहको <strong>सक्रिय जनसङ्ख्या ५९.१%</strong> रहेको छ। यस प्रदेशबाट वैदेशिक रोजगारीमा जाने युवाहरूको सङ्ख्या उच्च रहेकाले भित्रिने विप्रेषणले स्थानीय बैङ्किङ, व्यापार र आवास क्षेत्रमा ठुलो पुँजी परिचालन गरेको छ।</li>
+                    <li><strong>वन पैदावार, जडीबुटी र सामुदायिक वन:</strong> भावर र पहाडी क्षेत्रमा पाइने साल, साझ र कटुसका बहुमूल्य काठका साथै रोल्पा, रुकुम र प्यूठानका पहाडी भेगमा पाइने बहुमूल्य जडीबुटीहरू (जस्तै: यार्सागुम्बा, पाँचऔँले, गुच्ची च्याउ) को प्रशोधन र निर्यातको उच्च आर्थिक सम्भावना छ।</li>
+                </ol>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">३. निष्कर्ष:</span> निष्कर्षमा, लुम्बिनी प्रदेश भौगोलिक रूपमा सुगम, प्राकृतिक रूपमा धनी र आर्थिक रूपमा उच्च सम्भावनायुक्त प्रदेश हो। कृषिमा आधुनिकीकरण, भैरहवा SEZ को पूर्ण क्षमतामा सञ्चालन, गौतम बुद्ध विमानस्थलको नियमित अन्तर्राष्ट्रिय उडान र ‘बुद्ध परिपथ’ पर्यटनको एकीकृत विकास गर्न सकेमा लुम्बिनी प्रदेश समग्र नेपालको आर्थिक समृद्धिको अग्रगामी इन्जिन बन्न सक्दछ।</p>
+            </div>
+        </div>
+
+        <!-- प्र.न. १० -->
+        <div class="qa-block color10" id="q10">
+            <div class="q">
+                <span class="qnum">प्र.न. १०:</span>
+                (२०८२ प्र.नं. २१) तपाईं बसोबास गर्ने प्रदेशको भौगोलिक संरचनाले त्यहाँको आर्थिक गतिविधिमा पारेको प्रभाव र चुनौतीहरू उल्लेख गर्नुहोस्।
+            </div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपालको लुम्बिनी प्रदेश भौगोलिक दृष्टिले तराईका समतल फाँटहरू (रुपन्देही, कपिलवस्तु, नवलपरासी पश्चिम, दाङ, बाँके, बर्दिया) र महाभारत तथा चुरे पहाडी शृङ्खलाहरू (पाल्पा, गुल्मी, अर्घाखाँची, प्यूठान, रोल्पा, रुकुम पूर्व) मिलेर बनेको त्रि-धरातलीय विशेषतायुक्त प्रदेश हो। प्रदेशको यो विषम र विविधतायुक्त भौगोलिक बनोटले यहाँको आर्थिक क्रियाकलाप, कृषि, उद्योग र पर्यटनमा एकातिर ठुला सकारात्मक अवसरहरू सिर्जना गरेको छ भने अर्कोतिर पूर्वाधार विकास र सन्तुलित समृद्धिमा गम्भीर चुनौतीहरू समेत खडा गरेको छ।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. भौगोलिक संरचनाले आर्थिक गतिविधिमा पारेको सकारात्मक प्रभाव (४ अङ्क):</span></p>
+                <ol>
+                    <li><strong>उर्वर तराई भूभाग र खाद्यान्न आत्मनिर्भरता:</strong> तराई र भित्री मधेसको समतल र उर्वर भूभागका कारण आधुनिक कृषि औजार (ट्याक्टर, कम्बाइन हार्भेस्टर) को प्रयोग सहज बनेको छ। यसले गर्दा प्रदेश धान, गहुँ, तोरी र उखु उत्पादनमा आत्मनिर्भर बन्नुका साथै अन्य प्रदेशमा समेत खाद्यान्न आपूर्ति गर्न सफल भएको छ।</li>
+                    <li><strong>सुगम भूगोल र औद्योगिक हबको विकास:</strong> तराईको समतल मैदान र भारतसँग सीमा जोडिएको सुगम भूगोलका कारण बुटवल, भैरहवा र नेपालगञ्जमा ठुला-ठुला सिमेन्ट, छड, चाउचाउ उद्योगहरू र विशेष आर्थिक क्षेत्र (SEZ) को स्थापना सम्भव भएको छ।</li>
+                    <li><strong>बहुआयामिक पर्यटकीय गन्तव्यको निर्माण:</strong> तराईमा बुद्ध जन्मस्थल लुम्बिनी र बर्दिया राष्ट्रिय निकुञ्ज तथा पहाडी क्षेत्रमा तानसेन (पाल्पा), स्वर्गद्वारी (प्यूठान) र रानीमहल जस्ता विविध भौगोलिक गन्तव्यहरू एकै प्रदेशमा हुनाले आन्तरिक तथा बाह्य पर्यटनको प्रवर्द्धन भएको छ।</li>
+                    <li><strong>जलस्रोतको उपयोग र सिँचाइ सुविधा:</strong> हिमाली तथा पहाडी भेगबाट बगेर तराईतर्फ आउने कालीगण्डकी, राप्ती र बबई नदी प्रणालीका कारण सिक्टा र बबई जस्ता राष्ट्रिय गौरवका सिँचाइ आयोजनाहरू सञ्चालन भई कृषि उत्पादन वृद्धि भएको छ।</li>
+                </ol>
+
+                <p><span class="step-icon">⚠️</span> <span class="step-title">३. भौगोलिक संरचनाका कारण देखा परेका मुख्य चुनौतीहरू (४ अङ्क):</span></p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:8%;">क्र.सं.</th>
+                                <th style="width:32%;">भौगोलिक चुनौतीहरू</th>
+                                <th style="width:60%;">आर्थिक गतिविधिमा परेको प्रतिकूल असर</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>१</strong></td>
+                                <td><strong>प्रादेशिक असन्तुलन र विकटता</strong></td>
+                                <td>तराईका ६ जिल्लाहरू औद्योगिक र सुगम हुँदा पहाडी ६ जिल्लाहरू (विशेष गरी रोल्पा, रुकुम पूर्व, प्यूठान) सडक र बजार पहुँचबाट टाढा रहनु।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>२</strong></td>
+                                <td><strong>बाढी, डुबान र नदी कटान</strong></td>
+                                <td>वर्षायाममा चुरे र पहाडबाट बग्ने राप्ती, बबई र रोहिणी नदीमा आउने बाढीले तराईका हजारौँ हेक्टर धानखेती डुबानमा पार्ने र ठुलो आर्थिक क्षति पुर्‍याउने।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>३</strong></td>
+                                <td><strong>चुरे क्षेत्रको दोहन र मरुभूमीकरण</strong></td>
+                                <td>चुरे पहाडको अनियन्त्रित दोहन (गिट्टी, बालुवा उत्खनन) ले गर्दा मधेस र तराईमा भूमिगत पानीको तह सुक्दै जानु र कृषि उत्पादकत्व घट्नु।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>४</strong></td>
+                                <td><strong>पहाडी क्षेत्रमा पहिरो र सडक अवरोध</strong></td>
+                                <td>कमजोर पहाडी भूबनोटका कारण वर्षायाममा सिद्धार्थ राजमार्ग र सडकहरू पहिरोले बन्द भई फलफूल र तरकारी बजारसम्म पुर्‍याउन नसकिई कुहिएर जाने।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">४. निष्कर्ष:</span> तसर्थ, लुम्बिनी प्रदेशको भौगोलिक बनोट अवसर र चुनौती दुवैको सङ्गम हो। चुरे क्षेत्रको संरक्षण, पहाडी जिल्लाहरूमा सुरुङमार्ग र कृषि सडकको विस्तार, तथा तराईमा बाढी नियन्त्रणका लागि तटबन्धन निर्माण गर्न सकेमा भौगोलिक चुनौतीहरूलाई पन्छाउँदै प्रदेशलाई आर्थिक रूपमा समृद्ध बनाउन सकिन्छ।</p>
+            </div>
+        </div>
+
+        <!-- प्र.न. ११ -->
+        <div class="qa-block color1" id="q11">
+            <div class="q">
+                <span class="qnum">प्र.न. ११:</span>
+                (२०८१ ग्रेड वृद्धि परीक्षा सेट ए प्र.नं. २१) नेपालको कोशी प्रदेशको भौगोलिक अवस्थाले त्यहाँको आर्थिक र जनसङ्ख्या वितरणमा परेको प्रभाव वर्णन गर्नुहोस्।
+            </div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपालको सुदूर पूर्वी भागमा अवस्थित <strong>कोशी प्रदेश (प्रदेश नं. १)</strong> नेपालको एक मात्र यस्तो प्रदेश हो जसले उत्तरमा हिमाली शृङ्खला (सगरमाथा, कञ्चनजङ्गा), मध्यमा पहाडी महाभारत पर्वत र दक्षिणमा झापा, मोरङ, सुनसरी जस्ता समतल तराईका जिल्लाहरू समेटेको छ। कुल २५,९०५ वर्ग किमी क्षेत्रफलमा फैलिएको यस प्रदेशको कुल जनसङ्ख्या ४९,६१,४१२ (१७.०१%) रहेको छ। यस प्रदेशको विविध भौगोलिक अवस्थाले यहाँको आर्थिक क्रियाकलाप र जनसाङ्ख्यिक वितरणमा प्रत्यक्ष प्रभाव पारेको छ।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. भौगोलिक अवस्थाले आर्थिक गतिविधिमा पारेको प्रभाव (४ अङ्क):</span></p>
+                <ol>
+                    <li><strong>नगदे बाली र औद्योगिक कृषि:</strong> पहाडी र उच्च हिमाली हावापानीका कारण इलाम, पाँचथर, धनकुटा, सङ्खुवासभामा <strong>चिया, अलैँची, अदुवा, अम्लिसो र ओखर</strong> जस्ता बहुमूल्य निर्यातजन्य नगदे बालीको प्रचुर उत्पादन हुन्छ। तराईमा धान, जुट र उखुको व्यावसायिक खेती हुन्छ।</li>
+                    <li><strong>विश्वप्रसिद्ध हिमपर्यटन र जलविद्युत् सम्भावना:</strong> संसारको सर्वोच्च शिखर सगरमाथा (८,८४८.८६ मि.), कञ्चनजङ्गा र मकालु हिमाल यसै प्रदेशमा रहेकाले पदयात्रा (Trekking) र पर्वतारोहणबाट ठुलो मात्रामा वैदेशिक मुद्रा आर्जन हुन्छ। साथै, अरुण, तमोर र दूग्धकोशी नदीबाट नेपालकै ठुला जलविद्युत् आयोजनाहरू (जस्तै: अरुण तेस्रो) सञ्चालित छन्।</li>
+                    <li><strong>औद्योगिक करिडोर र अन्तर्राष्ट्रिय व्यापार नाका:</strong> तराईको सुगम भूगोल र पूर्वाधारका कारण विराटनगर-इटहरी नेपालकै पुरानो र ठुलो औद्योगिक करिडोरका रूपमा विकसित भएको छ। काकडभिट्टा (भारत सीमा) र ओलाङचुङगोला/किमाथाङ्का (चीन सीमा) नाकाहरूबाट द्विदेशीय व्यापार सञ्चालित छ।</li>
+                    <li><strong>उच्च पाटनमा पशुपालन र दुग्ध उद्योग:</strong> हिमाली र उच्च पहाडी क्षेत्रका चरन क्षेत्रहरूमा याक, चौँरी, भेडा र उन्नत गाई पालन गरी छुर्पी, घिउ र चिज उत्पादन गरी अमेरिका र युरोपसम्म निर्यात गरिन्छ।</li>
+                </ol>
+
+                <p><span class="step-icon">👥</span> <span class="step-title">३. भौगोलिक अवस्थाले जनसङ्ख्या वितरणमा पारेको प्रभाव (४ अङ्क):</span></p>
+
+                <div class="flow-chart">
+                    <div class="flow-step big">कोशी प्रदेशको जनसङ्ख्या वितरण</div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="flow-step">तराई: अत्यधिक सघन (५०%+)</div>
+                    <div class="flow-step">पहाडी: मध्यम</div>
+                    <div class="flow-step">हिमाली: निकै पातलो</div>
+                </div>
+
+                <ol>
+                    <li><strong>तराई क्षेत्रमा जनसङ्ख्याको उच्च सघनता:</strong> सुगम सडक पूर्वाधार, समतल भूमि, औद्योगिक रोजगारी र शैक्षिक सुविधाका कारण तराईका ३ जिल्लाहरू (झापा, मोरङ र सुनसरी) मा प्रदेशको कुल जनसङ्ख्याको <strong>५०% भन्दा बढी</strong> मानिसहरू बसोबास गर्छन्। मोरङ प्रदेशकै सबैभन्दा बढी जनसङ्ख्या भएको जिल्ला हो।</li>
+                    <li><strong>हिमाली जिल्लाहरूमा अति पातलो बसोबास:</strong> अत्यधिक चिसो हावापानी, भिरालो विकट भूगोल र पूर्वाधारको कमीका कारण ताप्लेजुङ, सङ्खुवासभा र सोलुखुम्बूमा जनघनत्व निकै कम छ।</li>
+                    <li><strong>तीव्र आन्तरिक बसाइँसराइ:</strong> पहाडी जिल्लाहरू (खोटाङ, भोजपुर, तेह्रथुम) का ५ वटा जिल्लाहरूमा जनगणना २०७८ अनुसार <strong>ऋणात्मक जनसङ्ख्या वृद्धिदर</strong> देखिएको छ, जहाँका मानिसहरू सुविधाको खोजीमा तराईका सहरहरू (इटहरी, धरान, विराटनगर, बिर्तामोड) तिर बसाइँ सरिरहेका छन्।</li>
+                    <li><strong>भौगोलिक संरचना अनुसारको जातीय र भाषिक बसोबास:</strong> हिमाली क्षेत्रमा शेर्पा, भोटे; पहाडी क्षेत्रमा राई, लिम्बु, तामाङ, सुनुवार; र तराई क्षेत्रमा राजवंशी, थारू, सतार, मेचे र मधेसी समुदायको भूगोल केन्द्रित बसोबास पाइन्छ।</li>
+                </ol>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">४. निष्कर्ष:</span> निष्कर्षमा, कोशी प्रदेशको त्रि-धरातलीय भौगोलिक अवस्थाले आर्थिक क्रियाकलापमा विविधता ल्याएको भए तापनि जनसङ्ख्या वितरणमा ठुलो असमानता पैदा गरेको छ। पहाडी क्षेत्रमा पुष्पलाल मध्यपहाडी राजमार्ग र तमोर करिडोरमार्फत पूर्वाधार विकास गरी पहाडमै रोजगारी सिर्जना गरेमा जनसङ्ख्याको सन्तुलित वितरण र प्रदेशको दिगो विकास सम्भव हुनेछ।</p>
+            </div>
+        </div>
+
+        <!-- प्र.न. १२ -->
+        <div class="qa-block color2" id="q12">
+            <div class="q">
+                <span class="qnum">प्र.न. १२:</span>
+                (२०८१ सेट ई/डब्लु प्र.नं. २१) तपाईं बसोबास गर्नुभएको प्रदेशको भौगोलिक अवस्थाले त्यहाँको आर्थिक गतिविधि र जनसाङ्ख्यिक वितरणमा पारेको प्रभाव वर्णन गर्नुहोस्। (४+४)
+            </div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> मेरो बसोबास रहेको <strong>लुम्बिनी प्रदेश</strong> नेपालको दक्षिण-पश्चिम भागमा अवस्थित छ। यस प्रदेशमा ६ वटा तराईका जिल्लाहरू (नवलपरासी पश्चिम, रुपन्देही, कपिलवस्तु, दाङ, बाँके, बर्दिया) र ६ वटा पहाडी जिल्लाहरू (पाल्पा, गुल्मी, अर्घाखाँची, प्यूठान, रोल्पा, रुकुम पूर्व) गरी कुल १२ जिल्लाहरू रहेका छन्। बाह्रौँ राष्ट्रिय जनगणना २०७८ अनुसार यस प्रदेशको कुल जनसङ्ख्या <strong>५१,२२,०७८ जना (१७.५६%)</strong> र जनघनत्व <strong>२३० जना प्रति वर्ग कि.मी.</strong> रहेको छ। यस प्रदेशको धरातलीय बनोटले यहाँको आर्थिक जीवन र जनसङ्ख्या वितरणमा गहिरो प्रभाव पारेको छ।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. भौगोलिक अवस्थाले आर्थिक गतिविधिमा पारेको प्रभाव (४ अङ्क):</span></p>
+                <ol>
+                    <li><strong>उर्वर तराई र व्यावसायिक खाद्यान्न खेती:</strong> तराई र भित्री मधेस (दाङ उपत्यका) को समतल र सिञ्चित भूमि भएकाले यहाँ धान, गहुँ, तोरी, मकै र दलहनको व्यावसायिक उत्पादन हुन्छ, जसले प्रदेशलाई खाद्यान्नमा आत्मनिर्भर बनाएको छ।</li>
+                    <li><strong>औद्योगिक करिडोर र सीमापार व्यापार:</strong> तराईको सुगम भूगोल र भारतसँगको सीमाका कारण बुटवल-भैरहवा र नेपालगञ्ज-कोहलपुर नेपालकै प्रमुख औद्योगिक क्षेत्रका रूपमा विकसित भएका छन्। बेलहिया र जमुनाहा भन्सार नाकाबाट अर्बौँको अन्तर्राष्ट्रिय व्यापार हुन्छ।</li>
+                    <li><strong>पहाडी कृषि र फलफूल प्रवर्द्धन:</strong> पाल्पा, गुल्मी, अर्घाखाँची र प्यूठानको पहाडी भूगोल र उष्ण-समशीतोष्ण हावापानीका कारण सुन्तला, कफी, अदुवा, बेसार र तरकारी खेतीको व्यावसायिक विकास भएको छ।</li>
+                    <li><strong>धार्मिक तथा जैविक पर्यटन विकास:</strong> तराईको समतल क्षेत्रमा विश्वप्रसिद्ध लुम्बिनी र बर्दिया निकुञ्ज तथा पहाडी क्षेत्रमा स्वर्गद्वारी र तानसेन रानीमहल जस्ता पर्यटकीय स्थलहरूको उपस्थिति छ।</li>
+                </ol>
+
+                <p><span class="step-icon">👥</span> <span class="step-title">३. भौगोलिक अवस्थाले जनसाङ्ख्यिक वितरणमा पारेको प्रभाव (४ अङ्क):</span></p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:20%;">धरातलीय क्षेत्र</th>
+                                <th style="width:28%;">मुख्य जिल्लाहरू</th>
+                                <th style="width:22%;">जनसङ्ख्या वितरण</th>
+                                <th style="width:30%;">जनसाङ्ख्यिक विशेषता र प्रभाव</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>तराई र भित्री मधेस</strong></td>
+                                <td>रुपन्देही, कपिलवस्तु, बाँके, दाङ, बर्दिया, नवलपरासी प.</td>
+                                <td><strong>अत्यधिक सघन (करिब ७५%)</strong></td>
+                                <td>सडक सुगमता, उद्योग र शिक्षाका कारण जनघनत्व उच्च छ (रुपन्देहीमा ६५३ जना/किमी²)।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>पहाडी क्षेत्र</strong></td>
+                                <td>पाल्पा, गुल्मी, अर्घाखाँची, प्यूठान, रोल्पा, रुकुम पूर्व</td>
+                                <td><strong>पातलो र घट्दो (करिब २५%)</strong></td>
+                                <td>विकटताका कारण पाल्पा, गुल्मी, अर्घाखाँची, प्यूठान र रोल्पामा <strong>ऋणात्मक जनसङ्ख्या वृद्धि</strong> छ।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ol>
+                    <li><strong>तराई र सहरतिर तीव्र आन्तरिक बसाइँसराइ:</strong> पहाडी जिल्लाहरूबाट खानेपानी, शिक्षा, स्वास्थ्य र रोजगारीको खोजीमा बुटवल, तिलोत्तमा, घोराही, तुलसीपुर र नेपालगञ्ज जस्ता तराईका सहरहरूमा तीव्र गतिमा मानिसहरू सङ्कलित भइरहेका छन्।</li>
+                    <li><strong>सक्रिय जनसङ्ख्याको प्रादेशिक उपस्थिति:</strong> प्रदेशमा १५-५९ वर्ष उमेर समूहको सक्रिय जनसङ्ख्या ५९.१% रहेको छ, तर पहाडी क्षेत्रमा वृद्धवृद्धा र बालबालिका मात्र बाँकी रहने र तराईमा युवा जनसङ्ख्याको चाप बढ्ने जनसाङ्ख्यिक असन्तुलन देखिएको छ।</li>
+                </ol>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">४. निष्कर्ष:</span> तसर्थ, लुम्बिनी प्रदेशको भौगोलिक बनोटले आर्थिक विकासका ढोकाहरू खोले पनि तराई र पहाडबिच जनसङ्ख्या र विकासको असन्तुलन पैदा गरेको छ। पहाडी क्षेत्रमा फलफूल उद्योग र सडक पूर्वाधार पुर्‍याई तराईमा व्यवस्थित सहरीकरण गरेमा सन्तुलित प्रादेशिक विकास हासिल गर्न सकिन्छ।</p>
+            </div>
+        </div>
+
+        <!-- प्र.न. १३ -->
+        <div class="qa-block color3" id="q13">
+            <div class="q">
+                <span class="qnum">प्र.न. १३:</span>
+                (२०८१ ऐच्छिक तर्फ प्र.नं. २१) मधेस प्रदेश र कर्णाली प्रदेशको भौगोलिक र आर्थिक विशेषताहरूलाई तुलनात्मक रूपमा वर्णन गर्नुहोस्। (४+४)
+            </div>
+            <div class="a">
+                <p><span class="step-icon">📌</span> <span class="step-title">१. परिचय:</span> नेपालको सङ्घीय प्रशासनिक ढाँचामा <strong>मधेस प्रदेश</strong> र <strong>कर्णाली प्रदेश</strong> धरातलीय बनोट, जनसाङ्ख्यिक आकार र आर्थिक संरचनाका दृष्टिले दुई विपरीत ध्रुवका रूपमा रहेका प्रदेशहरू हुन्। मधेस प्रदेश दक्षिणको समतल तराईमा अवस्थित छ भने कर्णाली प्रदेश उत्तरको विकट हिमाली र पहाडी भूभागमा फैलिएको छ। यी दुई प्रदेशका भौगोलिक र आर्थिक विशेषताहरूको तुलनात्मक विश्लेषण तल प्रस्तुत गरिएको छ।</p>
+
+                <p><span class="step-icon">📊</span> <span class="step-title">२. भौगोलिक विशेषताहरूको तुलना (४ अङ्क):</span></p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:22%;">तुलनाको आधार</th>
+                                <th style="width:39%;">मधेस प्रदेश</th>
+                                <th style="width:39%;">कर्णाली प्रदेश</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>१. क्षेत्रफल र धरातलीय बनोट</strong></td>
+                                <td>नेपालकै सबैभन्दा सानो प्रदेश (क्षेत्रफल: ९,६६१ वर्ग किमी - <strong>६.५६%</strong>), जुन १००% समतल तराई हो।</td>
+                                <td>नेपालकै सबैभन्दा ठुलो प्रदेश (क्षेत्रफल: २७,९८४ वर्ग किमी - <strong>१९.१३%</strong>), जुन विकट हिमाल र पहाड हो।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>२. जलवायु र हावापानी</strong></td>
+                                <td>मुख्यतया <strong>उष्णप्रदेशीय (Tropical) हावापानी</strong>, जहाँ गर्मी याममा अत्यधिक गर्मी र शीतलहर चल्छ।</td>
+                                <td><strong>समशीतोष्ण देखि टुन्ड्रा/ध्रुवीय हावापानी</strong>, जहाँ हिउँदमा अत्यधिक चिसो र हिमपात हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>३. जनसङ्ख्या र जनघनत्व</strong></td>
+                                <td>दोस्रो ठुलो जनसङ्ख्या (६१,१४,६०० - २०.९७%) र नेपालकै <strong>सबैभन्दा बढी जनघनत्व (६३३ जना/किमी²)</strong>।</td>
+                                <td>सबैभन्दा कम जनसङ्ख्या (१६,८८,४१२ - ५.७९%) र नेपालकै <strong>सबैभन्दा कम जनघनत्व (६० जना/किमी²)</strong>।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>४. सुगमता र यातायात</strong></td>
+                                <td>महेन्द्र राजमार्ग, हुलाकी मार्ग र रेलमार्गले युक्त <strong>अत्यन्तै सुगम प्रदेश</strong>।</td>
+                                <td>अधिकांश जिल्लाहरू विकट, काठमाडौँबाट टाढा र सडक पूर्वाधारको दृष्टिले <strong>अत्यन्तै दुर्गम प्रदेश</strong>।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><span class="step-icon">💼</span> <span class="step-title">३. आर्थिक विशेषताहरूको तुलना (४ अङ्क):</span></p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:22%;">तुलनाको आधार</th>
+                                <th style="width:39%;">मधेस प्रदेश</th>
+                                <th style="width:39%;">कर्णाली प्रदेश</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>१. GDP मा योगदान</strong></td>
+                                <td>कुल राष्ट्रिय GDP मा <strong>११.४% योगदान</strong> पुर्‍याउँछ।</td>
+                                <td>कुल राष्ट्रिय GDP मा सबैभन्दा कम <strong>४.३% मात्र योगदान</strong> छ।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>२. कृषि र खाद्यान्न उत्पादन</strong></td>
+                                <td>नेपालको <strong>“अन्नको भण्डार”</strong> मानिन्छ; धान, गहुँ, उखु र माछापालनको उच्च व्यावसायिक उत्पादन हुन्छ।</td>
+                                <td><strong>अर्गानिक कृषि</strong> (स्याउ, जुम्ली मार्सी, फापर, सिमी) र उच्च पाटनमा चौँरी/भेडा पालन मुख्य स्रोत हो।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>३. उद्योग र व्यापारिक नाका</strong></td>
+                                <td>वीरगञ्ज-पथलैया औद्योगिक करिडोर र देशकै ठुलो <strong>वीरगञ्ज सुखा बन्दरगाह (Dry Port)</strong> सञ्चालनमा छ।</td>
+                                <td>ठुला उद्योगहरू शून्य प्रायः छन्; चीनसँगको हिल्सा र नाक्चेलाग्ना सीमित नाकाहरू रहेका छन्।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>४. पर्यटन र प्राकृतिक स्रोत</strong></td>
+                                <td>जानकी मन्दिर, विवाह पञ्चमी, गढीमाई जस्ता <strong>धार्मिक र सांस्कृतिक पर्यटन</strong> मुख्य आधार हुन्।</td>
+                                <td>रारा ताल, शे-फोक्सुन्डो, खस संस्कृति र <strong>बहुमूल्य यार्सागुम्बा/जडीबुटी सङ्कलन</strong> मुख्य स्रोत हुन्।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><span class="step-icon">🎯</span> <span class="step-title">४. निष्कर्ष:</span> निष्कर्षमा, मधेस प्रदेश सुगम भूगोल, सघन जनसङ्ख्या, कृषि र उद्योगका दृष्टिले नेपालको आर्थिक मेरुदण्ड हो भने कर्णाली प्रदेश विशाल भूगोल, अर्गानिक खेती, बहुमूल्य जडीबुटी, जलविद्युत् र हिमाली पर्यटनको अपार सम्भावना भएको क्षेत्र हो। मधेसको सुगम बजार र कर्णालीको अर्गानिक उत्पादनबिच प्रादेशिक व्यापार र सहकार्य कायम गर्न सकेमा दुवै प्रदेशले तीव्र आर्थिक समृद्धि हासिल गर्न सक्नेछन्।</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ===== FINAL TIP ===== -->
+        <div class="tip-box">
+            <i class="fas fa-lightbulb" style="color:#FFEB3B;"></i>
+            <strong>अन्तिम सल्लाह:</strong> प्रदेशगत तथ्याङ्क (GDP %, कृषि संलग्नता %, मुख्य नाका, पर्यटकीय स्थल) र जनसङ्ख्या/जनघनत्वका अङ्क सम्झनुहोस् — छोटो उत्तरमा तथ्याङ्क राख्दा बढी अङ्क पाइन्छ। तुलनात्मक प्रश्नमा अनिवार्य रूपमा तालिका प्रयोग गर्नुहोस्।
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-copy">
+            <span><i class="fas fa-user-graduate"></i> Prepared by: <span class="highlight">Narayan Sir</span></span>
+            <span><i class="fas fa-envelope"></i> nregmi511@gmail.com</span>
+            <span><i class="fas fa-copyright"></i> कक्षा १२ – एकाइ ५, पाठ ४ (v2)</span>
+            <span><i class="fas fa-mobile-alt"></i> Mobile &amp; Smartboard Friendly</span>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- ===== SCROLL UP BUTTON ===== -->
+    <button id="scrollUpBtn" aria-label="माथि जानुहोस्">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            /* ===== Floating TOC (top-left) ===== */
+            const tocToggle = document.getElementById('tocToggle');
+            const tocPanel  = document.getElementById('tocPanel');
+            const tocClose  = document.getElementById('tocClose');
+
+            function openToc()  { tocPanel.classList.add('open'); }
+            function closeToc() { tocPanel.classList.remove('open'); }
+
+            tocToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (tocPanel.classList.contains('open')) closeToc();
+                else openToc();
+            });
+
+            tocClose.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeToc();
+            });
+
+            // Auto-close TOC after clicking a link
+            tocPanel.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() { closeToc(); });
+            });
+
+            // Close when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
+                    closeToc();
+                }
+            });
+
+            // ESC closes
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') closeToc();
+            });
+
+            /* ===== Scroll-up button ===== */
+            const btn = document.getElementById('scrollUpBtn');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 350) btn.classList.add('visible');
+                else btn.classList.remove('visible');
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+
+</body>
+</html>
